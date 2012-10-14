@@ -161,22 +161,22 @@ construction=* & highway=*          [0x10802 resolution 24-23 continue with_acti
 # bridge overlay
 bridge=yes & highway=motorway		[0x10101 resolution 24-23 continue with_actions]
 bridge=yes & highway=motorway_link	[0x10103 resolution 24-23 continue with_actions]
-bridge=yes & highway=trunk		[0x10102 resolution 24-23 continue with_actions]
-bridge=yes & highway=trunk_link		[0x10103 resolution 24-23 continue with_actions]
+bridge=yes & highway=trunk          [0x10102 resolution 24-23 continue with_actions]
+bridge=yes & highway=trunk_link     [0x10103 resolution 24-23 continue with_actions]
 bridge=yes & highway=primary		[0x10102 resolution 24-23 continue with_actions]
 bridge=yes & highway=primary_link	[0x10103 resolution 24-23 continue with_actions]
 bridge=yes & highway=secondary		[0x10102 resolution 24-23 continue with_actions]
 bridge=yes & highway=secondary_link	[0x10104 resolution 24-23 continue with_actions]
-bridge=yes & highway=tertiary		[0x10102 resolution 24-23 continue with_actions]
-bridge=yes & highway=tertiary_link	[0x10104 resolution 24-23 continue with_actions]
-bridge=yes & highway=*			[0x10105 resolution 24-23 continue with_actions]
+bridge=yes & highway=tertiary       [0x10102 resolution 24-23 continue with_actions]
+bridge=yes & highway=tertiary_link  [0x10104 resolution 24-23 continue with_actions]
+bridge=yes & highway=*				[0x10105 resolution 24-23 continue with_actions]
 
 # tunnel overlay
 #tunnel=yes & highway=motorway		[0x10111 resolution 24-23 continue with_actions]
 #tunnel=yes & highway=primary 		[0x10112 resolution 24-23 continue with_actions]
 
 # tram overlay
-highway=* & railway=tram		[0x10700 resolution 24-23 continue with_actions]
+highway=* & railway=tram            [0x10700 resolution 24-23 continue with_actions]
 
 # cyclelane overlay
 highway=* & (cycleway=both | cycleway=lane | cycleway:left=* | cycleway~'opposite.*')	[0x10417 resolution 24-23 continue with_actions]
@@ -187,14 +187,14 @@ highway=* & (cycleway=both | cycleway=lane | cycleway:right=*)				[0x10416 resol
 
 highway=construction | (highway=* & construction=* & construction!=minor & construction!=no) {add access = no; add bicycle = yes; add foot = yes; add mkgmap:dead-end-check = false } [0x08 road_class=0 road_speed=1 resolution 22]
 
-highway=motorway & construction=minor		{ add mkgmap:road-speed = '4'; add mkgmap:road-speed-min = '3'; }	[0x01 road_class=4 resolution 12]
-highway=motorway_link & construction=minor	{ add mkgmap:road-speed = '2'; }					[0x01 road_class=3 resolution 17]
-highway=trunk & construction=minor		{ add mkgmap:road-speed = '4'; add mkgmap:road-speed-min = '3'; }	[0x02 road_class=3 resolution 17]
-highway=trunk_link & construction=minor		{ add mkgmap:road-speed = '2'; }					[0x02 road_class=2 resolution 17]
-highway=primary & construction=minor		{ add mkgmap:road-speed = '3'; }					[0x02 road_class=3 resolution 17]
-highway=primary_link & construction=minor	{ add mkgmap:road-speed = '2'; }					[0x02 road_class=2 resolution 17]
-(highway=secondary | highway=secondary_link) & construction=minor	{ add mkgmap:road-speed = '2'; }		[0x03 road_class=2 resolution 18]
-(highway=tertiary | highway=tertiary_link) & construction=minor		{ add mkgmap:road-speed = '2'; }		[0x04 road_class=2 resolution 20]
+highway=motorway & construction=minor { add mkgmap:road-speed = '4'; add mkgmap:road-speed-min = '3'; } [0x01 road_class=4 resolution 12]
+highway=motorway_link & construction=minor { add mkgmap:road-speed = '2'; } [0x01 road_class=3 resolution 17]
+highway=trunk & construction=minor { add mkgmap:road-speed = '4'; add mkgmap:road-speed-min = '3'; } [0x02 road_class=3 resolution 17]
+highway=trunk_link & construction=minor { add mkgmap:road-speed = '2'; } [0x02 road_class=2 resolution 17]
+highway=primary & construction=minor { add mkgmap:road-speed = '3'; } [0x02 road_class=3 resolution 17]
+highway=primary_link & construction=minor { add mkgmap:road-speed = '2'; } [0x02 road_class=2 resolution 17]
+(highway=secondary | highway=secondary_link) & construction=minor { add mkgmap:road-speed = '2'; } [0x03 road_class=2 resolution 18]
+(highway=tertiary | highway=tertiary_link) & construction=minor { add mkgmap:road-speed = '2'; } [0x04 road_class=2 resolution 20]
 
 # Treat disused ways as highway=service, but at lower road_speed.
 highway=* & disused=yes [0x07 road_class=0 road_speed=1 resolution 22]
@@ -207,11 +207,11 @@ highway=* & (vehicle=no | vehicle=destination | vehicle=agricultural | vehicle=p
 # highways
 
 # set highway name equal to display_name to prevent different naming
-highway=*	{ set name='${display_name}'; }
+highway=*   { set name='${display_name}'; }
 
 # access restrictions
-highway=* & (highway~'motorway.*' | highway~'trunk.*' | highway~'primary.*')	{ add foot=no; }
-highway=* & (highway=motorway | motorroad=yes)					{ add bicycle=no; add foot=no; }
+highway=* & (highway~'motorway.*' | highway~'trunk.*' | highway~'primary.*')  { add foot=no; }
+highway=* & (highway=motorway | motorroad=yes)  { add bicycle=no; add foot=no; }
 
 # motorway
 junction=roundabout & highway~'motorway.*'  [0x12001 resolution 24-22 continue with_actions]
@@ -354,20 +354,20 @@ highway=track                               [0x0a    resolution 24-23 road_class
 # pathes
 
 highway=path                                            { add motorcar=no; add motorcycle=no; add emergency=no; add taxi=no; add bus=no; add delivery=no; add goods=no; add hgv=no; }
-#highway=path & (mtb:scale=* | mtb:scale:imba=*)	{ add bicycle=yes; }
-highway=path & (mtb:scale>0 | mtb:scale:imba>0)		{ set toll=yes; }
-highway=path & (mtb:scale>2 | mtb:scale:imba>1)		{ set bicycle=no; }
-#highway=path & (sac_scale=*)				{ add foot=yes; }
-highway=path & (sac_scale~'.*(mountain|alpine)_hiking')	{ add bicycle=no; }
+#highway=path & (mtb:scale=* | mtb:scale:imba=*)         { add bicycle=yes; }
+highway=path & (mtb:scale>0 | mtb:scale:imba>0)         { set toll=yes; }
+highway=path & (mtb:scale>2 | mtb:scale:imba>1)         { set bicycle=no; }
+#highway=path & (sac_scale=*)                            { add foot=yes; }
+highway=path & (sac_scale~'.*(mountain|alpine)_hiking') { add bicycle=no; }
 
-#highway=path						[0x12012 resolution 21-21 continue with_actions]
-highway=path						[0x11012 resolution 22-22 continue with_actions]
-#highway=path & sac_scale=hiking			[0x3a    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=mountain_hiking		[0x3b    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=demanding_mountain_hiking	[0x3c    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=alpine_hiking			[0x3d    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=demanding_alpine_hiking	[0x3e    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=difficult_alpine_hiking	[0x3f    resolution 24-23 road_class=0 road_speed=0]
+#highway=path                                            [0x12012 resolution 21-21 continue with_actions]
+highway=path                                            [0x11012 resolution 22-22 continue with_actions]
+#highway=path & sac_scale=hiking                         [0x3a    resolution 24-23 road_class=0 road_speed=0]
+#highway=path & sac_scale=mountain_hiking                [0x3b    resolution 24-23 road_class=0 road_speed=0]
+#highway=path & sac_scale=demanding_mountain_hiking      [0x3c    resolution 24-23 road_class=0 road_speed=0]
+#highway=path & sac_scale=alpine_hiking                  [0x3d    resolution 24-23 road_class=0 road_speed=0]
+#highway=path & sac_scale=demanding_alpine_hiking        [0x3e    resolution 24-23 road_class=0 road_speed=0]
+#highway=path & sac_scale=difficult_alpine_hiking        [0x3f    resolution 24-23 road_class=0 road_speed=0]
 
 highway=path & (mtb:scale<2)                            [0x12 resolution 24-23 road_class=0 road_speed=1]
 highway=path                                            [0x12 resolution 24-23 road_class=0 road_speed=0]
@@ -386,34 +386,34 @@ junction=roundabout                                     [0x00c06 resolution 24-2
 route=ferry {add mkgmap:ferry=1}    [0x1a road_class=0 road_speed=0 resolution 18]
 
 # aeroway
-aeroway=runway      	[0x27 resolution 20]
-aeroway=taxiway     	[0x27 resolution 20]
+aeroway=runway      [0x27 resolution 20]
+aeroway=taxiway     [0x27 resolution 20]
 
 # railway
 railway=rail            [0x11000 resolution 22-20 continue]
 railway=rail            [0x00    resolution 24-23]
 railway=narrow_gauge	[0x14 resolution 22]	# 0x10e0d	# narrow gauge
-railway=light_rail	[0x14 resolution 21]	# 0x10e0e	# suburban railway
-railway=tram 		[0x14 resolution 21]	# 0x10e0f	# tram
+railway=light_rail		[0x14 resolution 21]	# 0x10e0e	# suburban railway
+railway=tram 			[0x14 resolution 21]	# 0x10e0f	# tram
 railway=subway          [0x14 resolution 22]	# 0x10e10	# subway
-railway=funicular	[0x14 resolution 21]	# 0x10e11	# funicular
+railway=funicular		[0x14 resolution 21]	# 0x10e11	# funicular
 railway=preserved       [0x14 resolution 23]	# 0x10e12	# recreational railway
-railway=monorail	[0x14 resolution 23] 	# 0x10e13	# maglev
+railway=monorail		[0x14 resolution 23] 	# 0x10e13	# maglev
 
 # aerialway and lift
-aerialway=cable_car | aerialway=gondola		[0x10e14 resolution 21]
-aerialway=chair_lift  				[0x10e15 resolution 21]
-aerialway=drag_lift				[0x10e16 resolution 21]
-aerialway=goods						[0x10e17 resolution 24]
+aerialway=cable_car | aerialway=gondola	[0x10e14 resolution 21]
+aerialway=chair_lift  					[0x10e15 resolution 21]
+aerialway=drag_lift						[0x10e16 resolution 21]
+aerialway=goods							[0x10e17 resolution 24]
 
 # barrier
-barrier=wall 					[0x10f01 resolution 24 continue]
+barrier=wall 								[0x10f01 resolution 24 continue]
 barrier=retaining_wall | barrier=city_wall 	[0x10f02 resolution 24 continue]
-barrier=fence                               	[0x10f03 resolution 24 continue]
-barrier=hedge                               	[0x10f0c resolution 24 continue]
+barrier=fence                               [0x10f03 resolution 24 continue]
+barrier=hedge                               [0x10f0c resolution 24 continue]
 
 # man made
-man_made=pipeline   		[0x28 resolution 22]
+man_made=pipeline   			[0x28 resolution 22]
 man_made=dyke | embankment=*	[0x10f00 resolution 22]
 
 # power
@@ -424,8 +424,8 @@ natural=coastline   [0x15 resolution 12]
 natural=cliff       [0x10f04 resolution 22]
 
 # waterway
-waterway=dam	[0x10e02 resolution 21]
-waterway=weir	[0x10e03 resolution 24]
+waterway=dam					[0x10e02 resolution 21]
+waterway=weir					[0x10e03 resolution 24]
 # 0x10e04	# lock (gate)
 
 waterway=river | waterway=canal [0x1101f resolution 20-18 continue]
