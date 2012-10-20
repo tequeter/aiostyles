@@ -1,1 +1,0 @@
-addr:housenumber=* {name '${name} (${addr:street} ${addr:housenumber})' | '${addr:street} ${addr:housenumber}'} [0x7100 resolution 24]
