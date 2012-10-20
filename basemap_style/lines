@@ -138,13 +138,13 @@ highway=* & disused=yes	[0x10002 resolution 23]
 highway=*   				{ set display_name = '${ref} ${name}' | '${ref}' | '${name}'; }
 
 # backup street name
-highway=*				{ set streetname='${name}'; }
+#highway=*				{ set streetname='${name}'; }
 
 #------------------------------------------------------------------------------
 # overlays
 
 # set name equal to display_name to prevent showing seperate naming from highway
-highway=*   				{ set name='${display_name}'; }
+#highway=*   				{ set name='${display_name}'; }
 
 # oneway overlay
 oneway=yes & highway=*              	[0x10800 resolution 24-23 continue with_actions]
@@ -207,7 +207,7 @@ highway=* & (vehicle=no | vehicle=destination | vehicle=agricultural | vehicle=p
 # highways
 
 # set highway name equal to display_name to prevent different naming
-highway=*					{ set name='${display_name}'; }
+#highway=*					{ set name='${display_name}'; }
 
 # access restrictions
 highway=* & (highway~'motorway.*' | highway~'trunk.*' | highway~'primary.*')	{ add foot=no; }
