@@ -330,27 +330,27 @@ highway=steps					[0x13    resolution 24-23 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 # tracks
 
-highway=track & tracktype~'grade[3-5]'      { add motorcar=no; add motorcycle=no; }
-highway=track & tracktype~'grade[3-5]'      { add taxi=no; add bus=no; add delivery=no; add goods=no; add hgv=no; }
+highway=track & tracktype~'grade[3-5]'		{ add motorcar=no; add motorcycle=no; }
+highway=track & tracktype~'grade[3-5]'		{ add taxi=no; add bus=no; add delivery=no; add goods=no; add hgv=no; }
 
-highway=track & tracktype~'grade[1-1]'      [0x1200e resolution 21-20 continue with_actions]
-highway=track & tracktype~'grade[2-2]'      [0x1200f resolution 21-20 continue with_actions]
-highway=track & tracktype~'grade[3-4]'      [0x12010 resolution 21-21 continue with_actions]
-highway=track & tracktype=grade1            [0x1100e resolution 22-22 continue with_actions]
-highway=track & tracktype=grade1            [0x0e    resolution 24-23 road_class=2 road_speed=2]
-highway=track & tracktype=grade2            [0x1100f resolution 22-22 continue with_actions]
-highway=track & tracktype=grade2            [0x0f    resolution 24-23 road_class=2 road_speed=1]
-highway=track & tracktype=grade3            [0x11010 resolution 22-22 continue with_actions]
-highway=track & tracktype=grade3            [0x10    resolution 24-23 road_class=0 road_speed=0]
-highway=track & tracktype=grade4            [0x11011 resolution 22-22 continue with_actions]
-highway=track & tracktype=grade4            [0x11    resolution 24-23 road_class=0 road_speed=0]
-highway=track & tracktype=grade5            [0x11011 resolution 22-22 continue with_actions]
-highway=track & tracktype=grade5            [0x11    resolution 24-23 road_class=0 road_speed=0]
+highway=track & tracktype~'grade[1-1]'		[0x1200e resolution 21-20 continue with_actions]
+highway=track & tracktype~'grade[2-2]'		[0x1200f resolution 21-20 continue with_actions]
+highway=track & tracktype~'grade[3-4]'		[0x12010 resolution 21-21 continue with_actions]
+highway=track & tracktype=grade1		[0x1100e resolution 22-22 continue with_actions]
+highway=track & tracktype=grade1		[0x0e    resolution 24-23 road_class=2 road_speed=2]
+highway=track & tracktype=grade2		[0x1100f resolution 22-22 continue with_actions]
+highway=track & tracktype=grade2		[0x0f    resolution 24-23 road_class=2 road_speed=1]
+highway=track & tracktype=grade3		[0x11010 resolution 22-22 continue with_actions]
+highway=track & tracktype=grade3		[0x10    resolution 24-23 road_class=0 road_speed=0]
+highway=track & tracktype=grade4		[0x11011 resolution 22-22 continue with_actions]
+highway=track & tracktype=grade4		[0x11    resolution 24-23 road_class=0 road_speed=0]
+highway=track & tracktype=grade5		[0x11011 resolution 22-22 continue with_actions]
+highway=track & tracktype=grade5		[0x11    resolution 24-23 road_class=0 road_speed=0]
 
-#highway=track                               { add motorcar=no; add motorcycle=no; }
-#highway=track                               [0x1200a resolution 21-21 continue with_actions]
-highway=track                               [0x1100a resolution 22-22 continue with_actions]
-highway=track                               [0x0a    resolution 24-23 road_class=0 road_speed=0]
+#highway=track					{ add motorcar=no; add motorcycle=no; }
+#highway=track					[0x1200a resolution 21-21 continue with_actions]
+highway=track					[0x1100a resolution 22-22 continue with_actions]
+highway=track					[0x0a    resolution 24-23 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # pathes
