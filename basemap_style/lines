@@ -234,7 +234,7 @@ highway=trunk_link                          	[0x0b	 resolution 24-23 road_class=
 highway=trunk					{ add oneway=yes; name '${streetname} ${ref|highway-symbol:hbox}' | '${ref|highway-symbol:hbox}' | '${name}'; }
 highway=trunk                               	[0x12002 resolution 21-17 continue with_actions]
 highway=trunk                               	[0x11002 resolution 22-22 continue with_actions]
-highway=trunk                               	[0x02     resolution 24-23 road_class=3 road_speed=6]
+highway=trunk                               	[0x02     resolution 24-23 road_class=4 road_speed=6]
 
 # primary
 junction=roundabout & highway~'primary.*'   	[0x12002 resolution 24-22 continue with_actions]
@@ -281,16 +281,16 @@ highway=* & junction=roundabout			[0x0c	 resolution 24-22 road_class=1 road_spee
 # unclassified
 highway=unclassified | highway=minor        	[0x12005 resolution 21-20 continue with_actions]
 highway=unclassified | highway=minor        	[0x11005 resolution 22-22 continue with_actions]
-highway=unclassified | highway=minor        	[0x05    resolution 24-23 road_class=2 road_speed=2]
+highway=unclassified | highway=minor        	[0x05    resolution 24-23 road_class=1 road_speed=2]
 
 # residential
 highway=residential | highway=living_street 	[0x12006 resolution 21-21 continue with_actions]
 highway=residential | highway=living_street 	[0x11006 resolution 22-22 continue with_actions]
-highway=residential | highway=living_street 	[0x06    resolution 24-23 road_class=1 road_speed=2]
+highway=residential | highway=living_street 	[0x06    resolution 24-23 road_class=0 road_speed=2]
 
 # service
 highway=service | highway=estate            	[0x12007 resolution 22-22 continue with_actions]
-highway=service | highway=estate            	[0x07    resolution 24-23 road_class=1 road_speed=2]
+highway=service | highway=estate            	[0x07    resolution 24-23 road_class=0 road_speed=1]
 
 #------------------------------------------------------------------------------
 # designated ways
@@ -302,16 +302,16 @@ highway=bridleway				{ set highway=path; add horse=designated; add motorcar=no; 
 highway=* & horse=designated			[0x10418 resolution 24 continue with_actions]
 
 # cycleway
-highway=cycleway				{ add motorcar=no; add motorcycle=no; add bicycle=yes; }
+highway=cycleway				{ add motorcar=no; add motorcycle=no; add bicycle=yes; add foot=no; }
 highway=cycleway                            	[0x11016 resolution 22-21 continue with_actions]
-highway=cycleway                            	[0x16    resolution 24-23 road_class=2 road_speed=2]
+highway=cycleway                            	[0x16    resolution 24-23 road_class=0 road_speed=1]
 
 # cycleway overlay
 highway=* & bicycle=designated			[0x10416 resolution 24 continue with_actions]
 
 # footway
-highway=footway & bicycle=yes			{ add motorcar=no; add motorcycle=no; add foot=yes; }
-highway=footway					{ add motorcar=no; add motorcycle=no; add bicycle=no; add foot=yes; }
+highway=footway & bicycle=yes			{ add motorcar=no; add motorcycle=no; add foot=yes; add bicycle=yes }
+highway=footway					{ add motorcar=no; add motorcycle=no; add foot=yes; add bicycle=no; }
 #highway=footway                             	[0x1100d resolution 22-22 continue with_actions]
 highway=footway                             	[0x0d    resolution 24-23 road_class=0 road_speed=0]
 
@@ -319,7 +319,7 @@ highway=footway                             	[0x0d    resolution 24-23 road_clas
 highway=* & foot=designated			[0x10415 resolution 24 continue with_actions]
 
 # pedestrian
-highway=pedestrian & bicycle=yes		{ add motorcar=no; add motorcycle=no; add foot=yes; }
+highway=pedestrian & bicycle=yes		{ add motorcar=no; add motorcycle=no; add bicycle=yes; add foot=yes; }
 highway=pedestrian				{ add motorcar=no; add motorcycle=no; add bicycle=no; add foot=yes; }
 #highway=pedestrian & (area!=yes & area!=true & area!=1) [0x1100d resolution 22-22 continue with_actions]
 highway=pedestrian & (area!=yes & area!=true & area!=1) [0x0d    resolution 24-23 road_class=0 road_speed=0]
