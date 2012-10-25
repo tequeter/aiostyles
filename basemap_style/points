@@ -485,7 +485,8 @@ amenity=pharmacy [0x2e05 resolution 23]
 
 # Convenience # Bedarfsartikel
 shop=convenience [0x2e06 resolution 24]
-shop=kiosk | shop=newsagent [0x10f06 resolution 24]
+#shop=kiosk | shop=newsagent [0x10f06 resolution 24]
+shop=kiosk | shop=newsagent [0x2e1a resolution 24] # keine Darstellung in Karte
 
 # Apparel/Clothing
 shop=clothes [0x2e07 resolution 24]
