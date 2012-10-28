@@ -95,8 +95,8 @@ place=locality  [0x2800 resolution 22]
 
 # Man Made
 # 0x6401 	# bridge
-tourism=alpine_hut 	[0x6402 resolution 22 continue]
-amenity=shelter 	[0x6402 resolution 23 continue]
+tourism=alpine_hut 	[0x6402 resolution 24 continue]
+amenity=shelter 	[0x6402 resolution 24 continue]
 # 0x6402	# skyscaper
 # 0x6403	# thombstone
 amenity=grave_yard | landuse=cemetery [0x6404 resolution 24]
@@ -118,7 +118,7 @@ man_made=tower 	[0x6411 resolution 24]
 amenity=water_well		[0x6414 resolution 24]
 man_made=water_tower 	[0x6415 resolution 24]
 amenity=hunting_stand 	[0x6417 resolution 24]
-man_made=survey_point 	[0x6418 resolution 22]
+man_made=survey_point 	[0x6418 resolution 24]
 man_made=flagpole 		[0x6419 resolution 23]
 man_made=reservoir_covered | man_made=gasometer [0x641a resolution 24]
 # 0x64ss
@@ -135,7 +135,7 @@ natural=bay & name=* 	[0x6503 resolution 24]
 # 0x6407	# cove
 natural=waterfall | waterway=waterfall [0x6508 resolution 23]
 # 0c6509	# geyser
-natural=glacier 		[0x650a resolution 21]
+natural=glacier 		[0x650a resolution 22]
 harbour=*				[0x650b	resolution 23]
 place=island    		[0x650c resolution 20]
 natural=water & name=* 	[0x650d resolution 24]
@@ -155,7 +155,7 @@ tourism=viewpoint 		[0x6600 resolution 23]
 # 0x6603	# basin
 natural=beach 			[0x6604 resolution 23]
 # 0x6505	# beach
-atural=cape				[0x6606 resolution 22]
+natural=cape				[0x6606 resolution 22]
 natural=cliff 			[0x6607 resolution 23]
 # 0x6608 	# crater
 landuse=meadow & name=* [0x6609 resolution 22 continue]
@@ -171,15 +171,15 @@ natural=volcano 		[0x660e resolution 23]
 # 0x6613	# ridge
 # 0x6614	# rock
 # 0x6615	# slope
-natural=peak & ele>2600 	{ name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 21]
-natural=peak & ele>2300 	{ name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 22]
-natural=peak | natural=hill { name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 23]
+natural=peak & ele>2600 	{ name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 22]
+natural=peak & ele>2300 	{ name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 23]
+natural=peak | natural=hill { name '${name|def:}${ele|height:m=>ft|def:}' } [0x6616 resolution 24]
 # 0x6617	# valley
 # 0x6618	# woods
-mountain_pass=yes 		[0x6619 resolution 22 continue]
+mountain_pass=yes 		[0x6619 resolution 23 continue]
 # 0x66ss
 
-natural=cave_entrance 	[0x11502 resolution 23]	# type without category
+natural=cave_entrance 	[0x11502 resolution 24]	# type without category
 # 0x11503	# mineshaft	# type without category
 natural=tree [0x1150b resolution 24]	# type without category
 
@@ -214,7 +214,7 @@ barrier=toll_booth { add toll=yes; } [0x2500 resolution 23]
 # Fuel
 
 # Auto Fuel
-amenity=fuel [0x2f01 resolution 22]
+amenity=fuel [0x2f01 resolution 24]
 # 0x44ss
 
 # Truck Stop
@@ -237,21 +237,22 @@ shop=car | shop=car_parts [0x2f07 resolution 24]
 # 0x2f0a
 
 # Parking
-amenity=parking & (parking=multi-storey | parking=underground) | amenity=parking_entrance [0x4d00 resolution 23]
-amenity=parking [0x2f0b resolution 23]
+amenity=parking & (parking=multi-storey | parking=underground) | amenity=parking_entrance [0x4d00 resolution 24]
+amenity=parking &  ( capacity:disabled=yes |  capacity:disabled >=1 ) [0x4d01 resolution 24]
+amenity=parking [0x2f0b resolution 24]
 # 0x4dss
 
 # Rest Area/Tourist Info
-highway=services | highway=rest_area [0x2f0c resolution 22]
+highway=services | highway=rest_area [0x2f0c resolution 23]
 tourism=information & information=guidepost [0x11517 resolution 24]	# type without category
 tourism=information [0x4c00 resolution 24]
 # 0x4css	# information
-amenity=toilets [0x4e00 resolution 22]
+amenity=toilets [0x4e00 resolution 24]
 # 0x4ess	# restroom
-amenity=shower [0x4f01 resolution 23]
+amenity=shower [0x4f01 resolution 24]
 # 0x4fss	# shower
 # 0x50ss	# drinking water
-amenity=emergency_phone [0x5101 resolution 22]
+amenity=emergency_phone [0x5101 resolution 24]
 # 0x51ss	# telephone
 
 # Auto Club
@@ -275,7 +276,7 @@ highway=milestone [0x1150a resolution 24]	# type without category
 aeroway=aerodrome 	[0x2f04 resolution 23]
 aeroway=terminal 	[0x5901 resolution 22]
 # 0x59ss
-aeroway=helipad 	[0x1150d resolution 22]	# type without category
+aeroway=helipad 	[0x1150d resolution 23]	# type without category
 aeroway=gate		[0x1150e resolution 24]	# type without category
 # 0x11004
 
@@ -452,7 +453,7 @@ cuisine=sushi | cuisine=savory_pancakes | cuisine=japanese [0x2a1f resolution 24
 amenity=restaurant [0x2a00 resolution 24]
 # [0x10b00 resolution 24]
 
-amenity=drinking_water [0x4501 resolution 22]
+amenity=drinking_water [0x4501 resolution 24]
 amenity=ice_cream | cuisine=ice_cream [0x4502 resolution 24]
 # 0x45ss
 
@@ -545,10 +546,10 @@ shop=* & shop!=vacant [0x2e0a resolution 24]
 #------------------------------------------------------------------------------
 # Hospital
 
-amenity=hospital [0x3002 resolution 22]
-amenity=rescue_box [0x4b01 resolution 22]
-highway=emergency_access_point { add ref=''; add name=''; add operator=''; add emergency_telephone_code=''; name '${ref} ${name} ${operator} ${emergency_telephone_code}'; } [0x4b02 resolution 22]
-medical=aed [0x4b03 resolution 22]
+amenity=hospital [0x3002 resolution 23]
+amenity=rescue_box [0x4b01 resolution 23]
+highway=emergency_access_point { add ref=''; add name=''; add operator=''; add emergency_telephone_code=''; name '${ref} ${name} ${operator} ${emergency_telephone_code}'; } [0x4b02 resolution 23]
+medical=aed [0x4b03 resolution 23]
 # 0x4bss
 
 #------------------------------------------------------------------------------
@@ -558,7 +559,7 @@ medical=aed [0x4b03 resolution 22]
 amenity=library [0x2c03 resolution 24]
 
 # School
-amenity=school [0x2c05 resolution 23]
+amenity=school [0x2c05 resolution 24]
 amenity=college [0x2c05 resolution 24]
 amenity=university [0x2c05 resolution 23]
 # 0x2c14
@@ -566,11 +567,11 @@ amenity=university [0x2c05 resolution 23]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship & religion=muslim [0x2c0d resolution 23]
+amenity=place_of_worship & religion=muslim [0x2c0d resolution 24]
 amenity=place_of_worship & religion=christian [0x2c0e resolution 24]
 amenity=place_of_worship & religion=buddhist [0x2c0f resolution 24]
-amenity=place_of_worship & religion=jewish [0x2c10 resolution 23]
-amenity=place_of_worship [0x2c0b resolution 23]
+amenity=place_of_worship & religion=jewish [0x2c10 resolution 24]
+amenity=place_of_worship [0x2c0b resolution 24]
 # 0x2c17
 # 0x6424
 historic=wayside_shrine | historic=wayside_cross [0x11509 resolution 24]	# type without category
@@ -591,13 +592,13 @@ amenity=bureau_de_change { name '${operator} ${name}' | '${operator}' | '${name}
 amenity=waste_transfer_station | amenity=recycling [0x2f15 resolution 24]
 
 # Police Station
-amenity=police [0x3001 resolution 22]
+amenity=police [0x3001 resolution 23]
 
 # City Hall 
-amenity=townhall [0x3003 resolution 22]
+amenity=townhall [0x3003 resolution 24]
 
 # Court House 
-amenity=courthouse [0x3004 resolution 23]
+amenity=courthouse [0x3004 resolution 24]
 
 # Community Center
 amenity=community_centre [0x3005 resolution 24]
@@ -611,7 +612,7 @@ barrier=border_control [0x3006 resolution 24]
 # 0x3007
 
 # Fire Department 
-amenity=fire_station [0x3008 resolution 22]
+amenity=fire_station [0x3008 resolution 23]
 
 # Other
 amenity=prison [0x3009 resolution 24]
@@ -656,10 +657,10 @@ amenity=fountain [0x11505 resolution 24]	# type without category
 
 # Arena/Track
 leisure=stadium [0x2c08 resolution 23]
-leisure=track [0x2c08 resolution 23]
+leisure=track [0x2c08 resolution 24]
 
 # Golf Course
-leisure=golf_course [0x2d05 resolution 23]
+leisure=golf_course [0x2d05 resolution 24]
 leisure=miniature_golf [0x4001 resolution 24]
 # 0x40ss
 # [0x10e05 resolution 24]
@@ -698,7 +699,7 @@ sport=diving | sport=scuba_diving [0x540a resolution 24]
 #leisure=pitch [0x1150c resolution 23]	# type without category
 
 # Air Field
-sport=paragliding | sport=free_flying [0x2d0b resolution 14]
+sport=paragliding | sport=free_flying [0x2d0b resolution 24]
 
 #leisure=dance
 

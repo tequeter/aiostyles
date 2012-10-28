@@ -167,7 +167,7 @@ natural=land [0x27 resolution 10]
 
 natural=sea [0x32 resolution 10]
 natural=water [0x3e resolution 17 continue]
-natural=water [0x3c resolution 22]
+natural=water [0x3c resolution 23]
 natural=beach [0x3d resolution 17]
 
 #------------------------------------------------------------------------------
