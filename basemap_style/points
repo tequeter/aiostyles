@@ -76,6 +76,8 @@ mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
 
 mkgmap:is_in!=* & is_in=* { set mkgmap:is_in='${is_in}' }
 
+
+
 #------------------------------------------------------------------------------
 # Places
 
@@ -93,10 +95,13 @@ place=locality  [0x2800 resolution 22]
 #------------------------------------------------------------------------------
 # Geographic Places
 
+
+
 # Man Made
 # 0x6401 	# bridge
 tourism=alpine_hut 	[0x6402 resolution 24 continue]
 amenity=shelter 	[0x6402 resolution 24 continue]
+
 # 0x6402	# skyscaper
 # 0x6403	# thombstone
 amenity=grave_yard | landuse=cemetery [0x6404 resolution 24]
@@ -106,6 +111,8 @@ amenity=grave_yard | landuse=cemetery [0x6404 resolution 24]
 # 0x6408	# hospital
 # 0x6409	# levee
 # 0x640a	# locale
+building=entrance & addr:housenumber=* & name!=* { set name='${addr:housenumber}' } [0x640a resolution 24]
+
 military=bunker [0x640b resolution 24]
 man_made=adit | man_made=mineshaft [0x640c resolution 24]
 man_made=petroleum_well [0x640d	resolution 24]
