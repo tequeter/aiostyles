@@ -110,9 +110,7 @@ amenity=grave_yard | landuse=cemetery [0x6404 resolution 24]
 # 0x6407	# dam
 # 0x6408	# hospital
 # 0x6409	# levee
-# 0x640a	# locale
-building=entrance & addr:housenumber=* & name!=* { set name='${addr:housenumber}' } [0x640a resolution 24]
-
+# 0x640	# locale
 military=bunker [0x640b resolution 24]
 man_made=adit | man_made=mineshaft [0x640c resolution 24]
 man_made=petroleum_well [0x640d	resolution 24]
@@ -128,6 +126,7 @@ amenity=hunting_stand 	[0x6417 resolution 24]
 man_made=survey_point 	[0x6418 resolution 24]
 man_made=flagpole 		[0x6419 resolution 23]
 man_made=reservoir_covered | man_made=gasometer [0x641a resolution 24]
+building=entrance & addr:housenumber=* & name!=* { set name='${addr:housenumber}' } [0x641b resolution 24]
 # 0x64ss
 man_made=crane [0x11504 resolution 24]	# type without category
 man_made=surveillance [0x11518 resolution 24]	# type without category
