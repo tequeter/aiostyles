@@ -1,10 +1,12 @@
-#------------------------------------------------------------------------------
-# disused
-
-#disused=yes | abandoned=yes
-
-#------------------------------------------------------------------------------
-# locator
+# -------------------------------------------------------------------
+# This is the default mkgmap style file for converting OSM nodes
+# into Garmin POIs.
+# Any line prefaced with # is a comment and will not be applied.
+# Each line is a rule, of the generalised format:
+#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
+# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
+# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
+# for more information.
 
 # first set the country code
 mkgmap:country!=* & mkgmap:admin_level2=* { set mkgmap:country='${mkgmap:admin_level2}' }
@@ -18,14 +20,15 @@ mkgmap:country=NLD & mkgmap:region!=* & mkgmap:admin_level4=* { set mkgmap:regio
 mkgmap:country=NLD & mkgmap:city!=* & mkgmap:admin_level10=* { set mkgmap:city='${mkgmap:admin_level10}' } 
 mkgmap:country=NLD & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' } 
 
-# Germany = DEU
+# Germany = DEU cities
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' } 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level7=* { set mkgmap:city='${mkgmap:admin_level7}' } 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level6=* { set mkgmap:city='${mkgmap:admin_level6}' } 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level9=* { set mkgmap:city='${mkgmap:admin_level9}' } 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level10=* { set mkgmap:city='${mkgmap:admin_level10}' } 
 
-# Other countrys' cities
+
+# other european countries
 mkgmap:country=AUT & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' }
 mkgmap:country=BEL & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' }
 mkgmap:country=CZE & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' }
@@ -50,6 +53,10 @@ mkgmap:country=SWE & mkgmap:city!=* & mkgmap:admin_level9=* { set mkgmap:city='$
 mkgmap:country=SWE & mkgmap:city!=* & mkgmap:admin_level7=* { set mkgmap:city='${mkgmap:admin_level7}' }
 mkgmap:country=CHE & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' }
  
+# Canda
+mkgmap:country=CAN & mkgmap:region!=* & mkgmap:admin_level4=* { set mkgmap:region='${mkgmap:admin_level4}' }
+mkgmap:country=CAN & mkgmap:city!=* & mkgmap:admin_level8=* { set mkgmap:city='${mkgmap:admin_level8}' }
+ 
 # common rules for all the rest of countries
 mkgmap:region!=* & mkgmap:admin_level6=* { set mkgmap:region='${mkgmap:admin_level6}' } 
 mkgmap:region!=* & mkgmap:admin_level5=* { set mkgmap:region='${mkgmap:admin_level5}' } 
@@ -73,9 +80,9 @@ mkgmap:street!=* & addr:housename=* { set mkgmap:street='${addr:housename}' }
 mkgmap:housenumber!=* & addr:housenumber=* { set mkgmap:housenumber='${addr:housenumber}' }
 
 mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
+mkgmap:phone!=* & contact:phone=* { add mkgmap:phone='${contact:phone}' }
 
 mkgmap:is_in!=* & is_in=* { set mkgmap:is_in='${is_in}' }
-
 
 
 #------------------------------------------------------------------------------
@@ -124,7 +131,7 @@ amenity=water_well		[0x6414 resolution 24]
 man_made=water_tower 	[0x6415 resolution 24]
 amenity=hunting_stand 	[0x6417 resolution 24]
 man_made=survey_point 	[0x6418 resolution 24]
-man_made=flagpole 		[0x6419 resolution 23]
+man_made=flagpole 		[0x6419 resolution 24]
 man_made=reservoir_covered | man_made=gasometer [0x641a resolution 24]
 building=entrance & addr:housenumber=* & name!=* { set name='${addr:housenumber}' } [0x641b resolution 24]
 # 0x64ss
@@ -139,13 +146,13 @@ natural=bay & name=* 	[0x6503 resolution 24]
 # 0x6504	# bend
 # 0x6506	# channel
 # 0x6407	# cove
-natural=waterfall | waterway=waterfall [0x6508 resolution 23]
+natural=waterfall | waterway=waterfall [0x6508 resolution 24]
 # 0c6509	# geyser
-natural=glacier 		[0x650a resolution 22]
-harbour=*				[0x650b	resolution 23]
+natural=glacier 		[0x650a resolution 23]
+harbour=*			[0x650b	resolution 24]
 place=island    		[0x650c resolution 20]
 natural=water & name=* 	[0x650d resolution 24]
-waterway=rapids			[0x650e	resolution 23]
+waterway=rapids			[0x650e	resolution 24]
 landuse=reservoir		[0x650f resolution 24]
 # 0x6510	# sea
 natural=spring 			[0x6511 resolution 23]
@@ -155,16 +162,16 @@ natural=wetland 		[0x6513 resolution 23]
 # 0x11511	# ford	# type without category
 
 # Land Features
-tourism=viewpoint 		[0x6600 resolution 23]
+tourism=viewpoint 		[0x6600 resolution 24]
 # 0x6601 	# arch
 # 0x6602	# area
 # 0x6603	# basin
 natural=beach 			[0x6604 resolution 23]
 # 0x6505	# beach
-natural=cape				[0x6606 resolution 22]
+natural=cape			[0x6606 resolution 23]
 natural=cliff 			[0x6607 resolution 23]
 # 0x6608 	# crater
-landuse=meadow & name=* [0x6609 resolution 22 continue]
+landuse=meadow & name=* [0x6609 resolution 23 continue]
 # 0x660a	# forest
 # 0x660b	# gap
 # 0x660c	# gut
@@ -211,7 +218,7 @@ highway=motorway_junction [0x2000 resolution 22]
 # 0x24ss
 
 # Toll Booth
-barrier=toll_booth { add toll=yes; } [0x2500 resolution 23]
+barrier=toll_booth { add toll=yes; } [0x2500 resolution 24]
 
 # Exit with information
 # 0x26ss
@@ -249,7 +256,7 @@ amenity=parking [0x2f0b resolution 24]
 # 0x4dss
 
 # Rest Area/Tourist Info
-highway=services | highway=rest_area [0x2f0c resolution 23]
+highway=services | highway=rest_area [0x2f0c resolution 24]
 tourism=information & information=guidepost [0x11517 resolution 24]	# type without category
 tourism=information [0x4c00 resolution 24]
 # 0x4css	# information
@@ -279,21 +286,21 @@ highway=milestone [0x1150a resolution 24]	# type without category
 # see Auto Services
 
 # Air Transportation
-aeroway=aerodrome 	[0x2f04 resolution 23]
-aeroway=terminal 	[0x5901 resolution 22]
+aeroway=aerodrome 	[0x2f04 resolution 24]
+aeroway=terminal 	[0x5901 resolution 24]
 # 0x59ss
-aeroway=helipad 	[0x1150d resolution 23]	# type without category
+aeroway=helipad 	[0x1150d resolution 24]	# type without category
 aeroway=gate		[0x1150e resolution 24]	# type without category
 # 0x11004
 
 # Ground Transportation
-railway=station { name '${name} (${route_ref})'; } [0x2f08 resolution 22]
-railway=halt { name '${name} (${route_ref})'; } [0x2f08 resolution 23]
+railway=station { name '${name} (${route_ref})'; } [0x2f08 resolution 23]
+railway=halt { name '${name} (${route_ref})'; } [0x2f08 resolution 24]
 # 0x2f28 ?
 # 0x11008
 
 # Transit Service 
-railway=tram_stop { name '${name} (${route_ref})'; } [0x2f17 resolution 23]
+railway=tram_stop { name '${name} (${route_ref})'; } [0x2f17 resolution 24]
 amenity=bus_station | highway=bus_stop { name '${name} (${route_ref})'; } [0x2f17 resolution 24]
 
 #amenity=taxi
@@ -334,7 +341,7 @@ historic=memorial [0x2c11 resolution 24]
 # 0x11507	# archaeological site	# type without category
 
 # Landmark
-tourism=attraction [0x2c04 resolution 23]
+tourism=attraction [0x2c04 resolution 24]
 # 0x2c12
 historic=castle [0x5201 resolution 24]
 historic=ruins [0x5202 resolution 24]
@@ -346,7 +353,7 @@ historic=boundary_stone [0x5206 resolution 24]
 # 0x11508	# monument	# type without category
 
 # Park/Garden
-leisure=garden & name=* [0x2c06 resolution 23]
+leisure=garden & name=* [0x2c06 resolution 24]
  # 0x49ss
 
 # Zoo/Aquarium

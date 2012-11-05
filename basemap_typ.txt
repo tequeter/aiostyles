@@ -13827,8 +13827,8 @@ SubType=0x0a
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
-DayXpm="1 1 1 1" Colormode=32
-"! c #908181" canalalpha=0
+DayXpm="1 1 1 1"   Colormode=32
+"!	c #908181"  canalalpha=0
 "!"
 ;1
 [end]
@@ -14019,28 +14019,22 @@ Type=0x064
 SubType=0x1b
 String1=0x02,Eingang
 String2=0x04,Entrance
-ExtendedLabels=N
+ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=No
-DayXpm="14 14 3 1"   Colormode=16
+DayXpm="8 9 3 1"   Colormode=16
 "!	c #313131"
 "#	c #FFFFFF"
 "  	c none"
-"              "
-"     #!!#     "
-"    #!!!!#    "
-"   #!!!!!!#   "
-"  #!!!!!!!!#  "
-" #!!!!!!!!!!# "
-" !!!!!!!!!!!! "
-" #!!######!!# "
-" #!!#!!!!#!!# "
-" #!!#!!!!#!!# "
-" #!!######!!# "
-" #!!######!!# "
-" #!!######!!# "
-" ############ "
-;12345678901234
+" ###### "
+" #!!!!# "
+" #!##!# "
+" #!##!# "
+" #!!!!# "
+" #!!!!# "
+" #!#!!# "
+" #!!!!# "
+" ###### "
+;12345678
 [end]
 
 
