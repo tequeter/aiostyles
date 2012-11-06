@@ -15,10 +15,10 @@ CodePage=1252
 
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
-Type=0x027,1
-Type=0x032,1
 Type=0x10d00,1
 Type=0x10d10,1
+Type=0x027,1
+Type=0x032,1
 Type=0x001,2
 Type=0x002,2
 Type=0x003,2
@@ -58,16 +58,16 @@ Type=0x02d,4
 Type=0x02e,4
 Type=0x04e,4
 Type=0x008,5
+Type=0x10f00,5
+Type=0x10f11,5
+Type=0x10f12,5
+Type=0x10f13,5
 Type=0x017,5
 Type=0x04c,5
 Type=0x051,5
 Type=0x052,5
 Type=0x053,5
 Type=0x055,5
-Type=0x10f00,5
-Type=0x10f11,5
-Type=0x10f12,5
-Type=0x10f13,5
 Type=0x028,6
 Type=0x029,6
 Type=0x03b,6
@@ -14021,6 +14021,7 @@ String1=0x02,Eingang
 String2=0x04,Entrance
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
 DayXpm="8 9 3 1"   Colormode=16
 "!	c #313131"
 "#	c #FFFFFF"
@@ -14111,6 +14112,38 @@ DayXpm="2 2 2 1"   Colormode=16
 "  "
 "  "
 ;12
+[end]
+
+
+[_point]
+Type=0x66
+SubType=0x16
+String1=0x04,Peak
+String2=0x02,Gipfel
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+DayXpm="16 16 3 1"   Colormode=16
+"!	c #BD956A"
+"#	c #FFFFFF"
+"  	c none"
+"                "
+"                "
+"    !           "
+"   !!!          "
+"   !#!   !      "
+"  !!#!  !!!     "
+"  !###!!!#!     "
+"  !#!##!##!!    "
+"  !#!!#!###!    "
+" !!!!!###!##!   "
+" !!!!!!#!!!#!   "
+" !!!!!!!!!!##!  "
+"!!!!!!!!!!!!#!! "
+"!!!!!!!!!!!!!!! "
+"!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!"
+;1234567890123456
 [end]
 
 
