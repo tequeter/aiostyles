@@ -11683,7 +11683,7 @@ SubType=0x01
 String1=0x02,Sitzbank
 String2=0x04,Bench
 ExtendedLabels=N
-DayXpm="8 4 2 1"   Colormode=16
+DayXpm="12 4 2 1"   Colormode=16
 "!	c #101010"
 "  	c none"
 " !!!!!!!!!! "
