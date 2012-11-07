@@ -127,11 +127,11 @@ amenity=clock 	[0x6410 resolution 24]
 man_made=tower 	[0x6411 resolution 24]
 # 0x6412	# hiking sign
 # 0x6413	# tunnel
-amenity=water_well		[0x6414 resolution 24]
+amenity=water_well	[0x6414 resolution 24]
 man_made=water_tower 	[0x6415 resolution 24]
 amenity=hunting_stand 	[0x6417 resolution 24]
 man_made=survey_point 	[0x6418 resolution 24]
-man_made=flagpole 		[0x6419 resolution 24]
+man_made=flagpole 	[0x6419 resolution 24]
 man_made=reservoir_covered | man_made=gasometer [0x641a resolution 24]
 building=entrance & addr:housenumber=* & name!=* { set name='${addr:housenumber}' } [0x641b resolution 24]
 # 0x64ss
@@ -166,7 +166,7 @@ tourism=viewpoint 		[0x6600 resolution 24]
 # 0x6601 	# arch
 # 0x6602	# area
 # 0x6603	# basin
-natural=beach 			[0x6604 resolution 23]
+natural=beach 			[0x6604 resolution 24]
 # 0x6505	# beach
 natural=cape			[0x6606 resolution 23]
 natural=cliff 			[0x6607 resolution 23]
@@ -218,7 +218,7 @@ highway=motorway_junction [0x2000 resolution 22]
 # 0x24ss
 
 # Toll Booth
-barrier=toll_booth { add toll=yes; } [0x2500 resolution 24]
+barrier=toll_booth { add toll=yes; } [0x7004 resolution 24]
 
 # Exit with information
 # 0x26ss
@@ -785,25 +785,24 @@ amenity=waste_basket [0x2f1a resolution 24]
 # 0x2f00
 
 #------------------------------------------------------------------------------
-# No category
+# traffic
 
-barrier=bollard { add access=no; add bicycle=yes; add foot=yes; } [0x2900 resolution 24]
-barrier=lift_gate [0x2901 resolution 24]
-barrier=gate { add access=no; } [0x2902 resolution 24]
-barrier=cycle_barrier | barrier=kissing_gate { add access=no; add foot=yes; } [0x2903 resolution 24]
+barrier=bollard { add access=no; add bicycle=yes; add foot=yes; } [0x7001 resolution 24]
+barrier=lift_gate [0x7000 resolution 24]
+barrier=gate { add access=no; } [0x7005 resolution 24]
+barrier=cycle_barrier | barrier=kissing_gate { add access=no; add foot=yes; } [0x7002 resolution 24]
 barrier=stile | barrier=turnstile { add access=no; add foot=yes; } [0x2903 resolution 24]
-barrier=cattle_grid | barrier=horse_stile [0x2904 resolution 24]
-# 0x290s
+barrier=cattle_grid | barrier=horse_stile [0x7003 resolution 24]
 
-traffic_sign=city_limit [0x2910 resolution 24]
-highway=traffic_signals [0x2911 resolution 24]
-highway=stop [0x2912 resolution 24]
-highway=give_way [0x2913 resolution 24]
-highway=crossing [0x2917 resolution 24]
-highway=mini_roundabout [0x2915 resolution 24]
-highway=passing_place [0x2916 resolution 24]
-noexit=yes [0x2914 resolution 24]
-# 0x291s
+
+traffic_sign=city_limit [0x7013 resolution 24]
+highway=traffic_signals [0x7010 resolution 24]
+highway=stop [0x7011 resolution 24]
+highway=crossing [0x6406 resolution 24]
+highway=mini_roundabout [0x7014 resolution 24]
+highway=passing_place [0x7015 resolution 24]
+noexit=yes [0x5d00 resolution 24]
+
 
 # 0x32ss - 0x3fss ?
 
