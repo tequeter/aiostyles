@@ -3763,6 +3763,863 @@ DayXpm="16 13 56 2"   Colormode=32
 
 
 [_point]
+Type=0x025
+SubType=0x00
+String1=0x02,Mautstelle
+String2=0x04,Toll booth
+ExtendedLabels=N
+DayXpm="20 9 95 2"   Colormode=32
+"!!	c #757D61"  canalalpha=0
+"!#	c #747B60"  canalalpha=0
+"!%	c #6F775B"  canalalpha=0
+"!?	c #737A5F"  canalalpha=0
+"!$	c #70785B"  canalalpha=0
+"!*	c #727A5E"  canalalpha=0
+"!=	c #71795D"  canalalpha=0
+"!1	c #70785C"  canalalpha=0
+"!2	c #EAECE7"  canalalpha=0
+"!3	c #EAEBE7"  canalalpha=0
+"!4	c #828970"  canalalpha=0
+"!5	c #D7D9D1"  canalalpha=0
+"!6	c #EBECE8"  canalalpha=0
+"!7	c #939983"  canalalpha=0
+"!8	c #C6C9BE"  canalalpha=0
+"!9	c #A8AD9B"  canalalpha=0
+"#!	c #B0B4A5"  canalalpha=0
+"##	c #BEC1B4"  canalalpha=0
+"#%	c #9A9F8B"  canalalpha=0
+"#?	c #ECEDE9"  canalalpha=0
+"#$	c #FFFFFF"  canalalpha=0
+"#*	c #FEFEFE"  canalalpha=0
+"#=	c #868C74"  canalalpha=0
+"#1	c #E7E8E3"  canalalpha=0
+"#2	c #999E8A"  canalalpha=0
+"#3	c #D4D6CE"  canalalpha=0
+"#4	c #FAE6E6"  canalalpha=0
+"#5	c #F8DCDC"  canalalpha=0
+"#6	c #FCEDED"  canalalpha=0
+"#7	c #B2B6A7"  canalalpha=0
+"#8	c #BBBFB2"  canalalpha=0
+"#9	c #CBCEC4"  canalalpha=0
+"%!	c #A1A694"  canalalpha=0
+"%#	c #D3D6CD"  canalalpha=0
+"%%	c #E78484"  canalalpha=0
+"%?	c #EFADAD"  canalalpha=0
+"%$	c #EC9D9D"  canalalpha=0
+"%*	c #B2B7A8"  canalalpha=0
+"%=	c #FCFEFB"  canalalpha=0
+"%1	c #D3D2C9"  canalalpha=0
+"%2	c #DC4646"  canalalpha=0
+"%3	c #DC4B4B"  canalalpha=0
+"%4	c #E15C5C"  canalalpha=0
+"%5	c #B1B6A7"  canalalpha=0
+"%6	c #F6F7FC"  canalalpha=0
+"%7	c #CBCFEB"  canalalpha=0
+"%8	c #CCD0EB"  canalalpha=0
+"%9	c #C0C4BF"  canalalpha=0
+"?!	c #CFDEC4"  canalalpha=0
+"?#	c #B1DC99"  canalalpha=0
+"?%	c #B2DC9A"  canalalpha=0
+"??	c #F1F9EC"  canalalpha=0
+"?$	c #D2CEC6"  canalalpha=0
+"?*	c #B43B3B"  canalalpha=0
+"?=	c #CB4D4D"  canalalpha=0
+"?1	c #B34647"  canalalpha=0
+"?2	c #B1B3A4"  canalalpha=0
+"?3	c #BBBFB1"  canalalpha=0
+"?4	c #D7DAF0"  canalalpha=0
+"?5	c #929AD5"  canalalpha=0
+"?6	c #A3A9DB"  canalalpha=0
+"?7	c #9AA0B1"  canalalpha=0
+"?8	c #A1A693"  canalalpha=0
+"?9	c #ABAF9F"  canalalpha=0
+"$!	c #B6D6A2"  canalalpha=0
+"$#	c #9AD17A"  canalalpha=0
+"$%	c #96CF75"  canalalpha=0
+"$?	c #D7EDCB"  canalalpha=0
+"$$	c #B7BBAD"  canalalpha=0
+"$*	c #E1E3DD"  canalalpha=0
+"$=	c #A09E9E"  canalalpha=0
+"$1	c #D7D5D5"  canalalpha=0
+"$2	c #A2A1A1"  canalalpha=0
+"$3	c #CACDC2"  canalalpha=0
+"$4	c #D0D3C9"  canalalpha=0
+"$5	c #C5C9E9"  canalalpha=0
+"$6	c #404EB4"  canalalpha=0
+"$7	c #424FB5"  canalalpha=0
+"$8	c #8A92B6"  canalalpha=0
+"$9	c #BEC2B5"  canalalpha=0
+"*!	c #B5DD9E"  canalalpha=0
+"*#	c #4DAB16"  canalalpha=0
+"*%	c #C2E2AE"  canalalpha=0
+"*?	c #D3D5E9"  canalalpha=0
+"*$	c #474F83"  canalalpha=0
+"**	c #5F6698"  canalalpha=0
+"*=	c #B0B3CC"  canalalpha=0
+"*1	c #DBE3D7"  canalalpha=0
+"*2	c #5C6B53"  canalalpha=0
+"*3	c #6B7A62"  canalalpha=0
+"*4	c #D1D7CD"  canalalpha=0
+"*5	c #F9F9F9"  canalalpha=0
+"*6	c #C0C0C0"  canalalpha=0
+"*7	c #D7D7D7"  canalalpha=0
+"*8	c #E8E8E8"  canalalpha=0
+"!!!#!%!?!#!#!#!$!*!#!#!#!=!=!#!#!#!*!1!!"
+"!2!3!4!5!2!2!6!7!8!2!2!6!9#!!2!2!2###%#?"
+"#$#*#=#1#$#$#$#2#3#4#5#6#7#8#$#$#$#9%!#$"
+"#$#*#=#1#$#$#$#2%#%%%?%$%*#8#$#$#$#9%!#$"
+"#$#*#=#1%=%=#$#2%1%2%3%4%5#8%6%7%8%9%!#$"
+"#$#*#=?!?#?%??#2?$?*?=?1?2?3?4?5?6?7?8#$"
+"#$#*?9$!$#$%$?$$$*$=$1$2$3$4$5$6$7$8$9#$"
+"#$#$#$*!*#*#*%#$#$#$#$#$#$#$*?*$***=#$#$"
+"#$#$#$*1*2*3*4#$#$#$#$#$#$#$*5*6*7*8#$#$"
+;12345678901234567890
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x00
+String1=0x02,Poller
+String2=0x04,Bollard
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 16 4 1"   Colormode=16
+"!	c #000000"
+"#	c #FF0000"
+"%	c #FFFFFF"
+"  	c none"
+"      ####      "
+"      ####      "
+"      %%%#      "
+"      %%%#      "
+"      ####      "
+"      ####      "
+"      %%%#      "
+"      %%%#      "
+"      ####      "
+"      ####      "
+"      !!!!      "
+"      !!!!      "
+"      !!!!      "
+"                "
+"                "
+"                "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x01
+String1=0x02,Schranke
+String2=0x04,Lift gate
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 16 4 1"   Colormode=16
+"!	c #101010"
+"#	c #FF3000"
+"%	c #FFFFFF"
+"  	c none"
+"                "
+"    ##          "
+"   ####%%       "
+"   ####%%%      "
+"    ###%%%#     "
+"      ##%%##    "
+"        #####   "
+"         ####   "
+"         !##!   "
+"         !!!!   "
+"         !!!!   "
+"         !!!!   "
+"                "
+"                "
+"                "
+"                "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x02
+String1=0x02,Tor/Gatter
+String2=0x04,Gate
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 11 3 1"   Colormode=16
+"!	c #000000"
+"#	c #C5C5C5"
+"  	c none"
+"                "
+"                "
+"####        ####"
+"#!!##########!!#"
+"#!!!!!!!!!!!!!!#"
+"#!!!!!!!!!!!!!!#"
+"#!!###!!!####!!#"
+"#!!####!!!###!!#"
+"#!!!!!!!!!!!!!!#"
+"#!!!!!!!!!!!!!!#"
+"################"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x03
+String1=0x02,Umlaufsperre
+String2=0x04,Cycle barrier
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 16 3 1"   Colormode=16
+"!	c #FFFFFF"
+"#	c #FF3000"
+"  	c none"
+"                "
+"                "
+"                "
+"                "
+" ####!!!##      "
+" ###!!!####     "
+" #########      "
+"                "
+"                "
+"      ###!!!### "
+"     ###!!!#### "
+"      ######### "
+"                "
+"                "
+"                "
+"                "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x04
+String1=0x02,Bovi-Stop
+String2=0x04,Cattle grid
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 6 46 2"   Colormode=32
+"!!	c #17D51B"  canalalpha=0
+"!#	c #68D05A"  canalalpha=0
+"!%	c #AF9062"  canalalpha=0
+"!?	c #C0A782"  canalalpha=0
+"!$	c #C4AC8A"  canalalpha=0
+"!*	c #B6996F"  canalalpha=0
+"!=	c #AF8E60"  canalalpha=0
+"!1	c #67CF59"  canalalpha=0
+"!2	c #1AD51E"  canalalpha=0
+"!3	c #47D744"  canalalpha=0
+"!4	c #A3A66A"  canalalpha=0
+"!5	c #BA9E76"  canalalpha=0
+"!6	c #CAB597"  canalalpha=0
+"!7	c #CBB799"  canalalpha=0
+"!8	c #BCA17A"  canalalpha=0
+"!9	c #A6A66C"  canalalpha=0
+"#!	c #50D84D"  canalalpha=0
+"##	c #1BD61F"  canalalpha=0
+"#%	c #27D72A"  canalalpha=0
+"#?	c #D3C6AC"  canalalpha=0
+"#$	c #CEBA9E"  canalalpha=0
+"#*	c #CFBB9F"  canalalpha=0
+"#=	c #BEA47F"  canalalpha=0
+"#1	c #B6986E"  canalalpha=0
+"#2	c #D6C5AD"  canalalpha=0
+"#3	c #28D62B"  canalalpha=0
+"#4	c #A6D290"  canalalpha=0
+"#5	c #B39569"  canalalpha=0
+"#6	c #C9B394"  canalalpha=0
+"#7	c #D0BEA3"  canalalpha=0
+"#8	c #BFA682"  canalalpha=0
+"#9	c #C8B393"  canalalpha=0
+"%!	c #A6D08E"  canalalpha=0
+"%#	c #4DCF43"  canalalpha=0
+"%%	c #B2A475"  canalalpha=0
+"%?	c #BDA27C"  canalalpha=0
+"%$	c #CDB99C"  canalalpha=0
+"%*	c #BDA37D"  canalalpha=0
+"%=	c #4CCE42"  canalalpha=0
+"%1	c #89A252"  canalalpha=0
+"%2	c #AD8C5D"  canalalpha=0
+"%3	c #C7B08F"  canalalpha=0
+"%4	c #C6AF8F"  canalalpha=0
+"%5	c #B89C73"  canalalpha=0
+"%6	c #AD8C5C"  canalalpha=0
+"%7	c #8AA452"  canalalpha=0
+"!!!!!!!#!%!?!$!*!*!$!?!=!1!!!!!!"
+"!!!2!3!4!5!6!7!8!8!7!6!5!9#!##!!"
+"!!#%#?!*!7#$#*#=#=#*#$!7#1#2#3!!"
+"!!#4#5#6#7#7#7#8#8#7#7#7#9#5%!!!"
+"%#%%%?%$%$%$%$%*%*%$%$%$%$%?%%%="
+"%1%2%3%4%4%4%4%5%5%4%4%4%4%3%6%7"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x10
+String1=0x02,Ortsschild
+String2=0x04,City limit
+ExtendedLabels=N
+DayXpm="16 16 91 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #A08020"  canalalpha=13
+"!%	c #BD9726"  canalalpha=2
+"!?	c #BC9625"  canalalpha=2
+"!$	c #BB9625"  canalalpha=2
+"!*	c #BB9525"  canalalpha=2
+"!=	c #BA9525"  canalalpha=2
+"!1	c #B99525"  canalalpha=2
+"!2	c #B99425"  canalalpha=2
+"!3	c #A08020"  canalalpha=0
+"!4	c #C09927"  canalalpha=2
+"!5	c #FFCC33"  canalalpha=0
+"!6	c #BF9926"  canalalpha=1
+"!7	c #D8AD2B"  canalalpha=0
+"!8	c #EEBE30"  canalalpha=0
+"!9	c #C69E27"  canalalpha=0
+"#!	c #C79F28"  canalalpha=0
+"##	c #DBAF2C"  canalalpha=0
+"#%	c #CBA329"  canalalpha=0
+"#?	c #E5B72E"  canalalpha=0
+"#$	c #FAC832"  canalalpha=0
+"#*	c #D8AC2B"  canalalpha=0
+"#=	c #8D711C"  canalalpha=0
+"#1	c #735C17"  canalalpha=0
+"#2	c #8E721C"  canalalpha=0
+"#3	c #B69224"  canalalpha=0
+"#4	c #93761D"  canalalpha=0
+"#5	c #CCA329"  canalalpha=0
+"#6	c #AA8822"  canalalpha=0
+"#7	c #987A1E"  canalalpha=0
+"#8	c #D1A72A"  canalalpha=0
+"#9	c #A08020"  canalalpha=0
+"%!	c #DDB12C"  canalalpha=0
+"%#	c #BE9826"  canalalpha=1
+"%%	c #FCCA33"  canalalpha=0
+"%?	c #46380E"  canalalpha=0
+"%$	c #9B7C1F"  canalalpha=0
+"%*	c #9C7C1F"  canalalpha=0
+"%=	c #97791E"  canalalpha=0
+"%1	c #90731D"  canalalpha=0
+"%2	c #AE8B23"  canalalpha=0
+"%3	c #695415"  canalalpha=0
+"%4	c #A48321"  canalalpha=0
+"%5	c #C59D27"  canalalpha=0
+"%6	c #5E4B13"  canalalpha=0
+"%7	c #B38F24"  canalalpha=0
+"%8	c #876C1B"  canalalpha=0
+"%9	c #FBC932"  canalalpha=0
+"?!	c #B99425"  canalalpha=0
+"?#	c #DCB02C"  canalalpha=0
+"?%	c #C9A128"  canalalpha=0
+"??	c #C8A028"  canalalpha=0
+"?$	c #D5AA2B"  canalalpha=0
+"?*	c #AD8B22"  canalalpha=0
+"?=	c #DFB22C"  canalalpha=0
+"?1	c #AB8922"  canalalpha=0
+"?2	c #E8B92E"  canalalpha=0
+"?3	c #C7A028"  canalalpha=0
+"?4	c #BE9826"  canalalpha=2
+"?5	c #F9C732"  canalalpha=0
+"?6	c #F5C431"  canalalpha=0
+"?7	c #FECB33"  canalalpha=0
+"?8	c #F0C030"  canalalpha=0
+"?9	c #FECC33"  canalalpha=0
+"$!	c #BD9726"  canalalpha=1
+"$#	c #BA9525"  canalalpha=0
+"$%	c #B39024"  canalalpha=0
+"$?	c #B49024"  canalalpha=0
+"$$	c #BE9826"  canalalpha=0
+"$*	c #E4B72E"  canalalpha=0
+"$=	c #A18020"  canalalpha=0
+"$1	c #B08D23"  canalalpha=0
+"$2	c #B89325"  canalalpha=0
+"$3	c #AF8C23"  canalalpha=0
+"$4	c #B79325"  canalalpha=0
+"$5	c #BC9726"  canalalpha=0
+"$6	c #C39C27"  canalalpha=0
+"$7	c #E4B62E"  canalalpha=0
+"$8	c #EDBE30"  canalalpha=0
+"$9	c #E9BA2F"  canalalpha=0
+"*!	c #E7B92E"  canalalpha=0
+"*#	c #E6B82E"  canalalpha=0
+"*%	c #F6C531"  canalalpha=0
+"*?	c #E0B32D"  canalalpha=0
+"*$	c #E3B62D"  canalalpha=0
+"**	c #DDB02C"  canalalpha=0
+"*=	c #D3A82A"  canalalpha=0
+"*1	c #EFBF30"  canalalpha=0
+"*2	c #BC9726"  canalalpha=2
+"*3	c #9F7F20"  canalalpha=1
+"*4	c #9E7F1F"  canalalpha=0
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!#!%!%!?!?!?!$!$!*!*!=!=!=!1!2!3"
+"!4!5!5!5!5!5!5!5!5!5!5!5!5!5!5!4"
+"!6!7!8!9#!###%!5!5#?#$!5!5!5!5!6"
+"!6#*#=#1#2#3#4#5#6#7#8#9%!#=#?!6"
+"%#%%%?%$%*%=%1%2%3%4%5%6%7%8%9%#"
+"%#!5?!?#?#?%???$?*?=!7?1?2?3!5%#"
+"?4?5?6?7%9?7?5?8?7%9?5?7?7?9!5?4"
+"$!?#$#$%$?$$$*$=$1$2$3$4$5$6$7$!"
+"$!?6$8$9*!*#*%*?*$*##?*?***=*1$!"
+"*2!5!5!5!5!5!5!5!5!5!5!5!5!5!5*2"
+"*3!2!2!2!2!2!2!2!2!2!2!2!2!2!2*4"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x11
+String1=0x02,Ampel
+String2=0x04,Traffic signals
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="6 16 81 2"   Colormode=32
+"!!	c #020000"  canalalpha=6
+"!#	c #350000"  canalalpha=12
+"!%	c #6A0000"  canalalpha=2
+"!?	c #6B0000"  canalalpha=1
+"!$	c #360000"  canalalpha=8
+"!*	c #020000"  canalalpha=4
+"!=	c #2D0000"  canalalpha=14
+"!1	c #B40000"  canalalpha=9
+"!2	c #F00000"  canalalpha=0
+"!3	c #F10000"  canalalpha=0
+"!4	c #B70000"  canalalpha=8
+"!5	c #300000"  canalalpha=8
+"!6	c #5A0000"  canalalpha=1
+"!7	c #EE0000"  canalalpha=0
+"!8	c #F90000"  canalalpha=0
+"!9	c #5F0000"  canalalpha=14
+"#!	c #500000"  canalalpha=2
+"##	c #EC0000"  canalalpha=0
+"#%	c #570000"  canalalpha=4
+"#?	c #180000"  canalalpha=2
+"#$	c #AE0000"  canalalpha=0
+"#*	c #F20100"  canalalpha=0
+"#=	c #F30100"  canalalpha=0
+"#1	c #B20000"  canalalpha=0
+"#2	c #1B0000"  canalalpha=4
+"#3	c #000000"  canalalpha=2
+"#4	c #2A1800"  canalalpha=0
+"#5	c #A15300"  canalalpha=0
+"#6	c #A35400"  canalalpha=0
+"#7	c #2C1900"  canalalpha=0
+"#8	c #000000"  canalalpha=4
+"#9	c #181800"  canalalpha=2
+"%!	c #ABAD00"  canalalpha=0
+"%#	c #EFF200"  canalalpha=0
+"%%	c #AEB100"  canalalpha=0
+"%?	c #1B1B00"  canalalpha=4
+"%$	c #515300"  canalalpha=2
+"%*	c #EDF100"  canalalpha=0
+"%=	c #F9FF00"  canalalpha=0
+"%1	c #EEF200"  canalalpha=0
+"%2	c #585A00"  canalalpha=4
+"%3	c #545500"  canalalpha=2
+"%4	c #EEF100"  canalalpha=0
+"%5	c #EFF300"  canalalpha=0
+"%6	c #5A5C00"  canalalpha=4
+"%7	c #1B1B00"  canalalpha=2
+"%8	c #B1B300"  canalalpha=0
+"%9	c #F1F400"  canalalpha=0
+"?!	c #F1F500"  canalalpha=0
+"?#	c #B4B700"  canalalpha=0
+"?%	c #1E1E00"  canalalpha=4
+"??	c #1C2800"  canalalpha=0
+"?$	c #5C9701"  canalalpha=0
+"?*	c #5D9A01"  canalalpha=0
+"?=	c #1E2B00"  canalalpha=0
+"?1	c #001200"  canalalpha=2
+"?2	c #008E03"  canalalpha=0
+"?3	c #01CC05"  canalalpha=0
+"?4	c #01CD05"  canalalpha=0
+"?5	c #009103"  canalalpha=0
+"?6	c #001500"  canalalpha=4
+"?7	c #004301"  canalalpha=2
+"?8	c #00C805"  canalalpha=0
+"?9	c #00D305"  canalalpha=0
+"$!	c #00C905"  canalalpha=0
+"$#	c #004801"  canalalpha=4
+"$%	c #004E02"  canalalpha=0
+"$?	c #00CB05"  canalalpha=0
+"$$	c #005201"  canalalpha=13
+"$*	c #002A01"  canalalpha=10
+"$=	c #009E03"  canalalpha=8
+"$1	c #00CD05"  canalalpha=0
+"$2	c #00CE05"  canalalpha=0
+"$3	c #00A103"  canalalpha=7
+"$4	c #002C01"  canalalpha=4
+"$5	c #000300"  canalalpha=4
+"$6	c #003301"  canalalpha=5
+"$7	c #006202"  canalalpha=15
+"$8	c #006302"  canalalpha=14
+"$9	c #003401"  canalalpha=2
+"*!	c #000400"  canalalpha=2
+"!!!#!%!?!$!*"
+"!=!1!2!3!4!5"
+"!6!7!8!8!2!9"
+"#!##!8!8!7#%"
+"#?#$#*#=#1#2"
+"#3#4#5#6#7#8"
+"#9%!%#%#%%%?"
+"%$%*%=%=%1%2"
+"%3%4%=%=%5%6"
+"%7%8%9?!?#?%"
+"#3???$?*?=#8"
+"?1?2?3?4?5?6"
+"?7?8?9?9$!$#"
+"$%$??9?9$?$$"
+"$*$=$1$2$3$4"
+"$5$6$7$8$9*!"
+;123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x12
+String1=0x02,Stopschild
+String2=0x04,Stop sign
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 16 69 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #E5E4E4"  canalalpha=3
+"!%	c #F9F3F3"  canalalpha=2
+"!?	c #F3CBCB"  canalalpha=3
+"!$	c #F2CBCB"  canalalpha=3
+"!*	c #F8F3F3"  canalalpha=2
+"!=	c #E7E6E6"  canalalpha=2
+"!1	c #FAF4F4"  canalalpha=0
+"!2	c #DE5959"  canalalpha=0
+"!3	c #CC0000"  canalalpha=0
+"!4	c #F9F3F3"  canalalpha=1
+"!5	c #F3CBCB"  canalalpha=2
+"!6	c #CC0101"  canalalpha=0
+"!7	c #E78686"  canalalpha=0
+"!8	c #F3C2C2"  canalalpha=0
+"!9	c #D94040"  canalalpha=0
+"#!	c #F2BDBD"  canalalpha=0
+"##	c #F4C5C5"  canalalpha=0
+"#%	c #E37575"  canalalpha=0
+"#?	c #E37373"  canalalpha=0
+"#$	c #F3C4C4"  canalalpha=0
+"#*	c #DA4343"  canalalpha=0
+"#=	c #E06565"  canalalpha=0
+"#1	c #F4C6C6"  canalalpha=0
+"#2	c #E78787"  canalalpha=0
+"#3	c #CF1010"  canalalpha=0
+"#4	c #F3C1C1"  canalalpha=0
+"#5	c #D63434"  canalalpha=0
+"#6	c #E57D7D"  canalalpha=0
+"#7	c #D32525"  canalalpha=0
+"#8	c #EFADAD"  canalalpha=0
+"#9	c #CD0303"  canalalpha=0
+"%!	c #F6CFCF"  canalalpha=0
+"%#	c #D42727"  canalalpha=0
+"%%	c #F0B2B2"  canalalpha=0
+"%?	c #E57C7C"  canalalpha=0
+"%$	c #DD5454"  canalalpha=0
+"%*	c #EEABAB"  canalalpha=0
+"%=	c #D11B1B"  canalalpha=0
+"%1	c #CD0505"  canalalpha=0
+"%2	c #E47777"  canalalpha=0
+"%3	c #CE0909"  canalalpha=0
+"%4	c #D22020"  canalalpha=0
+"%5	c #F4C9C9"  canalalpha=0
+"%6	c #D01414"  canalalpha=0
+"%7	c #F1B7B7"  canalalpha=0
+"%8	c #E26B6B"  canalalpha=0
+"%9	c #F1BABA"  canalalpha=0
+"?!	c #D01616"  canalalpha=0
+"?#	c #CE0B0B"  canalalpha=0
+"?%	c #E68181"  canalalpha=0
+"??	c #DE5B5B"  canalalpha=0
+"?$	c #D01515"  canalalpha=0
+"?*	c #EA9494"  canalalpha=0
+"?=	c #D73737"  canalalpha=0
+"?1	c #EB9B9B"  canalalpha=0
+"?2	c #D42626"  canalalpha=0
+"?3	c #DC5151"  canalalpha=0
+"?4	c #E98F8F"  canalalpha=0
+"?5	c #D11A1A"  canalalpha=0
+"?6	c #E78888"  canalalpha=0
+"?7	c #DA4444"  canalalpha=0
+"?8	c #E06363"  canalalpha=0
+"?9	c #D94141"  canalalpha=0
+"$!	c #F9F3F3"  canalalpha=0
+"$#	c #E6E5E5"  canalalpha=2
+"$%	c #FAF4F4"  canalalpha=13
+"$?	c #E7E6E6"  canalalpha=1
+"$$	c #FAF4F4"  canalalpha=14
+"!!!!!!!#!%!?!$!$!$!$!?!*!#!!!!!!"
+"!!!!!=!1!2!3!3!3!3!3!3!2!1!=!!!!"
+"!!!=!1!2!3!3!3!3!3!3!3!3!2!1!=!!"
+"!#!1!2!3!3!3!3!3!3!3!3!3!3!2!1!#"
+"!4!2!3!3!3!3!3!3!3!3!3!3!3!3!2!4"
+"!5!6!7!8!9#!###%#?#$#*#=#1#2!6!5"
+"!5#3#4#5#6#7#8#9%!%#%%%?%$%*%=!5"
+"!5%1##%2%3%4%*!3%5%6%7%?%8%9?!!5"
+"!5!3?#?%!7%4%*!3%5%6%7%?%9??!3!5"
+"!5?$?*?=?1%4%*!3%!?2%%%??3!3!3!5"
+"!5!6?4#4#5?5?6!3#?#$?7?8?9!3!3!5"
+"$!!2!3!3!3!3!3!3!3!3!3!3!3!3!2$!"
+"$#$%!2!3!3!3!3!3!3!3!3!3!3!2$%$#"
+"!!$?$$!2!3!3!3!3!3!3!3!3!2$$$?!!"
+"!!!!$?$%!2!3!3!3!3!3!3!2$%$?!!!!"
+"!!!!!!$#$!!?!$!$!$!$!?$!$#!!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x13
+String1=0x02,Vorfahrt gewähren
+String2=0x04,Give way
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="16 16 3 1"   Colormode=16
+"!	c #FF0000"
+"#	c #FFFFFF"
+"  	c none"
+"                "
+"############### "
+"#!!!!!!!!!!!!!# "
+"#!!!!!!!!!!!!!# "
+"##!!!#####!!!## "
+" #!!!#####!!!#  "
+" ##!!!###!!!##  "
+"  #!!!###!!!#   "
+"  ##!!!#!!!##   "
+"   #!!!#!!!#    "
+"   ##!!!!!##    "
+"    #!!!!!#     "
+"    ##!!!##     "
+"     #!!!#      "
+"     ##!##      "
+"      ###       "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x14
+String1=0x02,Sackgasse
+String2=0x04,No exit
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="14 14 35 2"   Colormode=16
+"!!	c #99A6C1"
+"!#	c #617DB4"
+"!%	c #617CB4"
+"!?	c #9DA9C1"
+"!$	c #6782B6"
+"!*	c #0065FF"
+"!=	c #6882B6"
+"!1	c #6781B6"
+"!2	c #6681B6"
+"!3	c #6882B6"
+"!4	c #6C5F96"
+"!5	c #974C6D"
+"!6	c #6C5E95"
+"!7	c #6983B7"
+"!8	c #FF3020"
+"!9	c #BD3041"
+"#!	c #6983B7"
+"##	c #7F6290"
+"#%	c #B1495C"
+"#?	c #BD3041"
+"#$	c #E16F70"
+"#*	c #7F6391"
+"#=	c #0095FF"
+"#1	c #FAFBFD"
+"#2	c #6983B6"
+"#3	c #6B84B8"
+"#4	c #6C85B8"
+"#5	c #6D86B9"
+"#6	c #6782B6"
+"#7	c #9DA9C2"
+"#8	c #6882B6"
+"#9	c #6782B6"
+"%!	c #6F88B9"
+"%#	c #E8E9EA"
+"%%	c #9FABC3"
+"!!#!#!#!#!#!#!#!#!#!#!#!#!!?"
+"#!!*!*!*!*!*!*!*!*!*!*!*!*#!"
+"#!!*!*!*!*!*!*!*!*!*!*!*!*#!"
+"#!!*!*!4!9!9!9!9!9!9!4!*!*#!"
+"#!!*!*!9!8!8!8!8!8!8!9!*!*#!"
+"#!!*!*!4#?!9#$#$!9!9!4!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
+"!!#!#!#!#!#!#!#!#!#!#!#!#!!!"
+;12345678901234
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x15
+String1=0x02,Mini-Kreisverkehr
+String2=0x04,Mini roundabout
+ExtendedLabels=N
+DayXpm="16 16 83 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #8B8B8B"  canalalpha=7
+"!%	c #D2D2D3"  canalalpha=12
+"!?	c #C3CAD9"  canalalpha=8
+"!$	c #A2B0CE"  canalalpha=4
+"!*	c #D3D4D5"  canalalpha=3
+"!=	c #93A6CD"  canalalpha=1
+"!1	c #375FAF"  canalalpha=0
+"!2	c #03359A"  canalalpha=0
+"!3	c #003399"  canalalpha=0
+"!4	c #CED2DA"  canalalpha=0
+"!5	c #5677BA"  canalalpha=3
+"!6	c #013499"  canalalpha=0
+"!7	c #01349A"  canalalpha=0
+"!8	c #06389B"  canalalpha=0
+"!9	c #3960B0"  canalalpha=0
+"#!	c #5B7CBD"  canalalpha=0
+"##	c #5C7CBC"  canalalpha=3
+"#%	c #D3D3D5"  canalalpha=3
+"#?	c #04369B"  canalalpha=0
+"#$	c #708DC6"  canalalpha=0
+"#*	c #D8E0EF"  canalalpha=0
+"#=	c #2F58AC"  canalalpha=0
+"#1	c #04369A"  canalalpha=0
+"#2	c #DCE3F1"  canalalpha=0
+"#3	c #EAEEF7"  canalalpha=0
+"#4	c #5C7CBE"  canalalpha=0
+"#5	c #0C3D9E"  canalalpha=0
+"#6	c #8A8A8A"  canalalpha=7
+"#7	c #B3C2E1"  canalalpha=0
+"#8	c #ABBCDE"  canalalpha=0
+"#9	c #1D4AA4"  canalalpha=0
+"%!	c #ADBEDE"  canalalpha=0
+"%#	c #CAD4EA"  canalalpha=0
+"%%	c #D1D2D3"  canalalpha=12
+"%?	c #718EC6"  canalalpha=0
+"%$	c #ACBDDE"  canalalpha=0
+"%*	c #5779BC"  canalalpha=0
+"%=	c #6685C2"  canalalpha=0
+"%1	c #A7B9DC"  canalalpha=0
+"%2	c #7590C8"  canalalpha=0
+"%3	c #1443A1"  canalalpha=0
+"%4	c #D9E1F0"  canalalpha=0
+"%5	c #2450A8"  canalalpha=0
+"%6	c #0B3C9D"  canalalpha=0
+"%7	c #1E4BA5"  canalalpha=0
+"%8	c #E2E8F3"  canalalpha=0
+"%9	c #A2B1CE"  canalalpha=4
+"?!	c #6D8AC5"  canalalpha=0
+"?#	c #839BCD"  canalalpha=0
+"?%	c #DDE4F1"  canalalpha=0
+"??	c #244FA7"  canalalpha=0
+"?$	c #D7DFEF"  canalalpha=0
+"?*	c #1C49A4"  canalalpha=0
+"?=	c #07399C"  canalalpha=0
+"?1	c #B2C1E0"  canalalpha=0
+"?2	c #FEFEFE"  canalalpha=0
+"?3	c #6A88C4"  canalalpha=0
+"?4	c #D0DAEC"  canalalpha=0
+"?5	c #1A48A3"  canalalpha=0
+"?6	c #08399C"  canalalpha=0
+"?7	c #4F72B9"  canalalpha=0
+"?8	c #8CA3D1"  canalalpha=0
+"?9	c #02359A"  canalalpha=0
+"$!	c #1544A2"  canalalpha=0
+"$#	c #4E71B8"  canalalpha=0
+"$%	c #1644A2"  canalalpha=0
+"$?	c #9CB0D7"  canalalpha=0
+"$$	c #A2B4DA"  canalalpha=0
+"$*	c #1C4AA4"  canalalpha=0
+"$=	c #2A55AA"  canalalpha=0
+"$1	c #98ADD6"  canalalpha=0
+"$2	c #FAFBFD"  canalalpha=0
+"$3	c #859DCE"  canalalpha=0
+"$4	c #7691C8"  canalalpha=0
+"$5	c #D9E0F0"  canalalpha=0
+"$6	c #D5DDEE"  canalalpha=0
+"$7	c #DAE2F0"  canalalpha=0
+"$8	c #D1DAED"  canalalpha=0
+"$9	c #5D7DBE"  canalalpha=0
+"*!	c #1B49A4"  canalalpha=0
+"*#	c #1847A3"  canalalpha=0
+"*%	c #486CB6"  canalalpha=0
+"!!!!!!!!!#!%!?!$!$!?!%!#!!!!!!!!"
+"!!!!!!!*!=!1!2!3!3!2!1!=!*!!!!!!"
+"!!!!!4!5!3!3!6!7!3!8!9#!##!4!!!!"
+"!!#%!5!3#?#$#*#=#1#2#3#4#5!5#%!!"
+"#6!=!3#?#7#8#9!3!3%!%##8#1!3!=#6"
+"%%!1!3%?%$!2!3!3!3%*%=%1%2!3!1%%"
+"!?%3!6%4%5%6!3!3!3!3%6%7%8!2!2!?"
+"%9?!?#?%%$??!3!3!3!3!3!3?$?*!3%9"
+"%9?=?1?2?3!3!3!3!3!3!3!3?4?5!3%9"
+"!?!2?6?7!3!3!3!3!3!3!3!3?8?9!2!?"
+"%%!1!3!3$!!6!3!3%3$#$%!3!3!3!1%%"
+"#6!=!3!3$?$$$*!3$=$1$2$3!3!3!=#6"
+"!!#%!5!3#?$4%8$5$6$7$8$9!3!5#%!!"
+"!!!!!4!5!3!3!2*!*#!7%$?5!5!4!!!!"
+"!!!!!!!*!=!1!2!3!3!2*%!=!*!!!!!!"
+"!!!!!!!!!#!%!?!$!$!?!%!#!!!!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x17
+String1=0x02,Zebrastreifen
+String2=0x04,Crossing
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+DayXpm="14 7 2 1"   Colormode=32
+"!	c #999999"  canalalpha=0
+"#	c #FFFFFF"  canalalpha=0
+"!!!!!!!!!!!!!!"
+"!!!!!####!!!!!"
+"!!!!!!!!!!!!!!"
+"!!!!!####!!!!!"
+"!!!!!!!!!!!!!!"
+"!!!!!####!!!!!"
+"!!!!!!!!!!!!!!"
+;12345678901234
+[end]
+
+
+[_point]
 Type=0x02a
 SubType=0x07
 String1=0x02,Schnellimbiss
@@ -10801,52 +11658,6 @@ DayXpm="16 16 144 2"   Colormode=32
 
 
 [_point]
-Type=0x04a
-SubType=0x00
-String1=0x02,Picknickplatz
-String2=0x04,Picnicsite
-ExtendedLabels=N
-DayXpm="24 12 4 1"   Colormode=16
-"!	c #101010"
-"#	c #626262"
-"%	c #C5C5C5"
-"  	c none"
-"                        "
-"         ###            "
-"!      % ###   %       !"
-"!     !!!!!!!!!!!!     !"
-"!     !!!!!!!!!!!!     !"
-"!       !!!  !!!       !"
-"!!!!!   !! !! !!   !!!!!"
-"  !!    !! !! !!    !!  "
-"  !!    !!!  !!!    !!  "
-"  !!!!!!!!!!!!!!!!!!!!  "
-"  !!    !!!  !!!    !!  "
-"  !!    !!    !!    !!  "
-;123456789012345678901234
-[end]
-
-
-[_point]
-Type=0x04a
-SubType=0x01
-String1=0x02,Sitzbank
-String2=0x04,Bench
-ExtendedLabels=N
-DayXpm="16 6 2 1"   Colormode=16
-"!	c #101010"
-"  	c none"
-"!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!"
-"   !!      !!   "
-"   !!      !!   "
-"   !!      !!   "
-;1234567890123456
-[end]
-
-
-[_point]
 Type=0x04b
 SubType=0x01
 String1=0x02,Rettungsbox
@@ -10966,66 +11777,6 @@ DayXpm="16 16 67 2"   Colormode=32
 "!$!3!8!1!?!?!?!%!?!%!?!?!1$%#3!$"
 "!*!$!2!?!%!?!?!?!?!?!?!%!?!%!$!%"
 ;1234567890123456
-[end]
-
-
-[_point]
-Type=0x04c
-SubType=0x00
-String1=0x02,Infotafel
-String2=0x04,Infotable
-ExtendedLabels=N
-DayXpm="12 12 5 1"   Colormode=16
-"!	c #C5C5C5"
-"#	c #101010"
-"%	c #E6E6E6"
-"?	c #39CA20"
-"$	c #7BCAB4"
-"!!!!!!!!!!!!"
-"!##########!"
-"!#%%%%%%%%#!"
-"!#%!!!!%%%#!"
-"!#%%%%%$$$#!"
-"!#%!%#%$?$#!"
-"!#%!!%%$?$#!"
-"!#%%%%%$$$#!"
-"!#%!!!!%%%#!"
-"!#%%%%%%%%#!"
-"!##########!"
-"!!!!!!!!!!!!"
-;123456789012
-[end]
-
-
-[_point]
-Type=0x04c
-SubType=0x01
-String1=0x02,Wegweiser
-String2=0x04,Signpost
-ExtendedLabels=N
-DayXpm="7 18 3 1"   Colormode=16
-"!	c #000000"
-"#	c #C0C0C0"
-"  	c none"
-"#######"
-"#!##!!#"
-"#!!!!!#"
-"#!!!!##"
-"#!#### "
-"#!!!#  "
-"#!!!!##"
-"#!#!!!#"
-"#!##!!#"
-"#!# ###"
-"#!#    "
-"#!#    "
-"#!#    "
-"#!#    "
-"#!#    "
-"#!#### "
-"#!!!!# "
-"###### "
-;1234567
 [end]
 
 
@@ -11225,12 +11976,12 @@ DayXpm="16 16 88 2"   Colormode=16
 "*=	c #F6F6FE"
 "*1	c #FFFFFF"
 "%8%?%?%?%5%6?#%5%?%?%?%?%?%?%?%8"
-"%%!1#3#%%3$6*??3!8#3#3*%*%*%#1%%"
-"%?#3#6!8%****1$1!7#3#6*%#6#6*%%?"
-"%?#3#6#=!2$8*#!4!5#?#6*%*%*%#3%?"
-"%?#3#6!6!%$4$6#8!3%5#3*%#6#6#3%?"
-"%?!1!6?=??$2*=$9*#$#!=*%#6#6#3%?"
-"%?!%?2*??*$6$3#2#8#2!6*%#6#6#3%?"
+"%%!1#3#%%3$6*??3!8#3#3#3#3#3#1%%"
+"%?#3#6!8%****1$1!7#3#6#6#6#6#3%?"
+"%?#3#6#=!2$8*#!4!5#?#6#6#6#6#3%?"
+"%?#3#6!6!%$4$6#8!3%5#3#6#6#6#3%?"
+"%?!1!6?=??$2*=$9*#$#!=#3#6#6#3%?"
+"%?!%?2*??*$6$3#2#8#2!6#5#6#6#3%?"
 "%!!3*%?$!!$7*#?4?5$%?1#?#3#6#3%?"
 "%=?7$=!#!9$$*?*?*?*?*$%*!8#6#3%?"
 "%1$5?8!%#3#8%$%?%$#9$$$2!*#6#6%?"
@@ -13019,68 +13770,6 @@ DayXpm="16 16 4 1"   Colormode=16
 
 
 [_point]
-Type=0x05d
-SubType=0x00
-String1=0x02,Sackgasse
-String2=0x04,No exit
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="14 14 35 2"   Colormode=16
-"!!	c #99A6C1"
-"!#	c #617DB4"
-"!%	c #617CB4"
-"!?	c #9DA9C1"
-"!$	c #6782B6"
-"!*	c #0065FF"
-"!=	c #6882B6"
-"!1	c #6781B6"
-"!2	c #6681B6"
-"!3	c #6882B6"
-"!4	c #6C5F96"
-"!5	c #974C6D"
-"!6	c #6C5E95"
-"!7	c #6983B7"
-"!8	c #FF3020"
-"!9	c #BD3041"
-"#!	c #6983B7"
-"##	c #7F6290"
-"#%	c #B1495C"
-"#?	c #BD3041"
-"#$	c #E16F70"
-"#*	c #7F6391"
-"#=	c #0095FF"
-"#1	c #FAFBFD"
-"#2	c #6983B6"
-"#3	c #6B84B8"
-"#4	c #6C85B8"
-"#5	c #6D86B9"
-"#6	c #6782B6"
-"#7	c #9DA9C2"
-"#8	c #6882B6"
-"#9	c #6782B6"
-"%!	c #6F88B9"
-"%#	c #E8E9EA"
-"%%	c #9FABC3"
-"!!#!#!#!#!#!#!#!#!#!#!#!#!!?"
-"#!!*!*!*!*!*!*!*!*!*!*!*!*#!"
-"#!!*!*!*!*!*!*!*!*!*!*!*!*#!"
-"#!!*!*!4!9!9!9!9!9!9!4!*!*#!"
-"#!!*!*!9!8!8!8!8!8!8!9!*!*#!"
-"#!!*!*!4#?!9#$#$!9!9!4!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"#!!*!*!*!*#=#1#1#=!*!*!*!*#!"
-"!!#!#!#!#!#!#!#!#!#!#!#!#!!!"
-;12345678901234
-[end]
-
-
-[_point]
 Type=0x064
 SubType=0x01
 ExtendedLabels=N
@@ -13128,28 +13817,6 @@ DayXpm="14 14 3 1"   Colormode=16
 " #!!!!!!!!!!# "
 " #!!!!!!!!!!# "
 " ############ "
-;12345678901234
-[end]
-
-
-[_point]
-Type=0x064
-SubType=0x06
-String1=0x02,Zebrastreifen
-String2=0x04,Crossing
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="14 7 2 1"   Colormode=32
-"!	c #999999"  canalalpha=0
-"#	c #FFFFFF"  canalalpha=0
-"!!!!!!!!!!!!!!"
-"!!!!!####!!!!!"
-"!!!!!!!!!!!!!!"
-"!!!!!####!!!!!"
-"!!!!!!!!!!!!!!"
-"!!!!!####!!!!!"
-"!!!!!!!!!!!!!!"
 ;12345678901234
 [end]
 
@@ -13449,7 +14116,7 @@ DayXpm="2 2 2 1"   Colormode=16
 
 
 [_point]
-Type=0x066
+Type=0x66
 SubType=0x16
 String1=0x04,Peak
 String2=0x02,Gipfel
@@ -13499,779 +14166,6 @@ DayXpm="16 7 3 1"   Colormode=16
 "!!#!!!!!!!!!!#!!"
 "!#!!        !!#!"
 "!!!          !!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x00
-String1=0x02,Schranke
-String2=0x04,Lift gate
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="16 16 4 1"   Colormode=16
-"!	c #101010"
-"#	c #FF3000"
-"%	c #FFFFFF"
-"  	c none"
-"                "
-"    ##          "
-"   ####%%       "
-"   ####%%%      "
-"    ###%%%#     "
-"      ##%%##    "
-"        #####   "
-"         ####   "
-"         !##!   "
-"         !!!!   "
-"         !!!!   "
-"         !!!!   "
-"                "
-"                "
-"                "
-"                "
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x01
-String1=0x02,Poller
-String2=0x04,Bollard
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="16 16 4 1"   Colormode=16
-"!	c #000000"
-"#	c #FF0000"
-"%	c #FFFFFF"
-"  	c none"
-"      ####      "
-"      ####      "
-"      %%%#      "
-"      %%%#      "
-"      ####      "
-"      ####      "
-"      %%%#      "
-"      %%%#      "
-"      ####      "
-"      ####      "
-"      !!!!      "
-"      !!!!      "
-"      !!!!      "
-"                "
-"                "
-"                "
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x02
-String1=0x02,Umlaufsperre
-String2=0x04,Cycle barrier
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="16 16 3 1"   Colormode=16
-"!	c #FFFFFF"
-"#	c #FF3000"
-"  	c none"
-"                "
-"                "
-"                "
-"                "
-" ####!!!##      "
-" ###!!!####     "
-" #########      "
-"                "
-"                "
-"      ###!!!### "
-"     ###!!!#### "
-"      ######### "
-"                "
-"                "
-"                "
-"                "
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x03
-String1=0x02,Bovi-Stop
-String2=0x04,Cattle grid
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="16 6 46 2"   Colormode=32
-"!!	c #17D51B"  canalalpha=0
-"!#	c #68D05A"  canalalpha=0
-"!%	c #AF9062"  canalalpha=0
-"!?	c #C0A782"  canalalpha=0
-"!$	c #C4AC8A"  canalalpha=0
-"!*	c #B6996F"  canalalpha=0
-"!=	c #AF8E60"  canalalpha=0
-"!1	c #67CF59"  canalalpha=0
-"!2	c #1AD51E"  canalalpha=0
-"!3	c #47D744"  canalalpha=0
-"!4	c #A3A66A"  canalalpha=0
-"!5	c #BA9E76"  canalalpha=0
-"!6	c #CAB597"  canalalpha=0
-"!7	c #CBB799"  canalalpha=0
-"!8	c #BCA17A"  canalalpha=0
-"!9	c #A6A66C"  canalalpha=0
-"#!	c #50D84D"  canalalpha=0
-"##	c #1BD61F"  canalalpha=0
-"#%	c #27D72A"  canalalpha=0
-"#?	c #D3C6AC"  canalalpha=0
-"#$	c #CEBA9E"  canalalpha=0
-"#*	c #CFBB9F"  canalalpha=0
-"#=	c #BEA47F"  canalalpha=0
-"#1	c #B6986E"  canalalpha=0
-"#2	c #D6C5AD"  canalalpha=0
-"#3	c #28D62B"  canalalpha=0
-"#4	c #A6D290"  canalalpha=0
-"#5	c #B39569"  canalalpha=0
-"#6	c #C9B394"  canalalpha=0
-"#7	c #D0BEA3"  canalalpha=0
-"#8	c #BFA682"  canalalpha=0
-"#9	c #C8B393"  canalalpha=0
-"%!	c #A6D08E"  canalalpha=0
-"%#	c #4DCF43"  canalalpha=0
-"%%	c #B2A475"  canalalpha=0
-"%?	c #BDA27C"  canalalpha=0
-"%$	c #CDB99C"  canalalpha=0
-"%*	c #BDA37D"  canalalpha=0
-"%=	c #4CCE42"  canalalpha=0
-"%1	c #89A252"  canalalpha=0
-"%2	c #AD8C5D"  canalalpha=0
-"%3	c #C7B08F"  canalalpha=0
-"%4	c #C6AF8F"  canalalpha=0
-"%5	c #B89C73"  canalalpha=0
-"%6	c #AD8C5C"  canalalpha=0
-"%7	c #8AA452"  canalalpha=0
-"!!!!!!!#!%!?!$!*!*!$!?!=!1!!!!!!"
-"!!!2!3!4!5!6!7!8!8!7!6!5!9#!##!!"
-"!!#%#?!*!7#$#*#=#=#*#$!7#1#2#3!!"
-"!!#4#5#6#7#7#7#8#8#7#7#7#9#5%!!!"
-"%#%%%?%$%$%$%$%*%*%$%$%$%$%?%%%="
-"%1%2%3%4%4%4%4%5%5%4%4%4%4%3%6%7"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x04
-String1=0x02,Mautstelle
-String2=0x04,Toll booth
-ExtendedLabels=N
-DayXpm="20 9 95 2"   Colormode=32
-"!!	c #757D61"  canalalpha=0
-"!#	c #747B60"  canalalpha=0
-"!%	c #6F775B"  canalalpha=0
-"!?	c #737A5F"  canalalpha=0
-"!$	c #70785B"  canalalpha=0
-"!*	c #727A5E"  canalalpha=0
-"!=	c #71795D"  canalalpha=0
-"!1	c #70785C"  canalalpha=0
-"!2	c #EAECE7"  canalalpha=0
-"!3	c #EAEBE7"  canalalpha=0
-"!4	c #828970"  canalalpha=0
-"!5	c #D7D9D1"  canalalpha=0
-"!6	c #EBECE8"  canalalpha=0
-"!7	c #939983"  canalalpha=0
-"!8	c #C6C9BE"  canalalpha=0
-"!9	c #A8AD9B"  canalalpha=0
-"#!	c #B0B4A5"  canalalpha=0
-"##	c #BEC1B4"  canalalpha=0
-"#%	c #9A9F8B"  canalalpha=0
-"#?	c #ECEDE9"  canalalpha=0
-"#$	c #FFFFFF"  canalalpha=0
-"#*	c #FEFEFE"  canalalpha=0
-"#=	c #868C74"  canalalpha=0
-"#1	c #E7E8E3"  canalalpha=0
-"#2	c #999E8A"  canalalpha=0
-"#3	c #D4D6CE"  canalalpha=0
-"#4	c #FAE6E6"  canalalpha=0
-"#5	c #F8DCDC"  canalalpha=0
-"#6	c #FCEDED"  canalalpha=0
-"#7	c #B2B6A7"  canalalpha=0
-"#8	c #BBBFB2"  canalalpha=0
-"#9	c #CBCEC4"  canalalpha=0
-"%!	c #A1A694"  canalalpha=0
-"%#	c #D3D6CD"  canalalpha=0
-"%%	c #E78484"  canalalpha=0
-"%?	c #EFADAD"  canalalpha=0
-"%$	c #EC9D9D"  canalalpha=0
-"%*	c #B2B7A8"  canalalpha=0
-"%=	c #FCFEFB"  canalalpha=0
-"%1	c #D3D2C9"  canalalpha=0
-"%2	c #DC4646"  canalalpha=0
-"%3	c #DC4B4B"  canalalpha=0
-"%4	c #E15C5C"  canalalpha=0
-"%5	c #B1B6A7"  canalalpha=0
-"%6	c #F6F7FC"  canalalpha=0
-"%7	c #CBCFEB"  canalalpha=0
-"%8	c #CCD0EB"  canalalpha=0
-"%9	c #C0C4BF"  canalalpha=0
-"?!	c #CFDEC4"  canalalpha=0
-"?#	c #B1DC99"  canalalpha=0
-"?%	c #B2DC9A"  canalalpha=0
-"??	c #F1F9EC"  canalalpha=0
-"?$	c #D2CEC6"  canalalpha=0
-"?*	c #B43B3B"  canalalpha=0
-"?=	c #CB4D4D"  canalalpha=0
-"?1	c #B34647"  canalalpha=0
-"?2	c #B1B3A4"  canalalpha=0
-"?3	c #BBBFB1"  canalalpha=0
-"?4	c #D7DAF0"  canalalpha=0
-"?5	c #929AD5"  canalalpha=0
-"?6	c #A3A9DB"  canalalpha=0
-"?7	c #9AA0B1"  canalalpha=0
-"?8	c #A1A693"  canalalpha=0
-"?9	c #ABAF9F"  canalalpha=0
-"$!	c #B6D6A2"  canalalpha=0
-"$#	c #9AD17A"  canalalpha=0
-"$%	c #96CF75"  canalalpha=0
-"$?	c #D7EDCB"  canalalpha=0
-"$$	c #B7BBAD"  canalalpha=0
-"$*	c #E1E3DD"  canalalpha=0
-"$=	c #A09E9E"  canalalpha=0
-"$1	c #D7D5D5"  canalalpha=0
-"$2	c #A2A1A1"  canalalpha=0
-"$3	c #CACDC2"  canalalpha=0
-"$4	c #D0D3C9"  canalalpha=0
-"$5	c #C5C9E9"  canalalpha=0
-"$6	c #404EB4"  canalalpha=0
-"$7	c #424FB5"  canalalpha=0
-"$8	c #8A92B6"  canalalpha=0
-"$9	c #BEC2B5"  canalalpha=0
-"*!	c #B5DD9E"  canalalpha=0
-"*#	c #4DAB16"  canalalpha=0
-"*%	c #C2E2AE"  canalalpha=0
-"*?	c #D3D5E9"  canalalpha=0
-"*$	c #474F83"  canalalpha=0
-"**	c #5F6698"  canalalpha=0
-"*=	c #B0B3CC"  canalalpha=0
-"*1	c #DBE3D7"  canalalpha=0
-"*2	c #5C6B53"  canalalpha=0
-"*3	c #6B7A62"  canalalpha=0
-"*4	c #D1D7CD"  canalalpha=0
-"*5	c #F9F9F9"  canalalpha=0
-"*6	c #C0C0C0"  canalalpha=0
-"*7	c #D7D7D7"  canalalpha=0
-"*8	c #E8E8E8"  canalalpha=0
-"!!!#!%!?!#!#!#!$!*!#!#!#!=!=!#!#!#!*!1!!"
-"!2!3!4!5!2!2!6!7!8!2!2!6!9#!!2!2!2###%#?"
-"#$#*#=#1#$#$#$#2#3#4#5#6#7#8#$#$#$#9%!#$"
-"#$#*#=#1#$#$#$#2%#%%%?%$%*#8#$#$#$#9%!#$"
-"#$#*#=#1%=%=#$#2%1%2%3%4%5#8%6%7%8%9%!#$"
-"#$#*#=?!?#?%??#2?$?*?=?1?2?3?4?5?6?7?8#$"
-"#$#*?9$!$#$%$?$$$*$=$1$2$3$4$5$6$7$8$9#$"
-"#$#$#$*!*#*#*%#$#$#$#$#$#$#$*?*$***=#$#$"
-"#$#$#$*1*2*3*4#$#$#$#$#$#$#$*5*6*7*8#$#$"
-;12345678901234567890
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x05
-String1=0x02,Tor/Gatter
-String2=0x04,Gate
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="16 11 3 1"   Colormode=16
-"!	c #000000"
-"#	c #C5C5C5"
-"  	c none"
-"                "
-"                "
-"####        ####"
-"#!!##########!!#"
-"#!!!!!!!!!!!!!!#"
-"#!!!!!!!!!!!!!!#"
-"#!!###!!!####!!#"
-"#!!####!!!###!!#"
-"#!!!!!!!!!!!!!!#"
-"#!!!!!!!!!!!!!!#"
-"################"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x10
-String1=0x02,Ampel
-String2=0x04,Traffic signals
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="6 16 81 2"   Colormode=32
-"!!	c #020000"  canalalpha=6
-"!#	c #350000"  canalalpha=12
-"!%	c #6A0000"  canalalpha=2
-"!?	c #6B0000"  canalalpha=1
-"!$	c #360000"  canalalpha=8
-"!*	c #020000"  canalalpha=4
-"!=	c #2D0000"  canalalpha=14
-"!1	c #B40000"  canalalpha=9
-"!2	c #F00000"  canalalpha=0
-"!3	c #F10000"  canalalpha=0
-"!4	c #B70000"  canalalpha=8
-"!5	c #300000"  canalalpha=8
-"!6	c #5A0000"  canalalpha=1
-"!7	c #EE0000"  canalalpha=0
-"!8	c #F90000"  canalalpha=0
-"!9	c #5F0000"  canalalpha=14
-"#!	c #500000"  canalalpha=2
-"##	c #EC0000"  canalalpha=0
-"#%	c #570000"  canalalpha=4
-"#?	c #180000"  canalalpha=2
-"#$	c #AE0000"  canalalpha=0
-"#*	c #F20100"  canalalpha=0
-"#=	c #F30100"  canalalpha=0
-"#1	c #B20000"  canalalpha=0
-"#2	c #1B0000"  canalalpha=4
-"#3	c #000000"  canalalpha=2
-"#4	c #2A1800"  canalalpha=0
-"#5	c #A15300"  canalalpha=0
-"#6	c #A35400"  canalalpha=0
-"#7	c #2C1900"  canalalpha=0
-"#8	c #000000"  canalalpha=4
-"#9	c #181800"  canalalpha=2
-"%!	c #ABAD00"  canalalpha=0
-"%#	c #EFF200"  canalalpha=0
-"%%	c #AEB100"  canalalpha=0
-"%?	c #1B1B00"  canalalpha=4
-"%$	c #515300"  canalalpha=2
-"%*	c #EDF100"  canalalpha=0
-"%=	c #F9FF00"  canalalpha=0
-"%1	c #EEF200"  canalalpha=0
-"%2	c #585A00"  canalalpha=4
-"%3	c #545500"  canalalpha=2
-"%4	c #EEF100"  canalalpha=0
-"%5	c #EFF300"  canalalpha=0
-"%6	c #5A5C00"  canalalpha=4
-"%7	c #1B1B00"  canalalpha=2
-"%8	c #B1B300"  canalalpha=0
-"%9	c #F1F400"  canalalpha=0
-"?!	c #F1F500"  canalalpha=0
-"?#	c #B4B700"  canalalpha=0
-"?%	c #1E1E00"  canalalpha=4
-"??	c #1C2800"  canalalpha=0
-"?$	c #5C9701"  canalalpha=0
-"?*	c #5D9A01"  canalalpha=0
-"?=	c #1E2B00"  canalalpha=0
-"?1	c #001200"  canalalpha=2
-"?2	c #008E03"  canalalpha=0
-"?3	c #01CC05"  canalalpha=0
-"?4	c #01CD05"  canalalpha=0
-"?5	c #009103"  canalalpha=0
-"?6	c #001500"  canalalpha=4
-"?7	c #004301"  canalalpha=2
-"?8	c #00C805"  canalalpha=0
-"?9	c #00D305"  canalalpha=0
-"$!	c #00C905"  canalalpha=0
-"$#	c #004801"  canalalpha=4
-"$%	c #004E02"  canalalpha=0
-"$?	c #00CB05"  canalalpha=0
-"$$	c #005201"  canalalpha=13
-"$*	c #002A01"  canalalpha=10
-"$=	c #009E03"  canalalpha=8
-"$1	c #00CD05"  canalalpha=0
-"$2	c #00CE05"  canalalpha=0
-"$3	c #00A103"  canalalpha=7
-"$4	c #002C01"  canalalpha=4
-"$5	c #000300"  canalalpha=4
-"$6	c #003301"  canalalpha=5
-"$7	c #006202"  canalalpha=15
-"$8	c #006302"  canalalpha=14
-"$9	c #003401"  canalalpha=2
-"*!	c #000400"  canalalpha=2
-"!!!#!%!?!$!*"
-"!=!1!2!3!4!5"
-"!6!7!8!8!2!9"
-"#!##!8!8!7#%"
-"#?#$#*#=#1#2"
-"#3#4#5#6#7#8"
-"#9%!%#%#%%%?"
-"%$%*%=%=%1%2"
-"%3%4%=%=%5%6"
-"%7%8%9?!?#?%"
-"#3???$?*?=#8"
-"?1?2?3?4?5?6"
-"?7?8?9?9$!$#"
-"$%$??9?9$?$$"
-"$*$=$1$2$3$4"
-"$5$6$7$8$9*!"
-;123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x11
-String1=0x02,Stopschild
-String2=0x04,Stop sign
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="16 16 69 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #E5E4E4"  canalalpha=3
-"!%	c #F9F3F3"  canalalpha=2
-"!?	c #F3CBCB"  canalalpha=3
-"!$	c #F2CBCB"  canalalpha=3
-"!*	c #F8F3F3"  canalalpha=2
-"!=	c #E7E6E6"  canalalpha=2
-"!1	c #FAF4F4"  canalalpha=0
-"!2	c #DE5959"  canalalpha=0
-"!3	c #CC0000"  canalalpha=0
-"!4	c #F9F3F3"  canalalpha=1
-"!5	c #F3CBCB"  canalalpha=2
-"!6	c #CC0101"  canalalpha=0
-"!7	c #E78686"  canalalpha=0
-"!8	c #F3C2C2"  canalalpha=0
-"!9	c #D94040"  canalalpha=0
-"#!	c #F2BDBD"  canalalpha=0
-"##	c #F4C5C5"  canalalpha=0
-"#%	c #E37575"  canalalpha=0
-"#?	c #E37373"  canalalpha=0
-"#$	c #F3C4C4"  canalalpha=0
-"#*	c #DA4343"  canalalpha=0
-"#=	c #E06565"  canalalpha=0
-"#1	c #F4C6C6"  canalalpha=0
-"#2	c #E78787"  canalalpha=0
-"#3	c #CF1010"  canalalpha=0
-"#4	c #F3C1C1"  canalalpha=0
-"#5	c #D63434"  canalalpha=0
-"#6	c #E57D7D"  canalalpha=0
-"#7	c #D32525"  canalalpha=0
-"#8	c #EFADAD"  canalalpha=0
-"#9	c #CD0303"  canalalpha=0
-"%!	c #F6CFCF"  canalalpha=0
-"%#	c #D42727"  canalalpha=0
-"%%	c #F0B2B2"  canalalpha=0
-"%?	c #E57C7C"  canalalpha=0
-"%$	c #DD5454"  canalalpha=0
-"%*	c #EEABAB"  canalalpha=0
-"%=	c #D11B1B"  canalalpha=0
-"%1	c #CD0505"  canalalpha=0
-"%2	c #E47777"  canalalpha=0
-"%3	c #CE0909"  canalalpha=0
-"%4	c #D22020"  canalalpha=0
-"%5	c #F4C9C9"  canalalpha=0
-"%6	c #D01414"  canalalpha=0
-"%7	c #F1B7B7"  canalalpha=0
-"%8	c #E26B6B"  canalalpha=0
-"%9	c #F1BABA"  canalalpha=0
-"?!	c #D01616"  canalalpha=0
-"?#	c #CE0B0B"  canalalpha=0
-"?%	c #E68181"  canalalpha=0
-"??	c #DE5B5B"  canalalpha=0
-"?$	c #D01515"  canalalpha=0
-"?*	c #EA9494"  canalalpha=0
-"?=	c #D73737"  canalalpha=0
-"?1	c #EB9B9B"  canalalpha=0
-"?2	c #D42626"  canalalpha=0
-"?3	c #DC5151"  canalalpha=0
-"?4	c #E98F8F"  canalalpha=0
-"?5	c #D11A1A"  canalalpha=0
-"?6	c #E78888"  canalalpha=0
-"?7	c #DA4444"  canalalpha=0
-"?8	c #E06363"  canalalpha=0
-"?9	c #D94141"  canalalpha=0
-"$!	c #F9F3F3"  canalalpha=0
-"$#	c #E6E5E5"  canalalpha=2
-"$%	c #FAF4F4"  canalalpha=13
-"$?	c #E7E6E6"  canalalpha=1
-"$$	c #FAF4F4"  canalalpha=14
-"!!!!!!!#!%!?!$!$!$!$!?!*!#!!!!!!"
-"!!!!!=!1!2!3!3!3!3!3!3!2!1!=!!!!"
-"!!!=!1!2!3!3!3!3!3!3!3!3!2!1!=!!"
-"!#!1!2!3!3!3!3!3!3!3!3!3!3!2!1!#"
-"!4!2!3!3!3!3!3!3!3!3!3!3!3!3!2!4"
-"!5!6!7!8!9#!###%#?#$#*#=#1#2!6!5"
-"!5#3#4#5#6#7#8#9%!%#%%%?%$%*%=!5"
-"!5%1##%2%3%4%*!3%5%6%7%?%8%9?!!5"
-"!5!3?#?%!7%4%*!3%5%6%7%?%9??!3!5"
-"!5?$?*?=?1%4%*!3%!?2%%%??3!3!3!5"
-"!5!6?4#4#5?5?6!3#?#$?7?8?9!3!3!5"
-"$!!2!3!3!3!3!3!3!3!3!3!3!3!3!2$!"
-"$#$%!2!3!3!3!3!3!3!3!3!3!3!2$%$#"
-"!!$?$$!2!3!3!3!3!3!3!3!3!2$$$?!!"
-"!!!!$?$%!2!3!3!3!3!3!3!2$%$?!!!!"
-"!!!!!!$#$!!?!$!$!$!$!?$!$#!!!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x13
-String1=0x02,Ortsschild
-String2=0x04,City limit
-ExtendedLabels=N
-DayXpm="16 16 91 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #A08020"  canalalpha=13
-"!%	c #BD9726"  canalalpha=2
-"!?	c #BC9625"  canalalpha=2
-"!$	c #BB9625"  canalalpha=2
-"!*	c #BB9525"  canalalpha=2
-"!=	c #BA9525"  canalalpha=2
-"!1	c #B99525"  canalalpha=2
-"!2	c #B99425"  canalalpha=2
-"!3	c #A08020"  canalalpha=0
-"!4	c #C09927"  canalalpha=2
-"!5	c #FFCC33"  canalalpha=0
-"!6	c #BF9926"  canalalpha=1
-"!7	c #D8AD2B"  canalalpha=0
-"!8	c #EEBE30"  canalalpha=0
-"!9	c #C69E27"  canalalpha=0
-"#!	c #C79F28"  canalalpha=0
-"##	c #DBAF2C"  canalalpha=0
-"#%	c #CBA329"  canalalpha=0
-"#?	c #E5B72E"  canalalpha=0
-"#$	c #FAC832"  canalalpha=0
-"#*	c #D8AC2B"  canalalpha=0
-"#=	c #8D711C"  canalalpha=0
-"#1	c #735C17"  canalalpha=0
-"#2	c #8E721C"  canalalpha=0
-"#3	c #B69224"  canalalpha=0
-"#4	c #93761D"  canalalpha=0
-"#5	c #CCA329"  canalalpha=0
-"#6	c #AA8822"  canalalpha=0
-"#7	c #987A1E"  canalalpha=0
-"#8	c #D1A72A"  canalalpha=0
-"#9	c #A08020"  canalalpha=0
-"%!	c #DDB12C"  canalalpha=0
-"%#	c #BE9826"  canalalpha=1
-"%%	c #FCCA33"  canalalpha=0
-"%?	c #46380E"  canalalpha=0
-"%$	c #9B7C1F"  canalalpha=0
-"%*	c #9C7C1F"  canalalpha=0
-"%=	c #97791E"  canalalpha=0
-"%1	c #90731D"  canalalpha=0
-"%2	c #AE8B23"  canalalpha=0
-"%3	c #695415"  canalalpha=0
-"%4	c #A48321"  canalalpha=0
-"%5	c #C59D27"  canalalpha=0
-"%6	c #5E4B13"  canalalpha=0
-"%7	c #B38F24"  canalalpha=0
-"%8	c #876C1B"  canalalpha=0
-"%9	c #FBC932"  canalalpha=0
-"?!	c #B99425"  canalalpha=0
-"?#	c #DCB02C"  canalalpha=0
-"?%	c #C9A128"  canalalpha=0
-"??	c #C8A028"  canalalpha=0
-"?$	c #D5AA2B"  canalalpha=0
-"?*	c #AD8B22"  canalalpha=0
-"?=	c #DFB22C"  canalalpha=0
-"?1	c #AB8922"  canalalpha=0
-"?2	c #E8B92E"  canalalpha=0
-"?3	c #C7A028"  canalalpha=0
-"?4	c #BE9826"  canalalpha=2
-"?5	c #F9C732"  canalalpha=0
-"?6	c #F5C431"  canalalpha=0
-"?7	c #FECB33"  canalalpha=0
-"?8	c #F0C030"  canalalpha=0
-"?9	c #FECC33"  canalalpha=0
-"$!	c #BD9726"  canalalpha=1
-"$#	c #BA9525"  canalalpha=0
-"$%	c #B39024"  canalalpha=0
-"$?	c #B49024"  canalalpha=0
-"$$	c #BE9826"  canalalpha=0
-"$*	c #E4B72E"  canalalpha=0
-"$=	c #A18020"  canalalpha=0
-"$1	c #B08D23"  canalalpha=0
-"$2	c #B89325"  canalalpha=0
-"$3	c #AF8C23"  canalalpha=0
-"$4	c #B79325"  canalalpha=0
-"$5	c #BC9726"  canalalpha=0
-"$6	c #C39C27"  canalalpha=0
-"$7	c #E4B62E"  canalalpha=0
-"$8	c #EDBE30"  canalalpha=0
-"$9	c #E9BA2F"  canalalpha=0
-"*!	c #E7B92E"  canalalpha=0
-"*#	c #E6B82E"  canalalpha=0
-"*%	c #F6C531"  canalalpha=0
-"*?	c #E0B32D"  canalalpha=0
-"*$	c #E3B62D"  canalalpha=0
-"**	c #DDB02C"  canalalpha=0
-"*=	c #D3A82A"  canalalpha=0
-"*1	c #EFBF30"  canalalpha=0
-"*2	c #BC9726"  canalalpha=2
-"*3	c #9F7F20"  canalalpha=1
-"*4	c #9E7F1F"  canalalpha=0
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!#!%!%!?!?!?!$!$!*!*!=!=!=!1!2!3"
-"!4!5!5!5!5!5!5!5!5!5!5!5!5!5!5!4"
-"!6!7!8!9#!###%!5!5#?#$!5!5!5!5!6"
-"!6#*#=#1#2#3#4#5#6#7#8#9%!#=#?!6"
-"%#%%%?%$%*%=%1%2%3%4%5%6%7%8%9%#"
-"%#!5?!?#?#?%???$?*?=!7?1?2?3!5%#"
-"?4?5?6?7%9?7?5?8?7%9?5?7?7?9!5?4"
-"$!?#$#$%$?$$$*$=$1$2$3$4$5$6$7$!"
-"$!?6$8$9*!*#*%*?*$*##?*?***=*1$!"
-"*2!5!5!5!5!5!5!5!5!5!5!5!5!5!5*2"
-"*3!2!2!2!2!2!2!2!2!2!2!2!2!2!2*4"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x070
-SubType=0x14
-String1=0x02,Mini-Kreisverkehr
-String2=0x04,Mini roundabout
-ExtendedLabels=N
-DayXpm="16 16 83 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #8B8B8B"  canalalpha=7
-"!%	c #D2D2D3"  canalalpha=12
-"!?	c #C3CAD9"  canalalpha=8
-"!$	c #A2B0CE"  canalalpha=4
-"!*	c #D3D4D5"  canalalpha=3
-"!=	c #93A6CD"  canalalpha=1
-"!1	c #375FAF"  canalalpha=0
-"!2	c #03359A"  canalalpha=0
-"!3	c #003399"  canalalpha=0
-"!4	c #CED2DA"  canalalpha=0
-"!5	c #5677BA"  canalalpha=3
-"!6	c #013499"  canalalpha=0
-"!7	c #01349A"  canalalpha=0
-"!8	c #06389B"  canalalpha=0
-"!9	c #3960B0"  canalalpha=0
-"#!	c #5B7CBD"  canalalpha=0
-"##	c #5C7CBC"  canalalpha=3
-"#%	c #D3D3D5"  canalalpha=3
-"#?	c #04369B"  canalalpha=0
-"#$	c #708DC6"  canalalpha=0
-"#*	c #D8E0EF"  canalalpha=0
-"#=	c #2F58AC"  canalalpha=0
-"#1	c #04369A"  canalalpha=0
-"#2	c #DCE3F1"  canalalpha=0
-"#3	c #EAEEF7"  canalalpha=0
-"#4	c #5C7CBE"  canalalpha=0
-"#5	c #0C3D9E"  canalalpha=0
-"#6	c #8A8A8A"  canalalpha=7
-"#7	c #B3C2E1"  canalalpha=0
-"#8	c #ABBCDE"  canalalpha=0
-"#9	c #1D4AA4"  canalalpha=0
-"%!	c #ADBEDE"  canalalpha=0
-"%#	c #CAD4EA"  canalalpha=0
-"%%	c #D1D2D3"  canalalpha=12
-"%?	c #718EC6"  canalalpha=0
-"%$	c #ACBDDE"  canalalpha=0
-"%*	c #5779BC"  canalalpha=0
-"%=	c #6685C2"  canalalpha=0
-"%1	c #A7B9DC"  canalalpha=0
-"%2	c #7590C8"  canalalpha=0
-"%3	c #1443A1"  canalalpha=0
-"%4	c #D9E1F0"  canalalpha=0
-"%5	c #2450A8"  canalalpha=0
-"%6	c #0B3C9D"  canalalpha=0
-"%7	c #1E4BA5"  canalalpha=0
-"%8	c #E2E8F3"  canalalpha=0
-"%9	c #A2B1CE"  canalalpha=4
-"?!	c #6D8AC5"  canalalpha=0
-"?#	c #839BCD"  canalalpha=0
-"?%	c #DDE4F1"  canalalpha=0
-"??	c #244FA7"  canalalpha=0
-"?$	c #D7DFEF"  canalalpha=0
-"?*	c #1C49A4"  canalalpha=0
-"?=	c #07399C"  canalalpha=0
-"?1	c #B2C1E0"  canalalpha=0
-"?2	c #FEFEFE"  canalalpha=0
-"?3	c #6A88C4"  canalalpha=0
-"?4	c #D0DAEC"  canalalpha=0
-"?5	c #1A48A3"  canalalpha=0
-"?6	c #08399C"  canalalpha=0
-"?7	c #4F72B9"  canalalpha=0
-"?8	c #8CA3D1"  canalalpha=0
-"?9	c #02359A"  canalalpha=0
-"$!	c #1544A2"  canalalpha=0
-"$#	c #4E71B8"  canalalpha=0
-"$%	c #1644A2"  canalalpha=0
-"$?	c #9CB0D7"  canalalpha=0
-"$$	c #A2B4DA"  canalalpha=0
-"$*	c #1C4AA4"  canalalpha=0
-"$=	c #2A55AA"  canalalpha=0
-"$1	c #98ADD6"  canalalpha=0
-"$2	c #FAFBFD"  canalalpha=0
-"$3	c #859DCE"  canalalpha=0
-"$4	c #7691C8"  canalalpha=0
-"$5	c #D9E0F0"  canalalpha=0
-"$6	c #D5DDEE"  canalalpha=0
-"$7	c #DAE2F0"  canalalpha=0
-"$8	c #D1DAED"  canalalpha=0
-"$9	c #5D7DBE"  canalalpha=0
-"*!	c #1B49A4"  canalalpha=0
-"*#	c #1847A3"  canalalpha=0
-"*%	c #486CB6"  canalalpha=0
-"!!!!!!!!!#!%!?!$!$!?!%!#!!!!!!!!"
-"!!!!!!!*!=!1!2!3!3!2!1!=!*!!!!!!"
-"!!!!!4!5!3!3!6!7!3!8!9#!##!4!!!!"
-"!!#%!5!3#?#$#*#=#1#2#3#4#5!5#%!!"
-"#6!=!3#?#7#8#9!3!3%!%##8#1!3!=#6"
-"%%!1!3%?%$!2!3!3!3%*%=%1%2!3!1%%"
-"!?%3!6%4%5%6!3!3!3!3%6%7%8!2!2!?"
-"%9?!?#?%%$??!3!3!3!3!3!3?$?*!3%9"
-"%9?=?1?2?3!3!3!3!3!3!3!3?4?5!3%9"
-"!?!2?6?7!3!3!3!3!3!3!3!3?8?9!2!?"
-"%%!1!3!3$!!6!3!3%3$#$%!3!3!3!1%%"
-"#6!=!3!3$?$$$*!3$=$1$2$3!3!3!=#6"
-"!!#%!5!3#?$4%8$5$6$7$8$9!3!5#%!!"
-"!!!!!4!5!3!3!2*!*#!7%$?5!5!4!!!!"
-"!!!!!!!*!=!1!2!3!3!2*%!=!*!!!!!!"
-"!!!!!!!!!#!%!?!$!$!?!%!#!!!!!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x70
-SubType=0x15
-String1=0x02,Ausweichstelle
-String2=0x04,Passing place
-ExtendedLabels=N
-DayXpm="16 16 5 1"   Colormode=16
-"!	c #202020"
-"#	c #838383"
-"%	c #D5D5D5"
-"?	c #FFFFFF"
-"  	c none"
-"  %#!!!#%       "
-"  %#!!!#%       "
-"  %#!!?!%       "
-"  %#!!?!#%      "
-"  %#!!!!!%%     "
-"  %#!!?!!#%     "
-"  %#!!?!!#%     "
-"  %#!!!!!#%     "
-"  %#!!?!!#%     "
-"  %#!!?!!#%     "
-"  %#!!!!!#%     "
-"  %#!!?!!%      "
-"  %#!!?!#%      "
-"  %#!!!!%       "
-"  %#!!!#%       "
-"  %#!!!#%       "
 ;1234567890123456
 [end]
 
@@ -16222,6 +16116,38 @@ DayXpm="16 16 3 1"   Colormode=16
 "                "
 "                "
 ;1234567890123456
+[end]
+
+
+[_point]
+Type=0x115
+SubType=0x17
+String1=0x02,Wegweiser
+String2=0x04,Signpost
+ExtendedLabels=N
+DayXpm="7 18 3 1"   Colormode=16
+"!	c #000000"
+"#	c #C0C0C0"
+"  	c none"
+"#######"
+"#!##!!#"
+"#!!!!!#"
+"#!!!!##"
+"#!#### "
+"#!!!#  "
+"#!!!!##"
+"#!#!!!#"
+"#!##!!#"
+"#!# ###"
+"#!#    "
+"#!#    "
+"#!#    "
+"#!#    "
+"#!#    "
+"#!#### "
+"#!!!!# "
+"###### "
+;1234567
 [end]
 
 
