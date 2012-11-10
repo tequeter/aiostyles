@@ -234,7 +234,7 @@ highway=* & (highway~'motorway.*' | highway~'trunk.*' | highway~'primary.*')	{ a
 highway=* & (highway=motorway | motorroad=yes)					{ add bicycle=no; add foot=no; }
 
 # Validation-like checks (uncomment to enable)
-highway=motorway_link & oneway!=yes & oneway!=no { echo "motorway_link lacks oneway" }
+#highway=motorway_link & oneway!=yes & oneway!=no { echo "motorway_link lacks oneway" }
 
 # motorway
 junction=roundabout & highway~'motorway.*'  						[0x12001 resolution 24-22 continue with_actions]
