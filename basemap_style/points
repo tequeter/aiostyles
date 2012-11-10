@@ -140,7 +140,6 @@ man_made=flagpole 										[0x6419 resolution 24]
 man_made=reservoir_covered | man_made=gasometer 						[0x641a resolution 24]
 
 addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 				[0x641b resolution 24]
-#building=entrance & addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 	[0x641b resolution 24]
 # 0x64ss
 
 
