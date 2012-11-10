@@ -14154,7 +14154,7 @@ SubType=0x1c
 String1=0x02,Dach
 String2=0x04,Roof
 ExtendedLabels=N
-DayXpm="16 16 4 1"   Colormode=16
+DayXpm="16 20 4 1"   Colormode=16
 "!	c #101010"
 "#	c #838383"
 "%	c #D5D5D5"
@@ -14168,6 +14168,10 @@ DayXpm="16 16 4 1"   Colormode=16
 "#!!          !!#"
 "!!            !!"
 "!              !"
+"                "
+"                "
+"                "
+"                "
 "                "
 "                "
 "                "
