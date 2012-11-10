@@ -22,9 +22,9 @@ mkgmap:country=NLD & mkgmap:city!=* & mkgmap:admin_level8=* 		{ set mkgmap:city=
 
 # Germany = DEU cities
 
-mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Hamburg 		{ set mkgmap:city='${mkgmap:admin_level4}' }
-mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Berlin 		{ set mkgmap:city='${mkgmap:admin_level4}' }
-mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level6=Rostock 		{ set mkgmap:city='${mkgmap:admin_level6}' }      
+mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Hamburg 	{ set mkgmap:city='${mkgmap:admin_level4}' }
+mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Berlin 	{ set mkgmap:city='${mkgmap:admin_level4}' }
+mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level6=Rostock 	{ set mkgmap:city='${mkgmap:admin_level6}' }
 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level8=* 		{ set mkgmap:city='${mkgmap:admin_level8}' } 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level7=* 		{ set mkgmap:city='${mkgmap:admin_level7}' } 
@@ -58,7 +58,7 @@ mkgmap:country=SWE & mkgmap:city!=* & mkgmap:admin_level9=* 		{ set mkgmap:city=
 mkgmap:country=SWE & mkgmap:city!=* & mkgmap:admin_level7=* 		{ set mkgmap:city='${mkgmap:admin_level7}' }
 mkgmap:country=CHE & mkgmap:city!=* & mkgmap:admin_level8=* 		{ set mkgmap:city='${mkgmap:admin_level8}' }
  
-# Canda
+# Canada
 mkgmap:country=CAN & mkgmap:region!=* & mkgmap:admin_level4=* 		{ set mkgmap:region='${mkgmap:admin_level4}' }
 mkgmap:country=CAN & mkgmap:city!=* & mkgmap:admin_level8=* 		{ set mkgmap:city='${mkgmap:admin_level8}' }
  
@@ -138,7 +138,9 @@ amenity=hunting_stand 										[0x6417 resolution 24]
 man_made=survey_point 										[0x6418 resolution 24]
 man_made=flagpole 										[0x6419 resolution 24]
 man_made=reservoir_covered | man_made=gasometer 						[0x641a resolution 24]
-building=entrance & addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 	[0x641b resolution 24]
+
+addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 				[0x641b resolution 24]
+#building=entrance & addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 	[0x641b resolution 24]
 # 0x64ss
 
 
@@ -196,10 +198,10 @@ natural=peak & ele>2300 			{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)
 natural=peak | natural=hill 			{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 		[0x6616 resolution 24]
 # 0x6617	# valley
 # 0x6618	# woods
-mountain_pass=yes 				{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 		[0x6619 resolution 23 continue]
+mountain_pass=yes 				{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 		[0x6618 resolution 23 continue]
 # 0x66ss
 
-natural=cave_entrance 													[0x11502 resolution 24]	# type without category
+natural=cave_entrance 													[0x6619 resolution 24]	# type without category
 # 0x11503	# mineshaft	# type without category
 natural=tree 														[0x1150b resolution 24]	# type without category
 
@@ -307,6 +309,8 @@ railway=halt { name '${name} (${route_ref})'; } 	[0x2f08 resolution 24]
 # 0x11008
 
 # Transit Service 
+
+( railway=tram_stop | amenity=bus_station | highway=bus_stop ) & shelter != no	[0x641c resolution 24 continue]
 railway=tram_stop { name '${name} (${route_ref})'; } 				[0x2f17 resolution 24]
 amenity=bus_station | highway=bus_stop { name '${name} (${route_ref})'; } 	[0x2f17 resolution 24]
 

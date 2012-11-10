@@ -22,9 +22,9 @@ mkgmap:country=NLD & mkgmap:city!=* & mkgmap:admin_level8=* 		{ set mkgmap:city=
 
 # Germany = DEU cities
 
-mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Hamburg 		{ set mkgmap:city='${mkgmap:admin_level4}' }
-mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Berlin 		{ set mkgmap:city='${mkgmap:admin_level4}' }
-mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level6=Rostock 		{ set mkgmap:city='${mkgmap:admin_level6}' }      
+mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Hamburg 	{ set mkgmap:city='${mkgmap:admin_level4}' }
+mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level4=Berlin 	{ set mkgmap:city='${mkgmap:admin_level4}' }
+mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level6=Rostock 	{ set mkgmap:city='${mkgmap:admin_level6}' }      
 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level8=* 		{ set mkgmap:city='${mkgmap:admin_level8}' } 
 mkgmap:country=DEU & mkgmap:city!=* & mkgmap:admin_level7=* 		{ set mkgmap:city='${mkgmap:admin_level7}' } 
