@@ -282,7 +282,7 @@ junction=roundabout & highway~'motorway.*'						[0x0c	 resolution 24-22 road_cla
 	      }
 
 highway=motorway_link                       						[0x11008 resolution 22-20 continue with_actions]
-highway=motorway_link                       						[0x08	 resolution 24-23 road_class=4 road_speed=3]
+highway=motorway_link                       						[0x09	 resolution 24-23 road_class=4 road_speed=3]
 
 highway=motorway	{ 
 	      add oneway=yes; 
@@ -303,7 +303,7 @@ junction=roundabout & highway~'trunk.*'							[0x0c	 resolution 24-22 road_class
 
 highway=trunk_link                          						[0x12002 resolution 22-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 24-23 continue with_actions]
-highway=trunk_link                          						[0x0b	 resolution 24-23 road_class=3 road_speed=3]
+highway=trunk_link                          						[0x09	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=trunk		{ 
 	      name '${streetname} ${ref|highway-symbol:hbox}' | 
@@ -319,7 +319,7 @@ junction=roundabout & highway~'primary.*'   						[0x0c	 resolution 24-22 road_c
 
 highway=primary_link                        						[0x12002 resolution 22-20 continue with_actions]
 highway=primary_link                        						[0x11002 resolution 24-23 continue with_actions]
-highway=primary_link                        						[0x0b	 resolution 24-23 road_class=3 road_speed=3]
+highway=primary_link                        						[0x09	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=primary	      { 
 	      name '${streetname} ${ref|highway-symbol:box}' | 
@@ -335,7 +335,7 @@ junction=roundabout & highway~'secondary.*'						[0x0c	 resolution 24-22 road_cl
 
 highway=secondary_link                      						[0x12003 resolution 22-20 continue with_actions]
 highway=secondary_link                      						[0x11003 resolution 24-23 continue with_actions]
-highway=secondary_link                      						[0x0b	 resolution 24-23 road_class=3 road_speed=2]
+highway=secondary_link                      						[0x09	 resolution 24-23 road_class=3 road_speed=2]
 
 highway=secondary	{ 
 	      name '${streetname} ${ref|highway-symbol:oval} ' | 
@@ -351,7 +351,7 @@ junction=roundabout & highway~'tertiary.*'						[0x0c	 resolution 24-22 road_cla
 
 highway=tertiary_link                       						[0x12004 resolution 22-20 continue with_actions]
 highway=tertiary_link                       						[0x11004 resolution 24-23 continue with_actions]
-highway=tertiary_link                       						[0x0b	 resolution 24-23 road_class=2 road_speed=2]
+highway=tertiary_link                       						[0x09	 resolution 24-23 road_class=2 road_speed=2]
 
 highway=tertiary	{ 
 	      name '${streetname} ${ref|highway-symbol:round}' | 
@@ -526,8 +526,8 @@ highway=path                                            				[0x12 resolution 24-
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
-highway=* & (mkgmap:unpaved=1)                          				[0x0a    resolution 24-22 road_class=0 road_speed=0]
-highway=* & (area!=yes & area!=true & area!=1)          				[0x09    ]
+highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24-22 road_class=0 road_speed=0]
+highway=* & (area!=yes & area!=true & area!=1)          				[0x07 resolution 24  ]
 
 junction=roundabout                                     				[0x00c06 resolution 24-21 road_class=1 road_speed=1]
 

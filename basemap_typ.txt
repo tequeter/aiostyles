@@ -1905,8 +1905,8 @@ UseOrientation=N
 LineWidth=6
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FF656A"
-"2 c #BD3000"
+"1 c #3965FF"
+"2 c #0000D5"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -2005,9 +2005,9 @@ UseOrientation=N
 LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FF656A"
+"1 c #D5D5D5"
 "2 c #BD3000"
-String1=0x02,Auf-/Abfahrt
+String1=0x02,Anschluss
 String2=0x04,Ramp
 ExtendedLabels=N
 [end]
@@ -2016,16 +2016,13 @@ ExtendedLabels=N
 [_line]
 Type=0x09
 UseOrientation=N
-Xpm="32 2 4  1"
-"! c #595959"
-"# c #FFFFFF"
-"3 c #AAAAAA"
-"4 c #000000"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-;12345678901234567890123456789012
-String1=0x02,Unbekannte Straﬂe
-String2=0x04,Unknown road
+LineWidth=4
+BorderWidth=2
+Xpm="0 0 2 0"
+"1 c #D5D5D5"
+"2 c #BD3000"
+String1=0x02,Anschluss
+String2=0x04,Ramp
 ExtendedLabels=N
 [end]
 
@@ -2057,8 +2054,8 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #838383"
-String1=0x02,Verbindungsstraﬂe
-String2=0x04,Link road
+String1=0x02,Straﬂe
+String2=0x04,Road
 ExtendedLabels=N
 [end]
 
@@ -3094,8 +3091,8 @@ UseOrientation=N
 LineWidth=6
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FF656A"
-"2 c #BD3000"
+"1 c #3965FF"
+"2 c #0000D5"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -3200,7 +3197,7 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FF656A"
+"1 c #D5D5D5"
 "2 c #BD3000"
 String1=0x02,Auf-/Abfahrt
 String2=0x04,Ramp
@@ -3399,8 +3396,8 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FF656A"
-"2 c #BD3000"
+"1 c #3965FF"
+"2 c #0000D5"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -14140,7 +14137,7 @@ DayXpm="2 2 1 1"   Colormode=16
 
 
 [_point]
-Type=0x64
+Type=0x064
 SubType=0x1c
 String1=0x02,Dach
 String2=0x04,Roof
@@ -14304,7 +14301,7 @@ DayXpm="16 7 3 1"   Colormode=16
 
 
 [_point]
-Type=0x66
+Type=0x066
 SubType=0x19
 String1=0x02,Hˆhle
 String2=0x04,Cave
@@ -16152,7 +16149,6 @@ DayXpm="16 7 60 2"   Colormode=32
 "!2!2!2!2?2?3?4?5!2!2!2!2!2!2!2!2"
 ;1234567890123456
 [end]
-
 
 
 [_point]
