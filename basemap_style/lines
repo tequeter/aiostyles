@@ -155,7 +155,7 @@ highway=* & disused=yes											[0x10002 resolution 23]
 #
 
 # set display_name for routing instructions
-highway=*   				{ set display_name='${name} (${ref})' | '${ref}' | '${name}'; }
+highway=*   				{ set display_name='${name} (${ref})' | ('${ref}') | '${name}'; }
 
 # backup street name
 highway=*				{ set streetname='${name}'; }
@@ -286,7 +286,7 @@ highway=motorway_link                       						[0x09	 resolution 24-23 road_c
 
 highway=motorway	{ 
 	      add oneway=yes; 
-	      name '${streetname} ${ref|highway-symbol:hbox}' | 
+	      name '${streetname} (${ref) | highway-symbol:hbox}' | 
 	      '${ref|highway-symbol:hbox}' | '${streetname}'; 
 	      }
 highway=motorway                            						[0x12001 resolution 21-12 continue with_actions]
@@ -306,7 +306,7 @@ highway=trunk_link                          						[0x11002 resolution 24-23 cont
 highway=trunk_link                          						[0x09	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=trunk		{ 
-	      name '${streetname} ${ref|highway-symbol:hbox}' | 
+	      name '${streetname} (${ref) | highway-symbol:hbox}' | 
 	      '${ref|highway-symbol:hbox}' | '${name}'; 
 	      }
 highway=trunk                               						[0x12002 resolution 21-17 continue with_actions]
@@ -322,7 +322,7 @@ highway=primary_link                        						[0x11002 resolution 24-23 cont
 highway=primary_link                        						[0x09	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=primary	      { 
-	      name '${streetname} ${ref|highway-symbol:box}' | 
+	      name '${streetname} (${ref) | highway-symbol:box}' | 
 	      '${ref|highway-symbol:box}' | '${name}'; 
 	      }
 highway=primary                             						[0x12002 resolution 21-17 continue with_actions]
@@ -338,7 +338,7 @@ highway=secondary_link                      						[0x11003 resolution 24-23 cont
 highway=secondary_link                      						[0x09	 resolution 24-23 road_class=3 road_speed=2]
 
 highway=secondary	{ 
-	      name '${streetname} ${ref|highway-symbol:oval} ' | 
+	      name '${streetname} (${ref) | highway-symbol:oval} ' | 
 	      '${ref|highway-symbol:oval}' | '${name}'; 
 	      }
 highway=secondary                           						[0x12003 resolution 21-18 continue with_actions]
@@ -354,7 +354,7 @@ highway=tertiary_link                       						[0x11004 resolution 24-23 cont
 highway=tertiary_link                       						[0x09	 resolution 24-23 road_class=2 road_speed=2]
 
 highway=tertiary	{ 
-	      name '${streetname} ${ref|highway-symbol:round}' | 
+	      name '${streetname} (${ref) | highway-symbol:round}' | 
 	      '${ref|highway-symbol:round}' | '${name}'; 
 	      }
 highway=tertiary                            						[0x12004 resolution 21-20 continue with_actions]
@@ -527,7 +527,7 @@ highway=path                                            				[0x12 resolution 24-
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
 highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24-22 road_class=0 road_speed=0]
-highway=* & (area!=yes & area!=true & area!=1)          				[0x07 resolution 24  ]
+highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24  ]
 
 junction=roundabout                                     				[0x00c06 resolution 24-21 road_class=1 road_speed=1]
 
@@ -579,7 +579,7 @@ waterway=dam							[0x10e02 resolution 21]
 waterway=weir							[0x10e03 resolution 24]
 # 0x10e04	# lock (gate)
 
-(tunnel=yes | tunnel=culvert | covered=yes) & waterway=* 			[0x10112 resolution 24-23 continue with_actions]
+(tunnel=yes | tunnel=culvert | covered=yes) & waterway=* 	[0x10112 resolution 24-23 continue with_actions]
 waterway=river | waterway=canal 				[0x1101f resolution 20-18 continue]
 waterway=river                  				[0x1f    resolution 24-21]
 waterway=canal                  				[0x1f    resolution 24-23]
