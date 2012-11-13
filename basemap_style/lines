@@ -537,7 +537,7 @@ junction=roundabout                                     				[0x00c06 resolution 
 #------------------------------------------------------------------------------
 
 # route
-route=ferry 		{add mkgmap:ferry=1}    		[0x1a road_class=0 road_speed=0 resolution 18]
+route=ferry 		{add mkgmap:ferry=1}    		[0x1a road_class=0 road_speed=0 resolution 22]
 
 # aeroway
 aeroway=runway      						[0x27 resolution 20]
