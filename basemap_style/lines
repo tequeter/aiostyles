@@ -286,7 +286,7 @@ highway=motorway_link                       						[0x09	 resolution 24-23 road_c
 
 highway=motorway	{ 
 	      add oneway=yes; 
-	      name '${streetname} (${ref) | highway-symbol:hbox}' | 
+	      name '${streetname} (${ref}) | highway-symbol:hbox}' | 
 	      '${ref|highway-symbol:hbox}' | '${streetname}'; 
 	      }
 highway=motorway                            						[0x12001 resolution 21-12 continue with_actions]
@@ -306,7 +306,7 @@ highway=trunk_link                          						[0x11002 resolution 24-23 cont
 highway=trunk_link                          						[0x09	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=trunk		{ 
-	      name '${streetname} (${ref) | highway-symbol:hbox}' | 
+	      name '${streetname} (${ref}) | highway-symbol:hbox}' | 
 	      '${ref|highway-symbol:hbox}' | '${name}'; 
 	      }
 highway=trunk                               						[0x12002 resolution 21-17 continue with_actions]
@@ -322,7 +322,7 @@ highway=primary_link                        						[0x11002 resolution 24-23 cont
 highway=primary_link                        						[0x09	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=primary	      { 
-	      name '${streetname} (${ref) | highway-symbol:box}' | 
+	      name '${streetname} (${ref}) | highway-symbol:box}' | 
 	      '${ref|highway-symbol:box}' | '${name}'; 
 	      }
 highway=primary                             						[0x12002 resolution 21-17 continue with_actions]
@@ -338,7 +338,7 @@ highway=secondary_link                      						[0x11003 resolution 24-23 cont
 highway=secondary_link                      						[0x09	 resolution 24-23 road_class=3 road_speed=2]
 
 highway=secondary	{ 
-	      name '${streetname} (${ref) | highway-symbol:oval} ' | 
+	      name '${streetname} (${ref}) | highway-symbol:oval} ' | 
 	      '${ref|highway-symbol:oval}' | '${name}'; 
 	      }
 highway=secondary                           						[0x12003 resolution 21-18 continue with_actions]
@@ -354,7 +354,7 @@ highway=tertiary_link                       						[0x11004 resolution 24-23 cont
 highway=tertiary_link                       						[0x09	 resolution 24-23 road_class=2 road_speed=2]
 
 highway=tertiary	{ 
-	      name '${streetname} (${ref) | highway-symbol:round}' | 
+	      name '${streetname} (${ref}) | highway-symbol:round}' | 
 	      '${ref|highway-symbol:round}' | '${name}'; 
 	      }
 highway=tertiary                            						[0x12004 resolution 21-20 continue with_actions]
