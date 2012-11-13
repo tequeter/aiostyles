@@ -2082,7 +2082,7 @@ Xpm="32 1 2  1"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x02,Fu�weg
+String1=0x02,Fußweg
 String2=0x04,Footway
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -2534,7 +2534,7 @@ BorderWidth=4
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #525252"
-String1=0x02,Autobahnbr�cke
+String1=0x02,Autobahnbrücke
 String2=0x04,Motorway bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2583,7 +2583,7 @@ Xpm="32 9 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Br�cke
+String1=0x02,Brücke
 String2=0x04,Bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2799,7 +2799,7 @@ Xpm="32 3 4  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!       !       !       !       "
 ;12345678901234567890123456789012
-String1=0x02,Stra�enbahn
+String1=0x02,Straßenbahn
 String2=0x04,Tram
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -3262,7 +3262,7 @@ Xpm="32 1 2  1"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x02,Fu�weg
+String1=0x02,Fußweg
 String2=0x04,Footway
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -5368,7 +5368,7 @@ DayXpm="14 10 23 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x19
-String1=0x02,D�ner
+String1=0x02,Döner
 String2=0x04,Kebap
 ExtendedLabels=N
 DayXpm="9 16 24 2"   Colormode=32
