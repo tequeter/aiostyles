@@ -89,7 +89,7 @@ mkgmap:phone!=* & contact:phone=* 					{ add mkgmap:phone='${contact:phone}' }
 mkgmap:is_in!=* & is_in=* 						{ set mkgmap:is_in='${is_in}' }
 
 #------------------------------------------------------------------------------
-# Geb�ude
+# Gebäude
 
 building=* 								[0x13 resolution 24 continue with_actions]
 
