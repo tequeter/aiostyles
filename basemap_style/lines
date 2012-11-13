@@ -384,7 +384,10 @@ highway=residential | highway=living_street 						[0x06    resolution 24-23 road
 highway=service | highway=estate            						[0x12007 resolution 22-22 continue with_actions]
 highway=service | highway=estate            {
 		add mkgmap:dead-end-check=false
-		}	 								[0x07    resolution 24-23 road_class=0 road_speed=1]
+		}[0x07    resolution 24-23 road_class=0 road_speed=1]
+
+# road = way typ not defined/unknown - not routable
+highway=road										[0x2c resolution 24]
 
 #------------------------------------------------------------------------------
 # designated ways
