@@ -403,17 +403,26 @@ highway=bridleway		{
 highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
 
 # cycleway
-highway=cycleway		{ 
+highway=cycleway & bicycle=designated		{ 
 		add motorcar=no; 
 		add motorcycle=no; 
 		add bicycle=yes; 
 		add foot=no; 
 		}
+
+highway=cycleway	{
+		add motorcar=no; 
+		add motorcycle=no; 
+		add bicycle=yes;
+		}
+
+
 highway=cycleway                            						[0x11016 resolution 22-21 continue with_actions]
 highway=cycleway                            						[0x16    resolution 24-23 road_class=0 road_speed=1]
 
 # cycleway overlay
 highway=* & bicycle=designated								[0x10416 resolution 24 continue with_actions]
+
 
 # footway
 highway=footway			{ 

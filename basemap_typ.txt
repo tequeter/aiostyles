@@ -647,7 +647,7 @@ Type=0x13
 String1=0x02,Gebäude
 String2=0x04,Building
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
+FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 2 1"
 "! c #000000"

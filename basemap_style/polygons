@@ -88,6 +88,12 @@ mkgmap:phone!=* & contact:phone=* 					{ add mkgmap:phone='${contact:phone}' }
 
 mkgmap:is_in!=* & is_in=* 						{ set mkgmap:is_in='${is_in}' }
 
+
+#------------------------------------------------------------------------------
+# housenumber
+
+addr:housenumber=* & name!=* 		{ set name='${addr:housenumber}' } 
+
 #------------------------------------------------------------------------------
 # buildings
 
@@ -109,10 +115,7 @@ amenity=college 							[0x0a resolution 20]
 amenity=university 							[0x0a resolution 20]
 
 
-#------------------------------------------------------------------------------
-# housenumber
-
-addr:housenumber=* & name!=* 		{ set name='${addr:housenumber}' } 	
+	
 
 
 #------------------------------------------------------------------------------
