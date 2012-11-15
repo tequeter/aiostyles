@@ -1,3 +1,5 @@
+
+
 [_id]
 ProductCode=45
 FID=4
@@ -202,7 +204,7 @@ Xpm="0 0 2 0"
 
 [_polygon]
 Type=0x04
-String1=0x02,Milit√§rgebiet
+String1=0x02,Milit‰rgebiet
 String2=0x04,Military
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -440,7 +442,7 @@ Xpm="32 32 4 1"
 
 [_polygon]
 Type=0x0a
-String1=0x02,Universit√§t
+String1=0x02,Universit‰t
 String2=0x04,University
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -632,7 +634,7 @@ Xpm="32 32 4 1"
 
 [_polygon]
 Type=0x12
-String1=0x02,Fu√üg√§ngerzone
+String1=0x02,Fuﬂg‰ngerzone
 String2=0x04,Pedestrian
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -644,7 +646,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x13
-String1=0x02,Geb√§ude
+String1=0x02,Geb‰ude
 String2=0x04,Building
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -1564,7 +1566,7 @@ Xpm="0 0 1 0"
 
 [_polygon]
 Type=0x4e
-String1=0x02,Kleing√§rten
+String1=0x02,Kleing‰rten
 String2=0x04,Allotments
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -1612,7 +1614,7 @@ Xpm="32 32 4 1"
 
 [_polygon]
 Type=0x4f
-String1=0x02,Geb√ºsch
+String1=0x02,Geb¸sch
 String2=0x04,Scrub
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -1919,7 +1921,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FF9500"
 "2 c #BD3000"
-String1=0x02,Bundesstra√üe
+String1=0x02,Bundesstraﬂe
 String2=0x04,Primary/Trunk
 ExtendedLabels=N
 [end]
@@ -1933,7 +1935,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFCA00"
 "2 c #BD3000"
-String1=0x02,Landes-/Staatsstra√üe
+String1=0x02,Landes-/Staatsstraﬂe
 String2=0x04,Secondary
 ExtendedLabels=N
 [end]
@@ -1947,7 +1949,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
 "2 c #525252"
-String1=0x02,Kreisstra√üe
+String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
 [end]
@@ -1961,7 +1963,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #E6E6E6"
 "2 c #525252"
-String1=0x02,Gemeinde-/Nebenstra√üe
+String1=0x02,Gemeinde-/Nebenstraﬂe
 String2=0x04,Unclassified
 ExtendedLabels=N
 [end]
@@ -1975,7 +1977,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #525252"
-String1=0x02,Wohnstra√üe
+String1=0x02,Wohnstraﬂe
 String2=0x04,Residential
 ExtendedLabels=N
 [end]
@@ -2052,7 +2054,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #838383"
-String1=0x02,Stra√üe
+String1=0x02,Straﬂe
 String2=0x04,Road
 ExtendedLabels=N
 [end]
@@ -2082,7 +2084,7 @@ Xpm="32 1 2  1"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x02,Fu√üweg
+String1=0x02,Fuﬂweg
 String2=0x04,Footway
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -2202,7 +2204,7 @@ Xpm="32 5 4  1"
 "!       !       !       !       "
 "!       !       !       !       "
 ;12345678901234567890123456789012
-String1=0x02,Stra√üenbahn
+String1=0x02,Straﬂenbahn
 String2=0x04,Tram
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -2236,7 +2238,7 @@ Xpm="32 2 2  1"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
 String1=0x02,Reitweg
-String2=0x04,Briddleway
+String2=0x04,Bridleway
 ExtendedLabels=N
 [end]
 
@@ -2387,6 +2389,7 @@ FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
+
 [_line]
 Type=0x2c
 UseOrientation=N
@@ -2534,7 +2537,7 @@ BorderWidth=4
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #525252"
-String1=0x02,Autobahnbr√ºcke
+String1=0x02,Autobahnbr¸cke
 String2=0x04,Motorway bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2559,7 +2562,7 @@ Xpm="32 10 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Br√ºcke
+String1=0x02,Br¸cke
 String2=0x04,Bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2583,7 +2586,7 @@ Xpm="32 9 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Br√ºcke
+String1=0x02,Br¸cke
 String2=0x04,Bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2607,7 +2610,7 @@ Xpm="32 9 2  1"
 "                                "
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Br√ºcke
+String1=0x02,Br¸cke
 String2=0x04,Bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2630,7 +2633,7 @@ Xpm="32 8 2  1"
 "                                "
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Br√ºcke
+String1=0x02,Br¸cke
 String2=0x04,Bridge
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2704,7 +2707,7 @@ Xpm="32 10 2  1"
 "  !!  !!  !!  !!  !!  !!  !!  !!"
 "  !!  !!  !!  !!  !!  !!  !!  !!"
 ;12345678901234567890123456789012
-String1=0x02,Fu√üweg
+String1=0x02,Fuﬂweg
 String2=0x04,Footway
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -2799,7 +2802,7 @@ Xpm="32 3 4  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!       !       !       !       "
 ;12345678901234567890123456789012
-String1=0x02,Stra√üenbahn
+String1=0x02,Straﬂenbahn
 String2=0x04,Tram
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -3059,7 +3062,7 @@ Xpm="32 3 2  1"
 "#!!#!!#!!#!!#!!#!!#!!#!!#!!#!!##"
 "!!###!!!###!!!###!!!###!!!###!!!"
 ;12345678901234567890123456789012
-String1=0x02,Fells
+String1=0x02,Fels
 String2=0x04,Cliff
 ExtendedLabels=N
 [end]
@@ -3122,7 +3125,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FF9500"
 "2 c #BD3000"
-String1=0x02,Bundesstra√üe
+String1=0x02,Bundesstraﬂe
 String2=0x04,Primary/Trunk
 ExtendedLabels=N
 [end]
@@ -3136,7 +3139,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFCA00"
 "2 c #BD3000"
-String1=0x02,Landes-/Staatsstra√üe
+String1=0x02,Landes-/Staatsstraﬂe
 String2=0x04,Secondary
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -3152,7 +3155,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
 "2 c #838383"
-String1=0x02,Kreisstra√üe
+String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -3168,7 +3171,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #E6E6E6"
 "2 c #838383"
-String1=0x02,Gemeinde-/Nebenstra√üe
+String1=0x02,Gemeinde-/Nebenstraﬂe
 String2=0x04,Unclassified
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3184,7 +3187,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #838383"
-String1=0x02,Wohnstra√üe
+String1=0x02,Wohnstraﬂe
 String2=0x04,Residential
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3262,7 +3265,7 @@ Xpm="32 1 2  1"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x02,Fu√üweg
+String1=0x02,Fuﬂweg
 String2=0x04,Footway
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3371,7 +3374,7 @@ Xpm="32 1 2  1"
 "!!!##!!!##!!!##!!!##!!!##!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Reitweg
-String2=0x04,Briddleway
+String2=0x04,Bridleway
 ExtendedLabels=N
 [end]
 
@@ -3427,7 +3430,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FF9500"
 "2 c #BD3000"
-String1=0x02,Bundesstra√üe
+String1=0x02,Bundesstraﬂe
 String2=0x04,Primary/Trunk
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3443,7 +3446,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFCA00"
 "2 c #BD3000"
-String1=0x02,Landes-/Staatsstra√üe
+String1=0x02,Landes-/Staatsstraﬂe
 String2=0x04,Secondary
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3459,7 +3462,7 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
 "2 c #838383"
-String1=0x02,Kreisstra√üe
+String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3473,7 +3476,7 @@ UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #838383"
-String1=0x02,Gemeinde-/Nebenstra√üe
+String1=0x02,Gemeinde-/Nebenstraﬂe
 String2=0x04,Unclassified
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3487,7 +3490,7 @@ UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #A4A4A4"
-String1=0x02,Wohnstra√üe
+String1=0x02,Wohnstraﬂe
 String2=0x04,Residential
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -3551,7 +3554,7 @@ Xpm="32 1 2  1"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x02,Fu√üweg
+String1=0x02,Fuﬂweg
 String2=0x04,Footway
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -4408,7 +4411,7 @@ DayXpm="16 16 69 2"   Colormode=32
 [_point]
 Type=0x029
 SubType=0x13
-String1=0x02,Vorfahrt gew√§hren
+String1=0x02,Vorfahrt gew‰hren
 String2=0x04,Give way
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -5368,7 +5371,7 @@ DayXpm="14 10 23 2"   Colormode=16
 [_point]
 Type=0x02a
 SubType=0x19
-String1=0x02,D√∂ner
+String1=0x02,Dˆner
 String2=0x04,Kebap
 ExtendedLabels=N
 DayXpm="9 16 24 2"   Colormode=32
@@ -6325,7 +6328,7 @@ DayXpm="16 10 59 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x08
-String1=0x02,Schutzh√ºtte
+String1=0x02,Schutzh¸tte
 String2=0x04,Shelter
 ExtendedLabels=N
 DayXpm="16 16 198 2"   Colormode=32
@@ -6550,7 +6553,7 @@ DayXpm="16 16 198 2"   Colormode=32
 [_point]
 Type=0x02b
 SubType=0x09
-String1=0x02,Chalet, Sennh√ºtte
+String1=0x02,Chalet, Sennh¸tte
 String2=0x04,Chalet
 ExtendedLabels=N
 DayXpm="16 16 64 2"   Colormode=32
@@ -7026,7 +7029,7 @@ DayXpm="16 16 64 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x11
-String1=0x02,Gedenkst√§tte
+String1=0x02,Gedenkst‰tte
 String2=0x04,Memorial
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -7092,7 +7095,7 @@ DayXpm="7 16 37 2"   Colormode=32
 [_point]
 Type=0x02c
 SubType=0x15
-String1=0x02,Windm√ºhle
+String1=0x02,Windm¸hle
 String2=0x04,Windmill
 ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
@@ -7994,7 +7997,7 @@ DayXpm="12 16 112 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x07
-String1=0x02,Bekleidungsgesch√§ft
+String1=0x02,Bekleidungsgesch‰ft
 String2=0x04,Clothes
 ExtendedLabels=N
 DayXpm="16 16 74 2"   Colormode=32
@@ -8220,7 +8223,7 @@ DayXpm="14 16 98 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x09
-String1=0x02,M√∂belgesch√§ft
+String1=0x02,Mˆbelgesch‰ft
 String2=0x04,Furniture
 ExtendedLabels=N
 DayXpm="14 16 128 2"   Colormode=32
@@ -9382,7 +9385,7 @@ DayXpm="16 16 171 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x16
-String1=0x02,Getr√§nkehandel
+String1=0x02,Getr‰nkehandel
 String2=0x04,Beverages
 ExtendedLabels=N
 DayXpm="16 16 179 2"   Colormode=32
@@ -9761,7 +9764,7 @@ DayXpm="16 13 149 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x19
-String1=0x02,W√§scherei
+String1=0x02,W‰scherei
 String2=0x04,Laundry
 ExtendedLabels=N
 DayXpm="11 16 57 2"   Colormode=32
@@ -9845,7 +9848,7 @@ DayXpm="11 16 57 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1b
-String1=0x02,Hifi-Gesch√§ft
+String1=0x02,Musikladen
 String2=0x04,Hifi store
 ExtendedLabels=N
 DayXpm="14 16 106 2"   Colormode=32
@@ -10075,7 +10078,7 @@ DayXpm="16 12 74 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x1f
-String1=0x02,Sportgesch√§ft
+String1=0x02,Sportartikel
 String2=0x04,Sporting goods
 ExtendedLabels=N
 DayXpm="16 15 90 2"   Colormode=32
@@ -11700,20 +11703,33 @@ DayXpm="24 12 5 1"   Colormode=16
 
 
 [_point]
-Type=0x04a
+Type=0x4a
 SubType=0x01
 String1=0x02,Sitzbank
 String2=0x04,Bench
-ExtendedLabels=N
-DayXpm="16 6 2 1"   Colormode=16
-"!	c #101010"
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+DayXpm="16 16 3 1"   Colormode=16
+"!	c #C5C5C5"
+"#	c #000000"
 "  	c none"
+"                "
+"                "
+"                "
+"                "
+"                "
 "!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!"
-"   !!      !!   "
-"   !!      !!   "
-"   !!      !!   "
+"!##############!"
+"!!!#!!!!!!!!#!!!"
+"  !#!      !#!  "
+"  !#!      !#!  "
+"  !!!      !!!  "
+"                "
+"                "
+"                "
+"                "
+"                "
 ;1234567890123456
 [end]
 
@@ -12505,7 +12521,7 @@ DayXpm="16 16 108 2"   Colormode=16
 [_point]
 Type=0x054
 SubType=0x01
-String1=0x02,Fu√üball
+String1=0x02,Fuﬂball
 String2=0x04,Soccer
 ExtendedLabels=N
 DayXpm="16 15 135 2"   Colormode=32
@@ -13632,7 +13648,7 @@ DayXpm="16 16 130 2"   Colormode=32
 [_point]
 Type=0x054
 SubType=0x09
-String1=0x02,Bogenschie√üen
+String1=0x02,Bogenschieﬂen
 String2=0x04,Archery
 ExtendedLabels=N
 DayXpm="16 16 109 2"   Colormode=32
@@ -13915,7 +13931,7 @@ DayXpm="16 10 3 1"   Colormode=16
 [_point]
 Type=0x064
 SubType=0x02
-String1=0x02,Geb√§ude
+String1=0x02,Geb‰ude
 String2=0x04,Building
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -14295,7 +14311,7 @@ DayXpm="16 16 3 1"   Colormode=16
 [_point]
 Type=0x066
 SubType=0x18
-String1=0x02,Berg√ºbergang
+String1=0x02,Berg¸bergang
 String2=0x04,Mountain pass
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -14318,7 +14334,7 @@ DayXpm="16 7 3 1"   Colormode=16
 [_point]
 Type=0x066
 SubType=0x19
-String1=0x02,H√∂hle
+String1=0x02,Hˆhle
 String2=0x04,Cave
 ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=16
@@ -15542,7 +15558,7 @@ DayXpm="16 16 172 2"   Colormode=32
 [_point]
 Type=0x10f
 SubType=0x02
-String1=0x02,B√§ckerei
+String1=0x02,B‰ckerei
 String2=0x04,Bakery
 ExtendedLabels=N
 DayXpm="14 11 12 1"   Colormode=32
@@ -15786,7 +15802,7 @@ DayXpm="11 16 86 2"   Colormode=32
 [_point]
 Type=0x10f
 SubType=0x07
-String1=0x02,Schuhgesch√§ft
+String1=0x02,Schuhgesch‰ft
 String2=0x04,Shoes
 ExtendedLabels=N
 DayXpm="16 9 108 2"   Colormode=32
@@ -16235,38 +16251,6 @@ DayXpm="2 2 2 1"   Colormode=16
 
 [_point]
 Type=0x115
-SubType=0x16
-String1=0x02,Sitzbank
-String2=0x04,Bench
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-DayXpm="16 16 3 1"   Colormode=16
-"!	c #C5C5C5"
-"#	c #000000"
-"  	c none"
-"                "
-"                "
-"                "
-"                "
-"                "
-"!!!!!!!!!!!!!!!!"
-"!##############!"
-"!!!#!!!!!!!!#!!!"
-"  !#!      !#!  "
-"  !#!      !#!  "
-"  !!!      !!!  "
-"                "
-"                "
-"                "
-"                "
-"                "
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x115
 SubType=0x17
 String1=0x02,Wegweiser
 String2=0x04,Signpost
@@ -16300,7 +16284,7 @@ DayXpm="7 18 3 1"   Colormode=16
 [_point]
 Type=0x115
 SubType=0x18
-String1=0x02,√úberwachungskamera
+String1=0x02,‹berwachungskamera
 String2=0x04,Surveillance
 ExtendedLabels=N
 DayXpm="16 16 53 2"   Colormode=32
