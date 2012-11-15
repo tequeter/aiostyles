@@ -311,7 +311,7 @@ railway=halt 		{ name '${name} (${route_ref})'; } 			[0x2f08 resolution 24]
 
 # Transit Service 
 
-(railway=tram_stop | amenity=bus_station | highway=bus_stop) & shelter=yes	[0x641c resolution 24 continue]
+#(railway=tram_stop | amenity=bus_station | highway=bus_stop) & shelter=yes	[0x641c resolution 24 continue]
 railway=tram_stop | amenity=bus_station | highway=bus_stop { 
 	      name '${name} (${route_ref})'; 
 	      } 								[0x2f17 resolution 24]
