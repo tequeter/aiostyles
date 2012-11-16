@@ -163,11 +163,7 @@ highway=* & motorcar=*       	{
 				add hgv='${motorcar}'; 
 				}
 
-#------------------------------------------------------------------------------
-# construction and disused
 
-highway=construction											[0x10001 resolution 23]
-highway=* & disused=yes											[0x10002 resolution 23]
 
 #------------------------------------------------------------------------------
 
@@ -261,14 +257,21 @@ highway=*
 #------------------------------------------------------------------------------
 # construction and disused
 
-highway=construction | (highway=* & construction=* 
-	    & construction!=minor & construction!=no) 
+highway=* & disused=yes	
 	    {
 	      add access=no; 
-	      add bicycle=yes; 
-	      add foot=yes; 
 	      add mkgmap:dead-end-check=false 
-	    } 												[0x08 road_class=0 road_speed=1 resolution 22]
+	    } 												[0x10002 resolution 24]
+
+highway=construction 
+	    | (highway=* 
+	    & construction=* 
+	    & construction!=minor 
+	    & construction!=no) 
+	    {
+	      add access=no; 
+	      add mkgmap:dead-end-check=false 
+	    } 												[0x10001 road_class=0 road_speed=0 resolution 24]
 
 highway=motorway 
 	    & construction=minor		
@@ -436,7 +439,7 @@ junction=roundabout & highway~'primary.*'   						[0x0c	 resolution 24-22 road_c
 
 highway=primary_link                        						[0x12002 resolution 22-20 continue with_actions]
 highway=primary_link                        						[0x11002 resolution 24-23 continue with_actions]
-highway=primary_link                        						[0x09	 resolution 24-23 road_class=3 road_speed=3]
+highway=primary_link                        						[0x08	 resolution 24-23 road_class=3 road_speed=3]
 
 highway=primary	      
 		{ 
@@ -454,7 +457,7 @@ junction=roundabout & highway~'secondary.*'						[0x0c	 resolution 24-22 road_cl
 
 highway=secondary_link                      						[0x12003 resolution 22-20 continue with_actions]
 highway=secondary_link                      						[0x11003 resolution 24-23 continue with_actions]
-highway=secondary_link                      						[0x09	 resolution 24-23 road_class=3 road_speed=2]
+highway=secondary_link                      						[0x08	 resolution 24-23 road_class=3 road_speed=2]
 
 highway=secondary	
 	      { 
@@ -472,7 +475,7 @@ junction=roundabout & highway~'tertiary.*'						[0x0c	 resolution 24-22 road_cla
 
 highway=tertiary_link                       						[0x12004 resolution 22-20 continue with_actions]
 highway=tertiary_link                       						[0x11004 resolution 24-23 continue with_actions]
-highway=tertiary_link                       						[0x09	 resolution 24-23 road_class=2 road_speed=2]
+highway=tertiary_link                       						[0x08	 resolution 24-23 road_class=2 road_speed=2]
 
 highway=tertiary	
 	      { 
