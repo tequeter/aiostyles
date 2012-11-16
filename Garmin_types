@@ -1,0 +1,854 @@
+ 
+;between hex type (0xYYYY) and name of element you must use TAB as separator!
+;
+;Hexadecimal Type       Name
+;
+;*******************************************************************************
+;* RGN10 & RGN20                                                               *
+;*******************************************************************************
+;
+[RGN10/20 types]
+0x0100-0x0500   City name(Point, fat, big) 
+0x0600-0x0A00   City name(Point, big) 
+0x0B00  City name (Point, small) 
+0x0C00  City name (Point, small) 
+0x0D00  City name (Point, small) 
+0x0E00-0x1100   City name(Point, big) 
+0x1200  Marine info
+0x1400-0x153F   Region name (no Point, big)
+0x1E00-0x1E3F   Region name (no Point, middle)
+0x210F  Exit(Service)
+0x2000-0x203F   Exit
+0x2100-0x213F   Exit(with facilities)
+0x2200-0x223F   Exit(Restroom) 
+0x2300-0x233F   Exit(Convenience Store)
+0x2400-0x243F   Exit(Weight Station)
+0x2500-0x253F   Exit(Tollbooth Booth)
+0x2600-0x263F   Exit(Information) 
+0x2700-0x273F   Exit
+0x2800-0x283F   Region name (no Point, small)
+0x2A00  Dining(Other) 
+0x2A01  Dining(American) 
+0x2A02  Dining(Asian) 
+0x2A03  Dining(Barbecue) 
+0x2A04  Dining(Chinese) 
+0x2A05  Dining(Deli/Bakery) 
+0x2A06  Dining(International) 
+0x2A07  Fast Food
+0x2A08  Dining(Italian) 
+0x2A09  Dining(Mexican) 
+0x2A0A  Dining(Pizza) 
+0x2A0B  Dining(Sea Food)
+0x2A0C  Dining(Steak/Grill) 
+0x2A0D  Dining(Bagel/Donut) 
+0x2A0E  Dining(Cafe/Diner) 
+0x2A0F  Dining(French) 
+0x2A10  Dining(German) 
+0x2A11  Dining(British Isles)
+0x2B00  Hotel(Other) 
+0x2B01  Hotel/Motel
+0x2B02  Bed & Breakfast inn
+0x2B03  Camping/RV-Park
+0x2B04  Resort
+0x2C01  Amusement Park
+0x2C02  Museum/History
+0x2C03  Libraries
+0x2C04  Land Mark
+0x2C05  School
+0x2C06  Park
+0x2C07  Zoo
+0x2C08  Sportpark, Stadium,(point)
+0x2C09  Fair, Conference(point)
+0x2C0A  Vine restaurant(point)
+0x2C0B  Place of Worship
+0x2C0C  Hot Spring
+0x2D01  Theater
+0x2D02  Bar
+0x2D03  Cinema
+0x2D04  Casino
+0x2D05  Golf
+0x2D06  Skiing Center
+0x2D07  Bowling
+0x2D08  Ice/Sporting
+0x2D09  Swimming
+0x2D0A  Sports(point)
+0x2D0B  Sailing Airport
+0x2E01  Department Store
+0x2E02  Grocery
+0x2E03  General Merchandiser
+0x2E04  Shopping Center
+0x2E05  Pharmacy
+0x2E06  Convenience
+0x2E07  Apparel
+0x2E08  House and Garden
+0x2E09  Home Furnishing
+0x2E0a  Special Retail
+0x2E0b  Computer/Software
+0x2F00  generic service 
+0x2F01  Fuel/Gas
+0x2F02  Car Rental
+0x2F03  Car Repair
+0x2F04  Airport
+0x2F05  Post Office
+0x2F06  Bank
+0x2F07  Car Dealer(point)
+0x2F08  Bus Station
+0x2F09  Marina
+0x2F0A  Wrecker Service
+0x2F0B  Parking
+0x2F0C  Restroom
+0x2F0D  Automobile Club
+0x2F0E  Car Wash
+0x2F0F  Garmin Dealer
+0x2F10  Personal Service
+0x2F11  Business Service
+0x2F12  Communication
+0x2F13  Repair Service
+0x2F14  Social Service
+0x2F15  Utility
+0x2F16  Truck Stop
+0x3000  generic emergency/government
+0x3001  Police Station
+0x3002  Hospital
+0x3003  Public Office
+0x3004  Justice
+0x3005  Concert hall(point)
+0x3006  Border Station(point)
+0x4000-0x403F   Golf
+0x4100-0x413F   Fish
+0x4200-0x423F   Wreck
+0x4300-0x433F   Marina
+0x4400-0x443F   Gas
+0x4500-0x453F   Restaurant
+0x4600-0x463F   Bar
+0x4700-0x473F   Boat Ramp
+0x4800-0x483F   Camping
+0x4900-0x493F   Park
+0x4A00-0x4A3F   Picnic Area
+0x4B00-0x4B3F   Hospital
+0x4C00-0x4C3F   Information
+0x4D00-0x4D3F   Parking
+0x4E00-0x4E3F   Restroom
+0x4F00-0x4F3F   Shower
+0x5000-0x503F   Drinking Water
+0x5100-0x513F   Telephone
+0x5200-0x523F   Scenic Area
+0x5300-0x533F   Skiing
+0x5400-0x543F   Swimming
+0x5500-0x553F   Dam
+0x5700-0x573F   Danger Area
+0x5800-0x583F   restricted Area
+0x5900  Generic Airport
+0x5901  Large Airport
+0x5902  Medium Airport
+0x5903  Small Airport
+0x5904  Heliport
+0x5905-0x593F   Airport
+0x5D00-0x5D3F   Daymark,Green Square
+0x5E00-0x5E3F   Daymark,Red Triangle
+0x6200  Depth with point in feet one decimal place
+0x6300  Height without point in feet no decimal place
+0x6400  Manmade Feature
+0x6401  Bridge
+0x6402  Building
+0x6403  Cemetery
+0x6404  Church
+0x6405  Civil
+0x6406  Crossing
+0x6407  Dam
+0x6408  Hospital
+0x6409  Levee
+0x640A  Locale
+0x640B  Military
+0x640C  Mine
+0x640D  Oil Field
+0x640E  Park
+0x640F  Post
+0x6410  School
+0x6411  Tower
+0x6412  Trail
+0x6413  Tunnel
+0x6414  Drink water
+0x6415  Ghost Town 
+0x6416  Subdivision
+0x6500  Water Feature
+0x6501  Arroyo
+0x6502  Sand Bar
+0x6503  Bay
+0x6504  Bend
+0x6505  Canal
+0x6506  Channel
+0x6507  Cove
+0x6508  Falls
+0x6509  Geyser
+0x650A  Glacier
+0x650B  Harbour
+0x650C  Island
+0x650D  Lake
+0x650E  Rapids
+0x650F  Reservoir
+0x6510  Sea
+0x6511  Spring
+0x6512  Stream
+0x6513  Swamp
+0x6600  Land Feature
+0x6601  Arch
+0x6602  Area
+0x6603  Basin
+0x6604  Beach
+0x6605  Bench
+0x6606  Cape
+0x6607  Cliff
+0x6608  Crater
+0x6609  Flat
+0x660A  Forest
+0x660B  Gap
+0x660C  Gut
+0x660D  Isthmus
+0x660E  Lava
+0x660F  Pillar
+0x6610  Plain
+0x6611  Range
+0x6612  Reserve
+0x6613  Ridge
+0x6614  Rock
+0x6615  Slope
+0x6616  Summit
+0x6617  Valley
+0x6618  Woods
+0x1C00  unclassified Obstruction
+0x1C01  Wreck
+0x1C02  submerged Wreck, dangerous
+0x1C03  submerged Wreck, non-dangerous
+0x1C04  Wreck, cleared by Wire-drag
+0x1C05  Obstruction, visible at high Water
+0x1C06  Obstruction, awash
+0x1C07  Obstruction, submerged
+0x1C08  Obstruction, cleared by Wire-drag
+0x1C09  Rock, awash
+0x1C0A  Rock, submerged at low Water
+0x1C0B  Sounding
+0x1D01  Tide Prediction
+0x1B01  Fog Horn
+0x1A01  Fog Horn
+0x1901  Fog Horn
+0x1801  Fog Horn
+0x1701  Fog Horn
+0x1601  Fog Horn
+0x1B02  Radio Beacon
+0x1A02  Radio Beacon
+0x1902  Radio Beacon
+0x1802  Radio Beacon
+0x1702  Radio Beacon
+0x1602  Radio Beacon
+0x1B03  Racon
+0x1A03  Racon
+0x1903  Racon
+0x1803  Racon
+0x1703  Racon
+0x1603  Racon
+0x1B04  Daybeacon, red Triangle
+0x1A04  Daybeacon, red Triangle
+0x1904  Daybeacon, red Triangle
+0x1804  Daybeacon, red Triangle
+0x1704  Daybeacon, red Triangle
+0x1604  Daybeacon, red Triangle
+0x1B05  Daybeacon, green Square
+0x1A05  Daybeacon, green Square
+0x1905  Daybeacon, green Square
+0x1805  Daybeacon, green Square
+0x1705  Daybeacon, green Square
+0x1605  Daybeacon, green Square
+0x1B06  Daybeacon, white Diamond
+0x1A06  Daybeacon, white Diamond
+0x1906  Daybeacon, white Diamond
+0x1806  Daybeacon, white Diamond
+0x1706  Daybeacon, white Diamond
+0x1606  Daybeacon, white Diamond
+0x1B07  unlit Navaid, white
+0x1A07  unlit Navaid, white
+0x1907  unlit Navaid, white
+0x1807  unlit Navaid, white
+0x1707  unlit Navaid, white
+0x1607  unlit Navaid, white
+0x1B08  unlit Navaid, red
+0x1A08  unlit Navaid, red
+0x1908  unlit Navaid, red
+0x1808  unlit Navaid, red
+0x1708  unlit Navaid, red
+0x1608  unlit Navaid, red
+0x1B09  unlit Navaid, green
+0x1A09  unlit Navaid, green
+0x1909  unlit Navaid, green
+0x1809  unlit Navaid, green
+0x1709  unlit Navaid, green
+0x1609  unlit Navaid, green
+0x1B0A  unlit Navaid, black
+0x1A0A  unlit Navaid, black
+0x190A  unlit Navaid, black
+0x180A  unlit Navaid, black
+0x170A  unlit Navaid, black
+0x160A  unlit Navaid, black
+0x1B0B  unlit Navaid, yellow or amber
+0x1A0B  unlit Navaid, yellow or amber
+0x190B  unlit Navaid, yellow or amber
+0x180B  unlit Navaid, yellow or amber
+0x170B  unlit Navaid, yellow or amber
+0x160B  unlit Navaid, yellow or amber
+0x1B0C  unlit Navaid, orange
+0x1A0C  unlit Navaid, orange
+0x190C  unlit Navaid, orange
+0x180C  unlit Navaid, orange
+0x170C  unlit Navaid, orange
+0x160C  unlit Navaid, orange
+0x1B0D  unlit Navaid, multi colored
+0x1A0D  unlit Navaid, multi colored
+0x190D  unlit Navaid, multi colored
+0x180D  unlit Navaid, multi colored
+0x170D  unlit Navaid, multi colored
+0x160D  unlit Navaid, multi colored
+0x1B0E  Navaid, unknown
+0x1A0E  Navaid, unknown
+0x190E  Navaid, unknown
+0x180E  Navaid, unknown
+0x170E  Navaid, unknown
+0x160E  Navaid, unknown
+0x1B0F  lighted Navaid, white
+0x1A0F  lighted Navaid, white
+0x190F  lighted Navaid, white
+0x180F  lighted Navaid, white
+0x170F  lighted Navaid, white
+0x160F  lighted Navaid, white
+0x1B10  lighted Navaid, red
+0x1A10  lighted Navaid, red
+0x1910  lighted Navaid, red
+0x1810  lighted Navaid, red
+0x1710  lighted Navaid, red
+0x1610  lighted Navaid, red
+0x1B11  lighted Navaid, green
+0x1A11  lighted Navaid, green
+0x1911  lighted Navaid, green
+0x1811  lighted Navaid, green
+0x1711  lighted Navaid, green
+0x1611  lighted Navaid, green
+0x1B12  lighted Navaid, yellow or amber
+0x1A12  lighted Navaid, yellow or amber
+0x1912  lighted Navaid, yellow or amber
+0x1812  lighted Navaid, yellow or amber
+0x1712  lighted Navaid, yellow or amber
+0x1612  lighted Navaid, yellow or amber
+0x1B13  lighted Navaid, orange
+0x1A13  lighted Navaid, orange
+0x1913  lighted Navaid, orange
+0x1813  lighted Navaid, orange
+0x1713  lighted Navaid, orange
+0x1613  lighted Navaid, orange
+0x1B14  lighted Navaid, violet
+0x1A14  lighted Navaid, violet
+0x1914  lighted Navaid, violet
+0x1814  lighted Navaid, violet
+0x1714  lighted Navaid, violet
+0x1614  lighted Navaid, violet
+0x1B15  lighted Navaid, blue
+0x1A15  lighted Navaid, blue
+0x1915  lighted Navaid, blue
+0x1815  lighted Navaid, blue
+0x1715  lighted Navaid, blue
+0x1615  lighted Navaid, blue
+0x1B16  lighted Navaid, multi colored
+0x1A16  lighted Navaid, multi colored
+0x1916  lighted Navaid, multi colored
+0x1816  lighted Navaid, multi colored
+0x1716  lighted Navaid, multi colored
+0x1616  lighted Navaid, multi colored
+;*******************************************************************************
+;* Extended types (marine & custom) - points                                   *
+;*******************************************************************************
+;
+0x010100        light
+0x010102        light with north topmark
+0x010103        light with south topmark
+0x010104        light with east topmark
+0x010105        light with west topmark
+0x010106        isolated danger light
+0x010107        port hand light
+0x010108        starboard hand light
+0x010109        special purpose light
+0x01010a        safe water light
+0x010200        buoy
+0x010201        buoy
+0x010202        buoy with north topmark
+0x010203        buoy with south topmark
+0x010204        buoy with east topmark
+0x010205        buoy with west topmark  
+0x010206        beacon
+0x010207        spar buoy
+0x010208        isolated danger buoy
+0x010209        port hand buoy
+0x01020a        starboard hand buoy
+0x01020b        special purpose buoy
+0x01020c        safe water buoy
+0x01020d        platform buoy
+0x01020e        beacon with north topmark
+0x01020f        beacon with south north topmark
+0x010210        beacon with east topmark
+0x010211        beacon with west topmark
+0x010212        isolated danger beacon
+0x010213        port hand beacon
+0x010214        starboard hand beacon
+0x010215        special purpose beacon
+0x010216        mooring buoy
+0x010217        fix point       
+0x010218        pole
+0x010300        depth point
+0x010301        depth point invisible
+0x010302        depth point underscore
+0x010303        spot height
+0x010304        building
+0x010305        chimney
+0x010306        church
+0x010307        tanks
+0x010308        tower
+0x010309        rock
+0x01030a        triangulation point
+0x01030b        radio mast
+0x010400        isolated danger
+0x010401        obstruction
+0x010402        wreck
+0x010403        exposed wreck
+0x010404        well
+0x010405        foul
+0x010406        explosive
+0x010407        fish haven
+0x010408        obstruction that covers
+0x010409        marine farm
+0x01040a        dangerous rock
+0x01040b        no bottom found
+0x01040c        exposed rock
+0x01040d        dangerous rock
+0x01040e        underwater rock
+0x01040f        shoal
+0x010500        label point
+0x010600        bottom conditions
+0x010700        misc point
+0x010701        recommended anchorage
+0x010702        pilot boarding place
+0x010703        yach harbor
+0x010704        pile
+0x010705        anchoring prohibited
+0x010706        fishing prohibited
+0x010707        precautionary area
+0x010708        radio report point
+0x010709        anchorage berths
+0x01070a        rescue station
+0x01070b        fishing harbor
+0x01070c        airport
+0x010800        information
+0x010901        label
+0x010902        fishing information
+0x010903        facility 
+
+0x011500        custom point 1
+0x011501        custom point 2
+0x011502        custom point 3
+0x011503        custom point 4
+0x011504        custom point 5
+0x011505        custom point 6
+0x011506        custom point 7
+0x011507        custom point 8
+0x011508        custom point 9
+0x011509        custom point a
+0x01150a        custom point b
+0x01150b        custom point c
+0x01150c        custom point d
+0x01150d        custom point e
+0x01150e        custom point f
+0x01150f        custom point 10
+0x011510        custom point 11
+0x011511        custom point 12
+0x011512        custom point 13
+0x011513        custom point 14
+0x011514        custom point 15
+0x011515        custom point 16
+0x011516        custom point 17
+0x011517        custom point 18
+0x011518        custom point 19
+0x011519        custom point 1a
+0x01151a        custom point 1b
+0x01151b        custom point 1c
+0x01151c        custom point 1d
+0x01151d        custom point 1e
+0x01151e        custom point 1f
+0x01151f        custom point 20
+0x011600        custom point 21
+0x011601        custom point 22
+0x011602        custom point 23
+0x011603        custom point 24
+0x011604        custom point 25
+0x011605        custom point 26
+0x011606        custom point 27
+0x011607        custom point 28
+0x011608        custom point 29
+0x011609        custom point 2a
+0x01160a        custom point 2b
+0x01160b        custom point 2c
+0x01160c        custom point 2d
+0x01160d        custom point 2e
+0x01160e        custom point 2f
+0x01160f        custom point 30
+0x011610        custom point 31
+0x011611        custom point 32
+0x011612        custom point 33
+0x011613        custom point 34
+0x011614        custom point 35
+0x011615        custom point 36
+0x011616        custom point 37
+0x011617        custom point 38
+0x011618        custom point 39
+0x011619        custom point 3a
+0x01161a        custom point 3b
+0x01161b        custom point 3c
+0x01161c        custom point 3d
+0x01161d        custom point 3e
+0x01161e        custom point 3f
+0x01161f        custom point 40
+[END-RGN10/20 types]
+
+;*******************************************************************************
+;* RGN40                                                                       *
+;*******************************************************************************
+;
+;Routable types are: 0x01 - 0x13, 0x16, 0x1a, 0x1b
+;
+[RGN40 types]
+0x01    Major HWY thick 
+0x02    Principal HWY-thick 
+0x03    Principal HWY-medium
+0x04    Arterial Road -medium
+0x05    Arterial Road-thick
+0x06    Road-thin
+0x07    Alley-thick
+0x08    Ramp
+0x09    Ramp
+0x0a    Unpaved Road-thin
+0x0b    Major HWY Connector-thick
+0x0c    Roundabout
+0x0d    Custom routable road 1
+0x0e    Custom routable road 2
+0x0f    Custom routable road 3
+0x10    Custom routable road 4
+0x11    Custom routable road 5
+0x12    Custom routable road 6
+0x13    Custom routable road 7
+0x14    Railroad
+0x15    Shoreline
+0x16    Trail
+0x18    Stream-thin
+0x19    Time-Zone
+0x1a    Ferry
+0x1b    Ferry
+0x1c    Political Boundary
+0x1d    County Boundary
+0x1e    Intl. Boundary
+0x1f    River
+0x20    Land Contour (thin) Height in feet
+0x21    Land Contour (medium) Height in feet
+0x22    Land Contour (thick) Height in feet
+0x23    Depth Contour (thin) Depth in feet
+0x24    Depth Contour (medium) Depth in feet
+0x25    Depth Contour (thick) Depth in feet
+0x26    Intermittent River 
+0x27    Airport Runway
+0x28    Pipeline
+0x29    Powerline
+0x2a    Marine Boundary (no line) 
+0x2b    Marine Hazard (no line) 
+;*******************************************************************************
+;* Extended types (marine & custom) - lines                                    *
+;*******************************************************************************
+0x010100        misc line
+0x010101        line
+0x010102        cartographic line
+0x010103        road
+0x010104        clearing line
+0x010105        contour line
+0x010106        overhead cable
+0x010107        bridge
+0x010108        recommended route
+0x010109        chart border
+0x010300        depth contour
+0x010301        depth contour value
+0x010400        obstruction
+0x010401        submarine cable
+0x010402        submarine pipeline
+0x010403        pile barrier
+0x010404        fishing stakes
+0x010405        supply pipeline
+0x010406        submarine cable
+0x010407        dumping ground
+0x010408        explosive dumping ground
+0x010409        danger
+0x01040a        overhead cable
+0x01040b        submerged construction
+0x01040c        pier/jetty
+0x010500        restriction
+0x010501        anchoring prohibited
+0x010502        fishing prohibited
+0x010503        prohibited area
+0x010504        military practice area
+0x010505        anchoring and fishing prohibited
+0x010506        limit of nature reservat
+0x010507        restricted area
+0x010508        minefield
+0x010600        misc line
+0x010601        cartographic line
+0x010602        traffic separation line
+0x010603        international maritime boundary
+0x010604        straight territorial sea baseline
+0x010605        seaward limit of territorial sea
+0x010606        anchorage area
+0x010607        quarantine anchorage area
+0x010608        fishery zone
+0x010609        swept area
+0x010701        river channel
+0x010702        submerged object
+
+0x010e00        custom line 1
+0x010e01        custom line 2
+0x010e02        custom line 3
+0x010e03        custom line 4
+0x010e04        custom line 5
+0x010e05        custom line 6
+0x010e06        custom line 7
+0x010e07        custom line 8
+0x010e08        custom line 9
+0x010e09        custom line a
+0x010e0a        custom line b
+0x010e0b        custom line c
+0x010e0c        custom line d
+0x010e0d        custom line e
+0x010e0e        custom line f
+0x010e0f        custom line 10
+0x010e10        custom line 11
+0x010e11        custom line 12
+0x010e12        custom line 13
+0x010e13        custom line 14
+0x010e14        custom line 15
+0x010e15        custom line 16
+0x010e16        custom line 17
+0x010e17        custom line 18
+0x010e18        custom line 19
+0x010e19        custom line 1b
+0x010e1a        custom line 1b
+0x010e1b        custom line 1c
+0x010e1c        custom line 1d
+0x010e1d        custom line 1e
+0x010e1e        custom line 1f
+0x010e1f        custom line 20
+0x010f00        custom line 21
+0x010f01        custom line 22
+0x010f02        custom line 23
+0x010f03        custom line 24
+0x010f04        custom line 25
+0x010f05        custom line 26
+0x010f06        custom line 27
+0x010f07        custom line 28
+0x010f08        custom line 29
+0x010f09        custom line 2a
+0x010f0a        custom line 2b
+0x010f0b        custom line 2c
+0x010f0c        custom line 2d
+0x010f0d        custom line 2e
+0x010f0e        custom line 2f
+0x010f0f        custom line 30
+0x010f10        custom line 31
+0x010f11        custom line 32
+0x010f12        custom line 33
+0x010f13        custom line 34
+0x010f14        custom line 35
+0x010f15        custom line 36
+0x010f16        custom line 37
+0x010f17        custom line 38
+0x010f18        custom line 39
+0x010f19        custom line 3b
+0x010f1a        custom line 3b
+0x010f1b        custom line 3c
+0x010f1c        custom line 3d
+0x010f1d        custom line 3e
+0x010f1e        custom line 3f
+0x010f1f        custom line 40
+[END-RGN40 types]
+;
+;*******************************************************************************
+;* RGN80                                                                       *
+;*******************************************************************************
+;
+[RGN80 types]
+0x01    City
+0x02    City
+0x03    City
+0x04    Military
+0x05    Parking Lot
+0x06    Parking Garage
+0x07    Airport
+0x08    Shopping Center
+0x09    Marina
+0x0a    University
+0x0b    Hospital
+0x0c    Industrial
+0x0d    Reservation
+0x0e    Airport Runway
+0x13    Man made area
+0x14    National park
+0x15    National park
+0x16    National park
+0x17    City Park
+0x18    Golf
+0x19    Sport
+0x1a    Cemetery
+0x1e    State Park
+0x1f    State Park
+0x28    Ocean
+0x3b    Blue-Unknown
+0x32    Sea
+0x3b    Blue-Unknown
+0x3c    Lake
+0x3d    Lake
+0x3e    Lake
+0x3f    Lake
+0x40    Lake
+0x41    Lake
+0x42    Lake
+0x43    Lake
+0x44    Lake
+0x45    Blue-Unknown
+0x46    River
+0x47    River
+0x48    River
+0x49    River
+0x4b    Background
+0x4c    Intermittent River/Lake
+0x4d    Glaciers
+0x4e    Scrub
+0x4f    Orchard or plantation
+0x50    Woods
+0x51    Wetland
+0x52    Tundra
+0x53    Flats
+;*******************************************************************************
+;* Extended types (marine & custom) - polygons                                 *
+;*******************************************************************************
+0x010100        land - white
+0x010101        land - non-urban
+0x010102        land - urban
+0x010103        chart exclusion area
+0x010104        chart background
+0x010105        bridge
+0x010300        depth area - white 1
+0x010301        intertidal zone
+0x010302        depth area - blue 1
+0x010303        depth area - blue 2
+0x010304        depth area - blue 3
+0x010305        depth area - blue 4
+0x010306        depth area - blue 5
+0x010307        depth area - white
+0x010400        obstruction (invisible)
+0x010401        submarine cable (invisible)
+0x010402        submarine pipeline (invisible)
+0x010403        pile barrier (invisible)
+0x010404        fishing stakes (invisible)
+0x010405        supply pipeline area/line (invisible)
+0x010406        submarine cable area/line (invisible)
+0x010407        dumping ground (invisible)
+0x010408        explosive dumping ground (invisible)
+0x010409        danger line (invisible)
+0x01040a        overhead cable (invisible)
+0x01040b        submerged construction (invisible)
+0x01040c        pier/jetty (invisible)
+0x010500        restriction area/line (invisible)
+0x010501        anchoring prohibited (invisible)
+0x010502        fishing prohibited (invisible)
+0x010503        prohibited area (invisible)
+0x010504        military practice area (invisible)
+0x010505        anchoring and fishing prohibited (invisible)
+0x010506        limit of nature reservat (invisible)
+0x010507        restricted area (invisible)
+0x010508        minefield (invisible)
+0x010600        depth area
+0x010601        depth area
+0x010602        depth area
+0x010603        depth area
+0x010604        depth area
+0x010605        depth area
+0x010606        depth area
+0x010607        depth area
+0x010608        depth area
+0x010609        depth area
+0x010701        fishing area 
+0x010704        map background area
+
+0x010f00        custom area 1
+0x010f01        custom area 2
+0x010f02        custom area 3
+0x010f03        custom area 4
+0x010f04        custom area 5
+0x010f05        custom area 6
+0x010f06        custom area 7
+0x010f07        custom area 8
+0x010f08        custom area 9
+0x010f09        custom area 10
+0x010f0a        custom area 11
+0x010f0b        custom area 12
+0x010f0c        custom area 13
+0x010f0d        custom area 14
+0x010f0e        custom area 15
+0x010f0f        custom area 16
+0x010f10        custom area 17
+0x010f11        custom area 18
+0x010f12        custom area 19
+0x010f13        custom area 20
+0x010f14        custom area 21
+0x010f15        custom area 22
+0x010f16        custom area 23
+0x010f17        custom area 24
+0x010f18        custom area 25
+0x010f19        custom area 26
+0x010f1a        custom area 27
+0x010f1b        custom area 28
+0x010f1c        custom area 29
+0x010f1d        custom area 30
+0x010f1e        custom area 31
+0x010f1f        custom area 32
+0x011000        custom area 33
+0x011001        custom area 34
+0x011002        custom area 35
+0x011003        custom area 36
+0x011004        custom area 37
+0x011005        custom area 38
+0x011006        custom area 39
+0x011007        custom area 40
+0x011008        custom area 41
+0x011009        custom area 42
+0x01100a        custom area 43
+0x01100b        custom area 44
+0x01100c        custom area 45
+0x01100d        custom area 46
+0x01100e        custom area 47
+0x01100f        custom area 48
+0x011010        custom area 49
+0x011011        custom area 50
+0x011012        custom area 51
+0x011013        custom area 52
+0x011014        custom area 53
+0x011015        custom area 54
+0x011016        custom area 55
+0x011017        custom area 56
+0x011018        custom area 57
+0x011019        custom area 58
+0x01101a        custom area 59
+0x01101b        custom area 60
+0x01101c        custom area 61
+0x01101d        custom area 62
+0x01101e        custom area 63
+0x01101f        custom area 64
+[END-RGN80 types]
