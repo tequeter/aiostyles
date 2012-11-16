@@ -111,8 +111,8 @@ place=locality  				[0x2800 resolution 22]
 
 # Man Made
 # 0x6401 	# bridge
-tourism=alpine_hut 									[0x2b09 resolution 24 continue]
-amenity=shelter 									[0x2b08 resolution 24 continue]
+tourism=alpine_hut 									[0x6402 resolution 24 continue]
+amenity=shelter 									[0x6402 resolution 24 continue]
 
 # 0x6402	# skyscaper
 # 0x6403	# thombstone
@@ -194,12 +194,24 @@ natural=volcano 									[0x660e resolution 23]
 # 0x6613	# ridge
 # 0x6614	# rock
 # 0x6615	# slope
-natural=peak & ele>3500 	{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 	[0x6616 resolution 22]
-natural=peak & ele>2300 	{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 	[0x6616 resolution 23]
-natural=peak | natural=hill 	{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 	[0x6616 resolution 24]
+natural=peak & ele>3500 	{ 
+		      name '${name|def:} (${ele|def:} m)' | 
+		      '${name}' | 
+		      '(${ele} m)' } 							[0x6616 resolution 22]
+natural=peak & ele>2300 	{ 
+		      name '${name|def:} (${ele|def:} m)' | 
+		      '${name}' | 
+		      '(${ele} m)' } 							[0x6616 resolution 23]
+natural=peak | natural=hill 	{ 
+		      name '${name|def:} (${ele|def:} m)' | 
+		      '${name}' | 
+		      '(${ele} m)' } 							[0x6616 resolution 24]
 # 0x6617	# valley
 # 0x6618	# woods
-mountain_pass=yes 		{ name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 	[0x6618 resolution 23 continue]
+mountain_pass=yes 		{ 
+		      name '${name|def:} (${ele|def:} m)' | 
+		      '${name}' | 
+		      '(${ele} m)' } 							[0x6618 resolution 23 continue]
 # 0x66ss
 
 natural=cave_entrance 									[0x6619 resolution 24]	# type without category
