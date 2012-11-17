@@ -272,14 +272,22 @@ shop=car | shop=car_parts 								[0x2f07 resolution 24]
 # 0x2f0a
 
 # Parking
-amenity=parking & (parking=multi-storey | parking=underground) | amenity=parking_entrance 	[0x4d00 resolution 24]
-amenity=parking &  ( capacity:disabled=yes |  capacity:disabled >=1 ) 			[0x4d01 resolution 24]
+amenity=parking 
+	& (parking=multi-storey | 
+	  parking=underground) | 
+	  amenity=parking_entrance 							[0x4d00 resolution 24]
+amenity=parking 
+	&  ( capacity:disabled=yes |  
+	     capacity:disabled >=1 ) 							[0x4d01 resolution 24]
 amenity=parking 									[0x2f0b resolution 24]
 # 0x4dss
 
 # Rest Area/Tourist Info
 highway=services | highway=rest_area 							[0x2f0c resolution 24]
-(tourism=information & information=guidepost) | amenity=guidepost | amenity=signpost	[0x4c01 resolution 24]
+(tourism=information 
+	  & information=guidepost) |	
+	    amenity=guidepost | 
+	    amenity=signpost								[0x4c01 resolution 24]
 tourism=information 									[0x4c00 resolution 24]
 # 0x4css	# information
 amenity=toilets 									[0x4e00 resolution 24]
