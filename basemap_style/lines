@@ -559,9 +559,8 @@ highway=* & bicycle=designated								[0x10416 resolution 24 continue with_actio
 highway=footway			
 		{ 
 		  add motorcar=no; 
-		  add motorcycle=no; 
+		  add motorcycle=no;		  
 		  add foot=yes; 
-		  add bicycle=no; 
 		}
 
 highway=footway & (bicycle=yes | bicycle=allowed)	
@@ -572,8 +571,10 @@ highway=footway & (bicycle=yes | bicycle=allowed)
 		  add bicycle=yes 
 		}
 
+
+		
 #highway=footway                             						[0x1100d resolution 22-22 continue with_actions]
-highway=footway                             						[0x0d    resolution 24-23 road_class=0 road_speed=0]
+highway=footway                             						[0x0d    resolution 24-23 ]
 
 # footway overlay
 highway=* & foot=designated								[0x10415 resolution 24 continue with_actions]
@@ -599,7 +600,7 @@ highway=pedestrian & bicycle=yes
 highway=pedestrian & (area!=yes & area!=true & area!=1) 	
 		{
 		  add mkgmap:dead-end-check=false 
-		}									[0x0d    resolution 24-23 road_class=0 road_speed=0]
+		}									[0x0d    resolution 24-23 ]
 
 # steps
 highway=steps		

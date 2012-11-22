@@ -696,8 +696,7 @@ String1=0x02,Heide
 String2=0x04,Heath
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF41"
 "  c none"
@@ -745,8 +744,7 @@ String1=0x02,Naturwald
 String2=0x04,Natural woodland
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF6A"
 "# c #39CA41"
@@ -794,8 +792,7 @@ String1=0x02,Naturschutzgebiet
 String2=0x04,Nature reserve
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #408000"
 "# c #80FF80"
@@ -841,8 +838,7 @@ String1=0x02,Park/Garten
 String2=0x04,Park/Garden
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF8B"
 "# c #BDFF8B"
@@ -947,23 +943,15 @@ Xpm="0 0 1 0"
 [_polygon]
 Type=0x1a
 String1=0x02,Friedhof
-String2=0x04,Cemetry
+String2=0x04,Cemetery
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #009900"
 "# c #BDFF6A"
 "3 c #80BB80"
 "4 c #004400"
-"##!###############!#############"
-"##!###############!#############"
-"!!!!!###########!!!!!###########"
-"##!###############!#############"
-"##!###############!#############"
-"##!###############!#############"
-"##!###############!#############"
 "################################"
 "################################"
 "################################"
@@ -973,19 +961,26 @@ Xpm="32 32 4 1"
 "################################"
 "################################"
 "################################"
-"##########!###############!#####"
-"##########!###############!#####"
-"########!!!!!###########!!!!!###"
-"##########!###############!#####"
-"##########!###############!#####"
-"##########!###############!#####"
-"##########!###############!#####"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
+"#######!!#######################"
+"######!!!!######################"
+"#####!!##!!#####################"
+"#####!!##!!#####################"
+"#####!!##!!#####################"
+"#####!!##!!#####################"
+"#####!!##!!#####################"
+"#####!!##!!#####################"
+"#####!!##!!###########!!########"
+"#####!!##!!##########!!!!#######"
+"#####!!!!!!#########!!##!!######"
+"####################!!##!!######"
+"####################!!##!!######"
+"####################!!##!!######"
+"####################!!##!!######"
+"####################!!##!!######"
+"####################!!##!!######"
+"####################!!##!!######"
+"####################!!!!!!######"
+"####################!!!!!!######"
 "################################"
 "################################"
 "################################"
@@ -999,8 +994,7 @@ String1=0x02,Wald
 String2=0x04,Forest
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #7BCA20"
 "# c #BDFF6A"
@@ -1048,8 +1042,7 @@ String1=0x02,Nadelwald
 String2=0x04,coniferous
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #A0E070"
@@ -1097,37 +1090,36 @@ String1=0x02,Laubwald
 String2=0x04,deciduous
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #A0E040"
 "3 c #00C000"
 "4 c #007800"
 "################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
-"################################"
+"##########################!#####"
+"#########################!!!####"
+"########################!#!#!###"
+"########################!#!#!###"
+"#######################!##!##!##"
+"#######################!##!##!##"
+"######################!!##!##!!#"
+"######################!#!#!#!#!#"
+"#########!############!##!!!##!#"
+"########!!!###########!###!##!!#"
+"#######!#!#!##########!!##!#!#!#"
+"#######!#!#!##########!#!#!!##!#"
+"######!##!##!#########!##!!###!#"
+"#####!!##!##!!#########!##!##!##"
+"#####!#!#!#!#!##########!#!#!###"
+"#####!##!!!##!###########!!!####"
+"#####!###!##!!##################"
+"#####!!##!#!#!##################"
+"#####!#!#!!##!##################"
+"#####!##!!###!##################"
+"######!##!##!###################"
+"#######!#!#!####################"
+"########!!!#####################"
 "################################"
 "################################"
 "################################"
@@ -1146,21 +1138,20 @@ String1=0x02,Mischwald
 String2=0x04,mixed
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #A0E040"
 "3 c #00C000"
 "4 c #007800"
 "################################"
-"###########################!####"
-"###########################!####"
-"###########!###############!####"
-"###########!###############!####"
-"###########!####################"
-"###########!####################"
-"#!##############################"
+"##########################!!####"
+"#########################!#!#!##"
+"###########!#############!#!#!##"
+"###########!#############!#!#!##"
+"###########!#############!#!#!##"
+"###########!#############!#!!###"
+"#!########################!!!###"
 "#!##############################"
 "#!#################!############"
 "#!#################!############"
@@ -1170,13 +1161,13 @@ Xpm="32 32 4 1"
 "################################"
 "################################"
 "################################"
-"#############!##################"
-"#############!##################"
-"#############!#############!####"
-"###!#########!#############!####"
-"###!#######################!####"
-"###!#######################!####"
-"###!############################"
+"############!!!#################"
+"###########!#!!#################"
+"###########!#!#!###########!####"
+"###!#######!#!#!###########!####"
+"###!########!##!###########!####"
+"###!########!#!!###########!####"
+"###!#########!!#################"
 "################################"
 "################################"
 "################################"
@@ -1438,8 +1429,7 @@ String1=0x02,Gebirge
 String2=0x04,Fell
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF41"
 "  c none"
@@ -1487,8 +1477,7 @@ String1=0x02,See
 String2=0x04,Lake
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#0065FF
+CustomColor=No
 Xpm="0 0 1 0"
 "1 c #7BCAFF"
 [end]
@@ -1808,8 +1797,7 @@ String1=0x02,Wiese
 String2=0x04,Meadow
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF41"
 "  c none"
@@ -2253,8 +2241,7 @@ String1=0x02,Bach
 String2=0x04,Stream
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#0065FF
+CustomColor=No
 [end]
 
 
@@ -2284,8 +2271,7 @@ String1=0x02,Wasserlauf
 String2=0x04,Water way
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#0065FF
+CustomColor=No
 [end]
 
 
@@ -3698,6 +3684,21 @@ NightXpm="16 16 4 1"   Colormode=16
 
 
 [_point]
+Type=0x01e
+SubType=0x04
+String1=0x02,Eingang
+String2=0x04,Entrance
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+DayXpm="1 1 1 1"   Colormode=16
+"  	c none"
+" "
+;1
+[end]
+
+
+[_point]
 Type=0x020
 SubType=0x00
 String1=0x02,Ausfahrt
@@ -4631,6 +4632,31 @@ DayXpm="14 7 2 1"   Colormode=32
 "!!!!!####!!!!!"
 "!!!!!!!!!!!!!!"
 ;12345678901234
+[end]
+
+
+[_point]
+Type=0x02a
+SubType=0x05
+String1=0x02,B‰ckerei
+String2=0x04,Bakery
+ExtendedLabels=N
+DayXpm="16 8 6 1"   Colormode=16
+"!	c #BD6520"
+"#	c #FF9541"
+"%	c #D5D5D5"
+"?	c #FF0000"
+"$	c #FFFFFF"
+"  	c none"
+"     %!%%!%     "
+"  %!##!##!%#!%  "
+" %!#%!#%!%#!##! "
+"%#!%#!##!##!##!%"
+"%#!#!##!%#!##!##"
+"?!##!##!##!##!#?"
+"????????????????"
+"????????????????"
+;1234567890123456
 [end]
 
 
@@ -5930,6 +5956,38 @@ DayXpm="16 16 148 2"   Colormode=32
 
 [_point]
 Type=0x02b
+SubType=0x00
+String1=0x01,
+ExtendedLabels=N
+DayXpm="16 16 6 1"   Colormode=16
+"!	c #C5C5C5"
+"#	c #006500"
+"%	c #101010"
+"?	c #737373"
+"$	c #FFFFFF"
+"  	c none"
+"        ??  ??  "
+"        ?%  ?%  "
+"        ?%%%%%  "
+"        ?%???%  "
+"?%      ?%  ?%  "
+"?%      ?%  ?%  "
+"?%!!            "
+"?%##!           "
+"?%###!!!!!!!!!!!"
+"?%###!!#########"
+"?%##############"
+"?%%%%%%%%%%%%%%?"
+"?%%%????????%%%?"
+"?%??        ??%?"
+"?%            %?"
+"?%            %?"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x02b
 SubType=0x01
 String1=0x02,Motel
 String2=0x04,Motel
@@ -6760,26 +6818,27 @@ SubType=0x05
 String1=0x02,Ausbildung
 String2=0x04,Education
 ExtendedLabels=N
-DayXpm="16 15 6 1"   Colormode=16
+DayXpm="16 15 7 1"   Colormode=16
 "!	c #101010"
 "#	c #FFCA00"
 "%	c #FFCA00"
 "?	c #FFCA00"
 "$	c #FFCA00"
 "*	c #FFFFFF"
+"  	c none"
 "****************"
 "!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!"
-"*!$$????%%%###!*"
-"*!$!$!??%%!%!#!*"
-"*!$!$!??%%!#!#!*"
-"*!$$$????%%%##!*"
-"*!$!$!??%%!%!#!*"
-"*!$!$!$??%!%!#!*"
-"*!$$$???%%%%##!*"
-"*!$!$!$!!%!#!#!*"
-"*!$!$!?!!%!%!#!*"
-"*!$$$??!!%%%##!*"
+"*!            !*"
+"*! ! !    ! ! !*"
+"*! ! !    ! ! !*"
+"*!            !*"
+"*! ! !    ! ! !*"
+"*! ! !    ! ! !*"
+"*!            !*"
+"*! ! ! !! ! ! !*"
+"*! ! ! !! ! ! !*"
+"*!     !!     !*"
 "*!!!!!!!!!!!!!!*"
 "****************"
 ;1234567890123456
@@ -6793,8 +6852,7 @@ String1=0x02,Park/Garten
 String2=0x04,Park/Garden
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 DayXpm="2 2 2 1"   Colormode=16
 "!	c #FFFFFF"
 "  	c none"
@@ -6932,6 +6990,90 @@ DayXpm="16 14 106 2"   Colormode=32
 "!=#5!1*7*8*9=!=#=%%$?4?$=?=$=*=="
 "!!!==1!?%$%$%$%$%$=2#5=3%$%$%$=2"
 ;1234567890123456
+[end]
+
+
+[_point]
+Type=0x02c
+SubType=0x0d
+String1=0x01,
+ExtendedLabels=N
+DayXpm="16 16 2 1"   Colormode=32
+"!	c #FFFFFF"  canalalpha=0
+"#	c #000000"  canalalpha=0
+"!!!!!!!!!!!!!!!!"
+"!!!#!!!!!!!!!!!!"
+"!!###!!!!!!!!!!!"
+"!!#!#!!!!!!!!!!!"
+"!##!##!!!!!!!!!!"
+"!#####!!!!!!!!!!"
+"!!###!!!!!!!!!!!"
+"!!###!!!###!!!!!"
+"!!###!!#####!!!!"
+"!!###!#######!!!"
+"!!############!!"
+"!!#####!#!#!##!!"
+"!!#####!#!#!##!!"
+"!!#####!#!#!##!!"
+"!!#####!#!#!##!!"
+"!!#####!#!#!##!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x02c
+SubType=0x0e
+String1=0x01,
+ExtendedLabels=N
+DayXpm="16 16 2 1"   Colormode=32
+"!	c #FFFFFF"  canalalpha=0
+"#	c #000000"  canalalpha=0
+"!!!!!!!!!!!!!!!!"
+"!!!#!!!!!!!!!!!!"
+"!!###!!!!!!!!!!!"
+"!#####!!!!!!!!!!"
+"!##!##!!!!!!!!!!"
+"!#!#!#!!!!!!!!!!"
+"!##!##!!!!!!!!!!"
+"!#####!!!!!!!!!!"
+"!#####!!!!!!!!!!"
+"!#####!#######!!"
+"!##############!"
+"!######!#!#!#!##"
+"!######!#!#!#!##"
+"!##!!##!#!#!#!##"
+"!##!!###########"
+"!##!!###########"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x02c
+SubType=0x0f
+String1=0x01,
+ExtendedLabels=N
+DayXpm="15 16 2 1"   Colormode=32
+"!	c #FFFFFF"  canalalpha=0
+"#	c #000000"  canalalpha=0
+"!!!!#######!!!!"
+"!!!#########!!!"
+"!!###########!!"
+"###############"
+"##!!#!!#!!#!!##"
+"##!!#!!#!!#!!##"
+"##!!#!!#!!#!!##"
+"###############"
+"##!!!!!!!!!!!##"
+"###############"
+"#####!!!!!#####"
+"#####!!!!!#####"
+"#####!!!!!#####"
+"#####!!!!!#####"
+"#####!!!!!#####"
+"###############"
+;123456789012345
 [end]
 
 
@@ -10193,99 +10335,36 @@ DayXpm="16 15 90 2"   Colormode=32
 
 [_point]
 Type=0x02f
-SubType=0x0b
-String1=0x02,Parkplatz
-String2=0x04,Parking
-ExtendedLabels=N
-DayXpm="15 15 72 2"   Colormode=0
-"!!	c #7B95B4"
-"!#	c #3965B4"
-"!%	c #3965B4"
-"!?	c #7B95B4"
-"!$	c #7B65B4"
-"!*	c #0065FF"
-"!=	c #00308B"
-"!1	c #0030B4"
-"!2	c #0030B4"
-"!3	c #0030B4"
-"!4	c #00308B"
-"!5	c #7B65B4"
-"!6	c #7B65B4"
-"!7	c #3965B4"
-"!8	c #7B95D5"
-"!9	c #BDCAD5"
-"#!	c #BDCAD5"
-"##	c #7B95D5"
-"#%	c #3965B4"
-"#?	c #00308B"
-"#$	c #3965B4"
-"#*	c #7B95B4"
-"#=	c #E6E6E6"
-"#1	c #BDCAD5"
-"#2	c #7B95D5"
-"#3	c #7B95D5"
-"#4	c #D5D5D5"
-"#5	c #BDCAD5"
-"#6	c #3965B4"
-"#7	c #7B65B4"
-"#8	c #E6E6E6"
-"#9	c #3965B4"
-"%!	c #00308B"
-"%#	c #0030B4"
-"%%	c #7B95B4"
-"%?	c #E6E6E6"
-"%$	c #3965B4"
-"%*	c #7B65B4"
-"%=	c #3965B4"
-"%1	c #00308B"
-"%2	c #3965B4"
-"%3	c #E6E6E6"
-"%4	c #7B65B4"
-"%5	c #7B65B4"
-"%6	c #3965B4"
-"%7	c #7B95B4"
-"%8	c #BDCAD5"
-"%9	c #BDCAD5"
-"?!	c #3965B4"
-"?#	c #7B65B4"
-"?%	c #E6E6E6"
-"??	c #FFFFFF"
-"?$	c #E6E6E6"
-"?*	c #E6E6E6"
-"?=	c #BDCAD5"
-"?1	c #3965B4"
-"?2	c #E6E6E6"
-"?3	c #3965B4"
-"?4	c #3965B4"
-"?5	c #3965B4"
-"?6	c #00308B"
-"?7	c #7B65B4"
-"?8	c #7B65B4"
-"?9	c #E6E6E6"
-"$!	c #7B95D5"
-"$#	c #3965B4"
-"$%	c #7B65B4"
-"$?	c #0030B4"
-"$$	c #00308B"
-"$*	c #7B95B4"
-"$=	c #3965B4"
-"$1	c #7B95B4"
-"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
-"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
-"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
-"!#!*!*!*#4#4#4#4#4#4!7!*!*!*!#"
-"!#!*!*!*#4??????????#4!7!*!*!#"
-"!#!*!*!*#4??!7!7!7#4??!7!*!*!#"
-"!#!*!*!*#4??!7!*!*#4??!7!*!*!#"
-"!#!*!*!*#4??#4#4#4??#4!7!*!*!#"
-"!#!*!*!*#4????????#4!7!*!*!*!#"
-"!#!*!*!*#4??!7!7!7!7!*!*!*!*!#"
-"!#!*!*!*#4??!7!*!*!*!*!*!*!*!#"
-"!#!*!*!*#4??!7!*!*!*!*!*!*!*!#"
-"!#!*!*!*!7!7!*!*!*!*!*!*!*!*!#"
-"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
-"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
-;123456789012345
+SubType=0x01
+String1=0x04,Fuel
+String2=0x02,Tankstelle
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+DayXpm="14 16 6 1"   Colormode=16
+"!	c #313131"
+"#	c #FF3000"
+"%	c #A4A4A4"
+"?	c #626262"
+"$	c #FFFFFF"
+"  	c none"
+" !!!!!!!      "
+"?!%%%%%!?     "
+"?!%??%%!? !!  "
+"?!%%?%%!?!!!!!"
+"?!%%%%%!?    !"
+"?!!!!!!!?    !"
+"?!!!!!!!?!!  !"
+"?!#####!? !  !"
+"?!#!#!#!? !  !"
+"?!#!#!#!? !  !"
+"?!#!#!#!? !  !"
+"?!#!#!#!? !  !"
+"?!#!#!#!? !  !"
+"?!#!#!#!? !!!!"
+"?!#!#!#!?     "
+"?!#####!?     "
+;12345678901234
 [end]
 
 
@@ -10736,91 +10815,6 @@ DayXpm="15 16 74 2"   Colormode=32
 
 [_point]
 Type=0x030
-SubType=0x02
-String1=0x02,Krankenhaus
-String2=0x04,Hospital
-ExtendedLabels=N
-DayXpm="16 16 58 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #FF0000"  canalalpha=1
-"!%	c #FF0000"  canalalpha=10
-"!?	c #FF0000"  canalalpha=7
-"!$	c #FF0000"  canalalpha=6
-"!*	c #FF0000"  canalalpha=6
-"!=	c #FF0000"  canalalpha=9
-"!1	c #FF0000"  canalalpha=6
-"!2	c #FF0000"  canalalpha=6
-"!3	c #FF0000"  canalalpha=15
-"!4	c #FF0000"  canalalpha=13
-"!5	c #FF0000"  canalalpha=3
-"!6	c #FF0000"  canalalpha=5
-"!7	c #FF0000"  canalalpha=2
-"!8	c #FF0000"  canalalpha=8
-"!9	c #FF0000"  canalalpha=1
-"#!	c #FF0000"  canalalpha=10
-"##	c #FF0000"  canalalpha=9
-"#%	c #FF0000"  canalalpha=11
-"#?	c #FF0000"  canalalpha=14
-"#$	c #FF0000"  canalalpha=15
-"#*	c #FF0000"  canalalpha=11
-"#=	c #FF0000"  canalalpha=4
-"#1	c #FF0000"  canalalpha=7
-"#2	c #FF0000"  canalalpha=12
-"#3	c #FF0000"  canalalpha=12
-"#4	c #FF0000"  canalalpha=0
-"#5	c #FF0000"  canalalpha=4
-"#6	c #FF0000"  canalalpha=14
-"#7	c #FF0000"  canalalpha=9
-"#8	c #FF0000"  canalalpha=5
-"#9	c #FF0000"  canalalpha=7
-"%!	c #FF0000"  canalalpha=15
-"%#	c #FF0000"  canalalpha=13
-"%%	c #FF0000"  canalalpha=6
-"%?	c #FF0000"  canalalpha=10
-"%$	c #FF0000"  canalalpha=11
-"%*	c #FF0000"  canalalpha=9
-"%=	c #FF0000"  canalalpha=6
-"%1	c #FF0000"  canalalpha=4
-"%2	c #FF0000"  canalalpha=3
-"%3	c #FF0000"  canalalpha=0
-"%4	c #FF0000"  canalalpha=8
-"%5	c #FF0000"  canalalpha=12
-"%6	c #FF0000"  canalalpha=5
-"%7	c #FF0000"  canalalpha=10
-"%8	c #FF0000"  canalalpha=3
-"%9	c #FF0000"  canalalpha=9
-"?!	c #FF0000"  canalalpha=15
-"?#	c #FF0000"  canalalpha=15
-"?%	c #FF0000"  canalalpha=2
-"??	c #FF0000"  canalalpha=11
-"?$	c #FF0000"  canalalpha=14
-"?*	c #FF0000"  canalalpha=7
-"?=	c #FF0000"  canalalpha=7
-"?1	c #FF0000"  canalalpha=9
-"?2	c #FF0000"  canalalpha=3
-"?3	c #FF0000"  canalalpha=7
-"!!!!!!!!!!!#!%!?!$!*!=!!!!!!!!!!"
-"!!!!!!!1!2!3!4!5!6!7!8!9#!!!!!!!"
-"!!!!###%#?!!!4#$#$#*!!#=!?#1!!!!"
-"!!!1#%#2!!!!#3#4#4#5!!!!#6#7#8!!"
-"!!!2#?!!!!!!#3#4#4#5!!!!!!#9%!%#"
-"!#!3!!!!!!!!#3#4#4#5!!!!!!!!%%%?"
-"!%!4!4#3#3#3%$#4#4%*#3#3#3%=%1%2"
-"!?!5%3#4#4#4#4#4#4#4#4#4#4%4!!%5"
-"!$!6%3#4#4#4#4#4#4#4#4#4#4%4!!%5"
-"!*!7#*%6%6%6%*#4#4%7%6%6%6%8%9?!"
-"!=!8!!!!!!!!#3#4#4#5!!!!!!!!?#?%"
-"!!!9#=!!!!!!#3#4#4#5!!!!!!???$??"
-"!!#!!?#6!!!!#3#4#4#5!!!!!!%*?*!!"
-"!!!!#1#7#9!!?=?1?1%8!!??%*?2!!!!"
-"!!!!!!#8%!?3%1!!!!%9?#?$?*!!!!!!"
-"!!!!!!!!%#%?%2%5%5?!?%??!!!!!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x030
 SubType=0x04
 String1=0x02,Gericht
 String2=0x04,Courthouse
@@ -11012,371 +11006,6 @@ DayXpm="16 8 74 2"   Colormode=32
 "%4%5%6%7%8%9?!?!?#?%???%?$?*?=%3"
 "?1?2?3?4?5?6?7?7?7?7?7?8?9?5$!$#"
 "!$!$$%$?$$$*!$!$!$!$!$!$$=$1$2$3"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x030
-SubType=0x1a
-String1=0x02,Arzt
-String2=0x04,Doctors
-ExtendedLabels=N
-DayXpm="16 16 65 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #000000"  canalalpha=1
-"!%	c #BD0000"  canalalpha=0
-"!?	c #7B0000"  canalalpha=10
-"!$	c #000000"  canalalpha=14
-"!*	c #525252"  canalalpha=2
-"!=	c #202020"  canalalpha=15
-"!1	c #000000"  canalalpha=4
-"!2	c #000000"  canalalpha=12
-"!3	c #000000"  canalalpha=8
-"!4	c #000000"  canalalpha=6
-"!5	c #000000"  canalalpha=11
-"!6	c #390000"  canalalpha=0
-"!7	c #390000"  canalalpha=9
-"!8	c #000000"  canalalpha=7
-"!9	c #626262"  canalalpha=3
-"#!	c #313131"  canalalpha=7
-"##	c #390000"  canalalpha=7
-"#%	c #BD0000"  canalalpha=12
-"#?	c #FF0000"  canalalpha=6
-"#$	c #FF0000"  canalalpha=11
-"#*	c #FF0000"  canalalpha=3
-"#=	c #000000"  canalalpha=14
-"#1	c #000000"  canalalpha=10
-"#2	c #000000"  canalalpha=7
-"#3	c #FF0000"  canalalpha=0
-"#4	c #FF0000"  canalalpha=15
-"#5	c #000000"  canalalpha=6
-"#6	c #000000"  canalalpha=13
-"#7	c #000000"  canalalpha=2
-"#8	c #FF0000"  canalalpha=12
-"#9	c #000000"  canalalpha=0
-"%!	c #FF0000"  canalalpha=0
-"%#	c #7B0000"  canalalpha=0
-"%%	c #000000"  canalalpha=7
-"%?	c #000000"  canalalpha=5
-"%$	c #000000"  canalalpha=6
-"%*	c #BD0000"  canalalpha=14
-"%=	c #000000"  canalalpha=6
-"%1	c #000000"  canalalpha=4
-"%2	c #000000"  canalalpha=4
-"%3	c #BD0000"  canalalpha=0
-"%4	c #390000"  canalalpha=4
-"%5	c #000000"  canalalpha=6
-"%6	c #000000"  canalalpha=3
-"%7	c #000000"  canalalpha=4
-"%8	c #390000"  canalalpha=0
-"%9	c #390000"  canalalpha=10
-"?!	c #000000"  canalalpha=5
-"?#	c #000000"  canalalpha=14
-"?%	c #000000"  canalalpha=1
-"??	c #000000"  canalalpha=7
-"?$	c #000000"  canalalpha=12
-"?*	c #BD0000"  canalalpha=12
-"?=	c #7B0000"  canalalpha=2
-"?1	c #000000"  canalalpha=9
-"?2	c #000000"  canalalpha=5
-"?3	c #FF0000"  canalalpha=3
-"?4	c #000000"  canalalpha=7
-"?5	c #FF0000"  canalalpha=15
-"?6	c #390000"  canalalpha=3
-"?7	c #000000"  canalalpha=8
-"?8	c #000000"  canalalpha=14
-"?9	c #000000"  canalalpha=2
-"$!	c #000000"  canalalpha=1
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!#!%!?!$!*!=!1!2!3!!!!!!"
-"!!!!!!!4!5!6!7!8!9#!###%#?#$#$#*"
-"!!!!#=#1#2#3#4!!!!!!!!!!!!!!!!!!"
-"!!!!#5#6#7#3#8!!!!!!!!!!!!!!!!!!"
-"!!!!!!#9#1%!%#%%%?!!!!!!!!!!!!!!"
-"!!!!!!!!%$#3%*%=%1!!!!!!!!!!!!!!"
-"!!!!!!!!%2%3%4%5%6!!!!!!!!!!!!!!"
-"!!!!!!%?%7%8%9?!!!!!!!!!!!!!!!!!"
-"!!!!!!?#?%#3#4!!!!!!!!!!!!!!!!!!"
-"!!!!!!???$#3?*#7!!!!!!!!!!!!!!!!"
-"!!!!!!!!%$#3?=?1?2!!!!!!!!!!!!!!"
-"!!!!!!!!!!#3?3?4#2!!!!!!!!!!!!!!"
-"!!!!!!!!!!?5?6?7?8!!!!!!!!!!!!!!"
-"!!!!!!!!%$?9$!!!!!!!!!!!!!!!!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x030
-SubType=0x1b
-String1=0x02,Zahnarzt
-String2=0x04,Dentist
-ExtendedLabels=N
-DayXpm="16 16 75 2"   Colormode=32
-"!!	c #525252"  canalalpha=6
-"!#	c #313131"  canalalpha=8
-"!%	c #313131"  canalalpha=13
-"!?	c #414141"  canalalpha=12
-"!$	c #313131"  canalalpha=6
-"!*	c #525252"  canalalpha=3
-"!=	c #313131"  canalalpha=7
-"!1	c #525252"  canalalpha=0
-"!2	c #737373"  canalalpha=0
-"!3	c #838383"  canalalpha=0
-"!4	c #949494"  canalalpha=0
-"!5	c #525252"  canalalpha=0
-"!6	c #737373"  canalalpha=0
-"!7	c #626262"  canalalpha=0
-"!8	c #202020"  canalalpha=0
-"!9	c #101010"  canalalpha=0
-"#!	c #313131"  canalalpha=13
-"##	c #202020"  canalalpha=0
-"#%	c #949494"  canalalpha=0
-"#?	c #D5D5D5"  canalalpha=0
-"#$	c #949494"  canalalpha=0
-"#*	c #A4A4A4"  canalalpha=0
-"#=	c #C5C5C5"  canalalpha=0
-"#1	c #626262"  canalalpha=0
-"#2	c #101010"  canalalpha=0
-"#3	c #838383"  canalalpha=0
-"#4	c #525252"  canalalpha=0
-"#5	c #737373"  canalalpha=0
-"#6	c #414141"  canalalpha=0
-"#7	c #737373"  canalalpha=0
-"#8	c #949494"  canalalpha=0
-"#9	c #B4B4B4"  canalalpha=0
-"%!	c #313131"  canalalpha=0
-"%#	c #393041"  canalalpha=0
-"%%	c #949494"  canalalpha=0
-"%?	c #838383"  canalalpha=0
-"%$	c #101010"  canalalpha=0
-"%*	c #626262"  canalalpha=0
-"%=	c #101010"  canalalpha=0
-"%1	c #202020"  canalalpha=0
-"%2	c #B4B4B4"  canalalpha=0
-"%3	c #838383"  canalalpha=0
-"%4	c #414141"  canalalpha=0
-"%5	c #FFFFFF"  canalalpha=0
-"%6	c #D5D5D5"  canalalpha=0
-"%7	c #414141"  canalalpha=0
-"%8	c #525252"  canalalpha=0
-"%9	c #525252"  canalalpha=0
-"?!	c #A4A4A4"  canalalpha=0
-"?#	c #313131"  canalalpha=0
-"?%	c #838383"  canalalpha=0
-"??	c #737373"  canalalpha=0
-"?$	c #313131"  canalalpha=0
-"?*	c #838383"  canalalpha=0
-"?=	c #C5C5C5"  canalalpha=0
-"?1	c #313131"  canalalpha=0
-"?2	c #101010"  canalalpha=0
-"?3	c #A4A4A4"  canalalpha=0
-"?4	c #626262"  canalalpha=0
-"?5	c #C5C5C5"  canalalpha=0
-"?6	c #A4A4A4"  canalalpha=0
-"?7	c #E6E6E6"  canalalpha=0
-"?8	c #E6E6E6"  canalalpha=0
-"?9	c #949494"  canalalpha=0
-"$!	c #E6E6E6"  canalalpha=0
-"$#	c #626262"  canalalpha=0
-"$%	c #414141"  canalalpha=0
-"$?	c #414141"  canalalpha=0
-"$$	c #414141"  canalalpha=0
-"$*	c #949494"  canalalpha=0
-"$=	c #313131"  canalalpha=1
-"$1	c #202020"  canalalpha=0
-"$2	c #414141"  canalalpha=14
-"$3	c #313131"  canalalpha=2
-"$4	c #525252"  canalalpha=11
-"!!!#!%!%!?!%!%!%!%!%!%!%!%!%!$!*"
-"!=!1!2!3!4!5!6!7!8!9!9!9!9!9!9!$"
-"#!###%#?#$#*#=#1#2!9!9!9!9!9!9#!"
-"#!!9!9#3#4#5#6!9!9!9!9!9!9!9!9#!"
-"#!!9!9#7#8#9%!!9!9!9!9!9!9!9!9#!"
-"#!!9!9%#%%%?!9%$%*#7%=!9!9!9!9#!"
-"#!!9!9%1%2%3!9%4%5%5%6%7%8%9!9#!"
-"#!!9!9!9?!?#!9!7%5%5%5%5%5%5?%#!"
-"#!!9!9!9???$!9?*%5%5%5%5%5%5?=#!"
-"#!!9!9!9?1?2!9?3%5%5%5%5%5%5?4#!"
-"#!!9!9!9!9!9!9?3%5%5%5%5%5?5!9#!"
-"#!!9!9!9!9!9!9?6%5?7%5%5?8?1!9#!"
-"#!!9!9!9!9!9!9?9$!!7%5%5$#!9!9#!"
-"#!!9!9!9!9!9!9$%$?$$%5$*!9!9!9#!"
-"$=!9!9!9!9!9!9!9!9$1?4!9!9!9!9$="
-"$2$3!%!%!%!%!%!%!%!%!%!%!%!%$=$4"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x030
-SubType=0x1c
-String1=0x02,Tierarzt
-String2=0x04,Veterinary
-ExtendedLabels=N
-DayXpm="16 16 144 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #BD3020"  canalalpha=5
-"!%	c #BD3020"  canalalpha=3
-"!?	c #BD3020"  canalalpha=0
-"!$	c #BD958B"  canalalpha=5
-"!*	c #BD3020"  canalalpha=9
-"!=	c #BD3020"  canalalpha=8
-"!1	c #BD3020"  canalalpha=11
-"!2	c #BD3020"  canalalpha=2
-"!3	c #BD3020"  canalalpha=11
-"!4	c #BD3020"  canalalpha=9
-"!5	c #7B0020"  canalalpha=14
-"!6	c #B4B4B4"  canalalpha=0
-"!7	c #7B3041"  canalalpha=1
-"!8	c #BD3041"  canalalpha=15
-"!9	c #7B3041"  canalalpha=6
-"#!	c #BD656A"  canalalpha=12
-"##	c #FF95B4"  canalalpha=6
-"#%	c #FFFFFF"  canalalpha=12
-"#?	c #FFFFFF"  canalalpha=4
-"#$	c #BD3020"  canalalpha=8
-"#*	c #BD3020"  canalalpha=9
-"#=	c #BD3020"  canalalpha=6
-"#1	c #390000"  canalalpha=6
-"#2	c #101010"  canalalpha=12
-"#3	c #525252"  canalalpha=0
-"#4	c #7B6541"  canalalpha=7
-"#5	c #7B656A"  canalalpha=1
-"#6	c #393020"  canalalpha=0
-"#7	c #7B656A"  canalalpha=0
-"#8	c #BD958B"  canalalpha=0
-"#9	c #C5C5C5"  canalalpha=6
-"%!	c #7B0020"  canalalpha=15
-"%#	c #390000"  canalalpha=10
-"%%	c #BD3020"  canalalpha=10
-"%?	c #FFFFFF"  canalalpha=0
-"%$	c #BD3041"  canalalpha=5
-"%*	c #BD3020"  canalalpha=8
-"%=	c #FF3041"  canalalpha=4
-"%1	c #FF3041"  canalalpha=0
-"%2	c #FF3041"  canalalpha=12
-"%3	c #FF656A"  canalalpha=9
-"%4	c #BD0020"  canalalpha=8
-"%5	c #101010"  canalalpha=15
-"%6	c #BD3020"  canalalpha=8
-"%7	c #BD3020"  canalalpha=4
-"%8	c #390000"  canalalpha=5
-"%9	c #101010"  canalalpha=10
-"?!	c #7B3020"  canalalpha=5
-"?#	c #BD3020"  canalalpha=8
-"?%	c #BD3020"  canalalpha=7
-"??	c #7B3020"  canalalpha=13
-"?$	c #202020"  canalalpha=14
-"?*	c #390000"  canalalpha=10
-"?=	c #BD3041"  canalalpha=15
-"?1	c #BD656A"  canalalpha=13
-"?2	c #BD3041"  canalalpha=13
-"?3	c #E6E6E6"  canalalpha=0
-"?4	c #7B3020"  canalalpha=6
-"?5	c #101010"  canalalpha=14
-"?6	c #BD656A"  canalalpha=5
-"?7	c #BD656A"  canalalpha=14
-"?8	c #BD3041"  canalalpha=15
-"?9	c #BD3041"  canalalpha=7
-"$!	c #E6E6E6"  canalalpha=0
-"$#	c #E6E6E6"  canalalpha=2
-"$%	c #BD3041"  canalalpha=9
-"$?	c #BD3020"  canalalpha=8
-"$$	c #390000"  canalalpha=9
-"$*	c #202020"  canalalpha=0
-"$=	c #390000"  canalalpha=11
-"$1	c #BD0020"  canalalpha=10
-"$2	c #BD3041"  canalalpha=9
-"$3	c #FFFFFF"  canalalpha=0
-"$4	c #E6E6E6"  canalalpha=1
-"$5	c #BD3041"  canalalpha=11
-"$6	c #BD3020"  canalalpha=6
-"$7	c #BD658B"  canalalpha=4
-"$8	c #B4B4B4"  canalalpha=0
-"$9	c #BD3020"  canalalpha=7
-"*!	c #BD0020"  canalalpha=15
-"*#	c #000000"  canalalpha=1
-"*%	c #BD3041"  canalalpha=5
-"*?	c #BD3020"  canalalpha=0
-"*$	c #D5D5D5"  canalalpha=6
-"**	c #BD656A"  canalalpha=10
-"*=	c #BD3020"  canalalpha=5
-"*1	c #BD3020"  canalalpha=0
-"*2	c #BD3020"  canalalpha=5
-"*3	c #C5C5C5"  canalalpha=12
-"*4	c #BD656A"  canalalpha=9
-"*5	c #390020"  canalalpha=5
-"*6	c #7B3020"  canalalpha=10
-"*7	c #BD3020"  canalalpha=3
-"*8	c #BD958B"  canalalpha=10
-"*9	c #BD95B4"  canalalpha=3
-"=!	c #BD3020"  canalalpha=7
-"=#	c #BD3020"  canalalpha=2
-"=%	c #BD3020"  canalalpha=10
-"=?	c #BD3041"  canalalpha=4
-"=$	c #E6E6E6"  canalalpha=1
-"=*	c #E6E6E6"  canalalpha=1
-"==	c #BD3041"  canalalpha=4
-"=1	c #BD3020"  canalalpha=10
-"=2	c #393020"  canalalpha=3
-"=3	c #390000"  canalalpha=2
-"=4	c #BD6541"  canalalpha=7
-"=5	c #FFFFFF"  canalalpha=0
-"=6	c #D5D5D5"  canalalpha=4
-"=7	c #BD3020"  canalalpha=12
-"=8	c #BD3020"  canalalpha=13
-"=9	c #BD656A"  canalalpha=9
-"1!	c #C5C5C5"  canalalpha=12
-"1#	c #BD3020"  canalalpha=6
-"1%	c #393020"  canalalpha=6
-"1?	c #390020"  canalalpha=15
-"1$	c #D5D5D5"  canalalpha=5
-"1*	c #BD3020"  canalalpha=10
-"1=	c #BD3020"  canalalpha=3
-"11	c #B4B4B4"  canalalpha=0
-"12	c #838383"  canalalpha=10
-"13	c #7B656A"  canalalpha=6
-"14	c #390000"  canalalpha=8
-"15	c #BD958B"  canalalpha=5
-"16	c #BD958B"  canalalpha=13
-"17	c #BD3020"  canalalpha=2
-"18	c #BD3020"  canalalpha=9
-"19	c #BD3020"  canalalpha=12
-"2!	c #BD3041"  canalalpha=9
-"2#	c #E6E6E6"  canalalpha=2
-"2%	c #FFFFFF"  canalalpha=0
-"2?	c #BD656A"  canalalpha=9
-"2$	c #BD656A"  canalalpha=4
-"2*	c #FFFFFF"  canalalpha=0
-"2=	c #C5C5C5"  canalalpha=10
-"21	c #BD3020"  canalalpha=4
-"22	c #BD3020"  canalalpha=11
-"23	c #BD3020"  canalalpha=15
-"24	c #BD656A"  canalalpha=11
-"25	c #BD958B"  canalalpha=9
-"26	c #BD958B"  canalalpha=4
-"27	c #BD958B"  canalalpha=3
-"28	c #BD95B4"  canalalpha=7
-"29	c #BD3041"  canalalpha=7
-"!!!!!!!!!#!%!?!$!*!=!%!#!!!!!!!!"
-"!!!!!1!2!3!4!5!6!7!8!9#!###%#?!!"
-"!!!1#$#*#=#1#2#3#4#5#6#7#8#8#9!!"
-"!!!2#*#*%!%#%%%?%$#*%*%=%1%2%3!!"
-"!#!3#*#*%4%5%6%?%$#*#*#*#*#*!3%7"
-"!2#*#*#*#*%8%9%??!?##*#*#*#*#*!2"
-"?%#*#*#*#*#*??%??$?*#*#*#*#*#*?%"
-"?=?1?2#*#*#*%%?3?4?5#*#*#*?6?7?8"
-"?9$!$#$%#*$?$$$*$=$1#*#*$2$3$4$5"
-"$6$7%?$8$9*!*#%?*%#*#**?*$%?***="
-"*1*2*3%?*4?#*5%?*6*7#**8%?*9=!*1"
-"=#=%=?=$=*===1%?=2=3=4=5=6=7=%=#"
-"!!=8#*=9%?1!1#%?1%1?1$$3=4#*=8!!"
-"!!1*1=$911%?12131415%?16#*171*!!"
-"!!!!18192!2#2%2?2$2*2=212218!!!!"
-"!!!!!!!!2324252627282923!!!!!!!!"
 ;1234567890123456
 [end]
 
@@ -11675,6 +11304,371 @@ DayXpm="16 16 144 2"   Colormode=32
 
 
 [_point]
+Type=0x046
+SubType=0x1a
+String1=0x02,Arzt
+String2=0x04,Doctors
+ExtendedLabels=N
+DayXpm="16 16 65 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #000000"  canalalpha=1
+"!%	c #BD0000"  canalalpha=0
+"!?	c #7B0000"  canalalpha=10
+"!$	c #000000"  canalalpha=14
+"!*	c #525252"  canalalpha=2
+"!=	c #202020"  canalalpha=15
+"!1	c #000000"  canalalpha=4
+"!2	c #000000"  canalalpha=12
+"!3	c #000000"  canalalpha=8
+"!4	c #000000"  canalalpha=6
+"!5	c #000000"  canalalpha=11
+"!6	c #390000"  canalalpha=0
+"!7	c #390000"  canalalpha=9
+"!8	c #000000"  canalalpha=7
+"!9	c #626262"  canalalpha=3
+"#!	c #313131"  canalalpha=7
+"##	c #390000"  canalalpha=7
+"#%	c #BD0000"  canalalpha=12
+"#?	c #FF0000"  canalalpha=6
+"#$	c #FF0000"  canalalpha=11
+"#*	c #FF0000"  canalalpha=3
+"#=	c #000000"  canalalpha=14
+"#1	c #000000"  canalalpha=10
+"#2	c #000000"  canalalpha=7
+"#3	c #FF0000"  canalalpha=0
+"#4	c #FF0000"  canalalpha=15
+"#5	c #000000"  canalalpha=6
+"#6	c #000000"  canalalpha=13
+"#7	c #000000"  canalalpha=2
+"#8	c #FF0000"  canalalpha=12
+"#9	c #000000"  canalalpha=0
+"%!	c #FF0000"  canalalpha=0
+"%#	c #7B0000"  canalalpha=0
+"%%	c #000000"  canalalpha=7
+"%?	c #000000"  canalalpha=5
+"%$	c #000000"  canalalpha=6
+"%*	c #BD0000"  canalalpha=14
+"%=	c #000000"  canalalpha=6
+"%1	c #000000"  canalalpha=4
+"%2	c #000000"  canalalpha=4
+"%3	c #BD0000"  canalalpha=0
+"%4	c #390000"  canalalpha=4
+"%5	c #000000"  canalalpha=6
+"%6	c #000000"  canalalpha=3
+"%7	c #000000"  canalalpha=4
+"%8	c #390000"  canalalpha=0
+"%9	c #390000"  canalalpha=10
+"?!	c #000000"  canalalpha=5
+"?#	c #000000"  canalalpha=14
+"?%	c #000000"  canalalpha=1
+"??	c #000000"  canalalpha=7
+"?$	c #000000"  canalalpha=12
+"?*	c #BD0000"  canalalpha=12
+"?=	c #7B0000"  canalalpha=2
+"?1	c #000000"  canalalpha=9
+"?2	c #000000"  canalalpha=5
+"?3	c #FF0000"  canalalpha=3
+"?4	c #000000"  canalalpha=7
+"?5	c #FF0000"  canalalpha=15
+"?6	c #390000"  canalalpha=3
+"?7	c #000000"  canalalpha=8
+"?8	c #000000"  canalalpha=14
+"?9	c #000000"  canalalpha=2
+"$!	c #000000"  canalalpha=1
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!#!%!?!$!*!=!1!2!3!!!!!!"
+"!!!!!!!4!5!6!7!8!9#!###%#?#$#$#*"
+"!!!!#=#1#2#3#4!!!!!!!!!!!!!!!!!!"
+"!!!!#5#6#7#3#8!!!!!!!!!!!!!!!!!!"
+"!!!!!!#9#1%!%#%%%?!!!!!!!!!!!!!!"
+"!!!!!!!!%$#3%*%=%1!!!!!!!!!!!!!!"
+"!!!!!!!!%2%3%4%5%6!!!!!!!!!!!!!!"
+"!!!!!!%?%7%8%9?!!!!!!!!!!!!!!!!!"
+"!!!!!!?#?%#3#4!!!!!!!!!!!!!!!!!!"
+"!!!!!!???$#3?*#7!!!!!!!!!!!!!!!!"
+"!!!!!!!!%$#3?=?1?2!!!!!!!!!!!!!!"
+"!!!!!!!!!!#3?3?4#2!!!!!!!!!!!!!!"
+"!!!!!!!!!!?5?6?7?8!!!!!!!!!!!!!!"
+"!!!!!!!!%$?9$!!!!!!!!!!!!!!!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x046
+SubType=0x1b
+String1=0x02,Zahnarzt
+String2=0x04,Dentist
+ExtendedLabels=N
+DayXpm="16 16 75 2"   Colormode=32
+"!!	c #525252"  canalalpha=6
+"!#	c #313131"  canalalpha=8
+"!%	c #313131"  canalalpha=13
+"!?	c #414141"  canalalpha=12
+"!$	c #313131"  canalalpha=6
+"!*	c #525252"  canalalpha=3
+"!=	c #313131"  canalalpha=7
+"!1	c #525252"  canalalpha=0
+"!2	c #737373"  canalalpha=0
+"!3	c #838383"  canalalpha=0
+"!4	c #949494"  canalalpha=0
+"!5	c #525252"  canalalpha=0
+"!6	c #737373"  canalalpha=0
+"!7	c #626262"  canalalpha=0
+"!8	c #202020"  canalalpha=0
+"!9	c #101010"  canalalpha=0
+"#!	c #313131"  canalalpha=13
+"##	c #202020"  canalalpha=0
+"#%	c #949494"  canalalpha=0
+"#?	c #D5D5D5"  canalalpha=0
+"#$	c #949494"  canalalpha=0
+"#*	c #A4A4A4"  canalalpha=0
+"#=	c #C5C5C5"  canalalpha=0
+"#1	c #626262"  canalalpha=0
+"#2	c #101010"  canalalpha=0
+"#3	c #838383"  canalalpha=0
+"#4	c #525252"  canalalpha=0
+"#5	c #737373"  canalalpha=0
+"#6	c #414141"  canalalpha=0
+"#7	c #737373"  canalalpha=0
+"#8	c #949494"  canalalpha=0
+"#9	c #B4B4B4"  canalalpha=0
+"%!	c #313131"  canalalpha=0
+"%#	c #393041"  canalalpha=0
+"%%	c #949494"  canalalpha=0
+"%?	c #838383"  canalalpha=0
+"%$	c #101010"  canalalpha=0
+"%*	c #626262"  canalalpha=0
+"%=	c #101010"  canalalpha=0
+"%1	c #202020"  canalalpha=0
+"%2	c #B4B4B4"  canalalpha=0
+"%3	c #838383"  canalalpha=0
+"%4	c #414141"  canalalpha=0
+"%5	c #FFFFFF"  canalalpha=0
+"%6	c #D5D5D5"  canalalpha=0
+"%7	c #414141"  canalalpha=0
+"%8	c #525252"  canalalpha=0
+"%9	c #525252"  canalalpha=0
+"?!	c #A4A4A4"  canalalpha=0
+"?#	c #313131"  canalalpha=0
+"?%	c #838383"  canalalpha=0
+"??	c #737373"  canalalpha=0
+"?$	c #313131"  canalalpha=0
+"?*	c #838383"  canalalpha=0
+"?=	c #C5C5C5"  canalalpha=0
+"?1	c #313131"  canalalpha=0
+"?2	c #101010"  canalalpha=0
+"?3	c #A4A4A4"  canalalpha=0
+"?4	c #626262"  canalalpha=0
+"?5	c #C5C5C5"  canalalpha=0
+"?6	c #A4A4A4"  canalalpha=0
+"?7	c #E6E6E6"  canalalpha=0
+"?8	c #E6E6E6"  canalalpha=0
+"?9	c #949494"  canalalpha=0
+"$!	c #E6E6E6"  canalalpha=0
+"$#	c #626262"  canalalpha=0
+"$%	c #414141"  canalalpha=0
+"$?	c #414141"  canalalpha=0
+"$$	c #414141"  canalalpha=0
+"$*	c #949494"  canalalpha=0
+"$=	c #313131"  canalalpha=1
+"$1	c #202020"  canalalpha=0
+"$2	c #414141"  canalalpha=14
+"$3	c #313131"  canalalpha=2
+"$4	c #525252"  canalalpha=11
+"!!!#!%!%!?!%!%!%!%!%!%!%!%!%!$!*"
+"!=!1!2!3!4!5!6!7!8!9!9!9!9!9!9!$"
+"#!###%#?#$#*#=#1#2!9!9!9!9!9!9#!"
+"#!!9!9#3#4#5#6!9!9!9!9!9!9!9!9#!"
+"#!!9!9#7#8#9%!!9!9!9!9!9!9!9!9#!"
+"#!!9!9%#%%%?!9%$%*#7%=!9!9!9!9#!"
+"#!!9!9%1%2%3!9%4%5%5%6%7%8%9!9#!"
+"#!!9!9!9?!?#!9!7%5%5%5%5%5%5?%#!"
+"#!!9!9!9???$!9?*%5%5%5%5%5%5?=#!"
+"#!!9!9!9?1?2!9?3%5%5%5%5%5%5?4#!"
+"#!!9!9!9!9!9!9?3%5%5%5%5%5?5!9#!"
+"#!!9!9!9!9!9!9?6%5?7%5%5?8?1!9#!"
+"#!!9!9!9!9!9!9?9$!!7%5%5$#!9!9#!"
+"#!!9!9!9!9!9!9$%$?$$%5$*!9!9!9#!"
+"$=!9!9!9!9!9!9!9!9$1?4!9!9!9!9$="
+"$2$3!%!%!%!%!%!%!%!%!%!%!%!%$=$4"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x046
+SubType=0x1c
+String1=0x02,Tierarzt
+String2=0x04,Veterinary
+ExtendedLabels=N
+DayXpm="16 16 144 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #BD3020"  canalalpha=5
+"!%	c #BD3020"  canalalpha=3
+"!?	c #BD3020"  canalalpha=0
+"!$	c #BD958B"  canalalpha=5
+"!*	c #BD3020"  canalalpha=9
+"!=	c #BD3020"  canalalpha=8
+"!1	c #BD3020"  canalalpha=11
+"!2	c #BD3020"  canalalpha=2
+"!3	c #BD3020"  canalalpha=11
+"!4	c #BD3020"  canalalpha=9
+"!5	c #7B0020"  canalalpha=14
+"!6	c #B4B4B4"  canalalpha=0
+"!7	c #7B3041"  canalalpha=1
+"!8	c #BD3041"  canalalpha=15
+"!9	c #7B3041"  canalalpha=6
+"#!	c #BD656A"  canalalpha=12
+"##	c #FF95B4"  canalalpha=6
+"#%	c #FFFFFF"  canalalpha=12
+"#?	c #FFFFFF"  canalalpha=4
+"#$	c #BD3020"  canalalpha=8
+"#*	c #BD3020"  canalalpha=9
+"#=	c #BD3020"  canalalpha=6
+"#1	c #390000"  canalalpha=6
+"#2	c #101010"  canalalpha=12
+"#3	c #525252"  canalalpha=0
+"#4	c #7B6541"  canalalpha=7
+"#5	c #7B656A"  canalalpha=1
+"#6	c #393020"  canalalpha=0
+"#7	c #7B656A"  canalalpha=0
+"#8	c #BD958B"  canalalpha=0
+"#9	c #C5C5C5"  canalalpha=6
+"%!	c #7B0020"  canalalpha=15
+"%#	c #390000"  canalalpha=10
+"%%	c #BD3020"  canalalpha=10
+"%?	c #FFFFFF"  canalalpha=0
+"%$	c #BD3041"  canalalpha=5
+"%*	c #BD3020"  canalalpha=8
+"%=	c #FF3041"  canalalpha=4
+"%1	c #FF3041"  canalalpha=0
+"%2	c #FF3041"  canalalpha=12
+"%3	c #FF656A"  canalalpha=9
+"%4	c #BD0020"  canalalpha=8
+"%5	c #101010"  canalalpha=15
+"%6	c #BD3020"  canalalpha=8
+"%7	c #BD3020"  canalalpha=4
+"%8	c #390000"  canalalpha=5
+"%9	c #101010"  canalalpha=10
+"?!	c #7B3020"  canalalpha=5
+"?#	c #BD3020"  canalalpha=8
+"?%	c #BD3020"  canalalpha=7
+"??	c #7B3020"  canalalpha=13
+"?$	c #202020"  canalalpha=14
+"?*	c #390000"  canalalpha=10
+"?=	c #BD3041"  canalalpha=15
+"?1	c #BD656A"  canalalpha=13
+"?2	c #BD3041"  canalalpha=13
+"?3	c #E6E6E6"  canalalpha=0
+"?4	c #7B3020"  canalalpha=6
+"?5	c #101010"  canalalpha=14
+"?6	c #BD656A"  canalalpha=5
+"?7	c #BD656A"  canalalpha=14
+"?8	c #BD3041"  canalalpha=15
+"?9	c #BD3041"  canalalpha=7
+"$!	c #E6E6E6"  canalalpha=0
+"$#	c #E6E6E6"  canalalpha=2
+"$%	c #BD3041"  canalalpha=9
+"$?	c #BD3020"  canalalpha=8
+"$$	c #390000"  canalalpha=9
+"$*	c #202020"  canalalpha=0
+"$=	c #390000"  canalalpha=11
+"$1	c #BD0020"  canalalpha=10
+"$2	c #BD3041"  canalalpha=9
+"$3	c #FFFFFF"  canalalpha=0
+"$4	c #E6E6E6"  canalalpha=1
+"$5	c #BD3041"  canalalpha=11
+"$6	c #BD3020"  canalalpha=6
+"$7	c #BD658B"  canalalpha=4
+"$8	c #B4B4B4"  canalalpha=0
+"$9	c #BD3020"  canalalpha=7
+"*!	c #BD0020"  canalalpha=15
+"*#	c #000000"  canalalpha=1
+"*%	c #BD3041"  canalalpha=5
+"*?	c #BD3020"  canalalpha=0
+"*$	c #D5D5D5"  canalalpha=6
+"**	c #BD656A"  canalalpha=10
+"*=	c #BD3020"  canalalpha=5
+"*1	c #BD3020"  canalalpha=0
+"*2	c #BD3020"  canalalpha=5
+"*3	c #C5C5C5"  canalalpha=12
+"*4	c #BD656A"  canalalpha=9
+"*5	c #390020"  canalalpha=5
+"*6	c #7B3020"  canalalpha=10
+"*7	c #BD3020"  canalalpha=3
+"*8	c #BD958B"  canalalpha=10
+"*9	c #BD95B4"  canalalpha=3
+"=!	c #BD3020"  canalalpha=7
+"=#	c #BD3020"  canalalpha=2
+"=%	c #BD3020"  canalalpha=10
+"=?	c #BD3041"  canalalpha=4
+"=$	c #E6E6E6"  canalalpha=1
+"=*	c #E6E6E6"  canalalpha=1
+"==	c #BD3041"  canalalpha=4
+"=1	c #BD3020"  canalalpha=10
+"=2	c #393020"  canalalpha=3
+"=3	c #390000"  canalalpha=2
+"=4	c #BD6541"  canalalpha=7
+"=5	c #FFFFFF"  canalalpha=0
+"=6	c #D5D5D5"  canalalpha=4
+"=7	c #BD3020"  canalalpha=12
+"=8	c #BD3020"  canalalpha=13
+"=9	c #BD656A"  canalalpha=9
+"1!	c #C5C5C5"  canalalpha=12
+"1#	c #BD3020"  canalalpha=6
+"1%	c #393020"  canalalpha=6
+"1?	c #390020"  canalalpha=15
+"1$	c #D5D5D5"  canalalpha=5
+"1*	c #BD3020"  canalalpha=10
+"1=	c #BD3020"  canalalpha=3
+"11	c #B4B4B4"  canalalpha=0
+"12	c #838383"  canalalpha=10
+"13	c #7B656A"  canalalpha=6
+"14	c #390000"  canalalpha=8
+"15	c #BD958B"  canalalpha=5
+"16	c #BD958B"  canalalpha=13
+"17	c #BD3020"  canalalpha=2
+"18	c #BD3020"  canalalpha=9
+"19	c #BD3020"  canalalpha=12
+"2!	c #BD3041"  canalalpha=9
+"2#	c #E6E6E6"  canalalpha=2
+"2%	c #FFFFFF"  canalalpha=0
+"2?	c #BD656A"  canalalpha=9
+"2$	c #BD656A"  canalalpha=4
+"2*	c #FFFFFF"  canalalpha=0
+"2=	c #C5C5C5"  canalalpha=10
+"21	c #BD3020"  canalalpha=4
+"22	c #BD3020"  canalalpha=11
+"23	c #BD3020"  canalalpha=15
+"24	c #BD656A"  canalalpha=11
+"25	c #BD958B"  canalalpha=9
+"26	c #BD958B"  canalalpha=4
+"27	c #BD958B"  canalalpha=3
+"28	c #BD95B4"  canalalpha=7
+"29	c #BD3041"  canalalpha=7
+"!!!!!!!!!#!%!?!$!*!=!%!#!!!!!!!!"
+"!!!!!1!2!3!4!5!6!7!8!9#!###%#?!!"
+"!!!1#$#*#=#1#2#3#4#5#6#7#8#8#9!!"
+"!!!2#*#*%!%#%%%?%$#*%*%=%1%2%3!!"
+"!#!3#*#*%4%5%6%?%$#*#*#*#*#*!3%7"
+"!2#*#*#*#*%8%9%??!?##*#*#*#*#*!2"
+"?%#*#*#*#*#*??%??$?*#*#*#*#*#*?%"
+"?=?1?2#*#*#*%%?3?4?5#*#*#*?6?7?8"
+"?9$!$#$%#*$?$$$*$=$1#*#*$2$3$4$5"
+"$6$7%?$8$9*!*#%?*%#*#**?*$%?***="
+"*1*2*3%?*4?#*5%?*6*7#**8%?*9=!*1"
+"=#=%=?=$=*===1%?=2=3=4=5=6=7=%=#"
+"!!=8#*=9%?1!1#%?1%1?1$$3=4#*=8!!"
+"!!1*1=$911%?12131415%?16#*171*!!"
+"!!!!18192!2#2%2?2$2*2=212218!!!!"
+"!!!!!!!!2324252627282923!!!!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
 Type=0x04a
 SubType=0x00
 String1=0x02,Picknickplatz
@@ -11703,7 +11697,7 @@ DayXpm="24 12 5 1"   Colormode=16
 
 
 [_point]
-Type=0x4a
+Type=0x04a
 SubType=0x01
 String1=0x02,Sitzbank
 String2=0x04,Bench
@@ -11730,6 +11724,91 @@ DayXpm="16 16 3 1"   Colormode=16
 "                "
 "                "
 "                "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x04b
+SubType=0x00
+String1=0x02,Krankenhaus
+String2=0x04,Hospital
+ExtendedLabels=N
+DayXpm="16 16 58 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #FF0000"  canalalpha=1
+"!%	c #FF0000"  canalalpha=10
+"!?	c #FF0000"  canalalpha=7
+"!$	c #FF0000"  canalalpha=6
+"!*	c #FF0000"  canalalpha=6
+"!=	c #FF0000"  canalalpha=9
+"!1	c #FF0000"  canalalpha=6
+"!2	c #FF0000"  canalalpha=6
+"!3	c #FF0000"  canalalpha=15
+"!4	c #FF0000"  canalalpha=13
+"!5	c #FF0000"  canalalpha=3
+"!6	c #FF0000"  canalalpha=5
+"!7	c #FF0000"  canalalpha=2
+"!8	c #FF0000"  canalalpha=8
+"!9	c #FF0000"  canalalpha=1
+"#!	c #FF0000"  canalalpha=10
+"##	c #FF0000"  canalalpha=9
+"#%	c #FF0000"  canalalpha=11
+"#?	c #FF0000"  canalalpha=14
+"#$	c #FF0000"  canalalpha=15
+"#*	c #FF0000"  canalalpha=11
+"#=	c #FF0000"  canalalpha=4
+"#1	c #FF0000"  canalalpha=7
+"#2	c #FF0000"  canalalpha=12
+"#3	c #FF0000"  canalalpha=12
+"#4	c #FF0000"  canalalpha=0
+"#5	c #FF0000"  canalalpha=4
+"#6	c #FF0000"  canalalpha=14
+"#7	c #FF0000"  canalalpha=9
+"#8	c #FF0000"  canalalpha=5
+"#9	c #FF0000"  canalalpha=7
+"%!	c #FF0000"  canalalpha=15
+"%#	c #FF0000"  canalalpha=13
+"%%	c #FF0000"  canalalpha=6
+"%?	c #FF0000"  canalalpha=10
+"%$	c #FF0000"  canalalpha=11
+"%*	c #FF0000"  canalalpha=9
+"%=	c #FF0000"  canalalpha=6
+"%1	c #FF0000"  canalalpha=4
+"%2	c #FF0000"  canalalpha=3
+"%3	c #FF0000"  canalalpha=0
+"%4	c #FF0000"  canalalpha=8
+"%5	c #FF0000"  canalalpha=12
+"%6	c #FF0000"  canalalpha=5
+"%7	c #FF0000"  canalalpha=10
+"%8	c #FF0000"  canalalpha=3
+"%9	c #FF0000"  canalalpha=9
+"?!	c #FF0000"  canalalpha=15
+"?#	c #FF0000"  canalalpha=15
+"?%	c #FF0000"  canalalpha=2
+"??	c #FF0000"  canalalpha=11
+"?$	c #FF0000"  canalalpha=14
+"?*	c #FF0000"  canalalpha=7
+"?=	c #FF0000"  canalalpha=7
+"?1	c #FF0000"  canalalpha=9
+"?2	c #FF0000"  canalalpha=3
+"?3	c #FF0000"  canalalpha=7
+"!!!!!!!!!!!#!%!?!$!*!=!!!!!!!!!!"
+"!!!!!!!1!2!3!4!5!6!7!8!9#!!!!!!!"
+"!!!!###%#?!!!4#$#$#*!!#=!?#1!!!!"
+"!!!1#%#2!!!!#3#4#4#5!!!!#6#7#8!!"
+"!!!2#?!!!!!!#3#4#4#5!!!!!!#9%!%#"
+"!#!3!!!!!!!!#3#4#4#5!!!!!!!!%%%?"
+"!%!4!4#3#3#3%$#4#4%*#3#3#3%=%1%2"
+"!?!5%3#4#4#4#4#4#4#4#4#4#4%4!!%5"
+"!$!6%3#4#4#4#4#4#4#4#4#4#4%4!!%5"
+"!*!7#*%6%6%6%*#4#4%7%6%6%6%8%9?!"
+"!=!8!!!!!!!!#3#4#4#5!!!!!!!!?#?%"
+"!!!9#=!!!!!!#3#4#4#5!!!!!!???$??"
+"!!#!!?#6!!!!#3#4#4#5!!!!!!%*?*!!"
+"!!!!#1#7#9!!?=?1?1%8!!??%*?2!!!!"
+"!!!!!!#8%!?3%1!!!!%9?#?$?*!!!!!!"
+"!!!!!!!!%#%?%2%5%5?!?%??!!!!!!!!"
 ;1234567890123456
 [end]
 
@@ -11920,10 +11999,10 @@ DayXpm="7 18 3 1"   Colormode=16
 [_point]
 Type=0x04d
 SubType=0x00
-String1=0x02,Parkhaus
+String1=0x02,Parkplatz
 String2=0x04,Parking
 ExtendedLabels=N
-DayXpm="15 17 72 2"   Colormode=0
+DayXpm="15 15 72 2"   Colormode=0
 "!!	c #7B95B4"
 "!#	c #3965B4"
 "!%	c #3965B4"
@@ -11939,7 +12018,7 @@ DayXpm="15 17 72 2"   Colormode=0
 "!6	c #7B65B4"
 "!7	c #3965B4"
 "!8	c #7B95D5"
-"!9	c #D5D5D5"
+"!9	c #BDCAD5"
 "#!	c #BDCAD5"
 "##	c #7B95D5"
 "#%	c #3965B4"
@@ -11996,23 +12075,21 @@ DayXpm="15 17 72 2"   Colormode=0
 "$*	c #7B95B4"
 "$=	c #3965B4"
 "$1	c #7B95B4"
-"!!!6!6!6!6!6!6!6!6!6!6!6!6!6!!"
-"!6!*!*!*!*!*!9!9!7!*!*!*!*!*!6"
-"!6!*!*!*!*!9??????!7!*!*!*!*!6"
-"!6!*!*!*!9??!7!7!9??!7!*!*!*!6"
-"!6!*!*!9??!7!*!*!7!9??!7!*!*!6"
-"!6!*!*!7!7!*!*!*!*!7!7!*!*!*!6"
-"!6!*!*!*!9!9!9!9#!!9!7!*!*!*!6"
-"!6!*!*!*!9??????????!9!7!*!*!6"
-"!6!*!*!*!9??!7!7!7!9??!7!*!*!6"
-"!6!*!*!*!9??!7!*!*!9??!7!*!*!6"
-"!6!*!*!*!9??!9!9!9??%9!7!*!*!6"
-"!6!*!*!*!9?????????=!7!*!*!*!6"
-"!6!*!*!*!9??!7!7!7!7!*!*!*!*!6"
-"!6!*!*!*!9??!7!*!*!*!*!*!*!*!6"
-"!6!*!*!*!9??!7!*!*!*!*!*!*!*!6"
-"!6!*!*!*!7!7!7!*!*!*!*!*!*!*!6"
-"!!!6!#!#!#!#!#!#!#!#!#!#!#!6!!"
+"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*#4#4#4#4#4#4!7!*!*!*!#"
+"!#!*!*!*#4??????????#4!7!*!*!#"
+"!#!*!*!*#4??!7!7!7#4??!7!*!*!#"
+"!#!*!*!*#4??!7!*!*#4??!7!*!*!#"
+"!#!*!*!*#4??#4#4#4??#4!7!*!*!#"
+"!#!*!*!*#4????????#4!7!*!*!*!#"
+"!#!*!*!*#4??!7!7!7!7!*!*!*!*!#"
+"!#!*!*!*#4??!7!*!*!*!*!*!*!*!#"
+"!#!*!*!*#4??!7!*!*!*!*!*!*!*!#"
+"!#!*!*!*!7!7!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
 ;123456789012345
 [end]
 
@@ -12129,6 +12206,304 @@ DayXpm="16 16 88 2"   Colormode=16
 "%%#1!$%9$6*#*#*!$6?*!6#$!8###3%%"
 "%8%?%?%2%#%8?%%*%3%1%?%?%?%?%?%8"
 ;1234567890123456
+[end]
+
+
+[_point]
+Type=0x04d
+SubType=0x02
+String1=0x02,Parkhaus
+String2=0x04,Parking
+ExtendedLabels=N
+DayXpm="15 17 72 2"   Colormode=0
+"!!	c #7B95B4"
+"!#	c #3965B4"
+"!%	c #3965B4"
+"!?	c #7B95B4"
+"!$	c #7B65B4"
+"!*	c #0065FF"
+"!=	c #00308B"
+"!1	c #0030B4"
+"!2	c #0030B4"
+"!3	c #0030B4"
+"!4	c #00308B"
+"!5	c #7B65B4"
+"!6	c #7B65B4"
+"!7	c #3965B4"
+"!8	c #7B95D5"
+"!9	c #D5D5D5"
+"#!	c #BDCAD5"
+"##	c #7B95D5"
+"#%	c #3965B4"
+"#?	c #00308B"
+"#$	c #3965B4"
+"#*	c #7B95B4"
+"#=	c #E6E6E6"
+"#1	c #BDCAD5"
+"#2	c #7B95D5"
+"#3	c #7B95D5"
+"#4	c #D5D5D5"
+"#5	c #BDCAD5"
+"#6	c #3965B4"
+"#7	c #7B65B4"
+"#8	c #E6E6E6"
+"#9	c #3965B4"
+"%!	c #00308B"
+"%#	c #0030B4"
+"%%	c #7B95B4"
+"%?	c #E6E6E6"
+"%$	c #3965B4"
+"%*	c #7B65B4"
+"%=	c #3965B4"
+"%1	c #00308B"
+"%2	c #3965B4"
+"%3	c #E6E6E6"
+"%4	c #7B65B4"
+"%5	c #7B65B4"
+"%6	c #3965B4"
+"%7	c #7B95B4"
+"%8	c #BDCAD5"
+"%9	c #BDCAD5"
+"?!	c #3965B4"
+"?#	c #7B65B4"
+"?%	c #E6E6E6"
+"??	c #FFFFFF"
+"?$	c #E6E6E6"
+"?*	c #E6E6E6"
+"?=	c #BDCAD5"
+"?1	c #3965B4"
+"?2	c #E6E6E6"
+"?3	c #3965B4"
+"?4	c #3965B4"
+"?5	c #3965B4"
+"?6	c #00308B"
+"?7	c #7B65B4"
+"?8	c #7B65B4"
+"?9	c #E6E6E6"
+"$!	c #7B95D5"
+"$#	c #3965B4"
+"$%	c #7B65B4"
+"$?	c #0030B4"
+"$$	c #00308B"
+"$*	c #7B95B4"
+"$=	c #3965B4"
+"$1	c #7B95B4"
+"!!!6!6!6!6!6!6!6!6!6!6!6!6!6!!"
+"!6!*!*!*!*!*!9!9!7!*!*!*!*!*!6"
+"!6!*!*!*!*!9??????!7!*!*!*!*!6"
+"!6!*!*!*!9??!7!7!9??!7!*!*!*!6"
+"!6!*!*!9??!7!*!*!7!9??!7!*!*!6"
+"!6!*!*!7!7!*!*!*!*!7!7!*!*!*!6"
+"!6!*!*!*!9!9!9!9#!!9!7!*!*!*!6"
+"!6!*!*!*!9??????????!9!7!*!*!6"
+"!6!*!*!*!9??!7!7!7!9??!7!*!*!6"
+"!6!*!*!*!9??!7!*!*!9??!7!*!*!6"
+"!6!*!*!*!9??!9!9!9??%9!7!*!*!6"
+"!6!*!*!*!9?????????=!7!*!*!*!6"
+"!6!*!*!*!9??!7!7!7!7!*!*!*!*!6"
+"!6!*!*!*!9??!7!*!*!*!*!*!*!*!6"
+"!6!*!*!*!9??!7!*!*!*!*!*!*!*!6"
+"!6!*!*!*!7!7!7!*!*!*!*!*!*!*!6"
+"!!!6!#!#!#!#!#!#!#!#!#!#!#!6!!"
+;123456789012345
+[end]
+
+
+[_point]
+Type=0x04d
+SubType=0x03
+String1=0x02,Parkplatz (nicht kostenlos)
+String2=0x04,Parking with fee
+ExtendedLabels=N
+DayXpm="15 15 74 2"   Colormode=0
+"!!	c #7B95B4"
+"!#	c #3965B4"
+"!%	c #3965B4"
+"!?	c #7B95B4"
+"!$	c #7B65B4"
+"!*	c #0065FF"
+"!=	c #00308B"
+"!1	c #0030B4"
+"!2	c #0030B4"
+"!3	c #0030B4"
+"!4	c #00308B"
+"!5	c #7B65B4"
+"!6	c #7B65B4"
+"!7	c #3965B4"
+"!8	c #7B95D5"
+"!9	c #BDCAD5"
+"#!	c #BDCAD5"
+"##	c #7B95D5"
+"#%	c #3965B4"
+"#?	c #00308B"
+"#$	c #3965B4"
+"#*	c #7B95B4"
+"#=	c #E6E6E6"
+"#1	c #BDCAD5"
+"#2	c #7B95D5"
+"#3	c #7B95D5"
+"#4	c #D5D5D5"
+"#5	c #BDCAD5"
+"#6	c #3965B4"
+"#7	c #7B65B4"
+"#8	c #E6E6E6"
+"#9	c #3965B4"
+"%!	c #00308B"
+"%#	c #0030B4"
+"%%	c #7B95B4"
+"%?	c #E6E6E6"
+"%$	c #3965B4"
+"%*	c #7B65B4"
+"%=	c #3965B4"
+"%1	c #00308B"
+"%2	c #3965B4"
+"%3	c #E6E6E6"
+"%4	c #7B65B4"
+"%5	c #7B65B4"
+"%6	c #3965B4"
+"%7	c #7B95B4"
+"%8	c #BDCAD5"
+"%9	c #BDCAD5"
+"?!	c #3965B4"
+"?#	c #7B65B4"
+"?%	c #E6E6E6"
+"??	c #FFFFFF"
+"?$	c #E6E6E6"
+"?*	c #E6E6E6"
+"?=	c #BDCAD5"
+"?1	c #3965B4"
+"?2	c #E6E6E6"
+"?3	c #3965B4"
+"?4	c #3965B4"
+"?5	c #3965B4"
+"?6	c #00308B"
+"?7	c #7B65B4"
+"?8	c #7B65B4"
+"?9	c #E6E6E6"
+"$!	c #7B95D5"
+"$#	c #3965B4"
+"$%	c #7B65B4"
+"$?	c #0030B4"
+"$$	c #00308B"
+"$*	c #7B95B4"
+"$=	c #3965B4"
+"$1	c #7B95B4"
+"$2	c #FFCA00"
+"$3	c #414141"
+"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*#4#4#4#4#4#4!7!*!*!*!#"
+"!#!*!*!*#4??????????#4!7!*!*!#"
+"!#!*!*!*#4??!7!7!7#4??!7!*!*!#"
+"!#!*!*!*#4??!7!*!*#4??!7!*!*!#"
+"!#!*!*!*#4??#4#4#4??#4!7!*!*!#"
+"!#!*!*!*#4????????#4!7!*!*!*!#"
+"!#!*!*!*#4??!7!7!7!7!*!*!*!*!#"
+"!#!*!*!*#4??!7!*!*$2$2$2!*!*!#"
+"!#!*!*!*#4??!7!*!*$2$3$2$2!*!#"
+"!#!*!*!*!7!7!*!*!*$2$2$3$2!*!#"
+"!#!*!*!*!*!*!*!*!*!*$2$2$2!*!#"
+"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
+;123456789012345
+[end]
+
+
+[_point]
+Type=0x04d
+SubType=0x04
+String1=0x02,Privatparkplatz
+String2=0x04,Private parking
+ExtendedLabels=N
+DayXpm="15 15 72 2"   Colormode=0
+"!!	c #7B95B4"
+"!#	c #3965B4"
+"!%	c #3965B4"
+"!?	c #7B95B4"
+"!$	c #7B65B4"
+"!*	c #0065FF"
+"!=	c #00308B"
+"!1	c #0030B4"
+"!2	c #0030B4"
+"!3	c #0030B4"
+"!4	c #00308B"
+"!5	c #7B65B4"
+"!6	c #7B65B4"
+"!7	c #3965B4"
+"!8	c #7B95D5"
+"!9	c #BDCAD5"
+"#!	c #BDCAD5"
+"##	c #7B95D5"
+"#%	c #3965B4"
+"#?	c #00308B"
+"#$	c #3965B4"
+"#*	c #7B95B4"
+"#=	c #E6E6E6"
+"#1	c #BDCAD5"
+"#2	c #7B95D5"
+"#3	c #7B95D5"
+"#4	c #D5D5D5"
+"#5	c #BDCAD5"
+"#6	c #3965B4"
+"#7	c #7B65B4"
+"#8	c #E6E6E6"
+"#9	c #3965B4"
+"%!	c #00308B"
+"%#	c #0030B4"
+"%%	c #7B95B4"
+"%?	c #E6E6E6"
+"%$	c #3965B4"
+"%*	c #7B65B4"
+"%=	c #3965B4"
+"%1	c #00308B"
+"%2	c #3965B4"
+"%3	c #E6E6E6"
+"%4	c #7B65B4"
+"%5	c #7B65B4"
+"%6	c #3965B4"
+"%7	c #7B95B4"
+"%8	c #BDCAD5"
+"%9	c #BDCAD5"
+"?!	c #3965B4"
+"?#	c #7B65B4"
+"?%	c #E6E6E6"
+"??	c #FFFFFF"
+"?$	c #E6E6E6"
+"?*	c #E6E6E6"
+"?=	c #BDCAD5"
+"?1	c #3965B4"
+"?2	c #E6E6E6"
+"?3	c #3965B4"
+"?4	c #3965B4"
+"?5	c #3965B4"
+"?6	c #00308B"
+"?7	c #7B65B4"
+"?8	c #7B65B4"
+"?9	c #E6E6E6"
+"$!	c #7B95D5"
+"$#	c #3965B4"
+"$%	c #7B65B4"
+"$?	c #0030B4"
+"$$	c #00308B"
+"$*	c #7B95B4"
+"$=	c #3965B4"
+"$1	c #7B95B4"
+"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*!*!*!*!*!*!*!*!*!*!*!#"
+"!#!*!*!*#4#4#4#4#4#4!7!*!*!*!#"
+"!#!*!*!*#4??????????#4!7!*!*!#"
+"!#!*!*!*#4??!7!7!7#4??!7!*!*!#"
+"!#!*!*!*#4??!7!*!*#4??!7!*!*!#"
+"!#!*!*!*#4??#4#4#4??#4!7!*!*!#"
+"!#!*!*!*#4????????#4!7!*!*!*!#"
+"!#!*!*!*#4??!7!7!7!7!*!*!*!*!#"
+"!#!*!*!*#4??!7!*!*!*%?%?%?!*!#"
+"!#!*!*!*#4??!7!*!*!*%?!!%?!*!#"
+"!#!*!*!*!7!7!*!*!*!*%?!!%?!*!#"
+"!#!*!*!*!*!*!*!*!*!*%?%?%?!*!#"
+"!!!#!#!#!#!#!#!#!#!#!#!#!#!#!!"
+;123456789012345
 [end]
 
 
@@ -12389,131 +12764,29 @@ SubType=0x00
 String1=0x02,Spielfeld
 String2=0x04,Pitch
 ExtendedLabels=N
-DayXpm="16 16 108 2"   Colormode=16
-"!!	c #009500"
-"!#	c #006500"
-"!%	c #003000"
-"!?	c #009500"
-"!$	c #003000"
-"!*	c #009500"
-"!=	c #009500"
-"!1	c #006500"
-"!2	c #003000"
-"!3	c #003000"
-"!4	c #006500"
-"!5	c #006500"
-"!6	c #006500"
-"!7	c #202020"
-"!8	c #B4B4B4"
-"!9	c #E6E6E6"
-"#!	c #525252"
-"##	c #414141"
-"#%	c #626262"
-"#?	c #006500"
-"#$	c #006500"
-"#*	c #101010"
-"#=	c #414141"
-"#1	c #FFFFFF"
-"#2	c #737373"
-"#3	c #FFFFFF"
-"#4	c #626262"
-"#5	c #006500"
-"#6	c #003000"
-"#7	c #000000"
-"#8	c #626262"
-"#9	c #737373"
-"%!	c #313131"
-"%#	c #000000"
-"%%	c #737373"
-"%?	c #E6E6E6"
-"%$	c #393041"
-"%*	c #003000"
-"%=	c #202020"
-"%1	c #626262"
-"%2	c #FFFFFF"
-"%3	c #202020"
-"%4	c #838383"
-"%5	c #737373"
-"%6	c #000000"
-"%7	c #B4B4B4"
-"%8	c #838383"
-"%9	c #C5C5C5"
-"?!	c #525252"
-"?#	c #313131"
-"?%	c #414141"
-"??	c #FFFFFF"
-"?$	c #BD958B"
-"?*	c #BD958B"
-"?=	c #7B6541"
-"?1	c #396520"
-"?2	c #838383"
-"?3	c #414141"
-"?4	c #737373"
-"?5	c #737373"
-"?6	c #BD6541"
-"?7	c #BD6520"
-"?8	c #BD6541"
-"?9	c #BD958B"
-"$!	c #7B3020"
-"$#	c #006500"
-"$%	c #D5D5D5"
-"$?	c #E6E6E6"
-"$$	c #7B3041"
-"$*	c #BD6541"
-"$=	c #BD6541"
-"$1	c #7B6541"
-"$2	c #7B3041"
-"$3	c #7B6541"
-"$4	c #009500"
-"$5	c #003000"
-"$6	c #101010"
-"$7	c #A4A4A4"
-"$8	c #949494"
-"$9	c #BD3020"
-"*!	c #7B6541"
-"*#	c #7B6541"
-"*%	c #390000"
-"*?	c #390000"
-"*$	c #396520"
-"**	c #006500"
-"*=	c #838383"
-"*1	c #B4B4B4"
-"*2	c #B4B4B4"
-"*3	c #BD656A"
-"*4	c #7B6541"
-"*5	c #390000"
-"*6	c #390000"
-"*7	c #393000"
-"*8	c #006500"
-"*9	c #7B3020"
-"=!	c #BD956A"
-"=#	c #7B3041"
-"=%	c #390000"
-"=?	c #393020"
-"=$	c #006500"
-"=*	c #396520"
-"==	c #393020"
-"=1	c #525252"
-"=2	c #396520"
-"=3	c #006500"
-"=4	c #003000"
-"=5	c #000000"
-"!!!#!%!%!%!%!%!%!%!%!%!%!%!%!#!?"
-"!#!$!*!*!*!*!*!*!*!*!*!*!*!*!$!#"
-"!%!*!*!*!*!*!*!*!*!*!*!*!*!*!*!%"
-"!%!*!*!*!*!=!1!2!3!4!5!*!*!*!*!%"
-"!%!*!*!*!6!7!8!9#!###%#?!*!*!*!%"
-"!%!*!*#$#*#=#1#1#2#3#1#4#5!*!*!%"
-"!%!*!*#6#7#8#9%!%#%%%?%$%*!*!*!%"
-"!%!*!*%=%1%2#1%3#7%#%4%5%6!*!*!%"
-"!%!*!*%7%8#1%9?!?#?%???$?*?=?1!%"
-"!%!*!*?2##?3?4#1#1?5?6?7?8?9$!!%"
-"!%!*!*$##7#7%!$%$?$$$*$=$1$2$3!%"
-"!%!*!*$4$5$6$7!8$8$9*!*#*%*?*$!%"
-"!%!*!*!*$4***=*1*2*3*4*5*6*7*8!%"
-"!%!*!*!*!*!*!*!**9=!=#=%=?=$!*!%"
-"!#!$!*!*!*!*!*!*=*===1=2=3!*=4!#"
-"!?!#!%!%!%!%!%!%!%!%!%!%!%!%!#!?"
+DayXpm="16 16 6 1"   Colormode=16
+"!	c #39CA41"
+"#	c #BD3020"
+"%	c #BD956A"
+"?	c #003000"
+"$	c #000000"
+"  	c none"
+" $$$$$$$$$$$$$$ "
+" $   $    $   $ "
+" $   $    $   $ "
+" $   $$$$$$   $ "
+" $            $ "
+" $            $ "
+" $            $ "
+" $     $$     $ "
+" $     $$     $ "
+" $            $ "
+" $            $ "
+" $            $ "
+" $   $$$$$$   $ "
+" $   $    $   $ "
+" $   $    $   $ "
+" $$$$$$$$$$$$$$ "
 ;1234567890123456
 [end]
 
@@ -12524,157 +12797,112 @@ SubType=0x01
 String1=0x02,Fuﬂball
 String2=0x04,Soccer
 ExtendedLabels=N
-DayXpm="16 15 135 2"   Colormode=32
+DayXpm="16 15 90 2"   Colormode=32
 "!!	c #000000"  canalalpha=15
-"!#	c #000000"  canalalpha=4
-"!%	c #000000"  canalalpha=7
-"!?	c #313131"  canalalpha=6
-"!$	c #313131"  canalalpha=8
-"!*	c #000000"  canalalpha=9
-"!=	c #000000"  canalalpha=8
-"!1	c #000000"  canalalpha=11
-"!2	c #000000"  canalalpha=9
-"!3	c #000000"  canalalpha=10
-"!4	c #202020"  canalalpha=3
-"!5	c #414141"  canalalpha=3
-"!6	c #E6E6E6"  canalalpha=0
-"!7	c #FFFFFF"  canalalpha=0
-"!8	c #FFFFFF"  canalalpha=0
-"!9	c #737373"  canalalpha=0
-"#!	c #101010"  canalalpha=0
-"##	c #414141"  canalalpha=0
-"#%	c #838383"  canalalpha=4
-"#?	c #202020"  canalalpha=11
-"#$	c #000000"  canalalpha=14
-"#*	c #000000"  canalalpha=7
-"#=	c #313131"  canalalpha=10
-"#1	c #626262"  canalalpha=0
-"#2	c #C5C5C5"  canalalpha=0
-"#3	c #D5D5D5"  canalalpha=0
-"#4	c #949494"  canalalpha=0
-"#5	c #C5C5C5"  canalalpha=0
-"#6	c #313131"  canalalpha=2
-"#7	c #000000"  canalalpha=11
-"#8	c #000000"  canalalpha=14
-"#9	c #000000"  canalalpha=3
-"%!	c #000000"  canalalpha=0
-"%#	c #B4B4B4"  canalalpha=0
-"%%	c #FFFFFF"  canalalpha=0
-"%?	c #A4A4A4"  canalalpha=0
-"%$	c #838383"  canalalpha=0
-"%*	c #000000"  canalalpha=15
-"%=	c #000000"  canalalpha=11
-"%1	c #000000"  canalalpha=3
-"%2	c #101010"  canalalpha=0
-"%3	c #626262"  canalalpha=0
-"%4	c #525252"  canalalpha=0
-"%5	c #737373"  canalalpha=0
-"%6	c #313131"  canalalpha=0
-"%7	c #000000"  canalalpha=0
-"%8	c #202020"  canalalpha=0
-"%9	c #D5D5D5"  canalalpha=0
-"?!	c #FFFFFF"  canalalpha=0
-"?#	c #414141"  canalalpha=0
-"?%	c #000000"  canalalpha=8
-"??	c #000000"  canalalpha=11
-"?$	c #101010"  canalalpha=0
-"?*	c #C5C5C5"  canalalpha=0
-"?=	c #FFFFFF"  canalalpha=0
-"?1	c #626262"  canalalpha=0
-"?2	c #202020"  canalalpha=0
-"?3	c #737373"  canalalpha=0
-"?4	c #626262"  canalalpha=0
-"?5	c #202020"  canalalpha=0
-"?6	c #000000"  canalalpha=7
-"?7	c #525252"  canalalpha=3
-"?8	c #313131"  canalalpha=0
-"?9	c #B4B4B4"  canalalpha=0
-"$!	c #A4A4A4"  canalalpha=0
-"$#	c #000000"  canalalpha=0
-"$%	c #FFFFFF"  canalalpha=0
-"$?	c #B4B4B4"  canalalpha=0
-"$$	c #000000"  canalalpha=0
-"$*	c #000000"  canalalpha=2
-"$=	c #A4A4A4"  canalalpha=3
-"$1	c #B4B4B4"  canalalpha=0
-"$2	c #A4A4A4"  canalalpha=0
-"$3	c #949494"  canalalpha=0
-"$4	c #414141"  canalalpha=0
-"$5	c #FFFFFF"  canalalpha=0
-"$6	c #525252"  canalalpha=0
-"$7	c #313131"  canalalpha=1
-"$8	c #949494"  canalalpha=4
-"$9	c #E6E6E6"  canalalpha=0
-"*!	c #838383"  canalalpha=0
-"*#	c #FFFFFF"  canalalpha=0
-"*%	c #737373"  canalalpha=0
-"*?	c #949494"  canalalpha=0
-"*$	c #D5D5D5"  canalalpha=0
-"**	c #838383"  canalalpha=0
-"*=	c #949494"  canalalpha=0
-"*1	c #737373"  canalalpha=4
-"*2	c #737373"  canalalpha=0
-"*3	c #E6E6E6"  canalalpha=0
-"*4	c #202020"  canalalpha=0
-"*5	c #101010"  canalalpha=0
-"*6	c #101010"  canalalpha=0
-"*7	c #A4A4A4"  canalalpha=0
-"*8	c #E6E6E6"  canalalpha=0
-"*9	c #737373"  canalalpha=0
-"=!	c #E6E6E6"  canalalpha=0
-"=#	c #838383"  canalalpha=0
-"=%	c #525252"  canalalpha=12
-"=?	c #101010"  canalalpha=2
-"=$	c #414141"  canalalpha=3
-"=*	c #626262"  canalalpha=0
-"==	c #C5C5C5"  canalalpha=4
-"=1	c #000000"  canalalpha=15
-"=2	c #000000"  canalalpha=12
-"=3	c #737373"  canalalpha=0
-"=4	c #B4B4B4"  canalalpha=0
-"=5	c #E6E6E6"  canalalpha=0
-"=6	c #949494"  canalalpha=0
-"=7	c #000000"  canalalpha=0
-"=8	c #000000"  canalalpha=1
-"=9	c #101010"  canalalpha=8
-"1!	c #000000"  canalalpha=3
-"1#	c #313131"  canalalpha=0
-"1%	c #D5D5D5"  canalalpha=0
-"1?	c #B4B4B4"  canalalpha=0
-"1$	c #313131"  canalalpha=0
-"1*	c #000000"  canalalpha=12
-"1=	c #000000"  canalalpha=0
-"11	c #000000"  canalalpha=15
-"12	c #000000"  canalalpha=1
-"13	c #737373"  canalalpha=5
-"14	c #FFFFFF"  canalalpha=0
-"15	c #101010"  canalalpha=0
-"16	c #000000"  canalalpha=6
-"17	c #000000"  canalalpha=10
-"18	c #000000"  canalalpha=2
-"19	c #000000"  canalalpha=1
-"2!	c #414141"  canalalpha=5
-"2#	c #838383"  canalalpha=4
-"2%	c #949494"  canalalpha=5
-"2?	c #949494"  canalalpha=6
-"2$	c #838383"  canalalpha=7
-"2*	c #101010"  canalalpha=10
-"2=	c #000000"  canalalpha=5
-"!!!!!!!!!#!%!?!$!*!=!1!2!!!!!!!!"
-"!!!!!3!4!5!6!7!8!9#!###%#?#$!!!!"
-"!!#*#=#1#2!7!7!7#3#4!7!7#5#6#7!!"
-"#8#9%!%!%#!7!7%%#4%?!7!7!7%$%*!!"
-"%=%1%!%2%3%4%5%6%7%8%9!7?!?#%1?%"
-"??%!?$?*!7?=?1%!%!%!?2?3?4?5%!?6"
-"?7?8?9!7!7!7$!%7%!%!$#$!$%$?$$$*"
-"$=$1$2!7!7?=$3%2%7%!$4$5!7$5$6$7"
-"$8$9*!?=*#*%*??!*$***=!7!7*$$3*1"
-"*2*3*4*5*6*7!7!7!7*8*9=!?!=#*8=%"
-"=?=$%7%!%!%4$5!7!7?!$6%7#!=*===1"
-"!!=2%!%!%!?$=3=4=5=6=7%!%!=8=9!!"
-"!!#71!%!1#%9%%1%1?1$%!%!%!1*1=!!"
-"!!!!11121314!7!7!7?*15161718!!!!"
-"!!!!!!!!192!2#2%2?2$2*2=!!!!!!!!"
+"!#	c #BD95D5"  canalalpha=14
+"!%	c #00006A"  canalalpha=12
+"!?	c #7B65B4"  canalalpha=7
+"!$	c #7B95B4"  canalalpha=8
+"!*	c #BD95D5"  canalalpha=11
+"!=	c #D5D5D5"  canalalpha=14
+"!1	c #7B95B4"  canalalpha=7
+"!2	c #00006A"  canalalpha=9
+"!3	c #39308B"  canalalpha=8
+"!4	c #BD95D5"  canalalpha=4
+"!5	c #7B95B4"  canalalpha=11
+"!6	c #BD95D5"  canalalpha=7
+"!7	c #D5D5D5"  canalalpha=4
+"!8	c #BDCAD5"  canalalpha=0
+"!9	c #FFFFFF"  canalalpha=1
+"#!	c #7B95B4"  canalalpha=11
+"##	c #A4A4A4"  canalalpha=4
+"#%	c #39308B"  canalalpha=1
+"#?	c #00006A"  canalalpha=1
+"#$	c #39308B"  canalalpha=15
+"#*	c #39308B"  canalalpha=0
+"#=	c #39308B"  canalalpha=2
+"#1	c #D5D5D5"  canalalpha=14
+"#2	c #7B95B4"  canalalpha=4
+"#3	c #A4A4A4"  canalalpha=8
+"#4	c #7B95B4"  canalalpha=11
+"#5	c #00006A"  canalalpha=0
+"#6	c #7B65B4"  canalalpha=8
+"#7	c #FFFFFF"  canalalpha=9
+"#8	c #BD95D5"  canalalpha=12
+"#9	c #7B95B4"  canalalpha=14
+"%!	c #E6E6E6"  canalalpha=14
+"%#	c #BD95D5"  canalalpha=4
+"%%	c #39308B"  canalalpha=3
+"%?	c #7B65B4"  canalalpha=4
+"%$	c #00006A"  canalalpha=1
+"%*	c #39006A"  canalalpha=14
+"%=	c #E6E6E6"  canalalpha=11
+"%1	c #BDCAD5"  canalalpha=5
+"%2	c #A4A4A4"  canalalpha=4
+"%3	c #BD95D5"  canalalpha=2
+"%4	c #39006A"  canalalpha=7
+"%5	c #A4A4A4"  canalalpha=0
+"%6	c #39008B"  canalalpha=0
+"%7	c #7B65B4"  canalalpha=5
+"%8	c #7B65B4"  canalalpha=14
+"%9	c #BDCAD5"  canalalpha=14
+"?!	c #7B65B4"  canalalpha=0
+"?#	c #39008B"  canalalpha=8
+"?%	c #B4B4B4"  canalalpha=0
+"??	c #7B65B4"  canalalpha=0
+"?$	c #00006A"  canalalpha=7
+"?*	c #D5D5D5"  canalalpha=7
+"?=	c #39308B"  canalalpha=15
+"?1	c #A4A4A4"  canalalpha=15
+"?2	c #E6E6E6"  canalalpha=0
+"?3	c #7B95B4"  canalalpha=7
+"?4	c #00006A"  canalalpha=7
+"?5	c #39308B"  canalalpha=12
+"?6	c #00006A"  canalalpha=7
+"?7	c #7B658B"  canalalpha=4
+"?8	c #39308B"  canalalpha=4
+"?9	c #00006A"  canalalpha=1
+"$!	c #B4B4B4"  canalalpha=3
+"$#	c #39308B"  canalalpha=3
+"$%	c #00006A"  canalalpha=8
+"$?	c #BDCAD5"  canalalpha=7
+"$$	c #7B65B4"  canalalpha=11
+"$*	c #00006A"  canalalpha=1
+"$=	c #E6E6E6"  canalalpha=10
+"$1	c #BDCAD5"  canalalpha=6
+"$2	c #00006A"  canalalpha=8
+"$3	c #39308B"  canalalpha=4
+"$4	c #BD95D5"  canalalpha=0
+"$5	c #00006A"  canalalpha=2
+"$6	c #C5C5C5"  canalalpha=10
+"$7	c #7B65B4"  canalalpha=0
+"$8	c #00006A"  canalalpha=15
+"$9	c #A4A4A4"  canalalpha=7
+"*!	c #E6E6E6"  canalalpha=0
+"*#	c #00006A"  canalalpha=13
+"*%	c #A4A4A4"  canalalpha=10
+"*?	c #39308B"  canalalpha=4
+"*$	c #39308B"  canalalpha=4
+"**	c #7B65B4"  canalalpha=8
+"*=	c #A4A4A4"  canalalpha=14
+"*1	c #E6E6E6"  canalalpha=14
+"*2	c #39308B"  canalalpha=2
+"*3	c #D5D5D5"  canalalpha=14
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!#!%!?!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!1!2!3!4!5!6!!!!!!!!"
+"!!!!!!!!!!!!!!###%#?#$#*#=#1!!!!"
+"!!!!!!!!!!!!!!#4#?#5#6#7#8#9!!!!"
+"!!!!!!!!!!!!!!%?%$#5%*%=!!!!!!!!"
+"!!!!!!!!!!!2%3%4%5%6#5%7!!!!!!!!"
+"!!!!!!!!!!?!?#?%??#5#5?$?*!!!!!!"
+"!!!!!!!!!!!!?2?3#5?4?5?6?7!!!!!!"
+"!!!!!!!!!!!!!!?8?9$!!!$#$%$?!!!!"
+"!!!!!!!!!!!!!!$$$*$=!!$1$2$3!!!!"
+"!!!!!!!!!!!!!!$4$5$6!!!!$7$8$9!!"
+"!!!!!!!!!%!!!!*!*#*%!!!!!!*?*$!!"
+"!!!!!!!!!?!!!!!!***=!!!!!!*1*2*3"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;1234567890123456
 [end]
 
@@ -12685,199 +12913,113 @@ SubType=0x02
 String1=0x02,Volleyball
 String2=0x04,Volleyball
 ExtendedLabels=N
-DayXpm="16 16 176 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #C5C5C5"  canalalpha=4
-"!%	c #BD958B"  canalalpha=13
-"!?	c #7B6541"  canalalpha=1
-"!$	c #399520"  canalalpha=10
-"!*	c #399520"  canalalpha=11
-"!=	c #399520"  canalalpha=9
-"!1	c #C5C5C5"  canalalpha=11
-"!2	c #B4B4B4"  canalalpha=6
-"!3	c #C5C5C5"  canalalpha=6
-"!4	c #BD958B"  canalalpha=11
-"!5	c #BD3000"  canalalpha=2
-"!6	c #BD3020"  canalalpha=10
-"!7	c #7B9541"  canalalpha=14
-"!8	c #399500"  canalalpha=3
-"!9	c #399500"  canalalpha=0
-"#!	c #BDCAB4"  canalalpha=8
-"##	c #E6E6E6"  canalalpha=14
-"#%	c #D5D5D5"  canalalpha=0
-"#?	c #C5C5C5"  canalalpha=6
-"#$	c #BD958B"  canalalpha=6
-"#*	c #BD3000"  canalalpha=0
-"#=	c #BD3000"  canalalpha=0
-"#1	c #BD958B"  canalalpha=3
-"#2	c #E6E6E6"  canalalpha=0
-"#3	c #E6E6E6"  canalalpha=11
-"#4	c #C5C5C5"  canalalpha=2
-"#5	c #C5C5C5"  canalalpha=5
-"#6	c #E6E6E6"  canalalpha=7
-"#7	c #C5C5C5"  canalalpha=9
-"#8	c #BD3041"  canalalpha=11
-"#9	c #B4B4B4"  canalalpha=13
-"%!	c #D5D5D5"  canalalpha=8
-"%#	c #C5C5C5"  canalalpha=1
-"%%	c #BD3000"  canalalpha=1
-"%?	c #BD3000"  canalalpha=0
-"%$	c #BD656A"  canalalpha=3
-"%*	c #E6E6E6"  canalalpha=7
-"%=	c #E6E6E6"  canalalpha=0
-"%1	c #E6E6E6"  canalalpha=0
-"%2	c #E6E6E6"  canalalpha=0
-"%3	c #E6E6E6"  canalalpha=7
-"%4	c #D5D5D5"  canalalpha=14
-"%5	c #BD3041"  canalalpha=14
-"%6	c #BD3041"  canalalpha=13
-"%7	c #D5D5D5"  canalalpha=15
-"%8	c #E6E6E6"  canalalpha=4
-"%9	c #BD656A"  canalalpha=6
-"?!	c #BD3000"  canalalpha=0
-"?#	c #BD3000"  canalalpha=1
-"?%	c #C5C5C5"  canalalpha=4
-"??	c #D5D5D5"  canalalpha=4
-"?$	c #E6E6E6"  canalalpha=2
-"?*	c #E6E6E6"  canalalpha=0
-"?=	c #E6E6E6"  canalalpha=0
-"?1	c #E6E6E6"  canalalpha=15
-"?2	c #BD956A"  canalalpha=12
-"?3	c #B4B4B4"  canalalpha=10
-"?4	c #D5D5D5"  canalalpha=15
-"?5	c #D5D5D5"  canalalpha=3
-"?6	c #7B3000"  canalalpha=6
-"?7	c #7B3000"  canalalpha=0
-"?8	c #BD656A"  canalalpha=2
-"?9	c #E6E6E6"  canalalpha=0
-"$!	c #C5C5C5"  canalalpha=0
-"$#	c #E6E6E6"  canalalpha=0
-"$%	c #D5D5D5"  canalalpha=1
-"$?	c #D5D5D5"  canalalpha=7
-"$$	c #E6E6E6"  canalalpha=0
-"$*	c #E6E6E6"  canalalpha=1
-"$=	c #D5D5D5"  canalalpha=5
-"$1	c #7BCA6A"  canalalpha=9
-"$2	c #E6E6E6"  canalalpha=10
-"$3	c #C5C5C5"  canalalpha=3
-"$4	c #BD3000"  canalalpha=0
-"$5	c #B4B4B4"  canalalpha=6
-"$6	c #E6E6E6"  canalalpha=3
-"$7	c #A4A4A4"  canalalpha=0
-"$8	c #B4B4B4"  canalalpha=0
-"$9	c #B4B4B4"  canalalpha=0
-"*!	c #E6E6E6"  canalalpha=0
-"*#	c #E6E6E6"  canalalpha=5
-"*%	c #D5D5D5"  canalalpha=8
-"*?	c #7B956A"  canalalpha=6
-"*$	c #E6E6E6"  canalalpha=5
-"**	c #BD958B"  canalalpha=14
-"*=	c #BD3000"  canalalpha=0
-"*1	c #C5C5C5"  canalalpha=6
-"*2	c #D5D5D5"  canalalpha=4
-"*3	c #D5D5D5"  canalalpha=14
-"*4	c #D5D5D5"  canalalpha=1
-"*5	c #B4B4B4"  canalalpha=0
-"*6	c #A4A4A4"  canalalpha=0
-"*7	c #C5C5C5"  canalalpha=0
-"*8	c #D5D5D5"  canalalpha=0
-"*9	c #D5D5D5"  canalalpha=1
-"=!	c #E6E6E6"  canalalpha=0
-"=#	c #7BCA8B"  canalalpha=9
-"=%	c #E6E6E6"  canalalpha=13
-"=?	c #B4B4B4"  canalalpha=12
-"=$	c #C5C5C5"  canalalpha=8
-"=*	c #D5D5D5"  canalalpha=8
-"==	c #D5D5D5"  canalalpha=5
-"=1	c #D5D5D5"  canalalpha=0
-"=2	c #D5D5D5"  canalalpha=0
-"=3	c #838383"  canalalpha=0
-"=4	c #E6E6E6"  canalalpha=0
-"=5	c #D5D5D5"  canalalpha=0
-"=6	c #7BCA6A"  canalalpha=14
-"=7	c #E6E6E6"  canalalpha=8
-"=8	c #C5C5C5"  canalalpha=9
-"=9	c #BD3000"  canalalpha=0
-"1!	c #C5C5C5"  canalalpha=10
-"1#	c #E6E6E6"  canalalpha=0
-"1%	c #E6E6E6"  canalalpha=2
-"1?	c #E6E6E6"  canalalpha=2
-"1$	c #E6E6E6"  canalalpha=2
-"1*	c #C5C5C5"  canalalpha=0
-"1=	c #A4A4A4"  canalalpha=0
-"11	c #7B956A"  canalalpha=8
-"12	c #E6E6E6"  canalalpha=1
-"13	c #D5D5D5"  canalalpha=3
-"14	c #BD3000"  canalalpha=2
-"15	c #BD3020"  canalalpha=14
-"16	c #BD6541"  canalalpha=12
-"17	c #C5C5C5"  canalalpha=11
-"18	c #E6E6E6"  canalalpha=9
-"19	c #E6E6E6"  canalalpha=0
-"2!	c #D5D5D5"  canalalpha=3
-"2#	c #E6E6E6"  canalalpha=1
-"2%	c #C5C5C5"  canalalpha=0
-"2?	c #7B956A"  canalalpha=2
-"2$	c #D5D5D5"  canalalpha=4
-"2*	c #BD958B"  canalalpha=7
-"2=	c #BD3020"  canalalpha=7
-"21	c #BD3000"  canalalpha=0
-"22	c #BD3000"  canalalpha=0
-"23	c #BD3020"  canalalpha=3
-"24	c #B4B4B4"  canalalpha=0
-"25	c #E6E6E6"  canalalpha=8
-"26	c #D5D5D5"  canalalpha=0
-"27	c #7B956A"  canalalpha=7
-"28	c #BDCAB4"  canalalpha=2
-"29	c #BD3020"  canalalpha=2
-"3!	c #BD6541"  canalalpha=12
-"3#	c #E6E6E6"  canalalpha=5
-"3%	c #E6E6E6"  canalalpha=7
-"3?	c #D5D5D5"  canalalpha=0
-"3$	c #D5D5D5"  canalalpha=6
-"3*	c #7BCA6A"  canalalpha=0
-"3=	c #7B956A"  canalalpha=15
-"31	c #BD956A"  canalalpha=10
-"32	c #BD3020"  canalalpha=11
-"33	c #BD656A"  canalalpha=15
-"34	c #E6E6E6"  canalalpha=2
-"35	c #E6E6E6"  canalalpha=0
-"36	c #E6E6E6"  canalalpha=0
-"37	c #7B956A"  canalalpha=11
-"38	c #7B9541"  canalalpha=10
-"39	c #A4A4A4"  canalalpha=7
-"4!	c #7B956A"  canalalpha=7
-"4#	c #BD656A"  canalalpha=4
-"4%	c #D5D5D5"  canalalpha=1
-"4?	c #E6E6E6"  canalalpha=0
-"4$	c #7B956A"  canalalpha=9
-"4*	c #399520"  canalalpha=13
-"4=	c #7BCA8B"  canalalpha=14
-"41	c #E6E6E6"  canalalpha=13
-"42	c #D5D5D5"  canalalpha=7
-"43	c #D5D5D5"  canalalpha=9
-"44	c #E6E6E6"  canalalpha=10
-"45	c #949494"  canalalpha=14
-"46	c #399520"  canalalpha=14
-"47	c #399520"  canalalpha=2
-"48	c #399541"  canalalpha=10
-"49	c #7B956A"  canalalpha=13
-"!!!!!!!!!#!%!?!$!*!=!1!2!!!!!!!!"
-"!!!!!!!3!4!5!6!7!8!9#!###%!!!!!!"
-"!!!!#?#$#*#=#1#2#3#4#5#6#7#8#9!!"
-"!!%!%#%%%?%$%*%=%1%2%2%3%4%5%6!!"
-"%7%8%9?!?#?%???$?*?=%2%2%2?1?2?3"
-"?4?5?6?7?8?9$!$#$%$?$$$*%2%2$=$1"
-"$2$3$4$4$5$6$7$8$9*!%2*#*%?=%2*?"
-"*$***=*=*1*2*3*4*5*6*7*8%2*9=!=#"
-"=%=?#=#==$#2%==*===1=2=3$9=4=5=6"
-"=7=8=9=91!?*1#?=%21%1?1$1*1=%211"
-"12131415161718%2%2%2%2192!2#2%2?"
-"2$2*2=212122232425%2%2%2%2262728"
-"!!29222222223!3#3%3?3$$*%23*3=!!"
-"!!313222223334353637!938394!!!!!"
-"!!!!#94#4%36354?4$!9!94*4=41!!!!"
-"!!!!!!!!4243444546474849!!!!!!!!"
+DayXpm="16 15 91 2"   Colormode=16
+"!!	c #000000"
+"!#	c #BD95D5"
+"!%	c #00006A"
+"!?	c #7B65B4"
+"!$	c #7B95B4"
+"!*	c #BD95D5"
+"!=	c #D5D5D5"
+"!1	c #7B95B4"
+"!2	c #00006A"
+"!3	c #39308B"
+"!4	c #BD95D5"
+"!5	c #7B95B4"
+"!6	c #BD95D5"
+"!7	c #D5D5D5"
+"!8	c #BDCAD5"
+"!9	c #FFFFFF"
+"#!	c #7B95B4"
+"##	c #A4A4A4"
+"#%	c #39308B"
+"#?	c #00006A"
+"#$	c #39308B"
+"#*	c #39308B"
+"#=	c #39308B"
+"#1	c #D5D5D5"
+"#2	c #7B95B4"
+"#3	c #A4A4A4"
+"#4	c #7B95B4"
+"#5	c #00006A"
+"#6	c #7B65B4"
+"#7	c #FFFFFF"
+"#8	c #BD95D5"
+"#9	c #7B95B4"
+"%!	c #E6E6E6"
+"%#	c #BD95D5"
+"%%	c #39308B"
+"%?	c #7B65B4"
+"%$	c #00006A"
+"%*	c #39006A"
+"%=	c #E6E6E6"
+"%1	c #BDCAD5"
+"%2	c #A4A4A4"
+"%3	c #BD95D5"
+"%4	c #39006A"
+"%5	c #A4A4A4"
+"%6	c #39008B"
+"%7	c #7B65B4"
+"%8	c #7B65B4"
+"%9	c #BDCAD5"
+"?!	c #7B65B4"
+"?#	c #39008B"
+"?%	c #B4B4B4"
+"??	c #7B65B4"
+"?$	c #00006A"
+"?*	c #D5D5D5"
+"?=	c #39308B"
+"?1	c #A4A4A4"
+"?2	c #E6E6E6"
+"?3	c #7B95B4"
+"?4	c #00006A"
+"?5	c #39308B"
+"?6	c #00006A"
+"?7	c #7B658B"
+"?8	c #39308B"
+"?9	c #00006A"
+"$!	c #B4B4B4"
+"$#	c #39308B"
+"$%	c #00006A"
+"$?	c #BDCAD5"
+"$$	c #7B65B4"
+"$*	c #00006A"
+"$=	c #E6E6E6"
+"$1	c #BDCAD5"
+"$2	c #00006A"
+"$3	c #39308B"
+"$4	c #BD95D5"
+"$5	c #00006A"
+"$6	c #C5C5C5"
+"$7	c #7B65B4"
+"$8	c #00006A"
+"$9	c #A4A4A4"
+"*!	c #E6E6E6"
+"*#	c #00006A"
+"*%	c #A4A4A4"
+"*?	c #39308B"
+"*$	c #39308B"
+"**	c #7B65B4"
+"*=	c #A4A4A4"
+"*1	c #E6E6E6"
+"*2	c #39308B"
+"*3	c #D5D5D5"
+"  	c none"
+"                                "
+"            !#!%!?              "
+"            !1!2!3!4            "
+"              ###%#?            "
+"              #4#?#5#6#7        "
+"              %?%$#5%*%=        "
+"  ?$$=    %2?#%4%5%6#5%7        "
+"  %8%9    ?!?#?%??#5#5?$?*      "
+"        ?#?#?2?##5?4?5?6?7      "
+"        ?#    ?8?9$!  $#$%$?    "
+"              $$$*$=  $1$2$3    "
+"              $4$5$6    $7  $9  "
+"              *!*#*%      *?*$  "
+"                ***=      *1*2*3"
+"                                "
 ;1234567890123456
 [end]
 
@@ -12888,215 +13030,113 @@ SubType=0x03
 String1=0x02,Basketball
 String2=0x04,Basketball
 ExtendedLabels=N
-DayXpm="16 16 192 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #000000"  canalalpha=15
-"!%	c #393000"  canalalpha=9
-"!?	c #BD6520"  canalalpha=7
-"!$	c #BD6520"  canalalpha=6
-"!*	c #BD6520"  canalalpha=6
-"!=	c #BD6520"  canalalpha=6
-"!1	c #7B3020"  canalalpha=5
-"!2	c #000000"  canalalpha=14
-"!3	c #000000"  canalalpha=6
-"!4	c #7B3020"  canalalpha=6
-"!5	c #BD9520"  canalalpha=1
-"!6	c #BD9520"  canalalpha=0
-"!7	c #BD9520"  canalalpha=0
-"!8	c #BD9520"  canalalpha=0
-"!9	c #FF9520"  canalalpha=0
-"#!	c #FF9520"  canalalpha=0
-"##	c #FF9520"  canalalpha=0
-"#%	c #7B6520"  canalalpha=1
-"#?	c #393000"  canalalpha=3
-"#$	c #000000"  canalalpha=5
-"#*	c #7B6520"  canalalpha=15
-"#=	c #FFCA20"  canalalpha=0
-"#1	c #FFCA20"  canalalpha=0
-"#2	c #FFCA20"  canalalpha=0
-"#3	c #BD9520"  canalalpha=0
-"#4	c #BD6520"  canalalpha=0
-"#5	c #FF9520"  canalalpha=0
-"#6	c #FF9520"  canalalpha=0
-"#7	c #FF9520"  canalalpha=0
-"#8	c #BD6520"  canalalpha=0
-"#9	c #7B3020"  canalalpha=12
-"%!	c #7B3020"  canalalpha=6
-"%#	c #FFCA20"  canalalpha=0
-"%%	c #FFCA20"  canalalpha=0
-"%?	c #FFCA20"  canalalpha=0
-"%$	c #FFCA20"  canalalpha=0
-"%*	c #FFCA20"  canalalpha=0
-"%=	c #FFCA20"  canalalpha=0
-"%1	c #FF9520"  canalalpha=0
-"%2	c #BD6520"  canalalpha=0
-"%3	c #FF9520"  canalalpha=0
-"%4	c #FF9520"  canalalpha=0
-"%5	c #FF9520"  canalalpha=0
-"%6	c #BD6520"  canalalpha=0
-"%7	c #7B3020"  canalalpha=1
-"%8	c #000000"  canalalpha=15
-"%9	c #BD9520"  canalalpha=1
-"?!	c #FFCA20"  canalalpha=0
-"?#	c #FFCA20"  canalalpha=0
-"?%	c #FFCA20"  canalalpha=0
-"??	c #FFCA20"  canalalpha=0
-"?$	c #FFCA20"  canalalpha=0
-"?*	c #FFCA20"  canalalpha=0
-"?=	c #FFCA20"  canalalpha=0
-"?1	c #BD6520"  canalalpha=0
-"?2	c #BD6520"  canalalpha=0
-"?3	c #FF9520"  canalalpha=0
-"?4	c #BD6520"  canalalpha=0
-"?5	c #BD6520"  canalalpha=1
-"?6	c #000000"  canalalpha=11
-"?7	c #7B3020"  canalalpha=9
-"?8	c #FF9520"  canalalpha=0
-"?9	c #FF9520"  canalalpha=0
-"$!	c #BD9520"  canalalpha=0
-"$#	c #BD9520"  canalalpha=0
-"$%	c #BD9520"  canalalpha=0
-"$?	c #FFCA20"  canalalpha=0
-"$$	c #FFCA20"  canalalpha=0
-"$*	c #FFCA20"  canalalpha=0
-"$=	c #FFCA20"  canalalpha=0
-"$1	c #FF9520"  canalalpha=0
-"$2	c #FF9520"  canalalpha=0
-"$3	c #BD6520"  canalalpha=0
-"$4	c #7B6520"  canalalpha=0
-"$5	c #BD6520"  canalalpha=0
-"$6	c #7B3020"  canalalpha=4
-"$7	c #7B3000"  canalalpha=7
-"$8	c #BD6520"  canalalpha=0
-"$9	c #BD9520"  canalalpha=0
-"*!	c #FF9520"  canalalpha=0
-"*#	c #FF9520"  canalalpha=0
-"*%	c #FF9520"  canalalpha=0
-"*?	c #BD9520"  canalalpha=0
-"*$	c #BD9520"  canalalpha=0
-"**	c #BD9520"  canalalpha=0
-"*=	c #BD9520"  canalalpha=0
-"*1	c #BD6520"  canalalpha=0
-"*2	c #BD9520"  canalalpha=0
-"*3	c #FF9520"  canalalpha=0
-"*4	c #BD6520"  canalalpha=0
-"*5	c #FF9520"  canalalpha=0
-"*6	c #BD6520"  canalalpha=2
-"*7	c #BD6520"  canalalpha=6
-"*8	c #FF9520"  canalalpha=0
-"*9	c #FFCA20"  canalalpha=0
-"=!	c #FFCA20"  canalalpha=0
-"=#	c #FFCA20"  canalalpha=0
-"=%	c #FFCA20"  canalalpha=0
-"=?	c #FFCA20"  canalalpha=0
-"=$	c #FF9520"  canalalpha=0
-"=*	c #FF9520"  canalalpha=0
-"==	c #FF9520"  canalalpha=0
-"=1	c #BD6520"  canalalpha=0
-"=2	c #7B3020"  canalalpha=0
-"=3	c #BD6520"  canalalpha=0
-"=4	c #BD6520"  canalalpha=3
-"=5	c #BD6520"  canalalpha=6
-"=6	c #FF9520"  canalalpha=0
-"=7	c #FF9520"  canalalpha=0
-"=8	c #FF9520"  canalalpha=0
-"=9	c #FF9520"  canalalpha=0
-"1!	c #FF9520"  canalalpha=0
-"1#	c #FF9520"  canalalpha=0
-"1%	c #FF9520"  canalalpha=0
-"1?	c #FF9520"  canalalpha=0
-"1$	c #BD6520"  canalalpha=0
-"1*	c #FF9520"  canalalpha=0
-"1=	c #7B3020"  canalalpha=3
-"11	c #BD6520"  canalalpha=7
-"12	c #FF9520"  canalalpha=0
-"13	c #FF9520"  canalalpha=0
-"14	c #FF9520"  canalalpha=0
-"15	c #FF9520"  canalalpha=0
-"16	c #BD6520"  canalalpha=0
-"17	c #BD6520"  canalalpha=0
-"18	c #BD6520"  canalalpha=0
-"19	c #BD6520"  canalalpha=0
-"2!	c #FF9520"  canalalpha=0
-"2#	c #BD6520"  canalalpha=3
-"2%	c #7B3020"  canalalpha=9
-"2?	c #FF9520"  canalalpha=0
-"2$	c #FF9520"  canalalpha=0
-"2*	c #FF9520"  canalalpha=0
-"2=	c #FF9520"  canalalpha=0
-"21	c #FF9520"  canalalpha=0
-"22	c #BD6520"  canalalpha=0
-"23	c #BD6520"  canalalpha=0
-"24	c #BD6520"  canalalpha=0
-"25	c #FF9520"  canalalpha=0
-"26	c #BD6520"  canalalpha=0
-"27	c #BD6520"  canalalpha=0
-"28	c #FF9520"  canalalpha=0
-"29	c #7B3020"  canalalpha=6
-"3!	c #000000"  canalalpha=0
-"3#	c #BD6520"  canalalpha=2
-"3%	c #FF9520"  canalalpha=0
-"3?	c #FF9520"  canalalpha=0
-"3$	c #BD6520"  canalalpha=0
-"3*	c #BD6520"  canalalpha=0
-"3=	c #BD6520"  canalalpha=0
-"31	c #FF9520"  canalalpha=0
-"32	c #FF9520"  canalalpha=0
-"33	c #FF9520"  canalalpha=0
-"34	c #BD6520"  canalalpha=0
-"35	c #FF9520"  canalalpha=0
-"36	c #7B6520"  canalalpha=1
-"37	c #000000"  canalalpha=12
-"38	c #390000"  canalalpha=7
-"39	c #BD6520"  canalalpha=0
-"4!	c #BD6520"  canalalpha=0
-"4#	c #FF6520"  canalalpha=0
-"4%	c #FF9520"  canalalpha=0
-"4?	c #FF9520"  canalalpha=0
-"4$	c #FF9520"  canalalpha=0
-"4*	c #BD6520"  canalalpha=0
-"4=	c #FF6520"  canalalpha=0
-"41	c #FF9520"  canalalpha=0
-"42	c #393000"  canalalpha=3
-"43	c #7B3020"  canalalpha=1
-"44	c #FF6520"  canalalpha=0
-"45	c #FF9520"  canalalpha=0
-"46	c #FF9520"  canalalpha=0
-"47	c #FF9520"  canalalpha=0
-"48	c #BD6520"  canalalpha=0
-"49	c #BD6520"  canalalpha=0
-"5!	c #FF6520"  canalalpha=0
-"5#	c #7B3020"  canalalpha=14
-"5%	c #000000"  canalalpha=7
-"5?	c #7B3000"  canalalpha=8
-"5$	c #BD6520"  canalalpha=2
-"5*	c #BD6520"  canalalpha=0
-"5=	c #BD6520"  canalalpha=1
-"51	c #7B3020"  canalalpha=5
-"52	c #000000"  canalalpha=1
-"53	c #7B3020"  canalalpha=12
-"54	c #BD6520"  canalalpha=9
-"55	c #7B3020"  canalalpha=8
-"56	c #7B3000"  canalalpha=8
-"57	c #7B3020"  canalalpha=8
-"58	c #7B3020"  canalalpha=10
-"59	c #000000"  canalalpha=15
-"!!!!!!!!!#!%!?!$!*!=!1!2!!!!!!!!"
-"!!!!!3!4!5!6!7!8!9#!###%#?#$!!!!"
-"!!!3#*#=#1#1#2#3#4#5#6#7#8#9#$!!"
-"!!%!%#%%%?%$%*%=%1%2%3%4%5%6%7!!"
-"%8%9?!?#?%???$#1?*?=?1?2?3?4?5?6"
-"?7?8?9$!$#$%$?$$$*$=$1$2$3$4$5$6"
-"$7$8$9*!*#*%*?*$***=*1*2*3*4*5*6"
-"*7%4*8$1*9=!=#=%=?=$=*===1=2=3=4"
-"=5=6=7#!=8$1=9=$1!=*1#1%1?1$1*1="
-"111213141%#61#*81#15161718192!2#"
-"2%2?2$2*2=#721222324251326272829"
-"3!3#3%3?3$3*3=3132322*3334353637"
-"!!38394!4#2?4%4?*54?4$4*4=4142!!"
-"!!!3434445454646474748495!5##$!!"
-"!!!!5%5?5$454545454!5*5=51!3!!!!"
-"!!!!!!!!5253545556575859!!!!!!!!"
+DayXpm="16 15 91 2"   Colormode=16
+"!!	c #000000"
+"!#	c #BD95D5"
+"!%	c #00006A"
+"!?	c #7B65B4"
+"!$	c #7B95B4"
+"!*	c #BD95D5"
+"!=	c #D5D5D5"
+"!1	c #7B95B4"
+"!2	c #00006A"
+"!3	c #39308B"
+"!4	c #BD95D5"
+"!5	c #7B95B4"
+"!6	c #BD95D5"
+"!7	c #D5D5D5"
+"!8	c #BDCAD5"
+"!9	c #FFFFFF"
+"#!	c #7B95B4"
+"##	c #A4A4A4"
+"#%	c #39308B"
+"#?	c #00006A"
+"#$	c #39308B"
+"#*	c #39308B"
+"#=	c #39308B"
+"#1	c #D5D5D5"
+"#2	c #7B95B4"
+"#3	c #A4A4A4"
+"#4	c #7B95B4"
+"#5	c #00006A"
+"#6	c #7B65B4"
+"#7	c #FFFFFF"
+"#8	c #BD95D5"
+"#9	c #7B95B4"
+"%!	c #E6E6E6"
+"%#	c #BD95D5"
+"%%	c #39308B"
+"%?	c #7B65B4"
+"%$	c #00006A"
+"%*	c #39006A"
+"%=	c #E6E6E6"
+"%1	c #BDCAD5"
+"%2	c #A4A4A4"
+"%3	c #BD95D5"
+"%4	c #39006A"
+"%5	c #A4A4A4"
+"%6	c #39008B"
+"%7	c #7B65B4"
+"%8	c #7B65B4"
+"%9	c #BDCAD5"
+"?!	c #7B65B4"
+"?#	c #39008B"
+"?%	c #B4B4B4"
+"??	c #7B65B4"
+"?$	c #00006A"
+"?*	c #D5D5D5"
+"?=	c #39308B"
+"?1	c #A4A4A4"
+"?2	c #E6E6E6"
+"?3	c #FF9520"
+"?4	c #00006A"
+"?5	c #39308B"
+"?6	c #00006A"
+"?7	c #7B658B"
+"?8	c #39308B"
+"?9	c #00006A"
+"$!	c #B4B4B4"
+"$#	c #39308B"
+"$%	c #00006A"
+"$?	c #BDCAD5"
+"$$	c #7B65B4"
+"$*	c #00006A"
+"$=	c #E6E6E6"
+"$1	c #BDCAD5"
+"$2	c #00006A"
+"$3	c #39308B"
+"$4	c #BD95D5"
+"$5	c #00006A"
+"$6	c #C5C5C5"
+"$7	c #7B65B4"
+"$8	c #00006A"
+"$9	c #A4A4A4"
+"*!	c #E6E6E6"
+"*#	c #00006A"
+"*%	c #A4A4A4"
+"*?	c #39308B"
+"*$	c #39308B"
+"**	c #7B65B4"
+"*=	c #A4A4A4"
+"*1	c #E6E6E6"
+"*2	c #39308B"
+"*3	c #D5D5D5"
+"  	c none"
+"                                "
+"            !#!%!?              "
+"            !1!2!3!4!5!6        "
+"              ###%#?  #*#=#1    "
+"      !9      #4#?#5#6#7#8#9    "
+"              %?%$#5%*%=        "
+"        ?!%2%3%4%5%6#5%7        "
+"        %3?!?#?%  #5#5?$?*      "
+"            ?2%?#5?4?5?6%?      "
+"      ?3?3    ?8?9$!  $#$%$?    "
+"      ?3?3    $$$*$=  $1$2$3    "
+"              $4$5$6    $7  $9  "
+"              *!*#*%      *?*$  "
+"                ***=      *1*2*3"
+"                                "
 ;1234567890123456
 [end]
 
@@ -13342,78 +13382,79 @@ SubType=0x06
 String1=0x02,Handball
 String2=0x04,Team handball
 ExtendedLabels=N
-DayXpm="16 16 55 2"   Colormode=32
-"!!	c #949494"  canalalpha=0
-"!#	c #202020"  canalalpha=0
-"!%	c #202020"  canalalpha=0
-"!?	c #FFFFFF"  canalalpha=0
-"!$	c #FFFFFF"  canalalpha=0
-"!*	c #D5D5D5"  canalalpha=0
-"!=	c #A4A4A4"  canalalpha=0
-"!1	c #414141"  canalalpha=0
-"!2	c #FFFFFF"  canalalpha=0
-"!3	c #C5C5C5"  canalalpha=0
-"!4	c #525252"  canalalpha=0
-"!5	c #E6E6E6"  canalalpha=0
-"!6	c #525252"  canalalpha=0
-"!7	c #B4B4B4"  canalalpha=0
-"!8	c #E6E6E6"  canalalpha=0
-"!9	c #FFFFFF"  canalalpha=0
-"#!	c #838383"  canalalpha=0
-"##	c #000000"  canalalpha=0
-"#%	c #C5C5C5"  canalalpha=0
-"#?	c #D5D5D5"  canalalpha=0
-"#$	c #000000"  canalalpha=0
-"#*	c #414141"  canalalpha=0
-"#=	c #B4B4B4"  canalalpha=0
-"#1	c #414141"  canalalpha=0
-"#2	c #000000"  canalalpha=0
-"#3	c #949494"  canalalpha=0
-"#4	c #949494"  canalalpha=0
-"#5	c #202020"  canalalpha=0
-"#6	c #A4A4A4"  canalalpha=0
-"#7	c #313131"  canalalpha=0
-"#8	c #838383"  canalalpha=0
-"#9	c #525252"  canalalpha=0
-"%!	c #C5C5C5"  canalalpha=0
-"%#	c #E6E6E6"  canalalpha=0
-"%%	c #525252"  canalalpha=0
-"%?	c #414141"  canalalpha=0
-"%$	c #A4A4A4"  canalalpha=0
-"%*	c #202020"  canalalpha=0
-"%=	c #B4B4B4"  canalalpha=0
-"%1	c #626262"  canalalpha=0
-"%2	c #949494"  canalalpha=0
-"%3	c #D5D5D5"  canalalpha=0
-"%4	c #313131"  canalalpha=0
-"%5	c #E6E6E6"  canalalpha=0
-"%6	c #E6E6E6"  canalalpha=0
-"%7	c #525252"  canalalpha=0
-"%8	c #A4A4A4"  canalalpha=0
-"%9	c #838383"  canalalpha=0
-"?!	c #737373"  canalalpha=0
-"?#	c #A4A4A4"  canalalpha=0
-"?%	c #FFFFFF"  canalalpha=0
-"??	c #D5D5D5"  canalalpha=0
-"?$	c #E6E6E6"  canalalpha=0
-"?*	c #D5D5D5"  canalalpha=0
-"?=	c #E6E6E6"  canalalpha=0
-"!!!#!%!%!%!%!%!%!%!%!%!%!%!%!#!!"
-"!#!?!$!$!$!$!$!*!$!$!$!$!$!$!?!#"
-"!%!$!$!$!$!$!=!1!2!$!3!4!5!$!$!%"
-"!%!$!$!$!$!$!6!7!8!9#!###%!$!$!%"
-"!%!$!$!$!$!$#?!1###$#*#=!$!$!$!%"
-"!%!$!$!$!$!$!$!$#1#####2#3!$!$!%"
-"!%!$!$!$!$!$!$#4#####5#6#7#8!$!%"
-"!%!$!$!$!$!$!*#9###$%!%#%%%?!$!%"
-"!%!$!$!$!$%$%*%=%1%2%3%4%2%5!$!%"
-"!%!$!$!$#?!4%6%7%8!$!$!$!$!$!$!%"
-"!%!$!$!$!$!$%9?!!$!$!$!$!$!$!$!%"
-"!%!$!$!$!$?#%??%!$!$!$!$!$!$!$!%"
-"!%!$!$!$??%4?$!$!$!$!$!$!$!$!$!%"
-"!%!$!$!$#7?*!$!$!$!$!$!$!$!$!$!%"
-"!#!?!$!$?=!$!$!$!$!$!$!$!$!$!?!#"
-"!!!#!%!%!%!%!%!%!%!%!%!%!%!%!#!!"
+DayXpm="16 16 56 2"   Colormode=16
+"!!	c #949494"
+"!#	c #202020"
+"!%	c #202020"
+"!?	c #FFFFFF"
+"!$	c #FFFFFF"
+"!*	c #D5D5D5"
+"!=	c #A4A4A4"
+"!1	c #414141"
+"!2	c #FFFFFF"
+"!3	c #C5C5C5"
+"!4	c #525252"
+"!5	c #E6E6E6"
+"!6	c #525252"
+"!7	c #B4B4B4"
+"!8	c #E6E6E6"
+"!9	c #FFFFFF"
+"#!	c #838383"
+"##	c #000000"
+"#%	c #C5C5C5"
+"#?	c #D5D5D5"
+"#$	c #000000"
+"#*	c #414141"
+"#=	c #B4B4B4"
+"#1	c #414141"
+"#2	c #000000"
+"#3	c #949494"
+"#4	c #949494"
+"#5	c #202020"
+"#6	c #A4A4A4"
+"#7	c #313131"
+"#8	c #838383"
+"#9	c #525252"
+"%!	c #C5C5C5"
+"%#	c #E6E6E6"
+"%%	c #525252"
+"%?	c #414141"
+"%$	c #A4A4A4"
+"%*	c #202020"
+"%=	c #B4B4B4"
+"%1	c #626262"
+"%2	c #949494"
+"%3	c #D5D5D5"
+"%4	c #313131"
+"%5	c #E6E6E6"
+"%6	c #E6E6E6"
+"%7	c #525252"
+"%8	c #A4A4A4"
+"%9	c #838383"
+"?!	c #737373"
+"?#	c #A4A4A4"
+"?%	c #FFFFFF"
+"??	c #D5D5D5"
+"?$	c #E6E6E6"
+"?*	c #D5D5D5"
+"?=	c #E6E6E6"
+"  	c none"
+"                                "
+"              !*                "
+"            !=!1    !3!4!5      "
+"            !6!7!8  #!###%      "
+"            #?!1###$#*#=        "
+"                #1#####2#3      "
+"              #4#####5#6#7#8    "
+"            !*#9###$%!%#%%%?    "
+"          %$%*%=%1%2%3%4%2%5    "
+"        #?!4%6%7%8              "
+"            %9?!                "
+"          ?#%?                  "
+"        ??%4?$                  "
+"        #7?*                    "
+"        ?=                      "
+"                                "
 ;1234567890123456
 [end]
 
@@ -13424,66 +13465,67 @@ SubType=0x07
 String1=0x02,Boules (Botcha)
 String2=0x04,Boules
 ExtendedLabels=N
-DayXpm="16 16 43 2"   Colormode=32
-"!!	c #FFFFFF"  canalalpha=0
-"!#	c #FFFFFF"  canalalpha=0
-"!%	c #E6E6E6"  canalalpha=0
-"!?	c #E6E6E6"  canalalpha=0
-"!$	c #949494"  canalalpha=0
-"!*	c #949494"  canalalpha=0
-"!=	c #C5C5C5"  canalalpha=0
-"!1	c #FFFFFF"  canalalpha=0
-"!2	c #D5D5D5"  canalalpha=0
-"!3	c #A4A4A4"  canalalpha=0
-"!4	c #D5D5D5"  canalalpha=0
-"!5	c #A4A4A4"  canalalpha=0
-"!6	c #B4B4B4"  canalalpha=0
-"!7	c #E6E6E6"  canalalpha=0
-"!8	c #C5C5C5"  canalalpha=0
-"!9	c #A4A4A4"  canalalpha=0
-"#!	c #D5D5D5"  canalalpha=0
-"##	c #FFFFFF"  canalalpha=0
-"#%	c #FFFFFF"  canalalpha=0
-"#?	c #FFFFFF"  canalalpha=0
-"#$	c #B4B4B4"  canalalpha=0
-"#*	c #E6E6E6"  canalalpha=0
-"#=	c #525252"  canalalpha=0
-"#1	c #101010"  canalalpha=0
-"#2	c #B4B4B4"  canalalpha=0
-"#3	c #FFFFFF"  canalalpha=0
-"#4	c #D5D5D5"  canalalpha=0
-"#5	c #E6E6E6"  canalalpha=0
-"#6	c #E6E6E6"  canalalpha=0
-"#7	c #000000"  canalalpha=0
-"#8	c #000000"  canalalpha=0
-"#9	c #626262"  canalalpha=0
-"%!	c #838383"  canalalpha=0
-"%#	c #414141"  canalalpha=0
-"%%	c #D5D5D5"  canalalpha=0
-"%?	c #FFFFFF"  canalalpha=0
-"%$	c #C5C5C5"  canalalpha=0
-"%*	c #A4A4A4"  canalalpha=0
-"%=	c #D5D5D5"  canalalpha=0
-"%1	c #B4B4B4"  canalalpha=0
-"%2	c #A4A4A4"  canalalpha=0
-"%3	c #FFFFFF"  canalalpha=0
-"%4	c #E6E6E6"  canalalpha=0
-"!!!!!!!!!!!!!!!!!!!!!!!!!#!%!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!?!$!*!=!!"
-"!!!!!1!!!!!!!!!!!!!!!!!2!*!*!3!!"
-"!!!4!5!6!#!!!!!!!!!!!!!7!5!*!8!!"
-"!!!9!*!*#!!!!!!!!!!!##!!#%#?!!!!"
-"!!#$!*!*#*!!!!!!!!#=#1#2!!!!!!!!"
-"!!#3#4#5!!!!!!!!#6#7#8#9!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!%!%#%%!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!7%?!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!%$!*%*#3!!!!!!!!!!"
-"!!!!!!!!!!!!#3!*!*!*%=!!!!!!!!!!"
-"!!!!!!!!!!!!!!%1!*%2%3!!!!!!!!!!"
-"!!!!!!!!!!!!!!!1%4##!!!!!!!!!!!!"
+DayXpm="16 16 44 2"   Colormode=16
+"!!	c #FFFFFF"
+"!#	c #FFFFFF"
+"!%	c #E6E6E6"
+"!?	c #E6E6E6"
+"!$	c #949494"
+"!*	c #949494"
+"!=	c #C5C5C5"
+"!1	c #FFFFFF"
+"!2	c #D5D5D5"
+"!3	c #A4A4A4"
+"!4	c #D5D5D5"
+"!5	c #A4A4A4"
+"!6	c #B4B4B4"
+"!7	c #E6E6E6"
+"!8	c #C5C5C5"
+"!9	c #A4A4A4"
+"#!	c #D5D5D5"
+"##	c #FFFFFF"
+"#%	c #FFFFFF"
+"#?	c #FFFFFF"
+"#$	c #B4B4B4"
+"#*	c #E6E6E6"
+"#=	c #525252"
+"#1	c #101010"
+"#2	c #B4B4B4"
+"#3	c #FFFFFF"
+"#4	c #D5D5D5"
+"#5	c #E6E6E6"
+"#6	c #E6E6E6"
+"#7	c #000000"
+"#8	c #000000"
+"#9	c #626262"
+"%!	c #838383"
+"%#	c #414141"
+"%%	c #D5D5D5"
+"%?	c #FFFFFF"
+"%$	c #C5C5C5"
+"%*	c #A4A4A4"
+"%=	c #D5D5D5"
+"%1	c #B4B4B4"
+"%2	c #A4A4A4"
+"%3	c #FFFFFF"
+"%4	c #E6E6E6"
+"  	c none"
+"                          !%    "
+"                      !?!$!*!=  "
+"                      !2!*!*!3  "
+"  !4!5!6              !7!5!*!8  "
+"  !9!*!*#!                      "
+"  #$!*!*#*        #=#1#2        "
+"    #4#5        #6#7#8#9        "
+"                  %!%#%%        "
+"                                "
+"                                "
+"                                "
+"                !7              "
+"              %$!*%*            "
+"              !*!*!*%=          "
+"              %1!*%2            "
+"                %4              "
 ;1234567890123456
 [end]
 
@@ -13651,132 +13693,133 @@ SubType=0x09
 String1=0x02,Bogenschieﬂen
 String2=0x04,Archery
 ExtendedLabels=N
-DayXpm="16 16 109 2"   Colormode=32
-"!!	c #FFFFFF"  canalalpha=0
-"!#	c #949494"  canalalpha=0
-"!%	c #E6E6E6"  canalalpha=0
-"!?	c #B4B4B4"  canalalpha=0
-"!$	c #A4A4A4"  canalalpha=0
-"!*	c #737373"  canalalpha=0
-"!=	c #949494"  canalalpha=0
-"!1	c #FFFFFF"  canalalpha=0
-"!2	c #626262"  canalalpha=0
-"!3	c #B4B4B4"  canalalpha=0
-"!4	c #FFFFFF"  canalalpha=0
-"!5	c #949494"  canalalpha=0
-"!6	c #525252"  canalalpha=0
-"!7	c #414141"  canalalpha=0
-"!8	c #737373"  canalalpha=0
-"!9	c #C5C5C5"  canalalpha=0
-"#!	c #949494"  canalalpha=0
-"##	c #B4B4B4"  canalalpha=0
-"#%	c #313131"  canalalpha=0
-"#?	c #000000"  canalalpha=0
-"#$	c #003041"  canalalpha=0
-"#*	c #003041"  canalalpha=0
-"#=	c #000020"  canalalpha=0
-"#1	c #000000"  canalalpha=0
-"#2	c #737373"  canalalpha=0
-"#3	c #FFFFFF"  canalalpha=0
-"#4	c #626262"  canalalpha=0
-"#5	c #E6E6E6"  canalalpha=0
-"#6	c #FFFFFF"  canalalpha=0
-"#7	c #414141"  canalalpha=0
-"#8	c #000020"  canalalpha=0
-"#9	c #3965D5"  canalalpha=0
-"%!	c #3995FF"  canalalpha=0
-"%#	c #3965FF"  canalalpha=0
-"%%	c #3995FF"  canalalpha=0
-"%?	c #00306A"  canalalpha=0
-"%$	c #000000"  canalalpha=0
-"%*	c #B4B4B4"  canalalpha=0
-"%=	c #949494"  canalalpha=0
-"%1	c #C5C5C5"  canalalpha=0
-"%2	c #C5C5C5"  canalalpha=0
-"%3	c #3965B4"  canalalpha=0
-"%4	c #3965D5"  canalalpha=0
-"%5	c #BD3041"  canalalpha=0
-"%6	c #FF0000"  canalalpha=0
-"%7	c #BD306A"  canalalpha=0
-"%8	c #003041"  canalalpha=0
-"%9	c #313131"  canalalpha=0
-"?!	c #626262"  canalalpha=0
-"?#	c #838383"  canalalpha=0
-"?%	c #000000"  canalalpha=0
-"??	c #3965FF"  canalalpha=0
-"?$	c #BD306A"  canalalpha=0
-"?*	c #FF6500"  canalalpha=0
-"?=	c #FFFF00"  canalalpha=0
-"?1	c #FF3000"  canalalpha=0
-"?2	c #3965D5"  canalalpha=0
-"?3	c #00658B"  canalalpha=0
-"?4	c #000000"  canalalpha=0
-"?5	c #FFFFFF"  canalalpha=0
-"?6	c #838383"  canalalpha=0
-"?7	c #000000"  canalalpha=0
-"?8	c #3965FF"  canalalpha=0
-"?9	c #BD306A"  canalalpha=0
-"$!	c #FF9500"  canalalpha=0
-"$#	c #FFFF00"  canalalpha=0
-"$%	c #FF3000"  canalalpha=0
-"$?	c #3965D5"  canalalpha=0
-"$$	c #00658B"  canalalpha=0
-"$*	c #000000"  canalalpha=0
-"$=	c #949494"  canalalpha=0
-"$1	c #D5D5D5"  canalalpha=0
-"$2	c #B4B4B4"  canalalpha=0
-"$3	c #3965B4"  canalalpha=0
-"$4	c #BD0020"  canalalpha=0
-"$5	c #FF0000"  canalalpha=0
-"$6	c #BD306A"  canalalpha=0
-"$7	c #003041"  canalalpha=0
-"$8	c #313131"  canalalpha=0
-"$9	c #E6E6E6"  canalalpha=0
-"*!	c #626262"  canalalpha=0
-"*#	c #FFFFFF"  canalalpha=0
-"*%	c #414141"  canalalpha=0
-"*?	c #000020"  canalalpha=0
-"*$	c #3965D5"  canalalpha=0
-"**	c #3965FF"  canalalpha=0
-"*=	c #3995FF"  canalalpha=0
-"*1	c #00308B"  canalalpha=0
-"*2	c #A4A4A4"  canalalpha=0
-"*3	c #C5C5C5"  canalalpha=0
-"*4	c #E6E6E6"  canalalpha=0
-"*5	c #313131"  canalalpha=0
-"*6	c #000000"  canalalpha=0
-"*7	c #003041"  canalalpha=0
-"*8	c #00306A"  canalalpha=0
-"*9	c #000020"  canalalpha=0
-"=!	c #000000"  canalalpha=0
-"=#	c #737373"  canalalpha=0
-"=%	c #E6E6E6"  canalalpha=0
-"=?	c #737373"  canalalpha=0
-"=$	c #FFFFFF"  canalalpha=0
-"=*	c #838383"  canalalpha=0
-"==	c #414141"  canalalpha=0
-"=1	c #626262"  canalalpha=0
-"=2	c #626262"  canalalpha=0
-"=3	c #A4A4A4"  canalalpha=0
-"=4	c #B4B4B4"  canalalpha=0
-"=5	c #949494"  canalalpha=0
-"=6	c #949494"  canalalpha=0
-"!!!!!!!#!%!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!?!$!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!*!=!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!1!2!3!!!!!4!5!6!7!8!9!!!!!!"
-"!!!!#!##!3!!!%#%#?#$#*#=#1#2!!!!"
-"!!#3#4#5!3#6#7#8#9%!%#%%%?%$%*!!"
-"!!%=%1#5!3%2%$%3%4%5%6%7%!%8%9!!"
-"!!?!#6#5!3?#?%???$?*?=?1?2?3?4?5"
-"!!?!!!#5!3?6?7?8?9$!$#$%$?$$$*!1"
-"!!$=$1#5!3$2%$$3?2$4$5$6%!$7$8!!"
-"!!$9*!#5!3*#*%*?*$%!***=*1%$*2!!"
-"!!!!#2*3!3!!*4*5*6*7*8*9=!=#!!!!"
-"!!!!=%=?!3!!!!=$=*==%9=1##!!!!!!"
-"!!!!!!=2=3!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!=4=5!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!=6!9!!!!!!!!!!!!!!!!!!!!!!"
+DayXpm="16 16 110 2"   Colormode=16
+"!!	c #FFFFFF"
+"!#	c #949494"
+"!%	c #E6E6E6"
+"!?	c #B4B4B4"
+"!$	c #A4A4A4"
+"!*	c #737373"
+"!=	c #949494"
+"!1	c #FFFFFF"
+"!2	c #626262"
+"!3	c #B4B4B4"
+"!4	c #FFFFFF"
+"!5	c #949494"
+"!6	c #525252"
+"!7	c #414141"
+"!8	c #737373"
+"!9	c #C5C5C5"
+"#!	c #949494"
+"##	c #B4B4B4"
+"#%	c #313131"
+"#?	c #000000"
+"#$	c #003041"
+"#*	c #003041"
+"#=	c #000020"
+"#1	c #000000"
+"#2	c #737373"
+"#3	c #FFFFFF"
+"#4	c #626262"
+"#5	c #E6E6E6"
+"#6	c #FFFFFF"
+"#7	c #414141"
+"#8	c #000020"
+"#9	c #3965D5"
+"%!	c #3995FF"
+"%#	c #3965FF"
+"%%	c #3995FF"
+"%?	c #00306A"
+"%$	c #000000"
+"%*	c #B4B4B4"
+"%=	c #949494"
+"%1	c #C5C5C5"
+"%2	c #C5C5C5"
+"%3	c #3965B4"
+"%4	c #3965D5"
+"%5	c #BD3041"
+"%6	c #FF0000"
+"%7	c #BD306A"
+"%8	c #003041"
+"%9	c #313131"
+"?!	c #626262"
+"?#	c #838383"
+"?%	c #000000"
+"??	c #3965FF"
+"?$	c #BD306A"
+"?*	c #FF6500"
+"?=	c #FFFF00"
+"?1	c #FF3000"
+"?2	c #3965D5"
+"?3	c #00658B"
+"?4	c #000000"
+"?5	c #FFFFFF"
+"?6	c #838383"
+"?7	c #000000"
+"?8	c #3965FF"
+"?9	c #BD306A"
+"$!	c #FF9500"
+"$#	c #FFFF00"
+"$%	c #FF3000"
+"$?	c #3965D5"
+"$$	c #00658B"
+"$*	c #000000"
+"$=	c #949494"
+"$1	c #D5D5D5"
+"$2	c #B4B4B4"
+"$3	c #3965B4"
+"$4	c #BD0020"
+"$5	c #FF0000"
+"$6	c #BD306A"
+"$7	c #003041"
+"$8	c #313131"
+"$9	c #E6E6E6"
+"*!	c #626262"
+"*#	c #FFFFFF"
+"*%	c #414141"
+"*?	c #000020"
+"*$	c #3965D5"
+"**	c #3965FF"
+"*=	c #3995FF"
+"*1	c #00308B"
+"*2	c #A4A4A4"
+"*3	c #C5C5C5"
+"*4	c #E6E6E6"
+"*5	c #313131"
+"*6	c #000000"
+"*7	c #003041"
+"*8	c #00306A"
+"*9	c #000020"
+"=!	c #000000"
+"=#	c #737373"
+"=%	c #E6E6E6"
+"=?	c #737373"
+"=$	c #FFFFFF"
+"=*	c #838383"
+"==	c #414141"
+"=1	c #626262"
+"=2	c #626262"
+"=3	c #A4A4A4"
+"=4	c #B4B4B4"
+"=5	c #949494"
+"=6	c #949494"
+"  	c none"
+"      !#!%                      "
+"      !?!$                      "
+"      !*!=                      "
+"      !2!3      !5!6!7!8!9      "
+"    #!##!3  !%#%#?#$#*#=#1#2    "
+"    #4#5!3  #7#8#9%!%#%%%?%$%*  "
+"  %=%1#5!3%2%$%3%4%5%6%7%!%8%9  "
+"  ?!#6#5!3?#?%???$?*?=?1?2?3?4  "
+"  ?!!!#5!3?6?7?8?9$!$#$%$?$$$*  "
+"  $=$1#5!3$2%$$3?2$4$5$6%!$7$8  "
+"  $9*!#5!3  *%*?*$%!***=*1%$*2  "
+"    #2*3!3  *4*5*6*7*8*9=!=#    "
+"    =%=?!3      =*==%9=1##      "
+"      =2=3                      "
+"      =4=5                      "
+"      =6!9                      "
 ;1234567890123456
 [end]
 
@@ -13955,19 +13998,6 @@ DayXpm="14 14 3 1"   Colormode=16
 " #!!!!!!!!!!# "
 " ############ "
 ;12345678901234
-[end]
-
-
-[_point]
-Type=0x064
-SubType=0x0a
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-DayXpm="1 1 1 1"   Colormode=32
-"!	c #838383"  canalalpha=0
-"!"
-;1
 [end]
 
 
@@ -14153,22 +14183,6 @@ DayXpm="16 16 4 1"   Colormode=32
 
 [_point]
 Type=0x064
-SubType=0x1b
-String1=0x02,Eingang
-String2=0x04,Entrance
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-DayXpm="2 2 1 1"   Colormode=16
-"  	c none"
-"  "
-"  "
-;12
-[end]
-
-
-[_point]
-Type=0x064
 SubType=0x1c
 String1=0x02,Dach
 String2=0x04,Roof
@@ -14265,8 +14279,7 @@ String1=0x02,Wiese
 String2=0x04,Meadow
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
-DaycustomColor:#006500
+CustomColor=No
 DayXpm="2 2 2 1"   Colormode=16
 "!	c #FFFFFF"
 "  	c none"

@@ -93,53 +93,56 @@ mkgmap:is_in!=* & is_in=* 						{ set mkgmap:is_in='${is_in}' }
 #------------------------------------------------------------------------------
 # Places
 
-place=city      				[0x0400 resolution 14]
-# 0x01 - 0x06 	# large green dot
-place=town      				[0x0800 resolution 17]
-# 0x07 - 0x08	# medium green dot
-place=village   				[0x0a00 resolution 20]
-place=suburb    				[0x0b00 resolution 21]
-place=hamlet    				[0x0d00 resolution 21]
-# 0x09 - 0x0b 	# small green dot
+place=city      								[0x0400 resolution 14]
+# 0x0100-0x0500   City name(Point, fat, big)	
 
-place=locality  				[0x2800 resolution 22]
+place=town      								[0x0800 resolution 17]
+# 0x0600-0x0A00   City name(Point, big)
+
+place=village   								[0x0b00 resolution 20]
+place=suburb    								[0x0c00 resolution 21]
+place=hamlet    								[0x0d00 resolution 21]
+# 0x0B00-0x0D00   City name (Point, small)
+
+addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 		[0x1e04 resolution 24]
+
+
 
 #------------------------------------------------------------------------------
 # Geographic Places
-
-
+place=locality  								[0x2800 resolution 22]
+# 0x2800-0x283F   Region name (no Point, small)
 
 # Man Made
 # 0x6401 	# bridge
-tourism=alpine_hut 									[0x6402 resolution 24 continue]
-amenity=shelter 									[0x6402 resolution 24 continue]
+tourism=alpine_hut 								[0x6402 resolution 24 continue]
+amenity=shelter 								[0x6402 resolution 24 continue]
 
 # 0x6402	# skyscaper
-# 0x6403	# thombstone
-amenity=grave_yard | landuse=cemetery 							[0x6404 resolution 24]
+# 0x6403	# tombstone
+amenity=grave_yard & mkgmap:area2poi!=true					[0x6404 resolution 24]  
+landuse=cemetery & mkgmap:area2poi!=true					[0x6404 resolution 24]
 # 0x6405	# civil
 # 0x6406	# crossing
 # 0x6407	# dam
 # 0x6408	# hospital
 # 0x6409	# levee
 # 0x640	# locale
-military=bunker 									[0x640b resolution 24]
-man_made=adit | man_made=mineshaft 							[0x640c resolution 24]
-man_made=petroleum_well 								[0x640d	resolution 24]
+military=bunker 								[0x640b resolution 24]
+man_made=adit | man_made=mineshaft 						[0x640c resolution 24]
+man_made=petroleum_well 							[0x640d	resolution 24]
 # 0x640e	# park
 # 0x640f	# letter (see Post Office)
-amenity=clock 										[0x6410 resolution 24]
-man_made=tower 										[0x6411 resolution 24]
+amenity=clock 									[0x6410 resolution 24]
+man_made=tower 									[0x6411 resolution 24]
 # 0x6412	# hiking sign
 # 0x6413	# tunnel
-amenity=drinking_water | (amenity=water_well & water_well=drinking_water)		[0x6414 resolution 24]
-man_made=water_tower 									[0x6415 resolution 24]
-amenity=hunting_stand 									[0x6417 resolution 24]
-man_made=survey_point 									[0x6418 resolution 24]
-man_made=flagpole 									[0x6419 resolution 24]
-man_made=reservoir_covered | man_made=gasometer 					[0x641a resolution 24]
-
-addr:housenumber=* & name!=* 	{ set name='${addr:housenumber}' } 			[0x641b resolution 24]
+amenity=drinking_water | (amenity=water_well & water_well=drinking_water)	[0x6414 resolution 24]
+man_made=water_tower 								[0x6415 resolution 24]
+amenity=hunting_stand 								[0x6417 resolution 24]
+man_made=survey_point 								[0x6418 resolution 24]
+man_made=flagpole 								[0x6419 resolution 24]
+man_made=reservoir_covered | man_made=gasometer 				[0x641a resolution 24]
 
 
 # 0x64ss
@@ -249,6 +252,7 @@ barrier=toll_booth { add toll=yes; } 							[0x2500 resolution 24]
 # Fuel
 
 # Auto Fuel
+amenity=fuel & name!=* { set name ='${operator}'}       				[0x2f01 resolution 24]
 amenity=fuel 										[0x2f01 resolution 24]
 # 0x44ss
 
@@ -272,14 +276,25 @@ shop=car | shop=car_parts 								[0x2f07 resolution 24]
 # 0x2f0a
 
 # Parking
-amenity=parking 
-	& (parking=multi-storey | 
-	  parking=underground) | 
-	  amenity=parking_entrance 							[0x4d00 resolution 24]
+
 amenity=parking 
 	&  ( capacity:disabled=yes |  
 	     capacity:disabled >=1 ) 							[0x4d01 resolution 24]
-amenity=parking 									[0x2f0b resolution 24]
+
+amenity=parking 
+	& (parking=multi-storey | 
+	  parking=underground) | 
+	  amenity=parking_entrance 							[0x4d02 resolution 24]
+
+amenity=parking 
+	& (fee=yes)		 							[0x4d03 resolution 24]
+
+amenity=parking 
+	& (access=private)		 						[0x4d03 resolution 24]
+
+amenity=parking										[0x4d00 resolution 24]
+
+
 # 0x4dss
 
 # Rest Area/Tourist Info
@@ -343,8 +358,8 @@ railway=tram_stop | amenity=bus_station | highway=bus_stop {
 # Lodging
 
 # Hotel/Motel 
-tourism=hotel 						[0x2b00 resolution 24 continue]
-tourism=motel 						[0x2b01 resolution 24 continue]
+tourism=hotel						[0x2b00 resolution 24 continue]
+tourism=motel						[0x2b01 resolution 24 continue]
 
 # Bed & Breakfast Inn 
 tourism=guest_house 					[0x2b02 resolution 24 continue]
@@ -507,7 +522,7 @@ amenity=ice_cream | cuisine=ice_cream 			[0x4502 resolution 24]
 # Shopping
 
 # Department # Kaufhaus
-shop=department_store 					[0x2e01 resolution 24]
+shop=department_store & mkgmap:area2poi!=true		[0x2e01 resolution 24]
 
 # Grocery # Lebensmittel
 shop=supermarket 					[0x2e02 resolution 24]
@@ -522,7 +537,7 @@ shop=organic 						[0x2e03 resolution 24]
 shop=chemist 						[0x10f03 resolution 24]
 
 # Shopping Center # Einkaufszentrum
-shop=mall 						[0x2e04 resolution 24]
+shop=mall & mkgmap:area2poi!=true			[0x2e04 resolution 24]
 # 							[0x2e0d resolution 24]
 
 # Pharmacy/Chemist # Apotheke/Drogerie
@@ -593,7 +608,7 @@ shop=* & shop!=vacant 					[0x2e0a resolution 24]
 #------------------------------------------------------------------------------
 # Hospital
 
-amenity=hospital 					[0x3002 resolution 24]
+amenity=hospital 					[0x4b00 resolution 23]
 amenity=rescue_box 					[0x4b01 resolution 24]
 highway=emergency_access_point { 
 	    add ref=''; 
@@ -621,9 +636,9 @@ amenity=university 					[0x2c05 resolution 24]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship & religion=muslim 		[0x2c0d resolution 24]
+amenity=place_of_worship & religion=muslim		[0x2c0d resolution 24]
 amenity=place_of_worship & religion=christian 		[0x2c0e resolution 24]
-amenity=place_of_worship & religion=buddhist 		[0x2c0f resolution 24]
+amenity=place_of_worship & religion=buddhist		[0x2c0f resolution 24]
 amenity=place_of_worship & religion=jewish 		[0x2c10 resolution 24]
 amenity=place_of_worship 				[0x2c0b resolution 24]
 # 0x2c17
@@ -678,10 +693,10 @@ amenity=fire_station 					[0x3008 resolution 24]
 
 # Other
 amenity=prison 						[0x3009 resolution 24]
-amenity=doctors | amenity=doctor			[0x301a resolution 24]
-amenity=dentist 					[0x301b resolution 24]
-amenity=veterinary 					[0x301c resolution 24]
-amenity=public_building 				[0x3000 resolution 24]
+amenity=doctors | amenity=doctor			[0x461a resolution 24]
+amenity=dentist 					[0x461b resolution 24]
+amenity=veterinary 					[0x461c resolution 24]
+amenity=public_building					[0x3000 resolution 24]
 
 #------------------------------------------------------------------------------
 # Entertainment
@@ -718,8 +733,8 @@ amenity=bench 						[0x4a01 resolution 24]
 amenity=fountain 					[0x11505 resolution 24]	# type without category
 
 # Arena/Track
-leisure=stadium 					[0x2c08 resolution 24]
-leisure=track 						[0x2c08 resolution 24]
+leisure=stadium 					[0x5400 resolution 24]
+leisure=track 						[0x5400 resolution 24]
 
 # Golf Course
 leisure=golf_course 					[0x2d05 resolution 24]
@@ -739,11 +754,13 @@ sport=9pin | sport=10pin 				[0x2d07 resolution 24]
 leisure=ice_rink | sport=skating 			[0x2d08 resolution 24]
 
 # Swimming Pool
-sport=swimming | leisure=water_park 			[0x2d09 resolution 24]
+sport=swimming & mkgmap:area2poi!=true			[0x2d09 resolution 24]
+leisure=water_park  & mkgmap:area2poi!=true		[0x2d09 resolution 24]
 # 							[0x10e09 resolution 24]
 
 # Sports/Fitness Center
-leisure=sports_centre 					[0x2d0a resolution 24]
+#leisure=sports_centre 					[0x2d0a resolution 24]
+leisure=sports_centre 					[0x5400 resolution 24]
 sport=multi 						[0x5400 resolution 24]
 sport=soccer 						[0x5401 resolution 24]
 sport=volleyball 					[0x5402 resolution 24]
