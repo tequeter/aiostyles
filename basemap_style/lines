@@ -609,7 +609,7 @@ highway=steps
 		  add motorcycle=no; 
 		  add bicycle=no; 
 		  add mkgmap:unpaved=1; 
-		}									[0x13resolution 24-23]
+		}									[0x13 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # tracks
