@@ -549,7 +549,7 @@ highway=cycleway
 
 
 highway=cycleway                            						[0x11016 resolution 22-21 continue with_actions]
-highway=cycleway                            						[0x16    resolution 24-23 road_class=0 road_speed=1]
+highway=cycleway                            						[0x16    resolution 24-23]
 
 # cycleway overlay
 highway=* & bicycle=designated								[0x10416 resolution 24 continue with_actions]
@@ -600,7 +600,7 @@ highway=pedestrian & bicycle=yes
 highway=pedestrian & (area!=yes & area!=true & area!=1) 	
 		{
 		  add mkgmap:dead-end-check=false 
-		}									[0x0d    resolution 24-23 ]
+		}									[0x0d resolution 24-23 ]
 
 # steps
 highway=steps		
@@ -609,7 +609,7 @@ highway=steps
 		  add motorcycle=no; 
 		  add bicycle=no; 
 		  add mkgmap:unpaved=1; 
-		}									[0x13    resolution 24-23 road_class=0 road_speed=0]
+		}									[0x13resolution 24-23]
 
 #------------------------------------------------------------------------------
 # tracks
@@ -629,20 +629,20 @@ highway=track & tracktype~'grade[1-1]'							[0x1200e resolution 21-20 continue 
 highway=track & tracktype~'grade[2-2]'							[0x1200f resolution 21-20 continue with_actions]
 highway=track & tracktype~'grade[3-4]'							[0x12010 resolution 21-21 continue with_actions]
 highway=track & tracktype=grade1							[0x1100e resolution 22-22 continue with_actions]
-highway=track & tracktype=grade1							[0x0e    resolution 24-23 road_class=2 road_speed=2]
+highway=track & tracktype=grade1							[0x0e    resolution 24-23]
 highway=track & tracktype=grade2							[0x1100f resolution 22-22 continue with_actions]
-highway=track & tracktype=grade2							[0x0f    resolution 24-23 road_class=2 road_speed=1]
+highway=track & tracktype=grade2							[0x0f    resolution 24-23]
 highway=track & tracktype=grade3							[0x11010 resolution 22-22 continue with_actions]
-highway=track & tracktype=grade3							[0x10    resolution 24-23 road_class=0 road_speed=0]
+highway=track & tracktype=grade3							[0x10    resolution 24-23]
 highway=track & tracktype=grade4							[0x11011 resolution 22-22 continue with_actions]
-highway=track & tracktype=grade4							[0x11    resolution 24-23 road_class=0 road_speed=0]
+highway=track & tracktype=grade4							[0x11    resolution 24-23]
 highway=track & tracktype=grade5							[0x11011 resolution 22-22 continue with_actions]
-highway=track & tracktype=grade5							[0x11    resolution 24-23 road_class=0 road_speed=0]
+highway=track & tracktype=grade5							[0x11    resolution 24-23]
 
 
 #highway=track										[0x1200a resolution 21-21 continue with_actions]
 highway=track										[0x1100a resolution 22-22 continue with_actions]
-highway=track										[0x0a    resolution 24-23 road_class=0 road_speed=0]
+highway=track										[0x0a    resolution 24-23]
 
 #------------------------------------------------------------------------------
 # pathes
@@ -666,15 +666,15 @@ highway=path & (sac_scale~'.*(mountain|alpine)_hiking')		{ add bicycle=no; }
 
 #highway=path										[0x12012 resolution 21-21 continue with_actions]
 highway=path										[0x11012 resolution 22-22 continue with_actions]
-#highway=path & sac_scale=hiking							[0x3a    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=mountain_hiking						[0x3b    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=demanding_mountain_hiking					[0x3c    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=alpine_hiking							[0x3d    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=demanding_alpine_hiking					[0x3e    resolution 24-23 road_class=0 road_speed=0]
-#highway=path & sac_scale=difficult_alpine_hiking					[0x3f    resolution 24-23 road_class=0 road_speed=0]
+#highway=path & sac_scale=hiking							[0x3a    resolution 24-23]
+#highway=path & sac_scale=mountain_hiking						[0x3b    resolution 24-23]
+#highway=path & sac_scale=demanding_mountain_hiking					[0x3c    resolution 24-23]
+#highway=path & sac_scale=alpine_hiking							[0x3d    resolution 24-23]
+#highway=path & sac_scale=demanding_alpine_hiking					[0x3e    resolution 24-23]
+#highway=path & sac_scale=difficult_alpine_hiking					[0x3f    resolution 24-23]
 
-highway=path & (mtb:scale<2)                            				[0x12 resolution 24-23 road_class=0 road_speed=1]
-highway=path                                            				[0x12 resolution 24-23 road_class=0 road_speed=0]
+
+highway=path                                            				[0x12 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
