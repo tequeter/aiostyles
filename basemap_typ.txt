@@ -1918,7 +1918,7 @@ ExtendedLabels=N
 [_line]
 Type=0x03
 UseOrientation=N
-LineWidth=5
+LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFCA00"
@@ -1932,7 +1932,7 @@ ExtendedLabels=N
 [_line]
 Type=0x04
 UseOrientation=N
-LineWidth=5
+LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
@@ -1960,7 +1960,7 @@ ExtendedLabels=N
 [_line]
 Type=0x06
 UseOrientation=N
-LineWidth=4
+LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
@@ -1974,7 +1974,7 @@ ExtendedLabels=N
 [_line]
 Type=0x07
 UseOrientation=N
-LineWidth=3
+LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
@@ -1990,7 +1990,7 @@ CustomColor=No
 [_line]
 Type=0x08
 UseOrientation=N
-LineWidth=4
+LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #D5D5D5"
@@ -2037,7 +2037,7 @@ CustomColor=No
 [_line]
 Type=0x0b
 UseOrientation=N
-LineWidth=3
+LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
