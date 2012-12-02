@@ -123,14 +123,14 @@ highway=*
 	      add mkgmap:unpaved=1; 
 	    }
 
-#(highway=bridleway | highway=path | highway=track | highway=unsurfaced)
-#	    & surface!=* 
-#	    & tracktype!=* 
-#	    & smoothness!=* 
-#	    & sac_scale!=*
-#	    { 
-#	      add mkgmap:unpaved=1; 
-#	    }
+(highway=bridleway | highway=path | highway=track | highway=unsurfaced)
+	    & surface!=* 
+	    & tracktype!=* 
+	    & smoothness!=* 
+	    & sac_scale!=*
+	    { 
+	      add mkgmap:unpaved=1; 
+	    }
 
 #------------------------------------------------------------------------------
 # general access
@@ -239,6 +239,9 @@ bridge=yes & ( highway=* | railway=* )									[0x10105 resolution 24-23 continu
 (tunnel=yes | covered=yes) 
 	  & (highway=* | 
 	     railway=*)											[0x10112 resolution 24-23 continue with_actions]
+
+# embankment overlay
+man_made=dyke | embankment=*										[0x10f00 resolution 24-23 continue with_actions]
 
 # tram overlay
 highway=* & railway=tram										[0x10700 resolution 24-23 continue with_actions]
@@ -563,15 +566,13 @@ highway=footway
 		  add foot=yes; 
 		}
 
-highway=footway & (bicycle=yes | bicycle=allowed)	
+highway=footway & (bicycle=yes | bicycle=allowed | bicycle=designated)	
 		{ 
 		  add motorcar=no; 
 		  add motorcycle=no; 
 		  add foot=yes; 
 		  add bicycle=yes 
 		}
-
-
 		
 #highway=footway                             						[0x1100d resolution 22-22 continue with_actions]
 highway=footway                             						[0x0d    resolution 24-23 ]
@@ -588,7 +589,7 @@ highway=pedestrian
 		  add foot=yes; 
 		}
 		
-highway=pedestrian & bicycle=yes	
+highway=pedestrian & (bicycle=yes | bicycle=allowed | bicycle=designated)	
 		{ 
 		  add motorcar=no; 
 		  add motorcycle=no; 
@@ -596,7 +597,7 @@ highway=pedestrian & bicycle=yes
 		  add foot=yes; 
 		}
 
-#highway=pedestrian & (area!=yes & area!=true & area!=1) 				[0x1100d resolution 22-22 continue with_actions]
+
 highway=pedestrian & (area!=yes & area!=true & area!=1) 	
 		{
 		  add mkgmap:dead-end-check=false 
@@ -639,8 +640,6 @@ highway=track & tracktype=grade4							[0x11    resolution 24-23]
 highway=track & tracktype=grade5							[0x11011 resolution 22-22 continue with_actions]
 highway=track & tracktype=grade5							[0x11    resolution 24-23]
 
-
-#highway=track										[0x1200a resolution 21-21 continue with_actions]
 highway=track										[0x1100a resolution 22-22 continue with_actions]
 highway=track										[0x0a    resolution 24-23]
 
@@ -658,22 +657,16 @@ highway=path
 		  add goods=no; 
 		  add hgv=no; 
 		}
-#highway=path & (mtb:scale=* | mtb:scale:imba=*)		{ add bicycle=yes; }
-highway=path & (mtb:scale>0 | mtb:scale:imba>0)			{ set toll=yes; }
-highway=path & (mtb:scale>2 | mtb:scale:imba>1)			{ set bicycle=no; }
-#highway=path & (sac_scale=*)					{ add foot=yes; }
-highway=path & (sac_scale~'.*(mountain|alpine)_hiking')		{ add bicycle=no; }
 
-#highway=path										[0x12012 resolution 21-21 continue with_actions]
+highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
+highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
+highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
+
+highway=path & (bicycle=designated | bicycle=allowed | bicycle=yes) 		{ add bicycle=yes; }
+highway=path & (foot=designated |foot=yes)					{ add foot=yes; }
+
+
 highway=path										[0x11012 resolution 22-22 continue with_actions]
-#highway=path & sac_scale=hiking							[0x3a    resolution 24-23]
-#highway=path & sac_scale=mountain_hiking						[0x3b    resolution 24-23]
-#highway=path & sac_scale=demanding_mountain_hiking					[0x3c    resolution 24-23]
-#highway=path & sac_scale=alpine_hiking							[0x3d    resolution 24-23]
-#highway=path & sac_scale=demanding_alpine_hiking					[0x3e    resolution 24-23]
-#highway=path & sac_scale=difficult_alpine_hiking					[0x3f    resolution 24-23]
-
-
 highway=path                                            				[0x12 resolution 24-23]
 
 #------------------------------------------------------------------------------
@@ -718,7 +711,7 @@ barrier=hedge                               			[0x10f0c resolution 24 continue]
 
 # man made
 man_made=pipeline   						[0x28 resolution 22]
-man_made=dyke | embankment=*					[0x10f00 resolution 22]
+
 
 # power
 power=line          {name 'Powerline (${voltage} V)'}   	[0x29 resolution 24]
