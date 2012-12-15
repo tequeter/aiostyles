@@ -9044,203 +9044,204 @@ DayXpm="16 10 80 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x13
-String1=0x02,Spielwaren
-String2=0x04,Toys
+String1=0x02,Wein und Alkoholika
+String2=0x04,wine and alcohol
 ExtendedLabels=N
-DayXpm="15 16 177 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #000000"  canalalpha=10
-"!%	c #396500"  canalalpha=10
-"!?	c #BD9500"  canalalpha=10
-"!$	c #393000"  canalalpha=8
-"!*	c #000000"  canalalpha=13
-"!=	c #101010"  canalalpha=6
-"!1	c #393000"  canalalpha=2
-"!2	c #FFCA00"  canalalpha=0
-"!3	c #FFCA00"  canalalpha=0
-"!4	c #FFCA00"  canalalpha=0
-"!5	c #393000"  canalalpha=14
-"!6	c #393000"  canalalpha=4
-"!7	c #000000"  canalalpha=11
-"!8	c #000000"  canalalpha=6
-"!9	c #7B6500"  canalalpha=9
-"#!	c #BDCA00"  canalalpha=0
-"##	c #FFCA00"  canalalpha=0
-"#%	c #7B9520"  canalalpha=0
-"#?	c #7B9500"  canalalpha=0
-"#$	c #7B6500"  canalalpha=0
-"#*	c #FFCA00"  canalalpha=0
-"#=	c #FFCA00"  canalalpha=0
-"#1	c #7B6500"  canalalpha=6
-"#2	c #000000"  canalalpha=5
-"#3	c #393000"  canalalpha=2
-"#4	c #7B6500"  canalalpha=1
-"#5	c #7B6520"  canalalpha=0
-"#6	c #BDCA00"  canalalpha=0
-"#7	c #FFCA00"  canalalpha=0
-"#8	c #7B6520"  canalalpha=0
-"#9	c #BD9500"  canalalpha=0
-"%!	c #7B6520"  canalalpha=0
-"%#	c #BDCA00"  canalalpha=0
-"%%	c #BDCA00"  canalalpha=0
-"%?	c #7B6500"  canalalpha=0
-"%$	c #BD9500"  canalalpha=0
-"%*	c #396500"  canalalpha=4
-"%=	c #000000"  canalalpha=9
-"%1	c #101010"  canalalpha=1
-"%2	c #BDCA00"  canalalpha=0
-"%3	c #7B6520"  canalalpha=0
-"%4	c #393000"  canalalpha=0
-"%5	c #FFCA00"  canalalpha=0
-"%6	c #FFCA00"  canalalpha=0
-"%7	c #393000"  canalalpha=0
-"%8	c #393000"  canalalpha=0
-"%9	c #FFCA00"  canalalpha=0
-"?!	c #FFCA00"  canalalpha=0
-"?#	c #393000"  canalalpha=1
-"?%	c #00006A"  canalalpha=7
-"??	c #39306A"  canalalpha=10
-"?$	c #BD9520"  canalalpha=0
-"?*	c #7B6520"  canalalpha=0
-"?=	c #BDCA00"  canalalpha=0
-"?1	c #FFCA00"  canalalpha=0
-"?2	c #7B6520"  canalalpha=0
-"?3	c #7B6500"  canalalpha=0
-"?4	c #7B6500"  canalalpha=0
-"?5	c #FFCA00"  canalalpha=0
-"?6	c #7B9520"  canalalpha=0
-"?7	c #7B6520"  canalalpha=1
-"?8	c #BD3020"  canalalpha=4
-"?9	c #BD0000"  canalalpha=0
-"$!	c #00006A"  canalalpha=6
-"$#	c #0000D5"  canalalpha=0
-"$%	c #00006A"  canalalpha=2
-"$?	c #7B6541"  canalalpha=12
-"$$	c #FFCA00"  canalalpha=0
-"$*	c #FFCA00"  canalalpha=0
-"$=	c #7B6520"  canalalpha=0
-"$1	c #BD9500"  canalalpha=0
-"$2	c #7B6520"  canalalpha=0
-"$3	c #BDCA20"  canalalpha=0
-"$4	c #BDCA00"  canalalpha=1
-"$5	c #7B6520"  canalalpha=0
-"$6	c #7B0000"  canalalpha=0
-"$7	c #FF0000"  canalalpha=0
-"$8	c #7B0000"  canalalpha=2
-"$9	c #000041"  canalalpha=6
-"*!	c #00008B"  canalalpha=0
-"*#	c #00008B"  canalalpha=0
-"*%	c #0000D5"  canalalpha=0
-"*?	c #00008B"  canalalpha=7
-"*$	c #393000"  canalalpha=14
-"**	c #FFCA00"  canalalpha=0
-"*=	c #FFCA00"  canalalpha=0
-"*1	c #393020"  canalalpha=11
-"*2	c #7B0000"  canalalpha=3
-"*3	c #FF0000"  canalalpha=0
-"*4	c #7B0000"  canalalpha=0
-"*5	c #BD0000"  canalalpha=3
-"*6	c #00008B"  canalalpha=3
-"*7	c #0000D5"  canalalpha=0
-"*8	c #000041"  canalalpha=0
-"*9	c #0000B4"  canalalpha=0
-"=!	c #00008B"  canalalpha=0
-"=#	c #39306A"  canalalpha=13
-"=%	c #7B9520"  canalalpha=1
-"=?	c #7B3020"  canalalpha=15
-"=$	c #BD0000"  canalalpha=0
-"=*	c #BD0000"  canalalpha=0
-"==	c #7B0000"  canalalpha=0
-"=1	c #7B0000"  canalalpha=0
-"=2	c #BD0000"  canalalpha=3
-"=3	c #000041"  canalalpha=2
-"=4	c #0000B4"  canalalpha=0
-"=5	c #00008B"  canalalpha=0
-"=6	c #0000D5"  canalalpha=0
-"=7	c #00308B"  canalalpha=0
-"=8	c #00008B"  canalalpha=0
-"=9	c #000041"  canalalpha=2
-"1!	c #BD0000"  canalalpha=0
-"1#	c #390000"  canalalpha=0
-"1%	c #FF0000"  canalalpha=0
-"1?	c #7B0000"  canalalpha=0
-"1$	c #BD0000"  canalalpha=0
-"1*	c #7B0000"  canalalpha=7
-"1=	c #00008B"  canalalpha=0
-"11	c #0000B4"  canalalpha=0
-"12	c #000041"  canalalpha=0
-"13	c #0000D5"  canalalpha=0
-"14	c #0000D5"  canalalpha=0
-"15	c #00006A"  canalalpha=0
-"16	c #00008B"  canalalpha=0
-"17	c #000041"  canalalpha=12
-"18	c #7B0000"  canalalpha=0
-"19	c #7B0000"  canalalpha=0
-"2!	c #BD0000"  canalalpha=0
-"2#	c #390000"  canalalpha=0
-"2%	c #FF0000"  canalalpha=0
-"2?	c #BD0000"  canalalpha=7
-"2$	c #000041"  canalalpha=9
-"2*	c #0000D5"  canalalpha=0
-"2=	c #00008B"  canalalpha=0
-"21	c #00308B"  canalalpha=0
-"22	c #00008B"  canalalpha=0
-"23	c #00008B"  canalalpha=0
-"24	c #0000D5"  canalalpha=0
-"25	c #000041"  canalalpha=15
-"26	c #BD0000"  canalalpha=0
-"27	c #BD0000"  canalalpha=0
-"28	c #7B0000"  canalalpha=0
-"29	c #BD0000"  canalalpha=0
-"3!	c #7B0000"  canalalpha=0
-"3#	c #390000"  canalalpha=13
-"3%	c #000041"  canalalpha=14
-"3?	c #000041"  canalalpha=10
-"3$	c #0000D5"  canalalpha=0
-"3*	c #0000B4"  canalalpha=0
-"3=	c #000041"  canalalpha=0
-"31	c #0000B4"  canalalpha=0
-"32	c #00006A"  canalalpha=11
-"33	c #7B0000"  canalalpha=0
-"34	c #BD0000"  canalalpha=0
-"35	c #FF0000"  canalalpha=0
-"36	c #390000"  canalalpha=9
-"37	c #000000"  canalalpha=6
-"38	c #000000"  canalalpha=9
-"39	c #00006A"  canalalpha=5
-"4!	c #0000B4"  canalalpha=0
-"4#	c #0000B4"  canalalpha=0
-"4%	c #0000B4"  canalalpha=0
-"4?	c #000020"  canalalpha=2
-"4$	c #BD0000"  canalalpha=0
-"4*	c #BD0000"  canalalpha=0
-"4=	c #7B0000"  canalalpha=1
-"41	c #390000"  canalalpha=7
-"42	c #000000"  canalalpha=4
-"43	c #000000"  canalalpha=9
-"44	c #00006A"  canalalpha=0
-"45	c #000041"  canalalpha=11
-"46	c #7B0000"  canalalpha=7
-"47	c #000000"  canalalpha=14
-"48	c #000041"  canalalpha=2
-"49	c #000020"  canalalpha=8
-"5!	c #7B0000"  canalalpha=5
-"!!!!!!!!!!!#!%!?!$!*!!!!!!!!!!"
-"!!!!!!!!!=!1!2!3!4!5!6!7!!!!!!"
-"!!!!!8!9#!###%#?#$#*#=#1#2!!!!"
-"!!#3#4#5#6#7#8#9%!%#%%%?%$%*%="
-"%1%2!3!3%3%4%5!3%6%7%8%9!3?!?#"
-"?%???$?*?=?1?2?3?4?1?5?6?7?8?9"
-"$!$#$%$?$$$*$=$1$2$3$4$5$6$7$8"
-"$9*!*#*%*?*$**!3*=*1*2*3*4*4*5"
-"*6*7*8*9$#=!=#=%=?=$=*===1*3=2"
-"=3=4=5=6=7=8$#=9*31!1#1%1?1$1*"
-"1=111213141516171819=*2!2#2%2?"
-"2$2*2=2122232425262728293!?93#"
-"!73%3?3$3*3=3132=$3334353637!!"
-"!!!!38394!4#4%4?4$4*4=4142!!!!"
-"!!!!!!!!4344*%45354643!!!!!!!!"
-"!!!!!!!!!!4748495!!#!!!!!!!!!!"
+DayXpm="15 16 178 2"   Colormode=16
+"!!	c #000000"
+"!#	c #000000"
+"!%	c #396500"
+"!?	c #BD9500"
+"!$	c #393000"
+"!*	c #000000"
+"!=	c #101010"
+"!1	c #393000"
+"!2	c #FFCA00"
+"!3	c #FFCA00"
+"!4	c #FFCA00"
+"!5	c #393000"
+"!6	c #393000"
+"!7	c #000000"
+"!8	c #000000"
+"!9	c #7B6500"
+"#!	c #BDCA00"
+"##	c #FFCA00"
+"#%	c #7B9520"
+"#?	c #7B9500"
+"#$	c #7B6500"
+"#*	c #FFCA00"
+"#=	c #FFCA00"
+"#1	c #7B6500"
+"#2	c #000000"
+"#3	c #393000"
+"#4	c #7B6500"
+"#5	c #7B6520"
+"#6	c #BDCA00"
+"#7	c #FFCA00"
+"#8	c #7B6520"
+"#9	c #BD9500"
+"%!	c #7B6520"
+"%#	c #BDCA00"
+"%%	c #BDCA00"
+"%?	c #7B6500"
+"%$	c #BD9500"
+"%*	c #396500"
+"%=	c #000000"
+"%1	c #101010"
+"%2	c #BDCA00"
+"%3	c #7B6520"
+"%4	c #393000"
+"%5	c #FFCA00"
+"%6	c #FFCA00"
+"%7	c #393000"
+"%8	c #393000"
+"%9	c #FFCA00"
+"?!	c #FFCA00"
+"?#	c #393000"
+"?%	c #00006A"
+"??	c #39306A"
+"?$	c #BD9520"
+"?*	c #7B6520"
+"?=	c #BDCA00"
+"?1	c #FFCA00"
+"?2	c #7B6520"
+"?3	c #7B6500"
+"?4	c #7B6500"
+"?5	c #FFCA00"
+"?6	c #7B9520"
+"?7	c #7B6520"
+"?8	c #BD3020"
+"?9	c #BD0000"
+"$!	c #00006A"
+"$#	c #0000D5"
+"$%	c #00006A"
+"$?	c #7B6541"
+"$$	c #FFCA00"
+"$*	c #FFCA00"
+"$=	c #7B6520"
+"$1	c #BD9500"
+"$2	c #7B6520"
+"$3	c #BDCA20"
+"$4	c #BDCA00"
+"$5	c #7B6520"
+"$6	c #7B0000"
+"$7	c #FF0000"
+"$8	c #7B0000"
+"$9	c #000041"
+"*!	c #00008B"
+"*#	c #00008B"
+"*%	c #0000D5"
+"*?	c #00008B"
+"*$	c #393000"
+"**	c #FFCA00"
+"*=	c #FFCA00"
+"*1	c #393020"
+"*2	c #7B0000"
+"*3	c #FF0000"
+"*4	c #7B0000"
+"*5	c #BD0000"
+"*6	c #00008B"
+"*7	c #0000D5"
+"*8	c #000041"
+"*9	c #0000B4"
+"=!	c #00008B"
+"=#	c #39306A"
+"=%	c #7B9520"
+"=?	c #7B3020"
+"=$	c #BD0000"
+"=*	c #BD0000"
+"==	c #7B0000"
+"=1	c #7B0000"
+"=2	c #BD0000"
+"=3	c #000041"
+"=4	c #0000B4"
+"=5	c #00008B"
+"=6	c #0000D5"
+"=7	c #00308B"
+"=8	c #00008B"
+"=9	c #000041"
+"1!	c #BD0000"
+"1#	c #390000"
+"1%	c #FF0000"
+"1?	c #7B0000"
+"1$	c #BD0000"
+"1*	c #7B0000"
+"1=	c #00008B"
+"11	c #0000B4"
+"12	c #000041"
+"13	c #0000D5"
+"14	c #0000D5"
+"15	c #00006A"
+"16	c #00008B"
+"17	c #000041"
+"18	c #7B0000"
+"19	c #7B0000"
+"2!	c #BD0000"
+"2#	c #390000"
+"2%	c #FF0000"
+"2?	c #BD0000"
+"2$	c #000041"
+"2*	c #0000D5"
+"2=	c #00008B"
+"21	c #00308B"
+"22	c #00008B"
+"23	c #00008B"
+"24	c #0000D5"
+"25	c #000041"
+"26	c #BD0000"
+"27	c #BD0000"
+"28	c #7B0000"
+"29	c #BD0000"
+"3!	c #7B0000"
+"3#	c #390000"
+"3%	c #000041"
+"3?	c #000041"
+"3$	c #0000D5"
+"3*	c #0000B4"
+"3=	c #000041"
+"31	c #0000B4"
+"32	c #00006A"
+"33	c #7B0000"
+"34	c #BD0000"
+"35	c #FF0000"
+"36	c #390000"
+"37	c #000000"
+"38	c #000000"
+"39	c #00006A"
+"4!	c #0000B4"
+"4#	c #0000B4"
+"4%	c #0000B4"
+"4?	c #000020"
+"4$	c #BD0000"
+"4*	c #BD0000"
+"4=	c #7B0000"
+"41	c #390000"
+"42	c #000000"
+"43	c #000000"
+"44	c #00006A"
+"45	c #000041"
+"46	c #7B0000"
+"47	c #000000"
+"48	c #000041"
+"49	c #000020"
+"5!	c #7B0000"
+"  	c none"
+"                              "
+"                        1414  "
+"    *3*3                1414  "
+"    #%#%      !*!*      1414  "
+"    #%#%      !*!*      1414  "
+"  #%#%#%#%  !*!*!*!*    1414  "
+"  #%*3?1#%  !*****!*    1414  "
+"  #%?1?1#%  !*****!*  14****14"
+"  #%?1*3#%  !*!*!*!*  14#5*314"
+"  #%?1?1#%  !*!*!*!*  14*3**14"
+"  #%#%#%#%            14*3**14"
+"  #%#%#%#%            14#5**14"
+"                      14#5#514"
+"                      14*3#514"
+"                      14141414"
+"                              "
 ;123456789012345
 [end]
 
@@ -9248,8 +9249,8 @@ DayXpm="15 16 177 2"   Colormode=32
 [_point]
 Type=0x02e
 SubType=0x14
-String1=0x02,Videothek
-String2=0x04,Videos
+String1=0x02,Buchhandlung
+String2=0x04,Bookstore
 ExtendedLabels=N
 DayXpm="16 6 64 2"   Colormode=32
 "!!	c #FFFFFF"  canalalpha=0
@@ -9316,12 +9317,12 @@ DayXpm="16 6 64 2"   Colormode=32
 "?7	c #737373"  canalalpha=0
 "?8	c #626262"  canalalpha=0
 "?9	c #626262"  canalalpha=0
-"!!!#!%!%!%!?!%!?!?!%!%!$!*!*!=!!"
-"!1!2!3!3!4!5!6!7!6!8!9#!###%#?#$"
-"#*#=!9#$#1!!!!#2#3#4#5#6!!!!#7#8"
-"#9%!%#%%%?%$%*%=%$%$%$!$%1!%%?!2"
-"%*!*%2%3#?%4%5%6%7%8%9?!?#?%???$"
-"#?!*?*?=?=?1?2?3?4?5?6?7!=%5?8?9"
+"#!!*#!%!#3?3!*!*?3!*!*!*!*?3?3!*"
+"#!#%#!%!%!?3?3?3?3!*!*!*!*?3?3!*"
+"#!#%#!%!#3?3?3?3?3!*?3?3!*?3?3!*"
+"#!!*#!%!%!?3?3?3?3!*?3?3!*!*!*!*"
+"#!!*#!%!#3?3?3?3?3!*?3?3!*!*!*!*"
+"#!!*#!%!#3?3?3?3?3!*?3?3!*!*!*!*"
 ;1234567890123456
 [end]
 
