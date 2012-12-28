@@ -2628,6 +2628,22 @@ CustomColor=No
 
 
 [_line]
+Type=0x10106
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #838383"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Drehscheibe
+String2=0x04,Turningtable
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x10111
 UseOrientation=N
 Xpm="32 10 2  1"

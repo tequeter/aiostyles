@@ -657,20 +657,24 @@ aeroway=runway      						[0x27 resolution 20]
 aeroway=taxiway     						[0x27 resolution 20]
 
 # railway
-railway=rail            					[0x11000 resolution 22-20 continue]
+railway=rail & (railway=siding | railway=spur | railway=yard)   [0x00    resolution 24]
+railway=turning_table						[0x10106 resolution 24]
+railway=rail            					[0x11000 resolution 22-21 continue]
 railway=rail            					[0x00    resolution 24-23]
+
+
 railway=narrow_gauge						[0x14 resolution 22]	# 0x10e0d	# narrow gauge
-railway=light_rail						[0x14 resolution 21]	# 0x10e0e	# suburban railway
-railway=tram 							[0x14 resolution 21]	# 0x10e0f	# tram
-railway=subway          					[0x14 resolution 22]	# 0x10e10	# subway
-railway=funicular						[0x14 resolution 21]	# 0x10e11	# funicular
+railway=light_rail						[0x14 resolution 22]	# 0x10e0e	# suburban railway
+railway=tram 							[0x14 resolution 23]	# 0x10e0f	# tram
+railway=subway          					[0x14 resolution 23]	# 0x10e10	# subway
+railway=funicular						[0x14 resolution 23]	# 0x10e11	# funicular
 railway=preserved       					[0x14 resolution 23]	# 0x10e12	# recreational railway
 railway=monorail						[0x14 resolution 23] 	# 0x10e13	# maglev
 
 # aerialway and lift
-aerialway=cable_car | aerialway=gondola				[0x10e14 resolution 21]
-aerialway=chair_lift  						[0x10e15 resolution 21]
-aerialway=drag_lift						[0x10e16 resolution 21]
+aerialway=cable_car | aerialway=gondola				[0x10e14 resolution 22]
+aerialway=chair_lift  						[0x10e15 resolution 23]
+aerialway=drag_lift						[0x10e16 resolution 23]
 aerialway=goods							[0x10e17 resolution 24]
 
 # barrier
