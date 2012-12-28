@@ -2638,7 +2638,7 @@ Xpm="32 3 2  1"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
 String1=0x02,Drehscheibe
-String2=0x04,Turningtable
+String2=0x04,Turntable
 ExtendedLabels=N
 [end]
 

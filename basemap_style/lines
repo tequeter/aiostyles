@@ -187,10 +187,10 @@ highway=* & motorcar=*       	{
 #		0 	|| 	3 mph / 5 kmh
 #
 
-# set display_name for routing instructions
+# set mkgmap:display_name for routing instructions
 highway=*   	
 	      { 
-		set display_name='${name} (${ref})' | 
+		set mkgmap:display_name='${name} (${ref})' | 
 		'${ref}' | 
 		'${name}'; 
 	      }
@@ -201,8 +201,8 @@ highway=*	           		{ set streetname='${name}'; }
 #------------------------------------------------------------------------------
 # overlays
 
-# set name equal to display_name to prevent showing seperate naming from highway
-highway=*   				{ set name='${display_name}'; }
+# set name equal to mkgmap:display_name to prevent showing seperate naming from highway
+highway=*   				{ set name='${mkgmap:display_name}'; }
 
 # oneway overlay
 oneway=yes & highway=*              									[0x10800 resolution 24-23 continue with_actions]
@@ -307,8 +307,8 @@ highway=*
 #------------------------------------------------------------------------------
 # highways
 
-# set highway name equal to display_name to prevent different naming
-highway=*		{ set name='${display_name}'; }
+# set highway name equal to mkgmap:display_name to prevent different naming
+highway=*		{ set name='${mkgmap:display_name}'; }
 
 # access restrictions
 # for germany (and other?) foot=no and bicycle=no
@@ -348,7 +348,7 @@ junction=roundabout & highway~'motorway.*'						[0x0c	 resolution 24-22 road_cla
 
 (highway=motorway|highway=motorway_link) & destination=* 	
 		{ 
-		  set display_name='${ref} (${destination})'; 
+		  set mkgmap:mkgmap:display_name='${ref} (${destination})'; 
 		}
 
 highway=motorway_link                       						[0x11008 resolution 22-20 continue with_actions]
@@ -376,7 +376,7 @@ junction=roundabout & highway~'trunk.*'							[0x0c	 resolution 24-22 road_class
 
 (highway=trunk|highway=trunk_link) & destination=* 	
 		{ 
-		  set display_name='${ref} (${destination})'; 
+		  set mkgmap:display_name='${ref} (${destination})'; 
 		}
 
 highway=trunk_link                          						[0x12002 resolution 22-21 continue with_actions]
@@ -463,8 +463,8 @@ highway=tertiary                            						[0x04    resolution 24-23 road
 #------------------------------------------------------------------------------
 # minor roads
 
-# set highway name equal to display_name to prevent different naming
-highway=*		{ set name='${display_name}'; }
+# set highway name equal to mkgmap:display_name to prevent different naming
+highway=*		{ set name='${mkgmap:display_name}'; }
 
 # roundabouts
 highway=* & junction=roundabout								[0x0c	 resolution 24-22 road_class=1 road_speed=1]
@@ -657,8 +657,8 @@ aeroway=runway      						[0x27 resolution 20]
 aeroway=taxiway     						[0x27 resolution 20]
 
 # railway
-railway=rail & (railway=siding | railway=spur | railway=yard)   [0x00    resolution 24]
-railway=turning_table						[0x10106 resolution 24]
+railway=rail & (service=siding | service=spur | service=yard)   [0x00    resolution 24]
+railway=turntable						[0x10106 resolution 24]
 railway=rail            					[0x11000 resolution 22-21 continue]
 railway=rail            					[0x00    resolution 24-23]
 
