@@ -657,8 +657,8 @@ aeroway=runway      						[0x27 resolution 20]
 aeroway=taxiway     						[0x27 resolution 20]
 
 # railway
-railway=rail & (service=siding | service=spur | service=yard)   [0x00    resolution 24]
-railway=turntable						[0x10106 resolution 24]
+railway=rail & (service=siding | service=spur)   		[0x00    resolution 24-23]
+railway=turntable | railway=traverser				[0x10106 resolution 24-23]
 railway=rail            					[0x11000 resolution 22-21 continue]
 railway=rail            					[0x00    resolution 24-23]
 
