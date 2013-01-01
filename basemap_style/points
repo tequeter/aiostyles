@@ -1,4 +1,4 @@
-# -------------------------------------------------------------------
+﻿# -------------------------------------------------------------------
 # This is the default mkgmap style file for converting OSM nodes
 # into Garmin POIs.
 # Any line prefaced with # is a comment and will not be applied.
@@ -115,7 +115,7 @@ place=locality  								[0x2800 resolution 24]
 
 # Man Made
 # 0x6401 	# bridge
-tourism=alpine_hut 								[0x6402 resolution 24 continue]
+tourism=alpine_hut 								[0x6403 resolution 24 continue]
 amenity=shelter 								[0x6402 resolution 24 continue]
 
 # 0x6402	# skyscaper
