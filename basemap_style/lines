@@ -522,7 +522,7 @@ highway=cycleway
 
 
 highway=cycleway                            						[0x11016 resolution 22-21 continue with_actions]
-highway=cycleway                            						[0x16    road_class=0 road_speed=0 resolution 24-23]
+highway=cycleway                            						[0x16    resolution 24-23]
 
 # cycleway overlay
 highway=* & bicycle=designated								[0x10416 resolution 24 continue with_actions]
@@ -545,7 +545,7 @@ highway=footway & (bicycle=yes | bicycle=allowed | bicycle=designated)
 		}
 		
 highway=footway                             						[0x1100d resolution 22-22 continue with_actions]
-highway=footway                             						[0x0d    road_class=0 road_speed=0 resolution 24-23]
+highway=footway                             						[0x0d    resolution 24-23]
 
 # footway overlay
 highway=* & foot=designated								[0x10415 resolution 24 continue with_actions]
@@ -571,7 +571,7 @@ highway=pedestrian & (bicycle=yes | bicycle=allowed | bicycle=designated)
 highway=pedestrian & (area!=yes & area!=true & area!=1) 	
 		{
 		  add mkgmap:dead-end-check=false 
-		}									[0x0d road_class=0 road_speed=0 resolution 24-23 ]
+		}									[0x0d resolution 24-23 ]
 
 # steps
 highway=steps		
@@ -580,7 +580,7 @@ highway=steps
 		  add motorcycle=no; 
 		  add bicycle=no; 
 		  add mkgmap:unpaved=1; 
-		}									[0x13 road_class=0 road_speed=0 resolution 24-23]
+		}									[0x13 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # tracks
@@ -637,7 +637,7 @@ highway=path & (foot=designated | foot=yes)					{ add foot=yes; }
 
 
 highway=path										[0x11012 resolution 22-22 continue with_actions]
-highway=path                                            				[0x12 road_class=0 road_speed=0 resolution 24-23]
+highway=path                                            				[0x12 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
