@@ -361,17 +361,18 @@ tourism=hotel						[0x2b00 resolution 24 continue]
 tourism=motel						[0x2b01 resolution 24 continue]
 
 # Bed & Breakfast Inn 
-tourism=guest_house 					[0x2b02 resolution 24 continue]
+tourism=guest_house 					[0x2b02 resolution 24]
 
 # Campground/RV Park 
-tourism=camp_site 					[0x2b03 resolution 24 continue]
+tourism=camp_site 					[0x2b03 resolution 24]
 # 0x48ss
 
 # Resort 
 tourism=resort 						[0x2b04 resolution 24 continue]
-tourism=alpine_hut 					[0x2b05 resolution 24]
+
 
 # Other
+tourism=alpine_hut 					[0x2b05 resolution 24]
 tourism=hostel 						[0x2b06 resolution 24]
 tourism=caravan_site 					[0x2b07 resolution 24]
 tourism=chalet 						[0x2b09 resolution 24]
