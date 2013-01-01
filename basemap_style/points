@@ -115,7 +115,6 @@ place=locality  								[0x2800 resolution 24]
 
 # Man Made
 # 0x6401 	# bridge
-tourism=alpine_hut 								[0x6402 resolution 24 continue]
 amenity=shelter 								[0x6402 resolution 24 continue]
 
 # 0x6402	# skyscaper
@@ -370,9 +369,10 @@ tourism=camp_site 					[0x2b03 resolution 24 continue]
 
 # Resort 
 tourism=resort 						[0x2b04 resolution 24 continue]
+tourism=alpine_hut 					[0x2b05 resolution 24]
 
 # Other
-tourism=hostel 						[0x2b06 resolution 24 continue]
+tourism=hostel 						[0x2b06 resolution 24]
 tourism=caravan_site 					[0x2b07 resolution 24]
 tourism=chalet 						[0x2b09 resolution 24]
 
