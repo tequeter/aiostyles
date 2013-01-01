@@ -116,7 +116,6 @@ place=locality  								[0x2800 resolution 24]
 # Man Made
 # 0x6401 	# bridge
 amenity=shelter 								[0x6402 resolution 24 continue]
-
 # 0x6402	# skyscaper
 # 0x6403	# tombstone
 amenity=grave_yard & mkgmap:area2poi!=true					[0x6404 resolution 24]  
@@ -126,7 +125,7 @@ landuse=cemetery & mkgmap:area2poi!=true					[0x6404 resolution 24]
 # 0x6407	# dam
 # 0x6408	# hospital
 # 0x6409	# levee
-# 0x640	# locale
+# 0x640a	# locale
 military=bunker 								[0x640b resolution 24]
 man_made=adit | man_made=mineshaft 						[0x640c resolution 24]
 man_made=petroleum_well 							[0x640d	resolution 24]
