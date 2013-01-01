@@ -14022,7 +14022,7 @@ DayXpm="14 14 3 1"   Colormode=16
 Type=0x6403
 ExtendedLabels=N
 String1=0x00,alpine_hut
-String2=0x02,alpine Huette
+String2=0x02,alpine Hütte
 String3=0x04,alpine hut
 DayXpm="16 16 33 2" Colormode=16
 "$$ c #0093D9"
