@@ -353,9 +353,11 @@ String2=0x04,Airport
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
-Xpm="32 32 2 1"
+Xpm="32 32 4 1"
 "! c #AAAAAA"
 "# c #E0E0E0"
+"3 c #AAAAAA"
+"4 c #000000"
 "################################"
 "################################"
 "################################"
@@ -639,8 +641,9 @@ String2=0x04,Pedestrian
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
-Xpm="0 0 1 0"
+Xpm="0 0 2 0"
 "1 c #FFFF8B"
+"2 c #BD9500"
 [end]
 
 
@@ -1890,11 +1893,11 @@ CustomColor=No
 [_line]
 Type=0x01
 UseOrientation=N
-LineWidth=6
+LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #3965FF"
-"2 c #0000D5"
+"1 c #FFCA00"
+"2 c #FF0000"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -1905,12 +1908,12 @@ ExtendedLabels=N
 Type=0x02
 UseOrientation=N
 LineWidth=5
-BorderWidth=1
+BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FF9500"
-"2 c #BD3000"
-String1=0x02,Bundesstraﬂe
-String2=0x04,Primary/Trunk
+"1 c #FF0000"
+"2 c #006500"
+String1=0x04,Trunk
+String2=0x02,Schnellstraﬂe
 ExtendedLabels=N
 [end]
 
@@ -1919,6 +1922,20 @@ ExtendedLabels=N
 Type=0x03
 UseOrientation=N
 LineWidth=4
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FF0000"
+"2 c #BD3000"
+String1=0x02,Bundesstraﬂe
+String2=0x04,Primary
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x04
+UseOrientation=N
+LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFCA00"
@@ -1930,29 +1947,15 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x04
-UseOrientation=N
-LineWidth=4
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #525252"
-String1=0x02,Kreisstraﬂe
-String2=0x04,Tertiary
-ExtendedLabels=N
-[end]
-
-
-[_line]
 Type=0x05
 UseOrientation=N
 LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #E6E6E6"
-"2 c #525252"
-String1=0x02,Gemeinde-/Nebenstraﬂe
-String2=0x04,Unclassified
+"1 c #FFFF00"
+"2 c #838383"
+String1=0x02,Kreisstraﬂe
+String2=0x04,Tertiary
 ExtendedLabels=N
 [end]
 
@@ -1965,8 +1968,8 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #525252"
-String1=0x02,Wohnstraﬂe
-String2=0x04,Residential
+String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String2=0x04,Residential/Unclassified
 ExtendedLabels=N
 [end]
 
@@ -2816,13 +2819,13 @@ CustomColor=No
 Type=0x10800
 UseOrientation=N
 Xpm="32 5 2  1"
-"! c #737373"
+"! c #101010"
 "  c none"
-"                                "
-"               !                "
-"            !!!!!               "
-"               !                "
-"                                "
+"             !!                 "
+"             !!!!               "
+"        !!!!!!!!!!!             "
+"             !!!!               "
+"             !!                 "
 ;12345678901234567890123456789012
 String1=0x02,Einbahn
 String2=0x04,One way
@@ -3108,11 +3111,11 @@ CustomColor=No
 [_line]
 Type=0x11001
 UseOrientation=N
-LineWidth=6
+LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #3965FF"
-"2 c #0000D5"
+"1 c #FFCA00"
+"2 c #FF0000"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -3123,9 +3126,23 @@ ExtendedLabels=N
 Type=0x11002
 UseOrientation=N
 LineWidth=5
+BorderWidth=2
+Xpm="0 0 2 0"
+"1 c #FF0000"
+"2 c #006500"
+String1=0x04,Trunk
+String2=0x02,Schnellstraﬂe
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x11003
+UseOrientation=N
+LineWidth=4
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FF9500"
+"1 c #FF0000"
 "2 c #BD3000"
 String1=0x02,Bundesstraﬂe
 String2=0x04,Primary/Trunk
@@ -3134,7 +3151,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x11003
+Type=0x11004
 UseOrientation=N
 LineWidth=3
 BorderWidth=1
@@ -3150,7 +3167,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x11004
+Type=0x11005
 UseOrientation=N
 LineWidth=3
 BorderWidth=1
@@ -3166,22 +3183,6 @@ CustomColor=No
 
 
 [_line]
-Type=0x11005
-UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #E6E6E6"
-"2 c #838383"
-String1=0x02,Gemeinde-/Nebenstraﬂe
-String2=0x04,Unclassified
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x11006
 UseOrientation=Y
 LineWidth=2
@@ -3189,8 +3190,8 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
 "2 c #838383"
-String1=0x02,Wohnstraﬂe
-String2=0x04,Residential
+String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String2=0x04,Residential/Unclassified
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3214,7 +3215,7 @@ CustomColor=No
 [_line]
 Type=0x11008
 UseOrientation=N
-LineWidth=2
+LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #D5D5D5"
@@ -3237,22 +3238,6 @@ Xpm="32 1 4  1"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x1100c
-UseOrientation=Y
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #777777"
-String1=0x02,Kreisverkehr
-String2=0x04,Roundabout
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3352,6 +3337,20 @@ CustomColor=No
 
 
 [_line]
+Type=0x11014
+UseOrientation=N
+LineWidth=5
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FF9500"
+"2 c #0000D5"
+String1=0x04,Motorroad
+String2=0x02,Kraftfahrtsraﬂe
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x11016
 UseOrientation=N
 Xpm="32 1 2  1"
@@ -3416,8 +3415,8 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #3965FF"
-"2 c #0000D5"
+"1 c #FFCA00"
+"2 c #FF0000"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -3430,7 +3429,21 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FF9500"
+"1 c #FF0000"
+"2 c #006500"
+String1=0x04,Trunk
+String2=0x02,Schnellstraﬂe
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x12003
+UseOrientation=N
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FF0000"
 "2 c #BD3000"
 String1=0x02,Bundesstraﬂe
 String2=0x04,Primary/Trunk
@@ -3441,7 +3454,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x12003
+Type=0x12004
 UseOrientation=N
 LineWidth=2
 BorderWidth=1
@@ -3457,7 +3470,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x12004
+Type=0x12005
 UseOrientation=N
 LineWidth=2
 BorderWidth=1
@@ -3473,27 +3486,13 @@ CustomColor=No
 
 
 [_line]
-Type=0x12005
-UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #838383"
-String1=0x02,Gemeinde-/Nebenstraﬂe
-String2=0x04,Unclassified
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x12006
 UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #A4A4A4"
-String1=0x02,Wohnstraﬂe
-String2=0x04,Residential
+String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String2=0x04,Residential/Unclassified
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -3641,6 +3640,20 @@ String2=0x04,Trail/Path
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
+[end]
+
+
+[_line]
+Type=0x12014
+UseOrientation=N
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FF9500"
+"2 c #0000D5"
+String1=0x02,Kraftfahrstraﬂe
+String2=0x04,Motorroad
+ExtendedLabels=N
 [end]
 
 
