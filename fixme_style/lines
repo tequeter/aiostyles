@@ -1,5 +1,13 @@
-note=* & (note ~ 'FIXME.*' | note ~ 'fixme.*' |note ~ 'Fixme.*')| fixme=* | FIXME=* |Fixme=* {name 'Notiz: ${note}' | 'Notiz: ${fixme}' | 'Notiz: ${FIXME}' | 'Notiz: ${Fixme}' } [0x01 resolution 23]
-note=* {name 'Notiz: ${note}'} [0x06 resolution 24]
-highway=residential & name!=* [0x07 resolution 21]
-highway=* & construction=minor [0x06 resolution 20]
-highway=* & construction=no [0x01 resolution 20]
+note=* & (note ~ 'FIXME.*' | 
+	  note ~ 'fixme.*' |
+	  note ~ 'Fixme.*')| 
+	  fixme=* | 
+	  FIXME=* |
+	  Fixme=* {name 'Notiz: ${note}' | 
+	  'Notiz: ${fixme}' | 
+	  'Notiz: ${FIXME}' | 
+	  'Notiz: ${Fixme}' } 				[0x01 resolution 23]
+note=* {name 'Notiz: ${note}'} 				[0x06 resolution 24]
+highway=residential & name!=* 				[0x07 resolution 21]
+highway=* & construction=minor 				[0x06 resolution 20]
+highway=* & construction=no 				[0x01 resolution 20]
