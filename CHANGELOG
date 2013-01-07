@@ -1,4 +1,6 @@
- 
+2013-01-07
+use "include='address';" in lines, points and polygons for addess-searching
+
 2013-01-06
 Roadtype for Trunk added, now 0x02
 primary, secondary, tertiary to lower type (0x02)-0x03-0x04-0x05
