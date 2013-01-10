@@ -1,2 +1,0 @@
-#note=*  | fixme = * | FIXME=* |Fixme=* {name '${note}' | '${fixme}' | '${FIXME}' | '${Fixme}' } [0x53 resolution 20]
-amenity=parking & capacity:disabled = unkwown { add description "check for capacity:disabled" }  [0x53 resolution 23]
