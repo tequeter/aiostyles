@@ -1896,8 +1896,8 @@ UseOrientation=N
 LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FFCA00"
-"2 c #FF0000"
+"1 c #FFFF00"
+"2 c #BD3000"
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -1910,8 +1910,8 @@ UseOrientation=N
 LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FF0000"
-"2 c #006500"
+"1 c #009520"
+"2 c #BD3000"
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
 ExtendedLabels=N
@@ -2260,6 +2260,35 @@ Xpm="0 0 4 0"
 "4 c #BDBDBD"
 String1=0x02,Zeitzone
 String2=0x04,Time zone
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1a
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #0000D5"
+"# c #FFFFFF"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
+;12345678901234567890123456789012
+String1=0x01,
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1b
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #00CA00"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x01,
 ExtendedLabels=N
 [end]
 
@@ -3114,7 +3143,7 @@ UseOrientation=N
 LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FFCA00"
+"1 c #FFFF00"
 "2 c #FF0000"
 String1=0x02,Autobahn
 String2=0x04,Motorway
@@ -3128,8 +3157,8 @@ UseOrientation=N
 LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #FF0000"
-"2 c #006500"
+"1 c #009520"
+"2 c #BD3000"
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
 ExtendedLabels=N
@@ -3415,7 +3444,7 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FFCA00"
+"1 c #FFFF00"
 "2 c #FF0000"
 String1=0x02,Autobahn
 String2=0x04,Motorway
@@ -3429,8 +3458,8 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #FF0000"
-"2 c #006500"
+"1 c #009520"
+"2 c #BD3000"
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
 ExtendedLabels=N

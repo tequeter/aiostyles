@@ -399,7 +399,8 @@ highway=service | highway=estate | highway=living_street
 		}
 highway=service | highway=estate | highway=living_street           			[0x12007 resolution 23-22 continue with_actions]
 (highway=service | highway=estate | highway=living_street) & junction=roundabout	[0x00c07 resolution 24 road_class=0 road_speed=0]
-highway=service | highway=estate | highway=living_street				[0x07 resolution 24 road_class=0 road_speed=0]
+highway=service | highway=estate  							[0x07 resolution 24 road_class=0 road_speed=0]
+highway=living_street									[0x0071b resolution 24 road_class=0 road_speed=0]
 
 # roundabouts
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=1 road_speed=1]

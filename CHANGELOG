@@ -1,3 +1,8 @@
+
+2013-01-10
+change colour for trunk
+add overlay for living_street
+
 2013-01-07
 use "include='address';" in lines, points and polygons for addess-searching
 
@@ -11,5 +16,5 @@ use overlay for *_link, see def-file 'overlays'
 
 construction=* except minor now disabled
 
-colors for motorway, trunk and primary changed
+colours for motorway, trunk and primary changed
 

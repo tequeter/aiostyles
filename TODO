@@ -1,8 +1,8 @@
 ####   Brainstorming   ####
 
 change color for trunk - red/green ---  testing
-change color for primary - red --- testing
-change color for motorway - yellow with red border, see openstreetmap.de --- testing
+change color for primary - red --- done
+change color for motorway - yellow with red border, see openstreetmap.de --- done
 motorroad-overlay (only for pri, sec, ter) - blue border
 overlay for living_street - lightgrey with green dots, only resolution 24
 
