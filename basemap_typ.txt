@@ -1910,7 +1910,7 @@ UseOrientation=N
 LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #009520"
+"1 c #7BCA41"
 "2 c #BD3000"
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
@@ -3157,7 +3157,7 @@ UseOrientation=N
 LineWidth=5
 BorderWidth=2
 Xpm="0 0 2 0"
-"1 c #009520"
+"1 c #7BCA41"
 "2 c #BD3000"
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
@@ -3458,7 +3458,7 @@ UseOrientation=N
 LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #009520"
+"1 c #7BCA41"
 "2 c #BD3000"
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
@@ -14332,6 +14332,34 @@ DayXpm="16 20 4 1"   Colormode=16
 "                "
 "                "
 "                "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x065
+SubType=0x00
+String1=0x01,
+ExtendedLabels=N
+DayXpm="16 16 2 1"   Colormode=16
+"!	c #0030FF"
+"  	c none"
+"                "
+"     !!  !!     "
+"    !  !!  !    "
+"    !! !! !!    "
+"   !  !!!!  !   "
+"  !    !!    !  "
+" !  !!!!!!!!  ! "
+"!  !   !!   !  !"
+"! !  !!!!!!  ! !"
+"! ! !  !!  ! ! !"
+"! ! !  !!  ! ! !"
+"       !!       "
+"       !!       "
+"       !!       "
+"       !!       "
+"       !!       "
 ;1234567890123456
 [end]
 
