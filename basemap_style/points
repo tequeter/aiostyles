@@ -74,6 +74,7 @@ man_made=windmill | man_made=watermill 							[0x11519 resolution 24]	# type wit
 man_made=works | man_made=water_works 							[0x1151A resolution 24]	# type without category
 
 # Water Features
+amenity=fountain 									[0x6500 resolution 24]
 # 0x6502	# sand bar
 natural=bay & name=* 									[0x6503 resolution 24]
 # 0x6504	# bend
@@ -172,8 +173,9 @@ barrier=toll_booth { add toll=yes; } 							[0x2500 resolution 24]
 # Fuel
 
 # Auto Fuel
-amenity=fuel & name!=* { set name ='${operator}'}       				[0x2f01 resolution 24]
+amenity=fuel & name!=* { set name ='${operator}'} 
 amenity=fuel 										[0x2f01 resolution 24]
+
 # 0x44ss
 
 # Truck Stop
@@ -582,9 +584,13 @@ amenity=place_of_worship 				[0x2c0b resolution 24]
 # 0x6424
 historic=wayside_shrine | historic=wayside_cross 	[0x11509 resolution 24]	# type without category
 
-# Post Office
-amenity=post_office 					[0x2f05 resolution 24]
-amenity=post_box 					[0x640f resolution 24]
+# Post Office	
+amenity=post_office { 
+	      name '${operator}' | '${name}' 
+	      }						[0x2f05 resolution 24]
+amenity=post_box { 
+	      name '${operator}' | '${name}' 
+	      }						[0x640f resolution 24]
 # 0x642f
 # 0x11005
 
@@ -664,7 +670,7 @@ amenity=casino 						[0x2d04 resolution 24]
 tourism=picnic_site 					[0x4a00 resolution 24]
 # 0x4ass
 amenity=bench 						[0x4a01 resolution 24]
-amenity=fountain 					[0x11505 resolution 24]	# type without category
+
 
 # Arena/Track
 leisure=stadium 					[0x5400 resolution 24]
