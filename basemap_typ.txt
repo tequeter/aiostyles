@@ -6,9 +6,6 @@ FID=4
 CodePage=1252
  [End]
 
-;=========== COMMENTAIRES ======
-[_comments]
-[End]
 
 
 

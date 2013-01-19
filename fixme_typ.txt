@@ -9,10 +9,6 @@ FID=3
 CodePage=1252
  [End]
 
-;=========== COMMENTAIRES ======
-[_comments]
-[End]
-
 
 
 
