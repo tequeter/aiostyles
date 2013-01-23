@@ -77,7 +77,7 @@ man_made=works | man_made=water_works 							[0x1151A resolution 24]	# type with
 
 # Water Features
 amenity=fountain 									[0x6500 resolution 24]
-#0 x6501  	# Arroyo
+# 0x6501  	# Arroyo
 # 0x6502	# sand bar
 natural=bay & name=* 									[0x6503 resolution 24]
 # 0x6504	# bend
