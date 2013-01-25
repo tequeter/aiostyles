@@ -53,6 +53,13 @@ highway=*
 	    }
 
 #------------------------------------------------------------------------------
+
+# Remove access=yes from highways.
+
+highway=* & 
+      (access=yes|access=permissive|access=designated|access=official) 
+				{ delete access }
+
 # general access
 
 highway=* & impassable=yes   	{ set access=no; }
@@ -256,10 +263,11 @@ highway=motorway_link
 #--------------------------------------------------------------------------------------
 # motorway
 
-(highway=motorway|highway=motorway_link) & destination=*
-		{
-		  set mkgmap:mkgmap:display_name='${ref} (${destination})';
-		}
+# Set the routing direction
+(highway=motorway|highway=trunk ) & 
+    ref=* & 
+    destination=* { add mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=> |subst:/=> })' }
+
 
 highway=motorway
 		{
@@ -284,11 +292,6 @@ highway=motorway_link  	{ set ref = '' }       						[0x00901 resolution 24 road
 
 #--------------------------------------------------------------------------------------
 # trunk
-
-(highway=trunk|highway=trunk_link) & destination=*
-		{
-		  set mkgmap:display_name='${ref} (${destination})';
-		}
 
 highway=trunk
 		{
@@ -351,7 +354,7 @@ highway=secondary                           						[0x04 resolution 24 road_class
 highway=secondary_link                      						[0x12004 resolution 22-22 continue with_actions]
 highway=secondary_link                      						[0x11004 resolution 23-23 continue with_actions]
 highway=secondary_link & construction=minor						[0x00804 resolution 24 road_class=3 road_speed=2]
-highway=secondary_link  	{ set ref = '' }						[0x00804 resolution 24 road_class=3 road_speed=3]
+highway=secondary_link  { set ref = '' }						[0x00804 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
