@@ -297,12 +297,11 @@ railway=halt 		{ name '${name} (${route_ref})'; } 		[0x2f08 resolution 24]
 
 # Transit Service
 
-
 railway=tram_stop | amenity=bus_station | highway=bus_stop {
 	      name '${name} (${route_ref})';
 	      } 							[0x2f17 resolution 24]
-amenity=ferry_terminal							[0x2f16 resolution 24]
-#amenity=taxi
+
+
 
 
 #------------------------------------------------------------------------------
@@ -794,8 +793,7 @@ waterway=bootyard | amenity=boat_storage		[0x2f13 resolution 24]
 # Social Service
 
 # Communications
-(man_made=tower & tower:type=communication) |
-      man_made=communications_tower			[0x2f16 resolution 24]
+
 
 
 #------------------------------------------------------------------------------
