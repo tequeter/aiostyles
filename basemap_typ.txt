@@ -10527,7 +10527,53 @@ DayXpm="14 16 98 2"   Colormode=32
 
 [_point]
 Type=0x02f
-SubType=0x16
+SubType=0x17
+String1=0x02,Haltestelle
+String2=0x04,Tram / Bus stop
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+DayXpm="12 12 21 2"   Colormode=32
+"!!	c #000000"  canalalpha=15
+"!#	c #009500"  canalalpha=14
+"!%	c #009500"  canalalpha=5
+"!?	c #009500"  canalalpha=4
+"!$	c #009500"  canalalpha=11
+"!*	c #009500"  canalalpha=5
+"!=	c #009500"  canalalpha=1
+"!1	c #399500"  canalalpha=12
+"!2	c #BDCA00"  canalalpha=0
+"!3	c #BDFF00"  canalalpha=0
+"!4	c #7BCA00"  canalalpha=4
+"!5	c #FFFF00"  canalalpha=0
+"!6	c #FFFF00"  canalalpha=0
+"!7	c #FFFF00"  canalalpha=0
+"!8	c #FFFF00"  canalalpha=0
+"!9	c #399500"  canalalpha=0
+"#!	c #399500"  canalalpha=0
+"##	c #399500"  canalalpha=0
+"#%	c #399500"  canalalpha=0
+"#?	c #009500"  canalalpha=0
+"#$	c #399500"  canalalpha=0
+"!!!!!#!%!?!$!$!?!%!#!!!!"
+"!!!*!=!1!2!3!3!2!1!=!*!!"
+"!#!=!4!5!6!7!7!6!5!4!=!#"
+"!%!1!8!9#!!7!7#!!9!8!1!%"
+"!?!2!7###%!7!7#%##!7!2!?"
+"!$!3!7###?#$#$#?##!7!3!$"
+"!$!3!7###?#$#$#?##!7!3!$"
+"!?!2!7###%!7!7#%##!7!2!?"
+"!%!1!8!9#!!7!7#!!9!8!1!%"
+"!#!=!4!5!6!7!7!6!5!4!=!#"
+"!!!*!=!1!2!3!3!2!1!=!*!!"
+"!!!!!#!%!?!$!$!?!%!#!!!!"
+;123456789012
+[end]
+
+
+[_point]
+Type=0x02f
+SubType=0x18
 String1=0x02,Fähre
 ExtendedLabels=N
 DayXpm="16 16 52 2"   Colormode=16
@@ -10602,51 +10648,6 @@ DayXpm="16 16 52 2"   Colormode=16
 ;1234567890123456
 [end]
 
-
-[_point]
-Type=0x02f
-SubType=0x17
-String1=0x02,Haltestelle
-String2=0x04,Tram / Bus stop
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-DayXpm="12 12 21 2"   Colormode=32
-"!!	c #000000"  canalalpha=15
-"!#	c #009500"  canalalpha=14
-"!%	c #009500"  canalalpha=5
-"!?	c #009500"  canalalpha=4
-"!$	c #009500"  canalalpha=11
-"!*	c #009500"  canalalpha=5
-"!=	c #009500"  canalalpha=1
-"!1	c #399500"  canalalpha=12
-"!2	c #BDCA00"  canalalpha=0
-"!3	c #BDFF00"  canalalpha=0
-"!4	c #7BCA00"  canalalpha=4
-"!5	c #FFFF00"  canalalpha=0
-"!6	c #FFFF00"  canalalpha=0
-"!7	c #FFFF00"  canalalpha=0
-"!8	c #FFFF00"  canalalpha=0
-"!9	c #399500"  canalalpha=0
-"#!	c #399500"  canalalpha=0
-"##	c #399500"  canalalpha=0
-"#%	c #399500"  canalalpha=0
-"#?	c #009500"  canalalpha=0
-"#$	c #399500"  canalalpha=0
-"!!!!!#!%!?!$!$!?!%!#!!!!"
-"!!!*!=!1!2!3!3!2!1!=!*!!"
-"!#!=!4!5!6!7!7!6!5!4!=!#"
-"!%!1!8!9#!!7!7#!!9!8!1!%"
-"!?!2!7###%!7!7#%##!7!2!?"
-"!$!3!7###?#$#$#?##!7!3!$"
-"!$!3!7###?#$#$#?##!7!3!$"
-"!?!2!7###%!7!7#%##!7!2!?"
-"!%!1!8!9#!!7!7#!!9!8!1!%"
-"!#!=!4!5!6!7!7!6!5!4!=!#"
-"!!!*!=!1!2!3!3!2!1!=!*!!"
-"!!!!!#!%!?!$!$!?!%!#!!!!"
-;123456789012
-[end]
 
 
 [_point]

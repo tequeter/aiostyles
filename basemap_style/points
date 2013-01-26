@@ -89,7 +89,7 @@ natural=bay & name=* 							[0x6503 resolution 24]
 # 0x6407	# cove
 natural=waterfall | waterway=waterfall 					[0x6508 resolution 24]
 # 0c6509	# geyser
-natural=glacier  	
+natural=glacier
       { name '${name} (${ele} m)' | '${name}' | '(${ele} m)' } 		[0x650a resolution 22]
 harbour=*								[0x650b	resolution 24]
 place=island    							[0x650c resolution 20]
@@ -154,28 +154,37 @@ natural=tree 								[0x1150b resolution 24]	# type without category
 # Exit
 
 # Exit without services
-highway=motorway_junction 	{ name '${ref} ${name}' | '${ref}' | '${name}'; }	[0x2000 resolution 22]
-
 # 0x20ss
-# 0x27ss
 
 # Exit with facilities
 # 0x21ss
+highway=motorway_junction & car_repair=yes				[0x2100 resolution 24]
 
 # Exit with restroom
 # 0x22ss
+highway=motorway_junction & (restroom=yes | toilets=yes | toilet=yes)	[0x2200 resolution 24]
 
 # Exit with convenience storey
 # 0x23ss
+highway=motorway_junction & shop=convenience				[0x2300 resolution 24]
 
 # Weight Station
+highway=motorway_junction & weight_station=yes				[0x2400 resolution 24]
 # 0x24ss
 
 # Toll Booth
 barrier=toll_booth { add toll=yes; } 					[0x2500 resolution 24]
+highway=motorway_junction & tool_booth=yes				[0x2501 resolution 24]
 
 # Exit with information
 # 0x26ss
+highway=motorway_junction & information=yes				[0x2600 resolution 24]
+
+# Exit without services
+# 0x27ss
+highway=motorway_junction
+	{ name '${ref} ${name}' | '${ref}' | '${name}'; }		[0x2700 resolution 22]
+
 
 #------------------------------------------------------------------------------
 # Fuel
@@ -216,7 +225,7 @@ highway=services | highway=rest_area 					[0x2f0c resolution 24]
 amenity=car_wash 							[0x2f0e resolution 24]
 
 # Truck Stop
-# 0x2f16
+amenity=truck_stop							[0x2f16 resolution 24]
 
 # 0x4css	# information
 (tourism=information
@@ -244,7 +253,7 @@ amenity=parking
 	& (access=private)		 				[0x4d03 resolution 24]
 
 amenity=parking								[0x4d00 resolution 24]
-							
+
 
 amenity=toilets 							[0x4e00 resolution 24]
 # 0x4ess	# restroom
@@ -281,42 +290,49 @@ aeroway=helipad & mkgmap:area2poi!=true 				[0x5904 resolution 24]
 
 
 # Ground Transportation
+
 railway=station		{ name '${name} (${route_ref})'; } 		[0x2f08 resolution 23]
 railway=halt 		{ name '${name} (${route_ref})'; } 		[0x2f08 resolution 24]
 
 
 # Transit Service
 
+
 railway=tram_stop | amenity=bus_station | highway=bus_stop {
 	      name '${name} (${route_ref})';
 	      } 							[0x2f17 resolution 24]
-
+amenity=ferry_terminal							[0x2f16 resolution 24]
 #amenity=taxi
-#amenity=ferry_terminal
+
 
 #------------------------------------------------------------------------------
 # Lodging
 
-# Hotel(other)  
+# Hotel(other)
 #[0x2b00]
 
 # Hotel/Motel
-tourism=hotel | tourism=motel				[0x2b01 resolution 24]
+tourism=hotel | tourism=motel
+      { set name='${name} (${stars} *)' | '${name}' | '${stars} *' }
+							[0x2b01 resolution 24]
 
 # Bed & Breakfast Inn
 tourism=guest_house 					[0x2b02 resolution 24]
+tourism=hostel						[0x2b05 resolution 24]
 
 # Campground/RV Park
 tourism=camp_site & tents!=no		 		[0x2b03 resolution 24]
 tourism=caravan_site & tents=yes		 	[0x2b03 resolution 24]
 
 # Resort
-tourism=resort 						[0x2b04 resolution 24]
+#tourism=resort 					[0x2b04 resolution 24]
 
 # Other
-tourism=alpine_hut 					[0x2b05 resolution 24]
-tourism=hostel 						[0x2b06 resolution 24]
-tourism=chalet 						[0x2b09 resolution 24]
+tourism=alpine_hut 					[0x2b06 resolution 24]
+tourism=hut 						[0x2b06 resolution 24]
+tourism=basic_hut					[0x2b06 resolution 24]
+
+#tourism=chalet 					[0x2b09 resolution 24]
 
 #------------------------------------------------------------------------------
 # Attraction
@@ -468,7 +484,7 @@ amenity=ice_cream | cuisine=ice_cream 			[0x4502 resolution 24]
 shop=department_store & mkgmap:area2poi!=true		[0x2e01 resolution 24]
 
 # Grocery # Lebensmittel
-shop=greengrocer | shop=organic | 
+shop=greengrocer | shop=organic |
 shop=butcher | amenity=market_place			[0x2e02 resolution 24]
 
 # General Merchandise # Gemischtwaren
@@ -624,7 +640,7 @@ amenity=bank 	{
 amenity=bureau_de_change {
 	      name '${operator}' | '${name}'
 	      } 					[0x2f06 resolution 24]
-	      
+
 # Utility
 amenity=waste_transfer_station | amenity=recycling 	{
 	      add name='Recycling'
