@@ -158,19 +158,20 @@ natural=tree 								[0x1150b resolution 24]	# type without category
 
 # Exit with facilities
 # 0x21ss
-highway=motorway_junction & car_repair=yes				[0x2100 resolution 24]
+(exit_to=* | highway=motorway_junction) & car_repair=yes				[0x2100 resolution 24]
 
 # Exit with restroom
 # 0x22ss
-highway=motorway_junction & (restroom=yes | toilets=yes | toilet=yes)	[0x2200 resolution 24]
+(exit_to=* | highway=motorway_junction) & (restroom=yes | toilets=yes | toilet=yes)	[0x2200 resolution 24]
 
 # Exit with convenience storey
 # 0x23ss
-highway=motorway_junction & shop=convenience				[0x2300 resolution 24]
+(exit_to=* | highway=motorway_junction) & shop=convenience				[0x2300 resolution 24]
 
 # Weight Station
-highway=motorway_junction & weight_station=yes				[0x2400 resolution 24]
 # 0x24ss
+(exit_to=* | highway=motorway_junction) & weight_station=yes				[0x2400 resolution 24]
+
 
 # Toll Booth
 barrier=toll_booth { add toll=yes; } 					[0x2500 resolution 24]

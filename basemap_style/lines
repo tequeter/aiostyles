@@ -263,11 +263,11 @@ highway=motorway_link
 #--------------------------------------------------------------------------------------
 # motorway
 
-# Set the routing direction
-(highway=motorway|highway=trunk ) & 
-    ref=* & 
-    destination=* { add mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=> |subst:/=> })' }
 
+(highway=motorway|highway=motorway_link) & destination=*
+		 {
+		  set mkgmap:mkgmap:display_name='${ref} (${destination})';
+		  }
 
 highway=motorway
 		{
@@ -293,6 +293,12 @@ highway=motorway_link  	{ set ref = '' }       						[0x00901 resolution 24 road
 #--------------------------------------------------------------------------------------
 # trunk
 
+
+(highway=trunk|highway=trunk_link) & destination=*
+		{
+		  set mkgmap:display_name='${ref} (${destination})';
+		  }
+
 highway=trunk
 		{
 		  add mkgmap:road-speed-min='3';
@@ -315,6 +321,12 @@ highway=trunk_link   	{ set ref = '' }       						[0x00902 resolution 24 road_c
 
 #--------------------------------------------------------------------------------------
 # primary
+
+
+(highway=primary|highway=primary_link) & destination=*
+		{
+		  set mkgmap:display_name='${ref} (${destination})';
+		  }
 
 highway=primary
 		{
