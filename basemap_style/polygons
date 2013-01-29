@@ -13,6 +13,9 @@ addr:housenumber=* & name!=* 		{ set name='${addr:housenumber}' }
 building=* 								[0x13 resolution 24 continue with_actions]
 
 
+# platforms, if they are an area or closed polygons
+(railway=platform | public_transport=platform) & area=yes		[0x0d resolution 23]
+
 #------------------------------------------------------------------------------
 # amenity
 
@@ -54,11 +57,11 @@ landuse=forest 								[0x20 resolution 24-21]
 landuse=meadow 								[0x53 resolution 20]
 
 landuse=commercial 							[0x0f resolution 20]
-landuse=industrial 							[0x0c resolution 20]
+landuse=industrial					[0x0c resolution 20]
 landuse=retail 								[0x08 resolution 20]
 
-#landuse=railway 							[0x0c resolution 20]
-landuse=reservoir | landuse=basin 					[0x3f resolution 20]
+
+landuse=reservoir | landuse=basin 					[0x3f resolution 22]
 landuse=village_green | landuse=recreation_ground | landuse=grass 	[0x52 resolution 21]
 
 landuse=allotments 							[0x4e resolution 21]

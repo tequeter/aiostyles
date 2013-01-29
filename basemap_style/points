@@ -207,6 +207,11 @@ amenity=car_rental | amenity=car_sharing 				[0x2f02 resolution 24]
 shop=car_repair 							[0x2f03 resolution 24]
 
 # Dealer/Auto Parts
+
+# set name for the german car-part-dealer AutoTeileUnger to only one
+shop=car_parts & name~'[Aa][Tt][Uu]*'
+			{set name='A.T.U'}
+
 shop=car | shop=car_parts 						[0x2f07 resolution 24]
 # 0x31ss
 
@@ -298,7 +303,12 @@ railway=halt 		{ name '${name} (${route_ref})'; } 		[0x2f08 resolution 24]
 
 # Transit Service
 
-railway=tram_stop | amenity=bus_station | highway=bus_stop {
+
+railway=tram_stop |
+amenity=bus_station |
+highway=bus_stop |
+public_transport=platform
+{
 	      name '${name} (${route_ref})';
 	      } 							[0x2f17 resolution 24]
 
