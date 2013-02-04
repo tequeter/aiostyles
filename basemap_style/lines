@@ -284,9 +284,21 @@ highway=motorway & junction=roundabout 							[0x00c01 resolution 24 road_class=
 highway=motorway & construction=minor	   						[0x01 resolution 24 road_class=4 road_speed=3]
 highway=motorway			   						[0x01 resolution 24 road_class=4 road_speed=6]
 
+
+
 highway=motorway_link                       						[0x12001 resolution 21-20 continue with_actions]
 highway=motorway_link                       						[0x11001 resolution 23-22 continue with_actions]
+
 highway=motorway_link & construction=minor						[0x00901 resolution 24 road_class=4 road_speed=2]
+
+#highway=motorway_link & mkgmap:exit_hint=true
+#   { delete display_name;
+#     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
+#          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
+#          'Exit ${mkgmap:exit_hint_exit_to}' |
+#          'Exit ${mkgmap:exit_hint_name}' |
+#          'Exit ${mkgmap:exit_hint_ref}' }						[0x00901 resolution 24 road_class=4 road_speed=3]
+
 highway=motorway_link  	{ set ref = '' }       						[0x00901 resolution 24 road_class=4 road_speed=3]
 
 
@@ -316,7 +328,17 @@ highway=trunk                               						[0x02 resolution 24 road_class
 
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 23-22 continue with_actions]
+
 highway=trunk_link & construction=minor							[0x00902 resolution 24 road_class=3 road_speed=2]
+
+#highway=trunk_link & mkgmap:exit_hint=true
+#   { delete display_name;
+#     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
+#          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
+#          'Exit ${mkgmap:exit_hint_exit_to}' |
+#          'Exit ${mkgmap:exit_hint_name}' |
+#          'Exit ${mkgmap:exit_hint_ref}' }						[0x00902 resolution 24 road_class=3 road_speed=3]
+
 highway=trunk_link   	{ set ref = '' }       						[0x00902 resolution 24 road_class=3 road_speed=3]
 
 
@@ -451,7 +473,7 @@ highway=cycleway
 
 
 highway=cycleway                            						[0x11016 resolution 22-21 continue with_actions]
-highway=cycleway                            						[0x16 resolution 24-23]
+highway=cycleway                            						[0x16 road_class=0 road_speed=0 resolution 24-23]
 
 # cycleway overlay
 highway=* & bicycle=designated								[0x10416 resolution 24 continue with_actions]
@@ -474,7 +496,7 @@ highway=footway & (bicycle=yes | bicycle=allowed | bicycle=designated)
 		}
 
 highway=footway                             						[0x1100d resolution 22-22 continue with_actions]
-highway=footway                             						[0x0d resolution 24-23]
+highway=footway                             						[0x0d road_class=0 road_speed=0 resolution 24-23]
 
 # footway overlay
 highway=* & foot=designated								[0x10415 resolution 24 continue with_actions]
@@ -509,7 +531,7 @@ highway=steps
 		  add motorcycle=no;
 		  add bicycle=no;
 		  add mkgmap:unpaved=1;
-		}									[0x13 resolution 24-23]
+		}									[0x13 road_class=0 road_speed=0 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # tracks
@@ -566,7 +588,7 @@ highway=path & (foot=designated | foot=yes)					{ add foot=yes; }
 
 
 highway=path										[0x11012 resolution 22-22 continue with_actions]
-highway=path                                            				[0x12 resolution 24-23]
+highway=path                                            				[0x12 road_class=0 road_speed=0 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
