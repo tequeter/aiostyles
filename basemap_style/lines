@@ -263,10 +263,10 @@ highway=motorway_link
 #--------------------------------------------------------------------------------------
 # motorway
 
-highway=motorway &
-    ref=* &
-    destination=*
-    { add mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
+#highway=motorway &
+#    ref=* &
+#    destination=*
+#    { add mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
 
 
 highway=motorway
@@ -291,13 +291,13 @@ highway=motorway_link                       						[0x11001 resolution 23-22 cont
 
 highway=motorway_link & construction=minor						[0x00901 resolution 24 road_class=4 road_speed=2]
 
-#highway=motorway_link & mkgmap:exit_hint=true
-#   { delete display_name;
-#     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
-#          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
-#          'Exit ${mkgmap:exit_hint_exit_to}' |
-#          'Exit ${mkgmap:exit_hint_name}' |
-#          'Exit ${mkgmap:exit_hint_ref}' }						[0x00901 resolution 24 road_class=4 road_speed=3]
+highway=motorway_link & mkgmap:exit_hint=true
+   { delete display_name;
+     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
+          'Exit ${mkgmap:exit_hint_exit_to}' |
+          'Exit ${mkgmap:exit_hint_name}' |
+          'Exit ${mkgmap:exit_hint_ref}' }						[0x01 resolution 24 road_class=4 road_speed=3]
 
 highway=motorway_link  	{ set ref = '' }       						[0x00901 resolution 24 road_class=4 road_speed=3]
 
@@ -305,10 +305,10 @@ highway=motorway_link  	{ set ref = '' }       						[0x00901 resolution 24 road
 #--------------------------------------------------------------------------------------
 # trunk
 
-highway=trunk &
-    ref=* &
-    destination=*
-    { add mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
+#highway=trunk &
+#    ref=* &
+#    destination=*
+#    { add mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
 
 
 
@@ -331,13 +331,13 @@ highway=trunk_link                          						[0x11002 resolution 23-22 cont
 
 highway=trunk_link & construction=minor							[0x00902 resolution 24 road_class=3 road_speed=2]
 
-#highway=trunk_link & mkgmap:exit_hint=true
-#   { delete display_name;
-#     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
-#          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
-#          'Exit ${mkgmap:exit_hint_exit_to}' |
-#          'Exit ${mkgmap:exit_hint_name}' |
-#          'Exit ${mkgmap:exit_hint_ref}' }						[0x00902 resolution 24 road_class=3 road_speed=3]
+highway=trunk_link & mkgmap:exit_hint=true
+   { delete display_name;
+     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
+          'Exit ${mkgmap:exit_hint_exit_to}' |
+          'Exit ${mkgmap:exit_hint_name}' |
+          'Exit ${mkgmap:exit_hint_ref}' }						[0x02 resolution 24 road_class=3 road_speed=3]
 
 highway=trunk_link   	{ set ref = '' }       						[0x00902 resolution 24 road_class=3 road_speed=3]
 
