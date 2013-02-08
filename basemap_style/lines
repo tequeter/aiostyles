@@ -277,11 +277,14 @@ highway=motorway
 		  '${ref|highway-symbol:hbox}' |
 		  '${streetname}';
 		  }
+		  
 
 highway=motorway                            						[0x12001 resolution 21-12 continue with_actions]
 highway=motorway                            						[0x11001 resolution 23-22 continue with_actions]
 highway=motorway & junction=roundabout 							[0x00c01 resolution 24 road_class=1 road_speed=3]
 highway=motorway & construction=minor	   						[0x01 resolution 24 road_class=4 road_speed=3]
+
+
 highway=motorway			   						[0x01 resolution 24 road_class=4 road_speed=6]
 
 
@@ -319,26 +322,28 @@ highway=trunk
 		  '${ref|highway-symbol:hbox}' |
 		  '${name}';
 		}
-
+		
 highway=trunk                               						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk                               						[0x11002 resolution 23-22 continue with_actions]
 highway=trunk & junction=roundabout	 						[0x00c02 resolution 24 road_class=1 road_speed=3]
 highway=trunk & construction=minor							[0x02 resolution 24 road_class=3 road_speed=4]
 highway=trunk                               						[0x02 resolution 24 road_class=4 road_speed=6]
 
+
+
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 23-22 continue with_actions]
 
 highway=trunk_link & construction=minor							[0x00902 resolution 24 road_class=3 road_speed=2]
 
-highway=trunk_link & mkgmap:exit_hint=true
-   { delete display_name;
-     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
-          'Exit ${mkgmap:exit_hint_exit_to}' |
-          'Exit ${mkgmap:exit_hint_name}' |
-          'Exit ${mkgmap:exit_hint_ref}' }						[0x02 resolution 24 road_class=3 road_speed=3]
-
+#highway=trunk_link & mkgmap:exit_hint=true
+#   { delete display_name;
+#     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
+#          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
+#          'Exit ${mkgmap:exit_hint_exit_to}' |
+#          'Exit ${mkgmap:exit_hint_name}' |
+#          'Exit ${mkgmap:exit_hint_ref}' }						[0x02 resolution 24 road_class=3 road_speed=3]
+          
 highway=trunk_link   	{ set ref = '' }       						[0x00902 resolution 24 road_class=3 road_speed=3]
 
 
