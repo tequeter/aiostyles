@@ -1,3 +1,7 @@
+2013-02-08
+
+added support for '--process-exists' on motorway-link
+
 
 2013-01-23
 
@@ -5,10 +9,10 @@ Colour changed for primary and trunk
 Some POIs to correct groups, some temorarily disabled, come back soon
 
 
-
 2013-01-10
 change colour for trunk
 add overlay for living_street
+
 
 2013-01-07
 use "include='address';" in lines, points and polygons for addess-searching
