@@ -9,15 +9,15 @@ motorway and trunk nonroutable types
 2013-02-09
 
 AIO-basemap:
-remove some overlays in 'lines'
-use highway=path with bicycle=designated|yes as highway=cycleway
-change road_speed for minor roads to adjust bicycle-routing (incomplete)
 adjust some restrictions for barrier=bollard
 
 AIO-bikemap:
 add AIO-bikemap with changed routing-rules, work in progress,
 it's difficult to adapt the way-types from motor-vehicles to bicycles
-Any hints?
+remove some overlays in 'lines'
+use highway=path with bicycle=designated|yes as highway=cycleway
+change road_speed for minor roads to adjust bicycle-routing (incomplete)
+
 
 2013-02-08
 
