@@ -191,8 +191,8 @@ highway=motorway_junction
 # Fuel
 
 # Auto Fuel
-amenity=fuel & name!=* { set name ='${operator}'}
-amenity=fuel 								[0x2f01 resolution 24]
+#amenity=fuel & name!=* { set name ='${operator}'}
+#amenity=fuel 								[0x2f01 resolution 24]
 
 # 0x44ss
 
@@ -201,18 +201,18 @@ amenity=fuel 								[0x2f01 resolution 24]
 # Auto Services
 
 # Auto Rental
-amenity=car_rental | amenity=car_sharing 				[0x2f02 resolution 24]
+#amenity=car_rental | amenity=car_sharing 				[0x2f02 resolution 24]
 
 # Auto Repair
-shop=car_repair 							[0x2f03 resolution 24]
+#shop=car_repair 							[0x2f03 resolution 24]
 
 # Dealer/Auto Parts
 
 # set name for the german car-part-dealer AutoTeileUnger to only one
-shop=car_parts & name~'[Aa][Tt][Uu]*'
-			{set name='A.T.U'}
+#shop=car_parts & name~'[Aa][Tt][Uu]*'
+#			{set name='A.T.U'}
 
-shop=car | shop=car_parts 						[0x2f07 resolution 24]
+#shop=car | shop=car_parts 						[0x2f07 resolution 24]
 # 0x31ss
 
 # Wrecker Service
@@ -228,10 +228,10 @@ highway=services | highway=rest_area 					[0x2f0c resolution 24]
 # 0x2f0d
 
 # Car Wash
-amenity=car_wash 							[0x2f0e resolution 24]
+#amenity=car_wash 							[0x2f0e resolution 24]
 
 # Truck Stop
-amenity=truck_stop							[0x2f16 resolution 24]
+#amenity=truck_stop							[0x2f16 resolution 24]
 
 # 0x4css	# information
 (tourism=information
@@ -555,7 +555,7 @@ shop=laundry | shop=dry_cleaning 			[0x2e19 resolution 24]
 shop=kiosk | shop=newsagent				[0x2e1a resolution 24]
 
 
-shop=motorcycle 					[0x2e1d resolution 24]
+#shop=motorcycle 					[0x2e1d resolution 24]
 #[0x2e1f resolution 24]
 
 #[0x2e22 resolution 24]

@@ -43,7 +43,7 @@ highway=*
 	      add mkgmap:unpaved=1;
 	    }
 
-(highway=bridleway | highway=path | highway=track | highway=unsurfaced)
+(highway=bridleway | highway=unsurfaced)
 	    & surface!=*
 	    & tracktype!=*
 	    & smoothness!=*

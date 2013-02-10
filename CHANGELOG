@@ -1,6 +1,11 @@
 2013-02-10
 
 tweak some access-restrictions for base- and bikemap -- work in progress
+path and track not per default unpaved
+if unpaved they are not usable for routing
+bicycle-routing for path should be excluded with bicycle=no, if 
+width<=2.0 metres
+track should be not routable if tracktype <=3
 
 AIO-Bikemap
 cycleroute highlighted

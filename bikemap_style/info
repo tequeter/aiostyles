@@ -6,7 +6,7 @@
 
 # A short one line description of the style
 #
-summary: The default style
+summary: The AIO-bikemap-style
 
 # Version of the style itself
 #
@@ -14,7 +14,7 @@ version=1.0
 
 # A longer description of the style.
 description {
-The AIO-style.
+The AIO-bikemap-style.
 This is a heavyweight style that is designed for use
-when mapping and especially in lightly covered areas.
+when cycling, routing over trunk and motorway is disabled
 }
