@@ -6,6 +6,10 @@ change color for motorway - yellow with red border, see openstreetmap.de --- don
 motorroad-overlay (only for pri, sec, ter) - blue border
 overlay for living_street - lightgrey with green dots, only resolution 24 --- done
 
+Bikemap 
+check the access-restrictions, 
+
+
 foot-routing
 bike-routing --- with the new AIO-bikemap --- testing
 hike-routing

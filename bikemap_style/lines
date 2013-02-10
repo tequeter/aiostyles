@@ -53,44 +53,51 @@ highway=*
 	    }
 
 #------------------------------------------------------------------------------
-
+# general access
 # Remove access=yes from highways.
 
 highway=* &
       (access=yes|access=permissive|access=designated|access=official)
 				{ delete access }
 
-# general access
+# change access=* to more useful tags
 
 highway=* & impassable=yes   	{ set access=no; }
+highway=* & access=private   	{ add access=no; }
 
-highway=* & access=private   	{
-				set motorcar=private;
-				set motorcycle=private;
-				delete access;
-				}
-
-highway=* & vehicle=*        	{
-				add motorcycle='${vehicle}';
-				add motorcar='${vehicle}';
-				add bicycle='${vehicle}';
-				add goods='${vehicle}';
-				add hgv='${vehicle}';
-				}
-
-highway=* & motor_vehicle=*  	{
+highway=* & (access=destination |
+	     access=delivery |
+	     access=agricultural |
+	     access=forestry |
+	     access=emergency |
+	     motor_vehicle=destination |
+	     motor_vehicle=delivery |	     
+	     motor_vehicle=agricultural |
+	     motor_vehicle=forestry |
+	     motor_vehicle=emergency)
+				{
+				set motor_vehicle=no;
 				add motorcycle='${motor_vehicle}';
 				add motorcar='${motor_vehicle}';
 				add goods='${motor_vehicle}';
-				add hgv='${motor_vehicle}';
+				add hgv='${motor_vehicle}';				
+				delete access;
 				}
-
-highway=* & motorcar=*       	{
-				add goods='${motorcar}';
-				add hgv='${motorcar}';
-				}
-
-
+				
+highway=* & (vehicle=private |
+	     vehicle=destination |
+	     vehicle=delivery |
+	     vehicle=agricultural |
+	     vehicle=forestry |
+	     vehicle=emergency)
+				{
+				set vehicle=no;
+				add motorcar='${vehicle}';
+				add motorcycle='${vehicle}';
+				add bicycle='${vehicle}';
+				add goods='${vehicle}';
+				add hgv='${vehicle}';				
+				}		
 
 #------------------------------------------------------------------------------
 
@@ -186,6 +193,8 @@ highway=*
 	     cycleway:right=lane)									[0x10416 resolution 24-23 continue with_actions]
 
 
+cycle_network=yes & cn_name=* 			{ set name='${cn_name}' } 				[0x10110 resolution 23 continue]
+cycle_network=yes & cn_name!=* 										[0x10110 resolution 23 continue]
 
 #-----------------------------------------------------------------------------
 # set highway name equal to 'mkgmap:display_name' to prevent different naming
@@ -210,29 +219,6 @@ highway=construction
 	    } 												[0x10001 resolution 24]
 
 #------------------------------------------------------------------------------
-# access-restrictions
-
-highway=*
-	   & (motor_vehicle=no |
-	      motor_vehicle=destination |
-	      motor_vehicle=agricultural |
-	      motor_vehicle=private)
-	    {
-	      add motorcar=no;
-	      add motorcycle=no;
-	    }
-
-highway=*
-	   & (vehicle=no |
-	      vehicle=destination |
-	      vehicle=agricultural |
-	      vehicle=private)
-	    {
-	      add motorcar=no;
-	      add motorcycle=no;
-	      add bicycle=no;
-	    }
-
 # access restrictions for germany (and other?) foot=no and bicycle=no
 # uncomment to enable
 
@@ -243,18 +229,18 @@ highway=trunk_link 		{ add foot=no; add bicycle=no; add access=no }
 highway=* & motorroad=yes 	{ add foot=no; add bicycle=no; add access=no }
 
 # Validation-like checks
-highway=motorway_link
-		& oneway!=yes
-		& oneway!=no
-		& oneway!=true
-		& oneway!=1
-		& oneway!=-1
-		& junction!=roundabout
-		& access!=no
-		& access!=emergency
-		{
-		  echo "motorway_link lacks oneway"
-		}
+#highway=motorway_link
+#		& oneway!=yes
+#		& oneway!=no
+#		& oneway!=true
+#		& oneway!=1
+#		& oneway!=-1
+#		& junction!=roundabout
+#		& access!=no
+#		& access!=emergency
+#		{
+#		  echo "motorway_link lacks oneway"
+#		}
 
 
 
@@ -262,6 +248,7 @@ highway=motorway_link
 
 #--------------------------------------------------------------------------------------
 # motorway
+## set to not routable types, only for orientation
 
 highway=motorway
 		{
