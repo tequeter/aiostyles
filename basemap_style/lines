@@ -177,6 +177,9 @@ man_made=dyke | embankment=*										[0x10f00 resolution 24-23 continue with_ac
 # tram overlay
 highway=* & railway=tram										[0x10700 resolution 24-23 continue with_actions]
 
+# bridleway overlay
+highway=* & horse=designated										[0x10418 resolution 24 continue with_actions]
+
 # cyclelane overlay
 highway=*
 	  & (cycleway=both |
@@ -262,7 +265,6 @@ highway=motorway & construction=minor	   						[0x01 resolution 24 road_class=4 
 highway=motorway			   						[0x01 resolution 24 road_class=4 road_speed=6]
 
 
-
 highway=motorway_link                       						[0x12001 resolution 21-20 continue with_actions]
 highway=motorway_link                       						[0x11001 resolution 23-22 continue with_actions]
 highway=motorway_link & construction=minor						[0x00901 resolution 24 road_class=4 road_speed=2 continue with_actions]
@@ -303,12 +305,14 @@ highway=trunk &
     destination=*
     { set mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
 
+    
+highway=trunk_link 	{ set ref = '' }    
+    
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 23-22 continue with_actions]
 
-highway=trunk_link & construction=minor			{ set ref = '' }		[0x00902 resolution 24 road_class=3 road_speed=2]
-          
-highway=trunk_link          				{ set ref = '' }		[0x00902 resolution 24 road_class=3 road_speed=3]
+highway=trunk_link & construction=minor							[0x00902 resolution 24 road_class=3 road_speed=2]
+highway=trunk_link          								[0x00902 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -328,10 +332,12 @@ highway=primary & junction=roundabout							[0x00c03 resolution 24 road_class=1 
 highway=primary & construction=minor							[0x03 resolution 24 road_class=3 road_speed=3]
 highway=primary        									[0x03 resolution 24 road_class=3 road_speed=5]
 
+
+highway=primary_link	{ set ref = '' }
 highway=primary_link 									[0x12003 resolution 22-21 continue with_actions]
 highway=primary_link									[0x11003 resolution 23-23 continue with_actions]
 highway=primary_link & construction=minor						[0x00803 resolution 24 road_class=3 road_speed=2]
-highway=primary_link	{ set ref = '' }						[0x00803 resolution 24 road_class=3 road_speed=3]
+highway=primary_link									[0x00803 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -350,10 +356,11 @@ highway=secondary & junction=roundabout 						[0x00c04 resolution 24 road_class=
 highway=secondary & construction=minor	    						[0x04 resolution 24 road_class=3 road_speed=3]
 highway=secondary                           						[0x04 resolution 24 road_class=3 road_speed=4]
 
+highway=secondary_link  { set ref = '' }
 highway=secondary_link                      						[0x12004 resolution 22-22 continue with_actions]
 highway=secondary_link                      						[0x11004 resolution 23-23 continue with_actions]
 highway=secondary_link & construction=minor						[0x00804 resolution 24 road_class=3 road_speed=2]
-highway=secondary_link  { set ref = '' }						[0x00804 resolution 24 road_class=3 road_speed=3]
+highway=secondary_link									[0x00804 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -372,10 +379,11 @@ highway=tertiary & junction=roundabout	 						[0x00c05 resolution 24 road_class=
 highway=tertiary & construction=minor						        [0x05 resolution 24 road_class=2 road_speed=2]
 highway=tertiary                            						[0x05 resolution 24 road_class=3 road_speed=3]
 
+highway=tertiary_link  	{ set ref = '' }
 highway=tertiary_link                       						[0x12005 resolution 22-22 continue with_actions]
 highway=tertiary_link                       						[0x11005 resolution 23-23 continue with_actions]
 highway=tertiary_link & construction=minor						[0x00805 resolution 24 road_class=2 road_speed=1]
-highway=tertiary_link  	{ set ref = '' }						[0x00805 resolution 24 road_class=2 road_speed=2]
+highway=tertiary_link									[0x00805 resolution 24 road_class=2 road_speed=2]
 
 #------------------------------------------------------------------------------
 # minor roads
@@ -413,18 +421,6 @@ highway=road										[0x2c resolution 24]
 #------------------------------------------------------------------------------
 # designated ways
 
-# bridleway
-highway=bridleway
-		{
-		  set highway=path;
-		  add horse=designated;
-		  add motorcar=no;
-		}
-
-# bridleway overlay
-highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
-
-
 # pathes with bicycle=*
 
 highway=path & (bicycle=designated | bicycle=allowed | bicycle=yes) 		
@@ -434,13 +430,7 @@ highway=path & (bicycle=designated | bicycle=allowed | bicycle=yes)
 
 
 # cycleway
-highway=cycleway & bicycle=designated
-		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add bicycle=yes;
-		  add foot=no;
-		}
+
 
 highway=cycleway
 		{
@@ -448,7 +438,11 @@ highway=cycleway
 		  add motorcycle=no;
 		  add bicycle=yes;
 		}
-
+		
+highway=cycleway & bicycle=designated
+		{
+		  add foot=no;
+		}
 
 highway=cycleway                            						[0x16 road_class=0 road_speed=1 resolution 24-23]
 
@@ -469,9 +463,6 @@ highway=footway
 
 highway=footway & (bicycle=yes | bicycle=allowed | bicycle=designated)
 		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add foot=yes;
 		  add bicycle=yes
 		}
 
@@ -489,10 +480,7 @@ highway=pedestrian
 
 highway=pedestrian & (bicycle=yes | bicycle=allowed | bicycle=designated)
 		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add bicycle=yes;
-		  add foot=yes;
+		  set bicycle=yes;
 		}
 
 
@@ -501,12 +489,20 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 		  add mkgmap:dead-end-check=false
 		}									[0x0d road_class=0 road_speed=0 resolution 24-23 ]
 
+# bridleway
+highway=bridleway
+		{
+		  set highway=path;
+		  add horse=designated;
+		  }
+
+		
 # steps
 highway=steps
 		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add bicycle=no;
+		  set motorcar=no;
+		  set motorcycle=no;
+		  set bicycle=no;
 		  add mkgmap:unpaved=1;
 		}									[0x13 road_class=0 road_speed=0 resolution 24-23]
 
@@ -517,11 +513,7 @@ highway=track & tracktype~'grade[3-5]'
 		{
 		  add motorcar=no;
 		  add motorcycle=no;
-		  add taxi=no;
-		  add bus=no;
-		  add delivery=no;
-		  add goods=no;
-		  add hgv=no;
+		  add mkgmap:unpaved=1;
 		}
 
 highway=track & tracktype=grade1							[0x0e    road_class=0 road_speed=1 resolution 24-23]
@@ -537,15 +529,8 @@ highway=path
 		{
 		  add motorcar=no;
 		  add motorcycle=no;
-		  add emergency=no;
-		  add taxi=no;
-		  add bus=no;
-		  add delivery=no;
-		  add goods=no;
-		  add hgv=no;
+		  add mkgmap:unpaved=1;
 		  }
-
-
 
 # pathes without foot/bicycle 
 

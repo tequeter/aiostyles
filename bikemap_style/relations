@@ -21,13 +21,41 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 	    network=icn | 
 	    icn=yes | 
 	    network=ncn | 
-	    ncn=yes | 
-	    network=rcn | 
-	    rcn=yes | 
+	    ncn=yes
+	      ) 
+		{ 
+		apply 
+		    { 
+		    set bicycle=yes;
+		    set icn_network=yes ;
+		    set cycle_network=yes ;
+		    set cn_name='$(cn_name),${ref}' | 
+		    '$(cn_name),${name}' | 
+		    '${ref}' | '${name}' 
+		    } 
+		 }
+		 
+(route=bicycle | route=mtb) & 
+	    ( 
 	    network=rcn | 
 	    rcn=yes | 
 	    network=tcn | 
-	    tcn=yes | 
+	    tcn=yes 
+	      ) 
+		{ 
+		apply 
+		    { 
+		    set bicycle=yes;
+		    set rcn_network=yes ;
+		    set cycle_network=yes ; 
+		    set cn_name='$(cn_name),${ref}' | 
+		    '$(cn_name),${name}' | 
+		    '${ref}' | '${name}' 
+		    } 
+		 }
+		 
+(route=bicycle | route=mtb) & 
+	    ( 
 	    network=lcn | 
 	    lcn=yes 
 	      ) 
@@ -35,6 +63,7 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 		apply 
 		    { 
 		    set bicycle=yes;
+		    set lcn_network=yes ;
 		    set cycle_network=yes ; 
 		    set cn_name='$(cn_name),${ref}' | 
 		    '$(cn_name),${name}' | 
@@ -42,4 +71,12 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 		    } 
 		 }
 
-
+type=route & route=*     
+		{ apply 
+		    { add route='${route}'; 
+		      add route:name='${name}'; 
+		      add route:ref='${ref}'; 
+		      add route:network='${network}'; 
+		      add route:importance='${importance}'; 
+		      } 
+		    }
