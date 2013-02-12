@@ -11,11 +11,6 @@
 
 include "address";
 
-#------------------------------------------------------------------------------
-# deprecated or undocumented tags
-
-highway=unsurfaced  								{ set highway=track; add surface=unpaved; }
-highway=byway       								{ set highway=track; add surface=unpaved; }
 
 #------------------------------------------------------------------------------
 # flag unpaved roads
@@ -63,25 +58,30 @@ highway=* &
 # change access=* to more useful tags
 
 highway=* & impassable=yes   	{ set access=no; }
-highway=* & access=private   	{ add access=no; }
+highway=* & access=private   	{ set access=no; }
 
-highway=* & (access=destination |
-	     access=delivery |
-	     access=agricultural |
-	     access=forestry |
-	     access=emergency |
-	     motor_vehicle=destination |
+highway=* & access=destination |
+	    access=delivery |
+	    access=agricultural |
+	    access=forestry |
+	    access=emergency
+				{
+				add motor_vehicle='${access}';
+				delete access
+				}
+
+	     
+highway=* & (motor_vehicle=destination |
 	     motor_vehicle=delivery |	     
 	     motor_vehicle=agricultural |
 	     motor_vehicle=forestry |
-	     motor_vehicle=emergency)
+	     motor_vehicle=emergency |
+	     motor_vehicle=private)
 				{
 				set motor_vehicle=no;
 				add motorcycle='${motor_vehicle}';
 				add motorcar='${motor_vehicle}';
-				add goods='${motor_vehicle}';
-				add hgv='${motor_vehicle}';				
-				delete access;
+				delete motor_vehicle;
 				}
 				
 highway=* & (vehicle=private |
@@ -95,9 +95,9 @@ highway=* & (vehicle=private |
 				add motorcar='${vehicle}';
 				add motorcycle='${vehicle}';
 				add bicycle='${vehicle}';
-				add goods='${vehicle}';
-				add hgv='${vehicle}';				
+				delete vehicle;
 				}		
+
 
 #------------------------------------------------------------------------------
 
@@ -411,83 +411,100 @@ highway=service | highway=estate | highway=living_street           			[0x12007 r
 (highway=service | highway=estate | highway=living_street) & junction=roundabout	[0x00c07 resolution 24 road_class=0 road_speed=0]
 highway=service | highway=estate  							[0x07 resolution 24 road_class=0 road_speed=0]
 highway=living_street									[0x0071b resolution 24 road_class=0 road_speed=0]
-
-# roundabouts
-highway=* & junction=roundabout								[0x0c resolution 24 road_class=1 road_speed=1]
-
-# road = way typ not defined/unknown - not routable
-highway=road										[0x2c resolution 24]
+highway=raceway										[0x07 resolution 24-23]									
+highway=platform									[0x07 road_class=0 road_speed=0 resolution 24]
 
 #------------------------------------------------------------------------------
 # designated ways
 
-# pathes with bicycle=*
 
-highway=path & (bicycle=designated | bicycle=allowed | bicycle=yes) 		
+# pedestrian
+highway=pedestrian & (area!=yes & area!=true & area!=1)
 		{
-		  set highway=cycleway 
-		  }		
+		  add mkgmap:dead-end-check=false
+		}
 
+highway=pedestrian
+		{
+		  add bicycle=no;
+		  set foot=yes;
+		}
+
+highway=pedestrian & (bicycle=yes | 
+		      bicycle=allowed | 
+		      bicycle=designated |
+		      bicycle=official |
+		      bicycle=permissive)
+		{
+		  set bicycle=yes;
+		  }
+		  
+highway=pedestrian									[0x00d07 road_class=0 road_speed=0 resolution 24-23]
+								
 
 # cycleway
 
-
-highway=cycleway
-		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add bicycle=yes;
-		}
-		
-highway=cycleway & bicycle=designated
+highway=cycleway & bicycle=designated  
 		{
 		  add foot=no;
 		}
 
-highway=cycleway                            						[0x16 road_class=0 road_speed=1 resolution 24-23]
+# pathes with bicycle=*
 
-
-# pathes with foot=*
-highway=path & (foot=designated)					
-		{ 
-		  set highway=footway
-		  }  
-		  
-# footway
-highway=footway
+highway=path & (bicycle=designated | 
+		bicycle=allowed | 
+		bicycle=official | 
+		bicycle=permissive |
+		bicycle=yes) 		
 		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add foot=yes;
-		}
-
-highway=footway & (bicycle=yes | bicycle=allowed | bicycle=designated)
-		{
-		  add bicycle=yes
-		}
-
-
-highway=footway                             						[0x0d road_class=0 road_speed=0 resolution 24-23]
-
-# pedestrian
-highway=pedestrian
-		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add bicycle=no;
-		  add foot=yes;
-		}
-
-highway=pedestrian & (bicycle=yes | bicycle=allowed | bicycle=designated)
+		  set highway=cycleway 
+		  }		
+		
+highway=cycleway
 		{
 		  set bicycle=yes;
 		}
 
+highway=cycleway & junction=roundabout				 			[0x00c16 road_class=0 road_speed=0 resolution 24-23]
+highway=cycleway				 					[0x16 road_class=0 road_speed=0 resolution 24-23]
 
-highway=pedestrian & (area!=yes & area!=true & area!=1)
+		  
+# footway
+
+
+highway=footway & foot=designated  
 		{
-		  add mkgmap:dead-end-check=false
-		}									[0x0d road_class=0 road_speed=0 resolution 24-23 ]
+		  add bicycle=no;
+		  }
+
+# pathes with foot=*
+
+highway=path & (foot=designated |
+		foot=allowed |
+		foot=official |
+		foot=permissive |
+		foot=yes )					
+		{ 
+		  set highway=footway
+		  }  
+highway=footway
+		{
+		set foot=yes
+		  }
+
+highway=footway & (bicycle=designated | 
+		   bicycle=allowed | 
+		   bicycle=yes | 
+		   bicycle=official | 
+		   bicycle=permissive)
+		{
+		  set bicycle=yes
+		  }		
+
+highway=footway & junction=roundabout & bicycle=yes					[0x00c0d road_class=0 road_speed=0 resolution 24-23]
+highway=footway & junction=roundabout							[0x00c0d resolution 24-23]
+highway=footway	& bicycle=yes								[0x0d road_class=0 road_speed=0 resolution 24-23]
+highway=footway										[0x0d resolution 24-23]
 
 # bridleway
 highway=bridleway
@@ -504,32 +521,42 @@ highway=steps
 		  set motorcycle=no;
 		  set bicycle=no;
 		  add mkgmap:unpaved=1;
-		}									[0x13 road_class=0 road_speed=0 resolution 24-23]
+		}									[0x13 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # tracks
 
-highway=track & tracktype~'grade[3-5]'
+highway='track;path'
 		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add mkgmap:unpaved=1;
+		set highway=track
 		}
+		
 
-highway=track & tracktype=grade1							[0x0e    road_class=0 road_speed=1 resolution 24-23]
-highway=track & tracktype=grade2							[0x0f    road_class=0 road_speed=1 resolution 24-23]
-highway=track & tracktype=grade3							[0x10    road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade4							[0x11    road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade5							[0x11    road_class=0 road_speed=0 resolution 24-23]
-highway=track										[0x0a    road_class=0 road_speed=0 resolution 24-23]
+
+highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype~'grade[4|5]' & junction=roundabout				[0x00c11 road_class=0 road_speed=0 resolution 24-23]
+highway=track & junction=roundabout							[0x00c0a road_class=0 road_speed=0 resolution 24-23]
+
+highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype=grade3							[0x10 road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype~'grade[4|5]'							[0x11 road_class=0 road_speed=0 resolution 24-23]
+highway=track										[0x0a road_class=0 road_speed=0 resolution 24-23]
 
 #------------------------------------------------------------------------------
 ## restrictions for all highway=path
-highway=path
+
+
+highway='path;track'
 		{
-		  add motorcar=no;
-		  add motorcycle=no;
-		  add mkgmap:unpaved=1;
+		set highway=path
+		}
+
+highway=path | highway=trail
+		{
+		  set mkgmap:unpaved=1;
 		  }
 
 # pathes without foot/bicycle 
@@ -538,16 +565,18 @@ highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
 highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
 highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
 
-highway=path                                            				[0x12 road_class=0 road_speed=0 resolution 24-23]
+highway=path & junction=roundabout                             			[0x00c12 road_class=0 road_speed=0 resolution 24-23]
+highway=path | highway=trail                                  			[0x12 road_class=0 road_speed=0 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
+# road = way typ not defined/unknown - not routable
+highway=road										[0x2c resolution 24]
+
 highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24-22 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)          				[0x1b road_class=0 road_speed=0 resolution 24]
-
-junction=roundabout                                     				[0x00c06 resolution 24-21 road_class=1 road_speed=1]
-
+highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 
 # route

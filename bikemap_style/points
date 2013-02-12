@@ -810,7 +810,7 @@ waterway=bootyard | amenity=boat_storage		[0x2f13 resolution 24]
 # No category
 
 barrier=bollard { 
-		  set motorcar=no; 
+		  set motorcar=yes; 
 		  set motorcycle=no; 
 		  set bicycle=yes; 
 		  set foot=yes; 
