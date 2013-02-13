@@ -415,7 +415,7 @@ highway=raceway										[0x07 resolution 24-23]
 highway=platform									[0x07 road_class=0 road_speed=0 resolution 24]
 
 #------------------------------------------------------------------------------
-# designated ways
+# designated 
 
 
 # pedestrian
@@ -495,7 +495,7 @@ highway=footway
 		{
 		set foot=yes
 		add motorcar=no
-		add motorcycle=yes
+		add motorcycle=no
 		  }
 
 highway=footway & (bicycle=designated | 
