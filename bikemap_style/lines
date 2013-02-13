@@ -60,30 +60,31 @@ highway=* &
 highway=* & impassable=yes   	{ set access=no; }
 highway=* & access=private   	{ set access=no; }
 
+
 highway=* & access=destination |
 	    access=delivery |
 	    access=agricultural |
 	    access=forestry |
 	    access=emergency
 				{
-				add motor_vehicle='${access}';
-				delete access
-				}
+				set access=no;
+				  }
 
-	     
+
 highway=* & (motor_vehicle=destination |
-	     motor_vehicle=delivery |	     
+	     motor_vehicle=delivery |
 	     motor_vehicle=agricultural |
 	     motor_vehicle=forestry |
 	     motor_vehicle=emergency |
-	     motor_vehicle=private)
+	     motor_vehicle=private|
+	     impassable=yes |
+	     abandoned=yes)
 				{
-				set motor_vehicle=no;
-				add motorcycle='${motor_vehicle}';
-				add motorcar='${motor_vehicle}';
-				delete motor_vehicle;
-				}
-				
+				set access=no;
+				set foot=yes;
+				set bicycle=yes
+				  }
+
 highway=* & (vehicle=private |
 	     vehicle=destination |
 	     vehicle=delivery |
@@ -91,14 +92,9 @@ highway=* & (vehicle=private |
 	     vehicle=forestry |
 	     vehicle=emergency)
 				{
-				set vehicle=no;
-				add motorcar='${vehicle}';
-				add motorcycle='${vehicle}';
-				add bicycle='${vehicle}';
-				delete vehicle;
-				}		
-
-
+				set access=no;
+				set foot=yes;
+				  }
 
 #------------------------------------------------------------------------------
 
@@ -391,36 +387,37 @@ highway=platform									[0x07 resolution 24]
 # pedestrian
 highway=pedestrian & (area!=yes & area!=true & area!=1)
 		{
-		  add mkgmap:dead-end-check=false
-		}
+		add mkgmap:dead-end-check=false
+		  }
 
 highway=pedestrian
 		{
-		  add bicycle=no;
-		  set foot=yes;
-		}
+		add access=no;
+		set foot=yes;
+		  }
 
-highway=pedestrian & (bicycle=yes | 
-		      bicycle=allowed | 
+highway=pedestrian & (bicycle=allowed | 
 		      bicycle=designated |
 		      bicycle=official |
 		      bicycle=permissive)
-		{
-		  set bicycle=yes;
-		  }
-		  
+		      {
+		      set bicycle=yes;
+			}
+highway=pedestrian & access=no & bicycle=no & cn_name=*
+				{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}		  
 highway=pedestrian & bicycle=yes							[0x00d07 road_class=4 road_speed=6 resolution 24-23]
 highway=pedestrian & bicycle=dismount							[0x00d07 road_class=2 road_speed=4 resolution 24-23]
-highway=pedestrian & (bicycle=no)							[0x00d07 resolution 24-23]
+highway=pedestrian									[0x00d07 road_class=0 road_speed=0 resolution 24-23]
 
 
 # cycleway
+
 
 highway=cycleway & bicycle=designated  
 		{
 		  add foot=no;
 		}
-
+		
 # pathes with bicycle=*
 
 highway=path & (bicycle=designated | 
@@ -429,13 +426,16 @@ highway=path & (bicycle=designated |
 		bicycle=permissive |
 		bicycle=yes) 		
 		{
-		  set highway=cycleway 
+		set highway=cycleway;
 		  }		
 		
 highway=cycleway
-		{
-		  set bicycle=yes;
-		}
+		{ 
+		add access=no;
+		add foot=yes;
+		set bicycle=yes;
+		  }
+	  
 
 highway=cycleway & cn_name=* & junction=roundabout	{ set name='${cn_name}' }	[0x00c16 road_class=4 road_speed=6 resolution 24-23]
 highway=cycleway & junction=roundabout				 			[0x00c16 road_class=4 road_speed=6 resolution 24-23]
@@ -446,12 +446,6 @@ highway=cycleway				 					[0x16 road_class=4 road_speed=6 resolution 24-23]
 		  
 # footway
 
-
-highway=footway & foot=designated  
-		{
-		  add bicycle=no;
-		  }
-
 # pathes with foot=*
 
 highway=path & (foot=designated |
@@ -460,26 +454,30 @@ highway=path & (foot=designated |
 		foot=permissive |
 		foot=yes )					
 		{ 
-		  set highway=footway
+		set highway=footway;
 		  }  
 highway=footway
 		{
-		set foot=yes
+		set access=no;
+		set foot=yes;
 		  }
 
 highway=footway & (bicycle=designated | 
 		   bicycle=allowed | 
 		   bicycle=yes | 
 		   bicycle=official | 
-		   bicycle=permissive)
+		   bicycle=permissive 
+		   )
 		{
-		  set bicycle=yes
+		  set bicycle=yes;
 		  }		
 
+highway=footway & access=no & bicycle=no & cn_name=*
+				{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
 highway=footway & bicycle=yes & junction=roundabout					[0x00c0d road_class=4 road_speed=6 resolution 24-23]	  
-highway=footway & bicycle=no & junction=roundabout					[0x00c0d resolution 24-23]
+highway=footway & bicycle=no & junction=roundabout					[0x00c0d road_class=0 road_speed=0 resolution 24-23]
 highway=footway & bicycle=yes								[0x0d road_class=4 road_speed=6 resolution 24-23]	  
-highway=footway										[0x0d resolution 24-23]
+highway=footway										[0x0d road_class=0 road_speed=0 resolution 24-23]
 
 
 # bridleway

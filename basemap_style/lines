@@ -57,33 +57,33 @@ highway=* &
 
 # change access=* to more useful tags
 
-highway=* & impassable=yes   	{ set access=no; }
-highway=* & access=private   	{ set access=no; }
 
-highway=* & access=destination |
-	    access=delivery |
-	    access=agricultural |
-	    access=forestry |
-	    access=emergency
+
+highway=* & (access=destination |
+	     access=delivery |
+	     access=agricultural |
+	     access=forestry |
+	     access=emergency |
+	     access=private |
+	     impassable=yes |
+	     abandoned=yes)
 				{
-				add motor_vehicle='${access}';
-				delete access
-				}
+				set access=no;
+				  }
 
-	     
+
 highway=* & (motor_vehicle=destination |
-	     motor_vehicle=delivery |	     
+	     motor_vehicle=delivery |
 	     motor_vehicle=agricultural |
 	     motor_vehicle=forestry |
 	     motor_vehicle=emergency |
 	     motor_vehicle=private)
 				{
-				set motor_vehicle=no;
-				add motorcycle='${motor_vehicle}';
-				add motorcar='${motor_vehicle}';
-				delete motor_vehicle;
-				}
-				
+				set access=no;
+				set foot=yes;
+				set bicycle=yes
+				  }
+
 highway=* & (vehicle=private |
 	     vehicle=destination |
 	     vehicle=delivery |
@@ -91,12 +91,9 @@ highway=* & (vehicle=private |
 	     vehicle=forestry |
 	     vehicle=emergency)
 				{
-				set vehicle=no;
-				add motorcar='${vehicle}';
-				add motorcycle='${vehicle}';
-				add bicycle='${vehicle}';
-				delete vehicle;
-				}		
+				set access=no;
+				set foot=yes;
+				  }
 
 
 #------------------------------------------------------------------------------
@@ -256,7 +253,7 @@ highway=motorway
 		  '${ref|highway-symbol:hbox}' |
 		  '${streetname}';
 		  }
-		  
+
 
 highway=motorway                            						[0x12001 resolution 21-12 continue with_actions]
 highway=motorway                            						[0x11001 resolution 23-22 continue with_actions]
@@ -292,7 +289,7 @@ highway=trunk
 		  '${ref|highway-symbol:hbox}' |
 		  '${name}';
 		}
-		
+
 highway=trunk                               						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk                               						[0x11002 resolution 23-22 continue with_actions]
 highway=trunk & junction=roundabout	 						[0x00c02 resolution 24 road_class=1 road_speed=3]
@@ -305,9 +302,9 @@ highway=trunk &
     destination=*
     { set mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
 
-    
-highway=trunk_link 	{ set ref = '' }    
-    
+
+highway=trunk_link 	{ set ref = '' }
+
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 23-22 continue with_actions]
 
@@ -411,75 +408,60 @@ highway=service | highway=estate | highway=living_street           			[0x12007 r
 (highway=service | highway=estate | highway=living_street) & junction=roundabout	[0x00c07 resolution 24 road_class=0 road_speed=0]
 highway=service | highway=estate  							[0x07 resolution 24 road_class=0 road_speed=0]
 highway=living_street									[0x0071b resolution 24 road_class=0 road_speed=0]
-highway=raceway										[0x07 resolution 24-23]									
-highway=platform									[0x07 road_class=0 road_speed=0 resolution 24]
+highway=raceway										[0x07 resolution 24-23]
+highway=platform									[0x07 resolution 24]
 
 #------------------------------------------------------------------------------
-# designated 
+# designated
 
 
 # pedestrian
 highway=pedestrian & (area!=yes & area!=true & area!=1)
 		{
 		  add mkgmap:dead-end-check=false
-		}
+		  }
 
 highway=pedestrian
 		{
-		  set foot=yes;
-		  add bicycle=no;
-		  add motorcar=no;
-		  add motorcycle=no;
-		}
+		add access=no;
+		set foot=yes;
+		  }
 
-highway=pedestrian & (bicycle=yes | 
-		      bicycle=allowed | 
+highway=pedestrian & (bicycle=allowed |
 		      bicycle=designated |
 		      bicycle=official |
 		      bicycle=permissive)
 		{
-		  set bicycle=yes;
+		  add bicycle=yes;
 		  }
-		  
+
 highway=pedestrian									[0x00d07 road_class=0 road_speed=0 resolution 24-23]
-								
+
 
 # cycleway
 
-highway=cycleway & bicycle=designated  
-		{
-		  add foot=no;
-		}
-
 # pathes with bicycle=*
 
-highway=path & (bicycle=designated | 
-		bicycle=allowed | 
-		bicycle=official | 
+highway=path & (bicycle=designated |
+		bicycle=allowed |
+		bicycle=official |
 		bicycle=permissive |
-		bicycle=yes) 		
+		bicycle=yes)
 		{
-		  set highway=cycleway 
-		  }		
-		
+		  set highway=cycleway
+		  }
 highway=cycleway
 		{
-		  set bicycle=yes;
-		  add motorcar=no;
-		  add motorcycle=no;
-		}
+		add access=no;
+		add foot=yes;
+		set bicycle=yes;
+		  }
 
 highway=cycleway & junction=roundabout				 			[0x00c16 road_class=0 road_speed=0 resolution 24-23]
 highway=cycleway				 					[0x16 road_class=0 road_speed=0 resolution 24-23]
 
-		  
+
 # footway
-
-
-highway=footway & foot=designated  
-		{
-		  add bicycle=no;
-		  }
 
 # pathes with foot=*
 
@@ -487,30 +469,27 @@ highway=path & (foot=designated |
 		foot=allowed |
 		foot=official |
 		foot=permissive |
-		foot=yes )					
-		{ 
+		foot=yes )
+		{
 		  set highway=footway
-		  }  
+		  }
 highway=footway
 		{
-		set foot=yes
-		add motorcar=no
-		add motorcycle=no
+		add access=no;
+		set foot=yes;
 		  }
 
-highway=footway & (bicycle=designated | 
-		   bicycle=allowed | 
-		   bicycle=yes | 
-		   bicycle=official | 
+highway=footway & (bicycle=designated |
+		   bicycle=allowed |
+		   bicycle=yes |
+		   bicycle=official |
 		   bicycle=permissive)
 		{
 		  set bicycle=yes
-		  }		
+		  }
 
-highway=footway & junction=roundabout & bicycle=yes					[0x00c0d road_class=0 road_speed=0 resolution 24-23]
-highway=footway & junction=roundabout							[0x00c0d resolution 24-23]
-highway=footway	& bicycle=yes								[0x0d road_class=0 road_speed=0 resolution 24-23]
-highway=footway										[0x0d resolution 24-23]
+highway=footway & junction=roundabout							[0x00c0d road_class=0 road_speed=0 resolution 24-23]
+highway=footway										[0x0d road_class=0 road_speed=0 resolution 24-23]
 
 # bridleway
 highway=bridleway
@@ -519,7 +498,7 @@ highway=bridleway
 		  add horse=designated;
 		  }
 
-		
+
 # steps
 highway=steps
 		{
@@ -536,7 +515,7 @@ highway='track;path'
 		{
 		set highway=track
 		}
-		
+
 
 
 highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=0 road_speed=0 resolution 24-23]
@@ -565,7 +544,7 @@ highway=path | highway=trail
 		  set mkgmap:unpaved=1;
 		  }
 
-# pathes without foot/bicycle 
+# pathes without foot/bicycle
 
 highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
 highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
