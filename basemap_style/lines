@@ -426,8 +426,10 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 
 highway=pedestrian
 		{
-		  add bicycle=no;
 		  set foot=yes;
+		  add bicycle=no;
+		  add motorcar=no;
+		  add motorcycle=no;
 		}
 
 highway=pedestrian & (bicycle=yes | 
@@ -463,6 +465,8 @@ highway=path & (bicycle=designated |
 highway=cycleway
 		{
 		  set bicycle=yes;
+		  add motorcar=no;
+		  add motorcycle=no;
 		}
 
 highway=cycleway & junction=roundabout				 			[0x00c16 road_class=0 road_speed=0 resolution 24-23]
@@ -490,6 +494,8 @@ highway=path & (foot=designated |
 highway=footway
 		{
 		set foot=yes
+		add motorcar=no
+		add motorcycle=yes
 		  }
 
 highway=footway & (bicycle=designated | 
