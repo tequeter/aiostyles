@@ -1928,27 +1928,6 @@ Xpm="0 0 2 0"
 
 
 [_line]
-Type=0x00
-UseOrientation=N
-Xpm="32 4 4  1"
-"! c #737373"
-"# c #FFFF80"
-"3 c #BBBBBB"
-"4 c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"###!!!!!!!!########!!!!!!!!#####"
-"###!!!!!!!!########!!!!!!!!#####"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Eisenbahn
-String2=0x04,Rail
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x01
 UseOrientation=N
 LineWidth=5
@@ -2242,21 +2221,20 @@ CustomColor=No
 [_line]
 Type=0x14
 UseOrientation=N
-Xpm="32 5 4  1"
-"! c #330000"
-"  c none"
-"3 c #DD8888"
+Xpm="32 4 4  1"
+"! c #737373"
+"# c #FFFF80"
+"3 c #BBBBBB"
 "4 c none"
-"!       !       !       !       "
-"!       !       !       !       "
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!       !       !       !       "
-"!       !       !       !       "
+"###!!!!!!!!########!!!!!!!!#####"
+"###!!!!!!!!########!!!!!!!!#####"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Straﬂenbahn
-String2=0x04,Tram
+String1=0x02,Eisenbahn
+String2=0x04,Rail
 ExtendedLabels=Y
-FontStyle=SmallFont
+FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
@@ -2994,6 +2972,50 @@ CustomColor=No
 
 
 [_line]
+Type=0x10e0e
+UseOrientation=N
+Xpm="32 5 4  1"
+"! c #330000"
+"  c none"
+"3 c #DD8888"
+"4 c none"
+"                                "
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Straﬂenbahn
+String2=0x04,Tram
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e0f
+UseOrientation=N
+Xpm="32 5 4  1"
+"! c #330000"
+"  c none"
+"3 c #DD8888"
+"4 c none"
+"!       !       !       !       "
+"!       !       !       !       "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!       !       !       !       "
+"!       !       !       !       "
+;12345678901234567890123456789012
+String1=0x02,
+String2=0x04,Tram
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
 Type=0x10e11
 UseOrientation=N
 Xpm="32 3 2  1"
@@ -3013,20 +3035,20 @@ CustomColor=No
 
 [_line]
 Type=0x10e14
-UseOrientation=Y
-Xpm="32 5 2  1"
-"! c #000000"
-"  c none"
-"       !!                       "
-"      !!!!                      "
+UseOrientation=N
+Xpm="32 3 4  1"
+"! c #737373"
+"# c #FFFF80"
+"3 c #BBBBBB"
+"4 c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"      !!!!                      "
-"       !!                       "
+"###!!!#####!!!#####!!!#####!!!##"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x02,Seilbahn
-String2=0x04,Cable car
+String1=0x02,Eisenbahn
+String2=0x04,Rail
 ExtendedLabels=Y
-FontStyle=SmallFont
+FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
@@ -3089,6 +3111,27 @@ ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
 [end]
+
+
+[_line]
+Type=0x10e18
+UseOrientation=Y
+Xpm="32 5 2  1"
+"! c #000000"
+"  c none"
+"       !!                       "
+"      !!!!                      "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"      !!!!                      "
+"       !!                       "
+;12345678901234567890123456789012
+String1=0x02,Seilbahn
+String2=0x04,Cable car
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
 
 
 [_line]
@@ -3190,26 +3233,6 @@ Xpm="32 3 4  1"
 String1=0x02,Plattform/Zugang
 String2=0x04,Platform
 ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x11000
-UseOrientation=N
-Xpm="32 3 4  1"
-"! c #737373"
-"# c #FFFF80"
-"3 c #BBBBBB"
-"4 c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"###!!!#####!!!#####!!!#####!!!##"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Eisenbahn
-String2=0x04,Rail
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
 [end]
 
 

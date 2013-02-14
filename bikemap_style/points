@@ -810,33 +810,26 @@ waterway=bootyard | amenity=boat_storage		[0x2f13 resolution 24]
 # No category
 
 barrier=bollard { 
-		  set motorcar=yes; 
-		  set motorcycle=no; 
-		  set bicycle=yes; 
-		  set foot=yes; 
+		  set access=no; 
+		  add bicycle=yes; 
+		  add foot=yes; 
 		  } 									[0x2900 resolution 24]
 		  
 barrier=lift_gate 									[0x2901 resolution 24]
 
 barrier=gate {
-	      set vehicle=no; 
-	      set foot=no;
+	      add access=no; 
 	      } 									[0x2902 resolution 24]
 
-barrier=cycle_barrier | barrier=kissing_gate { 
-						set motorcar=no; 
-						set motorcycle=no; 
-						set bicycle=no;
-						set foot=yes; 
-						} 					[0x2903 resolution 24]
-						
-barrier=stile | barrier=turnstile { 
-				    set motorcar=no; 
-				    set motorcycle=no;
-				    set bicycle=no;
-				    set foot=yes; 
-				    }				 			[0x2903 resolution 24]
-				    
+barrier=cycle_barrier |
+barrier=kissing_gate |
+barrier=stile | 
+barrier=turnstile
+			{ 
+			set access=no;
+			add foot=yes; 
+			} 								[0x2903 resolution 24]
+
 barrier=cattle_grid | barrier=horse_stile 						[0x2904 resolution 24]
 
 # 0x290s
