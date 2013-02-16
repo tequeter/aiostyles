@@ -18,13 +18,14 @@ include "address";
 place=city      							[0x0400 resolution 12]
 # 0x0100-0x0500   City name(Point, fat, big)
 
-place=town      							[0x0800 resolution 20]
+place=town      							[0x0600 resolution 18]
+place=village   							[0x0900 resolution 20]
 # 0x0600-0x0A00   City name(Point, big)
 
-place=village   							[0x0b00 resolution 22]
-place=suburb    							[0x0c00 resolution 23]
+place=suburb    							[0x0b00 resolution 22]
 place=hamlet | place=isolated_dwelling    				[0x0d00 resolution 24]
 # 0x0B00-0x0D00   City name (Point, small)
+
 
 addr:housenumber=* & name!=*
                   { set name='${addr:housenumber}' } 			[0x1e04 resolution 24]
@@ -821,17 +822,19 @@ barrier=gate {
 	      add access=no; 
 	      } 									[0x2902 resolution 24]
 
-barrier=cycle_barrier |
-barrier=kissing_gate |
-barrier=stile | 
-barrier=turnstile
+barrier=cycle_barrier 
 			{ 
 			set access=no;
-			set foot=yes; 
+			set bicycle=dismount;
+			add foot=yes; 
 			} 								[0x2903 resolution 24]
 
-				    
-barrier=cattle_grid | barrier=horse_stile 						[0x2904 resolution 24]
+barrier=kissing_gate |
+barrier=cattle_grid | 
+barrier=horse_stile|
+barrier=stile | 
+barrier=turnstile 									[0x2904 resolution 24]
+
 
 # 0x290s
 

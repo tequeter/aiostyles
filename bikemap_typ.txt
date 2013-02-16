@@ -148,9 +148,7 @@ Xpm="32 32 4 1"
 Type=0x02
 String1=0x02,Siedlung
 String2=0x04,Village
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #E5D5D5"
 "# c #E5D5D5"
@@ -196,9 +194,7 @@ Xpm="32 32 4 1"
 Type=0x03
 String1=0x02,Wohngebiet
 String2=0x04,Residential
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="0 0 2 0"
 "1 c #FFDFDF"
 "2 c #400000"
@@ -209,9 +205,7 @@ Xpm="0 0 2 0"
 Type=0x04
 String1=0x02,Milit‰rgebiet
 String2=0x04,Military
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #BF0000"
 "  c none"
@@ -257,9 +251,7 @@ Xpm="32 32 4 1"
 Type=0x05
 String1=0x02,Parkplatz
 String2=0x04,Parking
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #57AED9"
 "# c #F6EEB6"
@@ -305,9 +297,7 @@ Xpm="32 32 4 1"
 Type=0x06
 String1=0x02,Parkgarage
 String2=0x04,Parking garage
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #57AED9"
 "# c #F6EEB6"
@@ -353,9 +343,7 @@ Xpm="32 32 4 1"
 Type=0x07
 String1=0x02,Flugplatz
 String2=0x04,Airport
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #AAAAAA"
 "# c #E0E0E0"
@@ -401,9 +389,7 @@ Xpm="32 32 4 1"
 Type=0x08
 String1=0x02,Gewerbe
 String2=0x04,Shopping
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #FFA040"
 "  c none"
@@ -449,9 +435,7 @@ Xpm="32 32 4 1"
 Type=0x0a
 String1=0x02,Universit‰t
 String2=0x04,University
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #85B185"
 "  c none"
@@ -545,9 +529,7 @@ Xpm="32 32 4 1"
 Type=0x0c
 String1=0x02,Industriegebiet
 String2=0x04,Industrial
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #DFDFDF"
 "  c none"
@@ -637,9 +619,7 @@ Xpm="32 32 2 1"
 Type=0x0f
 String1=0x02,Commercial
 String2=0x04,Commercial
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #F0F0F0"
 "# c #F0F0F0"
@@ -685,9 +665,7 @@ Xpm="32 32 4 1"
 Type=0x12
 String1=0x02,Fuﬂg‰ngerzone
 String2=0x04,Pedestrian
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="0 0 2 0"
 "1 c #FFFF8B"
 "2 c #BD9500"
@@ -698,9 +676,7 @@ Xpm="0 0 2 0"
 Type=0x13
 String1=0x02,Geb‰ude
 String2=0x04,Building
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #000000"
 "  c none"
@@ -744,9 +720,7 @@ Xpm="32 32 2 1"
 Type=0x14
 String1=0x02,Heide
 String2=0x04,Heath
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #BDFF41"
 "  c none"
@@ -792,9 +766,7 @@ Xpm="32 32 4 1"
 Type=0x15
 String1=0x02,Naturwald
 String2=0x04,Natural woodland
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #BDFF6A"
 "# c #39CA41"
@@ -840,9 +812,7 @@ Xpm="32 32 4 1"
 Type=0x16
 String1=0x02,Naturschutzgebiet
 String2=0x04,Nature reserve
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #408000"
 "# c #80FF80"
@@ -888,9 +858,7 @@ Xpm="32 32 4 1"
 Type=0x17
 String1=0x02,Park/Garten
 String2=0x04,Park/Garden
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #BDFF8B"
 "# c #BDFF8B"
@@ -936,9 +904,7 @@ Xpm="32 32 4 1"
 Type=0x18
 String1=0x02,Golfplatz
 String2=0x04,Golf course
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #408000"
 "# c #BDFF8B"
@@ -984,9 +950,7 @@ Xpm="32 32 4 1"
 Type=0x19
 String1=0x03,Sport
 String2=0x04,Sport
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="0 0 2 0"
 "1 c #BDFFB4"
 "2 c #006500"
@@ -997,9 +961,7 @@ Xpm="0 0 2 0"
 Type=0x1a
 String1=0x02,Friedhof
 String2=0x04,Cemetery
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #009900"
 "# c #BDFF6A"
@@ -1045,9 +1007,7 @@ Xpm="32 32 4 1"
 Type=0x20
 String1=0x02,Wald
 String2=0x04,Forest
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #7BCA20"
 "# c #BDFF6A"
@@ -1093,9 +1053,7 @@ Xpm="32 32 4 1"
 Type=0x21
 String1=0x02,Nadelwald
 String2=0x04,coniferous
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #A0E070"
@@ -1141,9 +1099,7 @@ Xpm="32 32 4 1"
 Type=0x22
 String1=0x02,Laubwald
 String2=0x04,deciduous
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #A0E040"
@@ -1189,9 +1145,7 @@ Xpm="32 32 4 1"
 Type=0x23
 String1=0x02,Mischwald
 String2=0x04,mixed
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #A0E040"
@@ -1248,9 +1202,7 @@ Xpm="0 0 2 0"
 Type=0x2a
 String1=0x02,Acker
 String2=0x04,Farm
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #808040"
 "# c #FFE080"
@@ -1296,9 +1248,7 @@ Xpm="32 32 4 1"
 Type=0x2b
 String1=0x02,Landwirtschaft
 String2=0x04,Farmyard
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #C0C080"
 "  c none"
@@ -1344,9 +1294,7 @@ Xpm="32 32 4 1"
 Type=0x2c
 String1=0x02,Weinanbau
 String2=0x04,Vineyard
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #C00080"
 "# c #00FF40"
@@ -1438,9 +1386,7 @@ Xpm="32 32 4 1"
 Type=0x2e
 String1=0x02,Campingplatz
 String2=0x04,Camp site
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #004400"
 "# c #BDFF6A"
@@ -1486,9 +1432,7 @@ Xpm="32 32 4 1"
 Type=0x35
 String1=0x02,Gebirge
 String2=0x04,Fell
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #BDFF41"
 "  c none"
@@ -1619,9 +1563,7 @@ Xpm="0 0 2 0"
 Type=0x4e
 String1=0x02,Kleing‰rten
 String2=0x04,Allotments
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
 "# c #C0C080"
@@ -1667,9 +1609,7 @@ Xpm="32 32 4 1"
 Type=0x4f
 String1=0x02,Geb¸sch
 String2=0x04,Scrub
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #39FF20"
 "# c #FFFF8B"
@@ -1715,9 +1655,7 @@ Xpm="32 32 4 1"
 Type=0x50
 String1=0x02,Wald
 String2=0x04,Forest
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #7BCA20"
 "# c #BDFF6A"
@@ -1763,9 +1701,7 @@ Xpm="32 32 4 1"
 Type=0x51
 String1=0x02,Sumpf
 String2=0x04,Wetland
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #0000FF"
 "# c #BDCAFF"
@@ -1811,9 +1747,7 @@ Xpm="32 32 4 1"
 Type=0x52
 String1=0x02,Gras
 String2=0x04,Grass
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00DD00"
 "# c #CDFF6A"
@@ -1859,8 +1793,7 @@ Xpm="32 32 4 1"
 Type=0x53
 String1=0x02,Wiese
 String2=0x04,Meadow
-ExtendedLabels=Y
-FontStyle=SmallFont
+ExtendedLabels=N
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF41"
@@ -1907,9 +1840,7 @@ Xpm="32 32 4 1"
 Type=0x54
 String1=0x02,Spielfeld
 String2=0x04,Pitch
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 Xpm="0 0 2 0"
 "1 c #BDFF8B"
 "2 c #006500"
@@ -1933,8 +1864,8 @@ Xpm="0 0 2 0"
 [_line]
 Type=0x01
 UseOrientation=N
-LineWidth=5
-BorderWidth=2
+LineWidth=4
+BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
 "2 c #BD3000"
@@ -1947,8 +1878,8 @@ ExtendedLabels=N
 [_line]
 Type=0x02
 UseOrientation=N
-LineWidth=5
-BorderWidth=2
+LineWidth=4
+BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FF6500"
 "2 c #39956A"
@@ -2024,9 +1955,7 @@ Xpm="0 0 2 0"
 "2 c #838383"
 String1=0x02,Zufahrtsweg
 String2=0x04,Service
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2071,9 +2000,7 @@ Xpm="32 2 4  1"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2101,9 +2028,7 @@ Xpm="0 0 2 0"
 "2 c #838383"
 String1=0x02,Kreisverkehr
 String2=0x04,Roundabout
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2117,9 +2042,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fuﬂweg
 String2=0x04,Footway
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2133,9 +2056,7 @@ Xpm="0 0 2 0"
 "2 c #525252"
 String1=0x02,Grade1
 String2=0x04,Grade1
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2149,9 +2070,7 @@ Xpm="0 0 2 0"
 "2 c #7B6541"
 String1=0x02,Grade2
 String2=0x04,Grade2
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2163,9 +2082,7 @@ Xpm="0 0 1 0"
 "1 c #7B6500"
 String1=0x02,Grade3
 String2=0x04,Grade3
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2180,9 +2097,7 @@ Xpm="32 2 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Grade4/5
 String2=0x04,Grade4/5
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2197,9 +2112,7 @@ Xpm="32 2 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Wanderweg/Pfad
 String2=0x04,Trail/Path
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2215,9 +2128,7 @@ Xpm="32 3 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Stufen
 String2=0x04,Steps
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2236,9 +2147,7 @@ Xpm="32 4 4  1"
 ;12345678901234567890123456789012
 String1=0x02,Eisenbahn
 String2=0x04,Rail
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3319,8 +3228,8 @@ ExtendedLabels=N
 [_line]
 Type=0x11001
 UseOrientation=N
-LineWidth=5
-BorderWidth=2
+LineWidth=4
+BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
 "2 c #FF0000"
@@ -3333,8 +3242,8 @@ ExtendedLabels=N
 [_line]
 Type=0x11002
 UseOrientation=N
-LineWidth=5
-BorderWidth=2
+LineWidth=4
+BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FF6500"
 "2 c #39956A"
@@ -3368,9 +3277,7 @@ Xpm="0 0 2 0"
 "2 c #BD3000"
 String1=0x02,Landes-/Staatsstraﬂe
 String2=0x04,Secondary
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3384,9 +3291,7 @@ Xpm="0 0 2 0"
 "2 c #838383"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3400,9 +3305,7 @@ Xpm="0 0 2 0"
 "2 c #838383"
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3414,9 +3317,7 @@ Xpm="0 0 1 0"
 "1 c #838383"
 String1=0x02,Zufahrtsweg
 String2=0x04,Service
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3446,9 +3347,7 @@ Xpm="32 1 4  1"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3462,9 +3361,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fuﬂweg
 String2=0x04,Footway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3478,9 +3375,7 @@ Xpm="0 0 2 0"
 "2 c #838383"
 String1=0x02,Grade1
 String2=0x04,Grade1
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3492,9 +3387,7 @@ Xpm="0 0 1 0"
 "1 c #7B6500"
 String1=0x02,Grade2
 String2=0x04,Grade2
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3506,9 +3399,7 @@ Xpm="0 0 1 0"
 "1 c #7B6500"
 String1=0x02,Grade3
 String2=0x04,Grade3
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3522,9 +3413,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Grade4/5
 String2=0x04,Grade4/5
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3538,9 +3427,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Wanderweg/Pfad
 String2=0x04,Trail/Path
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3568,9 +3455,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Radweg
 String2=0x04,Cycleway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3655,9 +3540,7 @@ Xpm="0 0 2 0"
 "2 c #BD3000"
 String1=0x02,Bundesstraﬂe
 String2=0x04,Primary
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3671,9 +3554,7 @@ Xpm="0 0 2 0"
 "2 c #BD3000"
 String1=0x02,Landes-/Staatsstraﬂe
 String2=0x04,Secondary
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3687,9 +3568,7 @@ Xpm="0 0 2 0"
 "2 c #838383"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3701,9 +3580,7 @@ Xpm="0 0 1 0"
 "1 c #A4A4A4"
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3715,9 +3592,7 @@ Xpm="0 0 1 0"
 "1 c #838383"
 String1=0x02,Zufahrtsweg
 String2=0x04,Service
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3733,9 +3608,7 @@ Xpm="32 1 4  1"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3749,9 +3622,7 @@ Xpm="0 0 2 0"
 "2 c #777777"
 String1=0x02,Kreisverkehr
 String2=0x04,Roundabout
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3765,9 +3636,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fuﬂweg
 String2=0x04,Footway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3781,9 +3650,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fahrweg
 String2=0x04,Track
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3797,9 +3664,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fahrweg
 String2=0x04,Track
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3813,9 +3678,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fahrweg
 String2=0x04,Track
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3829,9 +3692,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Fahrweg
 String2=0x04,Track
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3845,9 +3706,7 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Wanderweg/Pfad
 String2=0x04,Trail/Path
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4135,9 +3994,7 @@ Type=0x029
 SubType=0x00
 String1=0x02,Poller
 String2=0x04,Bollard
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
 "!	c #000000"
 "#	c #FF0000"
@@ -4168,9 +4025,7 @@ Type=0x029
 SubType=0x01
 String1=0x02,Schranke
 String2=0x04,Lift gate
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
 "!	c #101010"
 "#	c #FF3000"
@@ -4201,9 +4056,7 @@ Type=0x029
 SubType=0x02
 String1=0x02,Tor/Gatter
 String2=0x04,Gate
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 11 3 1"   Colormode=16
 "!	c #000000"
 "#	c #C5C5C5"
@@ -4228,9 +4081,7 @@ Type=0x029
 SubType=0x03
 String1=0x02,Umlaufsperre
 String2=0x04,Cycle barrier
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=16
 "!	c #FFFFFF"
 "#	c #FF3000"
@@ -4260,9 +4111,7 @@ Type=0x029
 SubType=0x04
 String1=0x02,Bovi-Stop
 String2=0x04,Cattle grid
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 6 46 2"   Colormode=32
 "!!	c #00CA20"  canalalpha=0
 "!#	c #7BCA6A"  canalalpha=0
@@ -4443,9 +4292,7 @@ Type=0x029
 SubType=0x11
 String1=0x02,Ampel
 String2=0x04,Traffic signals
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="6 16 81 2"   Colormode=32
 "!!	c #000000"  canalalpha=6
 "!#	c #390000"  canalalpha=12
@@ -4553,9 +4400,7 @@ Type=0x029
 SubType=0x12
 String1=0x02,Stopschild
 String2=0x04,Stop sign
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 16 69 2"   Colormode=32
 "!!	c #000000"  canalalpha=15
 "!#	c #E6E6E6"  canalalpha=3
@@ -4651,9 +4496,7 @@ Type=0x029
 SubType=0x13
 String1=0x02,Vorfahrt gew‰hren
 String2=0x04,Give way
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=16
 "!	c #FF0000"
 "#	c #FFFFFF"
@@ -4683,9 +4526,7 @@ Type=0x029
 SubType=0x14
 String1=0x02,Sackgasse
 String2=0x04,No exit
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="14 14 35 2"   Colormode=16
 "!!	c #A4A4A4"
 "!#	c #7B65B4"
@@ -4855,9 +4696,7 @@ Type=0x029
 SubType=0x17
 String1=0x02,Zebrastreifen
 String2=0x04,Crossing
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="14 7 2 1"   Colormode=32
 "!	c #949494"  canalalpha=0
 "#	c #FFFFFF"  canalalpha=0
@@ -7149,9 +6988,7 @@ Type=0x02c
 SubType=0x11
 String1=0x02,Gedenkst‰tte
 String2=0x04,Memorial
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 DayXpm="7 16 37 2"   Colormode=32
 "!!	c #000000"  canalalpha=15
 "!#	c #949494"  canalalpha=3
@@ -10315,9 +10152,7 @@ Type=0x02f
 SubType=0x01
 String1=0x04,Fuel
 String2=0x02,Tankstelle
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 DayXpm="14 16 6 1"   Colormode=16
 "!	c #313131"
 "#	c #FF3000"
@@ -11249,9 +11084,7 @@ Type=0x045
 SubType=0x01
 String1=0x02,Trinkwasser
 String2=0x04,Drinking water
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 DayXpm="14 14 95 2"   Colormode=16
 "!!	c #0065D5"
 "!#	c #3995D5"
@@ -14869,9 +14702,7 @@ Type=0x066
 SubType=0x05
 String1=0x02,Sitzbank
 String2=0x04,Bench
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 8 3 1"   Colormode=16
 "!	c #C5C5C5"
 "#	c #000000"
@@ -15495,9 +15326,7 @@ Type=0x072
 SubType=0x00
 String1=0x02,Generator
 String2=0x04,Generator
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="16 16 37 2"   Colormode=32
 "!!	c #FFFFFF"  canalalpha=0
 "!#	c #FFFFFF"  canalalpha=0
@@ -15561,9 +15390,7 @@ Type=0x072
 SubType=0x01
 String1=0x02,Strommast
 String2=0x04,Power tower
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 DayXpm="7 7 2 1"   Colormode=32
 "!	c #838383"  canalalpha=0
 "#	c #FFFFFF"  canalalpha=0

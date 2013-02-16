@@ -519,16 +519,16 @@ highway='track;path'
 
 
 highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 road_class=0 road_speed=0 resolution 24-23]
-highway=track & junction=roundabout							[0x00c0a road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 road_class=0 road_speed=0 resolution 24]
+highway=track & junction=roundabout							[0x00c0a road_class=0 road_speed=0 resolution 24]
 
 highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade3							[0x10 road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype~'grade[4|6]'							[0x11 road_class=0 road_speed=0 resolution 24-23]
-highway=track										[0x0a road_class=0 road_speed=0 resolution 24-23]
+highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade3							[0x10 road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype~'grade[4|6]'							[0x11 road_class=0 road_speed=0 resolution 24]
+highway=track										[0x0a road_class=0 road_speed=0 resolution 24]
 
 #------------------------------------------------------------------------------
 ## restrictions for all highway=path
@@ -550,8 +550,8 @@ highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
 highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
 highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
 
-highway=path & junction=roundabout                             			[0x00c12 road_class=0 road_speed=0 resolution 24-23]
-highway=path | highway=trail                                  			[0x12 road_class=0 road_speed=0 resolution 24-23]
+highway=path & junction=roundabout                             			[0x00c12 road_class=0 road_speed=0 resolution 24]
+highway=path | highway=trail                                  			[0x12 road_class=0 road_speed=0 resolution 24]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
@@ -559,8 +559,8 @@ highway=path | highway=trail                                  			[0x12 road_clas
 # road = way typ not defined/unknown - not routable
 highway=road										[0x2c resolution 24]
 
-highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24-22 road_class=0 road_speed=0]
-highway=* & (area!=yes & area!=true & area!=1)          				[0x1b road_class=0 road_speed=0 resolution 24]
+highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
+highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 
