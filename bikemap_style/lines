@@ -228,11 +228,11 @@ highway=construction
 # access restrictions for germany (and other?) foot=no and bicycle=no
 # uncomment to enable
 
-highway=motorway 		{ add foot=no; add bicycle=no }
-highway=motorway_link 		{ add foot=no; add bicycle=no }
-highway=trunk 			{ add foot=no; add bicycle=no }
-highway=trunk_link 		{ add foot=no; add bicycle=no }
-highway=* & motorroad=yes 	{ add foot=no; add bicycle=no }
+highway=motorway 		{ set access=no }
+highway=motorway_link 		{ set access=no }
+highway=trunk 			{ set access=no }
+highway=trunk_link 		{ set access=no }
+highway=* & motorroad=yes 	{ set access=no }
 
 #--------------------------------------------------------------------------------------
 # motorway
@@ -293,13 +293,13 @@ highway=primary
 highway=primary										[0x12003 resolution 21-20 continue with_actions]
 highway=primary										[0x11003 resolution 23-22 continue with_actions]
 highway=primary & junction=roundabout							[0x00c03 resolution 24 road_class=0 road_speed=0]
-highway=primary & cycle_network=yes							[0x03 resolution 24 road_class=0 road_speed=6]
+highway=primary & cycle_network=yes							[0x03 resolution 24 road_class=4 road_speed=6]
 highway=primary        									[0x03 resolution 24 road_class=0 road_speed=0]
 
 highway=primary_link	{ set ref = '' }
 highway=primary_link 									[0x12003 resolution 22-21 continue with_actions]
 highway=primary_link									[0x11003 resolution 23-23 continue with_actions]
-highway=primary_link & cycle_network=yes						[0x00803 resolution 24 road_class=0 road_speed=6]
+highway=primary_link & cycle_network=yes						[0x00803 resolution 24 road_class=4 road_speed=6]
 highway=primary_link									[0x00803 resolution 24 road_class=0 road_speed=0]
 
 
@@ -316,14 +316,14 @@ highway=secondary
 highway=secondary                           						[0x12004 resolution 21-21 continue with_actions]
 highway=secondary                           						[0x11004 resolution 23-22 continue with_actions]
 highway=secondary & junction=roundabout 						[0x00c04 resolution 24 road_class=0 road_speed=0]
-highway=secondary & cycle_network=yes							[0x04 resolution 24 road_class=0 road_speed=6]
+highway=secondary & cycle_network=yes							[0x04 resolution 24 road_class=4 road_speed=6]
 highway=secondary                           						[0x04 resolution 24 road_class=0 road_speed=0]
 
 
 highway=secondary_link  { set ref = '' }
 highway=secondary_link                      						[0x12004 resolution 22-22 continue with_actions]
 highway=secondary_link                      						[0x11004 resolution 23-23 continue with_actions]
-highway=secondary_link & cycle_network=yes						[0x00804 resolution 24 road_class=0 road_speed=6]
+highway=secondary_link & cycle_network=yes						[0x00804 resolution 24 road_class=4 road_speed=6]
 highway=secondary_link									[0x00804 resolution 24 road_class=0 road_speed=0]
 
 
@@ -340,13 +340,13 @@ highway=tertiary
 highway=tertiary                            						[0x12005 resolution 21-21 continue with_actions]
 highway=tertiary                            						[0x11005 resolution 23-22 continue with_actions]
 highway=tertiary & junction=roundabout	 						[0x00c05 resolution 24 road_class=0 road_speed=2]
-highway=tertiary & cycle_network=yes					 		[0x05 resolution 24 road_class=0 road_speed=6]
+highway=tertiary & cycle_network=yes					 		[0x05 resolution 24 road_class=4 road_speed=6]
 highway=tertiary									[0x05 resolution 24 road_class=0 road_speed=0]
 
 highway=tertiary_link  	{ set ref = '' }
 highway=tertiary_link                       						[0x12005 resolution 22-22 continue with_actions]
 highway=tertiary_link                       						[0x11005 resolution 23-23 continue with_actions]
-highway=tertiary_link & cycle_network=yes						[0x00805 resolution 24 road_class=0 road_speed=6]
+highway=tertiary_link & cycle_network=yes						[0x00805 resolution 24 road_class=4 road_speed=6]
 highway=tertiary_link									[0x00805 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
@@ -356,14 +356,14 @@ highway=tertiary_link									[0x00805 resolution 24 road_class=0 road_speed=0]
 highway=unclassified | highway=minor        						[0x12006 resolution 21-21 continue with_actions]
 highway=unclassified | highway=minor        						[0x11006 resolution 23-22 continue with_actions]
 (highway=unclassified | highway=minor) & junction=roundabout				[0x00c06 resolution 24 road_class=0 road_speed=2]
-(highway=unclassified | highway=minor) & cycle_network=yes				[0x06 resolution 24 road_class=0 road_speed=6]
+(highway=unclassified | highway=minor) & cycle_network=yes				[0x06 resolution 24 road_class=4 road_speed=6]
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=0 road_speed=0]
 
 # residential
 highway=residential 									[0x12006 resolution 21-21 continue with_actions]
 highway=residential 									[0x11006 resolution 23-22 continue with_actions]
 highway=residential & junction=roundabout						[0x00c06 resolution 24 road_class=0 road_speed=2]
-highway=residential & cycle_network=yes							[0x06 resolution 24 road_class=0 road_speed=6]
+highway=residential & cycle_network=yes							[0x06 resolution 24 road_class=4 road_speed=6]
 highway=residential 									[0x06 resolution 24 road_class=0 road_speed=0]
 
 # service
@@ -375,7 +375,7 @@ highway=service | highway=estate | highway=living_street           			[0x12007 r
 (highway=service | highway=estate | highway=living_street) & junction=roundabout	[0x00c07 resolution 24 road_class=0 road_speed=0]
 (highway=service | highway=estate) & cycle_network=yes					[0x07 resolution 24 road_class=0 road_speed=6]
 highway=service | highway=estate  							[0x07 resolution 24 road_class=0 road_speed=0]
-highway=living_street & cycle_network=yes						[0x0071b resolution 24 road_class=0 road_speed=6]
+highway=living_street & cycle_network=yes						[0x0071b resolution 24 road_class=4 road_speed=6]
 highway=living_street									[0x0071b resolution 24 road_class=0 road_speed=0]
 highway=raceway										[0x07 resolution 24-23]
 highway=platform									[0x07 resolution 24]
@@ -404,8 +404,8 @@ highway=pedestrian & (bicycle=allowed |
 		      set bicycle=yes;
 			}
 
-highway=pedestrian & bicycle=yes							[0x00d07 road_class=0 road_speed=6 resolution 24-21]
-highway=pedestrian & bicycle=dismount							[0x00d07 road_class=0 road_speed=4 resolution 24-21]
+highway=pedestrian & bicycle=yes							[0x00d07 road_class=4 road_speed=6 resolution 24-21]
+highway=pedestrian & bicycle=dismount							[0x00d07 road_class=4 road_speed=4 resolution 24-21]
 highway=pedestrian									[0x00d07 road_class=0 road_speed=0 resolution 24-21]
 
 
@@ -436,11 +436,11 @@ highway=cycleway
 		  }
 
 
-highway=cycleway & cn_name=* & junction=roundabout	{ set name='${cn_name}' }	[0x00c16 road_class=0 road_speed=6 resolution 24-21]
-highway=cycleway & junction=roundabout				 			[0x00c16 road_class=0 road_speed=4 resolution 24-21]
+highway=cycleway & cn_name=* & junction=roundabout	{ set name='${cn_name}' }	[0x00c16 road_class=4 road_speed=6 resolution 24-21]
+highway=cycleway & junction=roundabout				 			[0x00c16 road_class=4 road_speed=4 resolution 24-21]
 
-highway=cycleway & cn_name=* 	{ set name='${cn_name}' }				[0x16 road_class=0 road_speed=6 resolution 24-21]
-highway=cycleway				 					[0x16 road_class=0 road_speed=4 resolution 24-21]
+highway=cycleway & cn_name=* 	{ set name='${cn_name}' }				[0x16 road_class=4 road_speed=6 resolution 24-21]
+highway=cycleway				 					[0x16 road_class=4 road_speed=4 resolution 24-21]
 
 
 # footway
@@ -471,9 +471,9 @@ highway=footway & (bicycle=designated |
 		  set bicycle=yes;
 		  }
 
-highway=footway & bicycle=yes & junction=roundabout					[0x00c0d road_class=0 road_speed=6 resolution 24-21]
+highway=footway & bicycle=yes & junction=roundabout					[0x00c0d road_class=4 road_speed=6 resolution 24-21]
 highway=footway & access=no & junction=roundabout					[0x00c0d road_class=0 road_speed=0 resolution 24-23]
-highway=footway & bicycle=yes								[0x0d road_class=0 road_speed=6 resolution 24-21]
+highway=footway & bicycle=yes								[0x0d road_class=4 road_speed=6 resolution 24-21]
 highway=footway										[0x0d road_class=0 road_speed=0 resolution 24-23]
 
 
@@ -500,14 +500,14 @@ highway='track;path'
 
 
 
-highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=0 road_speed=6 resolution 24-21]
-highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f road_class=0 road_speed=4 resolution 24-22]
+highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=4 road_speed=6 resolution 24-21]
+highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f road_class=3 road_speed=4 resolution 24-22]
 highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 road_class=0 road_speed=0 resolution 24]
 highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 road_class=0 road_speed=0 resolution 24]
 highway=track & junction=roundabout							[0x00c0a road_class=0 road_speed=0 resolution 24]
 
-highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=6 resolution 24-21]
-highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=4 resolution 24-22]
+highway=track & tracktype=grade1							[0x0e road_class=4 road_speed=6 resolution 24-21]
+highway=track & tracktype=grade2							[0x0f road_class=3 road_speed=4 resolution 24-22]
 highway=track & tracktype=grade3							[0x10 road_class=0 road_speed=0 resolution 24]
 highway=track & tracktype~'grade[4|6]'							[0x11 road_class=0 road_speed=0 resolution 24]
 highway=track										[0x0a road_class=0 road_speed=0 resolution 24]
@@ -538,8 +538,8 @@ highway=path | highway=trail                                  			[0x12 road_clas
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
-# road = way typ not defined/unknown - not routable
-highway=road										[0x2c resolution 24]
+# road = way typ not defined/unknown 
+highway=road										[0x0072c resolution 24 road_class=0 road_speed=0]
 
 highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]

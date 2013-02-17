@@ -15,7 +15,6 @@ CodePage=1252
 
 
 
-
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
 Type=0x10d00,1
@@ -102,7 +101,9 @@ Type=0x013,7
 Type=0x01
 String1=0x02,Stadt
 String2=0x04,City
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #F5D5D5"
 "# c #F5D5D5"
@@ -148,7 +149,9 @@ Xpm="32 32 4 1"
 Type=0x02
 String1=0x02,Siedlung
 String2=0x04,Village
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #E5D5D5"
 "# c #E5D5D5"
@@ -194,7 +197,9 @@ Xpm="32 32 4 1"
 Type=0x03
 String1=0x02,Wohngebiet
 String2=0x04,Residential
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
 Xpm="0 0 2 0"
 "1 c #FFDFDF"
 "2 c #400000"
@@ -205,7 +210,10 @@ Xpm="0 0 2 0"
 Type=0x04
 String1=0x02,Milit‰rgebiet
 String2=0x04,Military
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=Day
+DaycustomColor:#000000
 Xpm="32 32 4 1"
 "! c #BF0000"
 "  c none"
@@ -297,7 +305,9 @@ Xpm="32 32 4 1"
 Type=0x06
 String1=0x02,Parkgarage
 String2=0x04,Parking garage
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #57AED9"
 "# c #F6EEB6"
@@ -391,7 +401,9 @@ Xpm="32 32 4 1"
 Type=0x08
 String1=0x02,Gewerbe
 String2=0x04,Shopping
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #FFA040"
 "  c none"
@@ -437,7 +449,9 @@ Xpm="32 32 4 1"
 Type=0x0a
 String1=0x02,Universit‰t
 String2=0x04,University
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #85B185"
 "  c none"
@@ -621,7 +635,9 @@ Xpm="32 32 2 1"
 Type=0x0f
 String1=0x02,Commercial
 String2=0x04,Commercial
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #F0F0F0"
 "# c #F0F0F0"
@@ -667,7 +683,9 @@ Xpm="32 32 4 1"
 Type=0x12
 String1=0x02,Fuﬂg‰ngerzone
 String2=0x04,Pedestrian
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 Xpm="0 0 2 0"
 "1 c #FFFF8B"
 "2 c #BD9500"
@@ -678,7 +696,9 @@ Xpm="0 0 2 0"
 Type=0x13
 String1=0x02,Geb‰ude
 String2=0x04,Building
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 2 1"
 "! c #000000"
 "  c none"
@@ -814,9 +834,7 @@ Xpm="32 32 4 1"
 Type=0x16
 String1=0x02,Naturschutzgebiet
 String2=0x04,Nature reserve
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #408000"
 "# c #80FF80"
@@ -965,9 +983,7 @@ Xpm="0 0 2 0"
 Type=0x1a
 String1=0x02,Friedhof
 String2=0x04,Cemetery
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #009900"
 "# c #BDFF6A"
@@ -1300,7 +1316,10 @@ Xpm="32 32 4 1"
 Type=0x2c
 String1=0x02,Weinanbau
 String2=0x04,Vineyard
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=Day
+DaycustomColor:#C00080
 Xpm="32 32 4 1"
 "! c #C00080"
 "# c #00FF40"
