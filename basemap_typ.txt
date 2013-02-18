@@ -1,6 +1,6 @@
 ; basemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé 
+; Fichier TYP compilé
 ; Décompilé le 14.02.2013 à 16:05:47
 
 [_id]
@@ -102,7 +102,7 @@ Type=0x01
 String1=0x02,Stadt
 String2=0x04,City
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
+FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #F5D5D5"
@@ -150,7 +150,7 @@ Type=0x02
 String1=0x02,Siedlung
 String2=0x04,Village
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
+FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #E5D5D5"
@@ -198,7 +198,7 @@ Type=0x03
 String1=0x02,Wohngebiet
 String2=0x04,Residential
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
+FontStyle=SmallFont
 CustomColor=No
 Xpm="0 0 2 0"
 "1 c #FFDFDF"
@@ -402,7 +402,7 @@ Type=0x08
 String1=0x02,Gewerbe
 String2=0x04,Shopping
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
+FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #FFA040"
@@ -545,7 +545,8 @@ Xpm="32 32 4 1"
 Type=0x0c
 String1=0x02,Industriegebiet
 String2=0x04,Industrial
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
 Xpm="32 32 4 1"
 "! c #DFDFDF"
 "  c none"
@@ -636,7 +637,7 @@ Type=0x0f
 String1=0x02,Commercial
 String2=0x04,Commercial
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
+FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #F0F0F0"
@@ -788,7 +789,8 @@ Xpm="32 32 4 1"
 Type=0x15
 String1=0x02,Naturwald
 String2=0x04,Natural woodland
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
 Xpm="32 32 4 1"
 "! c #BDFF6A"
 "# c #39CA41"
@@ -834,7 +836,8 @@ Xpm="32 32 4 1"
 Type=0x16
 String1=0x02,Naturschutzgebiet
 String2=0x04,Nature reserve
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
 Xpm="32 32 4 1"
 "! c #408000"
 "# c #80FF80"
