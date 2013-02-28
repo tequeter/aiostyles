@@ -443,7 +443,7 @@ highway=pedestrian & (bicycle=allowed |
 		  add bicycle=yes;
 		  }
 
-highway=pedestrian									[0x00d07 road_class=0 road_speed=0 resolution 24-23]
+highway=pedestrian									[0x00d07 resolution 24-23]
 
 
 # cycleway
@@ -465,8 +465,8 @@ highway=cycleway
 		set bicycle=yes;
 		  }
 
-highway=cycleway & junction=roundabout				 			[0x00c16 road_class=0 road_speed=0 resolution 24-23]
-highway=cycleway				 					[0x16 road_class=0 road_speed=0 resolution 24-23]
+highway=cycleway & junction=roundabout				 			[0x00c16 resolution 24-23]
+highway=cycleway				 					[0x16 resolution 24-23]
 
 
 # footway
@@ -496,8 +496,8 @@ highway=footway & (bicycle=designated |
 		  set bicycle=yes
 		  }
 
-highway=footway & junction=roundabout							[0x00c0d road_class=0 road_speed=0 resolution 24-23]
-highway=footway										[0x0d road_class=0 road_speed=0 resolution 24-23]
+highway=footway & junction=roundabout							[0x00c0d resolution 24-23]
+highway=footway										[0x0d resolution 24-23]
 
 # bridleway
 highway=bridleway
@@ -527,16 +527,16 @@ highway='track;path'
 
 
 highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f road_class=0 road_speed=0 resolution 24]
-highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 road_class=0 road_speed=0 resolution 24]
-highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 road_class=0 road_speed=0 resolution 24]
-highway=track & junction=roundabout							[0x00c0a road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f resolution 24]
+highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 resolution 24]
+highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 resolution 24]
+highway=track & junction=roundabout							[0x00c0a resolution 24]
 
-highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=0 resolution 24]
-highway=track & tracktype=grade3							[0x10 road_class=0 road_speed=0 resolution 24]
-highway=track & tracktype~'grade[4|6]'							[0x11 road_class=0 road_speed=0 resolution 24]
-highway=track										[0x0a road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade1							[0x0e resolution 24-23]
+highway=track & tracktype=grade2							[0x0f resolution 24]
+highway=track & tracktype=grade3							[0x10 resolution 24]
+highway=track & tracktype~'grade[4|6]'							[0x11 resolution 24]
+highway=track										[0x0a resolution 24]
 
 #------------------------------------------------------------------------------
 ## restrictions for all highway=path
@@ -558,8 +558,8 @@ highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
 highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
 highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
 
-highway=path & junction=roundabout                             			[0x00c12 road_class=0 road_speed=0 resolution 24]
-highway=path | highway=trail                                  			[0x12 road_class=0 road_speed=0 resolution 24]
+highway=path & junction=roundabout                             			[0x00c12 resolution 24]
+highway=path | highway=trail                                  			[0x12 resolution 24]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
