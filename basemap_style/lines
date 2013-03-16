@@ -408,9 +408,11 @@ highway=residential & construction=minor						[0x06 resolution 24 road_class=0 r
 highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
 
 # service
+
 highway=service | highway=estate | highway=living_street
 		{
-		  add mkgmap:dead-end-check=false
+		  add mkgmap:dead-end-check=false;
+		  add mkgmap:check_connected = true
 		}
 highway=service | highway=estate | highway=living_street           			[0x12007 resolution 23-22 continue with_actions]
 (highway=service | highway=estate | highway=living_street) & junction=roundabout	[0x00c07 resolution 24 road_class=0 road_speed=0]
