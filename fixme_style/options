@@ -11,7 +11,7 @@
 #
 # Example:
 # name_tag = name:en, int_name, name
-#name_tag = name:de, name
+name_tag = name:de, name
 # The levels specification for this style
 #
 #levels = 0:24, 1:22, 2:20, 3:18, 4:16
