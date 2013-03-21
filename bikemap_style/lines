@@ -52,8 +52,11 @@ highway=track | highway=path | highway=trail
 # Remove access=yes from highways.
 
 highway=* &
-      (access=yes|access=permissive|access=designated|access=official)
-				{ delete access }
+      (access=yes |
+      access=permissive |
+      access=designated |
+      access=official)
+		{ delete access }
 
 # change access=* to more useful tags
 
@@ -538,7 +541,7 @@ highway=path | highway=trail                                  			[0x12 road_clas
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
-# road = way typ not defined/unknown 
+# road = way typ not defined/unknown
 highway=road										[0x0072c resolution 24 road_class=0 road_speed=0]
 
 highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
