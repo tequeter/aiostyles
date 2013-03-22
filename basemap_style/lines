@@ -277,7 +277,7 @@ highway=motorway_link & mkgmap:exit_hint=true
           'Exit ${mkgmap:exit_hint_name}' |
           'Exit ${mkgmap:exit_hint_ref}' }						[0x01 resolution 24 road_class=4 road_speed=3]
 
-highway=motorway_link  	{ set ref = '' }       						[0x00901 resolution 24 road_class=4 road_speed=3]
+highway=motorway_link 			     						[0x00901 resolution 24 road_class=4 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -305,8 +305,6 @@ highway=trunk &
     destination=*
     { set mkgmap:display_name = '${ref|subst: =>}(${destination|subst:;=>|subst:/=> })' }
 
-
-highway=trunk_link 	{ set ref = '' }
 
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 23-22 continue with_actions]
@@ -341,7 +339,6 @@ highway=primary & construction=minor							[0x03 resolution 24 road_class=3 road
 highway=primary        									[0x03 resolution 24 road_class=3 road_speed=5]
 
 
-highway=primary_link	{ set ref = '' }
 highway=primary_link 									[0x12003 resolution 22-21 continue with_actions]
 highway=primary_link									[0x11003 resolution 23-23 continue with_actions]
 highway=primary_link & construction=minor						[0x00803 resolution 24 road_class=3 road_speed=2]
