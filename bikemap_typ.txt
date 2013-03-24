@@ -788,6 +788,7 @@ String1=0x02,Naturwald
 String2=0x04,Natural woodland
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF6A"
 "# c #39CA41"
@@ -835,6 +836,7 @@ String1=0x02,Naturschutzgebiet
 String2=0x04,Nature reserve
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #408000"
 "# c #80FF80"
@@ -2019,8 +2021,8 @@ Xpm="32 2 4  1"
 "# c #C4C413"
 "3 c #AAAAAA"
 "4 c #E0E02C"
-"!!!!!!!!!!######!!!!!!!!!!######"
-"!!!!!!!!!!######!!!!!!!!!!######"
+"!!!!####!!!!####!!!!####!!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
@@ -2176,7 +2178,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x16
+Type=0x15
 UseOrientation=N
 Xpm="32 3 2  1"
 "! c #0040C0"
@@ -2192,7 +2194,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x17
+Type=0x16
 UseOrientation=N
 Xpm="32 2 2  1"
 "! c #804080"
@@ -2771,6 +2773,28 @@ String2=0x04,Tunnel
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10414
+UseOrientation=Y
+Xpm="32 10 2  1"
+"! c #FF0000"
+"  c none"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!              !!              "
+"!!              !!              "
+"!!              !!              "
+;12345678901234567890123456789012
+String1=0x01,
+ExtendedLabels=N
 [end]
 
 
@@ -11782,7 +11806,7 @@ DayXpm="24 12 5 1"   Colormode=16
 "        !!!  !!!        "
 "       !!!!!!!!!!       "
 "        !!!  !!!        "
-"        !!    !!       "
+"        !!    !!        "
 ;123456789012345678901234
 [end]
 

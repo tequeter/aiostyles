@@ -1,7 +1,7 @@
 ; basemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé
-; Décompilé le 14.02.2013 à 16:05:47
+; Fichier TYP compilé 
+; Décompilé le 23.03.2013 à 19:59:54
 
 [_id]
 ProductCode=45
@@ -12,6 +12,7 @@ CodePage=1252
 ;=========== COMMENTAIRES ======
 [_comments]
 [End]
+
 
 
 
@@ -547,6 +548,7 @@ String1=0x02,Industriegebiet
 String2=0x04,Industrial
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #DFDFDF"
 "  c none"
@@ -791,6 +793,7 @@ String1=0x02,Naturwald
 String2=0x04,Natural woodland
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF6A"
 "# c #39CA41"
@@ -838,6 +841,7 @@ String1=0x02,Naturschutzgebiet
 String2=0x04,Nature reserve
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
 Xpm="32 32 4 1"
 "! c #408000"
 "# c #80FF80"
@@ -2024,8 +2028,8 @@ Xpm="32 2 4  1"
 "# c #C4C413"
 "3 c #AAAAAA"
 "4 c #E0E02C"
-"!!!!!!!!!!######!!!!!!!!!!######"
-"!!!!!!!!!!######!!!!!!!!!!######"
+"!!!!####!!!!####!!!!####!!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
@@ -11797,7 +11801,7 @@ DayXpm="24 12 5 1"   Colormode=16
 "        !!!  !!!        "
 "       !!!!!!!!!!       "
 "        !!!  !!!        "
-"        !!    !!       "
+"        !!    !!        "
 ;123456789012345678901234
 [end]
 

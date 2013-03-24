@@ -15,6 +15,15 @@ version=1.0
 # A longer description of the style.
 description {
 The AIO-bikemap-style.
-This is a heavyweight style that is designed for use
-when cycling, routing over trunk and motorway is disabled
+This is an alternative heavyweight style 
+that is designed for use when cycling. 
+Cycleroutes are highlighted, 
+
+Hints:
+Routing over cycleways with newer GARMIN-firmwares
+is difficult, so take care.
+
+Routing over trunk and motorway is disabled
+
+contact: weigelt.bernd (at) web.de
 }

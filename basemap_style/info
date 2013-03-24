@@ -16,6 +16,11 @@ version=1.0
 description {
 The AIO-basemap-style.
 This is a heavyweight style that is designed for use
-when mapping and routing with cars and motorcycle.
-It usable for routing with bicycles, but not perfect.
+when mapping or routing with cars and motorcycle.
+Routing over ways like footway, cycleway, steps and
+tracks (grade2-6) is disabled.
+For cyclerouting, please use the AIO-Bikemap.
+
+
+contact: weigelt.bernd (at) web.de
 }
