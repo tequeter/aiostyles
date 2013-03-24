@@ -232,13 +232,13 @@ highway=*
 	     cycleway:right=yes |
 	     cycleway:right=lane)									[0x10416 resolution 24-23 continue with_actions]
 
-highway=cycleway & bicycle=dismount               							[0x10414 resolution 24-23 continue with_actions]
+
 
 icn_network=yes								 				[0x10110 resolution 24-22 continue with_actions]
 rcn_network=yes	 											[0x10109 resolution 24-22 continue with_actions]
 lcn_network=yes												[0x10108 resolution 24-23 continue with_actions]
 
-
+highway=cycleway & bicycle=dismount               							[0x10414 resolution 24-23 continue with_actions]
 #-----------------------------------------------------------------------------
 # set highway name equal to 'mkgmap:display_name' to prevent different naming
 highway=*	{ set name='${mkgmap:display_name}'; }
