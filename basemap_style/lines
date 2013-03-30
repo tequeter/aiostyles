@@ -139,8 +139,14 @@ highway=*	           		{ set streetname='${name}'; }
 #------------------------------------------------------------------------------
 
 # oneway overlay
-oneway=yes & highway=*              							[0x10800 resolution 24-23 continue with_actions]
+highway=*  &
+  (oneway=yes | oneway=1 | oneway=true)
+					{ set oneway=yes}
+											[0x10800 resolution 24-23 continue with_actions]
+highway=*  & oneway=-1									[0x10801 resolution 24-23 continue with_actions]
 
+highway=* & oneway=no			{ delete oneway }
+											
 # remove name to show following overlays with seperate name (default_name)
 highway=*				{ set name=''; }
 
@@ -148,7 +154,7 @@ highway=*				{ set name=''; }
 highway=* & construction=*								[0x10802 resolution 24-23 continue with_actions]
 
 # toll overlay
-toll=yes & highway!=motorway								[0x10801 resolution 24-22 continue with_actions]
+toll=yes & highway!=motorway								[0x10803 resolution 24-22 continue with_actions]
 
 # bridge overlay
 bridge=yes & highway=motorway								[0x10101 resolution 24-23 continue with_actions]
