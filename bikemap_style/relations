@@ -71,12 +71,3 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 		    } 
 		 }
 
-type=route & route=*     
-		{ apply 
-		    { add route='${route}'; 
-		      add route:name='${name}'; 
-		      add route:ref='${ref}'; 
-		      add route:network='${network}'; 
-		      add route:importance='${importance}'; 
-		      } 
-		    }
