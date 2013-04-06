@@ -578,7 +578,7 @@ highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 resolution 2
 highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 resolution 24]
 highway=track & junction=roundabout							[0x00c0a resolution 24]
 
-highway=track & tracktype=grade1							[0x0e resolution 24-23]
+highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=0 resolution 24-23]
 highway=track & tracktype=grade2							[0x0f resolution 24]
 highway=track & tracktype=grade3							[0x10 resolution 24]
 highway=track & tracktype~'grade[4|6]'							[0x11 resolution 24]
