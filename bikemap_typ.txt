@@ -2486,38 +2486,16 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x10001
+Type=0x10007
 UseOrientation=N
-Xpm="32 3 2  1"
-"! c #949494"
-"  c none"
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-;12345678901234567890123456789012
-String1=0x02,In Bau
-String2=0x04,Construction
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10002
-UseOrientation=N
-Xpm="32 3 2  1"
-"! c #949494"
-"  c none"
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-;12345678901234567890123456789012
-String1=0x02,Stillgelegt
-String2=0x04,Disused
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+LineWidth=1
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFFFFF"
+"2 c #838383"
+String1=0x02,Zufahrtsweg
+String2=0x04,Service
+ExtendedLabels=N
 [end]
 
 
@@ -2770,6 +2748,42 @@ Xpm="32 9 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Tunnel
 String2=0x04,Tunnel
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10113
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #949494"
+"  c none"
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+;12345678901234567890123456789012
+String1=0x02,In Bau
+String2=0x04,Construction
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10114
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #949494"
+"  c none"
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+;12345678901234567890123456789012
+String1=0x02,Stillgelegt
+String2=0x04,Disused
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No

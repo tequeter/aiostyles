@@ -19,17 +19,17 @@
 #	0x07	service/living_street - with overlays
 #	0x08	ramp motorway/trunk
 #	0x09	ramp other
-#	0x0a	track
+#	0x0a	track 2-6 / road
 #	0x0b			NOT USED, an american special roadtype
 #	0x0c	roundabout	only as function, used with overlays
-#	0x0d	footway		routing disabled
+#	0x0d	footway		not used is 0x1000d
 #	0x0e	track grade1
-#	0x0f	track grade2	routing disabled
-#	0x10	track grade3	routing disabled
-#	0x11	track grade4-6	routing disabled
-#	0x12	path/trail	routing disabled
-#	0x13	steps		routing disabled
-#	0x16	cycleway	routing disabled
+#	0x0f			not used
+#	0x10			not used
+#	0x11			not used
+#	0x12	path/trail	not used is 0x10012
+#	0x13	steps		not used is 0x10013
+#	0x16	cycleway	not used is 0x10016
 #	0x1a	ferry
 #	0x1b	ways with no cat
 
@@ -216,7 +216,7 @@ highway=* & disused=yes
 	    {
 	      add access=no;
 	      add mkgmap:dead-end-check=false
-	    } 										[0x10002 resolution 24]
+	    } 										[0x10114 resolution 24]
 
 #-----------------------------------------------------------------------------
 # construction
@@ -225,7 +225,7 @@ highway=construction
 	    {
 	      add access=no;
 	      add mkgmap:dead-end-check=false
-	    } 										[0x10001 resolution 24]
+	    } 										[0x10113 resolution 24]
 
 #------------------------------------------------------------------------------
 # access restrictions for germany (and other?) foot=no and bicycle=no
@@ -462,8 +462,8 @@ highway=service | highway=estate | highway=living_street           			[0x12007 r
 (highway=service | highway=estate | highway=living_street) & junction=roundabout	[0x00c07 resolution 24 road_class=0 road_speed=0]
 highway=service | highway=estate  							[0x07 resolution 24 road_class=0 road_speed=0]
 highway=living_street									[0x0071b resolution 24 road_class=0 road_speed=0]
-highway=raceway										[0x07 resolution 24-23]
-highway=platform									[0x07 resolution 24]
+highway=raceway										[0x10007 resolution 24-23]
+highway=platform									[0x10007 resolution 24]
 
 #------------------------------------------------------------------------------
 # designated
@@ -489,7 +489,7 @@ highway=pedestrian & (bicycle=allowed |
 		  add bicycle=yes;
 		  }
 
-highway=pedestrian									[0x00d07 resolution 24-23]
+highway=pedestrian									[0x00d07 road_class=0 road_speed=0 resolution 24-23]
 
 
 # cycleway
@@ -511,8 +511,8 @@ highway=cycleway
 		set bicycle=yes;
 		  }
 
-highway=cycleway & junction=roundabout				 			[0x00c16 resolution 24-23]
-highway=cycleway				 					[0x16 resolution 24-23]
+
+highway=cycleway				 					[0x10016 resolution 24-23]
 
 
 # footway
@@ -542,8 +542,8 @@ highway=footway & (bicycle=designated |
 		  set bicycle=yes
 		  }
 
-highway=footway & junction=roundabout							[0x00c0d resolution 24-23]
-highway=footway										[0x0d resolution 24-23]
+
+highway=footway										[0x1000d resolution 24-23]
 
 # bridleway
 highway=bridleway
@@ -560,7 +560,7 @@ highway=steps
 		  set motorcycle=no;
 		  set bicycle=no;
 		  add mkgmap:unpaved=1;
-		}									[0x13 resolution 24-23]
+		}									[0x10013 resolution 24-23]
 
 #------------------------------------------------------------------------------
 # tracks
@@ -573,16 +573,10 @@ highway='track;path'
 
 
 highway=track & tracktype=grade1 & junction=roundabout					[0x00c0e road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade2 & junction=roundabout					[0x00c0f resolution 24]
-highway=track & tracktype=grade3 & junction=roundabout					[0x00c10 resolution 24]
-highway=track & tracktype~'grade[4|6]' & junction=roundabout				[0x00c11 resolution 24]
-highway=track & junction=roundabout							[0x00c0a resolution 24]
+highway=track & junction=roundabout							[0x00c0a road_class=0 road_speed=0 resolution 24]
 
 highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=0 resolution 24-23]
-highway=track & tracktype=grade2							[0x0f resolution 24]
-highway=track & tracktype=grade3							[0x10 resolution 24]
-highway=track & tracktype~'grade[4|6]'							[0x11 resolution 24]
-highway=track										[0x0a resolution 24]
+highway=track										[0x0a road_class=0 road_speed=0 resolution 24]
 
 #------------------------------------------------------------------------------
 ## restrictions for all highway=path
@@ -604,18 +598,17 @@ highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
 highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
 highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
 
-highway=path & junction=roundabout                             				[0x00c12 resolution 24]
-highway=path | highway=trail                                  				[0x12 resolution 24]
+
+highway=path | highway=trail                                  				[0x10012 resolution 24]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
-# road = way typ not defined/unknown - not routable
-highway=road										[0x2c resolution 24]
-
-highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
-highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
-highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
+# road = way typ not defined/unknown
+highway=road										[0x0a road_class=0 road_speed=0 resolution 24]
+highway=* & (mkgmap:unpaved=1)                          				[0x0a road_class=0 road_speed=0 resolution 24]
+highway=* & (area!=yes & area!=true & area!=1)          				[0x1b road_class=0 road_speed=0 resolution 24]
+highway=* & junction=roundabout								[0x0c road_class=0 road_speed=0 resolution 24]
 #------------------------------------------------------------------------------
 
 # route
