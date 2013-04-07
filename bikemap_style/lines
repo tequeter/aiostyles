@@ -9,23 +9,23 @@
 # for more information.
 
 ## routable types used in this file
-#	0x01	motorway	routing disabled
-#	0x02	trunk		routing disabled
+#	0x01	motorway	not used is 0x11001
+#	0x02	trunk		not used is 0x11002
 #	0x03	primary
 #	0x04	secondary
 #	0x05	tertiary
 #	0x06	residential/unclassified
 #	0x07	service/living_street/cycleway	- with overlays
-#	0x08	ramp 		motorway/trunk	routing disabled
+#	0x08	ramp 		not used 
 #	0x09	ramp 		other
-#	0x0a	track
+#	0x0a	track 2-6
 #	0x0b			NOT USED, an american special roadtype
 #	0x0c	roundabout	only as function, used with overlays
 #	0x0d	footway
 #	0x0e	track grade1
-#	0x0f	track grade2
-#	0x10	track grade3
-#	0x11	track grade4-6
+#	0x0f			not used
+#	0x10			not used
+#	0x11			not used
 #	0x12	path/trail
 #	0x13	road
 #	0x16	bridleway
