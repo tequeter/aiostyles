@@ -281,10 +281,7 @@ highway=* & disused=yes
 #-----------------------------------------------------------------------------
 # construction
 
-highway=construction
-	    {
-	     add mkgmap:dead-end-check=false
-	    } 										[0x13 resolution 24 road_class=0 road_speed=0]
+highway=construction									[0x10113 resolution 24]
 
 #------------------------------------------------------------------------------
 # access restrictions for germany (and other?) foot=no and bicycle=no

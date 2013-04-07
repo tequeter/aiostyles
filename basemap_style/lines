@@ -212,20 +212,12 @@ highway=*		{ set name='${mkgmap:display_name}'; }
 #------------------------------------------------------------------------------
 # disused
 
-highway=* & disused=yes
-	    {
-	      add access=no;
-	      add mkgmap:dead-end-check=false
-	    } 										[0x10114 resolution 24]
+highway=* & disused=yes									[0x10114 resolution 24]
 
 #-----------------------------------------------------------------------------
 # construction
 
-highway=construction
-	    {
-	      add access=no;
-	      add mkgmap:dead-end-check=false
-	    } 										[0x10113 resolution 24]
+highway=construction									[0x10113 resolution 24]
 
 #------------------------------------------------------------------------------
 # access restrictions for germany (and other?) foot=no and bicycle=no
