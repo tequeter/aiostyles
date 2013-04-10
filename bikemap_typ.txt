@@ -1,4 +1,7 @@
-
+; bikemap_typ.txt
+; Longueur: 0 octets
+; Fichier TYP compilé 
+; Décompilé le 09.04.2013 à 19:32:00
 
 [_id]
 ProductCode=46
@@ -2061,9 +2064,10 @@ ExtendedLabels=N
 [_line]
 Type=0x0d
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 2 2  1"
 "! c #FF0000"
 "# c #00FF00"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
 String1=0x02,Fußweg
@@ -2075,25 +2079,25 @@ ExtendedLabels=N
 [_line]
 Type=0x0e
 UseOrientation=N
-LineWidth=2
+LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #E6E6E6"
-"2 c #525252"
+"1 c #B4B4B4"
+"2 c #BD9500"
 String1=0x02,Grade1
 String2=0x04,Grade1
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 [end]
 
 
 [_line]
 Type=0x0f
 UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
+LineWidth=2
+Xpm="0 0 1 0"
 "1 c #BD9500"
-"2 c #7B6541"
 String1=0x02,Grade2
 String2=0x04,Grade2
 ExtendedLabels=N
@@ -2121,8 +2125,8 @@ Xpm="32 2 2  1"
 "!!!!!!!    !!!!!!!    !!!!!!!   "
 "!!!!!!!    !!!!!!!    !!!!!!!   "
 ;12345678901234567890123456789012
-String1=0x02,Grade4/5
-String2=0x04,Grade4/5
+String1=0x02,Grade4/6
+String2=0x04,Grade4/6
 ExtendedLabels=N
 [end]
 
@@ -2145,10 +2149,9 @@ ExtendedLabels=N
 [_line]
 Type=0x13
 UseOrientation=N
-Xpm="32 3 2  1"
+Xpm="32 2 2  1"
 "! c #FF0000"
 "# c #00FF00"
-"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
 "!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
 "!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
 ;12345678901234567890123456789012
@@ -3725,15 +3728,14 @@ ExtendedLabels=N
 [_line]
 Type=0x1200e
 UseOrientation=N
-Xpm="32 1 2  1"
-"! c #7B6500"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Fahrweg
-String2=0x04,Track
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #BD9500"
+String1=0x02,Grade1/2
+String2=0x04,Grade1/2
 ExtendedLabels=N
 [end]
+
 
 
 [_line]
