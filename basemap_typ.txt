@@ -2497,6 +2497,89 @@ String1=0x02,Schwieriges Alpinwandern
 ExtendedLabels=N
 [end]
 
+[_line]
+Type=0x10001
+UseOrientation=N
+LineWidth=5
+BorderWidth=2
+Xpm="0 0 2 0"
+"1 c #FFFF00"
+"2 c #BD3000"
+String1=0x02,Autobahn
+String2=0x04,Motorway
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10002
+UseOrientation=N
+LineWidth=5
+BorderWidth=2
+Xpm="0 0 2 0"
+"1 c #FF6500"
+"2 c #39956A"
+String1=0x04,Trunk
+String2=0x02,Schnellstraﬂe
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10003
+UseOrientation=N
+LineWidth=4
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FF6500"
+"2 c #BD3000"
+String1=0x02,Bundesstraﬂe
+String2=0x04,Primary
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10004
+UseOrientation=N
+LineWidth=3
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFCA00"
+"2 c #BD3000"
+String1=0x02,Landes-/Staatsstraﬂe
+String2=0x04,Secondary
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10005
+UseOrientation=N
+LineWidth=3
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFFF00"
+"2 c #838383"
+String1=0x02,Kreisstraﬂe
+String2=0x04,Tertiary
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10006
+UseOrientation=N
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFFFFF"
+"2 c #525252"
+String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String2=0x04,Residential/Unclassified
+ExtendedLabels=N
+[end]
+
 
 [_line]
 Type=0x10007
@@ -2637,6 +2720,21 @@ Xpm="32 2 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Radweg
 String2=0x04,Cycleway
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1001b
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #00CA00"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x01,
 ExtendedLabels=N
 [end]
 
