@@ -99,10 +99,6 @@ Type=0x013,7
 
 
 [_polygon]
-highway=track {
-		  delete motorcar;
-		  delete motorcycle;
-	      }
 Type=0x01
 String1=0x02,Stadt
 String2=0x04,City
