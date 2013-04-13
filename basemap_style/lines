@@ -630,8 +630,6 @@ natural=cliff       									[0x10f04 resolution 22]
 # waterway
 waterway=dam										[0x10f08 resolution 21]
 waterway=weir										[0x10f09 resolution 24]
-
-
 waterway=* & (tunnel=yes | tunnel=culvert | covered=yes) 				[0x10112 resolution 24-23 continue with_actions]
 waterway=river | waterway=canal 							[0x1101f resolution 20-18 continue]
 waterway=river                  							[0x1f    resolution 24-21]
