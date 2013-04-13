@@ -1976,11 +1976,9 @@ ExtendedLabels=N
 [_line]
 Type=0x07
 UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
+LineWidth=0
+Xpm="0 0 1 0"
 "1 c #FFFFFF"
-"2 c #838383"
 String1=0x02,Zufahrtsweg
 String2=0x04,Service
 ExtendedLabels=Y
@@ -1992,11 +1990,9 @@ CustomColor=No
 [_line]
 Type=0x08
 UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #D5D5D5"
-"2 c #BD3000"
+LineWidth=0
+Xpm="0 0 1 0"
+"1 c #FFFFFF"
 String1=0x02,Anschluss
 String2=0x04,Ramp
 ExtendedLabels=N
@@ -2006,11 +2002,9 @@ ExtendedLabels=N
 [_line]
 Type=0x09
 UseOrientation=N
-LineWidth=4
-BorderWidth=2
-Xpm="0 0 2 0"
-"1 c #D5D5D5"
-"2 c #BD3000"
+LineWidth=0
+Xpm="0 0 1 0"
+"1 c #FFFFFF"
 String1=0x02,Anschluss
 String2=0x04,Ramp
 ExtendedLabels=N
@@ -2053,11 +2047,14 @@ ExtendedLabels=N
 [_line]
 Type=0x0c
 UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
+LineWidth=0
+;LineWidth=3
+;BorderWidth=1
+Xpm="0 0 1 0"
 "1 c #FFFFFF"
-"2 c #838383"
+;Xpm="0 0 2 0"
+;"1 c #FFFFFF"
+;"2 c #838383"
 String1=0x02,Kreisverkehr
 String2=0x04,Roundabout
 ExtendedLabels=N
@@ -2197,21 +2194,6 @@ ExtendedLabels=N
 
 [_line]
 Type=0x16
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #0040C0"
-"# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-;12345678901234567890123456789012
-String1=0x02,Radweg
-String2=0x04,Cycleway
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x17
 UseOrientation=N
 Xpm="32 2 2  1"
 "! c #804080"
@@ -2494,247 +2476,6 @@ Xpm="32 2 2  1"
 "!!!#!#!!!!!#!#!!!!!#!#!!!!!#!#!!"
 ;12345678901234567890123456789012
 String1=0x02,Schwieriges Alpinwandern
-ExtendedLabels=N
-[end]
-
-[_line]
-Type=0x10001
-UseOrientation=N
-LineWidth=5
-BorderWidth=2
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #BD3000"
-String1=0x02,Autobahn
-String2=0x04,Motorway
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10002
-UseOrientation=N
-LineWidth=5
-BorderWidth=2
-Xpm="0 0 2 0"
-"1 c #FF6500"
-"2 c #39956A"
-String1=0x04,Trunk
-String2=0x02,Schnellstraﬂe
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10003
-UseOrientation=N
-LineWidth=4
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FF6500"
-"2 c #BD3000"
-String1=0x02,Bundesstraﬂe
-String2=0x04,Primary
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10004
-UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFCA00"
-"2 c #BD3000"
-String1=0x02,Landes-/Staatsstraﬂe
-String2=0x04,Secondary
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10005
-UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #838383"
-String1=0x02,Kreisstraﬂe
-String2=0x04,Tertiary
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10006
-UseOrientation=N
-LineWidth=2
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #525252"
-String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
-String2=0x04,Residential/Unclassified
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10007
-UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #838383"
-String1=0x02,Zufahrtsweg
-String2=0x04,Service
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x1000d
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #FF0000"
-"# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-;12345678901234567890123456789012
-String1=0x02,Fuﬂweg
-String2=0x04,Footway
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x1000e
-UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #B4B4B4"
-"2 c #BD9500"
-String1=0x02,Grade1
-String2=0x04,Grade1
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x1000f
-UseOrientation=N
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #BD9500"
-String1=0x02,Grade2
-String2=0x04,Grade2
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10010
-UseOrientation=N
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #7B6500"
-String1=0x02,Grade3
-String2=0x04,Grade3
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10011
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #7B6500"
-"  c none"
-"!!!!!!!    !!!!!!!    !!!!!!!   "
-"!!!!!!!    !!!!!!!    !!!!!!!   "
-;12345678901234567890123456789012
-String1=0x02,Grade4/6
-String2=0x04,Grade4/6
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10012
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD0000"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
-String1=0x02,Wanderweg/Pfad
-String2=0x04,Trail/Path
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10013
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #FF0000"
-"# c #00FF00"
-"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
-"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
-;12345678901234567890123456789012
-String1=0x02,Stufen
-String2=0x04,Steps
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10016
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #0040C0"
-"# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-;12345678901234567890123456789012
-String1=0x02,Radweg
-String2=0x04,Cycleway
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x1001b
-UseOrientation=N
-Xpm="32 3 2  1"
-"! c #00CA00"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
-String1=0x01,
 ExtendedLabels=N
 [end]
 
@@ -3230,39 +2971,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e02
-UseOrientation=N
-LineWidth=2
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #000000"
-"2 c #838383"
-String1=0x02,Staumauer
-String2=0x04,Dam wall
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10e03
-UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #000000"
-"2 c #838383"
-String1=0x02,Wehr
-String2=0x04,Weir
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10e0e
+Type=0x1080e
 UseOrientation=N
 Xpm="32 5 4  1"
 "! c #330000"
@@ -3284,7 +2993,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e0f
+Type=0x1080f
 UseOrientation=N
 Xpm="32 5 4  1"
 "! c #330000"
@@ -3306,7 +3015,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e11
+Type=0x10811
 UseOrientation=N
 Xpm="32 3 2  1"
 "! c #000000"
@@ -3324,7 +3033,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e14
+Type=0x10814
 UseOrientation=N
 Xpm="32 3 4  1"
 "! c #737373"
@@ -3342,7 +3051,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x10e15
+Type=0x10815
 UseOrientation=Y
 Xpm="32 5 2  1"
 "! c #000000"
@@ -3362,7 +3071,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e16
+Type=0x10816
 UseOrientation=Y
 Xpm="32 5 2  1"
 "! c #000000"
@@ -3382,7 +3091,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e17
+Type=0x10817
 UseOrientation=Y
 Xpm="32 5 2  1"
 "! c #838383"
@@ -3402,7 +3111,7 @@ CustomColor=No
 
 
 [_line]
-Type=0x10e18
+Type=0x10818
 UseOrientation=Y
 Xpm="32 5 2  1"
 "! c #000000"
@@ -3487,6 +3196,38 @@ Xpm="32 3 2  1"
 String1=0x02,Fels
 String2=0x04,Cliff
 ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10f08
+UseOrientation=N
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #000000"
+"2 c #838383"
+String1=0x02,Staumauer
+String2=0x04,Dam wall
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10f09
+UseOrientation=N
+LineWidth=1
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #000000"
+"2 c #838383"
+String1=0x02,Wehr
+String2=0x04,Weir
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 [end]
 
 
@@ -3779,6 +3520,21 @@ Xpm="0 0 1 0"
 "1 c #2EBBB4"
 String1=0x02,Bach
 String2=0x04,Stream
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1101b
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #00CA00"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x01,
 ExtendedLabels=N
 [end]
 
