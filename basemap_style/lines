@@ -494,14 +494,6 @@ highway=path & (bicycle=designated |
 		{
 		  set highway=cycleway
 		  }
-highway=cycleway
-		{
-		add access=no;
-		add foot=yes;
-		set bicycle=yes;
-		  }
-
-
 highway=cycleway				 					[0x11016 resolution 24]
 
 
@@ -517,40 +509,15 @@ highway=path & (foot=designated |
 		{
 		  set highway=footway
 		  }
-highway=footway
-		{
-		add access=no;
-		set foot=yes;
-		  }
-
-highway=footway & (bicycle=designated |
-		   bicycle=allowed |
-		   bicycle=yes |
-		   bicycle=official |
-		   bicycle=permissive)
-		{
-		  set bicycle=yes
-		  }
-
 
 highway=footway										[0x1100d resolution 24]
 
 # bridleway
-highway=bridleway
-		{
-		  set highway=path;
-		  add horse=designated;
-		  }
+highway=bridleway									[0x16 resolution 24]
 
 
 # steps
-highway=steps
-		{
-		  set motorcar=no;
-		  set motorcycle=no;
-		  set bicycle=no;
-		  add mkgmap:unpaved=1;
-		}									[0x11013 resolution 24]
+highway=steps										[0x11013 resolution 24]
 
 #------------------------------------------------------------------------------
 # tracks
@@ -584,11 +551,6 @@ highway=path | highway=trail
 		  }
 
 # pathes without foot/bicycle
-
-highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
-highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
-highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
-
 
 highway=path | highway=trail                                  				[0x11012 resolution 24]
 

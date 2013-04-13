@@ -448,7 +448,6 @@ highway=pedestrian & (bicycle=allowed |
 		      bicycle=dismount)
 			  {
 			    set bicycle=yes;
-			    delete access
 			    }
 
 highway=pedestrian									[0x1101b resolution 24-23 continue with_actions]
@@ -514,24 +513,25 @@ highway=footway & (cycle_network=yes |
 		   )
 		       {
 		        set bicycle=yes;
-		        delete access
 		        }
 
-highway=footway										[0x0d road_class=0 road_speed=0 resolution 24-23]
+highway=footway										[0x0d resolution 24-23 road_class=0 road_speed=0]
 
 
 # bridleway
 highway=bridleway
 		{
 		  add horse=designated;
-		}									[0x16 road_class=0 road_speed=0 resolution 24-23]
+		  add mkgmap:unpaved=1
+		}									
+highway=bridleway									[0x16 resolution 24-23 continue with_actions]
+highway=bridleway									[0x07 resolution 24 road_class=0 road_speed=0]
 
 # steps
 highway=steps & (cycle_network=yes | bicycle=dismount)
 		 {
 		  set bicycle=yes
-		  }									[0x13 road_class=0 road_speed=0 resolution 24-23]
-
+		  }
 highway=steps
 		{
 		  set mkgmap:unpaved=1;
@@ -545,11 +545,6 @@ highway='track;path'
 		set highway=track
 		}
 
-highway=track {
-		  delete motorcar;
-		  delete motorcycle;
-	      }
-
 highway=track & tracktype~'grade[2|6]'
 		{
 		  set mkgmap:unpaved=1;
@@ -557,9 +552,9 @@ highway=track & tracktype~'grade[2|6]'
 
 highway=track & tracktype~'grade[1|2]'							[0x1200e resolution 23-22 continue with_actions]
 highway=track & tracktype=grade1							[0x0e road_class=0 road_speed=1 resolution 24]
-highway=track & tracktype=grade2							[0x0e road_class=0 road_speed=2 resolution 24]
-highway=track & tracktype=grade3							[0x0e road_class=0 road_speed=1 resolution 24]
-highway=track & tracktype~'grade[4|6]'							[0x0e road_class=0 road_speed=1 resolution 24]
+highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade3							[0x10 road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype~'grade[4|6]'							[0x11 road_class=0 road_speed=0 resolution 24]
 highway=track										[0x1200a resolution 23-22 continue with_actions]
 highway=track										[0x0a road_class=0 road_speed=0 resolution 24]
 
@@ -589,8 +584,9 @@ highway=path | highway=trail | highway=byway						[0x12 road_class=0 road_speed=
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
 # road = way typ not defined/unknown
-# unknown roads = 0x07(routable) and 0x2c(overlay)
-highway=road										[0x0072c resolution 24 road_class=0 road_speed=0]
+# unknown roads = 0x07(routable) and 0x2c(overlay)	
+highway=road										[0x2c resolution 24 continue with_actions]
+highway=road										[0x07 resolution 24 road_class=0 road_speed=0]
 
 highway=* & (mkgmap:unpaved=1)								[0x0a resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)						[0x1b resolution 24 road_class=0 road_speed=0]
