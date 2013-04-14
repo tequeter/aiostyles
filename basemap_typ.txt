@@ -2048,13 +2048,8 @@ ExtendedLabels=N
 Type=0x0c
 UseOrientation=N
 LineWidth=0
-;LineWidth=3
-;BorderWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
-;Xpm="0 0 2 0"
-;"1 c #FFFFFF"
-;"2 c #838383"
 String1=0x02,Kreisverkehr
 String2=0x04,Roundabout
 ExtendedLabels=N
@@ -2246,7 +2241,8 @@ Xpm="32 2 2  1"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
-String1=0x01,
+String1=0x02,F‰hre
+String2=0x04,Ferry
 ExtendedLabels=N
 [end]
 
@@ -3158,8 +3154,8 @@ UseOrientation=N
 Xpm="32 2 2  1"
 "! c #404040"
 "# c #C08040"
-"!!!!##!!!!##!!!!##!!!!##!!!!##!!"
-"###!!!!##!!!!##!!!!##!!!!##!!!!#"
+"!!####!!!!####!!!!####!!!!####!!"
+"##!!!!####!!!!####!!!!####!!!!##"
 ;12345678901234567890123456789012
 String1=0x02,Mauer
 String2=0x04,Wall
@@ -3377,11 +3373,12 @@ ExtendedLabels=N
 [_line]
 Type=0x1100a
 UseOrientation=N
-Xpm="32 1 4  1"
+Xpm="32 2 4  1"
 "! c #595959"
 "# c #C4C413"
 "3 c #AAAAAA"
 "4 c #E0E02C"
+"!!!!!!!!!!######!!!!!!!!!!######"
 "!!!!!!!!!!######!!!!!!!!!!######"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
@@ -3393,9 +3390,10 @@ ExtendedLabels=N
 [_line]
 Type=0x1100d
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 2 2  1"
 "! c #FF0000"
 "# c #00FF00"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
 String1=0x02,Fuﬂweg
@@ -3410,8 +3408,8 @@ UseOrientation=N
 LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #E6E6E6"
-"2 c #838383"
+"1 c #B4B4B4"
+"2 c #BD9500"
 String1=0x02,Grade1
 String2=0x04,Grade1
 ExtendedLabels=N
@@ -3420,10 +3418,10 @@ ExtendedLabels=N
 
 [_line]
 Type=0x1100f
-UseOrientation=Y
-LineWidth=2
+UseOrientation=F
+LineWidth=3
 Xpm="0 0 1 0"
-"1 c #7B6500"
+"1 c #BD9500"
 String1=0x02,Grade2
 String2=0x04,Grade2
 ExtendedLabels=N
@@ -3433,9 +3431,12 @@ ExtendedLabels=N
 [_line]
 Type=0x11010
 UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #7B6500"
+Xpm="32 2 2  1"
+"! c #7B6500"
+"  c none"
+"!!!!!!!    !!!!!!!    !!!!!!    "
+"!!!!!!!    !!!!!!!    !!!!!!    "
+;12345678901234567890123456789012
 String1=0x02,Grade3
 String2=0x04,Grade3
 ExtendedLabels=N
@@ -3445,10 +3446,11 @@ ExtendedLabels=N
 [_line]
 Type=0x11011
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 2 2  1"
 "! c #7B6500"
 "  c none"
-"!!!!!!!    !!!!!!!    !!!!!!    "
+"!!!!!   !!!!!   !!!!!   !!!!!   "
+"!!!!!   !!!!!   !!!!!   !!!!!   "
 ;12345678901234567890123456789012
 String1=0x02,Grade4/5
 String2=0x04,Grade4/5
@@ -3456,12 +3458,14 @@ ExtendedLabels=N
 [end]
 
 
+
 [_line]
 Type=0x11012
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 2 2  1"
 "! c #BD0000"
 "  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
 String1=0x02,Wanderweg/Pfad
@@ -3471,15 +3475,16 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x11014
+Type=0x11013
 UseOrientation=N
-LineWidth=5
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FF9500"
-"2 c #0000D5"
-String1=0x04,Motorroad
-String2=0x02,Kraftfahrtsraﬂe
+Xpm="32 2 2  1"
+"! c #FF0000"
+"# c #00FF00"
+"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
+"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
+;12345678901234567890123456789012
+String1=0x02,Stufen
+String2=0x04,Steps
 ExtendedLabels=N
 [end]
 
@@ -3487,9 +3492,10 @@ ExtendedLabels=N
 [_line]
 Type=0x11016
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 2 2  1"
 "! c #0040C0"
 "# c #00FF00"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
 String1=0x02,Radweg
@@ -3501,10 +3507,11 @@ ExtendedLabels=N
 [_line]
 Type=0x11017
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 2 2  1"
 "! c #804080"
 "# c #AAAAAA"
-"!!!##!!!##!!!##!!!##!!!##!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Reitweg
 String2=0x04,Bridleway
@@ -3520,6 +3527,21 @@ Xpm="0 0 1 0"
 "1 c #2EBBB4"
 String1=0x02,Bach
 String2=0x04,Stream
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1101a
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #0000D5"
+"# c #FFFFFF"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
+;12345678901234567890123456789012
+String1=0x02,F‰hre
+String2=0x04,Ferry
 ExtendedLabels=N
 [end]
 
@@ -3665,20 +3687,6 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x1200c
-UseOrientation=Y
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #777777"
-String1=0x02,Kreisverkehr
-String2=0x04,Roundabout
-ExtendedLabels=N
-[end]
-
-
-[_line]
 Type=0x1200d
 UseOrientation=N
 Xpm="32 1 2  1"
@@ -3698,22 +3706,20 @@ UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #BD9500"
-String1=0x02,Grade1/2
-String2=0x04,Grade1/2
+String1=0x02,Grade1
+String2=0x04,Grade1
 ExtendedLabels=N
 [end]
 
 
 [_line]
 Type=0x1200f
-UseOrientation=Y
-Xpm="32 1 2  1"
-"! c #7B6500"
-"  c none"
-"!!!!!!!!   !!!!!!!!   !!!!!!!   "
-;12345678901234567890123456789012
-String1=0x02,Fahrweg
-String2=0x04,Track
+UseOrientation=N
+LineWidth=1
+Xpm="0 0 1 0"
+"1 c #BD9500"
+String1=0x02,Grade2
+String2=0x04,Grade2
 ExtendedLabels=N
 [end]
 
@@ -3724,10 +3730,10 @@ UseOrientation=N
 Xpm="32 1 2  1"
 "! c #7B6500"
 "  c none"
-"!!!     !!!     !!!     !!!     "
+"!!!!!!!    !!!!!!!    !!!!!!    "
 ;12345678901234567890123456789012
-String1=0x02,Fahrweg
-String2=0x04,Track
+String1=0x02,Grade3
+String2=0x04,Grade3
 ExtendedLabels=N
 [end]
 
@@ -3736,12 +3742,12 @@ ExtendedLabels=N
 Type=0x12011
 UseOrientation=N
 Xpm="32 1 2  1"
-"! c #804000"
+"! c #7B6500"
 "  c none"
-"!!!!!!!    !!!!!!!    !!!!!!    "
+"!!!!!   !!!!!   !!!!!   !!!!!   "
 ;12345678901234567890123456789012
-String1=0x02,Fahrweg
-String2=0x04,Track
+String1=0x02,Grade4/5
+String2=0x04,Grade4/5
 ExtendedLabels=N
 [end]
 
@@ -3750,9 +3756,9 @@ ExtendedLabels=N
 Type=0x12012
 UseOrientation=N
 Xpm="32 1 2  1"
-"! c #FF0000"
-"# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
+"! c #BD0000"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
 String1=0x02,Wanderweg/Pfad
 String2=0x04,Trail/Path
@@ -3761,18 +3767,44 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x12014
+Type=0x12013
 UseOrientation=N
-LineWidth=2
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FF9500"
-"2 c #0000D5"
-String1=0x02,Kraftfahrstraﬂe
-String2=0x04,Motorroad
+Xpm="32 1 2  1"
+"! c #FF0000"
+"# c #00FF00"
+"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
+;12345678901234567890123456789012
+String1=0x02,Stufen
+String2=0x04,Steps
 ExtendedLabels=N
 [end]
 
+
+[_line]
+Type=0x12015
+UseOrientation=N
+Xpm="32 1 2  1"
+"! c #0040C0"
+"# c #00FF00"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
+;12345678901234567890123456789012
+String1=0x02,Radweg
+String2=0x04,Cycleway
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1201b
+UseOrientation=N
+Xpm="32 1 2  1"
+"! c #00CA00"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x01,
+ExtendedLabels=N
+[end]
 
 ;====================== POINTS ==========================
 
