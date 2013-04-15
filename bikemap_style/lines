@@ -207,6 +207,7 @@ highway=* & horse=designated								[0x10418 resolution 24 continue with_actions
 highway=*
 	  & (cycleway=both |
 	     cycleway=lane |
+	     cycleway=track |
 	     cycleway:left=yes |
 	     cycleway:left=lane |
 	     cycleway=opposite |
@@ -305,9 +306,6 @@ highway=motorway
 highway=motorway                            						[0x12001 resolution 21-12 continue with_actions]
 highway=motorway                            						[0x11001 resolution 24-22 continue with_actions]
 
-
-
-highway=motorway_link  	{ set ref = '' }
 highway=motorway_link                       						[0x12001 resolution 21-20 continue with_actions]
 highway=motorway_link                       						[0x11001 resolution 24-22 continue with_actions]
 
@@ -327,8 +325,6 @@ highway=trunk
 highway=trunk                               						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk                               						[0x11002 resolution 24-22 continue with_actions]
 
-
-highway=trunk_link 	 { set ref = '' }
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 24-22 continue with_actions]
 
@@ -348,7 +344,6 @@ highway=primary										[0x11003 resolution 24-22 continue with_actions]
 highway=primary & junction=roundabout							[0x0c road_class=3 road_speed=0]
 highway=primary        									[0x03 resolution 24 road_class=3 road_speed=4]
 
-highway=primary_link	{ set ref = '' }
 highway=primary_link 									[0x12003 resolution 22-21 continue with_actions]
 highway=primary_link									[0x11003 resolution 24-23 continue with_actions]
 highway=primary_link									[0x08 road_class=3 road_speed=2]
@@ -369,8 +364,6 @@ highway=secondary                           						[0x11004 resolution 24-22 cont
 highway=secondary & junction=roundabout 						[0x0c road_class=3 road_speed=0]
 highway=secondary                           						[0x04 resolution 24 road_class=3 road_speed=3]
 
-
-highway=secondary_link  { set ref = '' }
 highway=secondary_link                      						[0x12004 resolution 22-22 continue with_actions]
 highway=secondary_link                      						[0x11004 resolution 24-23 continue with_actions]
 highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=2]
@@ -392,7 +385,6 @@ highway=tertiary                            						[0x11005 resolution 24-22 cont
 highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=2 road_speed=0]
 highway=tertiary									[0x05 resolution 24 road_class=2 road_speed=2]
 
-highway=tertiary_link  	{ set ref = '' }
 highway=tertiary_link                       						[0x12005 resolution 22-22 continue with_actions]
 highway=tertiary_link                       						[0x11005 resolution 24-23 continue with_actions]
 highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]

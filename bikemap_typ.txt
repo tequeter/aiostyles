@@ -3434,7 +3434,7 @@ ExtendedLabels=N
 [_line]
 Type=0x1100f
 UseOrientation=N
-LineWidth=3
+LineWidth=2
 Xpm="0 0 1 0"
 "1 c #BD9500"
 String1=0x02,Grade2
@@ -3507,7 +3507,7 @@ ExtendedLabels=N
 Type=0x11015
 UseOrientation=N
 Xpm="32 2 2  1"
-"! c #0040C0"
+"! c #0000FF"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
@@ -3800,7 +3800,7 @@ ExtendedLabels=N
 Type=0x12015
 UseOrientation=N
 Xpm="32 1 2  1"
-"! c #0040C0"
+"! c #0000FF"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
@@ -3811,7 +3811,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x16
+Type=0x12016
 UseOrientation=N
 Xpm="32 1 2  1"
 "! c #804080"

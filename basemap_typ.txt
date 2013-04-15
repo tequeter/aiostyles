@@ -3347,7 +3347,7 @@ ExtendedLabels=N
 [_line]
 Type=0x11007
 UseOrientation=N
-LineWidth=1
+LineWidth=2
 Xpm="0 0 1 0"
 "1 c #838383"
 String1=0x02,Zufahrtsweg
@@ -3419,7 +3419,7 @@ ExtendedLabels=N
 [_line]
 Type=0x1100f
 UseOrientation=F
-LineWidth=3
+LineWidth=2
 Xpm="0 0 1 0"
 "1 c #BD9500"
 String1=0x02,Grade2
@@ -3490,10 +3490,10 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x11016
+Type=0x11015
 UseOrientation=N
 Xpm="32 2 2  1"
-"! c #0040C0"
+"! c #0000FF"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
@@ -3505,7 +3505,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x11017
+Type=0x11016
 UseOrientation=N
 Xpm="32 2 2  1"
 "! c #804080"
@@ -3784,12 +3784,26 @@ ExtendedLabels=N
 Type=0x12015
 UseOrientation=N
 Xpm="32 1 2  1"
-"! c #0040C0"
+"! c #0000FF"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
 String1=0x02,Radweg
 String2=0x04,Cycleway
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x11016
+UseOrientation=N
+Xpm="32 1 2  1"
+"! c #804080"
+"# c #AAAAAA"
+"!!!!####!!!!####!!!!####!!!!####"
+;12345678901234567890123456789012
+String1=0x02,Reitweg
+String2=0x04,Bridleway
 ExtendedLabels=N
 [end]
 

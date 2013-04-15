@@ -24,7 +24,7 @@
 #	0x0c	roundabout	only as function, used with overlays
 #	0x0d	footway		not used for routing is 0x1100d
 #	0x0e	track grade1
-#	0x0f	track grade2	not used for routing is 0x1100f
+#	0x0f	track grade2	
 #	0x10	track grade3	not used for routing is 0x11010
 #	0x11	track grade4/6	not used for routing is 0x11011
 #	0x12	path/trail	not used for routing is 0x11012
@@ -191,6 +191,7 @@ highway=* & horse=designated								[0x10418 resolution 24 continue with_actions
 highway=*
 	  & (cycleway=both |
 	     cycleway=lane |
+	     cycleway=track |
 	     cycleway:left=yes |
 	     cycleway:left=lane |
 	     cycleway=opposite |
@@ -283,38 +284,54 @@ highway=motorway_link
 #--------------------------------------------------------------------------------------
 # process-exits and process-destination
 
-(highway=motorway_link | highway=trunk_link) & mkgmap:exit_hint=true &
-mkgmap:dest_hint=true
+(highway=motorway_link | highway=trunk_link) & mkgmap:exit_hint=true & mkgmap:dest_hint=true
    { delete mkgmap:display_name;
-     name '${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-          '${ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-          '${destination|subst:;=> |subst:/=> }' |
+     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name} (${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name} (${ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name} (${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to} (${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to} (${ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to} (${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_exit_to} (${destination:ref|subst:=>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_exit_to} (${ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_exit_to} (${destination|subst:;=>|subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_name} (${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_name} (${ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_name} (${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} (${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} (${ref|subst: =>} ${destination|subst:;=> |subst:/=> })' |
+          'Exit ${mkgmap:exit_hint_ref} (${destination|subst:;=>|subst:/=> })' |
           'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
           'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
           'Exit ${mkgmap:exit_hint_exit_to}' |
           'Exit ${mkgmap:exit_hint_name}' |
-          'Exit ${mkgmap:exit_hint_ref}'
+          'Exit ${mkgmap:exit_hint_ref}' |
+          '${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
+          '${ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
+          '${destination|subst:;=> |subst:/=> }'
         }
 
 (highway=motorway_link | highway=trunk_link) &
-	  mkgmap:exit_hint!=* &
-	  mkgmap:dest_hint=true
-	  { delete mkgmap:display_name;
-	    name '${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-		 '${ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-		 '${destination|subst:;=> |subst:/=> }'
-		    }
+      mkgmap:exit_hint!=* &
+      mkgmap:dest_hint=true
+      { delete mkgmap:display_name;
+        name '${destination:ref|subst: =>} ${destination|subst:;=>
+|subst:/=> }' |
+         '${ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
+         '${destination|subst:;=> |subst:/=> }'
+            }
 
 (highway=motorway_link | highway=trunk_link) &
-	  mkgmap:exit_hint=true &
-	  mkgmap:dest_hint!=*
-	  { delete mkgmap:display_name;
-	    name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
-		  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
-		  'Exit ${mkgmap:exit_hint_exit_to}' |
-		  'Exit ${mkgmap:exit_hint_name}' |
-		  'Exit ${mkgmap:exit_hint_ref}'
-		    }
+      mkgmap:exit_hint=true &
+      mkgmap:dest_hint!=*
+      { delete mkgmap:display_name;
+        name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' |
+          'Exit ${mkgmap:exit_hint_exit_to}' |
+          'Exit ${mkgmap:exit_hint_name}' |
+          'Exit ${mkgmap:exit_hint_ref}'
+            }
+
 
 #--------------------------------------------------------------------------------------
 # motorway
@@ -335,9 +352,12 @@ highway=motorway & junction=roundabout 							[0x0c resolution 24 road_class=1 r
 highway=motorway & construction=minor	   						[0x01 resolution 24 road_class=4 road_speed=3]
 highway=motorway			   						[0x01 resolution 24 road_class=4 road_speed=6]
 
-highway=motorway_link  	{ set ref = '' }
 highway=motorway_link                       						[0x12001 resolution 21-20 continue with_actions]
 highway=motorway_link                       						[0x11001 resolution 24-22 continue with_actions]
+highway=motorway_link &
+	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true)
+		  { add bicycle = no; add foot = no; } 					[0x07 resolution 20 road_class=3 road_speed=2]
+
 highway=motorway_link 			     						[0x09 resolution 24 road_class=4 road_speed=3]
 
 
@@ -358,9 +378,10 @@ highway=trunk & junction=roundabout	 						[0x0c resolution 24 road_class=1 road
 highway=trunk & construction=minor							[0x02 resolution 24 road_class=4 road_speed=3]
 highway=trunk                               						[0x02 resolution 24 road_class=4 road_speed=6]
 
-highway=trunk_link  	{ set ref = '' }
 highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
 highway=trunk_link                          						[0x11002 resolution 24-22 continue with_actions]
+highway=trunk_link &
+	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true) 				[0x07 resolution 24 road_class=3 road_speed=2]
 highway=trunk_link          								[0x09 resolution 24 road_class=3 road_speed=3]
 
 
@@ -380,7 +401,6 @@ highway=primary										[0x11003 resolution 24-22 continue with_actions]
 highway=primary & junction=roundabout							[0x0c resolution 24 road_class=1 road_speed=3]
 highway=primary        									[0x03 resolution 24 road_class=3 road_speed=5]
 
-highway=primary_link  	{ set ref = '' }
 highway=primary_link 									[0x12003 resolution 22-21 continue with_actions]
 highway=primary_link									[0x11003 resolution 24-23 continue with_actions]
 highway=primary_link									[0x08 resolution 24 road_class=3 road_speed=3]
@@ -401,7 +421,6 @@ highway=secondary                           						[0x11004 resolution 24-22 cont
 highway=secondary & junction=roundabout 						[0x0c resolution 24 road_class=1 road_speed=2]
 highway=secondary                           						[0x04 resolution 24 road_class=3 road_speed=4]
 
-highway=secondary_link  { set ref = '' }
 highway=secondary_link                      						[0x12004 resolution 22-22 continue with_actions]
 highway=secondary_link                      						[0x11004 resolution 24-23 continue with_actions]
 highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
@@ -422,7 +441,6 @@ highway=tertiary                            						[0x11005 resolution 24-23 cont
 highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=2]
 highway=tertiary                            						[0x05 resolution 24 road_class=3 road_speed=3]
 
-highway=tertiary_link  	{ set ref = '' }
 highway=tertiary_link                       						[0x12005 resolution 22-22 continue with_actions]
 highway=tertiary_link                       						[0x11005 resolution 24-23 continue with_actions]
 highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
@@ -446,7 +464,6 @@ highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
 highway=service | highway=estate | highway=living_street
 		{
 		  add mkgmap:dead-end-check=false;
-		  add mkgmap:check_connected = true
 		}
 
 highway=service | highway=estate			            			[0x12007 resolution 23-23 continue with_actions]
@@ -454,7 +471,7 @@ highway=service | highway=estate			            			[0x11007 resolution 24 continu
 
 highway=living_street									[0x1201b resolution 23-23 continue with_actions]
 highway=living_street									[0x1101b resolution 24 continue with_actions]
-		
+
 highway=service | highway=estate | highway=living_street				[0x07 resolution 24 road_class=0 road_speed=0]
 
 highway=raceway										[0x11007 resolution 24-23]
@@ -500,8 +517,8 @@ highway=path & (bicycle=designated |
 		{
 		  set highway=cycleway
 		  }
-highway=cycleway				 					[0x12016 resolution 23-23 continue]		  
-highway=cycleway				 					[0x11016 resolution 24]
+highway=cycleway				 					[0x12015 resolution 23-23 continue]
+highway=cycleway				 					[0x11015 resolution 24]
 
 
 # footway
