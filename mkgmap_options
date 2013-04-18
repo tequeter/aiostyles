@@ -10,7 +10,7 @@ General options:
 	Print help on the given topic.  If the topic is omitted then a
 	list of all the help topics is printed instead.
 
---version 
+--version
 	Output program version.
 
 filename
@@ -66,7 +66,7 @@ filename
 --region-abbr=abbreviation
 	Sets the map's abbreviated region name. By default, the map has
 	no abbreviated region name.
-	
+
 Label options:
 
 --latin1
@@ -79,7 +79,7 @@ Label options:
 
 	It is entirely dependant on the device firmware which code pages are
 	supported.
-	
+
 --charset=name
 	This option is obsolete. Change the character set with the --code-page
 	option.
@@ -108,7 +108,7 @@ Address search options:
 	The --overview-mapname option can be used to change these names.  If
 	the mapset is sent to the device from MapSource, it will enable
 	find by name and address search on the GPS.
-	
+
 	The address fields are assigned by special mkgmap address
 	tags using the style file:
 	  mkgmap:country
@@ -125,44 +125,44 @@ Address search options:
   be used as were used to compile the individual map tiles.
 
 --bounds=directory|zipfile
-    A directory or a zipfile containing the preprocessed bounds files. 
+    A directory or a zipfile containing the preprocessed bounds files.
     Bounds files in a zipfile must be located in the zipfiles root directory.
 
-    The preprocessed boundaries are used to add special tags to all elements 
+    The preprocessed boundaries are used to add special tags to all elements
     (points, lines and polygons) containing the elements location information.
     The style file can be used to assign the address tags mkgmap:country,
     mkgmap:region etc. using these values.
-    
-    The following special tags are added:          
-              mkgmap:admin_level2 : Name of the admin_level=2 boundary 
+
+    The following special tags are added:
+              mkgmap:admin_level2 : Name of the admin_level=2 boundary
               mkgmap:admin_level3 : Name of the admin_level=3 boundary
               ..
               mkgmap:admin_level11
               mkgmap:postcode : the postal_code value
-              
+
     Preprocessed bounds can be created with the following command:
-       java -cp mkgmap.jar 
+       java -cp mkgmap.jar
           uk.me.parabola.mkgmap.reader.osm.boundary.BoundaryPreprocessor
           <inputfile> <boundsdir>
-    
-    The input file must contain the boundaries that should be preprocessed. 
-    It can have OSM, PBF or O5M fileformat. It is recommended that it 
+
+    The input file must contain the boundaries that should be preprocessed.
+    It can have OSM, PBF or O5M fileformat. It is recommended that it
     contains the boundary data only to avoid very high memory usage.
     The boundsdir gives the directory where the processed files are stored.
-    This directory can be used as --bounds parameter with mkgmap.               
-    
+    This directory can be used as --bounds parameter with mkgmap.
+
 --location-autofill=[option1,[option2]]
-	Controls how the address fields for country, region, city and zip info 
-	are gathered automatically if the fields are not set by using the special 
+	Controls how the address fields for country, region, city and zip info
+	are gathered automatically if the fields are not set by using the special
 	mkgmap address tags (e.g. mkgmap:city - see option index).
 	Warning: automatic assignment of address fields is somehow a best guess.
 
     is_in     The is_in tag is analyzed for country and region information.
-              
-    nearest   The city/hamlet points that are closest to the element are used 
-              to assign the missing address fields. Beware that cities located 
-              in the same tile are used only. So the results close to a tile 
-              border have less quality.  
+
+    nearest   The city/hamlet points that are closest to the element are used
+              to assign the missing address fields. Beware that cities located
+              in the same tile are used only. So the results close to a tile
+              border have less quality.
 
 Style options:
 
@@ -259,7 +259,7 @@ Optimization options:
 	Simplifies the ways with the Douglas Peucker algorithm.
 	NUM is the maximal allowed error distance, by which the resulting
 	way may differ from the original one.
-	This distance gets shifted with lower zoom levels. 
+	This distance gets shifted with lower zoom levels.
 	Recommended setting is 4, this should lead to only small differences
 	(Default is 2.6, which should lead to invisible changes)
 
@@ -271,12 +271,12 @@ Optimization options:
 	Try to merge lines. This helps the simplify filter to straighten out
 	longer chunks at lower zoom levels. Decreases file size more.
 	Increases paint speed at low zoom levels.
-	At the moment this option causes routing errors. Use only if routing 
+	At the moment this option causes routing errors. Use only if routing
 	is not needed in your map.
-	
+
 --min-size-polygon=NUM
   Removes all polygons smaller than NUM from the map.
-  This reduces map size and speeds up redrawing of maps. 
+  This reduces map size and speeds up redrawing of maps.
   Recommended value is 8 to 15, default is 8.
 
 Miscellaneous options:
@@ -392,7 +392,7 @@ Miscellaneous options:
 	being able to search for roads.
 	0x2f15: a blue dot in the middle of the road, and if you select,
 		or 'hover' over it, the streetname appears.
-	
+
 --add-pois-to-lines
 	Generate POIs for lines. For each line (must not be closed) POIs are
 	created at several points of the line. Each POI is tagged with the
@@ -401,21 +401,21 @@ Miscellaneous options:
 	the following values:
 	   * start  - The first point of the line
 	   * end    - The last point of the line
-	   * inner  - Each point of the line except the first and the last 
+	   * inner  - Each point of the line except the first and the last
 	   * mid    - The middle point
 
 --add-pois-to-areas
-	Generate a POI for each polygon and multipolygon. The POIs are created 
-	after the relation style but before the other styles are applied. Each 
-	POI is tagged with the same tags of 
-	the area/multipolygon. Additionally the tag mkgmap:area2poi=true is 
+	Generate a POI for each polygon and multipolygon. The POIs are created
+	after the relation style but before the other styles are applied. Each
+	POI is tagged with the same tags of
+	the area/multipolygon. Additionally the tag mkgmap:area2poi=true is
 	set so that it is possible to use that information in the points style
 	file. Artifical polygons created by multipolyon processing are not used.
 	The POIs are created at the following positions (first rule that applies):
-	   polygons: 
-	       * the first node tagged with a tag defined by the pois-to-areas-placement 
+	   polygons:
+	       * the first node tagged with a tag defined by the pois-to-areas-placement
 	         option
-	       * the center point  
+	       * the center point
 	   multipolygons:
 	       * the node with role=label
 	       * the center point of the biggest area
@@ -424,7 +424,7 @@ Miscellaneous options:
     A semicolon separated list of tag=value definitions. A POI is placed at the first
     node of the polygon tagged with the first tag/value pair. If none of the nodes are
     tagged with the first tag-value pair the first node tagged with the second tag-value
-    pair is used and so on. If none of the tag-value pairs matches or the taglist is empty 
+    pair is used and so on. If none of the tag-value pairs matches or the taglist is empty
     the center of the polygon is used.
     It is possible to define wildcards for tag values like entrance=*.
     Default: entrance=main;entrance=yes;building=entrance
@@ -432,15 +432,15 @@ Miscellaneous options:
 --precomp-sea=directoryname
     Defines the directory that contains the precompiled sea tiles.
 	When this option is defined all natural=coastline tags from the
-	input OSM tiles are removed and the precompiled data is used instead. 
-	This option can be combined with the generate-sea options 
+	input OSM tiles are removed and the precompiled data is used instead.
+	This option can be combined with the generate-sea options
 	multipolygon, polygons and land-tag. The coastlinefile option
-	is ignored if precomp-sea is set.     
+	is ignored if precomp-sea is set.
 
 --coastlinefile=filename[,filename]
-	Defines a comma separated list of files that contain coastline 
-	data. The coastline data from the input files is removed if 
-	this option is set. Files must have OSM or PBF fileformat.	
+	Defines a comma separated list of files that contain coastline
+	data. The coastline data from the input files is removed if
+	this option is set. Files must have OSM or PBF fileformat.
 
 --generate-sea[=ValueList]
 	Generate sea polygons. ValueList is an optional comma
@@ -462,9 +462,9 @@ Miscellaneous options:
 	no-sea-sectors
 		disable the generation of "sea sectors" when the
 		coastline fails to reach the tile's boundary.
-		
+
 	extend-sea-sectors
-	  same as no-sea-sectors. Additional adds a point so 
+	  same as no-sea-sectors. Additional adds a point so
 	  coastline reaches the nearest tile boundary.
 
 	land-tag=TAG=VAL
@@ -474,25 +474,25 @@ Miscellaneous options:
 		close gaps in coastline that are less than this
 		distance (metres)
 
-	floodblocker 
+	floodblocker
 		enable the flood blocker that prevents a flooding of
 		land by checking if the sea polygons contain streets
-		(works only with multipolygon processing)		
+		(works only with multipolygon processing)
 
-	fbgap=NUM           
+	fbgap=NUM
 		flood blocker gap in metre (default 40)
-		points that are closer to the sea polygon do not block 
+		points that are closer to the sea polygon do not block
 
 	fbthres=NUM
-		at least so many highway points must be contained in 
+		at least so many highway points must be contained in
 		a sea polygon so that it may be removed by the flood
 		blocker (default 20)
 
 	fbratio=NUM
-		only sea polygons with a higher ratio 
-		(highway points * 100000 / polygon size) are removed 
+		only sea polygons with a higher ratio
+		(highway points * 100000 / polygon size) are removed
 		(default 0.5)
-		
+
 	fbdebug
 		switches on the debugging of the flood blocker
 		generates GPX files for each polygon checked by
@@ -530,29 +530,29 @@ Miscellaneous options:
 --process-destination
 	When using the Garmin Types 0x08 and 0x09 (Ramp) Garmin is
 	evaluating the first way after all the *_link ways to display
-	the destination of the link. But in the OSM data only the _link 
-	ways are tagged with destination. When this option is set the 
-	destination tags of motorway_link and trunk_link ways are copied 
-	to the first non link way so that the Garmin can show the 
-	destination. 
+	the destination of the link. But in the OSM data only the _link
+	ways are tagged with destination. When this option is set the
+	destination tags of motorway_link and trunk_link ways are copied
+	to the first non link way so that the Garmin can show the
+	destination.
 	Note: There must be a rule in the lines	style file that uses the
-	      destination tag to set the mkgmap:display_name tag 
-	
+	      destination tag to set the mkgmap:display_name tag
+
 --process-exits
-    Usual Garmin devices do not tell the name of the exit on motorways 
+    Usual Garmin devices do not tell the name of the exit on motorways
     while routing with mkgmap created maps. This option splits the each
-    motorway_link and trunk_link into three parts. All parts are tagged 
-    with the original tags of the link. Additionally the middle part is 
+    motorway_link and trunk_link into three parts. All parts are tagged
+    with the original tags of the link. Additionally the middle part is
     tagged with the following tags:
       mkgmap:exit_hint=true
       mkgmap:exit_hint_ref=<ref tag value of the exit>
       mkgmap:exit_hint_name=<name tag value of the exit>
       mkgmap:exit_hint_exit_to=<exit_to tag value of the exit>
     Adding a rule checking the mkgmap:exit_hint=true makes it possible
-    to use Garmin type 0x01 (motorway) for the middle part so that the 
-    Garmin device tells the name of this middle part as hint where to 
-    leave the motorway/trunk. 
-	
+    to use Garmin type 0x01 (motorway) for the middle part so that the
+    Garmin device tells the name of this middle part as hint where to
+    leave the motorway/trunk.
+
 --delete-tags-file=FILENAME
 	Names a file that should contain one or more lines of the form
 	TAG=VALUE or TAG=*. Blank lines and lines that start with
@@ -564,9 +564,9 @@ Miscellaneous options:
 	an overview map.
 
 --show-profiles=1
-	Sets a flag in tdb file which marks set mapset as having contour 
-	lines and allows showing profile in MapSource. Default is 0 
-	which means disabled. 
+	Sets a flag in tdb file which marks set mapset as having contour
+	lines and allows showing profile in MapSource. Default is 0
+	which means disabled.
 
 --draw-priority=25
 	When two maps cover the same area, this option controls what
