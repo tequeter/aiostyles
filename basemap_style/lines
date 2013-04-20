@@ -24,7 +24,7 @@
 #	0x0c	roundabout	only as function, used with overlays
 #	0x0d	footway		not used for routing is 0x1100d
 #	0x0e	track grade1
-#	0x0f	track grade2	
+#	0x0f	track grade2
 #	0x10	track grade3	not used for routing is 0x11010
 #	0x11	track grade4/6	not used for routing is 0x11011
 #	0x12	path/trail	not used for routing is 0x11012
@@ -473,7 +473,7 @@ highway=living_street									[0x1101b resolution 24 continue with_actions]
 
 highway=service | highway=estate | highway=living_street				[0x07 resolution 24 road_class=0 road_speed=0]
 
-highway=raceway										[0x11007 resolution 24-23]
+highway=raceway										[0x12007 resolution 24-23]
 highway=platform									[0x11007 resolution 24]
 
 #------------------------------------------------------------------------------
