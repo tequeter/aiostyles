@@ -24,7 +24,7 @@
 #	0x0c	roundabout	only as function, used with overlays
 #	0x0d	footway		not used for routing is 0x1100d
 #	0x0e	track grade1
-#	0x0f	track grade2
+#	0x0f	track grade2	
 #	0x10	track grade3	not used for routing is 0x11010
 #	0x11	track grade4/6	not used for routing is 0x11011
 #	0x12	path/trail	not used for routing is 0x11012
@@ -286,25 +286,25 @@ highway=motorway_link
 
 (highway=motorway_link | highway=trunk_link) & mkgmap:exit_hint=true & mkgmap:dest_hint=true
    { delete mkgmap:display_name;
-     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> } ${destination:ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> } ${ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|subst:;=> |subst:/=> } ${destination:ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|subst:;=> |subst:/=> } ${ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_ref} ${destination|subst:;=> |subst:/=> } ${destination:ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${destination|subst:;=> |subst:/=> } ${ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${destination|subst:;=> |subst:/=> }' |
-          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> }' |
-          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> }' |
-          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|subst:;=> |subst:/=> }' |
-          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_name|subst:;=> |subst:/=> }' |
-          'Exit ${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-          'Exit ${ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
+     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${destination:ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${destination:ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${destination:ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/}' |
+          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${destination:ref|subst: =>} ${destination|part:|part:/}' |
+          'Exit ${ref|subst: =>} ${destination|part:|part:/}' |
           'Exit ${mkgmap:exit_hint_ref}' |
-          '${destination|subst:;=> |subst:/=> }' |
+          '${destination|part:|part:/}' |
           '${destination:ref|subst: =>}' |
           '${ref|subst: =>}'
         }
@@ -313,9 +313,9 @@ highway=motorway_link
       mkgmap:exit_hint!=* &
       mkgmap:dest_hint=true
       { delete mkgmap:display_name;
-        name '${destination:ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-         '${ref|subst: =>} ${destination|subst:;=> |subst:/=> }' |
-         '${destination|subst:;=> |subst:/=> }' |
+        name '${destination:ref|subst: =>} ${destination|part:|part:/}' |
+         '${ref|subst: =>} ${destination|part:|part:/}' |
+         '${destination|part:|part:/}' |
          '${destination:ref|subst: =>}' |
          '${ref|subst: =>}'
             }
@@ -324,10 +324,10 @@ highway=motorway_link
       mkgmap:exit_hint=true &
       mkgmap:dest_hint!=*
       { delete mkgmap:display_name;
-        name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_exit_to|subst:;=> |subst:/=> }' |
-          'Exit ${mkgmap:exit_hint_name|subst:;=> |subst:/=> }' |
+        name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
           'Exit ${mkgmap:exit_hint_ref}'
             }
 
