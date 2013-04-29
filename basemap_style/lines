@@ -582,7 +582,7 @@ highway=path | highway=trail                                  				[0x11012 resol
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
 # road = way typ not defined/unknown
-highway=road										[0x1200a resolution 23-23 road_class=0 road_speed=0]
+highway=road										[0x1200a resolution 23-23]
 highway=road										[0x0a resolution 24 road_class=0 road_speed=0]
 highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
