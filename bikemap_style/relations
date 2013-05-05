@@ -26,7 +26,6 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 		{ 
 		apply 
 		    { 
-		    set bicycle=yes;
 		    set icn_network=yes ;
 		    set cycle_network=yes ;
 		    set cn_name='$(cn_name),${ref}' | 
@@ -45,7 +44,6 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 		{ 
 		apply 
 		    { 
-		    set bicycle=yes;
 		    set rcn_network=yes ;
 		    set cycle_network=yes ; 
 		    set cn_name='$(cn_name),${ref}' | 
@@ -62,7 +60,6 @@ route=foot | route=hiking   { apply { add foot=yes; } }
 		{ 
 		apply 
 		    { 
-		    set bicycle=yes;
 		    set lcn_network=yes ;
 		    set cycle_network=yes ; 
 		    set cn_name='$(cn_name),${ref}' | 

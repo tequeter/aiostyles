@@ -70,11 +70,14 @@ Xpm="32 32 2 1"
 
 
 [_line]
-Type=0x01
+Type=0x10001
 UseOrientation=N
-LineWidth=6
-Xpm="0 0 1 0"
-"1 c #FF0000"
+Xpm="32 3 2  1"
+"! c #FF0000"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 String1=0x02,FIXME
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -83,11 +86,14 @@ CustomColor=No
 
 
 [_line]
-Type=0x02
+Type=0x10002
 UseOrientation=N
-LineWidth=4
-Xpm="0 0 1 0"
-"1 c #FFC040"
+Xpm="32 3 2  1"
+"! c #FFC040"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 String1=0x02,Tracktype fehlt
 String2=0x04,Tracktype missing
 ExtendedLabels=Y
@@ -96,37 +102,46 @@ CustomColor=No
 [end]
 
 [_line]
-Type=0x03
+Type=0x10003
 UseOrientation=N
-LineWidth=4
-Xpm="0 0 1 0"
-"1 c #FFC040"
-String1=0x02,consruction=minor
-String2=0x04,consruction=minor
+Xpm="32 3 2  1"
+"! c #FFC040"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+String1=0x02,construction=minor
+String2=0x04,construction=minor
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
 [_line]
-Type=0x04
+Type=0x10004
 UseOrientation=N
-LineWidth=6
-Xpm="0 0 1 0"
-"1 c #FF0000"
-String1=0x02,construction=no
-String1=0x04,construction=no
+Xpm="32 3 2  1"
+"! c #FFDCA8"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+String1=0x02,Anlieger frei?
+String1=0x04,access=destination
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 
 [_line]
-Type=0x06
+Type=0x10006
 UseOrientation=N
-LineWidth=4
-Xpm="0 0 1 0"
-"1 c #FFC040"
+Xpm="32 3 2  1"
+"! c #FFC040"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
 String1=0x02,Notiz
 String2=0x04,note
 ExtendedLabels=Y
@@ -136,11 +151,15 @@ CustomColor=No
 
 
 [_line]
-Type=0x07
+Type=0x10007
 UseOrientation=N
-LineWidth=5
-Xpm="0 0 1 0"
-"1 c #0040FF"
+Xpm="32 3 2  1"
+"! c #0040FF"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
 String1=0x02,name fehlt
 String2=0x04,missing name
 ExtendedLabels=Y
