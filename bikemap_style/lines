@@ -171,6 +171,9 @@ highway=* & construction=*								[0x10802 resolution 24-23 continue with_action
 toll=yes & highway!=motorway								[0x10803 resolution 24-22 continue with_actions]
 
 # bridge overlay
+(bridge=* & bridge!=no & bridge!=proposed & bridge!=abandoned)
+    { set bridge=yes; }
+
 bridge=yes & highway=motorway								[0x10101 resolution 24-23 continue with_actions]
 bridge=yes & highway=motorway_link							[0x10103 resolution 24-23 continue with_actions]
 bridge=yes & highway=trunk								[0x10102 resolution 24-23 continue with_actions]
@@ -520,7 +523,7 @@ highway=bridleway
 		{
 		  add horse=designated;
 		  add mkgmap:unpaved=1
-		}									
+		}
 highway=bridleway									[0x12016 resolution 23-23 continue with_actions]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
@@ -583,7 +586,7 @@ highway=path | highway=trail | highway=byway						[0x12 resolution 24 road_class
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
 # road = way typ not defined/unknown
-# unknown roads = 0x07(routable) and 0x2c(overlay)	
+# unknown roads = 0x07(routable) and 0x2c(overlay)
 highway=road										[0x2c resolution 24 continue with_actions]
 highway=road										[0x07 resolution 24 road_class=0 road_speed=0]
 
@@ -596,6 +599,22 @@ highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_spe
 # route
 route=ferry 		{add mkgmap:ferry=1}    					[0x1a road_class=0 road_speed=0 resolution 22]
 
+#------------------------------------------------------------------------------
+#			boundaries
+#------------------------------------------------------------------------------
+
+
+# The following boundary styles are after the highway rules because ways
+# are frequently tagged with both and we want the highway to take priority.
+
+boundary=administrative { name '${mkgmap:boundary_name}' }
+boundary=administrative & admin_level<3 						[0x1e resolution 16]
+boundary=administrative & admin_level<5 						[0x1d resolution 19]
+boundary=administrative & admin_level<7 						[0x1c resolution 21]
+boundary=administrative & admin_level<9 						[0x1c resolution 22]
+boundary=administrative 								[0x1c resolution 22]
+boundary=national 									[0x1e resolution 17]
+boundary=political 									[0x1c resolution 19]
 #------------------------------------------------------------------------------
 #			non routable ways
 #------------------------------------------------------------------------------
