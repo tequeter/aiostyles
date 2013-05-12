@@ -10,9 +10,6 @@
 # used
 #
 # Example:
-# name-tag-ist = name:en, int_name, name
-name-tag-list = name:de, name
-
 # The levels specification for this style
 #
 # Example:
