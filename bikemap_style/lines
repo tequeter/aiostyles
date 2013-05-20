@@ -102,7 +102,7 @@ highway=* & (
 	     abandoned=yes
 	     )
 				{
-				  set access=no;
+				  add access=no;
 				  }
 
 
@@ -113,16 +113,13 @@ highway=* & (
 	     motor_vehicle=forestry |
 	     motor_vehicle=emergency |
 	     motor_vehicle=private |
-	     motor_vehicle=no |
 	     motorcar=no |
 	     motorcycle=no
 	     )
 				{
-				  set foot=yes;
-				  set bicycle=yes;
-				  delete motorcar;
-				  delete motorcycle;
-				  delete motor_vehicle;
+				  add motor_vehicle=no
+				  add foot=yes;
+				  add bicycle=yes;
 				  }
 
 highway=* & (
@@ -134,8 +131,8 @@ highway=* & (
 	     vehicle=emergency
 	     )
 				{
-				  set access=no;
-				  set foot=yes;
+				  add vehicle=no
+				  add foot=yes;
 				  }
 
 # set mkgmap:display_name for routing instructions

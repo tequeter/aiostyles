@@ -75,10 +75,10 @@ highway=*
 # Remove access=yes from highways.
 
 highway=* &
-      (access=yes |
-      access=permissive |
-      access=designated |
-      access=official)
+      (	access=yes |
+	access=permissive |
+	access=designated |
+	access=official)
 		{ delete access }
 
 # change access=* to more useful tags
@@ -94,7 +94,7 @@ highway=* & (access=destination |
 	     impassable=yes |
 	     abandoned=yes)
 				{
-				set access=no;
+				add access=no;
 				  }
 
 
@@ -105,9 +105,9 @@ highway=* & (motor_vehicle=destination |
 	     motor_vehicle=emergency |
 	     motor_vehicle=private)
 				{
-				set access=no;
-				set foot=yes;
-				set bicycle=yes
+				add motor_vehicle=no;
+				add foot=yes;
+				add bicycle=yes
 				  }
 
 highway=* & (vehicle=private |
@@ -117,8 +117,8 @@ highway=* & (vehicle=private |
 	     vehicle=forestry |
 	     vehicle=emergency)
 				{
-				set access=no;
-				set foot=yes;
+				add vehicle=no
+				add foot=yes;
 				  }
 
 
