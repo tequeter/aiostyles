@@ -1,4 +1,7 @@
-
+; basemap_typ.txt
+; Longueur: 0 octets
+; Fichier TYP compilé 
+; Décompilé le 25.05.2013 à 17:18:33
 
 [_id]
 ProductCode=45
@@ -3245,11 +3248,11 @@ ExtendedLabels=N
 [_line]
 Type=0x10f08
 UseOrientation=N
-LineWidth=2
+LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
-"1 c #000000"
-"2 c #838383"
+"1 c #838383"
+"2 c #525252"
 String1=0x02,Staumauer
 String2=0x04,Dam wall
 ExtendedLabels=Y

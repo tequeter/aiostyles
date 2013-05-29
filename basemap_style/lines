@@ -675,7 +675,7 @@ natural=coastline   									[0x15 resolution 12]
 natural=cliff       									[0x10f04 resolution 22]
 
 # waterway
-waterway=dam										[0x10f08 resolution 22]
+waterway=dam | man_made=groyne								[0x10f08 resolution 22]
 waterway=weir										[0x10f09 resolution 24]
 waterway=* & (tunnel=yes | tunnel=culvert | covered=yes) 				[0x10112 resolution 24-23 continue with_actions]
 waterway=river | waterway=canal 							[0x1101f resolution 20-18 continue]
