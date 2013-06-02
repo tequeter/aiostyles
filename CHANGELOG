@@ -1,3 +1,10 @@
+2013-06-02
+move mkgmap-options to $STYLE/options except --name-tag-list, this is 
+moved to mkgmap.py
+Options for FZK and RRK added to pygmap3.py, not enabled because
+this style must installed manually
+
+
 2013-02-12
 tweak some access-restrictions for base- and bikemap -- work in progress
 path and track not per default unpaved
