@@ -16,3 +16,38 @@
 #levels = 0:24, 1:23, 2:22, 3:21, 4:20, 5:18, 6:17, 7:16
 #levels = 0:23, 1:22, 2:21, 3:20, 4:18, 5:17, 6:16
 #levels = 0:24, 1:22, 2:21, 3:20, 4:18, 5:17, 6:16
+
+## experimental options
+x-housenumbers
+
+name-tag-list = name:de, name, name:en, int_name
+levels = 0:24, 1:23, 2:22, 3:21, 4:20, 5:18, 6:17, 7:16
+
+add-pois-to-areas
+pois-to-areas-placement=entrance=main;entrance=yes;building=entrance
+link-pois-to-ways
+preserve-element-order
+
+process-exits
+process-destination
+
+remove-short-arcs=2.8
+ignore-maxspeeds
+check-roundabouts
+check-roundabout-flares
+make-all-cycleways
+adjust-turn-headings
+location-autofill=bounds,is_in,nearest
+min-size-polygon=8
+reduce-point-density=4
+reduce-point-density-polygon=8
+index
+gmapsupp
+tdbfile
+nsis
+route
+latin1
+
+
+keep-going
+max-jobs
