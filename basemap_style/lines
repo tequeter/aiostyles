@@ -218,6 +218,12 @@ highway=*		{ set name='${mkgmap:display_name}'; }
 highway=* & disused=yes									[0x10114 resolution 24]
 
 #-----------------------------------------------------------------------------
+# printout some infos about ways
+#{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
+#-----------------------------------------------------------------------------
+
+
+#-----------------------------------------------------------------------------
 # construction
 
 highway=construction									[0x10113 resolution 24]
