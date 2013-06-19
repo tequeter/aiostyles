@@ -81,9 +81,14 @@ highway=* &
 	access=official)
 		{ delete access }
 
+
+# next line is needed, because 'motorcycle=no' makes 
+# nonroutable highways for motorcar
+
+highway=* & motorcycle=no {delete motorcycle}
+
+
 # change access=* to more useful tags
-
-
 
 highway=* & (access=destination |
 	     access=delivery |

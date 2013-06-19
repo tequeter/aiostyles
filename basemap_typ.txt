@@ -1,6 +1,6 @@
 ; basemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé 
+; Fichier TYP compilé
 ; Décompilé le 25.05.2013 à 17:18:33
 
 [_id]
@@ -2029,11 +2029,7 @@ UseOrientation=N
 LineWidth=0
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
-String1=0x02,Zufahrtsweg
-String2=0x04,Service
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
