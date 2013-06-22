@@ -876,7 +876,7 @@ highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; } 				[0x5601 resolution 
 # 0x55ss	# dam
 # 0x56ss - 0x58ss	# danger area
 
-power=tower 														[0x7201 resolution 24]
+power=tower | power=pole												[0x7201 resolution 24]
 power=generator & power_source=wind 											[0x7202 resolution 24]
 power=generator & (power_source=hydro | power_source=tidal | power_source=wave | power_source=geothermal) 		[0x7203 resolution 24]
 power=generator & (power_source=nuclear | power_source=fusion) 								[0x7204 resolution 24]
