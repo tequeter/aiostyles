@@ -473,8 +473,8 @@ highway=service | highway=estate | highway=living_street
 highway=service | highway=estate			            			[0x12007 resolution 23-23 continue with_actions]
 highway=service | highway=estate			            			[0x11007 resolution 24 continue with_actions]
 
-highway=living_street									[0x1201b resolution 23-23 continue with_actions]
-highway=living_street									[0x1101b resolution 24 continue with_actions]
+highway=living_street									[0x12008 resolution 23-23 continue with_actions]
+highway=living_street									[0x11008 resolution 24 continue with_actions]
 
 highway=service | highway=estate | highway=living_street				[0x07 resolution 24 road_class=0 road_speed=0]
 

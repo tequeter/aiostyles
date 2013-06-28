@@ -219,7 +219,7 @@ DaycustomColor:#000000
 Xpm="32 32 4 1"
 "! c #BF0000"
 "  c none"
-"3 c #7B0000"
+"3 c #7B0000"1b
 "4 c none"
 "                                "
 "                                "
@@ -2223,8 +2223,8 @@ UseOrientation=N
 Xpm="32 2 2  1"
 "! c #804080"
 "# c #AAAAAA"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
+"!!!!####!!!!####!!!!####!!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Reitweg
 String2=0x04,Bridleway
@@ -3417,13 +3417,15 @@ ExtendedLabels=N
 [_line]
 Type=0x11008
 UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #D5D5D5"
-"2 c #BD3000"
-String1=0x02,Auf-/Abfahrt
-String2=0x04,Ramp
+Xpm="32 3 2  1"
+"! c #00FF00"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Wohnstraﬂe
+String2=0x04,Livingstreet
 ExtendedLabels=N
 [end]
 
@@ -3552,8 +3554,8 @@ UseOrientation=N
 Xpm="32 2 2  1"
 "! c #0000FF"
 "# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
+"!!!!####!!!!####!!!!####!!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Radweg
 String2=0x04,Cycleway
@@ -3609,13 +3611,14 @@ ExtendedLabels=N
 Type=0x1101b
 UseOrientation=N
 Xpm="32 3 2  1"
-"! c #00CA00"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"! c #00FF00"
+"  c #FF0000"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!    !!!!    !!!!    !!!!    "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
-String1=0x01,
+String1=0x02,Fussg‰ngerzone
+String2=0x04,Pedestrian
 ExtendedLabels=N
 [end]
 
@@ -3725,6 +3728,20 @@ Xpm="0 0 1 0"
 "1 c #838383"
 String1=0x02,Zufahrtsweg
 String2=0x04,Service
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x12008
+UseOrientation=N
+Xpm="32 1 2  1"
+"! c #00FF00"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Wohnstraﬂe
+String2=0x04,Livingstreet
 ExtendedLabels=N
 [end]
 
@@ -3845,7 +3862,7 @@ UseOrientation=N
 Xpm="32 1 2  1"
 "! c #0000FF"
 "# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Radweg
 String2=0x04,Cycleway
@@ -3859,7 +3876,7 @@ UseOrientation=N
 Xpm="32 1 2  1"
 "! c #804080"
 "# c #AAAAAA"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
 String1=0x02,Reitweg
 String2=0x04,Bridleway
@@ -3871,11 +3888,12 @@ ExtendedLabels=N
 Type=0x1201b
 UseOrientation=N
 Xpm="32 1 2  1"
-"! c #00CA00"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"! c #00FF00"
+"  c #FF0000"
+"!!!!    !!!!    !!!!    !!!!    "
 ;12345678901234567890123456789012
-String1=0x01,
+String1=0x02,Fussg‰ngerzone
+String1=0x04,Pedestrian
 ExtendedLabels=N
 [end]
 
