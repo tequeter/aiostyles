@@ -2026,7 +2026,7 @@ ExtendedLabels=N
 [_line]
 Type=0x07
 UseOrientation=N
-LineWidth=0
+LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
 ExtendedLabels=N
@@ -2036,7 +2036,7 @@ ExtendedLabels=N
 [_line]
 Type=0x08
 UseOrientation=N
-LineWidth=0
+LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
 String1=0x02,Anschluss
@@ -2048,7 +2048,7 @@ ExtendedLabels=N
 [_line]
 Type=0x09
 UseOrientation=N
-LineWidth=0
+LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
 String1=0x02,Anschluss
@@ -2093,7 +2093,7 @@ ExtendedLabels=N
 [_line]
 Type=0x0c
 UseOrientation=N
-LineWidth=0
+LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
 String1=0x02,Kreisverkehr
