@@ -123,7 +123,7 @@ natural=wetland 							[0x6513 resolution 23]
 # 0x11511	# ford	# type without category
 
 # Land Features
-tourism=viewpoint 							[0x6600 resolution 24]
+tourism=viewpoint & natural!=*						[0x6600 resolution 24]
 # 0x6601 	# arch
 # 0x6602	# area
 # 0x6603	# basin
@@ -828,29 +828,29 @@ waterway=bootyard | amenity=boat_storage		[0x2f13 resolution 24]
 #------------------------------------------------------------------------------
 # No category
 
-barrier=bollard { 
-		  set access=no; 
-		  add bicycle=yes; 
-		  add foot=yes; 
+barrier=bollard {
+		  set access=no;
+		  add bicycle=yes;
+		  add foot=yes;
 		  } 									[0x2900 resolution 24]
-		  
+
 barrier=lift_gate 									[0x2901 resolution 24]
 
 barrier=gate {
-	      add access=no; 
+	      add access=no;
 	      } 									[0x2902 resolution 24]
 
-barrier=cycle_barrier 
-			{ 
+barrier=cycle_barrier
+			{
 			set access=no;
 			set bicycle=dismount;
-			add foot=yes; 
+			add foot=yes;
 			} 								[0x2903 resolution 24]
 
 barrier=kissing_gate |
-barrier=cattle_grid | 
+barrier=cattle_grid |
 barrier=horse_stile|
-barrier=stile | 
+barrier=stile |
 barrier=turnstile 									[0x2904 resolution 24]
 
 # 0x290s

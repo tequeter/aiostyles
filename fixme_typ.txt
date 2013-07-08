@@ -75,9 +75,9 @@ UseOrientation=N
 Xpm="32 3 2  1"
 "! c #FF0000"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
 String1=0x02,FIXME
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
@@ -91,9 +91,9 @@ UseOrientation=N
 Xpm="32 3 2  1"
 "! c #FFC040"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
 String1=0x02,Tracktype fehlt
 String2=0x04,Tracktype missing
 ExtendedLabels=Y
@@ -107,9 +107,9 @@ UseOrientation=N
 Xpm="32 3 2  1"
 "! c #FFC040"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
 String1=0x02,construction=minor
 String2=0x04,construction=minor
 ExtendedLabels=Y
@@ -123,9 +123,9 @@ UseOrientation=N
 Xpm="32 3 2  1"
 "! c #FFDCA8"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
 String1=0x02,Anlieger frei?
 String1=0x04,access=destination
 ExtendedLabels=Y
@@ -139,9 +139,9 @@ UseOrientation=N
 Xpm="32 3 2  1"
 "! c #FFC040"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
 String1=0x02,Notiz
 String2=0x04,note
 ExtendedLabels=Y
@@ -156,9 +156,9 @@ UseOrientation=N
 Xpm="32 3 2  1"
 "! c #0040FF"
 "  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
+"!!!!!!!!!!!!!!                  "
 ;12345678901234567890123456789012
 String1=0x02,name fehlt
 String2=0x04,missing name
