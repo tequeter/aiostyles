@@ -193,22 +193,6 @@ highway=* & railway=tram								[0x10700 resolution 24-23 continue with_actions]
 # bridleway overlay
 highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
 
-# cyclelane overlay
-highway=*
-	  & (cycleway=both |
-	     cycleway=lane |
-	     cycleway=track |
-	     cycleway:left=yes |
-	     cycleway:left=lane |
-	     cycleway=opposite |
-	     cycleway=opposite_lane)							[0x10417 resolution 24-23 continue with_actions]
-
-highway=*
-	  & (cycleway=both |
-	     cycleway=lane |
-	     cycleway:right=yes |
-	     cycleway:right=lane)							[0x10416 resolution 24-23 continue with_actions]
-
 # now set the highway-names from the backuped names
 highway=*
             {

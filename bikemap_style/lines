@@ -215,7 +215,9 @@ highway=*
 	     cycleway:left=yes |
 	     cycleway:left=lane |
 	     cycleway=opposite |
-	     cycleway=opposite_lane)							[0x10417 resolution 24-23 continue with_actions]
+	     cycleway=opposite_lane |
+	     oneway:bicycle=no |
+	     bicycle=opposite)								[0x10417 resolution 24-23 continue with_actions]
 
 highway=*
 	  & (cycleway=both |
