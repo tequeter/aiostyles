@@ -43,9 +43,9 @@ place=town 			& population >    999 	& name=*	[0x0A00 resolution 19 continue wit
 place=town 			& population >      0 	& name=*	[0x0B00 resolution 20 continue with_actions ]
 place=town                       			& name=*	[0x0800 resolution 19 ]
 
-place=village   					& name=*	[0x0B00 resolution 20]
-place=suburb 						& name=*	[0x0C00 resolution 22]
-place=hamlet | place=isolated_dwelling 			& name=*	[0x0D00 resolution 24]
+place=village   						& name=*	[0x0B00 resolution 20]
+place=suburb 							& name=*	[0x0C00 resolution 22]
+place=hamlet | place=isolated_dwelling | place=neighbourhood	& name=*	[0x0D00 resolution 24]
 
 
 addr:housenumber=* & name!=*
