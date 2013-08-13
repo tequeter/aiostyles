@@ -1,8 +1,8 @@
 This is a fork of the 'All in one' Garmin Map.
 http://wiki.openstreetmap.org/wiki/All_in_one_Garmin_Map
 
-This git include only the style changed by me, if you need the other or unchanged
-files, look in this gits
+This git include only the style changed by me, if you need the other
+or unchanged files, look in this gits:
 
 https://github.com/aiomaster/aiostyles
 or
@@ -12,7 +12,8 @@ https://github.com/flacus/aiostyles
 This map for mobile Garmin devices is made with mkgmap
 http://www.mkgmap.org.uk/
 
-Mkgmap uses special style files to map Openstreetmap features to internal Garmin types.
+Mkgmap uses special style files to map Openstreetmap features to
+internal Garmin types.
 You can find these Stylefiles used with the aio map here.
 There is one for every layer.
 The most stuff you will find in the basemap layer style and typ files.
