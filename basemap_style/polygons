@@ -53,7 +53,7 @@ place=village | landuse=residential 					[0x03 resolution 18]
 
 highway=pedestrian & (area=yes | area=true | area=1) 			[0x12 resolution 22]
 
-
+leisure=nature_reserve 							[0x16 resolution 18 continue with_actions]
 landuse=forest 								[0x50 resolution 22-18 continue with_actions]
 landuse=forest & wood=coniferous 					[0x21 resolution 24-23]
 landuse=forest & wood=deciduous 					[0x22 resolution 24-23]
@@ -89,7 +89,7 @@ landuse=quarry 								[0x2d resolution 22]
 tourism=camp_site 							[0x2e resolution 22]
 
 leisure=marina 								[0x09 resolution 20]
-leisure=nature_reserve 							[0x16 resolution 18]
+
 leisure=common | leisure=park 						[0x17 resolution 22]
 leisure=garden | leisure=playground 					[0x17 resolution 23]
 leisure=golf_course 							[0x18 resolution 22]
