@@ -2684,7 +2684,7 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x101115
+Type=0x10111
 UseOrientation=N
 Xpm="32 10 2  1"
 "! c #949494"
