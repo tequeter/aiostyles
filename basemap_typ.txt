@@ -1,4 +1,7 @@
-
+; basemap_typ.txt
+; Longueur: 0 octets
+; Fichier TYP compilÈ 
+; DÈcompilÈ le 17.08.2013 ‡ 10:55:46
 
 [_id]
 ProductCode=45
@@ -3350,7 +3353,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
-"2 c #838383"
+"2 c #414141"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
@@ -3364,7 +3367,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
-"2 c #232323"
+"2 c #414141"
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 ExtendedLabels=N
@@ -3668,7 +3671,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
-"2 c #838383"
+"2 c #414141"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
@@ -3680,7 +3683,7 @@ Type=0x12006
 UseOrientation=Y
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #232323"
+"1 c #414141"
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 ExtendedLabels=N
