@@ -500,8 +500,7 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 highway=path & (bicycle=designated |
 		bicycle=allowed |
 		bicycle=official |
-		bicycle=permissive |
-		bicycle=yes)
+		bicycle=permissive)
 		{
 		  set highway=cycleway
 		  }
@@ -515,8 +514,7 @@ highway=cycleway				 					[0x11015 resolution 24]
 highway=path & (foot=designated |
 		foot=allowed |
 		foot=official |
-		foot=permissive |
-		foot=yes )
+		foot=permissive)
 		{
 		  set highway=footway
 		  }
