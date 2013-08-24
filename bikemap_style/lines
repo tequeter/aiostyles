@@ -632,6 +632,7 @@ highway=track & tracktype=grade2							[0x0f road_class=0 road_speed=0 resolutio
 
 highway=track & tracktype=grade3                                                        [0x10 road_class=0 road_speed=0 resolution 24]
 
+highway=track & tracktype~'grade[4|6]'							[0x11011 resolution 24 continue with_actions]
 highway=track & tracktype~'grade[4|6]'							[0x11 road_class=0 road_speed=0 resolution 24]
 
 highway=track  {
@@ -690,10 +691,10 @@ route=ferry 		{add mkgmap:ferry=1}    					[0x1a road_class=0 road_speed=0 resol
 
 #boundary=administrative { name '${mkgmap:boundary_name}' }
 boundary=administrative & admin_level<3 						[0x1e resolution 16]
-boundary=administrative & admin_level<5 						[0x1d resolution 19]
-boundary=administrative & admin_level<7 						[0x1c resolution 21]
-boundary=administrative & admin_level<9 						[0x1c resolution 22]
-boundary=administrative 								[0x1c resolution 22]
+#boundary=administrative & admin_level<5 						[0x1d resolution 19]
+#boundary=administrative & admin_level<7 						[0x1c resolution 21]
+#boundary=administrative & admin_level<9 						[0x1c resolution 22]
+#boundary=administrative 								[0x1c resolution 22]
 boundary=national 									[0x1e resolution 17]
 boundary=political 									[0x1c resolution 19]
 
