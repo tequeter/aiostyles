@@ -1973,7 +1973,7 @@ LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
 String1=0x02,Anschluss
-String2=0x04,Ramp
+String2=0x04,Ramp road_class=0 road_speed=0
 ExtendedLabels=N
 [end]
 
@@ -2079,6 +2079,8 @@ UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
 "1 c #FFFFFF"
+String1=0x02,unbefestigt
+String2=0x04,unpaved
 ExtendedLabels=N
 [end]
 

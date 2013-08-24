@@ -3403,8 +3403,8 @@ Xpm="32 2 2  1"
 " !  !  !  !!!!!  !  !  !  !!!!! "
 " !  !  !  !!!!!  !  !  !  !!!!! "
 ;12345678901234567890123456789012
-String1=0x02,Grade4/6
-String2=0x04,Grade4/6
+String1=0x02,unbefestigt
+String2=0x04,unpaved
 ExtendedLabels=N
 [end]
 
