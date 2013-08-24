@@ -1,6 +1,6 @@
 ; basemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilÈ 
+; Fichier TYP compilÈ
 ; DÈcompilÈ le 17.08.2013 ‡ 10:55:46
 
 [_id]
@@ -1988,7 +1988,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
-"2 c #838383"
+"2 c #000000"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
@@ -2087,23 +2087,6 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x0d
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #FF0000"
-"# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-;12345678901234567890123456789012
-String1=0x02,Fuﬂweg
-String2=0x04,Footway
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x0e
 UseOrientation=N
 LineWidth=1
@@ -2113,88 +2096,22 @@ Xpm="0 0 2 0"
 "2 c #BD9500"
 String1=0x02,Grade1
 String2=0x04,Grade1
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
 [_line]
 Type=0x0f
 UseOrientation=N
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #BD9500"
+Xpm="32 2 2  1"
+"! c #BD9500"
+"  c none"
+"!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
+"!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
+;12345678901234567890123456789012
 String1=0x02,Grade2
 String2=0x04,Grade2
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10
-UseOrientation=N
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #7B6500"
-String1=0x02,Grade3
-String2=0x04,Grade3
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x11
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #7B6500"
-"  c none"
-"!!!!!!!    !!!!!!!    !!!!!!!   "
-"!!!!!!!    !!!!!!!    !!!!!!!   "
-;12345678901234567890123456789012
-String1=0x02,Grade4/6
-String2=0x04,Grade4/6
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x12
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD0000"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
-String1=0x02,Wanderweg/Pfad
-String2=0x04,Trail/Path
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x13
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #FF0000"
-"# c #00FF00"
-"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
-"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
-;12345678901234567890123456789012
-String1=0x02,Stufen
-String2=0x04,Steps
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3353,7 +3270,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
-"2 c #414141"
+"2 c #000000"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
@@ -3367,7 +3284,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFFFF"
-"2 c #414141"
+"2 c #000000"
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 ExtendedLabels=N
@@ -3410,11 +3327,11 @@ Xpm="32 2 4  1"
 "# c #C4C413"
 "3 c #AAAAAA"
 "4 c #E0E02C"
-"!!!!!!!!!!######!!!!!!!!!!######"
-"!!!!!!!!!!######!!!!!!!!!!######"
+"!!!!!!!!########!!!!!!!!########"
+"!!!!!!!!########!!!!!!!!########"
 ;12345678901234567890123456789012
-String1=0x02,Unbefestigt
-String2=0x04,Unpaved
+String1=0x02,Track Unbekannt
+String2=0x04,Track Unkwown
 ExtendedLabels=N
 [end]
 
@@ -3464,14 +3381,16 @@ ExtendedLabels=N
 Type=0x11010
 UseOrientation=N
 Xpm="32 2 2  1"
-"! c #7B6500"
+"! c #BD9500"
 "  c none"
-"!!!!!!!    !!!!!!!    !!!!!!    "
-"!!!!!!!    !!!!!!!    !!!!!!    "
+"!!!  !  !!!  !  !!!  !  !!!  !  "
+"!!!  !  !!!  !  !!!  !  !!!  !  "
 ;12345678901234567890123456789012
 String1=0x02,Grade3
 String2=0x04,Grade3
-ExtendedLabels=N
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
 [end]
 
 
@@ -3479,13 +3398,13 @@ ExtendedLabels=N
 Type=0x11011
 UseOrientation=N
 Xpm="32 2 2  1"
-"! c #7B6500"
+"! c #BD9500"
 "  c none"
-"!!!!!   !!!!!   !!!!!   !!!!!   "
-"!!!!!   !!!!!   !!!!!   !!!!!   "
+" !  !  !  !!!!!  !  !  !  !!!!! "
+" !  !  !  !!!!!  !  !  !  !!!!! "
 ;12345678901234567890123456789012
-String1=0x02,Grade4/5
-String2=0x04,Grade4/5
+String1=0x02,Grade4/6
+String2=0x04,Grade4/6
 ExtendedLabels=N
 [end]
 
@@ -3671,7 +3590,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #FFFF00"
-"2 c #414141"
+"2 c #000000"
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
@@ -3724,7 +3643,7 @@ Xpm="32 1 4  1"
 "# c #C4C413"
 "3 c #AAAAAA"
 "4 c #E0E02C"
-"!!!!!!!!!!######!!!!!!!!!!######"
+"!!!!!!!!########!!!!!!!!########"
 ;12345678901234567890123456789012
 String1=0x02,Unbefestigt
 String2=0x04,Unpaved
@@ -3754,46 +3673,6 @@ Xpm="0 0 1 0"
 "1 c #BD9500"
 String1=0x02,Grade1
 String2=0x04,Grade1
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x1200f
-UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #BD9500"
-String1=0x02,Grade2
-String2=0x04,Grade2
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x12010
-UseOrientation=N
-Xpm="32 1 2  1"
-"! c #7B6500"
-"  c none"
-"!!!!!!!    !!!!!!!    !!!!!!    "
-;12345678901234567890123456789012
-String1=0x02,Grade3
-String2=0x04,Grade3
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x12011
-UseOrientation=N
-Xpm="32 1 2  1"
-"! c #7B6500"
-"  c none"
-"!!!!!   !!!!!   !!!!!   !!!!!   "
-;12345678901234567890123456789012
-String1=0x02,Grade4/5
-String2=0x04,Grade4/5
 ExtendedLabels=N
 [end]
 
