@@ -3395,6 +3395,21 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x11010
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #BD9500"
+"  c none"
+"!!!  !  !!!  !  !!!  !  !!!  !  "
+"!!!  !  !!!  !  !!!  !  !!!  !  "
+;12345678901234567890123456789012
+String1=0x02,Grade3
+String2=0x04,Grade3
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x11011
 UseOrientation=N
 Xpm="32 2 2  1"
