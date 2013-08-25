@@ -1998,9 +1998,11 @@ ExtendedLabels=N
 [_line]
 Type=0x06
 UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #FFFFFF"
+Xpm="32 1 2 1"
+"! c #FFFFFF"
+"  c none"
+"!                               "
+;12345678901234567890123456789012
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 ExtendedLabels=N
@@ -2010,9 +2012,11 @@ ExtendedLabels=N
 [_line]
 Type=0x07
 UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #FFFFFF"
+Xpm="32 1 2 1"
+"! c #FFFFFF"
+"  c none"
+"!                               "
+;12345678901234567890123456789012
 ExtendedLabels=N
 [end]
 
@@ -2020,9 +2024,11 @@ ExtendedLabels=N
 [_line]
 Type=0x08
 UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #FFFFFF"
+Xpm="32 1 2 1"
+"! c #FFFFFF"
+"  c none"
+"!                               "
+;12345678901234567890123456789012
 String1=0x02,Anschluss
 String2=0x04,Ramp
 ExtendedLabels=N
@@ -2032,9 +2038,11 @@ ExtendedLabels=N
 [_line]
 Type=0x09
 UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #FFFFFF"
+Xpm="32 1 2 1"
+"! c #FFFFFF"
+"  c none"
+"!                               "
+;12345678901234567890123456789012
 String1=0x02,Anschluss
 String2=0x04,Ramp
 ExtendedLabels=N
@@ -2044,16 +2052,14 @@ ExtendedLabels=N
 [_line]
 Type=0x0a
 UseOrientation=N
-Xpm="32 2 4  1"
-"! c #595959"
-"# c #C4C413"
-"3 c #AAAAAA"
-"4 c #E0E02C"
+Xpm="32 2 2  1"
+"! c #7B6500"
+"# c #C4C4C4"
 "!!!!####!!!!####!!!!####!!!!####"
 "!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
-String1=0x02,Unbefestigt
-String2=0x04,Unpaved
+String1=0x02,Unb. Track
+String2=0x04,Unkwown track
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -2063,12 +2069,12 @@ CustomColor=No
 [_line]
 Type=0x0b
 UseOrientation=N
-LineWidth=2
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #838383"
-String1=0x02,Straﬂe
+Xpm="32 1 2 1"
+"! c #FFFFFF"
+"  c none"
+"!                               "
+;12345678901234567890123456789012
+String1=0x02,Unb. Straﬂe
 String2=0x04,Road
 ExtendedLabels=N
 [end]
@@ -2077,9 +2083,11 @@ ExtendedLabels=N
 [_line]
 Type=0x0c
 UseOrientation=N
-LineWidth=1
-Xpm="0 0 1 0"
-"1 c #FFFFFF"
+Xpm="32 1 2 1"
+"! c #FFFFFF"
+"  c none"
+"!                               "
+;12345678901234567890123456789012
 String1=0x02,Kreisverkehr
 String2=0x04,Roundabout
 ExtendedLabels=N
@@ -2093,7 +2101,7 @@ LineWidth=1
 BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #B4B4B4"
-"2 c #BD9500"
+"2 c #7B6500"
 String1=0x02,Grade1
 String2=0x04,Grade1
 ExtendedLabels=N
@@ -2104,10 +2112,10 @@ ExtendedLabels=N
 Type=0x0f
 UseOrientation=N
 Xpm="32 2 2  1"
-"! c #BD9500"
+"! c #7B6500"
 "  c none"
-"!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
-"!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
+"!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
+"!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
 ;12345678901234567890123456789012
 String1=0x02,Grade2
 String2=0x04,Grade2
@@ -2118,11 +2126,9 @@ ExtendedLabels=N
 [_line]
 Type=0x14
 UseOrientation=N
-Xpm="32 4 4  1"
+Xpm="32 4 2  1"
 "! c #737373"
 "# c #FFFF80"
-"3 c #BBBBBB"
-"4 c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "###!!!!!!!!########!!!!!!!!#####"
 "###!!!!!!!!########!!!!!!!!#####"
@@ -2197,14 +2203,14 @@ ExtendedLabels=N
 [_line]
 Type=0x1b
 UseOrientation=N
-Xpm="32 3 2  1"
+Xpm="32 2 2  1"
 "! c #00CA00"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
-String1=0x01,
+String1=0x02,Unbekannter Typ
+String1=0x04,Unknown typ
 ExtendedLabels=N
 [end]
 
@@ -2332,9 +2338,7 @@ Xpm="32 3 2  1"
 ;12345678901234567890123456789012
 String1=0x02,unbekannter Wegetyp
 String2=0x01,unknown way
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -2718,7 +2722,7 @@ CustomColor=No
 Type=0x10415
 UseOrientation=Y
 Xpm="32 10 2  1"
-"! c #BD0000"
+"! c #7B6500"
 "  c none"
 "                                "
 "                                "
@@ -3320,26 +3324,9 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x1100a
-UseOrientation=N
-Xpm="32 2 4  1"
-"! c #595959"
-"# c #C4C413"
-"3 c #AAAAAA"
-"4 c #E0E02C"
-"!!!!!!!!########!!!!!!!!########"
-"!!!!!!!!########!!!!!!!!########"
-;12345678901234567890123456789012
-String1=0x02,Track Unbekannt
-String2=0x04,Track Unkwown
-ExtendedLabels=N
-[end]
-
-
-[_line]
 Type=0x1100d
 UseOrientation=N
-Xpm="32 2 2  1"
+Xpm="32 2 2 1"
 "! c #FF0000"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
@@ -3354,25 +3341,14 @@ ExtendedLabels=N
 [_line]
 Type=0x1100e
 UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #B4B4B4"
-"2 c #BD9500"
-String1=0x02,Grade1
-String2=0x04,Grade1
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x1100f
-UseOrientation=N
-LineWidth=2
-Xpm="0 0 1 0"
-"1 c #BD9500"
-String1=0x02,Grade2
-String2=0x04,Grade2
+Xpm="32 2 2 1"
+"! c #7B6500"
+"# c #C4C4CA"
+"!!!!!!!!########!!!!!!!!########"
+"!!!!!!!!########!!!!!!!!########"
+;12345678901234567890123456789012
+String1=0x02,Track Unbekannt
+String2=0x04,Track Unkwown
 ExtendedLabels=N
 [end]
 
@@ -3380,11 +3356,11 @@ ExtendedLabels=N
 [_line]
 Type=0x11010
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD9500"
+Xpm="32 2 2 1"
+"! c #7B6500"
 "  c none"
-"!!!  !  !!!  !  !!!  !  !!!  !  "
-"!!!  !  !!!  !  !!!  !  !!!  !  "
+"!!!!!!!!        !!!!!!!!        "
+"!!!!!!!!        !!!!!!!!        "
 ;12345678901234567890123456789012
 String1=0x02,Grade3
 String2=0x04,Grade3
@@ -3395,14 +3371,14 @@ ExtendedLabels=N
 [_line]
 Type=0x11011
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD9500"
+Xpm="32 2 2 1"
+"! c #7B6500"
 "  c none"
-" !  !  !  !!!!!  !  !  !  !!!!! "
-" !  !  !  !!!!!  !  !  !  !!!!! "
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+"!!! !!! !!! !!! !!! !!! !!! !!! "
 ;12345678901234567890123456789012
-String1=0x02,unbefestigt
-String2=0x04,unpaved
+String1=0x02,Grade4/6
+String2=0x04,Grade4/6
 ExtendedLabels=N
 [end]
 
@@ -3410,8 +3386,8 @@ ExtendedLabels=N
 [_line]
 Type=0x11012
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD0000"
+Xpm="32 2 2 1"
+"! c #7B6500"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
@@ -3668,7 +3644,7 @@ Type=0x1200e
 UseOrientation=N
 LineWidth=1
 Xpm="0 0 1 0"
-"1 c #BD9500"
+"1 c #7B6500"
 String1=0x02,Grade1
 String2=0x04,Grade1
 ExtendedLabels=N
@@ -3676,10 +3652,24 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x1200f
+UseOrientation=N
+Xpm="32 1 2 1"
+"! c #7B6500"
+"  c none"
+"!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
+;12345678901234567890123456789012
+String1=0x02,Grade2
+String2=0x04,Grade2
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x12012
 UseOrientation=N
-Xpm="32 1 2  1"
-"! c #BD0000"
+Xpm="32 1 2 1"
+"! c #7B6500"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
@@ -3692,7 +3682,7 @@ ExtendedLabels=N
 [_line]
 Type=0x12013
 UseOrientation=N
-Xpm="32 1 2  1"
+Xpm="32 1 2 1"
 "! c #FF0000"
 "# c #00FF00"
 "!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"

@@ -19,8 +19,8 @@
 #	0x07	service/living_street - with overlays
 #	0x08	ramp motorway/trunk
 #	0x09	ramp other
-#	0x0a	road/ track without grade*
-#	0x0b			NOT USED, an american special roadtype
+#	0x0a	track without grade*
+#	0x0b	road 		an american special roadtype
 #	0x0c	roundabout	only as function, used with overlays
 #	0x0d	footway		not used for routing is 0x1100d
 #	0x0e	track grade1
@@ -530,20 +530,32 @@ highway=bridleway									[0x11016 resolution 24]
 highway=steps										[0x12013 resolution 23-23 continue]
 highway=steps										[0x11013 resolution 24]
 
+
 #------------------------------------------------------------------------------
 # tracks
 
 highway='track;path'
-		{
-		set highway=track
-		}
+                {
+                set highway=track
+                }
 
-highway=track & tracktype=grade1							[0x1200e resolution 23-22 continue with_actions]
-highway=track & tracktype=grade1							[0x0e resolution 24 road_class=0 road_speed=1]
-highway=track & tracktype=grade2							[0x0f resolution 24 road_class=0 road_speed=0]
-highway=track & tracktype=grade3							[0x11010 resolution 24]
-highway=track & tracktype~'grade[4|6]'							[0x11011 resolution 24]
-highway=track										[0x1100a resolution 24]
+highway=track & tracktype=grade1                                                        [0x1200e resolution 23-22 continue with_actions]
+highway=track & tracktype=grade1                                                        [0x0e road_class=0 road_speed=0 resolution 24]
+
+highway=track
+                {
+                  set mkgmap:unpaved=1;
+                }
+
+highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue with_actions]
+highway=track & tracktype=grade2                                                        [0x0f road_class=0 road_speed=0 resolution 24]
+
+highway=track & tracktype=grade3                                                        [0x11010 road_class=0 road_speed=0 resolution 24]
+
+highway=track & tracktype~'grade[4|6]'                                                  [0x11011 road_class=0 road_speed=0 resolution 24]
+
+highway=track                                                                           [0x1100e resolution 24 continue with_actions]
+highway=track                                                                           [0x11 road_class=0 road_speed=0 resolution 24]
 
 
 #------------------------------------------------------------------------------
@@ -568,8 +580,9 @@ highway=path | highway=trail                                  				[0x11012 resol
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
 # road = way typ not defined/unknown
-highway=road										[0x1200a resolution 23-23]
-highway=road										[0x0a resolution 24 road_class=0 road_speed=0]
+highway=road                                                                            [0x2c resolution 24 continue with_actions]
+highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
+
 highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
