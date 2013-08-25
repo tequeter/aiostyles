@@ -167,7 +167,7 @@ mountain_pass=yes 		{
 
 natural=cave_entrance 							[0x6619 resolution 24]	# type without category
 # 0x11503	# mineshaft	# type without category
-natural=tree 								[0x1150b resolution 24]	# type without category
+#natural=tree 								[0x1150b resolution 24]	# type without category
 
 #------------------------------------------------------------------------------
 # Exit

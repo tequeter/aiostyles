@@ -1950,7 +1950,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
@@ -1964,7 +1964,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 ExtendedLabels=N
 [end]
@@ -1976,7 +1976,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Anschluss
 String2=0x04,Ramp
@@ -1990,7 +1990,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Anschluss
 String2=0x04,Ramp
@@ -2004,7 +2004,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Radweg
 String2=0x04,Cycleway
@@ -2018,7 +2018,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Unb. Straﬂe
 String2=0x04,Road
@@ -2032,7 +2032,7 @@ UseOrientation=N
 Xpm="32 1 2 1"
 "! c #FFFFFF"
 "  c none"
-"!                               "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Kreisverkehr
 String2=0x04,Roundabout
@@ -2102,15 +2102,14 @@ ExtendedLabels=N
 [_line]
 Type=0x11
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD0000"
+Xpm="32 1 2 1"
+"! c #FFFFFF"
 "  c none"
-"!!!!    !!!!    !!!!    !!!!    "
-"!!!!    !!!!    !!!!    !!!!    "
+"                                "
 ;12345678901234567890123456789012
-String1=0x02,Grade4/6
-String2=0x04,Grade4/6
 ExtendedLabels=N
+String1=0x02,Grade4-6/unb.
+String2=0x04,Grade4-6/unk.
 [end]
 
 
@@ -2345,9 +2344,7 @@ Xpm="32 7 4  1"
 ;12345678901234567890123456789012
 String1=0x02,Stromleitung
 String2=0x04,Power line
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3407,12 +3404,27 @@ Type=0x1100e
 UseOrientation=N
 Xpm="32 2 2  1"
 "! c #BD0000"
-"# c #C4C4C4"
+"# c #FFFF00"
 "!!!!!!!!########!!!!!!!!########"
 "!!!!!!!!########!!!!!!!!########"
 ;12345678901234567890123456789012
 String1=0x02,Unbekannter Track
-String2=0x04,Unkwown track
+String2=0x04,Unknown track
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x11011
+UseOrientation=N
+Xpm="32 2 2 1"
+"! c #7B6500"
+"  c none"
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+"!!! !!! !!! !!! !!! !!! !!! !!! "
+;12345678901234567890123456789012
+String1=0x02,Grade4-6
+String2=0x04,Grade4-6
 ExtendedLabels=N
 [end]
 
