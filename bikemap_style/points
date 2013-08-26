@@ -47,8 +47,7 @@ place=suburb 							& name=*	[0x0C00 resolution 22]
 place=hamlet | place=isolated_dwelling | place=neighbourhood	& name=*	[0x0D00 resolution 24]
 
 
-addr:housenumber=* & name!=*
-                  { set name='${addr:housenumber}' } 			[0x1e04 resolution 24]
+#addr:housenumber=* & name!=*  { set name='${addr:housenumber}' } 	[0x1e04 resolution 24]
 
 #------------------------------------------------------------------------------
 # Geographic Places
@@ -74,7 +73,7 @@ man_made=petroleum_well 						[0x640d	resolution 24]
 # 0x640e	# park
 # 0x640f	# letter (see Post Office)
 amenity=post_box {
-	      name '${operator}' | '${name}'
+	      delete name ; delete operator
 	      }						[0x640f resolution 24]
 
 amenity=clock 								[0x6410 resolution 24]
