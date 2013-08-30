@@ -285,11 +285,13 @@ amenity=parking								[0x4d00 resolution 24]
 amenity=toilets 							[0x4e00 resolution 24]
 # 0x4ess	# restroom
 amenity=shower 								[0x4f01 resolution 24]
-# 0x4fss	# shower
+# 0x4fss	# showerf
 # 0x50ss	# drinking water
 
 # 0x51ss	# telephone
-amenity=telephone 							[0x5100 resolution 24]
+amenity=telephone {
+              delete name ; delete operator
+              }                                                          							[0x5100 resolution 24]
 amenity=emergency_phone 						[0x5101 resolution 24]
 highway=emergency_access_point {
 	    add ref='';
@@ -658,7 +660,7 @@ amenity=fire_station 					[0x3008 resolution 24]
 
 # Post Office
 amenity=post_office {
-	      name '${operator}' | '${name}'
+	      delete name ; delete operator
 	      }						[0x2f05 resolution 24]
 
 # Bank or ATM

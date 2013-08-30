@@ -288,7 +288,7 @@ amenity=shower 								[0x4f01 resolution 24]
 # 0x51ss	# telephone
 amenity=telephone {
 	      delete name ; delete operator
-	      }							[0x5100 resolution 24]
+	      }							        [0x5100 resolution 24]
 amenity=emergency_phone 						[0x5101 resolution 24]
 highway=emergency_access_point {
 	    add ref='';
