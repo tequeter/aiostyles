@@ -378,12 +378,12 @@ tourism=attraction 					[0x2c04 resolution 24]
 
 historic=castle 					[0x5201 resolution 24]
 historic=ruins 						[0x5202 resolution 24]
-historic=fort 						[0x5203 resolution 24]
-historic=city_gate 					[0x5204 resolution 24]
+#historic=fort 						[0x5203 resolution 24]
+#historic=city_gate 					[0x5204 resolution 24]
 historic=monument 					[0x5205 resolution 24]
-historic=boundary_stone 				[0x5206 resolution 24]
-historic=wayside_shrine | historic=wayside_cross 	[0x11509 resolution 24]	# type without category
-highway=milestone 					[0x1150a resolution 24]	# type without category
+#historic=boundary_stone 				[0x5206 resolution 24]
+#historic=wayside_shrine | historic=wayside_cross 	[0x11509 resolution 24]	# type without category
+#highway=milestone 					[0x1150a resolution 24]	# type without category
 
 # Park/Garden
 leisure=garden & name=* 				[0x2c06 resolution 24]
