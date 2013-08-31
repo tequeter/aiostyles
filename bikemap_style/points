@@ -432,7 +432,7 @@ shop=bakery | shop=deli							[0x2a05 resolution 24]
 cuisine=international 							[0x2a06 resolution 24]
 
 # Italian
-cuisine=italian | cuisine=pasta 					[0x10b08 resolution 24]					[0x2a08 resolution 24]
+cuisine=italian | cuisine=pasta 					[0x2a08 resolution 24]
 
 # Mexican
 cuisine=mexican 							[0x2a09 resolution 24]
