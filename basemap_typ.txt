@@ -1,7 +1,7 @@
 ; basemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé
-; Décompilé le 17.08.2013 à 10:55:46
+; Fichier TYP compilé 
+; Décompilé le 24.08.2013 à 15:57:57
 
 [_id]
 ProductCode=45
@@ -1998,7 +1998,7 @@ ExtendedLabels=N
 [_line]
 Type=0x06
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
@@ -2012,7 +2012,7 @@ ExtendedLabels=N
 [_line]
 Type=0x07
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
@@ -2024,7 +2024,7 @@ ExtendedLabels=N
 [_line]
 Type=0x08
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
@@ -2038,7 +2038,7 @@ ExtendedLabels=N
 [_line]
 Type=0x09
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
@@ -2069,7 +2069,7 @@ CustomColor=No
 [_line]
 Type=0x0b
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
@@ -2083,7 +2083,7 @@ ExtendedLabels=N
 [_line]
 Type=0x0c
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
@@ -2126,14 +2126,14 @@ ExtendedLabels=N
 [_line]
 Type=0x11
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FFFFFF"
 "  c none"
 "                                "
 ;12345678901234567890123456789012
-ExtendedLabels=N
 String1=0x02,unb. Track
 String2=0x04,unk. track
+ExtendedLabels=N
 [end]
 
 
@@ -2224,7 +2224,7 @@ Xpm="32 2 2  1"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
 String1=0x02,Unbekannter Typ
-String1=0x04,Unknown typ
+String2=0x04,Unknown typ
 ExtendedLabels=N
 [end]
 
@@ -3340,7 +3340,7 @@ ExtendedLabels=N
 [_line]
 Type=0x1100d
 UseOrientation=N
-Xpm="32 2 2 1"
+Xpm="32 2 2  1"
 "! c #FF0000"
 "# c #00FF00"
 "!!##!!##!!##!!##!!##!!##!!##!!##"
@@ -3355,7 +3355,7 @@ ExtendedLabels=N
 [_line]
 Type=0x1100e
 UseOrientation=N
-Xpm="32 2 2 1"
+Xpm="32 2 2  1"
 "! c #7B6500"
 "# c #FFFF00"
 "!!!!!!!!########!!!!!!!!########"
@@ -3370,7 +3370,7 @@ ExtendedLabels=N
 [_line]
 Type=0x11010
 UseOrientation=N
-Xpm="32 2 2 1"
+Xpm="32 2 2  1"
 "! c #7B6500"
 "  c none"
 "!!!!!!!!        !!!!!!!!        "
@@ -3385,7 +3385,7 @@ ExtendedLabels=N
 [_line]
 Type=0x11011
 UseOrientation=N
-Xpm="32 2 2 1"
+Xpm="32 2 2  1"
 "! c #7B6500"
 "  c none"
 "!!! !!! !!! !!! !!! !!! !!! !!! "
@@ -3400,7 +3400,7 @@ ExtendedLabels=N
 [_line]
 Type=0x11012
 UseOrientation=N
-Xpm="32 2 2 1"
+Xpm="32 2 2  1"
 "! c #7B6500"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
@@ -3668,7 +3668,7 @@ ExtendedLabels=N
 [_line]
 Type=0x1200f
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #7B6500"
 "  c none"
 "!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
@@ -3682,7 +3682,7 @@ ExtendedLabels=N
 [_line]
 Type=0x12012
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #7B6500"
 "  c none"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
@@ -3696,7 +3696,7 @@ ExtendedLabels=N
 [_line]
 Type=0x12013
 UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="32 1 2  1"
 "! c #FF0000"
 "# c #00FF00"
 "!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
@@ -7429,33 +7429,6 @@ DayXpm="9 16 47 2"   Colormode=32
 
 
 [_point]
-Type=0x02c
-SubType=0x1b
-String1=0x02,Haftanstalt
-String2=0x04,Prison
-ExtendedLabels=N
-DayXpm="12 14 2 1"   Colormode=32
-"!	c #FFFFFF"  alpha=0
-"#	c #000000"  alpha=0
-"!!!!!!!!!!!!"
-"!!!!!!!!!!!!"
-"!!!#!!#!!#!!"
-"!!!#!!#!!#!!"
-"!!#########!"
-"!!!#!!#!!#!!"
-"!!!#!!#!!#!!"
-"!!!#!!#!!#!!"
-"!!!#!!#!!#!!"
-"!!#########!"
-"!!!#!!#!!#!!"
-"!!!#!!#!!#!!"
-"!!!!!!!!!!!!"
-"!!!!!!!!!!!!"
-;123456789012
-[end]
-
-
-[_point]
 Type=0x02d
 SubType=0x02
 String1=0x02,Nachtclub
@@ -11107,6 +11080,33 @@ DayXpm="16 8 74 2"   Colormode=32
 
 
 [_point]
+Type=0x030
+SubType=0x09
+String1=0x02,Haftanstalt
+String2=0x04,Prison
+ExtendedLabels=N
+DayXpm="12 14 2 1"   Colormode=32
+"!	c #FFFFFF"  alpha=0
+"#	c #000000"  alpha=0
+"!!!!!!!!!!!!"
+"!!!!!!!!!!!!"
+"!!!#!!#!!#!!"
+"!!!#!!#!!#!!"
+"!!#########!"
+"!!!#!!#!!#!!"
+"!!!#!!#!!#!!"
+"!!!#!!#!!#!!"
+"!!!#!!#!!#!!"
+"!!#########!"
+"!!!#!!#!!#!!"
+"!!!#!!#!!#!!"
+"!!!!!!!!!!!!"
+"!!!!!!!!!!!!"
+;123456789012
+[end]
+
+
+[_point]
 Type=0x045
 SubType=0x01
 String1=0x02,Trinkwasser
@@ -12955,6 +12955,56 @@ DayXpm="16 16 46 2"   Colormode=32
 
 [_point]
 Type=0x052
+SubType=0x03
+String1=0x02,Fort
+String2=0x01,Fort
+ExtendedLabels=N
+DayXpm="16 12 2 1"   Colormode=16
+"!	c #101010"
+"  	c none"
+"                "
+"! ! !      ! ! !"
+"!!!!!! ! ! !!!!!"
+"!!!!!!!!!!!!!!!!"
+"!! ! ! ! ! ! ! !"
+"!! ! !!!!!!! ! !"
+"!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!"
+"!!   !!!!!!!!!!!"
+"!!   !!!!!!!!!!!"
+"!!   !!!!!!!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x052
+SubType=0x04
+String1=0x02,Stadttor
+String2=0x04,City gate
+ExtendedLabels=N
+DayXpm="16 12 2 1"   Colormode=16
+"!	c #202020"
+"  	c none"
+"  ! ! ! ! ! !   "
+"  !!!!!!!!!!!   "
+"  !!!!!!!!!!!   "
+"  !!! ! ! !!!   "
+"  !!!!!!!!!!!   "
+"  !!! ! ! !!!   "
+"! !!!     !!!! !"
+"!!!!!     !!!!!!"
+"!!!!!     !!!!!!"
+"!!!!!     !!!!!!"
+"!!!!!     !!!!!!"
+"!!!!!     !!!!!!"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x052
 SubType=0x05
 String1=0x02,Monument
 String2=0x04,Monument
@@ -12982,6 +13032,28 @@ DayXpm="10 16 4 1"   Colormode=32
 "!!??????!!"
 "!!??????!!"
 "!%%%%%%%%!"
+;1234567890
+[end]
+
+
+[_point]
+Type=0x052
+SubType=0x06
+String1=0x01,
+ExtendedLabels=N
+DayXpm="10 10 2 1"   Colormode=16
+"!	c #202020"
+"  	c none"
+"    !!    "
+"    !!    "
+" !!!!!!!! "
+" !!!!!!!! "
+"    !!    "
+"    !!    "
+"    !!    "
+"    !!    "
+"    !!    "
+"!!!!!!!!!!"
 ;1234567890
 [end]
 
@@ -14092,6 +14164,35 @@ DayXpm="14 14 18 2"   Colormode=32
 "!?!2!2!2!2!2!2!2!2!2!1!=!*!#"
 "!$!?!?!?!?!?!?!?!?!?!?!%!#!!"
 ;12345678901234
+[end]
+
+
+[_point]
+Type=0x054
+SubType=0x0b
+String1=0x04,parachute
+String2=0x02,Falschirmsprung
+ExtendedLabels=N
+DayXpm="16 16 2 1"   Colormode=16
+"!	c #313131"
+"  	c none"
+"     !!!!!!     "
+"   !!!!  !!!!   "
+"  !!! !  ! !!!  "
+"  !!  !  !  !!  "
+" !!   !  !   !! "
+"!!    !  !    !!"
+"!!!!!!!!!!!!!!!!"
+"!    !     !   !"
+" !   !    !   ! "
+"  !   !   !  !  "
+"   !  !  !  !   "
+"    !  !!  !    "
+"     ! !  !     "
+"      !! !      "
+"       !!       "
+"       !!       "
+;1234567890123456
 [end]
 
 
