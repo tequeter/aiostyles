@@ -278,7 +278,7 @@ amenity=parking
 amenity=parking								[0x4d00 resolution 24]
 
 
-amenity=toilets 							[0x4e00 resolution 24]
+amenity=toilets 							[0x2f0c resolution 24]
 # 0x4ess	# restroom
 amenity=shower 								[0x4f01 resolution 24]
 # 0x4fss	# showerf
@@ -327,7 +327,7 @@ railway=tram_stop |
 amenity=bus_station |
 highway=bus_stop |
 public_transport=platform
-{
+	      {
 	      name '${name} (${route_ref})';
 	      } 							[0x2f17 resolution 24]
 

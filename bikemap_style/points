@@ -281,7 +281,7 @@ amenity=parking
 amenity=parking								[0x4d00 resolution 24]
 
 
-amenity=toilets 							[0x4e00 resolution 24]
+amenity=toilets 							[0x2f0c resolution 24]
 # 0x4ess	# restroom
 amenity=shower 								[0x4f01 resolution 24]
 # 0x4fss	# shower
