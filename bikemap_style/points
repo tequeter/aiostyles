@@ -650,7 +650,7 @@ amenity=waste_transfer_station | amenity=recycling 	{
 
 
 # Other
-amenity=public_building							[0x3000 resolution 24]
+amenity=public_building & name=*							[0x3000 resolution 24]
 
 #------------------------------------------------------------------------------
 # Entertainment
