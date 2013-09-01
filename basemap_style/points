@@ -278,6 +278,7 @@ amenity=parking
 amenity=parking								[0x4d00 resolution 24]
 
 
+amenity=toilets & name!=* {set name='WC'} 							[0x2f0c resolution 24]
 amenity=toilets 							[0x2f0c resolution 24]
 # 0x4ess	# restroom
 amenity=shower 								[0x4f01 resolution 24]
@@ -664,7 +665,7 @@ amenity=waste_transfer_station | amenity=recycling 	{
 
 
 # Other
-amenity=public_building	& name=* 						[0x3000 resolution 24]
+amenity=public_building 						[0x3000 resolution 24]
 
 #------------------------------------------------------------------------------
 # Entertainment
