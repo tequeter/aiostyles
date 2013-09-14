@@ -33,6 +33,7 @@ process-exits
 process-destination
 housenumbers
 remove-short-arcs=2.8
+ignore-maxspeeds
 check-roundabouts
 check-roundabout-flares
 make-all-cycleways

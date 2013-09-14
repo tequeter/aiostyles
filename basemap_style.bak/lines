@@ -36,14 +36,8 @@
 #{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
 #-----------------------------------------------------------------------------
 
-include 'inc/address';
-include 'inc/refs';
 
-# Assign the street name for house number search
-highway=* & name=* { set mkgmap:street='${name}' }
-
-# Mark highways with the toll flag
-highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
+include "address";
 
 
 #------------------------------------------------------------------------------
@@ -82,16 +76,70 @@ highway=*
 	    }
 
 #------------------------------------------------------------------------------
+# general access
+# Remove access=yes from highways.
+
+highway=* &
+      (	access=yes |
+	access=permissive |
+	access=designated |
+	access=official)
+		{ delete access }
+
+
 # next line is needed, because 'motorcycle=no' makes
 # nonroutable highways for motorcar
 
 highway=* & motorcycle=no {delete motorcycle}
 
 
+# change access=* to more useful tags
+
+highway=* & (access=destination |
+	     access=delivery |
+	     access=agricultural |
+	     access=forestry |
+	     access=emergency |
+	     access=private |
+	     impassable=yes |
+	     abandoned=yes)
+				{
+				add access=no;
+				  }
+
+
+highway=* & (motor_vehicle=destination |
+	     motor_vehicle=delivery |
+	     motor_vehicle=agricultural |
+	     motor_vehicle=forestry |
+	     motor_vehicle=emergency |
+	     motor_vehicle=private)
+				{
+				add motor_vehicle=no;
+				add foot=yes;
+				add bicycle=yes
+				  }
+
+highway=* & (vehicle=private |
+	     vehicle=destination |
+	     vehicle=delivery |
+	     vehicle=agricultural |
+	     vehicle=forestry |
+	     vehicle=emergency)
+				{
+				add vehicle=no
+				add foot=yes;
+				  }
+
 #------------------------------------------------------------------------------
 # 				overlays
 #------------------------------------------------------------------------------
 
+# backup street names for later use
+highway=*
+            {
+            set streetname='${name}';
+            }
 
 # oneway overlay
 highway=*  &
@@ -103,6 +151,8 @@ highway=*  & oneway=-1									[0x10801 resolution 24-23 continue with_actions]
 # construction
 highway=* & construction=*								[0x10802 resolution 24-23 continue with_actions]
 
+# remove name to show following overlays with separate name (default_name)
+highway=* { set name=''; }
 
 # toll overlay
 toll=yes & highway!=motorway								[0x10803 resolution 24-22 continue with_actions]
@@ -143,24 +193,11 @@ highway=* & railway=tram								[0x10700 resolution 24-23 continue with_actions]
 # bridleway overlay
 highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
 
-
-#------------------------------------------------------------------------------
-# Hide proposed ways
-highway=proposed {delete highway;delete junction}
-
-#------------------------------------------------------------------------------
-# Hide unaccessible tunnels
-highway=* & tunnel=yes &
-        (access=private|access=no) &
-        foot!=* &
-        bicycle!=*
-           {delete highway;delete junction}
-
-#------------------------------------------------------------------------------
-# Disable dead-end-checks for unaccessible oneways
-highway=* & oneway=yes &
-      (access=private|access=no)
-            {add mkgmap:dead-end-check=false}
+# now set the highway-names from the backuped names
+highway=*
+            {
+            set name='${streetname}';
+            }
 
 #------------------------------------------------------------------------------
 # disused
@@ -172,7 +209,16 @@ highway=* & disused=yes									[0x10114 resolution 24]
 
 highway=construction									[0x10113 resolution 24]
 
-#-----------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+# access restrictions for germany (and other?) foot=no and bicycle=no
+# uncomment to enable
+
+highway=motorway 		{ add foot=no; add bicycle=no }
+highway=motorway_link 		{ add foot=no; add bicycle=no }
+highway=trunk 			{ add foot=no; add bicycle=no }
+highway=trunk_link 		{ add foot=no; add bicycle=no }
+highway=* & motorroad=yes 	{ add foot=no; add bicycle=no }
+
 # Validation-like checks
 #highway=motorway_link
 #		& oneway!=yes
@@ -186,6 +232,39 @@ highway=construction									[0x10113 resolution 24]
 #		{
 #		  echo "motorway_link lacks oneway"
 #		}
+
+#-----------------------------------------------------------------------------
+#			road_class
+#-----------------------------------------------------------------------------
+#
+#		road_class	Used as
+#		4 		Major HW/Ramp
+#		3 		Principal HW
+#		2 		Arterial St / Other HW
+#		1 		Roundabout / Collector
+#		0 		Residential Street / Unpaved road / Trail
+
+#------------------------------------------------------------------------------
+#				speedlimits
+#------------------------------------------------------------------------------
+# 	road_speed 	!! 	highest speed
+#
+#		7 	|| 	No speed limit
+#
+#		6 	|| 	70 mph / 110 kmh
+#
+#		5 	|| 	60 mph / 90 kmh
+#
+#		4 	|| 	50 mph / 80 kmh
+#
+#		3 	|| 	35 mph / 60 kmh
+#
+#		2 	|| 	25 mph / 40 kmh
+#
+#		1 	|| 	15 mph / 20 kmh
+#
+#		0 	|| 	3 mph / 5 kmh
+#
 
 # Set highway names to include the reference if there is one
 highway=motorway
@@ -274,27 +353,6 @@ highway=*
 		  name '${name}' |
 		       '${ref}';
                 }
-#------------------------------------------------------------------------------
-# include the access and roadspeed-functions
-#------------------------------------------------------------------------------
-
-# calculate the road speed based on maxspeed tag
-#include 'inc/roadspeed';
-
-# calculate the access rules
-include 'inc/access';
-
-
-#-----------------------------------------------------------------------------
-#			road_class
-#-----------------------------------------------------------------------------
-#
-#		road_class	Used as
-#		4 		Major HW/Ramp
-#		3 		Principal HW
-#		2 		Arterial St / Other HW
-#		1 		Roundabout / Collector
-#		0 		Residential Street / Unpaved road / Trail
 
 
 #--------------------------------------------------------------------------------------
@@ -309,6 +367,7 @@ highway=motorway_link                       						[0x12001 resolution 21-20 cont
 highway=motorway_link                       						[0x11001 resolution 24-22 continue with_actions]
 highway=motorway_link &
 	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true)				[0x07 resolution 24 road_class=4 road_speed=3]
+
 highway=motorway_link 			     						[0x09 resolution 24 road_class=4 road_speed=3]
 
 
@@ -407,6 +466,19 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 		  add mkgmap:dead-end-check=false
 		  }
 
+highway=pedestrian
+		{
+		add access=no;
+		set foot=yes;
+		  }
+
+highway=pedestrian & (bicycle=allowed |
+		      bicycle=designated |
+		      bicycle=official |
+		      bicycle=permissive)
+		{
+		  add bicycle=yes;
+		  }
 highway=pedestrian									[0x1201b resolution 23-23 continue with_actions]
 highway=pedestrian									[0x1101b resolution 24 continue with_actions]
 highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
@@ -416,7 +488,10 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 # pathes with bicycle=*
 
-highway=path & bicycle=yes
+highway=path & (bicycle=designated |
+		bicycle=allowed |
+		bicycle=official |
+		bicycle=permissive)
 		{
 		  set highway=cycleway
 		  }
@@ -427,7 +502,10 @@ highway=cycleway				 					[0x11015 resolution 24]
 # footway
 
 # pathes with foot=*
-highway=path & foot=yes
+highway=path & (foot=designated |
+		foot=allowed |
+		foot=official |
+		foot=permissive)
 		{
 		  set highway=footway
 		  }
@@ -466,7 +544,7 @@ highway=track
                 {
                   set mkgmap:unpaved=1;
                 }
-
+                
 highway=track                                                                           [0x1100e resolution 24 continue with_actions]
 highway=track                                                                           [0x11 road_class=0 road_speed=0 resolution 24]
 

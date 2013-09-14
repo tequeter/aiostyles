@@ -9,10 +9,6 @@
 # You can specify a list here, the first one that exists will be
 # used
 #
-# Example:
-#
-#name-tag-list = name:de, name
-
 # The levels specification for this style
 #
 # Example:
@@ -33,6 +29,7 @@ process-exits
 process-destination
 housenumbers
 remove-short-arcs=2.8
+ignore-maxspeeds
 check-roundabouts
 check-roundabout-flares
 make-all-cycleways
