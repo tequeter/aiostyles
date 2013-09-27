@@ -1,6 +1,6 @@
 #
 # Sets the road speed based on the maxspeed tag.
-# In case mkgmap:road-speed-class is set the element 
+# In case mkgmap:road-speed-class is set the element
 # road_speed is overriden.
 #
 # road_speed classification:

@@ -304,14 +304,14 @@ highway=*
 		  name '${name}' |
 		       '${ref}';
 	        }
-                
+
 
 #------------------------------------------------------------------------------
 # include the access and roadspeed-functions
 #------------------------------------------------------------------------------
 
 # calculate the road speed based on maxspeed tag
-include 'inc/roadspeed';
+#include 'inc/roadspeed';
 
 # calculate the access rules
 include 'inc/access';
