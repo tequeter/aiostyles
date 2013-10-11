@@ -23,12 +23,3 @@ maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  40 { set mkgmap:road-
 maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  20 { set mkgmap:road-speed-class = 2 }
 maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >   5 { set mkgmap:road-speed-class = 1 }
 maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh()=*     { set mkgmap:road-speed-class = 0 }
-
-maxspeed=* &                              maxspeedmph() >  70 { set mkgmap:road-speed-class = 7 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph() >  60 { set mkgmap:road-speed-class = 6 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph() >  50 { set mkgmap:road-speed-class = 5 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph() >  35 { set mkgmap:road-speed-class = 4 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph() >  25 { set mkgmap:road-speed-class = 3 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph() >  15 { set mkgmap:road-speed-class = 2 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph() >   3 { set mkgmap:road-speed-class = 1 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedmph()=*     { set mkgmap:road-speed-class = 0 }
