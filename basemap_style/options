@@ -33,7 +33,6 @@ check-roundabouts
 check-roundabout-flares
 make-all-cycleways
 adjust-turn-headings
-location-autofill=bounds,is_in,nearest
 min-size-polygon=8
 reduce-point-density=4
 reduce-point-density-polygon=8
