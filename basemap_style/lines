@@ -416,7 +416,7 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 # pathes with bicycle=*
 
-highway=path & bicycle=yes
+highway=path & ( bicycle=yes | bicycle=designated )
 		{
 		  set highway=cycleway
 		  }
@@ -427,7 +427,7 @@ highway=cycleway				 					[0x11015 resolution 24]
 # footway
 
 # pathes with foot=*
-highway=path & foot=yes
+highway=path & ( foot=yes | foot=designated )
 		{
 		  set highway=footway
 		  }

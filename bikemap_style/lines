@@ -306,6 +306,26 @@ highway=*
 	        }
 
 
+# adjust pathes with bicycle=*
+
+highway=path & 	( bicycle=yes | bicycle=designated )
+		      {
+			set highway=cycleway;
+		      }
+
+
+# pathes with foot=*
+
+highway=path & (foot=yes | foot=designated )
+		  {
+		    set highway=footway;
+		    }
+		    
+highway=footway & (cycle_network=yes)
+		       {
+		        set bicycle=yes
+		        }		    
+		    
 #------------------------------------------------------------------------------
 # include the access and roadspeed-functions
 #------------------------------------------------------------------------------
@@ -446,19 +466,6 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 ## cycleways
 
-
-# adjust pathes with bicycle=*
-
-highway=path & 	bicycle=yes
-		      {
-			set highway=cycleway;
-		      }
-
-highway=cycleway
-		      {
-			set bicycle=yes
-		      }
-
 # cycleway
 highway=cycleway & cn_name=* { set name='${cn_name}' }
 
@@ -470,21 +477,6 @@ highway=cycleway				 					[0x0a resolution 24 road_class=0 road_speed=1]
 
 # footway
 
-# pathes with foot=*
-
-highway=path & foot=yes
-		  {
-		    set highway=footway;
-		    }
-highway=footway
-		{
-		set foot=yes;
-		  }
-
-highway=footway & (cycle_network=yes)
-		       {
-		        set bicycle=yes;
-		        }
 highway=footway										[0x1200d resolution 23-23 continue with_actions]
 highway=footway										[0x0d resolution 24 road_class=0 road_speed=0]
 
