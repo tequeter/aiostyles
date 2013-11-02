@@ -16,12 +16,12 @@
 #	0x04	secondary
 #	0x05	tertiary
 #	0x06	residential/unclassified
-#	0x07	service/living_street - with overlays
+#	0x07	service/living_street
 #	0x08	ramp motorway/trunk
 #	0x09	ramp other
 #	0x0a	track without grade*
 #	0x0b	road 		an american special roadtype
-#	0x0c	roundabout	only as function, used with overlays
+#	0x0c	roundabout	
 #	0x0d	footway		not used for routing is 0x1100d
 #	0x0e	track grade1
 #	0x0f	track grade2

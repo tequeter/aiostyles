@@ -15,12 +15,12 @@
 #	0x04	secondary
 #	0x05	tertiary
 #	0x06	residential/unclassified
-#	0x07	service/living_street	 	used invisible, with some overlays
-#	0x08	ramp 				only as function, used invisible
-#	0x09	ramp 				only as function, used invisible
+#	0x07	service/living_street
+#	0x08	ramp
+#	0x09	ramp
 #	0x0a	cycleway
 #	0x0b	road				an american special roadtype
-#	0x0c	roundabout			only as function, used invisible
+#	0x0c	roundabout
 #	0x0d	footway
 #       0x0e    track grade1
 #	0x0f    track grade2
@@ -478,6 +478,7 @@ highway=cycleway				 					[0x0a resolution 24 road_class=0 road_speed=1]
 # footway
 
 highway=footway										[0x1200d resolution 23-23 continue with_actions]
+highway=footway										[0x1100d resolution 24 continue with_actions]
 highway=footway										[0x0d resolution 24 road_class=0 road_speed=0]
 
 
@@ -488,6 +489,7 @@ highway=bridleway
 		  add mkgmap:unpaved=1
 		}
 highway=bridleway									[0x12016 resolution 23-23 continue with_actions]
+highway=bridleway									[0x11016 resolution 24 continue with_actions]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 # steps

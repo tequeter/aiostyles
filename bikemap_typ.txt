@@ -2140,11 +2140,10 @@ ExtendedLabels=N
 [_line]
 Type=0x0d
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #FF0000"
-"# c #00FF00"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
-"!!##!!##!!##!!##!!##!!##!!##!!##"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Fuﬂweg
 String2=0x04,Footway
