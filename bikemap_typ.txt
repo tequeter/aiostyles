@@ -1974,11 +1974,11 @@ Xpm="0 0 2 0"
 [_line]
 Type=0x01
 UseOrientation=N
-LineWidth=4
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #BD3000"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
+;12345678901234567890123456789012
 String1=0x02,Autobahn
 String2=0x04,Motorway
 ExtendedLabels=N
@@ -1988,11 +1988,11 @@ ExtendedLabels=N
 [_line]
 Type=0x02
 UseOrientation=N
-LineWidth=4
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FF6500"
-"2 c #39956A"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
+;12345678901234567890123456789012
 String1=0x04,Trunk
 String2=0x02,Schnellstraﬂe
 ExtendedLabels=N
@@ -2002,11 +2002,11 @@ ExtendedLabels=N
 [_line]
 Type=0x03
 UseOrientation=N
-LineWidth=4
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FF6500"
-"2 c #BD3000"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
+;12345678901234567890123456789012
 String1=0x02,Bundesstraﬂe
 String2=0x04,Primary
 ExtendedLabels=N
@@ -2016,11 +2016,11 @@ ExtendedLabels=N
 [_line]
 Type=0x04
 UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFCA00"
-"2 c #BD3000"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
+;12345678901234567890123456789012
 String1=0x02,Landes-/Staatsstraﬂe
 String2=0x04,Secondary
 ExtendedLabels=N
@@ -2030,11 +2030,11 @@ ExtendedLabels=N
 [_line]
 Type=0x05
 UseOrientation=N
-LineWidth=3
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #000000"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
+;12345678901234567890123456789012
 String1=0x02,Kreisstraﬂe
 String2=0x04,Tertiary
 ExtendedLabels=N
@@ -3467,6 +3467,20 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x11009
+UseOrientation=N
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFFF00"
+"2 c #FF0000"
+String1=0x02,Autobahnanschluﬂ
+String2=0x04,Motorway-Link
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x1100a
 UseOrientation=N
 Xpm="32 2 2  1"
@@ -3735,6 +3749,20 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Wohnstraﬂe
 String2=0x04,Livingstreet
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x12009
+UseOrientation=N
+LineWidth=1
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #FFFF00"
+"2 c #FF0000"
+String1=0x02,Autobahnanschluﬂ
+String2=0x04,Motorway-Link
 ExtendedLabels=N
 [end]
 
