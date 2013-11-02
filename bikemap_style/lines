@@ -113,23 +113,25 @@ toll=yes & highway!=motorway								[0x10803 resolution 24-22 continue with_acti
     { set bridge=yes; }
 
 bridge=yes & highway=motorway								[0x10101 resolution 24-23 continue with_actions]
-bridge=yes & highway=motorway_link							[0x10103 resolution 24-23 continue with_actions]
-bridge=yes & highway=trunk								[0x10102 resolution 24-23 continue with_actions]
-bridge=yes & highway=trunk_link								[0x10103 resolution 24-23 continue with_actions]
-bridge=yes & highway=primary								[0x10102 resolution 24-23 continue with_actions]
-bridge=yes & highway=primary_link							[0x10103 resolution 24-23 continue with_actions]
+bridge=yes & highway=motorway_link							[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=trunk								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=trunk_link								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=primary								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=primary_link							[0x10101 resolution 24-23 continue with_actions]
 bridge=yes & highway=secondary								[0x10102 resolution 24-23 continue with_actions]
-bridge=yes & highway=secondary_link							[0x10104 resolution 24-23 continue with_actions]
+bridge=yes & highway=secondary_link							[0x10102 resolution 24-23 continue with_actions]
 bridge=yes & highway=tertiary								[0x10102 resolution 24-23 continue with_actions]
-bridge=yes & highway=tertiary_link							[0x10104 resolution 24-23 continue with_actions]
-bridge=yes & ( highway=* | railway=* )							[0x10105 resolution 24-23 continue with_actions]
+bridge=yes & highway=tertiary_link							[0x10102 resolution 24-23 continue with_actions]
+bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue with_actions]
 
 # tunnel overlay
 (tunnel=yes | covered=yes)
 	 & (highway=motorway |
 	    highway=motorway_link |
 	    highway=trunk |
-	    highway=trunk_link )							[0x10111 resolution 24-23 continue with_actions]
+	    highway=trunk_link |
+            highway=primary |
+            highway=primary_link )							[0x10111 resolution 24-23 continue with_actions]
 
 (tunnel=yes | covered=yes)
 	  & (highway=* |
@@ -358,8 +360,8 @@ highway=motorway                            						[0x11001 resolution 24-22 cont
 highway=motorway & junction=roundabout 							[0x0c resolution 24 road_class=1 road_speed=3]
 highway=motorway			   						[0x01 resolution 24 road_class=4 road_speed=6]
 
-highway=motorway_link                       						[0x12009 resolution 21-20 continue with_actions]
-highway=motorway_link                       						[0x11009 resolution 24-22 continue with_actions]
+highway=motorway_link                       						[0x12001 resolution 21-20 continue with_actions]
+highway=motorway_link                       						[0x11001 resolution 24-22 continue with_actions]
 highway=motorway_link &
 	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true)				[0x07 resolution 24 road_class=4 road_speed=3]
 highway=motorway_link 			     						[0x09 resolution 24 road_class=4 road_speed=3]

@@ -1,6 +1,6 @@
 ; bikemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé 
+; Fichier TYP compilé
 ; Décompilé le 02.11.2013 à 16:34:52
 
 [_id]
@@ -2547,18 +2547,16 @@ ExtendedLabels=N
 [_line]
 Type=0x10101
 UseOrientation=N
-Xpm="32 10 2  1"
+Xpm="32 8 2  1"
 "! c #525252"
 "  c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "                                "
 "                                "
 "                                "
 "                                "
 "                                "
 "                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
 String1=0x02,Autobahnbrücke
@@ -2572,61 +2570,10 @@ CustomColor=No
 [_line]
 Type=0x10102
 UseOrientation=N
-Xpm="32 10 2  1"
+Xpm="32 7 2  1"
 "! c #525252"
 "  c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
-"                                "
-"                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Brücke
-String2=0x04,Bridge
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10103
-UseOrientation=N
-Xpm="32 9 2  1"
-"! c #525252"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Brücke
-String2=0x04,Bridge
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10104
-UseOrientation=N
-Xpm="32 9 2  1"
-"! c #525252"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
 "                                "
 "                                "
 "                                "
@@ -2643,14 +2590,12 @@ CustomColor=No
 
 
 [_line]
-Type=0x10105
+Type=0x10103
 UseOrientation=N
-Xpm="32 8 2  1"
+Xpm="32 6 2  1"
 "! c #525252"
 "  c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
 "                                "
 "                                "
 "                                "
@@ -2762,18 +2707,16 @@ ExtendedLabels=N
 [_line]
 Type=0x10111
 UseOrientation=N
-Xpm="32 10 2  1"
+Xpm="32 8 2  1"
 "! c #949494"
 "  c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "                                "
 "                                "
 "                                "
 "                                "
 "                                "
 "                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
 String1=0x02,Autobahntunnel
@@ -2787,17 +2730,15 @@ CustomColor=No
 [_line]
 Type=0x10112
 UseOrientation=N
-Xpm="32 9 2  1"
+Xpm="32 7 2  1"
 "! c #949494"
 "  c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "                                "
 "                                "
 "                                "
 "                                "
 "                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
 String1=0x02,Tunnel
@@ -3474,20 +3415,6 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x11009
-UseOrientation=N
-LineWidth=2
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #FF0000"
-String1=0x02,Autobahnanschluß
-String2=0x04,Motorway-Link
-ExtendedLabels=N
-[end]
-
-
-[_line]
 Type=0x1100a
 UseOrientation=N
 Xpm="32 2 2  1"
@@ -3756,20 +3683,6 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Wohnstraße
 String2=0x04,Livingstreet
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x12009
-UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #FFFF00"
-"2 c #FF0000"
-String1=0x02,Autobahnanschluß
-String2=0x04,Motorway-Link
 ExtendedLabels=N
 [end]
 
