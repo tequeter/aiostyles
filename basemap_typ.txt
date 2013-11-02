@@ -672,7 +672,7 @@ Xpm="32 32 2 1"
 [_polygon]
 Type=0x11
 String1=0x02,Baugebiet
-String2=0x04,Construction/data/osm/markers.gpx = /data/osm/markers.osm
+String2=0x04,Construction/data/osm/markers.gpx 
 ExtendedLabels=N
 Xpm="32 32 2 1"
 "! c #FF6500"
@@ -2502,11 +2502,20 @@ ExtendedLabels=N
 [_line]
 Type=0x10101
 UseOrientation=N
-LineWidth=6
-BorderWidth=4
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #525252"
+Xpm="32 10 2  1"
+"! c #525252"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
 String1=0x02,Autobahnbrücke
 String2=0x04,Motorway bridge
 ExtendedLabels=Y

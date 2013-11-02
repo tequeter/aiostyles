@@ -1,7 +1,7 @@
 ; bikemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé
-; Décompilé le 24.08.2013 à 15:57:10
+; Fichier TYP compilé 
+; Décompilé le 02.11.2013 à 16:34:52
 
 [_id]
 ProductCode=46
@@ -1294,7 +1294,6 @@ Xpm="32 32 4 1"
 [end]
 
 
-
 [_polygon]
 Type=0x27
 String1=0x02,Land
@@ -2548,11 +2547,20 @@ ExtendedLabels=N
 [_line]
 Type=0x10101
 UseOrientation=N
-LineWidth=6
-BorderWidth=4
-Xpm="0 0 2 0"
-"1 c #FFFFFF"
-"2 c #525252"
+Xpm="32 10 2  1"
+"! c #525252"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
 String1=0x02,Autobahnbrücke
 String2=0x04,Motorway bridge
 ExtendedLabels=Y
@@ -12938,9 +12946,9 @@ String1=0x02,Wegkreuz
 String2=0x04,Wayside Cross
 ExtendedLabels=N
 DayXpm="10 14 3 1"   Colormode=16
-"!      c #202020"
-"#      c #B4B4B4"
-"       c none"
+"!	c #202020"
+"#	c #B4B4B4"
+"  	c none"
 "    !!    "
 "    !!    "
 " !!!!!!!! "
@@ -12959,7 +12967,6 @@ DayXpm="10 14 3 1"   Colormode=16
 [end]
 
 
-
 [_point]
 Type=0x052
 SubType=0x07
@@ -12967,10 +12974,10 @@ String1=0x02,Bildstock
 String2=0x04,Wayside shrine
 ExtendedLabels=N
 DayXpm="10 14 4 1"   Colormode=16
-"!      c #414141"
-"#      c #838383"
-"%      c #E6E6E6"
-"       c none"
+"!	c #414141"
+"#	c #838383"
+"%	c #E6E6E6"
+"  	c none"
 " !!!!!!!! "
 " !!####!! "
 " !!#%%#!! "
