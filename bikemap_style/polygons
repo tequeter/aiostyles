@@ -43,7 +43,11 @@ amenity=car_sharing 							[0x05 resolution 24]
 #------------------------------------------------------------------------------
 # aerodromes
 
-aeroway=aerodrome | aeroway=airport | aeroway=airfiled | aeroway=apron  [0x07 resolution 18]
+aeroway=aerodrome | 
+aeroway=airport | 
+aeroway=airfield | 
+aeroway=apron |
+aeroway=helipad								[0x07 resolution 18]
 aeroway=runway                      					[0x0e resolution 20]
 
 #------------------------------------------------------------------------------

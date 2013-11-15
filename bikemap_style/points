@@ -317,7 +317,7 @@ aeroway=airport & mkgmap:area2poi!=true							[0x5902 resolution 23-20 continue]
 aeroway=airport & mkgmap:area2poi!=true							[0x2f04 resolution 24]
 (aeroway=airfield | military=airfield) & mkgmap:area2poi!=true				[0x5903 resolution 23-22 continue]
 (aeroway=airfield | military=airfield) & mkgmap:area2poi!=true				[0x2f04 resolution 24]
-aeroway=helipad & mkgmap:area2poi!=true 						[0x5904 resolution 24]
+aeroway=helipad				 						[0x5904 resolution 24]
 
 
 # Ground Transportation
