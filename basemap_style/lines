@@ -124,7 +124,7 @@ bridge=yes & highway=tertiary_link							[0x10102 resolution 24-23 continue with
 bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue with_actions]
 
 # tunnel overlay
-(tunnel=yes | covered=yes)
+(tunnel!=no | covered=yes)
 	 & (highway=motorway |
 	    highway=motorway_link |
 	    highway=trunk |
@@ -132,7 +132,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
 	    highway=primary |
 	    highway=primary_link )							[0x10111 resolution 24-23 continue with_actions]
 
-(tunnel=yes | covered=yes)
+(tunnel!=no | covered=yes)
 	  & (highway=* |
 	     railway=*)									[0x10112 resolution 24-23 continue with_actions]
 
