@@ -152,7 +152,7 @@ highway=proposed {delete highway;delete junction}
 
 #------------------------------------------------------------------------------
 # Hide unaccessible tunnels
-highway=* & (tunnel=yes & | tunnel=building_passage | covered=yes)
+highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
         (access=private|access=no) &
         foot!=* &
         bicycle!=*
