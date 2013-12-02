@@ -125,7 +125,7 @@ bridge=yes & highway=tertiary_link							[0x10102 resolution 24-23 continue with
 bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue with_actions]
 
 # tunnel overlay
-((tunnel!=no  & tunnel=*) | covered=yes)
+(tunnel=yes | tunnel=building_passage | covered=yes)
 	 & (highway=motorway |
 	    highway=motorway_link |
 	    highway=trunk |
@@ -133,7 +133,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
             highway=primary |
             highway=primary_link )							[0x10111 resolution 24-23 continue with_actions]
 
-((tunnel!=no & tunnel=*) | covered=yes)
+(tunnel=yes | tunnel=building_passage | covered=yes)
 	  & (highway=* |
 	     railway=*)									[0x10112 resolution 24-23 continue with_actions]
 
@@ -179,7 +179,7 @@ highway=proposed {delete highway;delete junction}
 
 #------------------------------------------------------------------------------
 # Hide unaccessible tunnels
-highway=* & tunnel=yes &
+highway=* & (tunnel=yes & | tunnel=building_passage | covered=yes) &
         (access=private|access=no) &
         foot!=* &
         bicycle!=*
