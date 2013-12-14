@@ -876,4 +876,8 @@ power=generator & (power_source=photovoltaic | power_source=solar-thermal) 					
 power=generator 													[0x7200 resolution 24]
 # 0x72ss
 
-#eof
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+name=* { name '${name}' }
+include 'inc/address';
+

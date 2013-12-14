@@ -400,50 +400,94 @@ highway=raceway										[0x12007 resolution 24-23]
 highway=platform									[0x11007 resolution 24]
 
 #------------------------------------------------------------------------------
-# designated
+# designated ways
 
-
-# pedestrian
 highway=pedestrian & (area!=yes & area!=true & area!=1)
 		{
 		  add mkgmap:dead-end-check=false
 		  }
+
+highway=pedestrian & (bicycle=designated |
+		      bicycle=permissive |
+		      bicycle=official)
+		      {
+			add bicycle=yes
+			}
 
 highway=pedestrian									[0x1201b resolution 23-23 continue with_actions]
 highway=pedestrian									[0x1101b resolution 24 continue with_actions]
 highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 
-# cycleway
+# Convert generic path to most specific
 
-# pathes with bicycle=*
+# path with bicycle=*
 
-highway=path & ( bicycle=yes | bicycle=designated )
+highway=path & ( bicycle=designated |
+		  bicycle=permissive |
+		  bicycle=official)
 		{
-		  set highway=cycleway
+		  set highway=cycleway; set bicycle=yes
 		  }
-highway=cycleway				 					[0x12015 resolution 23-23 continue]
-highway=cycleway				 					[0x11015 resolution 24]
 
-
-# footway
-
-# pathes with foot=*
-highway=path & ( foot=yes | foot=designated )
+		  
+highway=footway & snowplowing!=no
+		& (bicycle=designated |
+		    bicycle=permissive |
+		    bicycle=official)
+		{
+		  set highway=cycleway;set bicycle=yes
+		  }		  
+		  
+# path with foot=*
+highway=path & (foot=yes | foot=designated )
 		{
 		  set highway=footway
 		  }
+
+highway=path & (horse=designated |
+		horse=permissive |
+		horse=official)
+	      {
+		set highway=bridleway; set horse=yes
+		}		  
+
+
+leisure=track & area!=yes
+	      {
+		add highway=footway; name '${name} (${sport})' | 
+		'${name}'
+		}
+		
+(man_made=pier | man_made=piste:halfpipe) & area!=yes
+	      {add highway=footway; name '${ref} ${name}' | 
+		'${ref}' | 
+		'${name}' 
+		}
+
+## in the basemap these ways are not routable per default
+highway=cycleway				 					[0x1200a resolution 23-23 continue]
+highway=cycleway				 					[0x1100a resolution 24]
+#highway=cycleway				 					[0x1100a resolution 24 continue with_actions]
+#highway=cycleway & junction=roundabout				 			[0x0c resolution 24 road_class=0 road_speed=1]
+#highway=cycleway				 					[0x0a resolution 24 road_class=0 road_speed=1]
+
+
 highway=footway										[0x1200d resolution 23-23 continue]
 highway=footway										[0x1100d resolution 24]
+#highway=footway									[0x1100d resolution 24 continue with_actions]
+#highway=footway									[0x0d resolution 24 road_class=0 road_speed=0]
 
-# bridleway
+
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24]
+#highway=bridleway									[0x11016 resolution 24 continue with_actions]
+#highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 
-# steps
 highway=steps										[0x12013 resolution 23-23 continue]
 highway=steps										[0x11013 resolution 24]
+#highway=steps										[0x13 road_class=0 road_speed=0 resolution 24]
 
 
 #------------------------------------------------------------------------------
@@ -498,7 +542,7 @@ highway=path | highway=trail                                  				[0x11012 resol
 highway=road                                                                            [0x2c resolution 24 continue with_actions]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
+highway=* & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------

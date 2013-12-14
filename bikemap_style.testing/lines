@@ -307,18 +307,6 @@ highway=*
 	        }
 
 
-
-#------------------------------------------------------------------------------
-# include the access and roadspeed-functions
-#------------------------------------------------------------------------------
-
-# calculate the road speed based on maxspeed tag
-#include 'inc/roadspeed';
-
-# calculate the access rules
-include 'inc/access';
-
-
 #-----------------------------------------------------------------------------
 #			road_class
 #-----------------------------------------------------------------------------
@@ -435,7 +423,6 @@ highway=platform									[0x11007 resolution 24]
 #------------------------------------------------------------------------------
 # designated ways
 
-# pedestrian
 highway=pedestrian & (area!=yes & area!=true & area!=1)
 		{
 		add mkgmap:dead-end-check=false
@@ -482,7 +469,9 @@ highway=path & (foot=yes | foot=designated )
 highway=path & (horse=designated |
 		horse=permissive |
 		horse=official)
-{set highway=bridleway; set horse=yes}		  
+	      {
+		set highway=bridleway; set horse=yes
+		}		  
 
 
 leisure=track & area!=yes
@@ -490,6 +479,7 @@ leisure=track & area!=yes
 		add highway=footway; name '${name} (${sport})' | 
 		'${name}'
 		}
+		
 (man_made=pier | man_made=piste:halfpipe) & area!=yes
 	      {add highway=footway; name '${ref} ${name}' | 
 		'${ref}' | 
@@ -581,7 +571,7 @@ highway=path | highway=trail | highway=byway						[0x12 resolution 24 road_class
 highway=road										[0x2c resolution 24 continue with_actions]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & (mkgmap:unpaved=1)								[0x0d resolution 24 road_class=0 road_speed=0]
+highway=* & (mkgmap:unpaved=1)								[0x0b resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)						[0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 

@@ -130,4 +130,7 @@ natural=beach 								[0x3d resolution 17]
 
 waterway=riverbank 							[0x46 resolution 18]
 
-#eof
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+
+name=* { name '${name}' }

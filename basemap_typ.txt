@@ -10,9 +10,6 @@ CodePage=1252
 [_comments]
 [End]
 
-
-
-
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
 Type=0x10d00,1
@@ -2092,23 +2089,18 @@ String2=0x04,Ramp
 ExtendedLabels=N
 [end]
 
-
 [_line]
 Type=0x0a
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #7B6500"
-"# c #C4C4C4"
-"!!!!####!!!!####!!!!####!!!!####"
-"!!!!####!!!!####!!!!####!!!!####"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
 ;12345678901234567890123456789012
-String1=0x02,Unb. Track
-String2=0x04,Unkwown track
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+String1=0x02,Radweg
+String2=0x04,Cycleway
+ExtendedLabels=N
 [end]
-
 
 [_line]
 Type=0x0b
@@ -2182,6 +2174,21 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x10
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #BD0000"
+"  c none"
+"!!!!!!!!        !!!!!!!!        "
+"!!!!!!!!        !!!!!!!!        "
+;12345678901234567890123456789012
+String1=0x02,Grade3
+String2=0x04,Grade3
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x11
 UseOrientation=N
 Xpm="32 1 2  1"
@@ -2189,8 +2196,38 @@ Xpm="32 1 2  1"
 "  c none"
 "                                "
 ;12345678901234567890123456789012
-String1=0x02,unb. Track
-String2=0x04,unk. track
+String1=0x02,Grade4-6/unb.
+String2=0x04,Grade4-6/unk.
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x12
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #BD0000"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Wanderweg/Pfad
+String2=0x04,Trail/Path
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x13
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #FF0000"
+"# c #00FF00"
+"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
+"!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#"
+;12345678901234567890123456789012
+String1=0x02,Stufen
+String2=0x04,Steps
 ExtendedLabels=N
 [end]
 
@@ -3344,6 +3381,20 @@ String2=0x04,Livingstreet
 ExtendedLabels=N
 [end]
 
+[_line]
+Type=0x1100a
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #0000FF"
+"# c #00FF00"
+"!!!!####!!!!####!!!!####!!!!####"
+"!!!!####!!!!####!!!!####!!!!####"
+;12345678901234567890123456789012
+String1=0x02,Radweg
+String2=0x04,Cycleway
+ExtendedLabels=N
+[end]
+
 
 [_line]
 Type=0x1100d
@@ -3435,19 +3486,7 @@ ExtendedLabels=N
 [end]
 
 
-[_line]
-Type=0x11015
-UseOrientation=N
-Xpm="32 2 2  1"
-"! c #0000FF"
-"# c #00FF00"
-"!!!!####!!!!####!!!!####!!!!####"
-"!!!!####!!!!####!!!!####!!!!####"
-;12345678901234567890123456789012
-String1=0x02,Radweg
-String2=0x04,Cycleway
-ExtendedLabels=N
-[end]
+
 
 
 [_line]
@@ -3634,15 +3673,13 @@ ExtendedLabels=N
 [_line]
 Type=0x1200a
 UseOrientation=N
-Xpm="32 1 4  1"
-"! c #595959"
-"# c #C4C413"
-"3 c #AAAAAA"
-"4 c #E0E02C"
-"!!!!!!!!########!!!!!!!!########"
+Xpm="32 1 2  1"
+"! c #0000FF"
+"# c #00FF00"
+"!!!!####!!!!####!!!!####!!!!####"
 ;12345678901234567890123456789012
-String1=0x02,Unbefestigt
-String2=0x04,Unpaved
+String1=0x02,Radweg
+String2=0x04,Cycleway
 ExtendedLabels=N
 [end]
 
@@ -3711,20 +3748,6 @@ Xpm="32 1 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Stufen
 String2=0x04,Steps
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x12015
-UseOrientation=N
-Xpm="32 1 2  1"
-"! c #0000FF"
-"# c #00FF00"
-"!!!!####!!!!####!!!!####!!!!####"
-;12345678901234567890123456789012
-String1=0x02,Radweg
-String2=0x04,Cycleway
 ExtendedLabels=N
 [end]
 

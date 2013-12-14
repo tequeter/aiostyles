@@ -13,9 +13,6 @@ CodePage=1252
 [_comments]
 [End]
 
-
-
-
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
 Type=0x10d00,1
