@@ -1,0 +1,600 @@
+# -------------------------------------------------------------------
+# This is the AIO-style file for converting OSM ways
+# into Garmin lines.
+# Any line prefaced with # is a comment and will not be applied.
+# Each line is a rule, of the generalised format:
+#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
+# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
+# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
+# for more information.
+
+
+## routable types used in this file
+#	0x01	motorway
+#	0x02	trunk
+#	0x03	primary
+#	0x04	secondary
+#	0x05	tertiary
+#	0x06	residential/unclassified
+#	0x07	service/living_street
+#	0x08	ramp motorway/trunk
+#	0x09	ramp other
+#	0x0a	track without grade*
+#	0x0b	road 		an american special roadtype
+#	0x0c	roundabout
+#	0x0d	footway		not used for routing is 0x1100d
+#	0x0e	track grade1
+#	0x0f	track grade2
+#	0x10	track grade3	not used for routing is 0x11010
+#	0x11	track grade4/6	not used for routing is 0x11011
+#	0x12	path/trail	not used for routing is 0x11012
+#	0x13	steps		not used for routing is 0x11013
+#	0x1a	ferry
+#	0x1b	ways with no cat
+#-----------------------------------------------------------------------------
+# printout some infos about ways
+#{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
+#-----------------------------------------------------------------------------
+
+include 'inc/address';
+include 'inc/refs';
+
+# Assign the street name for house number search
+highway=* & name=* { set mkgmap:street='${name}' }
+
+# Mark highways with the toll flag
+highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
+
+
+#------------------------------------------------------------------------------
+# flag unpaved roads
+
+highway=*
+	   & (surface=cobblestone |
+	      surface=compacted |
+	      surface=dirt |
+	      surface=earth |
+	      surface=grass |
+	      surface=grass_paver |
+	      surface=gravel |
+	      surface=grit |
+	      surface=ground |
+	      surface=mud |
+	      surface=pebblestone |
+	      surface=sand |
+	      surface=unpaved |
+	      mtb:scale=* |
+	      tracktype~'grade[2-6]' |
+	      smoothness~'.*(bad|horrible|impassable)' |
+	      sac_scale~'.*(mountain|alpine)_hiking' |
+	      sport=via_ferrata)
+	    {
+	      add mkgmap:unpaved=1;
+	    }
+
+(highway=bridleway | highway=unsurfaced)
+	    & surface!=*
+	    & tracktype!=*
+	    & smoothness!=*
+	    & sac_scale!=*
+	    {
+	      add mkgmap:unpaved=1;
+	    }
+
+#------------------------------------------------------------------------------
+# next line is needed, because 'motorcycle=no' makes
+# nonroutable highways for motorcar
+
+highway=* & motorcycle=no {delete motorcycle}
+
+
+#------------------------------------------------------------------------------
+# 				overlays
+#------------------------------------------------------------------------------
+
+
+# oneway overlay
+highway=*  &
+  (oneway=yes | oneway=1 | oneway=true)
+					{ set oneway=yes}
+											[0x10800 resolution 24-23 continue with_actions]
+highway=*  & oneway=-1									[0x10801 resolution 24-23 continue with_actions]
+
+# construction
+highway=* & construction=*								[0x10802 resolution 24-23 continue with_actions]
+
+
+# toll overlay
+toll=yes & highway!=motorway								[0x10803 resolution 24-22 continue with_actions]
+
+# bridge overlay
+(bridge=* & bridge!=no & bridge!=proposed & bridge!=abandoned)
+    { set bridge=yes; }
+
+bridge=yes & highway=motorway								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=motorway_link							[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=trunk								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=trunk_link								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=primary								[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=primary_link							[0x10101 resolution 24-23 continue with_actions]
+bridge=yes & highway=secondary								[0x10102 resolution 24-23 continue with_actions]
+bridge=yes & highway=secondary_link							[0x10102 resolution 24-23 continue with_actions]
+bridge=yes & highway=tertiary								[0x10102 resolution 24-23 continue with_actions]
+bridge=yes & highway=tertiary_link							[0x10102 resolution 24-23 continue with_actions]
+bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue with_actions]
+
+# tunnel overlay
+(tunnel=yes | tunnel=building_passage | covered=yes)
+	 & (highway=motorway |
+	    highway=motorway_link |
+	    highway=trunk |
+	    highway=trunk_link |
+	    highway=primary |
+	    highway=primary_link )							[0x10111 resolution 24-23 continue with_actions]
+
+(tunnel=yes | tunnel=building_passage | covered=yes)
+	  & (highway=* |
+	     railway=*)									[0x10112 resolution 24-23 continue with_actions]
+
+# embankment overlay
+man_made=dyke | embankment=yes								[0x10f00 resolution 24 continue with_actions]
+
+# tram overlay
+highway=* & railway=tram								[0x10700 resolution 24-23 continue with_actions]
+
+# bridleway overlay
+highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
+
+
+#------------------------------------------------------------------------------
+# Hide proposed ways
+highway=proposed {delete highway;delete junction}
+
+#------------------------------------------------------------------------------
+# Hide unaccessible tunnels
+highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
+        (access=private|access=no) &
+        foot!=* &
+        bicycle!=*
+           {delete highway;delete junction}
+
+#------------------------------------------------------------------------------
+# Disable dead-end-checks for unaccessible oneways
+highway=* & oneway=yes &
+      (access=private|access=no)
+            {add mkgmap:dead-end-check=false}
+
+#------------------------------------------------------------------------------
+# disused
+
+highway=* & disused=yes									[0x10114 resolution 24]
+
+#-----------------------------------------------------------------------------
+# construction
+
+highway=construction									[0x10113 resolution 24]
+
+#-----------------------------------------------------------------------------
+# Validation-like checks
+#highway=motorway_link
+#		& oneway!=yes
+#		& oneway!=no
+#		& oneway!=true
+#		& oneway!=1
+#		& oneway!=-1
+#		& junction!=roundabout
+#		& access!=no
+#		& access!=emergency
+#		{
+#		  echo "motorway_link lacks oneway"
+#		}
+
+# Set highway names to include the reference if there is one
+highway=motorway
+		{
+		  name '${ref|highway-symbol:hbox} ${name}' |
+		       '${ref|highway-symbol:hbox}' |
+		       '${name}';
+		}
+
+#--------------------------------------------------------------------------------------
+# process-exits and process-destination
+
+(highway=motorway_link | highway=trunk_link) & mkgmap:exit_hint=true & mkgmap:dest_hint=true
+   { delete mkgmap:display_name;
+     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${destination:ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${destination:ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${destination:ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${ref|subst: =>}' |
+          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/}' |
+          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
+          'Exit ${destination:ref|subst: =>} ${destination|part:|part:/}' |
+          'Exit ${ref|subst: =>} ${destination|part:|part:/}' |
+          'Exit ${mkgmap:exit_hint_ref}' |
+          '${destination|part:|part:/}' |
+          '${destination:ref|subst: =>}' |
+          '${ref|subst: =>}'
+        }
+
+(highway=motorway_link | highway=trunk_link) &
+      mkgmap:exit_hint!=* &
+      mkgmap:dest_hint=true
+      { delete mkgmap:display_name;
+        name '${destination:ref|subst: =>} ${destination|part:|part:/}' |
+             '${ref|subst: =>} ${destination|part:|part:/}' |
+             '${destination|part:|part:/}' |
+             '${destination:ref|subst: =>}' |
+             '${ref|subst: =>}'
+            }
+
+(highway=motorway_link | highway=trunk_link) &
+      mkgmap:exit_hint=true &
+      mkgmap:dest_hint!=*
+      { delete mkgmap:display_name;
+        name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+              'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
+              'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+              'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
+              'Exit ${mkgmap:exit_hint_ref}'
+      }
+
+highway=trunk
+		{
+		  name '${ref|highway-symbol:hbox} ${name}' |
+		       '${ref|highway-symbol:hbox}' |
+		       '${name}';
+		  add mkgmap:display_name = '${name} (${ref})'
+		}
+
+highway=primary
+		{
+		  name '${ref|highway-symbol:box} ${name}' |
+		       '${ref|highway-symbol:box}' |
+		       '${name}';
+		  add mkgmap:display_name = '${name} (${ref})'
+		}
+
+highway=secondary | highway=tertiary
+	        {
+                  name '${ref|highway-symbol:oval} ${name}' |
+                       '${ref|highway-symbol:oval}' |
+                       '${name}';
+                  add mkgmap:display_name = '${name} (${ref})'
+	        }
+
+highway=*
+	        {
+		  name '${name}' |
+		       '${ref}';
+                }
+#------------------------------------------------------------------------------
+# include the access and roadspeed-functions
+#------------------------------------------------------------------------------
+
+# calculate the road speed based on maxspeed tag
+#include 'inc/roadspeed';
+
+# calculate the access rules
+include 'inc/access';
+
+
+#-----------------------------------------------------------------------------
+#			road_class
+#-----------------------------------------------------------------------------
+#
+#		road_class	Used as
+#		4 		Major HW/Ramp
+#		3 		Principal HW
+#		2 		Arterial St / Other HW
+#		1 		Roundabout / Collector
+#		0 		Residential Street / Unpaved road / Trail
+
+
+#--------------------------------------------------------------------------------------
+# motorway
+
+highway=motorway                            						[0x12001 resolution 21-12 continue with_actions]
+highway=motorway                            						[0x11001 resolution 24-22 continue with_actions]
+highway=motorway & junction=roundabout 							[0x0c resolution 24 road_class=1 road_speed=3]
+highway=motorway									[0x01 resolution 24 road_class=4 road_speed=6]
+
+highway=motorway_link                       						[0x12001 resolution 21-20 continue with_actions]
+highway=motorway_link                       						[0x11001 resolution 24-22 continue with_actions]
+highway=motorway_link &
+	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true)				[0x07 resolution 24 road_class=4 road_speed=3]
+highway=motorway_link 			     						[0x09 resolution 24 road_class=4 road_speed=3]
+
+
+#--------------------------------------------------------------------------------------
+# trunk
+
+highway=trunk                               						[0x12002 resolution 21-17 continue with_actions]
+highway=trunk                               						[0x11002 resolution 24-22 continue with_actions]
+highway=trunk & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=3]
+highway=trunk										[0x02 resolution 24 road_class=4 road_speed=6]
+
+highway=trunk_link                          						[0x12002 resolution 21-20 continue with_actions]
+highway=trunk_link                          						[0x11002 resolution 24-22 continue with_actions]
+highway=trunk_link &
+	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true) 				[0x07 resolution 24 road_class=3 road_speed=2]
+highway=trunk_link          								[0x09 resolution 24 road_class=3 road_speed=3]
+
+
+#--------------------------------------------------------------------------------------
+# primary
+
+highway=primary										[0x12003 resolution 21-18 continue with_actions]
+highway=primary										[0x11003 resolution 24-22 continue with_actions]
+highway=primary & junction=roundabout							[0x0c resolution 24 road_class=1 road_speed=3]
+highway=primary        									[0x03 resolution 24 road_class=3 road_speed=5]
+
+highway=primary_link 									[0x12003 resolution 22-21 continue with_actions]
+highway=primary_link									[0x11003 resolution 24-23 continue with_actions]
+highway=primary_link									[0x08 resolution 24 road_class=3 road_speed=3]
+
+
+#--------------------------------------------------------------------------------------
+# secondary
+
+highway=secondary                           						[0x12004 resolution 21-20 continue with_actions]
+highway=secondary                           						[0x11004 resolution 24-22 continue with_actions]
+highway=secondary & junction=roundabout 						[0x0c resolution 24 road_class=1 road_speed=2]
+highway=secondary                           						[0x04 resolution 24 road_class=3 road_speed=4]
+
+highway=secondary_link                      						[0x12004 resolution 22-22 continue with_actions]
+highway=secondary_link                      						[0x11004 resolution 24-23 continue with_actions]
+highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
+
+
+#--------------------------------------------------------------------------------------
+# tertiary
+
+highway=tertiary                            						[0x12005 resolution 22-20 continue with_actions]
+highway=tertiary                            						[0x11005 resolution 24-23 continue with_actions]
+highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=2]
+highway=tertiary                            						[0x05 resolution 24 road_class=3 road_speed=3]
+
+highway=tertiary_link                       						[0x12005 resolution 22-22 continue with_actions]
+highway=tertiary_link                       						[0x11005 resolution 24-23 continue with_actions]
+highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
+
+#------------------------------------------------------------------------------
+# minor roads
+
+# unclassified
+highway=unclassified | highway=minor        						[0x12006 resolution 22-20 continue with_actions]
+highway=unclassified | highway=minor        						[0x11006 resolution 24-23 continue with_actions]
+(highway=unclassified | highway=minor) & junction=roundabout				[0x0c resolution 24 road_class=1 road_speed=1]
+highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=1 road_speed=2]
+
+# residential
+highway=residential 									[0x12006 resolution 22-22 continue with_actions]
+highway=residential 									[0x11006 resolution 24-23 continue with_actions]
+highway=residential & junction=roundabout						[0x0c resolution 24 road_class=1 road_speed=1]
+highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
+
+# service
+highway=service | highway=estate | highway=living_street
+		{
+		  add mkgmap:dead-end-check=false;
+		}
+
+highway=service | highway=estate			            			[0x12007 resolution 23-23 continue with_actions]
+highway=service | highway=estate			            			[0x11007 resolution 24 continue with_actions]
+
+highway=living_street									[0x12008 resolution 23-23 continue with_actions]
+highway=living_street									[0x11008 resolution 24 continue with_actions]
+
+highway=service | highway=estate | highway=living_street				[0x07 resolution 24 road_class=0 road_speed=0]
+
+highway=raceway										[0x12007 resolution 24-23]
+highway=platform									[0x11007 resolution 24]
+
+#------------------------------------------------------------------------------
+# designated
+
+
+# pedestrian
+highway=pedestrian & (area!=yes & area!=true & area!=1)
+		{
+		  add mkgmap:dead-end-check=false
+		  }
+
+highway=pedestrian									[0x1201b resolution 23-23 continue with_actions]
+highway=pedestrian									[0x1101b resolution 24 continue with_actions]
+highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
+
+
+# cycleway
+
+# pathes with bicycle=*
+
+highway=path & ( bicycle=yes | bicycle=designated )
+		{
+		  set highway=cycleway
+		  }
+highway=cycleway				 					[0x12015 resolution 23-23 continue]
+highway=cycleway				 					[0x11015 resolution 24]
+
+
+# footway
+
+# pathes with foot=*
+highway=path & ( foot=yes | foot=designated )
+		{
+		  set highway=footway
+		  }
+highway=footway										[0x1200d resolution 23-23 continue]
+highway=footway										[0x1100d resolution 24]
+
+# bridleway
+highway=bridleway									[0x12016 resolution 23-23 continue]
+highway=bridleway									[0x11016 resolution 24]
+
+
+# steps
+highway=steps										[0x12013 resolution 23-23 continue]
+highway=steps										[0x11013 resolution 24]
+
+
+#------------------------------------------------------------------------------
+# tracks
+
+highway='track;path'
+                {
+                set highway=track
+                }
+
+highway=track & tracktype=grade1                                                        [0x1200e resolution 23-22 continue with_actions]
+highway=track & tracktype=grade1                                                        [0x0e road_class=0 road_speed=0 resolution 24]
+
+highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue with_actions]
+highway=track & tracktype=grade2                                                        [0x0f road_class=0 road_speed=0 resolution 24]
+
+highway=track & tracktype=grade3                                                        [0x11010 road_class=0 road_speed=0 resolution 24]
+
+highway=track & tracktype~'grade[4-6]'                                                  [0x11011 road_class=0 road_speed=0 resolution 24]
+
+highway=track
+                {
+                  set mkgmap:unpaved=1;
+                }
+
+highway=track                                                                           [0x1100e resolution 24 continue with_actions]
+highway=track                                                                           [0x11 road_class=0 road_speed=0 resolution 24]
+
+
+#------------------------------------------------------------------------------
+## restrictions for all highway=path
+
+
+highway='path;track'
+		{
+		set highway=path
+		}
+
+highway=path | highway=trail
+		{
+		  set mkgmap:unpaved=1;
+		  }
+
+# pathes without foot/bicycle
+
+highway=path | highway=trail                                  				[0x11012 resolution 24]
+
+#------------------------------------------------------------------------------
+# mop up any unrecognised highway types but keep areas like pedestrian for polygons!
+
+# road = way typ not defined/unknown
+highway=road                                                                            [0x2c resolution 24 continue with_actions]
+highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
+
+highway=* & (mkgmap:unpaved=1)                          				[0x0a resolution 24 road_class=0 road_speed=0]
+highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
+highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
+#------------------------------------------------------------------------------
+
+# route
+route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road_speed=0]
+
+#------------------------------------------------------------------------------
+#			boundaries
+#------------------------------------------------------------------------------
+
+
+# The following boundary styles are after the highway rules because ways
+# are frequently tagged with both and we want the highway to take priority.
+
+boundary=administrative { name '${mkgmap:boundary_name}' }
+boundary=administrative & admin_level<3 						[0x1e resolution 16]
+boundary=administrative & admin_level<5 						[0x1d resolution 19]
+#boundary=administrative & admin_level<7 						[0x1c resolution 21]
+#boundary=administrative & admin_level<9 						[0x1c resolution 22]
+#boundary=administrative 								[0x1c resolution 22]
+boundary=national 									[0x1e resolution 17]
+#boundary=political 									[0x1c resolution 19]
+
+
+
+#------------------------------------------------------------------------------
+#			nonroutable ways
+#------------------------------------------------------------------------------
+
+# aeroway
+aeroway=runway      									[0x27 resolution 20]
+aeroway=taxiway     									[0x27 resolution 20]
+
+# aerialway and lift
+aerialway=chair_lift  									[0x10815 resolution 23]
+aerialway=drag_lift									[0x10816 resolution 23]
+aerialway=goods										[0x10817 resolution 24]
+aerialway=cable_car | aerialway=gondola							[0x10818 resolution 22]
+
+
+# railway
+railway=rail            		{ delete name }					[0x10814 resolution 23-21 continue]
+railway=rail & (service=siding |
+                service=spur |
+                service=yard |
+                railway=light_rail |
+                railway=narrow_gauge)   						[0x10814 resolution 24]
+railway=rail            								[0x14 resolution 24]
+
+railway=tram |
+railway=subway |
+railway=funicular |
+railway=preserved |
+railway=monorail			{ delete name }					[0x1080e resolution 23-22 continue]
+
+
+railway=tram |
+railway=subway |
+railway=funicular |
+railway=preserved |
+railway=monorail									[0x1080f resolution 23]
+
+railway=turntable | railway=traverser							[0x10106 resolution 24-23]
+
+# platforms only if they are not an area
+(railway=platform | public_transport=platform) & area!=*				[0x10f0d resolution 23]
+
+
+# barrier
+barrier=wall 										[0x10f01 resolution 24 continue]
+barrier=retaining_wall | barrier=city_wall 						[0x10f02 resolution 24 continue]
+barrier=fence                               						[0x10f03 resolution 24 continue]
+barrier=hedge                               						[0x10f0c resolution 24 continue]
+
+# man made
+man_made=pipeline   			{ delete name }					[0x28 resolution 22]
+
+
+# power
+power=line | power=minor_line		{ delete name }					[0x29 resolution 24]
+
+# natural
+natural=coastline   									[0x15 resolution 12]
+natural=cliff       									[0x10f04 resolution 22]
+
+# waterway
+waterway=dam | man_made=groyne								[0x10f08 resolution 22]
+waterway=weir										[0x10f09 resolution 24]
+waterway=* & (tunnel=yes | tunnel=culvert | covered=yes) 				[0x10112 resolution 24-23 continue with_actions]
+waterway=river | waterway=canal 							[0x1101f resolution 20-18 continue]
+waterway=river                  							[0x1f    resolution 24-21]
+waterway=canal                  							[0x1f    resolution 24-23]
+waterway=drain | waterway=ditch 							[0x1101f resolution 23-23 continue]
+waterway=drain | waterway=ditch 							[0x1f    resolution 24]
+waterway=stream                 							[0x11018 resolution 23-23 continue]
+waterway=stream                 							[0x18    resolution 24]
+
+#eof
