@@ -394,7 +394,7 @@ highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
 # unclassified
 highway=unclassified | highway=minor        						[0x12006 resolution 21-20 continue with_actions]
 highway=unclassified | highway=minor        						[0x11006 resolution 24-22 continue with_actions]
-(highway=unclassified | highway=minor) & junction=roundabout				[0x0c road_class=3 road_speed=0]
+(highway=unclassified | highway=minor) & junction=roundabout				[0x0c resolution 24 road_class=3 road_speed=0]
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=0 road_speed=0]
 
 # residential

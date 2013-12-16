@@ -19,7 +19,7 @@
 #	0x07	service/living_street
 #	0x08	ramp motorway/trunk
 #	0x09	ramp other
-#	0x0a	track without grade*
+#	0x0a	cycleway	not used for routing is 0x1100a
 #	0x0b	road 		an american special roadtype
 #	0x0c	roundabout
 #	0x0d	footway		not used for routing is 0x1100d
