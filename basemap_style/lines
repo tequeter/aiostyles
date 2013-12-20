@@ -430,15 +430,15 @@ highway=path & ( bicycle=designated |
 		  set highway=cycleway; set bicycle=yes
 		  }
 
-		  
+
 highway=footway & snowplowing!=no
 		& (bicycle=designated |
 		    bicycle=permissive |
 		    bicycle=official)
 		{
 		  set highway=cycleway;set bicycle=yes
-		  }		  
-		  
+		  }
+
 # path with foot=*
 highway=path & (foot=yes | foot=designated )
 		{
@@ -450,19 +450,21 @@ highway=path & (horse=designated |
 		horse=official)
 	      {
 		set highway=bridleway; set horse=yes
-		}		  
+		}
 
+highway=bridleway
+              { add access=no }
 
 leisure=track & area!=yes
 	      {
-		add highway=footway; name '${name} (${sport})' | 
+		add highway=footway; name '${name} (${sport})' |
 		'${name}'
 		}
-		
+
 (man_made=pier | man_made=piste:halfpipe) & area!=yes
-	      {add highway=footway; name '${ref} ${name}' | 
-		'${ref}' | 
-		'${name}' 
+	      {add highway=footway; name '${ref} ${name}' |
+		'${ref}' |
+		'${name}'
 		}
 
 ## in the basemap these ways are not routable per default

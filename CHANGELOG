@@ -1,3 +1,36 @@
+
+2013-12.21
+add some logger options, copied from a mail by WanMil
+
+#####
+Enable the logging by adding the following line to your logger 
+configuration:
+uk.me.parabola.mkgmap.osmstyle.StyledConverter.roads.level=INFO
+
+This will create the following output for each road (routable lines):
+
+
+          Road-OSM-Id Type       Flags Labels
+	50408026 0x1  10000110000 [A1, A 1, E 37, null]
+
+The bits have the following order:
+oneway
+no-emergency
+no-delivery
+no-throughroute
+no-truck
+no-bike
+no-foot
+carpool
+no-taxi
+no-bus
+no-car
+
+So the bit set 10000110000 means:
+oneway, no-foot and no-bike
+###
+
+
 2013-06-02
 move mkgmap-options to $STYLE/options except --name-tag-list, this is 
 moved to mkgmap.py

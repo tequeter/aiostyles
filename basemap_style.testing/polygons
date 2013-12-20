@@ -43,10 +43,10 @@ amenity=car_sharing 							[0x05 resolution 24]
 #------------------------------------------------------------------------------
 # aerodromes
 
-aeroway=aerodrome | 
-aeroway=airport | 
-aeroway=airfield | 
-aeroway=apron | 
+aeroway=aerodrome |
+aeroway=airport |
+aeroway=airfield |
+aeroway=apron |
 aeroway=helipad								[0x07 resolution 18]
 aeroway=runway                      					[0x0e resolution 20]
 
@@ -134,3 +134,4 @@ waterway=riverbank 							[0x46 resolution 18]
 # The finalizer section is executed for each element when a rule with an element type matches
 
 name=* { name '${name}' }
+include 'inc/compat_polygons;

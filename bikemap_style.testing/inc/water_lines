@@ -1,19 +1,9 @@
-
 natural=coastline [0x15 resolution 12]
-natural=cliff       									[0x10f04 resolution 22]
 
-# waterway
-waterway=dam | man_made=groyne								[0x10f08 resolution 22]
-waterway=weir										[0x10f09 resolution 24]
-waterway=* & (tunnel=yes | tunnel=culvert | covered=yes) 				[0x10112 resolution 24-23 continue with_actions]
-waterway=river | waterway=canal 							[0x1101f resolution 20-18 continue]
-waterway=river                  							[0x1f    resolution 24-21]
-waterway=canal                  							[0x1f    resolution 24-23]
-waterway=drain | waterway=ditch 							[0x1101f resolution 23-23 continue]
-waterway=drain | waterway=ditch 							[0x1f    resolution 24]
-waterway=stream                 							[0x11018 resolution 23-23 continue]
-waterway=stream                 							[0x18    resolution 24]
-waterway=rapids|waterway=waterfall 							[0x1f    resolution 24]
+route=ferry {add mkgmap:ferry=1} [0x1b road_class=3 road_speed=0 resolution 19]
 
-
-
+waterway=canal [0x1f resolution 21]
+waterway=drain [0x1f resolution 22]
+waterway=river [0x1f resolution 18]
+waterway=rapids|waterway=waterfall [0x1f resolution 22]
+waterway=stream [0x18 resolution 22]

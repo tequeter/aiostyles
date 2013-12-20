@@ -10,7 +10,7 @@
 # mkgmap:delivery
 # A class is not allowed to use the way if its tag is set to 'no'
 
-highway=steps                           { set access=no }
+highway=steps                           { add foot=yes; add access=no }
 highway=* & motorroad=yes               { add bicycle=no; add foot=no }
 highway=motorway|highway=motorway_link  { add bicycle=no; add foot=no }
 highway=pedestrian & area!=yes          { add foot=yes; add access=no } 
@@ -45,7 +45,8 @@ goods=private         | goods=agricultural         { set goods=no }
 motorcycle=private    | motorcycle=agricultural    { set motorcycle=no }
 motor_vehicle=private | motor_vehicle=agricultural { set motor_vehicle=no }
 vehicle=private       | vehicle=agricultural       { set vehicle=no }
-access=private        | access=agricultural        { set access=no }
+access=private                                     { set access=no }
+access=agricultural                                { set access=no; add foot=yes }
 
 # set (override) specific restrictions                        
 bicycle=*    { set mkgmap:bicycle='${bicycle}' }
