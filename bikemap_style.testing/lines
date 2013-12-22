@@ -37,7 +37,7 @@
 #{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
 #-----------------------------------------------------------------------------
 
-include 'inc/refs';
+include 'inc/refs' ;
 
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
@@ -657,18 +657,18 @@ man_made=pipeline   			{ delete name }					[0x28 resolution 22]
 # power
 power=line | power=minor_line		{ delete name }					[0x29 resolution 24]
 
-include 'inc/water_lines';
+include 'inc/water_lines' ;
 
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-include 'inc/address';
+include 'inc/address' ;
 # calculate the road speed based on maxspeed tag
-include 'inc/roadspeed';
+include 'inc/roadspeed' ;
 # calculate the access rules
-include 'inc/access';
-include 'inc/compat_lines;
+include 'inc/access' ;
+include 'inc/compat_lines' ;
 
 name=* { name '${name}' }
 
