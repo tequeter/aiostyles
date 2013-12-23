@@ -426,7 +426,7 @@ highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
 # unclassified
 highway=unclassified | highway=minor        						[0x12006 resolution 21-20 continue with_actions]
 highway=unclassified | highway=minor        						[0x11006 resolution 24-22 continue with_actions]
-(highway=unclassified | highway=minor) & junction=roundabout				[0x0c road_class=3 road_speed=0]
+(highway=unclassified | highway=minor) & junction=roundabout				[0x0c resolution 24 road_class=3 road_speed=0]
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=0 road_speed=0]
 
 # residential
@@ -455,21 +455,73 @@ highway=platform									[0x11007 resolution 24]
 #------------------------------------------------------------------------------
 # designated ways
 
-# pedestrian
 highway=pedestrian & (area!=yes & area!=true & area!=1)
 		{
 		add mkgmap:dead-end-check=false
 		  }
 
+highway=pedestrian & (bicycle=designated |
+		      bicycle=permissive |
+		      bicycle=official)
+		      {
+			add bicycle=yes
+			}
+
+
 highway=pedestrian									[0x1201b resolution 23-23 continue with_actions]
 highway=pedestrian									[0x1101b resolution 24 continue with_actions]
 highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
+# Convert generic path to most specific
 
-## cycleways
+# path with bicycle=*
 
-# cycleway
-highway=cycleway & cn_name=* { set name='${cn_name}' }
+highway=path & ( bicycle=designated |
+		  bicycle=permissive |
+		  bicycle=official)
+		{
+		  set highway=cycleway; set bicycle=yes
+		  }
+
+
+highway=footway & snowplowing!=no
+		& (bicycle=designated |
+		    bicycle=permissive |
+		    bicycle=official)
+		{
+		  set highway=cycleway;set bicycle=yes
+		  }
+
+# path with foot=*
+highway=path & (foot=yes | foot=designated )
+		{
+		  set highway=footway
+		  }
+
+highway=path & (horse=designated |
+		horse=permissive |
+		horse=official)
+	      {
+		set highway=bridleway; set horse=yes
+		}
+
+highway=bridleway
+              { add access=no }
+
+leisure=track & area!=yes
+	      {
+		add highway=footway; name '${name} (${sport})' |
+		'${name}'
+		}
+
+(man_made=pier | man_made=piste:halfpipe) & area!=yes
+	      {add highway=footway; name '${ref} ${name}' |
+		'${ref}' |
+		'${name}'
+		}
+
+highway=cycleway & cn_name=* 
+              { set name='${cn_name}' }
 
 highway=cycleway				 					[0x1200a resolution 23-22 continue with_actions]
 highway=cycleway				 					[0x1100a resolution 24 continue with_actions]
@@ -477,19 +529,11 @@ highway=cycleway & junction=roundabout				 			[0x0c resolution 24 road_class=0 r
 highway=cycleway				 					[0x0a resolution 24 road_class=0 road_speed=1]
 
 
-# footway
-
 highway=footway										[0x1200d resolution 23-23 continue with_actions]
 highway=footway										[0x1100d resolution 24 continue with_actions]
 highway=footway										[0x0d resolution 24 road_class=0 road_speed=0]
 
 
-# bridleway
-highway=bridleway
-		{
-		  add horse=designated;
-		  add mkgmap:unpaved=1
-		}
 highway=bridleway									[0x12016 resolution 23-23 continue with_actions]
 highway=bridleway									[0x11016 resolution 24 continue with_actions]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
@@ -562,7 +606,7 @@ highway=path | highway=trail | highway=byway						[0x12 resolution 24 road_class
 highway=road										[0x2c resolution 24 continue with_actions]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & (mkgmap:unpaved=1)								[0x0d resolution 24 road_class=0 road_speed=0]
+highway=* & (mkgmap:unpaved=1)								[0x0b resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)						[0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 

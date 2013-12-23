@@ -36,8 +36,7 @@
 #{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
 #-----------------------------------------------------------------------------
 
-include 'inc/address';
-include 'inc/refs';
+include 'inc/refs' ;
 
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
@@ -200,30 +199,32 @@ highway=motorway
 #--------------------------------------------------------------------------------------
 # process-exits and process-destination
 
-(highway=motorway_link | highway=trunk_link) & mkgmap:exit_hint=true & mkgmap:dest_hint=true
-   { delete mkgmap:display_name;
-     name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${destination:ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${destination:ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-          'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
-          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${destination:ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${ref|subst: =>}' |
-          'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/}' |
-          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-          'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
-          'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
-          'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-          'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
-          'Exit ${destination:ref|subst: =>} ${destination|part:|part:/}' |
-          'Exit ${ref|subst: =>} ${destination|part:|part:/}' |
-          'Exit ${mkgmap:exit_hint_ref}' |
-          '${destination|part:|part:/}' |
-          '${destination:ref|subst: =>}' |
-          '${ref|subst: =>}'
-        }
+(highway=motorway_link | highway=trunk_link) &
+      mkgmap:exit_hint=true &
+      mkgmap:dest_hint=true
+      { delete mkgmap:display_name;
+	 name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${destination:ref|subst: =>}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${ref|subst: =>}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${destination:ref|subst: =>}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${ref|subst: =>}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${destination:ref|subst: =>}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${ref|subst: =>}' |
+	      'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/}' |
+	      'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+	      'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+	      'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
+	      'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
+	      'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+	      'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
+	      'Exit ${destination:ref|subst: =>} ${destination|part:|part:/}' |
+	      'Exit ${ref|subst: =>} ${destination|part:|part:/}' |
+	      'Exit ${mkgmap:exit_hint_ref}' |
+	      '${destination|part:|part:/}' |
+	      '${destination:ref|subst: =>}' |
+	      '${ref|subst: =>}'
+	    }
 
 (highway=motorway_link | highway=trunk_link) &
       mkgmap:exit_hint!=* &
@@ -245,7 +246,7 @@ highway=motorway
               'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
               'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
               'Exit ${mkgmap:exit_hint_ref}'
-      }
+	    }
 
 highway=trunk
 		{
@@ -276,15 +277,6 @@ highway=*
 		  name '${name}' |
 		       '${ref}';
                 }
-#------------------------------------------------------------------------------
-# include the access and roadspeed-functions
-#------------------------------------------------------------------------------
-
-# calculate the road speed based on maxspeed tag
-#include 'inc/roadspeed';
-
-# calculate the access rules
-include 'inc/access';
 
 
 #-----------------------------------------------------------------------------
@@ -421,8 +413,6 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 # Convert generic path to most specific
 
-# path with bicycle=*
-
 highway=path & ( bicycle=designated |
 		  bicycle=permissive |
 		  bicycle=official)
@@ -439,7 +429,6 @@ highway=footway & snowplowing!=no
 		  set highway=cycleway;set bicycle=yes
 		  }
 
-# path with foot=*
 highway=path & (foot=yes | foot=designated )
 		{
 		  set highway=footway
@@ -462,12 +451,24 @@ leisure=track & area!=yes
 		}
 
 (man_made=pier | man_made=piste:halfpipe) & area!=yes
-	      {add highway=footway; name '${ref} ${name}' |
+	      {
+                add highway=footway; name '${ref} ${name}' |
 		'${ref}' |
 		'${name}'
 		}
 
-## in the basemap these ways are not routable per default
+highway=steps
+              {
+                add foot=yes;
+                set access=no;
+                set mkgmap:unpaved=1;
+                }
+
+#------------------------------------------------------------------------------
+## in the AIO-basemap some ways are not routable per default
+## to make them routable comment out the second line and uncomment
+## the third and following lines
+
 highway=cycleway				 					[0x1200a resolution 23-23 continue]
 highway=cycleway				 					[0x1100a resolution 24]
 #highway=cycleway				 					[0x1100a resolution 24 continue with_actions]
@@ -518,10 +519,8 @@ highway=track
 highway=track                                                                           [0x1100e resolution 24 continue with_actions]
 highway=track                                                                           [0x11 road_class=0 road_speed=0 resolution 24]
 
-
 #------------------------------------------------------------------------------
 ## restrictions for all highway=path
-
 
 highway='path;track'
 		{
@@ -627,20 +626,22 @@ man_made=pipeline   			{ delete name }					[0x28 resolution 22]
 # power
 power=line | power=minor_line		{ delete name }					[0x29 resolution 24]
 
-# natural
-natural=coastline   									[0x15 resolution 12]
-natural=cliff       									[0x10f04 resolution 22]
+include 'inc/water_lines' ;
 
-# waterway
-waterway=dam | man_made=groyne								[0x10f08 resolution 22]
-waterway=weir										[0x10f09 resolution 24]
-waterway=* & (tunnel=yes | tunnel=culvert | covered=yes) 				[0x10112 resolution 24-23 continue with_actions]
-waterway=river | waterway=canal 							[0x1101f resolution 20-18 continue]
-waterway=river                  							[0x1f    resolution 24-21]
-waterway=canal                  							[0x1f    resolution 24-23]
-waterway=drain | waterway=ditch 							[0x1101f resolution 23-23 continue]
-waterway=drain | waterway=ditch 							[0x1f    resolution 24]
-waterway=stream                 							[0x11018 resolution 23-23 continue]
-waterway=stream                 							[0x18    resolution 24]
 
-#eof
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+
+include 'inc/address' ;
+# calculate the road speed based on maxspeed tag
+include 'inc/roadspeed' ;
+# calculate the access rules
+include 'inc/access' ;
+include 'inc/compat_lines' ;
+
+name=* { name '${name}' }
+
+highway=* & ref=* { addlabel '${ref}' }
+highway=* & int_ref=* { addlabel '${int_ref}' }
+highway=* & nat_ref=* { addlabel '${nat_ref}' }
+highway=* & ref_ref=* { addlabel '${reg_ref}' }
