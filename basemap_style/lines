@@ -426,7 +426,7 @@ highway=footway & snowplowing!=no
 		    bicycle=permissive |
 		    bicycle=official)
 		{
-		  set highway=cycleway;set bicycle=yes
+		  set highway=cycleway; set bicycle=yes
 		  }
 
 highway=path & (foot=yes | foot=designated )
@@ -466,8 +466,8 @@ highway=steps
 
 #------------------------------------------------------------------------------
 ## in the AIO-basemap some ways are not routable per default
-## to make them routable comment out the second line and uncomment
-## the third and following lines
+## to make them routable comment out the second line for each roadtype
+## and uncomment the third and following lines
 
 highway=cycleway				 					[0x1200a resolution 23-23 continue]
 highway=cycleway				 					[0x1100a resolution 24]
@@ -490,7 +490,7 @@ highway=bridleway									[0x11016 resolution 24]
 
 highway=steps										[0x12013 resolution 23-23 continue]
 highway=steps										[0x11013 resolution 24]
-#highway=steps										[0x13 road_class=0 road_speed=0 resolution 24]
+#highway=steps										[0x13 resolution 2 road_class=0 road_speed=0]
 
 
 #------------------------------------------------------------------------------
@@ -502,14 +502,14 @@ highway='track;path'
                 }
 
 highway=track & tracktype=grade1                                                        [0x1200e resolution 23-22 continue with_actions]
-highway=track & tracktype=grade1                                                        [0x0e road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade1                                                        [0x0e resolution 24 road_class=0 road_speed=0]
 
 highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue with_actions]
-highway=track & tracktype=grade2                                                        [0x0f road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade2                                                        [0x0f resolution 24 road_class=0 road_speed=0]
 
-highway=track & tracktype=grade3                                                        [0x11010 road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype=grade3                                                        [0x11010 resolution 24 road_class=0 road_speed=0]
 
-highway=track & tracktype~'grade[4-6]'                                                  [0x11011 road_class=0 road_speed=0 resolution 24]
+highway=track & tracktype~'grade[4-6]'                                                  [0x11011 resolution 24 road_class=0 road_speed=0]
 
 highway=track
                 {
@@ -517,7 +517,7 @@ highway=track
                 }
 
 highway=track                                                                           [0x1100e resolution 24 continue with_actions]
-highway=track                                                                           [0x11 road_class=0 road_speed=0 resolution 24]
+highway=track                                                                           [0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 ## restrictions for all highway=path
