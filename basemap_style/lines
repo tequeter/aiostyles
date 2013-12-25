@@ -8,7 +8,6 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-
 ## routable types used in this file
 #	0x01	motorway
 #	0x02	trunk
@@ -48,8 +47,24 @@ highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
 #------------------------------------------------------------------------------
 # flag unpaved roads
 
+highway='track;path'
+		{
+		set highway=track
+		}
+
+highway='path;track'
+		{
+		set highway=path
+		}
+
+highway=path | highway=trail | highway=steps
+		{
+		  add mkgmap:unpaved=1;
+		  }
+
 highway=*
-	   & (surface=cobblestone |
+	   & (
+	      surface=cobblestone |
 	      surface=compacted |
 	      surface=dirt |
 	      surface=earth |
@@ -66,7 +81,8 @@ highway=*
 	      tracktype~'grade[2-6]' |
 	      smoothness~'.*(bad|horrible|impassable)' |
 	      sac_scale~'.*(mountain|alpine)_hiking' |
-	      sport=via_ferrata)
+	      sport=via_ferrata
+	      )
 	    {
 	      add mkgmap:unpaved=1;
 	    }
@@ -377,7 +393,7 @@ highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
 # service
 highway=service | highway=estate | highway=living_street
 		{
-		  add mkgmap:dead-end-check=false;
+		  add mkgmap:dead-end-check=false
 		}
 
 highway=service | highway=estate			            			[0x12007 resolution 23-23 continue with_actions]
@@ -399,9 +415,9 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 		  add mkgmap:dead-end-check=false
 		  }
 
-highway=pedestrian & (bicycle=designated |
-		      bicycle=permissive |
-		      bicycle=official)
+highway=pedestrian & (
+		      bicycle=designated | bicycle=permissive | bicycle=official
+		      )
 		      {
 			add bicycle=yes
 			}
@@ -413,55 +429,55 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 # Convert generic path to most specific
 
-highway=path & ( bicycle=designated |
-		  bicycle=permissive |
-		  bicycle=official)
-		{
-		  set highway=cycleway; set bicycle=yes
-		  }
+highway=path & ( 
+		  bicycle=designated | bicycle=permissive | bicycle=official
+		  )
+		  {
+		    set highway=cycleway; set bicycle=yes
+		    }
 
 
-highway=footway & snowplowing!=no
-		& (bicycle=designated |
-		    bicycle=permissive |
-		    bicycle=official)
-		{
-		  set highway=cycleway; set bicycle=yes
-		  }
+highway=footway & snowplowing!=no & 
+		  (
+		    bicycle=designated | bicycle=permissive | bicycle=official
+		    )
+		    {
+		      set highway=cycleway; 
+		      set bicycle=yes
+		      }
 
 highway=path & (foot=yes | foot=designated )
 		{
 		  set highway=footway
 		  }
 
-highway=path & (horse=designated |
-		horse=permissive |
-		horse=official)
-	      {
-		set highway=bridleway; set horse=yes
-		}
+highway=path & (
+		horse=designated | horse=permissive | horse=official
+		)
+		{
+		  set highway=bridleway; 
+		  set horse=yes
+		  }
 
 highway=bridleway
               { add access=no }
 
 leisure=track & area!=yes
 	      {
-		add highway=footway; name '${name} (${sport})' |
-		'${name}'
+		add highway=footway; 
+		name '${name} (${sport})' | '${name}'
 		}
 
 (man_made=pier | man_made=piste:halfpipe) & area!=yes
 	      {
-                add highway=footway; name '${ref} ${name}' |
-		'${ref}' |
-		'${name}'
+                add highway=footway; 
+                name '${ref} ${name}' | '${ref}' | '${name}'
 		}
 
 highway=steps
               {
                 add foot=yes;
                 set access=no;
-                set mkgmap:unpaved=1;
                 }
 
 #------------------------------------------------------------------------------
@@ -496,11 +512,6 @@ highway=steps										[0x11013 resolution 24]
 #------------------------------------------------------------------------------
 # tracks
 
-highway='track;path'
-                {
-                set highway=track
-                }
-
 highway=track & tracktype=grade1                                                        [0x1200e resolution 23-22 continue with_actions]
 highway=track & tracktype=grade1                                                        [0x0e resolution 24 road_class=0 road_speed=0]
 
@@ -513,25 +524,13 @@ highway=track & tracktype~'grade[4-6]'                                          
 
 highway=track
                 {
-                  set mkgmap:unpaved=1;
+                  add mkgmap:unpaved=1;
                 }
 
 highway=track                                                                           [0x1100e resolution 24 continue with_actions]
 highway=track                                                                           [0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
-## restrictions for all highway=path
-
-highway='path;track'
-		{
-		set highway=path
-		}
-
-highway=path | highway=trail
-		{
-		  set mkgmap:unpaved=1;
-		  }
-
 # pathes without foot/bicycle
 
 highway=path | highway=trail                                  				[0x11012 resolution 24]
