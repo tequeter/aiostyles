@@ -391,18 +391,20 @@ highway=residential & junction=roundabout						[0x0c resolution 24 road_class=1 
 highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
 
 # service
-highway=service | highway=estate | highway=living_street
+highway=service | highway=living_street
 		{
 		  add mkgmap:dead-end-check=false
 		}
 
-highway=service | highway=estate			            			[0x12007 resolution 23-23 continue with_actions]
-highway=service | highway=estate			            			[0x11007 resolution 24 continue with_actions]
+highway=service						            			[0x12007 resolution 23-23 continue with_actions]
+highway=service						            			[0x11007 resolution 24 continue with_actions]
+highway=service & service=parking_aisle							[0x07 resolution 24 road_class=0 road_speed=1]
+highway=service & (service=alley | service=driveway)					[0x07 resolution 24 road_class=0 road_speed=0]
+highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]	
 
 highway=living_street									[0x12008 resolution 23-23 continue with_actions]
 highway=living_street									[0x11008 resolution 24 continue with_actions]
-
-highway=service | highway=estate | highway=living_street				[0x07 resolution 24 road_class=0 road_speed=0]
+highway=living_street									[0x07 resolution 24 road_class=0 road_speed=0]
 
 highway=raceway										[0x12007 resolution 24-23]
 highway=platform									[0x11007 resolution 24]
@@ -433,7 +435,8 @@ highway=path & (
 		  bicycle=designated | bicycle=permissive | bicycle=official
 		  )
 		  {
-		    set highway=cycleway; set bicycle=yes
+		    set highway=cycleway; 
+		    set bicycle=yes
 		    }
 
 
