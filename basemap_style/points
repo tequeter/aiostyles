@@ -8,8 +8,6 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-include 'inc/address';
-
 
 (highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
 & (ref=* | route_ref=*) {
