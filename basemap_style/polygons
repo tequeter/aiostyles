@@ -5,7 +5,7 @@ include "inc/address";
 #------------------------------------------------------------------------------
 # housenumber
 
-addr:housenumber=* & name!=* 		{ set name='${addr:housenumber}' }
+#addr:housenumber=* & name!=* 		{ set name='${addr:housenumber}' }
 
 #------------------------------------------------------------------------------
 # buildings
@@ -134,4 +134,3 @@ waterway=riverbank 							[0x46 resolution 18]
 # The finalizer section is executed for each element when a rule with an element type matches
 
 name=* { name '${name}' }
-include 'inc/compat_polygons';
