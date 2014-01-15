@@ -6,7 +6,8 @@ note=* & (note ~ 'FIXME.*' |
 	  Fixme=* {name 'Notiz: ${note}' |
 	  'Notiz: ${fixme}' |
 	  'Notiz: ${FIXME}' |
-	  'Notiz: ${Fixme}' } 				[0x10001 resolution 24]
+	  'Notiz: ${Fixme}' |
+	  oneway=-1	} 				[0x10001 resolution 24]
 note=* {name 'Notiz: ${note}'} 				[0x10006 resolution 24]
 highway=residential &
         name!=* & 

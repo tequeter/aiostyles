@@ -1,7 +1,7 @@
 ; bikemap_typ.txt
 ; Longueur: 0 octets
-; Fichier TYP compilé
-; Décompilé le 02.11.2013 à 16:34:52
+; Fichier TYP compilé 
+; Décompilé le 15.01.2014 à 14:42:09
 
 [_id]
 ProductCode=46
@@ -12,6 +12,9 @@ CodePage=1252
 ;=========== COMMENTAIRES ======
 [_comments]
 [End]
+
+
+
 
 ;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
 [_drawOrder]
@@ -2925,85 +2928,6 @@ CustomColor=No
 
 
 [_line]
-Type=0x10800
-UseOrientation=N
-Xpm="32 5 2  1"
-"! c #101010"
-"  c none"
-"             !!                 "
-"             !!!!               "
-"        !!!!!!!!!!!             "
-"             !!!!               "
-"             !!                 "
-;12345678901234567890123456789012
-String1=0x02,Einbahn
-String2=0x04,One way
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10801
-UseOrientation=N
-Xpm="32 5 2  1"
-"! c #101010"
-"  c none"
-"            !!                  "
-"          !!!!                  "
-"        !!!!!!!!!!!             "
-"          !!!!                  "
-"            !!                  "
-;12345678901234567890123456789012
-String1=0x02,Einbahn -1
-String2=0x04,Oneway -1
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10802
-UseOrientation=Y
-Xpm="32 3 2  1"
-"! c #737373"
-"  c none"
-"  !       !       !       !     "
-" !       !       !       !      "
-"!       !       !       !       "
-;12345678901234567890123456789012
-String1=0x02,Baustelle
-String2=0x04,Construction
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10803
-UseOrientation=N
-Xpm="32 8 2  1"
-"! c #FF0000"
-"  c none"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"!!!!!!!!        !!!!!!!!        "
-"!!!!!!!!        !!!!!!!!        "
-;12345678901234567890123456789012
-String1=0x02,Maut
-String2=0x04,Toll
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x1080e
 UseOrientation=N
 Xpm="32 5 4  1"
@@ -3161,6 +3085,67 @@ String1=0x02,Seilbahn
 String2=0x04,Cable car
 ExtendedLabels=Y
 FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e00
+UseOrientation=N
+Xpm="32 7 2  1"
+"! c #101010"
+"  c none"
+"           !!                   "
+"           !!!!                 "
+"           !!!!!!               "
+"           !!!!!!!!             "
+"           !!!!!!               "
+"           !!!!                 "
+"           !!                   "
+;12345678901234567890123456789012
+String1=0x02,Einbahn
+String2=0x04,One way
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e02
+UseOrientation=Y
+Xpm="32 3 2  1"
+"! c #737373"
+"  c none"
+"  !       !       !       !     "
+" !       !       !       !      "
+"!       !       !       !       "
+;12345678901234567890123456789012
+String1=0x02,Baustelle
+String2=0x04,Construction
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e03
+UseOrientation=N
+Xpm="32 8 2  1"
+"! c #FF0000"
+"  c none"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!!!!!!!        !!!!!!!!        "
+"!!!!!!!!        !!!!!!!!        "
+;12345678901234567890123456789012
+String1=0x02,Maut
+String2=0x04,Toll
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
 CustomColor=No
 [end]
 

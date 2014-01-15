@@ -18,65 +18,6 @@ highway=* & mkgmap:label:1=* & mkgmap:street!=* { add mkgmap:street='${mkgmap:la
 
 toll=* { set mkgmap:toll='${toll}' }
 
-#		new AccessMapping("access",     RoadNetwork.NO_MAX), // must be first in list
-#		new AccessMapping("bicycle",    RoadNetwork.NO_BIKE),
-#		new AccessMapping("carpool",    RoadNetwork.NO_CARPOOL),
-#		new AccessMapping("foot",       RoadNetwork.NO_FOOT),
-#		new AccessMapping("hgv",        RoadNetwork.NO_TRUCK),
-#		new AccessMapping("motorcar",   RoadNetwork.NO_CAR),
-#		new AccessMapping("motorcycle", RoadNetwork.NO_CAR),
-#		new AccessMapping("psv",        RoadNetwork.NO_BUS),
-#		new AccessMapping("taxi",       RoadNetwork.NO_TAXI),
-#		new AccessMapping("emergency",  RoadNetwork.NO_EMERGENCY),
-#		new AccessMapping("delivery",   RoadNetwork.NO_DELIVERY),
-#		new AccessMapping("goods",      RoadNetwork.NO_DELIVERY),
-#		for (AccessMapping anAccessMap : accessMap) {
-#			int index = anAccessMap.index;
-#			String type = anAccessMap.type;
-#			String accessTagValue = way.getTag(type);
-#			if (accessTagValue == null)
-#				continue;
-#			if (accessExplicitlyDenied(accessTagValue)) {
-#				if (index == RoadNetwork.NO_MAX) {
-#					// everything is denied access
-#					for (int j = 1; j < accessMap.length; ++j)
-#						noAccess[accessMap[j].index] = true;
-#				} else {
-#					// just the specific vehicle class is denied
-#					// access
-#					noAccess[index] = true;
-#				}
-#				log.debug(type + " is not allowed in " + highwayType + " " + debugWayName);
-#			} else if (accessExplicitlyAllowed(accessTagValue)) {
-#				if (index == RoadNetwork.NO_MAX) {
-#					// everything is allowed access
-#					for (int j = 1; j < accessMap.length; ++j)
-#						noAccess[accessMap[j].index] = false;
-#				} else {
-#					// just the specific vehicle class is allowed
-#					// access
-#					noAccess[index] = false;
-#				}
-#				log.debug(type + " is allowed in " + highwayType + " " + debugWayName);
-#			}
-#			else if (accessTagValue.equalsIgnoreCase("destination")) {
-#				if (type.equals("motorcar") ||
-#				    type.equals("motorcycle")) {
-#					road.setNoThroughRouting();
-#				} else if (type.equals("access")) {
-#					log.info("access=destination only affects routing for cars in " + highwayType + " " + debugWayName);
-#					road.setNoThroughRouting();
-#				} else {
-#					log.info(type + "=destination ignored in " + highwayType + " " + debugWayName);
-#				}
-#			} else if (accessTagValue.equalsIgnoreCase("unknown")) {
-#				// implicitly allow access
-#			} else {
-#				log.info("Ignoring unsupported access tag value " + type + "=" + accessTagValue + " in " + highwayType + " " + debugWayName);
-#			}
-#		}
-#
-
 # mkgmap:carpool tag is set but before new access handling was introduced it had a
 # different meaning. Copy it to keep its value which is handled in the old behaviour last.
 mkgmap:carpool=* { set mkgmap:carpool_compat='${mkgmap:carpool}'; delete mkgmap:carpool }

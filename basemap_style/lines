@@ -32,7 +32,8 @@
 #	0x1b	ways with no cat
 #-----------------------------------------------------------------------------
 # printout some infos about ways
-#{echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
+#highway=* & oneway=-1
+#{echo ' ${highway} | ${oneway} '}
 #-----------------------------------------------------------------------------
 
 include 'inc/refs' ;
@@ -104,23 +105,25 @@ highway=* & motorcycle=no {delete motorcycle}
 
 
 #------------------------------------------------------------------------------
+# some oneway rules
+
+highway=*  & (oneway=1 | oneway=true)
+                            { set oneway=yes }
+
+(highway=motorway | highway=motorway_link)
+                            { add oneway=yes }
+
+#------------------------------------------------------------------------------
 # 				overlays
 #------------------------------------------------------------------------------
 
 
-# oneway overlay
-highway=*  &
-  (oneway=yes | oneway=1 | oneway=true)
-					{ set oneway=yes}
-											[0x10800 resolution 24-23 continue with_actions]
-highway=*  & oneway=-1									[0x10801 resolution 24-23 continue with_actions]
-
 # construction
-highway=* & construction=*								[0x10802 resolution 24-23 continue with_actions]
+highway=* & construction=*								[0x10e02 resolution 24-23 continue with_actions]
 
 
 # toll overlay
-toll=yes & highway!=motorway								[0x10803 resolution 24-22 continue with_actions]
+toll=yes & highway!=motorway								[0x10e03 resolution 24-22 continue with_actions]
 
 # bridge overlay
 (bridge=* & bridge!=no & bridge!=proposed & bridge!=abandoned)
@@ -400,7 +403,7 @@ highway=service						            			[0x12007 resolution 23-23 continue with_acti
 highway=service						            			[0x11007 resolution 24 continue with_actions]
 highway=service & service=parking_aisle							[0x07 resolution 24 road_class=0 road_speed=1]
 highway=service & (service=alley | service=driveway)					[0x07 resolution 24 road_class=0 road_speed=0]
-highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]	
+highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]
 
 highway=living_street									[0x12008 resolution 23-23 continue with_actions]
 highway=living_street									[0x11008 resolution 24 continue with_actions]
@@ -431,21 +434,21 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 # Convert generic path to most specific
 
-highway=path & ( 
+highway=path & (
 		  bicycle=designated | bicycle=permissive | bicycle=official
 		  )
 		  {
-		    set highway=cycleway; 
+		    set highway=cycleway;
 		    set bicycle=yes
 		    }
 
 
-highway=footway & snowplowing!=no & 
+highway=footway & snowplowing!=no &
 		  (
 		    bicycle=designated | bicycle=permissive | bicycle=official
 		    )
 		    {
-		      set highway=cycleway; 
+		      set highway=cycleway;
 		      set bicycle=yes
 		      }
 
@@ -458,7 +461,7 @@ highway=path & (
 		horse=designated | horse=permissive | horse=official
 		)
 		{
-		  set highway=bridleway; 
+		  set highway=bridleway;
 		  set horse=yes
 		  }
 
@@ -467,13 +470,13 @@ highway=bridleway
 
 leisure=track & area!=yes
 	      {
-		add highway=footway; 
+		add highway=footway;
 		name '${name} (${sport})' | '${name}'
 		}
 
 (man_made=pier | man_made=piste:halfpipe) & area!=yes
 	      {
-                add highway=footway; 
+                add highway=footway;
                 name '${ref} ${name}' | '${ref}' | '${name}'
 		}
 
