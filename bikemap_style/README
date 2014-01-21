@@ -1,2 +1,5 @@
 
-this stylefiles only works with mkgmap's mergeroad-branch!
+Bikemap style to use to route with motorvehicle, foot, 
+bicycle routing is possible, but has no good results,
+better use foot routing
+
