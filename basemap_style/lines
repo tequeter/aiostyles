@@ -637,13 +637,17 @@ include 'inc/water_lines' ;
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-include 'inc/address' ;
+
 # calculate the road speed based on maxspeed tag
 include 'inc/roadspeed' ;
 # calculate the access rules
 include 'inc/access' ;
 include "inc/compat_lines";
+
 name=* { name '${name}' }
+
+include 'inc/phone';
+include 'inc/address' ;
 
 highway=* & ref=* { addlabel '${ref}' }
 highway=* & int_ref=* { addlabel '${int_ref}' }
