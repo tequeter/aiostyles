@@ -2989,23 +2989,56 @@ CustomColor=No
 [end]
 
 
+
 [_line]
-Type=0x10814
+Type=0x10812
 UseOrientation=N
-Xpm="32 3 4  1"
+Xpm="32 2 4  1"
 "! c #737373"
 "# c #FFFF80"
 "3 c #BBBBBB"
 "4 c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"###!!!#####!!!#####!!!#####!!!##"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 ;12345678901234567890123456789012
 String1=0x02,Eisenbahn
 String2=0x04,Rail
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
+[end]
+
+
+
+
+[_line]
+Type=0x10813
+UseOrientation=N
+Xpm="32 2 4  1"
+"! c #737373"
+"# c #FFFF80"
+"3 c #BBBBBB"
+"4 c none"
+"###!!!!!!!!########!!!!!!!!#####"
+"###!!!!!!!!########!!!!!!!!#####"
+;12345678901234567890123456789012
+String1=0x02,Eisenbahn
+String2=0x04,Rail
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10814
+UseOrientation=N
+Xpm="32 1 4  1"
+"! c #737373"
+"# c #FFFF80"
+"3 c #BBBBBB"
+"4 c none"
+"###!!!!!!!!########!!!!!!!!#####"
+;12345678901234567890123456789012
+String1=0x02,Eisenbahn
+String2=0x04,Rail
+ExtendedLabels=N
 [end]
 
 

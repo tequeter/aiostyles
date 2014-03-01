@@ -620,14 +620,17 @@ aerialway=cable_car | aerialway=gondola							[0x10818 resolution 22]
 
 
 # railway
-railway=rail            		{ delete name }					[0x10814 resolution 23-21 continue]
+railway=rail                            { delete name }                                 
+
 railway=rail & (service=siding |
                 service=spur |
-                service=yard |
-                railway=light_rail |
-                railway=narrow_gauge)   						[0x10814 resolution 24]
+                service=yard )                                                          [0x10812 resolution 23]
 
-railway=rail            								[0x14 resolution 24]
+railway=rail                                                                            [0x10814 resolution 18-20 continue]
+railway=rail                                                                            [0x10813 resolution 21-23 continue]
+railway=rail & (railway=narrow_gauge |
+                railway=light_rail)                                                     [0x10813 resolution 24]
+railway=rail                                                                            [0x14 resolution 24]
 
 railway=tram |
 railway=subway |
