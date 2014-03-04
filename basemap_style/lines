@@ -155,7 +155,11 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
 	     railway=*)									[0x10112 resolution 24-23 continue with_actions]
 
 # embankment overlay
-man_made=dyke | embankment=yes								[0x10f00 resolution 24 continue with_actions]
+(man_made=dyke | embankment=yes)
+          & (highway=track |
+             highway=path |
+             highway=footway |
+             highway=cycleway)			                                        [0x10f00 resolution 24 continue with_actions]
 
 # tram overlay
 highway=* & railway=tram								[0x10700 resolution 24-23 continue with_actions]
@@ -591,16 +595,16 @@ aerialway=cable_car | aerialway=gondola							[0x10818 resolution 22]
 
 
 # railway
-railway=rail            		{ delete name }					
+railway=rail            		{ delete name }
 
 railway=rail & (service=siding |
                 service=spur |
                 service=yard )   						        [0x10812 resolution 23]
 
-railway=rail                                                                            [0x10814 resolution 18-20 continue]
-railway=rail                                                                            [0x10813 resolution 21-23 continue]
+railway=rail                                                                            [0x10813 resolution 18-20 continue]
+railway=rail                                                                            [0x10814 resolution 21-23 continue]
 railway=rail & (railway=narrow_gauge |
-                railway=light_rail)                                                     [0x10813 resolution 24]
+                railway=light_rail)                                                     [0x10814 resolution 24]
 railway=rail            								[0x14 resolution 24]
 
 
