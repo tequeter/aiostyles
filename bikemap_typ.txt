@@ -1,7 +1,4 @@
-; bikemap_typ.txt
-; Longueur: 0 octets
-; Fichier TYP compilé 
-; Décompilé le 15.01.2014 à 14:42:09
+
 
 [_id]
 ProductCode=46
@@ -2989,13 +2986,12 @@ CustomColor=No
 [end]
 
 
-
 [_line]
 Type=0x10812
 UseOrientation=N
 Xpm="32 2 4  1"
 "! c #737373"
-"# c #FFFF80"
+"  c none"
 "3 c #BBBBBB"
 "4 c none"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -3007,8 +3003,6 @@ ExtendedLabels=N
 [end]
 
 
-
-
 [_line]
 Type=0x10813
 UseOrientation=N
@@ -3016,7 +3010,7 @@ Xpm="32 2 4  1"
 "! c #737373"
 "# c #FFFF80"
 "3 c #BBBBBB"
-"4 c none"
+"4 c #FFFF80"
 "###!!!!!!!!########!!!!!!!!#####"
 "###!!!!!!!!########!!!!!!!!#####"
 ;12345678901234567890123456789012
@@ -3033,7 +3027,7 @@ Xpm="32 1 4  1"
 "! c #737373"
 "# c #FFFF80"
 "3 c #BBBBBB"
-"4 c none"
+"4 c #FFFF80"
 "###!!!!!!!!########!!!!!!!!#####"
 ;12345678901234567890123456789012
 String1=0x02,Eisenbahn
