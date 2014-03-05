@@ -2925,198 +2925,6 @@ CustomColor=No
 
 
 [_line]
-Type=0x1080e
-UseOrientation=N
-Xpm="32 5 4  1"
-"! c #330000"
-"  c none"
-"3 c #DD8888"
-"4 c none"
-"                                "
-"                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
-;12345678901234567890123456789012
-String1=0x02,Straﬂenbahn
-String2=0x04,Tram
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x1080f
-UseOrientation=N
-Xpm="32 5 4  1"
-"! c #330000"
-"  c none"
-"3 c #DD8888"
-"4 c none"
-"!       !       !       !       "
-"!       !       !       !       "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!       !       !       !       "
-"!       !       !       !       "
-;12345678901234567890123456789012
-String1=0x02,Straﬂenbahn
-String2=0x04,Tram
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10811
-UseOrientation=N
-Xpm="32 3 2  1"
-"! c #000000"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"   !!      !!      !!      !!   "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Standseilbahn
-String2=0x04,Funicular
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10812
-UseOrientation=N
-Xpm="32 2 4  1"
-"! c #737373"
-"  c none"
-"3 c #BBBBBB"
-"4 c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Eisenbahn
-String2=0x04,Rail
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10813
-UseOrientation=N
-Xpm="32 1 4  1"
-"! c #737373"
-"# c #FFFF80"
-"3 c #BBBBBB"
-"4 c #FFFF80"
-"###!!!!!!!!########!!!!!!!!#####"
-;12345678901234567890123456789012
-String1=0x02,Eisenbahn
-String2=0x04,Rail
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10814
-UseOrientation=N
-Xpm="32 2 4  1"
-"! c #737373"
-"# c #FFFF80"
-"3 c #BBBBBB"
-"4 c #FFFF80"
-"###!!!!!!!!########!!!!!!!!#####"
-"###!!!!!!!!########!!!!!!!!#####"
-;12345678901234567890123456789012
-String1=0x02,Eisenbahn
-String2=0x04,Rail
-ExtendedLabels=N
-[end]
-
-
-[_line]
-Type=0x10815
-UseOrientation=Y
-Xpm="32 5 2  1"
-"! c #000000"
-"  c none"
-"                                "
-"       !!              !!       "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"       !!              !!       "
-"                                "
-;12345678901234567890123456789012
-String1=0x02,Sessellift
-String2=0x04,Chair lift
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10816
-UseOrientation=Y
-Xpm="32 5 2  1"
-"! c #000000"
-"  c none"
-"                                "
-"       !!              !!       "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"       !!              !!       "
-"                                "
-;12345678901234567890123456789012
-String1=0x02,Schlepplift
-String2=0x04,Drag lift
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10817
-UseOrientation=Y
-Xpm="32 5 2  1"
-"! c #838383"
-"  c none"
-"                                "
-"        !                       "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"        !                       "
-"                                "
-;12345678901234567890123456789012
-String1=0x02,Lift
-String2=0x04,Lift
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10818
-UseOrientation=Y
-Xpm="32 5 2  1"
-"! c #000000"
-"  c none"
-"       !!                       "
-"      !!!!                      "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"      !!!!                      "
-"       !!                       "
-;12345678901234567890123456789012
-String1=0x02,Seilbahn
-String2=0x04,Cable car
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x10e00
 UseOrientation=N
 Xpm="32 7 2  1"
@@ -3173,6 +2981,199 @@ String1=0x02,Maut
 String2=0x04,Toll
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+
+[_line]
+Type=0x10e0e
+UseOrientation=N
+Xpm="32 5 4  1"
+"! c #330000"
+"  c none"
+"3 c #DD8888"
+"4 c none"
+"                                "
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Straﬂenbahn
+String2=0x04,Tram
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e0f
+UseOrientation=N
+Xpm="32 5 4  1"
+"! c #330000"
+"  c none"
+"3 c #DD8888"
+"4 c none"
+"!       !       !       !       "
+"!       !       !       !       "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!       !       !       !       "
+"!       !       !       !       "
+;12345678901234567890123456789012
+String1=0x02,Straﬂenbahn
+String2=0x04,Tram
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e11
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #000000"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"   !!      !!      !!      !!   "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Standseilbahn
+String2=0x04,Funicular
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e12
+UseOrientation=N
+Xpm="32 2 4  1"
+"! c #737373"
+"  c none"
+"3 c #BBBBBB"
+"4 c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Eisenbahn
+String2=0x04,Rail
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e13
+UseOrientation=N
+Xpm="32 1 4  1"
+"! c #737373"
+"# c #FFFF80"
+"3 c #BBBBBB"
+"4 c #FFFF80"
+"###!!!!!!!!########!!!!!!!!#####"
+;12345678901234567890123456789012
+String1=0x02,Eisenbahn
+String2=0x04,Rail
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e14
+UseOrientation=N
+Xpm="32 2 4  1"
+"! c #737373"
+"# c #FFFF80"
+"3 c #BBBBBB"
+"4 c #FFFF80"
+"###!!!!!!!!########!!!!!!!!#####"
+"###!!!!!!!!########!!!!!!!!#####"
+;12345678901234567890123456789012
+String1=0x02,Eisenbahn
+String2=0x04,Rail
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e15
+UseOrientation=Y
+Xpm="32 5 2  1"
+"! c #000000"
+"  c none"
+"                                "
+"       !!              !!       "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"       !!              !!       "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Sessellift
+String2=0x04,Chair lift
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e16
+UseOrientation=Y
+Xpm="32 5 2  1"
+"! c #000000"
+"  c none"
+"                                "
+"       !!              !!       "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"       !!              !!       "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Schlepplift
+String2=0x04,Drag lift
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e17
+UseOrientation=Y
+Xpm="32 5 2  1"
+"! c #838383"
+"  c none"
+"                                "
+"        !                       "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"        !                       "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Lift
+String2=0x04,Lift
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e18
+UseOrientation=Y
+Xpm="32 5 2  1"
+"! c #000000"
+"  c none"
+"       !!                       "
+"      !!!!                      "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"      !!!!                      "
+"       !!                       "
+;12345678901234567890123456789012
+String1=0x02,Seilbahn
+String2=0x04,Cable car
+ExtendedLabels=Y
+FontStyle=SmallFont
 CustomColor=No
 [end]
 

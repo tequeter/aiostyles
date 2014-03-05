@@ -617,10 +617,10 @@ aeroway=taxiway     									[0x27 resolution 20]
 
 
 # aerialway and lift
-aerialway=chair_lift  									[0x10815 resolution 23]
-aerialway=drag_lift									[0x10816 resolution 23]
-aerialway=goods										[0x10817 resolution 24]
-aerialway=cable_car | aerialway=gondola							[0x10818 resolution 22]
+aerialway=chair_lift  									[0x10e15 resolution 23]
+aerialway=drag_lift									[0x10e16 resolution 23]
+aerialway=goods										[0x10e17 resolution 24]
+aerialway=cable_car | aerialway=gondola							[0x10e18 resolution 22]
 
 
 # railway
@@ -628,25 +628,25 @@ railway=rail                            { delete name }
 
 railway=rail & (service=siding |
                 service=spur |
-                service=yard )                                                          [0x10812 resolution 23]
+                service=yard )                                                          [0x10e12 resolution 23]
 
-railway=rail                                                                            [0x10813 resolution 18-20 continue]
-railway=rail                                                                            [0x10814 resolution 21-23 continue]
+railway=rail                                                                            [0x10e13 resolution 18-20 continue]
+railway=rail                                                                            [0x10e14 resolution 21-23 continue]
 railway=rail & (railway=narrow_gauge |
-                railway=light_rail)                                                     [0x10814 resolution 24]
+                railway=light_rail)                                                     [0x10e14 resolution 24]
 railway=rail                                                                            [0x14 resolution 24]
 
 railway=tram |
 railway=subway |
 railway=funicular |
 railway=preserved |
-railway=monorail			{ delete name }					[0x1080e resolution 23-22 continue]
+railway=monorail			{ delete name }					[0x10e0e resolution 23-22 continue]
 
 railway=tram |
 railway=subway |
 railway=funicular |
 railway=preserved |
-railway=monorail									[0x1080f resolution 24]
+railway=monorail									[0x10e0f resolution 24]
 
 railway=turntable | railway=traverser							[0x10106 resolution 24-23]
 
