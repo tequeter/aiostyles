@@ -162,7 +162,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
              highway=cycleway)			                                        [0x10f00 resolution 24 continue with_actions]
 
 # tram overlay
-highway=* & railway=tram								[0x10700 resolution 24-23 continue with_actions]
+highway=* & railway=tram								[0x10e0d resolution 24-23 continue with_actions]
 
 # bridleway overlay
 highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
