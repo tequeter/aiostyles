@@ -2702,207 +2702,6 @@ ExtendedLabels=N
 
 
 [_line]
-Type=0x10111
-UseOrientation=N
-Xpm="32 8 2  1"
-"! c #949494"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Autobahntunnel
-String2=0x04,Motorway tunnel
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10112
-UseOrientation=N
-Xpm="32 7 2  1"
-"! c #949494"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
-String1=0x02,Tunnel
-String2=0x04,Tunnel
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10113
-UseOrientation=N
-Xpm="32 3 2  1"
-"! c #949494"
-"  c none"
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-;12345678901234567890123456789012
-String1=0x02,In Bau
-String2=0x04,Construction
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10114
-UseOrientation=N
-Xpm="32 3 2  1"
-"! c #949494"
-"  c none"
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-"!!!     !!!     !!!     !!!     "
-;12345678901234567890123456789012
-String1=0x02,Stillgelegt
-String2=0x04,Disused
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10415
-UseOrientation=Y
-Xpm="32 10 2  1"
-"! c #7B6500"
-"  c none"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-;12345678901234567890123456789012
-String1=0x02,Fuﬂweg
-String2=0x04,Footway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10416
-UseOrientation=Y
-Xpm="32 10 2  1"
-"! c #0095FF"
-"  c none"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-;12345678901234567890123456789012
-String1=0x02,Radfahrstreifen
-String2=0x04,Cycle lane
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10417
-UseOrientation=Y
-Xpm="32 10 2  1"
-"! c #0095FF"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-;12345678901234567890123456789012
-String1=0x02,Radfahrstreifen
-String2=0x04,Cycle lane
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10418
-UseOrientation=Y
-Xpm="32 10 2  1"
-"! c #FF65FF"
-"  c none"
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-"  !!  !!  !!  !!  !!  !!  !!  !!"
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-"                                "
-;12345678901234567890123456789012
-String1=0x02,Reitweg
-String2=0x04,Bridleway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
-[end]
-
-
-[_line]
-Type=0x10700
-UseOrientation=N
-Xpm="32 3 4  1"
-"! c #737373"
-"  c none"
-"3 c #DD8888"
-"4 c none"
-"!       !       !       !       "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!       !       !       !       "
-;12345678901234567890123456789012
-String1=0x02,Straﬂenbahn
-String2=0x04,Tram
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-[end]
-
-
-[_line]
 Type=0x10e00
 UseOrientation=N
 Xpm="32 7 2  1"
@@ -2918,6 +2717,24 @@ Xpm="32 7 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Einbahn
 String2=0x04,One way
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e01
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #949494"
+"  c none"
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+;12345678901234567890123456789012
+String1=0x02,Stillgelegt
+String2=0x04,Disused
 ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
@@ -2964,6 +2781,169 @@ CustomColor=No
 
 
 [_line]
+Type=0x10e04
+UseOrientation=N
+Xpm="32 3 2  1"
+"! c #949494"
+"  c none"
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+"!!!     !!!     !!!     !!!     "
+;12345678901234567890123456789012
+String1=0x02,In Bau
+String2=0x04,Construction
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e05
+UseOrientation=N
+Xpm="32 8 2  1"
+"! c #949494"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Autobahntunnel
+String2=0x04,Motorway tunnel
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e06
+UseOrientation=N
+Xpm="32 7 2  1"
+"! c #949494"
+"  c none"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;12345678901234567890123456789012
+String1=0x02,Tunnel
+String2=0x04,Tunnel
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e08
+UseOrientation=Y
+Xpm="32 10 2  1"
+"! c #7B6500"
+"  c none"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"  !!  !!  !!  !!  !!  !!  !!  !!"
+"  !!  !!  !!  !!  !!  !!  !!  !!"
+;12345678901234567890123456789012
+String1=0x02,Fuﬂweg
+String2=0x04,Footway
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e09
+UseOrientation=Y
+Xpm="32 10 2  1"
+"! c #0095FF"
+"  c none"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Radfahrstreifen
+String2=0x04,Cycle lane
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e0a
+UseOrientation=Y
+Xpm="32 10 2  1"
+"! c #0095FF"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Radfahrstreifen
+String2=0x04,Cycle lane
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
+Type=0x10e0b
+UseOrientation=Y
+Xpm="32 10 2  1"
+"! c #FF65FF"
+"  c none"
+"  !!  !!  !!  !!  !!  !!  !!  !!"
+"  !!  !!  !!  !!  !!  !!  !!  !!"
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+;12345678901234567890123456789012
+String1=0x02,Reitweg
+String2=0x04,Bridleway
+ExtendedLabels=Y
+FontStyle=NoLabel (invisible)
+CustomColor=No
+[end]
+
+
+[_line]
 Type=0x10e0d
 UseOrientation=N
 Xpm="32 3 4  1"
@@ -3001,7 +2981,6 @@ ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
 [end]
-
 
 
 [_line]

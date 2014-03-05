@@ -148,11 +148,11 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
 	    highway=trunk |
 	    highway=trunk_link |
 	    highway=primary |
-	    highway=primary_link )							[0x10111 resolution 24-23 continue with_actions]
+	    highway=primary_link )							[0x10e05 resolution 24-23 continue with_actions]
 
 (tunnel=yes | tunnel=building_passage | covered=yes)
 	  & (highway=* |
-	     railway=*)									[0x10112 resolution 24-23 continue with_actions]
+	     railway=*)									[0x10e06 resolution 24-23 continue with_actions]
 
 # embankment overlay
 (man_made=dyke | embankment=yes)
@@ -165,7 +165,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
 highway=* & railway=tram								[0x10e0d resolution 24-23 continue with_actions]
 
 # bridleway overlay
-highway=* & horse=designated								[0x10418 resolution 24 continue with_actions]
+highway=* & horse=designated								[0x10e0c resolution 24 continue with_actions]
 
 
 #------------------------------------------------------------------------------
@@ -189,12 +189,12 @@ highway=* & oneway=yes &
 #------------------------------------------------------------------------------
 # disused
 
-highway=* & disused=yes									[0x10114 resolution 24]
+highway=* & disused=yes									[0x10e01 resolution 24]
 
 #-----------------------------------------------------------------------------
 # construction
 
-highway=construction									[0x10113 resolution 24]
+highway=construction									[0x10e04 resolution 24]
 
 #-----------------------------------------------------------------------------
 # Validation-like checks
