@@ -3009,7 +3009,7 @@ CustomColor=No
 Type=0x10e0f
 UseOrientation=N
 Xpm="32 5 4  1"
-"! c #330000"
+"! c #737373"
 "  c none"
 "3 c #DD8888"
 "4 c none"
