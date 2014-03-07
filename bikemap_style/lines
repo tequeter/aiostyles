@@ -161,6 +161,13 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue 
              highway=footway |
              highway=cycleway)								[0x10f00 resolution 24 continue with_actions]
 
+# cutting overlay
+(cutting=yes)
+          & (highway=track |
+             highway=path |
+             highway=footway |
+             highway=cycleway)                                                          [0x10f01 resolution 24 continue with_actions]
+
 # tram overlay
 highway=* & railway=tram								[0x10e0d resolution 24-23 continue with_actions]
 
@@ -627,21 +634,23 @@ aerialway=cable_car | aerialway=gondola							[0x10e18 resolution 22]
 # railway
 railway=rail                            { delete name }
 
-railway=rail & (service=siding |
+railway=rail & !(tunnel=yes)
+             & (service=siding |
                 service=spur |
-                service=yard )                                                          [0x10e12 resolution 23]
+                service=yard )                                                          [0x10e13 resolution 23]
 
-railway=rail                                                                            [0x10e13 resolution 21-18 continue with_actions]
-railway=rail                                                                            [0x10e14 resolution 23-22 continue with_actions]
+railway=rail                                                                            [0x10e14 resolution 23-22 continue]
 railway=rail & (railway=narrow_gauge |
-                railway=light_rail)                                                     [0x10e14 resolution 24]
-railway=rail                                                                            [0x14 resolution 24]
+                railway=light_rail |
+                tunnel=yes)                                                             [0x10e14 resolution 24]
+
+railway=rail & !(tunnel=yes)                                                            [0x14 resolution 24]
 
 railway=tram |
 railway=subway |
 railway=funicular |
 railway=preserved |
-railway=monorail			{ delete name }					[0x10e0e resolution 23-22 continue with_actions]
+railway=monorail			{ delete name }					[0x10e0e resolution 23-22 continue]
 
 railway=tram |
 railway=subway |
@@ -656,8 +665,9 @@ railway=turntable | railway=traverser							[0x10106 resolution 24-23]
 
 
 # barrier
-barrier=wall 										[0x10f01 resolution 24]
-barrier=retaining_wall | barrier=city_wall 						[0x10f02 resolution 24]
+barrier=wall |
+barrier=retaining_wall |
+barrier=city_wall 	                        					[0x10f02 resolution 24]
 barrier=fence                               						[0x10f03 resolution 24]
 barrier=hedge                               						[0x10f0c resolution 24]
 
