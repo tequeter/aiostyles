@@ -1854,7 +1854,7 @@ Xpm="32 32 4 1"
 
 [_polygon]
 Type=0x52
-String1=0x02,Gras
+String1=0x02,Grünfläche
 String2=0x04,Grass
 ExtendedLabels=N
 Xpm="32 32 4 1"
