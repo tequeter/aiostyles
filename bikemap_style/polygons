@@ -63,7 +63,7 @@ landuse=forest & wood=coniferous 					[0x21 resolution 24-23]
 landuse=forest & wood=deciduous 					[0x22 resolution 24-23]
 landuse=forest & wood=mixed 						[0x23 resolution 24-23]
 landuse=forest 								[0x20 resolution 24-23]
-landuse=meadow 								[0x35 resolution 22]
+landuse=meadow 								[0x53 resolution 22]
 
 landuse=commercial 							[0x0f resolution 20]
 landuse=industrial							[0x0c resolution 20]
