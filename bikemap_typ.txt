@@ -825,7 +825,7 @@ FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #BDFF6A"
-"# c #39CA41"
+"# c #39FF8B"
 "3 c #004400"
 "4 c #00CA00"
 "#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
@@ -1067,8 +1067,8 @@ String1=0x02,Wald
 String2=0x04,Forest
 ExtendedLabels=N
 Xpm="32 32 4 1"
-"! c #00BB00"
-"# c #A0E070"
+"! c #A0FF64"
+"# c #BDFF8B"
 "3 c #00C000"
 "4 c #007800"
 "#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
@@ -1114,7 +1114,7 @@ String2=0x04,coniferous
 ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
-"# c #A0E070"
+"# c #BDFF8B"
 "3 c #00C000"
 "4 c #007800"
 "################################"
@@ -1160,7 +1160,7 @@ String2=0x04,deciduous
 ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
-"# c #A0E040"
+"# c #BDFF8B"
 "3 c #00C000"
 "4 c #007800"
 "################################"
@@ -1206,7 +1206,7 @@ String2=0x04,mixed
 ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00BB00"
-"# c #A0E040"
+"# c #BDFF8B"
 "3 c #00C000"
 "4 c #007800"
 "################################"
@@ -1857,7 +1857,7 @@ String2=0x04,Grass
 ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00CA00"
-"# c #00FF6A"
+"# c #7BFF8B"
 "3 c #00CA00"
 "4 c #006541"
 "################################"
@@ -1903,7 +1903,7 @@ String2=0x04,Meadow
 ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #00CA00"
-"# c #00FF6A"
+"# c #7BFF8B"
 "3 c #00CA00"
 "4 c #006541"
 "################################"
