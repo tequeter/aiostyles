@@ -613,7 +613,7 @@ railway=rail & (railway=narrow_gauge |
                 railway=light_rail |
                 tunnel=yes)                                                             [0x10e14 resolution 24]
 
-railway=rail & !(tunnel=yes)                                                            [0x14 resolution 24]
+railway=rail & !(tunnel=yes)                                                            [0x10e19 resolution 24]
 
 railway=tram |
 railway=subway |
