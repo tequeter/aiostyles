@@ -468,7 +468,7 @@ cuisine=asian 										[0x2a02 resolution 24]
 cuisine=barbecue 									[0x2a03 resolution 24]
 
 # Chinese
-cuisine=chinese 							[		0x2a04 resolution 24]
+cuisine=chinese 							                [0x2a04 resolution 24]
 
 # Deli/Bakery
 shop=bakery | shop=deli									[0x2a05 resolution 24]
