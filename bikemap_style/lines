@@ -174,31 +174,33 @@ highway=* & railway=tram								[0x10e0d resolution 24-23 continue with_actions]
 # bridleway overlay
 highway=* & horse=designated								[0x10e0b resolution 24 continue with_actions]
 
-# cyclelane overlay
+# cycleway overlay
+
+highway=* & (oneway:bicycle=no |
+             bicycle=dismount)                                                          [0x10e07 resolution 24-23 continue with_actions]
+
 highway=*
-	  & (cycleway=both |
-	     cycleway=lane |
-	     cycleway=track |
-	     cycleway:left=yes |
+          & (cycleway=both |
+             cycleway=lane |
+             cycleway=track )                                                           [0x10e08 resolution 24-23 continue with_actions]
+
+highway=*
+          & (cycleway:right=yes |
+             cycleway:right=lane)                                                       [0x10e09 resolution 24-23 continue with_actions]
+
+highway=*
+          & (cycleway:left=yes |
 	     cycleway:left=lane |
 	     cycleway=opposite |
 	     cycleway=opposite_lane |
-	     oneway:bicycle=no |
 	     bicycle=opposite)								[0x10e0a resolution 24-23 continue with_actions]
-
-highway=*
-	  & (cycleway=both |
-	     cycleway=lane |
-	     cycleway:right=yes |
-	     cycleway:right=lane)							[0x10e09 resolution 24-23 continue with_actions]
-
 
 
 icn_network=yes								 		[0x10110 resolution 24-22 continue with_actions]
 rcn_network=yes	 									[0x10109 resolution 24-22 continue with_actions]
 lcn_network=yes										[0x10108 resolution 24-23 continue with_actions]
 
-highway=* & bicycle=dismount          						        [0x10e07 resolution 24-23 continue with_actions]
+
 
 
 #------------------------------------------------------------------------------
