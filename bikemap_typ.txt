@@ -2741,12 +2741,19 @@ CustomColor=No
 [_line]
 Type=0x10e02
 UseOrientation=Y
-Xpm="32 3 2  1"
-"! c #737373"
+Xpm="32 10 2  1"
+"! c #FF0000"
 "  c none"
-"  !       !       !       !     "
-" !       !       !       !      "
-"!       !       !       !       "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"                                "
+"  !!!     !!!     !!!     !!!   "
+" !!!     !!!     !!!     !!!    "
+"!!!     !!!     !!!     !!!     "
 ;12345678901234567890123456789012
 String1=0x02,Baustelle
 String2=0x04,Construction
