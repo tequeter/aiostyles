@@ -103,7 +103,6 @@ highway=*
 	      add mkgmap:unpaved=1;
 	    }
 
-
 #------------------------------------------------------------------------------
 # Convert some rules
 
@@ -112,31 +111,6 @@ highway=*  & (oneway=1 | oneway=true)
 
 (highway=motorway | highway=motorway_link)
                             { add oneway=yes }
-
-highway=* & (
-             bicycle=designated | bicycle=permissive |bicycle=official
-             )
-                  {
-                    set bicycle=yes
-                    }
-
-highway=* & (
-                foot=designated | foot=official
-                )
-                {
-                  set foot=yes
-                  }
-
-highway=* & (
-                horse=designated | horse=permissive | horse=official
-                )
-                {
-                  set horse=yes
-                  }
-
-highway=bridleway
-              { add access=no }
-
 
 leisure=track & area!=yes
               {
@@ -482,11 +456,11 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 ## to make them routable comment out the second line for each roadtype
 ## and uncomment the third and following lines
 
-highway=cycleway				 					[0x1200a resolution 23-23 continue]
-highway=cycleway				 					[0x1100a resolution 24]
-#highway=cycleway				 					[0x1100a resolution 24 continue]
-#highway=cycleway & junction=roundabout				 			[0x0c resolution 24 road_class=0 road_speed=1]
-#highway=cycleway				 					[0x0a resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x1200a resolution 23-23 continue]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24]
+#(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
+#(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
+#(highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
 
 
 highway=footway										[0x1200d resolution 23-23 continue]
@@ -504,7 +478,6 @@ highway=bridleway									[0x11016 resolution 24]
 highway=steps										[0x12013 resolution 23-23 continue]
 highway=steps										[0x11013 resolution 24]
 #highway=steps										[0x13 resolution 24 road_class=0 road_speed=0]
-
 
 #------------------------------------------------------------------------------
 # tracks
