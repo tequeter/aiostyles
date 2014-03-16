@@ -606,12 +606,10 @@ railway=rail & (service=siding |
                 service=spur |
                 service=yard )                                                          [0x10e13 resolution 23]
 
-railway=rail                            { delete name }                                 [0x14 resolution 20 continue]
-railway=rail                                                                            [0x10e14 resolution 23-22 continue]
-railway=rail & (railway=narrow_gauge |
-                railway=light_rail |
-                tunnel=yes)                                                             [0x10e14 resolution 24]
-
+railway=rail                            { delete name }                                 
+railway=rail                                                                            [0x10e14 resolution 23-20 continue]
+railway=narrow_gauge | railway=light_rail                                               [0x10e14 resolution 24]
+railway=rail & tunnel=yes                                                               [0x10e14 resolution 24]
 railway=rail                                                                            [0x10e19 resolution 24]
 
 railway=tram |
