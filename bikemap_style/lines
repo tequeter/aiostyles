@@ -15,10 +15,10 @@
 #	0x04	secondary
 #	0x05	tertiary
 #	0x06	residential/unclassified
-#	0x07	service/living_street
+#	0x07	service/living_street/cycleway
 #	0x08	ramp motorway/trunk
 #	0x09	ramp other
-#	0x0a	cycleway
+#	0x0a	service parking_aisle/alley
 #	0x0b	road				an american special roadtype
 #	0x0c	roundabout
 #	0x0d	footway
@@ -454,8 +454,8 @@ highway=service | highway=living_street
 
 highway=service						            			[0x12007 resolution 23-23 continue]
 highway=service						            			[0x11007 resolution 24 continue]
-highway=service & service=parking_aisle							[0x07 resolution 24 road_class=0 road_speed=1]
-highway=service & (service=alley | service=driveway)					[0x07 resolution 24 road_class=0 road_speed=0]
+highway=service & service=parking_aisle							[0x0a resolution 24 road_class=0 road_speed=1]
+highway=service & (service=alley | service=driveway)					[0x0a resolution 24 road_class=0 road_speed=0]
 highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]
 
 highway=living_street									[0x12008 resolution 23-23 continue]
@@ -495,7 +495,7 @@ highway=cycleway & cn_name=*
 (highway=cycleway | (highway=path & bicycle=yes)) 					[0x1200a resolution 23-22 continue]
 (highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
 (highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
-(highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x07 resolution 24 road_class=0 road_speed=1]
 
 
 (man_made=pier | man_made=piste:halfpipe) & area!=yes
