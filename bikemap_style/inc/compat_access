@@ -23,3 +23,4 @@ barrier=kissing_gate | barrier=stile | barrier=block
     { add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=0; }
+

@@ -64,7 +64,7 @@ highway='path;track'
 		set highway=path
 		}
 
-highway=path | highway=trail | highway=steps
+highway=steps
 		{
 		  add mkgmap:unpaved=1;
 		  }
@@ -81,7 +81,6 @@ highway=*
 	      surface=grit |
 	      surface=ground |
 	      surface=mud |
-
 	      surface=pebblestone |
 	      surface=sand |
 	      surface=unpaved |
@@ -95,7 +94,7 @@ highway=*
 		  add mkgmap:unpaved=1;
 		  }
 
-(highway=bridleway | highway=unsurfaced)
+(highway=bridleway | highway=trail | highway=unsurfaced)
 	    & surface!=*
 	    & tracktype!=*
 	    & smoothness!=*
@@ -104,15 +103,6 @@ highway=*
 		add mkgmap:unpaved=1;
 		}
 
-
-#------------------------------------------------------------------------------
-# Convert some rules
-
-highway=*  & (oneway=1 | oneway=true)
-                            { set oneway=yes }
-
-(highway=motorway | highway=motorway_link)
-                            { add oneway=yes }
 leisure=track & area!=yes
               {
                 add highway=footway;
@@ -124,6 +114,16 @@ leisure=track & area!=yes
                 add highway=footway;
                 name '${ref} ${name}' | '${ref}' | '${name}'
                 }
+                
+#------------------------------------------------------------------------------
+# Convert some rules
+
+highway=*  & (oneway=1 | oneway=true)
+                            { set oneway=yes }
+
+(highway=motorway | highway=motorway_link)
+                            { add oneway=yes }
+
 
 #------------------------------------------------------------------------------
 # 				overlays
@@ -476,37 +476,29 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 		  add mkgmap:dead-end-check=false
 		  }
 
-highway=pedestrian & (
-		      bicycle=designated | bicycle=permissive | bicycle=official
-		      )
-		      {
-			add bicycle=yes
-			}
-
 
 highway=pedestrian									[0x1201b resolution 23-23 continue]
 highway=pedestrian									[0x1101b resolution 24 continue]
 highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 
-highway=cycleway & cn_name=*
+(highway=cycleway | (highway=path & bicycle=designated)) & cn_name=*
 		{ set name='${cn_name}' }
 
-(highway=cycleway | (highway=path & bicycle=yes)) 					[0x1200a resolution 23-22 continue]
-(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
-(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
-(highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))                                [0x1200a resolution 23-23 continue]
+(highway=cycleway | (highway=path & bicycle=designated))                                [0x1100a resolution 24 continue]
+(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout          [0x0c resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))                                [0x0a resolution 24 road_class=0 road_speed=1]
 
 
-(man_made=pier | man_made=piste:halfpipe) & area!=yes
-              {
-                add highway=footway;
-                name '${ref} ${name}' | '${ref}' | '${name}'
-                }
-highway=footway										[0x1200d resolution 23-23 continue]
-highway=footway										[0x1100d resolution 24 continue]
-highway=footway										[0x0d resolution 24 road_class=0 road_speed=0]
-
+highway=footway                                                                         [0x1200d resolution 23-23 continue]
+highway=footway                                                                         [0x1100d resolution 24 continue]
+highway=footway & 
+              (bicycle=designated | 
+               bicycle=permissive | 
+               bicycle=official |
+               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
+highway=footway                                                                         [0x0d resolution 24 road_class=0 road_speed=0]
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
@@ -539,11 +531,17 @@ highway=track                                                                   
 highway=track   									[0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
-# pathes without foot/bicycle
+# path
 
-highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set toll=yes; }
 highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
 highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
+
+
+highway=path | highway=trail | highway=byway                                            [0x11012 resolution 24 continue]
+
+highway=path & (bicycle=permissive | 
+                 bicycle=official |
+                 bicycle=yes)                                                           [0x0a resolution 24 road_class=0 road_speed=1]
 
 highway=path | highway=trail | highway=byway						[0x12 resolution 24 road_class=0 road_speed=0]
 
@@ -653,11 +651,12 @@ include 'inc/roadspeed' ;
 
 # calculate the access rules
 include 'inc/access' ;
-include "inc/compat_lines";
+include 'inc/compat_lines' ;
+include 'inc/compat_access' ;
 
 name=* { name '${name}' }
 
-include 'inc/phone';
+include 'inc/phone' ;
 include 'inc/address' ;
 
 highway=* & ref=* { addlabel '${ref}' }
