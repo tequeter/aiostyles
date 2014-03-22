@@ -6,7 +6,7 @@
 
 # A short one line description of the style
 #
-summary: The default AIO-basemap-style
+summary: The default Basemap-style
 
 # Version of the style itself
 #
@@ -14,12 +14,12 @@ version=1.0
 
 # A longer description of the style.
 description {
-The AIO-basemap-style.
+The Basemap-style.
 This is a heavyweight style that is designed for use
 when mapping or routing with cars and motorcycle.
 Routing over ways like footway, cycleway, steps and
 tracks (grade2-6) is disabled.
-For cyclerouting, please use the AIO-Bikemap.
+For cyclerouting, please use the Bikemap.
 
 
 contact: weigelt.bernd (at) web.de
