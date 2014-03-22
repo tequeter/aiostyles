@@ -26,16 +26,17 @@ barrier=kissing_gate | barrier=stile | barrier=block
       
 highway=path
            & (
-              smoothness~'.*(horrible|impassable|very_bad)' |
+              smoothness~'.*(horrible|impassable)' |
+              smoothness=very_bad |
               mtb:scale>0 | 
               mtb:scale:imba>0
               )
                 { set bicycle=no }
-
-highway=path 
+highway=path
             & (
-               smoothness=bad |
-               sac_scale~'.*(mountain|alpine)_hiking'
-               )                         
+               sac_scale~'.*(mountain|alpine)_hiking' |
+               smoothness=bad
+               )
                 { add bicycle=no; }
                       
+#highway=path & smoothness=* {echo ' ${highway} | ${smoothness} | ${bicycle}'}
