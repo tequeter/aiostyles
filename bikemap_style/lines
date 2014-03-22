@@ -94,6 +94,14 @@ highway=*
 		  add mkgmap:unpaved=1;
 		  }
 
+highway='path'
+	   & (
+	      smoothness~'.*(horrible|impassable)'
+	      )
+		{
+		set bicycle=no
+		}
+
 (highway=bridleway | highway=trail | highway=unsurfaced)
 	    & surface!=*
 	    & tracktype!=*
@@ -533,7 +541,7 @@ highway=track   									[0x11 resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 # path
 
-highway=path & (mtb:scale>2 | mtb:scale:imba>1)					{ set bicycle=no; }
+highway=path & (mtb:scale>0 | mtb:scale:imba>0)					{ set bicycle=no; }
 highway=path & (sac_scale~'.*(mountain|alpine)_hiking')				{ add bicycle=no; }
 
 
