@@ -39,4 +39,3 @@ highway=path
                )
                 { add bicycle=no; }
                       
-#highway=path & smoothness=* {echo ' ${highway} | ${smoothness} | ${bicycle}'}
