@@ -38,6 +38,4 @@ highway=path
                smoothness=bad
                )
                 { add bicycle=no; }
-                
-highway=path & name=Waldbauschülerpfad
-        {echo '  ${highway} |  ${mtb:scale} | ${bicycle} | ${name}'}
+
