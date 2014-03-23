@@ -626,7 +626,6 @@ include 'inc/roadspeed' ;
 # calculate the access rules
 include 'inc/access' ;
 include "inc/compat_lines";
-include "inc/compat_access";
 
 name=* { name '${name}' }
 

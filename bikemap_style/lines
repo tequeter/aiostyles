@@ -534,6 +534,22 @@ highway=track   									[0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # path
+      
+highway=path
+           & (
+              smoothness~'.*(horrible|impassable)' |
+              smoothness=very_bad |
+              mtb:scale>0 | 
+              mtb:scale:imba>0
+              )
+                { set bicycle=no }
+highway=path
+            & (
+               sac_scale~'.*(mountain|alpine)_hiking' |
+               smoothness=bad
+               )
+                { add bicycle=no; }
+
 
 highway=path | highway=trail | highway=byway                                            [0x11012 resolution 24 continue]
 
@@ -650,7 +666,6 @@ include 'inc/roadspeed' ;
 # calculate the access rules
 include 'inc/access' ;
 include 'inc/compat_lines' ;
-include 'inc/compat_access' ;
 
 name=* { name '${name}' }
 
