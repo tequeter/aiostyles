@@ -23,3 +23,18 @@ barrier=kissing_gate | barrier=stile | barrier=block
     { add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=0; }
+     
+highway=path
+           & (
+              smoothness~'.*(horrible|impassable)' |
+              smoothness=very_bad |
+              mtb:scale>0 | 
+              mtb:scale:imba>0
+              )
+                { set bicycle=no }
+highway=path
+            & (
+               sac_scale~'.*(mountain|alpine)_hiking' |
+               smoothness=bad
+               )
+                { add bicycle=no; }
