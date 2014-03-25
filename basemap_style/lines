@@ -21,13 +21,13 @@
 #	0x0a	service parking_aisle/alley
 #	0x0b	road 		an american special roadtype
 #	0x0c	roundabout
-#	0x0d	footway		not used for routing is 0x1100d
+#	0x0d	footway
 #	0x0e	track grade1
 #	0x0f	track grade2
-#	0x10	track grade3	not used for routing is 0x11010
-#	0x11	track grade4/6	not used for routing is 0x11011
-#	0x12	path/trail	not used for routing is 0x11012
-#	0x13	steps		not used for routing is 0x11013
+#	0x10	track grade3
+#	0x11	track grade4/6
+#	0x12	path/trail
+#	0x13	steps		
 #	0x1a	ferry
 #	0x1b	ways with no cat
 #-----------------------------------------------------------------------------
@@ -114,7 +114,7 @@ leisure=track & area!=yes
                 add highway=footway;
                 name '${ref} ${name}' | '${ref}' | '${name}'
                 }
-                
+
 #------------------------------------------------------------------------------
 # Convert some rules
 
@@ -453,42 +453,42 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 
 #------------------------------------------------------------------------------
-## in the AIO-basemap some ways are not routable per default
+## in the AIO-basemap some ways are routable for testing
 ## to make them routable comment out the second line for each roadtype
 ## and uncomment the third and following lines
 
 (highway=cycleway | (highway=path & bicycle=designated))				[0x1200a resolution 23-23 continue]
-(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24]
-#(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
-#(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
-#(highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
+#(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
+(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
 
 
 highway=footway										[0x1200d resolution 23-23 continue]
-highway=footway										[0x1100d resolution 24]
-#highway=footway									[0x1100d resolution 24 continue]
-#highway=footway & 
-#              (bicycle=designated | 
-#               bicycle=permissive | 
-#               bicycle=official |
-#               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
-#highway=footway									 [0x0d resolution 24 road_class=0 road_speed=0]
+#highway=footway									[0x1100d resolution 24]
+highway=footway									        [0x1100d resolution 24 continue]
+highway=footway &
+              (bicycle=designated |
+               bicycle=permissive |
+               bicycle=official |
+               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
+highway=footway									        [0x0d resolution 24 road_class=0 road_speed=0]
 
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
-highway=bridleway									[0x11016 resolution 24]
-#highway=bridleway									 [0x11016 resolution 24 continue]
-#highway=bridleway & 
-#              (bicycle=designated | 
-#               bicycle=permissive | 
-#               bicycle=official |
-#               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
-#highway=bridleway									 [0x16 resolution 24 road_class=0 road_speed=0]
+#highway=bridleway									[0x11016 resolution 24]
+highway=bridleway									[0x11016 resolution 24 continue]
+highway=bridleway &
+              (bicycle=designated |
+               bicycle=permissive |
+               bicycle=official |
+               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
+highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 
 highway=steps										[0x12013 resolution 23-23 continue]
-highway=steps										[0x11013 resolution 24]
-#highway=steps										[0x13 resolution 24 road_class=0 road_speed=0]
+#highway=steps										[0x11013 resolution 24]
+highway=steps										[0x13 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # tracks
@@ -499,9 +499,9 @@ highway=track & tracktype=grade1                                                
 highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue]
 highway=track & tracktype=grade2                                                        [0x0f resolution 24 road_class=0 road_speed=0]
 
-highway=track & tracktype=grade3                                                        [0x11010 resolution 24 road_class=0 road_speed=0]
+highway=track & tracktype=grade3                                                        [0x10 resolution 24 road_class=0 road_speed=0]
 
-highway=track & tracktype~'grade[4-6]'                                                  [0x11011 resolution 24 road_class=0 road_speed=0]
+highway=track & tracktype~'grade[4-6]'                                                  [0x11 resolution 24 road_class=0 road_speed=0]
 
 highway=track
                 {
@@ -623,9 +623,10 @@ include 'inc/water_lines' ;
 
 # calculate the road speed based on maxspeed tag
 include 'inc/roadspeed' ;
+
 # calculate the access rules
 include 'inc/access' ;
-include "inc/compat_lines";
+#include "inc/compat_lines";
 
 name=* { name '${name}' }
 

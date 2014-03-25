@@ -94,7 +94,7 @@ highway=*
 		  add mkgmap:unpaved=1;
 		  }
 
-	
+
 
 (highway=bridleway | highway=trail | highway=unsurfaced)
 	    & surface!=*
@@ -116,7 +116,7 @@ leisure=track & area!=yes
                 add highway=footway;
                 name '${ref} ${name}' | '${ref}' | '${name}'
                 }
-                
+
 #------------------------------------------------------------------------------
 # Convert some rules
 
@@ -495,9 +495,9 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 highway=footway                                                                         [0x1200d resolution 23-23 continue]
 highway=footway                                                                         [0x1100d resolution 24 continue]
-highway=footway & 
-              (bicycle=designated | 
-               bicycle=permissive | 
+highway=footway &
+              (bicycle=designated |
+               bicycle=permissive |
                bicycle=official |
                bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=footway                                                                         [0x0d resolution 24 road_class=0 road_speed=0]
@@ -534,10 +534,10 @@ highway=track   									[0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # path
- 
+
 highway=path | highway=trail | highway=byway                                            [0x11012 resolution 24 continue]
 
-highway=path & (bicycle=permissive | 
+highway=path & (bicycle=permissive |
                  bicycle=official |
                  bicycle=yes)                                                           [0x0a resolution 24 road_class=0 road_speed=1]
 
@@ -648,9 +648,9 @@ include 'inc/water_lines' ;
 include 'inc/roadspeed' ;
 
 # calculate the access rules
-include 'inc/compat_access' ;
+
 include 'inc/access' ;
-include 'inc/compat_lines' ;
+#include 'inc/compat_lines' ;
 
 name=* { name '${name}' }
 
