@@ -132,5 +132,5 @@ waterway=riverbank 							[0x46 resolution 18]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-include "inc/compat_polygons";
+
 name=* { name '${name}' }

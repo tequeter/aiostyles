@@ -27,7 +27,7 @@
 #	0x10	track grade3
 #	0x11	track grade4/6
 #	0x12	path/trail
-#	0x13	steps		
+#	0x13	steps
 #	0x1a	ferry
 #	0x1b	ways with no cat
 #-----------------------------------------------------------------------------
@@ -614,7 +614,13 @@ tunnel!=yes & location != underground
 # power
 power=line | power=minor_line		{ delete name }					[0x29 resolution 24]
 
-include 'inc/water_lines' ;
+natural=coastline [0x15 resolution 12]
+
+waterway=canal                                                                          [0x1f resolution 21]
+waterway=drain                                                                          [0x1f resolution 22]
+waterway=river                                                                          [0x1f resolution 18]
+waterway=rapids|waterway=waterfall                                                      [0x1f resolution 22]
+waterway=stream                                                                         [0x18 resolution 22]
 
 
 <finalize>
@@ -626,7 +632,6 @@ include 'inc/roadspeed' ;
 
 # calculate the access rules
 include 'inc/access' ;
-#include "inc/compat_lines";
 
 name=* { name '${name}' }
 
