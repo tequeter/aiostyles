@@ -1,0 +1,36 @@
+0x01    highway=motorway
+0x02    highway=trunk
+0x03    highway=primary
+0x04    highway=secondary
+0x05    highway=tertiary
+0x06    highway=minor
+        highway=unclassified
+        highway=living_street
+        highway=residential
+        highway=road
+0x07    highway=bridleway
+        highway=service
+        highway=cycleway
+0x08    highway=primary_link
+        highway=secondary_link
+        highway=tertiary_link
+0x09    highway=motorway_link
+        highway=trunk_link
+0x0a    highway=track
+        highway=unsurfaced
+        railway=abandoned
+0x0b
+0x0c    junction=roundabout
+0x0d
+0x0e
+0x0f
+0x10
+0x11
+0x12
+0x13
+0x16    highway=footway
+        highway=path
+        highway=steps
+        highway=pedestrian
+        highway=byway
+        railway=platform
