@@ -208,8 +208,11 @@ highway=*
 # cycle networks
 
 icn_network=yes								 		[0x10110 resolution 24-20 continue]
-rcn_network=yes	 									[0x10109 resolution 24-20 continue]
-lcn_network=yes										[0x10108 resolution 24-21 continue]
+rcn_network=yes
+ & icn_network!=yes	 									[0x10109 resolution 24-20 continue]
+lcn_network=yes
+ & rcn_network!=yes
+ & icn_network!=yes										[0x10108 resolution 24-21 continue]
 
 #------------------------------------------------------------------------------
 # Hide proposed ways
