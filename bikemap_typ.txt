@@ -2702,7 +2702,7 @@ ExtendedLabels=N
 
 [_line]
 Type=0x10e00
-UseOrientation=N
+UseOrientation=Y
 Xpm="32 7 2  1"
 "! c #101010"
 "  c none"
@@ -2765,7 +2765,7 @@ ExtendedLabels=N
 
 [_line]
 Type=0x10e03
-UseOrientation=N
+UseOrientation=Y
 Xpm="32 8 2  1"
 "! c #FF0000"
 "  c none"
