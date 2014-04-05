@@ -207,12 +207,34 @@ highway=*
 
 # cycle networks
 
-icn_network=yes								 		[0x10110 resolution 24-20 continue]
+icn_network=yes								 		[0x1010a resolution 20-18 continue]
+icn_network=yes
+ & rcn_network!=yes						 		[0x1010a resolution 21 continue]
+icn_network=yes
+ & rcn_network=yes						 		[0x1010b resolution 21 continue]
+icn_network=yes
+ & rcn_network!=yes
+ & lcn_network!=yes		         		[0x1010a resolution 24-22 continue]
+icn_network=yes
+ & rcn_network=yes
+ & lcn_network!=yes		         		[0x1010b resolution 24-22 continue]
+icn_network=yes
+ & rcn_network!=yes
+ & lcn_network=yes		         		[0x1010d resolution 24-22 continue]
+icn_network=yes
+ & rcn_network=yes
+ & lcn_network=yes		          		[0x1010e resolution 24-22 continue]
 rcn_network=yes
- & icn_network!=yes	 									[0x10109 resolution 24-20 continue]
+ & icn_network!=yes	 									[0x10109 resolution 21 continue]
+rcn_network=yes
+ & icn_network!=yes
+ & lcn_network!=yes	 									[0x10109 resolution 24-22 continue]
+lcn_network=yes
+ & rcn_network=yes
+ & icn_network!=yes										[0x1010c resolution 24-22 continue]
 lcn_network=yes
  & rcn_network!=yes
- & icn_network!=yes										[0x10108 resolution 24-21 continue]
+ & icn_network!=yes										[0x10108 resolution 24-22 continue]
 
 #------------------------------------------------------------------------------
 # Hide proposed ways
