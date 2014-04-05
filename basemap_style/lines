@@ -224,14 +224,6 @@ highway=* & disused=yes									[0x10e01 resolution 24]
 #		  echo "motorway_link lacks oneway"
 #		}
 
-# Set highway names to include the reference if there is one
-highway=motorway
-		{
-		  name '${ref|highway-symbol:hbox} ${name}' |
-		       '${ref|highway-symbol:hbox}' |
-		       '${name}';
-		}
-
 #--------------------------------------------------------------------------------------
 # process-exits and process-destination
 
@@ -283,6 +275,15 @@ highway=motorway
               'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
               'Exit ${mkgmap:exit_hint_ref}'
 	    }
+
+#--------------------------------------------------------------------------------------
+# Set highway names to include the reference if there is one
+highway=motorway
+                {
+                  name '${ref|highway-symbol:hbox} ${name}' |
+                       '${ref|highway-symbol:hbox}' |
+                       '${name}';
+                }
 
 highway=trunk
 		{
