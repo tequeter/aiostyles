@@ -17,8 +17,7 @@ description {
 The Basemap-style.
 This is a heavyweight style that is designed for use
 when mapping or routing with cars and motorcycle.
-Routing over ways like footway, cycleway, steps and
-tracks (grade2-6) is disabled.
+
 For cyclerouting, please use the Bikemap.
 
 
