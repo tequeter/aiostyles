@@ -212,18 +212,20 @@ highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
 highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
 highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
 
-cycle_net=lcn                                                                              [0x10108 resolution 24-22 continue]
-cycle_net=rcn                                                                              [0x10109 resolution 24-20 continue]
-cycle_net=icn                                                                              [0x1010a resolution 24-18 continue]
-cycle_net=icnrcn                                                                           [0x1010b resolution 24-20 continue]
-cycle_net=icnrcn                                                                           [0x1010a resolution 19-18 continue]
-cycle_net=rcnlcn                                                                           [0x1010c resolution 24-22 continue]
-cycle_net=rcnlcn                                                                           [0x10109 resolution 21-20 continue]
-cycle_net=icnlcn                                                                           [0x1010d resolution 24-22 continue]
-cycle_net=icnlcn                                                                           [0x1010a resolution 21-18 continue]
-cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-22 continue]
-cycle_net=icnrcnlcn                                                                        [0x1010b resolution 21-20 continue]
-cycle_net=icnrcnlcn                                                                        [0x1010a resolution 19-18 continue]
+cycle_net=lcn                                                                              [0x10108 resolution 24-23 continue]
+cycle_net=rcn                                                                              [0x10109 resolution 24-23 continue]
+cycle_net=rcn                                                                              [0x1010f resolution 22-21 continue]
+cycle_net=icn                                                                              [0x1010a resolution 24-23 continue]
+cycle_net=icn                                                                              [0x10110 resolution 22-18 continue]
+cycle_net=icnrcn                                                                           [0x1010b resolution 24-21 continue]
+cycle_net=icnrcn                                                                           [0x10110 resolution 20-18 continue]
+cycle_net=rcnlcn                                                                           [0x1010c resolution 24-23 continue]
+cycle_net=rcnlcn                                                                           [0x1010f resolution 23-21 continue]
+cycle_net=icnlcn                                                                           [0x1010d resolution 24-23 continue]
+cycle_net=icnlcn                                                                           [0x10110 resolution 22-18 continue]
+cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-23 continue]
+cycle_net=icnrcnlcn                                                                        [0x10111 resolution 22-21 continue]
+cycle_net=icnrcnlcn                                                                        [0x10110 resolution 20-18 continue]
 
 
 #highway=* & (icn_network=yes | rcn_network=yes | lcn_network=yes)
