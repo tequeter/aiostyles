@@ -4099,10 +4099,10 @@ String1=0x02,Poller
 String2=0x04,Bollard
 ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
-"!	c #000000"
-"#	c #FF0000"
-"%	c #FFFFFF"
-"  	c none"
+"!      c #000000"
+"#      c #FF0000"
+"%      c #FFFFFF"
+"       c none"
 "      ####      "
 "      ####      "
 "      %%%#      "
@@ -4130,10 +4130,10 @@ String1=0x02,Schranke
 String2=0x04,Lift gate
 ExtendedLabels=N
 DayXpm="16 16 4 1"   Colormode=16
-"!	c #101010"
-"#	c #FF3000"
-"%	c #FFFFFF"
-"  	c none"
+"!      c #101010"
+"#      c #FF3000"
+"%      c #FFFFFF"
+"       c none"
 "                "
 "    ##          "
 "   ####%%       "
@@ -4161,9 +4161,9 @@ String1=0x02,Tor/Gatter
 String2=0x04,Gate
 ExtendedLabels=N
 DayXpm="16 11 3 1"   Colormode=16
-"!	c #000000"
-"#	c #C5C5C5"
-"  	c none"
+"!      c #000000"
+"#      c #C5C5C5"
+"       c none"
 "                "
 "                "
 "####        ####"
@@ -4186,9 +4186,9 @@ String1=0x02,Umlaufsperre
 String2=0x04,Cycle barrier
 ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=16
-"!	c #FFFFFF"
-"#	c #FF3000"
-"  	c none"
+"!      c #FFFFFF"
+"#      c #FF3000"
+"       c none"
 "                "
 "                "
 "                "
@@ -4216,52 +4216,52 @@ String1=0x02,Bovi-Stop
 String2=0x04,Cattle grid
 ExtendedLabels=N
 DayXpm="16 6 46 2"   Colormode=32
-"!!	c #00CA20"  alpha=0
-"!#	c #7BCA6A"  alpha=0
-"!%	c #BD956A"  alpha=0
-"!?	c #BD958B"  alpha=0
-"!$	c #BD958B"  alpha=0
-"!*	c #BD956A"  alpha=0
-"!=	c #BD956A"  alpha=0
-"!1	c #7BCA6A"  alpha=0
-"!2	c #00CA20"  alpha=0
-"!3	c #39CA41"  alpha=0
-"!4	c #BD956A"  alpha=0
-"!5	c #BD956A"  alpha=0
-"!6	c #BDCA8B"  alpha=0
-"!7	c #BDCA8B"  alpha=0
-"!8	c #BD956A"  alpha=0
-"!9	c #BD956A"  alpha=0
-"#!	c #39CA41"  alpha=0
-"##	c #00CA20"  alpha=0
-"#%	c #39CA20"  alpha=0
-"#?	c #BDCAB4"  alpha=0
-"#$	c #BDCA8B"  alpha=0
-"#*	c #BDCA8B"  alpha=0
-"#=	c #BD958B"  alpha=0
-"#1	c #BD956A"  alpha=0
-"#2	c #BDCAB4"  alpha=0
-"#3	c #39CA20"  alpha=0
-"#4	c #BDCA8B"  alpha=0
-"#5	c #BD956A"  alpha=0
-"#6	c #BDCA8B"  alpha=0
-"#7	c #BDCAB4"  alpha=0
-"#8	c #BD958B"  alpha=0
-"#9	c #BDCA8B"  alpha=0
-"%!	c #BDCA8B"  alpha=0
-"%#	c #39CA41"  alpha=0
-"%%	c #BD956A"  alpha=0
-"%?	c #BD958B"  alpha=0
-"%$	c #BDCA8B"  alpha=0
-"%*	c #BD958B"  alpha=0
-"%=	c #39CA41"  alpha=0
-"%1	c #7B9541"  alpha=0
-"%2	c #BD956A"  alpha=0
-"%3	c #BDCA8B"  alpha=0
-"%4	c #BD958B"  alpha=0
-"%5	c #BD956A"  alpha=0
-"%6	c #BD956A"  alpha=0
-"%7	c #7B9541"  alpha=0
+"!!     c #00CA20"  alpha=0
+"!#     c #7BCA6A"  alpha=0
+"!%     c #BD956A"  alpha=0
+"!?     c #BD958B"  alpha=0
+"!$     c #BD958B"  alpha=0
+"!*     c #BD956A"  alpha=0
+"!=     c #BD956A"  alpha=0
+"!1     c #7BCA6A"  alpha=0
+"!2     c #00CA20"  alpha=0
+"!3     c #39CA41"  alpha=0
+"!4     c #BD956A"  alpha=0
+"!5     c #BD956A"  alpha=0
+"!6     c #BDCA8B"  alpha=0
+"!7     c #BDCA8B"  alpha=0
+"!8     c #BD956A"  alpha=0
+"!9     c #BD956A"  alpha=0
+"#!     c #39CA41"  alpha=0
+"##     c #00CA20"  alpha=0
+"#%     c #39CA20"  alpha=0
+"#?     c #BDCAB4"  alpha=0
+"#$     c #BDCA8B"  alpha=0
+"#*     c #BDCA8B"  alpha=0
+"#=     c #BD958B"  alpha=0
+"#1     c #BD956A"  alpha=0
+"#2     c #BDCAB4"  alpha=0
+"#3     c #39CA20"  alpha=0
+"#4     c #BDCA8B"  alpha=0
+"#5     c #BD956A"  alpha=0
+"#6     c #BDCA8B"  alpha=0
+"#7     c #BDCAB4"  alpha=0
+"#8     c #BD958B"  alpha=0
+"#9     c #BDCA8B"  alpha=0
+"%!     c #BDCA8B"  alpha=0
+"%#     c #39CA41"  alpha=0
+"%%     c #BD956A"  alpha=0
+"%?     c #BD958B"  alpha=0
+"%$     c #BDCA8B"  alpha=0
+"%*     c #BD958B"  alpha=0
+"%=     c #39CA41"  alpha=0
+"%1     c #7B9541"  alpha=0
+"%2     c #BD956A"  alpha=0
+"%3     c #BDCA8B"  alpha=0
+"%4     c #BD958B"  alpha=0
+"%5     c #BD956A"  alpha=0
+"%6     c #BD956A"  alpha=0
+"%7     c #7B9541"  alpha=0
 "!!!!!!!#!%!?!$!*!*!$!?!=!1!!!!!!"
 "!!!2!3!4!5!6!7!8!8!7!6!5!9#!##!!"
 "!!#%#?!*!7#$#*#=#=#*#$!7#1#2#3!!"
@@ -4274,102 +4274,227 @@ DayXpm="16 6 46 2"   Colormode=32
 
 [_point]
 Type=0x029
+SubType=0x05
+String1=0x02,Zaun
+String2=0x04,Fench
+ExtendedLabels=N
+DayXpm="16 11 3 1"   Colormode=16
+"!      c #000000"
+"#      c #C5C5C5"
+"       c none"
+"                "
+"                "
+"################"
+"#!!#!!#!!#!!#!!#"
+"#!!#!!#!!#!!#!!#"
+"#!!#!!#!!#!!#!!#"
+"#!!#!!#!!#!!#!!#"
+"#!!#!!#!!#!!#!!#"
+"#!!#!!#!!#!!#!!#"
+"#!!#!!#!!#!!#!!#"
+"################"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x06
+String1=0x02,Mauer
+String2=0x04,Wall
+ExtendedLabels=N
+DayXpm="16 11 3 1"   Colormode=16
+"!      c #000000"
+"#      c #C5C5C5"
+"       c none"
+"                "
+"                "
+"################"
+"#!!#!!#!!#!!#!!#"
+"################"
+"#!#!!#!!#!!#!!#!"
+"################"
+"#!!#!!#!!#!!#!!#"
+"################"
+"#!#!!#!!#!!#!!#!"
+"################"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x07
+String1=0x02,Kette/Seil
+String2=0x04,Chain/Rope
+ExtendedLabels=N
+DayXpm="16 11 3 1"   Colormode=16
+"!      c #000000"
+"#      c #C5C5C5"
+"       c none"
+"                "
+"                "
+"#              #"
+"#!            !#"
+"##!          !##"
+"#!#!!!!!!!!!#!##"
+"#!############!#"
+"#!!!!!!!!!!!!!!#"
+"#              #"
+"#              #"
+"################"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x08
+String1=0x02,Steinblock
+String2=0x04,Block
+ExtendedLabels=N
+DayXpm="16 11 3 1"   Colormode=16
+"!      c #000000"
+"#      c #C5C5C5"
+"       c none"
+"                "
+"                "
+"                "
+"                "
+"                "
+"                "
+"     ######     "
+"    ##!!!!!###  "
+"  ##!!!##!!!### "
+" ##!!###!!!!!###"
+"################"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x09
+String1=0x02,Hecke
+String2=0x04,Hedge
+ExtendedLabels=N
+DayXpm="16 11 3 1"   Colormode=16
+"!      c #D5D5D5"
+"#      c #00C000"
+"       c none"
+"                "
+"                "
+"################"
+"#!!#!!#!!#!!#!!#"
+"################"
+"#!#!!#!!#!!#!!#!"
+"################"
+"#!!#!!#!!#!!#!!#"
+"################"
+"#!#!!#!!#!!#!!#!"
+"################"
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x029
 SubType=0x10
 String1=0x02,Ortsschild
 String2=0x04,City limit
 ExtendedLabels=N
 DayXpm="16 16 91 2"   Colormode=32
-"!!	c #000000"  alpha=15
-"!#	c #BD9520"  alpha=13
-"!%	c #BD9520"  alpha=2
-"!?	c #BD9520"  alpha=2
-"!$	c #BD9520"  alpha=2
-"!*	c #BD9520"  alpha=2
-"!=	c #BD9520"  alpha=2
-"!1	c #BD9520"  alpha=2
-"!2	c #BD9520"  alpha=2
-"!3	c #BD9520"  alpha=0
-"!4	c #BD9520"  alpha=2
-"!5	c #FFCA41"  alpha=0
-"!6	c #BD9520"  alpha=1
-"!7	c #BD9520"  alpha=0
-"!8	c #FFCA20"  alpha=0
-"!9	c #BD9520"  alpha=0
-"#!	c #BD9520"  alpha=0
-"##	c #BD9520"  alpha=0
-"#%	c #BD9520"  alpha=0
-"#?	c #FFCA20"  alpha=0
-"#$	c #FFCA41"  alpha=0
-"#*	c #BD9520"  alpha=0
-"#=	c #7B6520"  alpha=0
-"#1	c #7B6520"  alpha=0
-"#2	c #7B6520"  alpha=0
-"#3	c #BD9520"  alpha=0
-"#4	c #7B6520"  alpha=0
-"#5	c #BD9520"  alpha=0
-"#6	c #BD9520"  alpha=0
-"#7	c #7B6520"  alpha=0
-"#8	c #BD9520"  alpha=0
-"#9	c #BD9520"  alpha=0
-"%!	c #BDCA20"  alpha=0
-"%#	c #BD9520"  alpha=1
-"%%	c #FFCA41"  alpha=0
-"%?	c #393000"  alpha=0
-"%$	c #7B6520"  alpha=0
-"%*	c #7B6520"  alpha=0
-"%=	c #7B6520"  alpha=0
-"%1	c #7B6520"  alpha=0
-"%2	c #BD9520"  alpha=0
-"%3	c #7B6520"  alpha=0
-"%4	c #BD9520"  alpha=0
-"%5	c #BD9520"  alpha=0
-"%6	c #7B6520"  alpha=0
-"%7	c #BD9520"  alpha=0
-"%8	c #7B6520"  alpha=0
-"%9	c #FFCA41"  alpha=0
-"?!	c #BD9520"  alpha=0
-"?#	c #BDCA20"  alpha=0
-"?%	c #BD9520"  alpha=0
-"??	c #BD9520"  alpha=0
-"?$	c #BD9520"  alpha=0
-"?*	c #BD9520"  alpha=0
-"?=	c #FFCA20"  alpha=0
-"?1	c #BD9520"  alpha=0
-"?2	c #FFCA20"  alpha=0
-"?3	c #BD9520"  alpha=0
-"?4	c #BD9520"  alpha=2
-"?5	c #FFCA41"  alpha=0
-"?6	c #FFCA41"  alpha=0
-"?7	c #FFCA41"  alpha=0
-"?8	c #FFCA20"  alpha=0
-"?9	c #FFCA41"  alpha=0
-"$!	c #BD9520"  alpha=1
-"$#	c #BD9520"  alpha=0
-"$%	c #BD9520"  alpha=0
-"$?	c #BD9520"  alpha=0
-"$$	c #BD9520"  alpha=0
-"$*	c #FFCA20"  alpha=0
-"$=	c #BD9520"  alpha=0
-"$1	c #BD9520"  alpha=0
-"$2	c #BD9520"  alpha=0
-"$3	c #BD9520"  alpha=0
-"$4	c #BD9520"  alpha=0
-"$5	c #BD9520"  alpha=0
-"$6	c #BD9520"  alpha=0
-"$7	c #FFCA20"  alpha=0
-"$8	c #FFCA20"  alpha=0
-"$9	c #FFCA20"  alpha=0
-"*!	c #FFCA20"  alpha=0
-"*#	c #FFCA20"  alpha=0
-"*%	c #FFCA41"  alpha=0
-"*?	c #FFCA20"  alpha=0
-"*$	c #FFCA20"  alpha=0
-"**	c #BDCA20"  alpha=0
-"*=	c #BD9520"  alpha=0
-"*1	c #FFCA20"  alpha=0
-"*2	c #BD9520"  alpha=2
-"*3	c #BD9520"  alpha=1
-"*4	c #BD9520"  alpha=0
+"!!     c #000000"  alpha=15
+"!#     c #BD9520"  alpha=13
+"!%     c #BD9520"  alpha=2
+"!?     c #BD9520"  alpha=2
+"!$     c #BD9520"  alpha=2
+"!*     c #BD9520"  alpha=2
+"!=     c #BD9520"  alpha=2
+"!1     c #BD9520"  alpha=2
+"!2     c #BD9520"  alpha=2
+"!3     c #BD9520"  alpha=0
+"!4     c #BD9520"  alpha=2
+"!5     c #FFCA41"  alpha=0
+"!6     c #BD9520"  alpha=1
+"!7     c #BD9520"  alpha=0
+"!8     c #FFCA20"  alpha=0
+"!9     c #BD9520"  alpha=0
+"#!     c #BD9520"  alpha=0
+"##     c #BD9520"  alpha=0
+"#%     c #BD9520"  alpha=0
+"#?     c #FFCA20"  alpha=0
+"#$     c #FFCA41"  alpha=0
+"#*     c #BD9520"  alpha=0
+"#=     c #7B6520"  alpha=0
+"#1     c #7B6520"  alpha=0
+"#2     c #7B6520"  alpha=0
+"#3     c #BD9520"  alpha=0
+"#4     c #7B6520"  alpha=0
+"#5     c #BD9520"  alpha=0
+"#6     c #BD9520"  alpha=0
+"#7     c #7B6520"  alpha=0
+"#8     c #BD9520"  alpha=0
+"#9     c #BD9520"  alpha=0
+"%!     c #BDCA20"  alpha=0
+"%#     c #BD9520"  alpha=1
+"%%     c #FFCA41"  alpha=0
+"%?     c #393000"  alpha=0
+"%$     c #7B6520"  alpha=0
+"%*     c #7B6520"  alpha=0
+"%=     c #7B6520"  alpha=0
+"%1     c #7B6520"  alpha=0
+"%2     c #BD9520"  alpha=0
+"%3     c #7B6520"  alpha=0
+"%4     c #BD9520"  alpha=0
+"%5     c #BD9520"  alpha=0
+"%6     c #7B6520"  alpha=0
+"%7     c #BD9520"  alpha=0
+"%8     c #7B6520"  alpha=0
+"%9     c #FFCA41"  alpha=0
+"?!     c #BD9520"  alpha=0
+"?#     c #BDCA20"  alpha=0
+"?%     c #BD9520"  alpha=0
+"??     c #BD9520"  alpha=0
+"?$     c #BD9520"  alpha=0
+"?*     c #BD9520"  alpha=0
+"?=     c #FFCA20"  alpha=0
+"?1     c #BD9520"  alpha=0
+"?2     c #FFCA20"  alpha=0
+"?3     c #BD9520"  alpha=0
+"?4     c #BD9520"  alpha=2
+"?5     c #FFCA41"  alpha=0
+"?6     c #FFCA41"  alpha=0
+"?7     c #FFCA41"  alpha=0
+"?8     c #FFCA20"  alpha=0
+"?9     c #FFCA41"  alpha=0
+"$!     c #BD9520"  alpha=1
+"$#     c #BD9520"  alpha=0
+"$%     c #BD9520"  alpha=0
+"$?     c #BD9520"  alpha=0
+"$$     c #BD9520"  alpha=0
+"$*     c #FFCA20"  alpha=0
+"$=     c #BD9520"  alpha=0
+"$1     c #BD9520"  alpha=0
+"$2     c #BD9520"  alpha=0
+"$3     c #BD9520"  alpha=0
+"$4     c #BD9520"  alpha=0
+"$5     c #BD9520"  alpha=0
+"$6     c #BD9520"  alpha=0
+"$7     c #FFCA20"  alpha=0
+"$8     c #FFCA20"  alpha=0
+"$9     c #FFCA20"  alpha=0
+"*!     c #FFCA20"  alpha=0
+"*#     c #FFCA20"  alpha=0
+"*%     c #FFCA41"  alpha=0
+"*?     c #FFCA20"  alpha=0
+"*$     c #FFCA20"  alpha=0
+"**     c #BDCA20"  alpha=0
+"*=     c #BD9520"  alpha=0
+"*1     c #FFCA20"  alpha=0
+"*2     c #BD9520"  alpha=2
+"*3     c #BD9520"  alpha=1
+"*4     c #BD9520"  alpha=0
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -4397,87 +4522,87 @@ String1=0x02,Ampel
 String2=0x04,Traffic signals
 ExtendedLabels=N
 DayXpm="6 16 81 2"   Colormode=32
-"!!	c #000000"  alpha=6
-"!#	c #390000"  alpha=12
-"!%	c #7B0000"  alpha=2
-"!?	c #7B0000"  alpha=1
-"!$	c #390000"  alpha=8
-"!*	c #000000"  alpha=4
-"!=	c #390000"  alpha=14
-"!1	c #BD0000"  alpha=9
-"!2	c #FF0000"  alpha=0
-"!3	c #FF0000"  alpha=0
-"!4	c #BD0000"  alpha=8
-"!5	c #390000"  alpha=8
-"!6	c #390000"  alpha=1
-"!7	c #FF0000"  alpha=0
-"!8	c #FF0000"  alpha=0
-"!9	c #7B0000"  alpha=14
-"#!	c #390000"  alpha=2
-"##	c #FF0000"  alpha=0
-"#%	c #390000"  alpha=4
-"#?	c #000000"  alpha=2
-"#$	c #BD0000"  alpha=0
-"#*	c #FF0000"  alpha=0
-"#=	c #FF0000"  alpha=0
-"#1	c #BD0000"  alpha=0
-"#2	c #101010"  alpha=4
-"#3	c #000000"  alpha=2
-"#4	c #390000"  alpha=0
-"#5	c #BD6500"  alpha=0
-"#6	c #BD6500"  alpha=0
-"#7	c #393000"  alpha=0
-"#8	c #000000"  alpha=4
-"#9	c #101010"  alpha=2
-"%!	c #BD9500"  alpha=0
-"%#	c #FFFF00"  alpha=0
-"%%	c #BDCA00"  alpha=0
-"%?	c #101010"  alpha=4
-"%$	c #396500"  alpha=2
-"%*	c #FFFF00"  alpha=0
-"%=	c #FFFF00"  alpha=0
-"%1	c #FFFF00"  alpha=0
-"%2	c #396500"  alpha=4
-"%3	c #396500"  alpha=2
-"%4	c #FFFF00"  alpha=0
-"%5	c #FFFF00"  alpha=0
-"%6	c #396500"  alpha=4
-"%7	c #101010"  alpha=2
-"%8	c #BDCA00"  alpha=0
-"%9	c #FFFF00"  alpha=0
-"?!	c #FFFF00"  alpha=0
-"?#	c #BDCA00"  alpha=0
-"?%	c #101010"  alpha=4
-"??	c #003000"  alpha=0
-"?$	c #7B9500"  alpha=0
-"?*	c #7B9500"  alpha=0
-"?=	c #393000"  alpha=0
-"?1	c #000000"  alpha=2
-"?2	c #009500"  alpha=0
-"?3	c #00CA00"  alpha=0
-"?4	c #00CA00"  alpha=0
-"?5	c #009500"  alpha=0
-"?6	c #000000"  alpha=4
-"?7	c #003000"  alpha=2
-"?8	c #00CA00"  alpha=0
-"?9	c #00CA00"  alpha=0
-"$!	c #00CA00"  alpha=0
-"$#	c #003000"  alpha=4
-"$%	c #006500"  alpha=0
-"$?	c #00CA00"  alpha=0
-"$$	c #006500"  alpha=13
-"$*	c #003000"  alpha=10
-"$=	c #009500"  alpha=8
-"$1	c #00CA00"  alpha=0
-"$2	c #00CA00"  alpha=0
-"$3	c #009500"  alpha=7
-"$4	c #003000"  alpha=4
-"$5	c #000000"  alpha=4
-"$6	c #003000"  alpha=5
-"$7	c #006500"  alpha=15
-"$8	c #006500"  alpha=14
-"$9	c #003000"  alpha=2
-"*!	c #000000"  alpha=2
+"!!     c #000000"  alpha=6
+"!#     c #390000"  alpha=12
+"!%     c #7B0000"  alpha=2
+"!?     c #7B0000"  alpha=1
+"!$     c #390000"  alpha=8
+"!*     c #000000"  alpha=4
+"!=     c #390000"  alpha=14
+"!1     c #BD0000"  alpha=9
+"!2     c #FF0000"  alpha=0
+"!3     c #FF0000"  alpha=0
+"!4     c #BD0000"  alpha=8
+"!5     c #390000"  alpha=8
+"!6     c #390000"  alpha=1
+"!7     c #FF0000"  alpha=0
+"!8     c #FF0000"  alpha=0
+"!9     c #7B0000"  alpha=14
+"#!     c #390000"  alpha=2
+"##     c #FF0000"  alpha=0
+"#%     c #390000"  alpha=4
+"#?     c #000000"  alpha=2
+"#$     c #BD0000"  alpha=0
+"#*     c #FF0000"  alpha=0
+"#=     c #FF0000"  alpha=0
+"#1     c #BD0000"  alpha=0
+"#2     c #101010"  alpha=4
+"#3     c #000000"  alpha=2
+"#4     c #390000"  alpha=0
+"#5     c #BD6500"  alpha=0
+"#6     c #BD6500"  alpha=0
+"#7     c #393000"  alpha=0
+"#8     c #000000"  alpha=4
+"#9     c #101010"  alpha=2
+"%!     c #BD9500"  alpha=0
+"%#     c #FFFF00"  alpha=0
+"%%     c #BDCA00"  alpha=0
+"%?     c #101010"  alpha=4
+"%$     c #396500"  alpha=2
+"%*     c #FFFF00"  alpha=0
+"%=     c #FFFF00"  alpha=0
+"%1     c #FFFF00"  alpha=0
+"%2     c #396500"  alpha=4
+"%3     c #396500"  alpha=2
+"%4     c #FFFF00"  alpha=0
+"%5     c #FFFF00"  alpha=0
+"%6     c #396500"  alpha=4
+"%7     c #101010"  alpha=2
+"%8     c #BDCA00"  alpha=0
+"%9     c #FFFF00"  alpha=0
+"?!     c #FFFF00"  alpha=0
+"?#     c #BDCA00"  alpha=0
+"?%     c #101010"  alpha=4
+"??     c #003000"  alpha=0
+"?$     c #7B9500"  alpha=0
+"?*     c #7B9500"  alpha=0
+"?=     c #393000"  alpha=0
+"?1     c #000000"  alpha=2
+"?2     c #009500"  alpha=0
+"?3     c #00CA00"  alpha=0
+"?4     c #00CA00"  alpha=0
+"?5     c #009500"  alpha=0
+"?6     c #000000"  alpha=4
+"?7     c #003000"  alpha=2
+"?8     c #00CA00"  alpha=0
+"?9     c #00CA00"  alpha=0
+"$!     c #00CA00"  alpha=0
+"$#     c #003000"  alpha=4
+"$%     c #006500"  alpha=0
+"$?     c #00CA00"  alpha=0
+"$$     c #006500"  alpha=13
+"$*     c #003000"  alpha=10
+"$=     c #009500"  alpha=8
+"$1     c #00CA00"  alpha=0
+"$2     c #00CA00"  alpha=0
+"$3     c #009500"  alpha=7
+"$4     c #003000"  alpha=4
+"$5     c #000000"  alpha=4
+"$6     c #003000"  alpha=5
+"$7     c #006500"  alpha=15
+"$8     c #006500"  alpha=14
+"$9     c #003000"  alpha=2
+"*!     c #000000"  alpha=2
 "!!!#!%!?!$!*"
 "!=!1!2!3!4!5"
 "!6!7!8!8!2!9"
@@ -4505,75 +4630,75 @@ String1=0x02,Stopschild
 String2=0x04,Stop sign
 ExtendedLabels=N
 DayXpm="16 16 69 2"   Colormode=32
-"!!	c #000000"  alpha=15
-"!#	c #E6E6E6"  alpha=3
-"!%	c #FFFFFF"  alpha=2
-"!?	c #FFCAD5"  alpha=3
-"!$	c #FFCAD5"  alpha=3
-"!*	c #FFFFFF"  alpha=2
-"!=	c #E6E6E6"  alpha=2
-"!1	c #FFFFFF"  alpha=0
-"!2	c #BD656A"  alpha=0
-"!3	c #BD0000"  alpha=0
-"!4	c #FFFFFF"  alpha=1
-"!5	c #FFCAD5"  alpha=2
-"!6	c #BD0000"  alpha=0
-"!7	c #FF958B"  alpha=0
-"!8	c #FFCAB4"  alpha=0
-"!9	c #BD3041"  alpha=0
-"#!	c #FFCAB4"  alpha=0
-"##	c #FFCAD5"  alpha=0
-"#%	c #FF656A"  alpha=0
-"#?	c #FF656A"  alpha=0
-"#$	c #FFCAB4"  alpha=0
-"#*	c #BD3041"  alpha=0
-"#=	c #FF656A"  alpha=0
-"#1	c #FFCAD5"  alpha=0
-"#2	c #FF958B"  alpha=0
-"#3	c #BD0000"  alpha=0
-"#4	c #FFCAB4"  alpha=0
-"#5	c #BD3041"  alpha=0
-"#6	c #FF658B"  alpha=0
-"#7	c #BD3020"  alpha=0
-"#8	c #FF95B4"  alpha=0
-"#9	c #BD0000"  alpha=0
-"%!	c #FFCAD5"  alpha=0
-"%#	c #BD3020"  alpha=0
-"%%	c #FFCAB4"  alpha=0
-"%?	c #FF658B"  alpha=0
-"%$	c #BD6541"  alpha=0
-"%*	c #FF95B4"  alpha=0
-"%=	c #BD3020"  alpha=0
-"%1	c #BD0000"  alpha=0
-"%2	c #FF656A"  alpha=0
-"%3	c #BD0000"  alpha=0
-"%4	c #BD3020"  alpha=0
-"%5	c #FFCAD5"  alpha=0
-"%6	c #BD0020"  alpha=0
-"%7	c #FFCAB4"  alpha=0
-"%8	c #FF656A"  alpha=0
-"%9	c #FFCAB4"  alpha=0
-"?!	c #BD0020"  alpha=0
-"?#	c #BD0000"  alpha=0
-"?%	c #FF958B"  alpha=0
-"??	c #BD656A"  alpha=0
-"?$	c #BD0020"  alpha=0
-"?*	c #FF958B"  alpha=0
-"?=	c #BD3041"  alpha=0
-"?1	c #FF958B"  alpha=0
-"?2	c #BD3020"  alpha=0
-"?3	c #BD6541"  alpha=0
-"?4	c #FF958B"  alpha=0
-"?5	c #BD3020"  alpha=0
-"?6	c #FF958B"  alpha=0
-"?7	c #BD3041"  alpha=0
-"?8	c #FF656A"  alpha=0
-"?9	c #BD3041"  alpha=0
-"$!	c #FFFFFF"  alpha=0
-"$#	c #E6E6E6"  alpha=2
-"$%	c #FFFFFF"  alpha=13
-"$?	c #E6E6E6"  alpha=1
-"$$	c #FFFFFF"  alpha=14
+"!!     c #000000"  alpha=15
+"!#     c #E6E6E6"  alpha=3
+"!%     c #FFFFFF"  alpha=2
+"!?     c #FFCAD5"  alpha=3
+"!$     c #FFCAD5"  alpha=3
+"!*     c #FFFFFF"  alpha=2
+"!=     c #E6E6E6"  alpha=2
+"!1     c #FFFFFF"  alpha=0
+"!2     c #BD656A"  alpha=0
+"!3     c #BD0000"  alpha=0
+"!4     c #FFFFFF"  alpha=1
+"!5     c #FFCAD5"  alpha=2
+"!6     c #BD0000"  alpha=0
+"!7     c #FF958B"  alpha=0
+"!8     c #FFCAB4"  alpha=0
+"!9     c #BD3041"  alpha=0
+"#!     c #FFCAB4"  alpha=0
+"##     c #FFCAD5"  alpha=0
+"#%     c #FF656A"  alpha=0
+"#?     c #FF656A"  alpha=0
+"#$     c #FFCAB4"  alpha=0
+"#*     c #BD3041"  alpha=0
+"#=     c #FF656A"  alpha=0
+"#1     c #FFCAD5"  alpha=0
+"#2     c #FF958B"  alpha=0
+"#3     c #BD0000"  alpha=0
+"#4     c #FFCAB4"  alpha=0
+"#5     c #BD3041"  alpha=0
+"#6     c #FF658B"  alpha=0
+"#7     c #BD3020"  alpha=0
+"#8     c #FF95B4"  alpha=0
+"#9     c #BD0000"  alpha=0
+"%!     c #FFCAD5"  alpha=0
+"%#     c #BD3020"  alpha=0
+"%%     c #FFCAB4"  alpha=0
+"%?     c #FF658B"  alpha=0
+"%$     c #BD6541"  alpha=0
+"%*     c #FF95B4"  alpha=0
+"%=     c #BD3020"  alpha=0
+"%1     c #BD0000"  alpha=0
+"%2     c #FF656A"  alpha=0
+"%3     c #BD0000"  alpha=0
+"%4     c #BD3020"  alpha=0
+"%5     c #FFCAD5"  alpha=0
+"%6     c #BD0020"  alpha=0
+"%7     c #FFCAB4"  alpha=0
+"%8     c #FF656A"  alpha=0
+"%9     c #FFCAB4"  alpha=0
+"?!     c #BD0020"  alpha=0
+"?#     c #BD0000"  alpha=0
+"?%     c #FF958B"  alpha=0
+"??     c #BD656A"  alpha=0
+"?$     c #BD0020"  alpha=0
+"?*     c #FF958B"  alpha=0
+"?=     c #BD3041"  alpha=0
+"?1     c #FF958B"  alpha=0
+"?2     c #BD3020"  alpha=0
+"?3     c #BD6541"  alpha=0
+"?4     c #FF958B"  alpha=0
+"?5     c #BD3020"  alpha=0
+"?6     c #FF958B"  alpha=0
+"?7     c #BD3041"  alpha=0
+"?8     c #FF656A"  alpha=0
+"?9     c #BD3041"  alpha=0
+"$!     c #FFFFFF"  alpha=0
+"$#     c #E6E6E6"  alpha=2
+"$%     c #FFFFFF"  alpha=13
+"$?     c #E6E6E6"  alpha=1
+"$$     c #FFFFFF"  alpha=14
 "!!!!!!!#!%!?!$!$!$!$!?!*!#!!!!!!"
 "!!!!!=!1!2!3!3!3!3!3!3!2!1!=!!!!"
 "!!!=!1!2!3!3!3!3!3!3!3!3!2!1!=!!"
@@ -4601,9 +4726,9 @@ String1=0x02,Vorfahrt gewähren
 String2=0x04,Give way
 ExtendedLabels=N
 DayXpm="16 16 3 1"   Colormode=16
-"!	c #FF0000"
-"#	c #FFFFFF"
-"  	c none"
+"!      c #FF0000"
+"#      c #FFFFFF"
+"       c none"
 "                "
 "############### "
 "#!!!!!!!!!!!!!# "
@@ -4631,41 +4756,41 @@ String1=0x02,Sackgasse
 String2=0x04,No exit
 ExtendedLabels=N
 DayXpm="14 14 35 2"   Colormode=16
-"!!	c #A4A4A4"
-"!#	c #7B65B4"
-"!%	c #7B65B4"
-"!?	c #B4B4B4"
-"!$	c #7B95B4"
-"!*	c #0065FF"
-"!=	c #7B95B4"
-"!1	c #7B95B4"
-"!2	c #7B95B4"
-"!3	c #7B95B4"
-"!4	c #7B658B"
-"!5	c #7B656A"
-"!6	c #7B658B"
-"!7	c #7B95B4"
-"!8	c #FF3020"
-"!9	c #BD3041"
-"#!	c #7B95B4"
-"##	c #7B658B"
-"#%	c #BD306A"
-"#?	c #BD3041"
-"#$	c #FF656A"
-"#*	c #7B658B"
-"#=	c #0095FF"
-"#1	c #FFFFFF"
-"#2	c #7B95B4"
-"#3	c #7B95B4"
-"#4	c #7B95B4"
-"#5	c #7B95B4"
-"#6	c #7B95B4"
-"#7	c #B4B4B4"
-"#8	c #7B95B4"
-"#9	c #7B95B4"
-"%!	c #7B95B4"
-"%#	c #E6E6E6"
-"%%	c #B4B4B4"
+"!!     c #A4A4A4"
+"!#     c #7B65B4"
+"!%     c #7B65B4"
+"!?     c #B4B4B4"
+"!$     c #7B95B4"
+"!*     c #0065FF"
+"!=     c #7B95B4"
+"!1     c #7B95B4"
+"!2     c #7B95B4"
+"!3     c #7B95B4"
+"!4     c #7B658B"
+"!5     c #7B656A"
+"!6     c #7B658B"
+"!7     c #7B95B4"
+"!8     c #FF3020"
+"!9     c #BD3041"
+"#!     c #7B95B4"
+"##     c #7B658B"
+"#%     c #BD306A"
+"#?     c #BD3041"
+"#$     c #FF656A"
+"#*     c #7B658B"
+"#=     c #0095FF"
+"#1     c #FFFFFF"
+"#2     c #7B95B4"
+"#3     c #7B95B4"
+"#4     c #7B95B4"
+"#5     c #7B95B4"
+"#6     c #7B95B4"
+"#7     c #B4B4B4"
+"#8     c #7B95B4"
+"#9     c #7B95B4"
+"%!     c #7B95B4"
+"%#     c #E6E6E6"
+"%%     c #B4B4B4"
 "!!#!#!#!#!#!#!#!#!#!#!#!#!!?"
 "#!!*!*!*!*!*!*!*!*!*!*!*!*#!"
 "#!!*!*!*!*!*!*!*!*!*!*!*!*#!"
@@ -4691,89 +4816,89 @@ String1=0x02,Mini-Kreisverkehr
 String2=0x04,Mini roundabout
 ExtendedLabels=N
 DayXpm="16 16 83 2"   Colormode=32
-"!!	c #000000"  alpha=15
-"!#	c #838383"  alpha=7
-"!%	c #D5D5D5"  alpha=12
-"!?	c #BDCAD5"  alpha=8
-"!$	c #B4B4B4"  alpha=4
-"!*	c #D5D5D5"  alpha=3
-"!=	c #7B95D5"  alpha=1
-"!1	c #3965B4"  alpha=0
-"!2	c #00308B"  alpha=0
-"!3	c #00308B"  alpha=0
-"!4	c #D5D5D5"  alpha=0
-"!5	c #3965B4"  alpha=3
-"!6	c #00308B"  alpha=0
-"!7	c #00308B"  alpha=0
-"!8	c #00308B"  alpha=0
-"!9	c #3965B4"  alpha=0
-"#!	c #7B65B4"  alpha=0
-"##	c #7B65B4"  alpha=3
-"#%	c #D5D5D5"  alpha=3
-"#?	c #00308B"  alpha=0
-"#$	c #7B95D5"  alpha=0
-"#*	c #E6E6E6"  alpha=0
-"#=	c #3965B4"  alpha=0
-"#1	c #00308B"  alpha=0
-"#2	c #E6E6E6"  alpha=0
-"#3	c #E6E6E6"  alpha=0
-"#4	c #7B65B4"  alpha=0
-"#5	c #00308B"  alpha=0
-"#6	c #838383"  alpha=7
-"#7	c #BDCAD5"  alpha=0
-"#8	c #BDCAD5"  alpha=0
-"#9	c #3930B4"  alpha=0
-"%!	c #BDCAD5"  alpha=0
-"%#	c #D5D5D5"  alpha=0
-"%%	c #D5D5D5"  alpha=12
-"%?	c #7B95D5"  alpha=0
-"%$	c #BDCAD5"  alpha=0
-"%*	c #3965B4"  alpha=0
-"%=	c #7B95B4"  alpha=0
-"%1	c #BDCAD5"  alpha=0
-"%2	c #7B95D5"  alpha=0
-"%3	c #0030B4"  alpha=0
-"%4	c #E6E6E6"  alpha=0
-"%5	c #3965B4"  alpha=0
-"%6	c #00308B"  alpha=0
-"%7	c #3965B4"  alpha=0
-"%8	c #E6E6E6"  alpha=0
-"%9	c #B4B4B4"  alpha=4
-"?!	c #7B95D5"  alpha=0
-"?#	c #7B95D5"  alpha=0
-"?%	c #E6E6E6"  alpha=0
-"??	c #3965B4"  alpha=0
-"?$	c #E6E6E6"  alpha=0
-"?*	c #0030B4"  alpha=0
-"?=	c #00308B"  alpha=0
-"?1	c #BDCAD5"  alpha=0
-"?2	c #FFFFFF"  alpha=0
-"?3	c #7B95B4"  alpha=0
-"?4	c #D5D5D5"  alpha=0
-"?5	c #0030B4"  alpha=0
-"?6	c #00308B"  alpha=0
-"?7	c #3965B4"  alpha=0
-"?8	c #7B95D5"  alpha=0
-"?9	c #00308B"  alpha=0
-"$!	c #0030B4"  alpha=0
-"$#	c #3965B4"  alpha=0
-"$%	c #0030B4"  alpha=0
-"$?	c #7BCAD5"  alpha=0
-"$$	c #BDCAD5"  alpha=0
-"$*	c #0030B4"  alpha=0
-"$=	c #3965B4"  alpha=0
-"$1	c #7B95D5"  alpha=0
-"$2	c #FFFFFF"  alpha=0
-"$3	c #7B95D5"  alpha=0
-"$4	c #7B95D5"  alpha=0
-"$5	c #E6E6E6"  alpha=0
-"$6	c #E6E6E6"  alpha=0
-"$7	c #E6E6E6"  alpha=0
-"$8	c #D5D5D5"  alpha=0
-"$9	c #7B65B4"  alpha=0
-"*!	c #0030B4"  alpha=0
-"*#	c #0030B4"  alpha=0
-"*%	c #3965B4"  alpha=0
+"!!     c #000000"  alpha=15
+"!#     c #838383"  alpha=7
+"!%     c #D5D5D5"  alpha=12
+"!?     c #BDCAD5"  alpha=8
+"!$     c #B4B4B4"  alpha=4
+"!*     c #D5D5D5"  alpha=3
+"!=     c #7B95D5"  alpha=1
+"!1     c #3965B4"  alpha=0
+"!2     c #00308B"  alpha=0
+"!3     c #00308B"  alpha=0
+"!4     c #D5D5D5"  alpha=0
+"!5     c #3965B4"  alpha=3
+"!6     c #00308B"  alpha=0
+"!7     c #00308B"  alpha=0
+"!8     c #00308B"  alpha=0
+"!9     c #3965B4"  alpha=0
+"#!     c #7B65B4"  alpha=0
+"##     c #7B65B4"  alpha=3
+"#%     c #D5D5D5"  alpha=3
+"#?     c #00308B"  alpha=0
+"#$     c #7B95D5"  alpha=0
+"#*     c #E6E6E6"  alpha=0
+"#=     c #3965B4"  alpha=0
+"#1     c #00308B"  alpha=0
+"#2     c #E6E6E6"  alpha=0
+"#3     c #E6E6E6"  alpha=0
+"#4     c #7B65B4"  alpha=0
+"#5     c #00308B"  alpha=0
+"#6     c #838383"  alpha=7
+"#7     c #BDCAD5"  alpha=0
+"#8     c #BDCAD5"  alpha=0
+"#9     c #3930B4"  alpha=0
+"%!     c #BDCAD5"  alpha=0
+"%#     c #D5D5D5"  alpha=0
+"%%     c #D5D5D5"  alpha=12
+"%?     c #7B95D5"  alpha=0
+"%$     c #BDCAD5"  alpha=0
+"%*     c #3965B4"  alpha=0
+"%=     c #7B95B4"  alpha=0
+"%1     c #BDCAD5"  alpha=0
+"%2     c #7B95D5"  alpha=0
+"%3     c #0030B4"  alpha=0
+"%4     c #E6E6E6"  alpha=0
+"%5     c #3965B4"  alpha=0
+"%6     c #00308B"  alpha=0
+"%7     c #3965B4"  alpha=0
+"%8     c #E6E6E6"  alpha=0
+"%9     c #B4B4B4"  alpha=4
+"?!     c #7B95D5"  alpha=0
+"?#     c #7B95D5"  alpha=0
+"?%     c #E6E6E6"  alpha=0
+"??     c #3965B4"  alpha=0
+"?$     c #E6E6E6"  alpha=0
+"?*     c #0030B4"  alpha=0
+"?=     c #00308B"  alpha=0
+"?1     c #BDCAD5"  alpha=0
+"?2     c #FFFFFF"  alpha=0
+"?3     c #7B95B4"  alpha=0
+"?4     c #D5D5D5"  alpha=0
+"?5     c #0030B4"  alpha=0
+"?6     c #00308B"  alpha=0
+"?7     c #3965B4"  alpha=0
+"?8     c #7B95D5"  alpha=0
+"?9     c #00308B"  alpha=0
+"$!     c #0030B4"  alpha=0
+"$#     c #3965B4"  alpha=0
+"$%     c #0030B4"  alpha=0
+"$?     c #7BCAD5"  alpha=0
+"$$     c #BDCAD5"  alpha=0
+"$*     c #0030B4"  alpha=0
+"$=     c #3965B4"  alpha=0
+"$1     c #7B95D5"  alpha=0
+"$2     c #FFFFFF"  alpha=0
+"$3     c #7B95D5"  alpha=0
+"$4     c #7B95D5"  alpha=0
+"$5     c #E6E6E6"  alpha=0
+"$6     c #E6E6E6"  alpha=0
+"$7     c #E6E6E6"  alpha=0
+"$8     c #D5D5D5"  alpha=0
+"$9     c #7B65B4"  alpha=0
+"*!     c #0030B4"  alpha=0
+"*#     c #0030B4"  alpha=0
+"*%     c #3965B4"  alpha=0
 "!!!!!!!!!#!%!?!$!$!?!%!#!!!!!!!!"
 "!!!!!!!*!=!1!2!3!3!2!1!=!*!!!!!!"
 "!!!!!4!5!3!3!6!7!3!8!9#!##!4!!!!"
@@ -4801,8 +4926,8 @@ String1=0x02,Zebrastreifen
 String2=0x04,Crossing
 ExtendedLabels=N
 DayXpm="14 7 2 1"   Colormode=32
-"!	c #949494"  alpha=0
-"#	c #FFFFFF"  alpha=0
+"!      c #949494"  alpha=0
+"#      c #FFFFFF"  alpha=0
 "!!!!!!!!!!!!!!"
 "!!!!!####!!!!!"
 "!!!!!!!!!!!!!!"
@@ -4811,6 +4936,86 @@ DayXpm="14 7 2 1"   Colormode=32
 "!!!!!####!!!!!"
 "!!!!!!!!!!!!!!"
 ;12345678901234
+[end]
+
+
+[_point]
+Type=0x029
+SubType=0x18
+String1=0x02,Überwachungskamera
+String2=0x04,Surveillance
+ExtendedLabels=N
+DayXpm="16 16 53 2"   Colormode=32
+"!!     c #000000"  alpha=3
+"!#     c #000000"  alpha=6
+"!%     c #000000"  alpha=9
+"!?     c #000000"  alpha=1
+"!$     c #000000"  alpha=0
+"!*     c #838383"  alpha=0
+"!=     c #000000"  alpha=0
+"!1     c #525252"  alpha=0
+"!2     c #949494"  alpha=0
+"!3     c #202020"  alpha=0
+"!4     c #101010"  alpha=0
+"!5     c #C5C5C5"  alpha=0
+"!6     c #FFFFFF"  alpha=0
+"!7     c #E6E6E6"  alpha=0
+"!8     c #949494"  alpha=0
+"!9     c #737373"  alpha=0
+"#!     c #626262"  alpha=0
+"##     c #525252"  alpha=0
+"#%     c #FFFFFF"  alpha=0
+"#?     c #E6E6E6"  alpha=0
+"#$     c #949494"  alpha=0
+"#*     c #202020"  alpha=0
+"#=     c #101010"  alpha=0
+"#1     c #C5C5C5"  alpha=0
+"#2     c #E6E6E6"  alpha=0
+"#3     c #838383"  alpha=0
+"#4     c #202020"  alpha=0
+"#5     c #202020"  alpha=0
+"#6     c #C5C5C5"  alpha=0
+"#7     c #FFFFFF"  alpha=0
+"#8     c #E6E6E6"  alpha=0
+"#9     c #838383"  alpha=0
+"%!     c #101010"  alpha=0
+"%#     c #626262"  alpha=0
+"%%     c #C5C5C5"  alpha=0
+"%?     c #FFFFFF"  alpha=0
+"%$     c #E6E6E6"  alpha=0
+"%*     c #949494"  alpha=0
+"%=     c #414141"  alpha=0
+"%1     c #C5C5C5"  alpha=0
+"%2     c #C5C5C5"  alpha=0
+"%3     c #B4B4B4"  alpha=0
+"%4     c #B4B4B4"  alpha=0
+"%5     c #626262"  alpha=0
+"%6     c #000000"  alpha=0
+"%7     c #414141"  alpha=0
+"%8     c #838383"  alpha=0
+"%9     c #B4B4B4"  alpha=0
+"?!     c #C5C5C5"  alpha=0
+"?#     c #101010"  alpha=0
+"?%     c #737373"  alpha=0
+"??     c #000000"  alpha=0
+"?$     c #000000"  alpha=0
+"!!!#!%!?!$!$!$!*!*!$!$!$!?!%!#!!"
+"!#!$!$!$!$!$!$!*!*!$!$!$!$!$!$!#"
+"!%!$!$!=!$!$!$!*!*!$!$!$!$!$!$!%"
+"!?!$!$!1!2!3!$!*!*!$!$!$!$!$!$!?"
+"!$!$!4!5!6!7!8!9#!!$!$!$!$!$!$!$"
+"!$!$###%!6!6!6#?#$#*!=!$!$!$!$!$"
+"!$#=#1!6!6!6!6!6!6#2#3#4!=!$!$!$"
+"!$#5#6#7!6!6!6!6!6!6!6#8#9#=!$!$"
+"!$!$%!%#%%%?!6!6!6!6!6%$%*%=!$!$"
+"!$!$!$!$#=!1%1%?!6!6%2%3%4%5!$!$"
+"!$!$!$!$!$!$%6%7%3#9%8%9?!?#!$!$"
+"!$!$!$!$!$!$!$!$!$!$!=?%%5!$!$!$"
+"!?!$!$!$!$!$!$!$!$!$!$???$!$!$!?"
+"!%!$!$!$!$!$!$!$!$!$!$!$!$!$!$!%"
+"!#!$!$!$!$!$!$!$!$!$!$!$!$!$!$!#"
+"!!!#!%!?!$!$!$!$!$!$!$!$!?!%!#!!"
+;1234567890123456
 [end]
 
 
@@ -11186,126 +11391,6 @@ DayXpm="12 14 2 1"   Colormode=32
 
 [_point]
 Type=0x045
-SubType=0x01
-String1=0x02,Trinkwasser
-String2=0x04,Drinking water
-ExtendedLabels=N
-DayXpm="14 14 95 2"   Colormode=16
-"!!	c #0065D5"
-"!#	c #3995D5"
-"!%	c #0065D5"
-"!?	c #0065D5"
-"!$	c #0065D5"
-"!*	c #0065D5"
-"!=	c #0065D5"
-"!1	c #0065D5"
-"!2	c #0065D5"
-"!3	c #3995D5"
-"!4	c #0065D5"
-"!5	c #0065D5"
-"!6	c #0065D5"
-"!7	c #3995D5"
-"!8	c #3995D5"
-"!9	c #0065D5"
-"#!	c #0065D5"
-"##	c #0065D5"
-"#%	c #0065D5"
-"#?	c #0065D5"
-"#$	c #3965D5"
-"#*	c #FFFFFF"
-"#=	c #E6E6E6"
-"#1	c #BDCAFF"
-"#2	c #7BCAD5"
-"#3	c #3965D5"
-"#4	c #0065D5"
-"#5	c #0065D5"
-"#6	c #3965D5"
-"#7	c #E6E6E6"
-"#8	c #E6E6E6"
-"#9	c #E6E6E6"
-"%!	c #3995D5"
-"%#	c #0065D5"
-"%%	c #0065D5"
-"%?	c #0065D5"
-"%$	c #0065D5"
-"%*	c #0065D5"
-"%=	c #0065D5"
-"%1	c #3995D5"
-"%2	c #3995D5"
-"%3	c #BDCAD5"
-"%4	c #BDCAFF"
-"%5	c #BDCAFF"
-"%6	c #FFFFFF"
-"%7	c #0065D5"
-"%8	c #3995D5"
-"%9	c #7B95D5"
-"?!	c #0065D5"
-"?#	c #3995D5"
-"?%	c #3995D5"
-"??	c #0065D5"
-"?$	c #3995D5"
-"?*	c #0065D5"
-"?=	c #3995D5"
-"?1	c #E6E6E6"
-"?2	c #0065D5"
-"?3	c #3995D5"
-"?4	c #BDCAFF"
-"?5	c #7B95D5"
-"?6	c #E6E6E6"
-"?7	c #0065D5"
-"?8	c #3965D5"
-"?9	c #0065D5"
-"$!	c #E6E6E6"
-"$#	c #3995D5"
-"$%	c #0065D5"
-"$?	c #E6E6E6"
-"$$	c #3995D5"
-"$*	c #3995D5"
-"$=	c #BDCAFF"
-"$1	c #E6E6E6"
-"$2	c #7BCAD5"
-"$3	c #7BCAD5"
-"$4	c #7BCAD5"
-"$5	c #BDCAFF"
-"$6	c #0065D5"
-"$7	c #7B95D5"
-"$8	c #E6E6E6"
-"$9	c #3995D5"
-"*!	c #E6E6E6"
-"*#	c #0065D5"
-"*%	c #0065D5"
-"*?	c #0065D5"
-"*$	c #BDCAFF"
-"**	c #E6E6E6"
-"*=	c #3995D5"
-"*1	c #0065D5"
-"*2	c #3995D5"
-"*3	c #0065D5"
-"*4	c #0065D5"
-"*5	c #0065D5"
-"*6	c #0065D5"
-"*7	c #0065D5"
-"*8	c #3995D5"
-"!#!!!!!!!!!!!!!!!!!!!!!!!!!#"
-"#$?6?6?6?6#1#2#3!!!!!!!!!!!!"
-"#6#7?6?6?6?6?6?6%!!!!!!!!!!!"
-"%?%$%*%=%1%2%3?6%4%?!!!!!!!!"
-"!!!!!!!!!!!!!!%5?6%7!!!!!!!!"
-"!!!!!!!!!!!!!!%8%9?!!!!!!!!!"
-"!!!!!!!!?#?%!!???$?*!!?=%2!!"
-"!!!!!!!!%9?1!!?2?3#!!!?4?5!!"
-"!!!!!!!!%!?6$$?8!8%?$$$!$#!!"
-"!!!!!!!!$%$=%9%?!!!!%9$=%7!!"
-"!!!!!!!!!!$2$3!!!!!!$3$2!!!!"
-"!!!!!!!!!!$7$8$9$9$9$8$7!!!!"
-"!!!!!!!!!!*5$8*!*!*!*!*5!!!!"
-"*2!!!!!!!!*5*5*5*5*5*5*5!!*2"
-;12345678901234
-[end]
-
-
-[_point]
-Type=0x045
 SubType=0x02
 String1=0x02,Eisverkauf
 String2=0x04,ice cream
@@ -14789,6 +14874,126 @@ DayXpm="16 16 19 2"   Colormode=32
 
 [_point]
 Type=0x064
+SubType=0x14
+String1=0x02,Trinkwasser
+String2=0x04,Drinking water
+ExtendedLabels=N
+DayXpm="14 14 95 2"   Colormode=16
+"!!     c #0065D5"
+"!#     c #3995D5"
+"!%     c #0065D5"
+"!?     c #0065D5"
+"!$     c #0065D5"
+"!*     c #0065D5"
+"!=     c #0065D5"
+"!1     c #0065D5"
+"!2     c #0065D5"
+"!3     c #3995D5"
+"!4     c #0065D5"
+"!5     c #0065D5"
+"!6     c #0065D5"
+"!7     c #3995D5"
+"!8     c #3995D5"
+"!9     c #0065D5"
+"#!     c #0065D5"
+"##     c #0065D5"
+"#%     c #0065D5"
+"#?     c #0065D5"
+"#$     c #3965D5"
+"#*     c #FFFFFF"
+"#=     c #E6E6E6"
+"#1     c #BDCAFF"
+"#2     c #7BCAD5"
+"#3     c #3965D5"
+"#4     c #0065D5"
+"#5     c #0065D5"
+"#6     c #3965D5"
+"#7     c #E6E6E6"
+"#8     c #E6E6E6"
+"#9     c #E6E6E6"
+"%!     c #3995D5"
+"%#     c #0065D5"
+"%%     c #0065D5"
+"%?     c #0065D5"
+"%$     c #0065D5"
+"%*     c #0065D5"
+"%=     c #0065D5"
+"%1     c #3995D5"
+"%2     c #3995D5"
+"%3     c #BDCAD5"
+"%4     c #BDCAFF"
+"%5     c #BDCAFF"
+"%6     c #FFFFFF"
+"%7     c #0065D5"
+"%8     c #3995D5"
+"%9     c #7B95D5"
+"?!     c #0065D5"
+"?#     c #3995D5"
+"?%     c #3995D5"
+"??     c #0065D5"
+"?$     c #3995D5"
+"?*     c #0065D5"
+"?=     c #3995D5"
+"?1     c #E6E6E6"
+"?2     c #0065D5"
+"?3     c #3995D5"
+"?4     c #BDCAFF"
+"?5     c #7B95D5"
+"?6     c #E6E6E6"
+"?7     c #0065D5"
+"?8     c #3965D5"
+"?9     c #0065D5"
+"$!     c #E6E6E6"
+"$#     c #3995D5"
+"$%     c #0065D5"
+"$?     c #E6E6E6"
+"$$     c #3995D5"
+"$*     c #3995D5"
+"$=     c #BDCAFF"
+"$1     c #E6E6E6"
+"$2     c #7BCAD5"
+"$3     c #7BCAD5"
+"$4     c #7BCAD5"
+"$5     c #BDCAFF"
+"$6     c #0065D5"
+"$7     c #7B95D5"
+"$8     c #E6E6E6"
+"$9     c #3995D5"
+"*!     c #E6E6E6"
+"*#     c #0065D5"
+"*%     c #0065D5"
+"*?     c #0065D5"
+"*$     c #BDCAFF"
+"**     c #E6E6E6"
+"*=     c #3995D5"
+"*1     c #0065D5"
+"*2     c #3995D5"
+"*3     c #0065D5"
+"*4     c #0065D5"
+"*5     c #0065D5"
+"*6     c #0065D5"
+"*7     c #0065D5"
+"*8     c #3995D5"
+"!#!!!!!!!!!!!!!!!!!!!!!!!!!#"
+"#$?6?6?6?6#1#2#3!!!!!!!!!!!!"
+"#6#7?6?6?6?6?6?6%!!!!!!!!!!!"
+"%?%$%*%=%1%2%3?6%4%?!!!!!!!!"
+"!!!!!!!!!!!!!!%5?6%7!!!!!!!!"
+"!!!!!!!!!!!!!!%8%9?!!!!!!!!!"
+"!!!!!!!!?#?%!!???$?*!!?=%2!!"
+"!!!!!!!!%9?1!!?2?3#!!!?4?5!!"
+"!!!!!!!!%!?6$$?8!8%?$$$!$#!!"
+"!!!!!!!!$%$=%9%?!!!!%9$=%7!!"
+"!!!!!!!!!!$2$3!!!!!!$3$2!!!!"
+"!!!!!!!!!!$7$8$9$9$9$8$7!!!!"
+"!!!!!!!!!!*5$8*!*!*!*!*5!!!!"
+"*2!!!!!!!!*5*5*5*5*5*5*5!!*2"
+;12345678901234
+[end]
+
+
+[_point]
+Type=0x064
 SubType=0x17
 String1=0x02,Jagdhochsitz
 String2=0x04,Hunting stand
@@ -16043,749 +16248,3 @@ DayXpm="16 16 47 2"   Colormode=32
 ;1234567890123456
 [end]
 
-
-[_point]
-Type=0x10b
-SubType=0x10
-String1=0x02,Biergarten
-ExtendedLabels=N
-DayXpm="16 16 172 2"   Colormode=32
-"!!	c #000000"  alpha=15
-"!#	c #D5D5D5"  alpha=0
-"!%	c #BDCA8B"  alpha=10
-"!?	c #7B9541"  alpha=1
-"!$	c #7B9541"  alpha=3
-"!*	c #BD9541"  alpha=0
-"!=	c #BDCAB4"  alpha=5
-"!1	c #BDCAB4"  alpha=7
-"!2	c #BD956A"  alpha=5
-"!3	c #BD956A"  alpha=13
-"!4	c #BDCAB4"  alpha=9
-"!5	c #BD956A"  alpha=2
-"!6	c #7B9541"  alpha=0
-"!7	c #BD956A"  alpha=6
-"!8	c #E6E6E6"  alpha=8
-"!9	c #BD956A"  alpha=4
-"#!	c #7B9520"  alpha=8
-"##	c #7B9520"  alpha=9
-"#%	c #D5D5D5"  alpha=5
-"#?	c #BD9541"  alpha=11
-"#$	c #BDCA8B"  alpha=1
-"#*	c #BD956A"  alpha=1
-"#=	c #BDCA8B"  alpha=12
-"#1	c #D5D5D5"  alpha=7
-"#2	c #BD956A"  alpha=6
-"#3	c #7B9541"  alpha=9
-"#4	c #BD956A"  alpha=5
-"#5	c #BD9541"  alpha=6
-"#6	c #D5D5D5"  alpha=10
-"#7	c #BDCA8B"  alpha=14
-"#8	c #BD956A"  alpha=13
-"#9	c #838383"  alpha=12
-"%!	c #949494"  alpha=8
-"%#	c #949494"  alpha=4
-"%%	c #949494"  alpha=4
-"%?	c #A4A4A4"  alpha=9
-"%$	c #A4A4A4"  alpha=8
-"%*	c #B4B4B4"  alpha=15
-"%=	c #FFFFFF"  alpha=14
-"%1	c #D5D5D5"  alpha=10
-"%2	c #BD9541"  alpha=0
-"%3	c #7B6520"  alpha=6
-"%4	c #BD956A"  alpha=13
-"%5	c #BD956A"  alpha=3
-"%6	c #BD956A"  alpha=11
-"%7	c #A4A4A4"  alpha=4
-"%8	c #C5C5C5"  alpha=9
-"%9	c #D5D5D5"  alpha=12
-"?!	c #D5D5D5"  alpha=12
-"?#	c #D5D5D5"  alpha=9
-"?%	c #C5C5C5"  alpha=0
-"??	c #B4B4B4"  alpha=0
-"?$	c #E6E6E6"  alpha=5
-"?*	c #BD9541"  alpha=0
-"?=	c #7B6520"  alpha=0
-"?1	c #BD956A"  alpha=4
-"?2	c #FFFFFF"  alpha=8
-"?3	c #BDCA8B"  alpha=4
-"?4	c #BD956A"  alpha=14
-"?5	c #A4A4A4"  alpha=0
-"?6	c #E6E6E6"  alpha=0
-"?7	c #E6E6E6"  alpha=0
-"?8	c #E6E6E6"  alpha=0
-"?9	c #E6E6E6"  alpha=0
-"$!	c #D5D5D5"  alpha=0
-"$#	c #949494"  alpha=9
-"$%	c #A4A4A4"  alpha=6
-"$?	c #E6E6E6"  alpha=8
-"$$	c #BDCA8B"  alpha=13
-"$*	c #BD956A"  alpha=8
-"$=	c #BDCA8B"  alpha=11
-"$1	c #BD956A"  alpha=0
-"$2	c #BDCA8B"  alpha=13
-"$3	c #BD958B"  alpha=12
-"$4	c #BDCA8B"  alpha=11
-"$5	c #BD9541"  alpha=0
-"$6	c #BD9520"  alpha=0
-"$7	c #BD9520"  alpha=0
-"$8	c #BD9541"  alpha=0
-"$9	c #FFCA41"  alpha=0
-"*!	c #BDCA41"  alpha=0
-"*#	c #A4A4A4"  alpha=6
-"*%	c #A4A4A4"  alpha=3
-"*?	c #A4A4A4"  alpha=8
-"*$	c #BD956A"  alpha=9
-"**	c #BD956A"  alpha=6
-"*=	c #FFFFFF"  alpha=5
-"*1	c #BDCA8B"  alpha=10
-"*2	c #BD9541"  alpha=6
-"*3	c #BD956A"  alpha=13
-"*4	c #D5D5D5"  alpha=4
-"*5	c #7B6520"  alpha=0
-"*6	c #BD6500"  alpha=0
-"*7	c #BD6500"  alpha=0
-"*8	c #BD9500"  alpha=0
-"*9	c #BD9520"  alpha=0
-"=!	c #BD9520"  alpha=0
-"=#	c #BDCA8B"  alpha=2
-"=%	c #C5C5C5"  alpha=0
-"=?	c #A4A4A4"  alpha=1
-"=$	c #BD958B"  alpha=7
-"=*	c #BD9541"  alpha=14
-"==	c #BD956A"  alpha=11
-"=1	c #7B6541"  alpha=2
-"=2	c #7B9541"  alpha=0
-"=3	c #BDCA8B"  alpha=3
-"=4	c #E6E6E6"  alpha=4
-"=5	c #7B6520"  alpha=0
-"=6	c #BD6500"  alpha=0
-"=7	c #BD6500"  alpha=0
-"=8	c #BD6500"  alpha=0
-"=9	c #BD9500"  alpha=0
-"1!	c #BD9520"  alpha=0
-"1#	c #BDCA8B"  alpha=0
-"1%	c #838383"  alpha=1
-"1?	c #B4B4B4"  alpha=12
-"1$	c #BDCA6A"  alpha=12
-"1*	c #7B6520"  alpha=12
-"1=	c #7B6520"  alpha=11
-"11	c #BD956A"  alpha=10
-"12	c #D5D5D5"  alpha=12
-"13	c #BD958B"  alpha=13
-"14	c #7B6520"  alpha=0
-"15	c #7B6500"  alpha=0
-"16	c #BD6500"  alpha=0
-"17	c #BD6500"  alpha=0
-"18	c #BD9500"  alpha=0
-"19	c #BD9520"  alpha=0
-"2!	c #A4A4A4"  alpha=1
-"2#	c #FFFFFF"  alpha=7
-"2%	c #A4A4A4"  alpha=10
-"2?	c #838383"  alpha=0
-"2$	c #7B6520"  alpha=0
-"2*	c #7B6500"  alpha=0
-"2=	c #7B6500"  alpha=0
-"21	c #BD6500"  alpha=0
-"22	c #BD9500"  alpha=0
-"23	c #BD9541"  alpha=0
-"24	c #B4B4B4"  alpha=14
-"25	c #C5C5C5"  alpha=12
-"26	c #B4B4B4"  alpha=9
-"27	c #C5C5C5"  alpha=3
-"28	c #7B6541"  alpha=0
-"29	c #7B6500"  alpha=0
-"3!	c #7B6500"  alpha=0
-"3#	c #7B6500"  alpha=0
-"3%	c #BD6500"  alpha=0
-"3?	c #BD9520"  alpha=0
-"3$	c #949494"  alpha=12
-"3*	c #C5C5C5"  alpha=15
-"3=	c #C5C5C5"  alpha=3
-"31	c #7B6541"  alpha=0
-"32	c #7B6500"  alpha=0
-"33	c #7B6500"  alpha=0
-"34	c #7B6500"  alpha=0
-"35	c #7B6500"  alpha=0
-"36	c #7B9520"  alpha=0
-"37	c #A4A4A4"  alpha=0
-"38	c #7B6541"  alpha=13
-"39	c #7B6520"  alpha=0
-"4!	c #7B6500"  alpha=0
-"4#	c #7B6500"  alpha=0
-"4%	c #7B6520"  alpha=0
-"4?	c #7B9541"  alpha=0
-"4$	c #A4A4A4"  alpha=12
-"4*	c #949494"  alpha=4
-"4=	c #838383"  alpha=12
-"41	c #7B956A"  alpha=0
-"42	c #7B956A"  alpha=0
-"43	c #7B956A"  alpha=8
-"44	c #A4A4A4"  alpha=14
-"45	c #D5D5D5"  alpha=4
-"!!!!!!!!!!!!!!!!!!!#!%!?!$!*!=!!"
-"!!!!!!!!!!!!!!!!!1!2!3!4!5!6!7!8"
-"!!!!!!!!!!!!!!!!!9#!###%#?#$#*#="
-"!!!!!!!!!!!!!!!!#1#2#3#4#5#6#7#8"
-"#9%!%#%%%?%$%*!!%=%1%2%3%4!!%5%6"
-"%7%8%9?!?#?%??!!!!?$?*?=?1?2?3?4"
-"?5?6?7?8?9$!$#$%$?$$$*$=$1$2$3$4"
-"$5$6$7$8$9*!*#*%*?*$***=*1*2*3*4"
-"*5*6*7*8*9=!=#=%=?=$=*===1=2=3=4"
-"=5=6=7=8=91!1#!!1%1?1$1*1=111213"
-"1415161718192!2#2%2?!!!!!!!!!!!!"
-"2$2*2=21222324252627!!!!!!!!!!!!"
-"28293!3#3%3?3$3*3=!!!!!!!!!!!!!!"
-"31323334353637!!!!!!!!!!!!!!!!!!"
-"38394!4#4%4?4$!!!!!!!!!!!!!!!!!!"
-"4*4=4142434445!!!!!!!!!!!!!!!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x10f
-SubType=0x06
-String1=0x02,Kiosk
-String2=0x04,Kiosk
-ExtendedLabels=N
-DayXpm="11 16 86 2"   Colormode=32
-"!!	c #000000"  alpha=15
-"!#	c #396520"  alpha=9
-"!%	c #396520"  alpha=11
-"!?	c #396520"  alpha=4
-"!$	c #414141"  alpha=7
-"!*	c #414141"  alpha=0
-"!=	c #414141"  alpha=8
-"!1	c #7B6500"  alpha=1
-"!2	c #7B6500"  alpha=0
-"!3	c #7B6500"  alpha=2
-"!4	c #101010"  alpha=12
-"!5	c #BDCA00"  alpha=7
-"!6	c #FFCA00"  alpha=0
-"!7	c #BD9500"  alpha=5
-"!8	c #BD9500"  alpha=6
-"!9	c #FFCA00"  alpha=0
-"#!	c #7B6500"  alpha=7
-"##	c #000000"  alpha=10
-"#%	c #000000"  alpha=10
-"#?	c #7B6500"  alpha=11
-"#$	c #7B6500"  alpha=0
-"#*	c #7B6500"  alpha=0
-"#=	c #7B6500"  alpha=0
-"#1	c #7B6500"  alpha=4
-"#2	c #626262"  alpha=5
-"#3	c #A4A4A4"  alpha=0
-"#4	c #949494"  alpha=0
-"#5	c #A4A4A4"  alpha=0
-"#6	c #A4A4A4"  alpha=0
-"#7	c #BD9541"  alpha=0
-"#8	c #BD9500"  alpha=13
-"#9	c #949494"  alpha=6
-"%!	c #525252"  alpha=0
-"%#	c #626262"  alpha=0
-"%%	c #949494"  alpha=0
-"%?	c #626262"  alpha=0
-"%$	c #BD9541"  alpha=0
-"%*	c #7B9520"  alpha=0
-"%=	c #7B6520"  alpha=0
-"%1	c #BD9500"  alpha=0
-"%2	c #000000"  alpha=3
-"%3	c #B4B4B4"  alpha=7
-"%4	c #B4B4B4"  alpha=0
-"%5	c #B4B4B4"  alpha=0
-"%6	c #C5C5C5"  alpha=0
-"%7	c #BDCA6A"  alpha=0
-"%8	c #396520"  alpha=0
-"%9	c #7B9500"  alpha=0
-"?!	c #7B9520"  alpha=0
-"?#	c #BD9500"  alpha=1
-"?%	c #313131"  alpha=3
-"??	c #C5C5C5"  alpha=0
-"?$	c #949494"  alpha=0
-"?*	c #949494"  alpha=0
-"?=	c #BDCA6A"  alpha=0
-"?1	c #BD9500"  alpha=0
-"?2	c #7B9520"  alpha=0
-"?3	c #BD9500"  alpha=0
-"?4	c #7B9500"  alpha=13
-"?5	c #838383"  alpha=8
-"?6	c #A4A4A4"  alpha=0
-"?7	c #737373"  alpha=0
-"?8	c #737373"  alpha=0
-"?9	c #838383"  alpha=0
-"$!	c #BDCA6A"  alpha=0
-"$#	c #7B6520"  alpha=10
-"$%	c #626262"  alpha=6
-"$?	c #838383"  alpha=0
-"$$	c #626262"  alpha=0
-"$*	c #737373"  alpha=0
-"$=	c #7B9541"  alpha=0
-"$1	c #7B6500"  alpha=0
-"$2	c #BD9500"  alpha=0
-"$3	c #7B6500"  alpha=0
-"$4	c #396520"  alpha=5
-"$5	c #000000"  alpha=13
-"$6	c #000000"  alpha=11
-"$7	c #BD9500"  alpha=11
-"$8	c #BDCA00"  alpha=0
-"$9	c #BDCA00"  alpha=0
-"*!	c #FFCA00"  alpha=0
-"*#	c #7B9500"  alpha=5
-"*%	c #101010"  alpha=10
-"*?	c #7B6500"  alpha=2
-"*$	c #7B6500"  alpha=2
-"**	c #393000"  alpha=10
-"!!!!!!!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!#!%!?!!"
-"!!!!!!!!!!!!!!!$!*!=!!"
-"!!!!!!!!!!!!!!!1!2!3!!"
-"!!!!!!!!!!!!!4!5!6!7!!"
-"!!!!!!!!!!!!!8!6!6!9#!"
-"!!###%#%#%#%#?#$#*#=#1"
-"!!#2#3#4#5#6#7!6!6!6#8"
-"!!#9%!%#%%%?%$%*%=%1#8"
-"%2%3%4%5%5%6%7%8%9?!?#"
-"?%???$?*?*?$?=?1?2?3?4"
-"?5?6?7?7?8?9$!!6!6!6$#"
-"$%$?$$$$$$$*$=$1$2$3$4"
-"!!$5$6$6$6$6$7$8$9*!*#"
-"!!!!!!!!!!!!*%*?*$**$5"
-"!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901
-[end]
-
-
-[_point]
-Type=0x10f
-SubType=0x07
-String1=0x02,Schuhgeschäft
-String2=0x04,Shoes
-ExtendedLabels=N
-DayXpm="16 9 108 2"   Colormode=32
-"!!	c #000000"  alpha=15
-"!#	c #202020"  alpha=7
-"!%	c #626262"  alpha=15
-"!?	c #7B95B4"  alpha=12
-"!$	c #39656A"  alpha=9
-"!*	c #737373"  alpha=15
-"!=	c #737373"  alpha=5
-"!1	c #525252"  alpha=8
-"!2	c #313131"  alpha=4
-"!3	c #414141"  alpha=13
-"!4	c #313131"  alpha=7
-"!5	c #525252"  alpha=10
-"!6	c #525252"  alpha=4
-"!7	c #414141"  alpha=0
-"!8	c #39656A"  alpha=0
-"!9	c #39658B"  alpha=0
-"#!	c #737373"  alpha=2
-"##	c #7B95B4"  alpha=1
-"#%	c #000000"  alpha=6
-"#?	c #202020"  alpha=14
-"#$	c #626262"  alpha=2
-"#*	c #393041"  alpha=7
-"#=	c #737373"  alpha=10
-"#1	c #B4B4B4"  alpha=0
-"#2	c #A4A4A4"  alpha=0
-"#3	c #414141"  alpha=0
-"#4	c #525252"  alpha=0
-"#5	c #A4A4A4"  alpha=0
-"#6	c #B4B4B4"  alpha=0
-"#7	c #B4B4B4"  alpha=13
-"#8	c #A4A4A4"  alpha=14
-"#9	c #525252"  alpha=15
-"%!	c #BDCAD5"  alpha=15
-"%#	c #D5D5D5"  alpha=3
-"%%	c #BDCAFF"  alpha=0
-"%?	c #BDCAD5"  alpha=0
-"%$	c #B4B4B4"  alpha=0
-"%*	c #7B95B4"  alpha=0
-"%=	c #525252"  alpha=0
-"%1	c #737373"  alpha=0
-"%2	c #B4B4B4"  alpha=0
-"%3	c #BDCAD5"  alpha=0
-"%4	c #BDCAD5"  alpha=0
-"%5	c #B4B4B4"  alpha=0
-"%6	c #B4B4B4"  alpha=10
-"%7	c #313131"  alpha=9
-"%8	c #525252"  alpha=0
-"%9	c #7B95B4"  alpha=0
-"?!	c #BDCAD5"  alpha=0
-"?#	c #BDCAD5"  alpha=0
-"?%	c #7B95B4"  alpha=0
-"??	c #414141"  alpha=0
-"?$	c #737373"  alpha=0
-"?*	c #BDCAD5"  alpha=0
-"?=	c #B4B4B4"  alpha=0
-"?1	c #BDCAD5"  alpha=0
-"?2	c #BDCAD5"  alpha=0
-"?3	c #BDCAFF"  alpha=0
-"?4	c #7B958B"  alpha=12
-"?5	c #838383"  alpha=13
-"?6	c #D5D5D5"  alpha=2
-"?7	c #525252"  alpha=11
-"?8	c #393041"  alpha=3
-"?9	c #313131"  alpha=3
-"$!	c #626262"  alpha=1
-"$#	c #BDCAD5"  alpha=0
-"$%	c #BDCAD5"  alpha=0
-"$?	c #BDCAFF"  alpha=0
-"$$	c #BDCAD5"  alpha=0
-"$*	c #BDCAD5"  alpha=0
-"$=	c #414141"  alpha=4
-"$1	c #000000"  alpha=0
-"$2	c #BDCAD5"  alpha=4
-"$3	c #D5D5D5"  alpha=13
-"$4	c #A4A4A4"  alpha=9
-"$5	c #7B658B"  alpha=4
-"$6	c #7B958B"  alpha=1
-"$7	c #BDCAFF"  alpha=0
-"$8	c #BDCAFF"  alpha=0
-"$9	c #BDCAFF"  alpha=0
-"*!	c #313131"  alpha=11
-"*#	c #393041"  alpha=10
-"*%	c #7B95B4"  alpha=4
-"*?	c #D5D5D5"  alpha=2
-"*$	c #FFFFFF"  alpha=9
-"**	c #BDCAD5"  alpha=4
-"*=	c #7B95B4"  alpha=4
-"*1	c #202020"  alpha=1
-"*2	c #313131"  alpha=4
-"*3	c #737373"  alpha=0
-"*4	c #B4B4B4"  alpha=0
-"*5	c #BDCAD5"  alpha=0
-"*6	c #7B95B4"  alpha=0
-"*7	c #313131"  alpha=7
-"*8	c #7B658B"  alpha=5
-"*9	c #7B95B4"  alpha=8
-"=!	c #BDCAD5"  alpha=2
-"=#	c #E6E6E6"  alpha=7
-"=%	c #525252"  alpha=2
-"=?	c #202020"  alpha=15
-"=$	c #202020"  alpha=15
-"=*	c #101010"  alpha=7
-"==	c #202020"  alpha=9
-"=1	c #202020"  alpha=11
-"=2	c #202020"  alpha=3
-"=3	c #525252"  alpha=15
-"=4	c #BDCAD5"  alpha=12
-"=5	c #E6E6E6"  alpha=14
-"!!!!!!!!!!!!!!!#!%!?!$!*!=!1!!!!"
-"!!!!!!!!!!!2!3!4!5!6!7!8!9#!##!!"
-"!!!!#%#?#$#*#=#1#2#3#4#5#6#7#8!!"
-"!!#9%!%#%%%?%$%*%=%1%2%3%4%5%6!!"
-"!!%7%8%9?!?#?%???$?*?=?1?2?3?4?5"
-"!!?6?7?8?9$!$#$%$?$$?3?3$*$=$1$2"
-"!!$3$4$5$6$7$8$7$9?3?3?3*!*#*%*?"
-"!!*$***=*1*2*3*4?3*5*6*7*8*9=!!!"
-"!!!!!!=#=%=?=$=*===1=2=3=4=5!!!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x10f
-SubType=0x0a
-String1=0x02,Bäckerei
-String2=0x04,Bakery
-ExtendedLabels=N
-DayXpm="16 8 6 1"   Colormode=16
-"!	c #BD6520"
-"#	c #FF9541"
-"%	c #D5D5D5"
-"?	c #FF0000"
-"$	c #FFFFFF"
-"  	c none"
-"     %!%%!%     "
-"  %!##!##!%#!%  "
-" %!#%!#%!%#!##! "
-"%#!%#!##!##!##!%"
-"%#!#!##!%#!##!##"
-"?!##!##!##!##!#?"
-"????????????????"
-"????????????????"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x10f
-SubType=0x0c
-String1=0x02,Optiker
-String2=0x04,Optician
-ExtendedLabels=N
-DayXpm="16 7 60 2"   Colormode=32
-"!!	c #FFFFFF"  alpha=0
-"!#	c #C5C5C5"  alpha=0
-"!%	c #FFFFFF"  alpha=0
-"!?	c #E6E6E6"  alpha=0
-"!$	c #C5C5C5"  alpha=0
-"!*	c #B4B4B4"  alpha=0
-"!=	c #B4B4B4"  alpha=0
-"!1	c #E6E6E6"  alpha=0
-"!2	c #FFFFFF"  alpha=0
-"!3	c #A4A4A4"  alpha=0
-"!4	c #A4A4A4"  alpha=0
-"!5	c #737373"  alpha=0
-"!6	c #D5D5D5"  alpha=0
-"!7	c #C5C5C5"  alpha=0
-"!8	c #FFFFFF"  alpha=0
-"!9	c #C5C5C5"  alpha=0
-"#!	c #D5D5D5"  alpha=0
-"##	c #E6E6E6"  alpha=0
-"#%	c #A4A4A4"  alpha=0
-"#?	c #C5C5C5"  alpha=0
-"#$	c #B4B4B4"  alpha=0
-"#*	c #D5D5D5"  alpha=0
-"#=	c #A4A4A4"  alpha=0
-"#1	c #E6E6E6"  alpha=0
-"#2	c #FFFFFF"  alpha=0
-"#3	c #C5C5C5"  alpha=0
-"#4	c #B4B4B4"  alpha=0
-"#5	c #D5D5D5"  alpha=0
-"#6	c #D5D5D5"  alpha=0
-"#7	c #FFFFFF"  alpha=0
-"#8	c #A4A4A4"  alpha=0
-"#9	c #838383"  alpha=0
-"%!	c #626262"  alpha=0
-"%#	c #E6E6E6"  alpha=0
-"%%	c #E6E6E6"  alpha=0
-"%?	c #B4B4B4"  alpha=0
-"%$	c #B4B4B4"  alpha=0
-"%*	c #B4B4B4"  alpha=0
-"%=	c #C5C5C5"  alpha=0
-"%1	c #FFFFFF"  alpha=0
-"%2	c #E6E6E6"  alpha=0
-"%3	c #B4B4B4"  alpha=0
-"%4	c #C5C5C5"  alpha=0
-"%5	c #E6E6E6"  alpha=0
-"%6	c #B4B4B4"  alpha=0
-"%7	c #C5C5C5"  alpha=0
-"%8	c #D5D5D5"  alpha=0
-"%9	c #E6E6E6"  alpha=0
-"?!	c #949494"  alpha=0
-"?#	c #D5D5D5"  alpha=0
-"?%	c #FFFFFF"  alpha=0
-"??	c #D5D5D5"  alpha=0
-"?$	c #D5D5D5"  alpha=0
-"?*	c #FFFFFF"  alpha=0
-"?=	c #D5D5D5"  alpha=0
-"?1	c #C5C5C5"  alpha=0
-"?2	c #D5D5D5"  alpha=0
-"?3	c #D5D5D5"  alpha=0
-"?4	c #C5C5C5"  alpha=0
-"?5	c #FFFFFF"  alpha=0
-"!!!#!%!?!$!$!*!=!1!2!2!2!2!2!2!2"
-"!3!4!5!6!2!7!8!2!9!2!2!2!2!2!2!2"
-"#!###%#?#$#*#=#1!2!2!2#2#3#4#5!2"
-"#6#7#8#9%!%#%%%?!6%$%*%=%1!2%2%3"
-"%4%5%6%7%8%9%#?!?#!2!2!2!2!2!2?%"
-"!2??!2!2?$?*?=?1!2!2!2!2!2!2!2!2"
-"!2!2!2!2?2?3?4?5!2!2!2!2!2!2!2!2"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x115
-SubType=0x09
-String1=0x02,Kreuz/Schrein
-String2=0x04,Cross/Shrine
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-DayXpm="16 16 4 1"   Colormode=16
-"!	c #BD6500"
-"#	c #FFFFFF"
-"%	c #BD9520"
-"  	c none"
-"                "
-"      %!!%      "
-"     %!##!%     "
-"    %!####!%    "
-"   %!##!!##!%   "
-"  %!###!!###!%  "
-"  !##!!!!!!##!  "
-"  !##!!!!!!##!  "
-"  %!###!!###!%  "
-"   !###!!###!   "
-"   %!##!!##!%   "
-"    !##!!##!    "
-"    %!####!%    "
-"     !####!     "
-"     %!!!!%     "
-"      %%%%      "
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x115
-SubType=0x0b
-String1=0x04,Tree
-String2=0x02,Baum
-ExtendedLabels=N
-DayXpm="3 3 3 1"   Colormode=16
-"!	c #39CA20"
-"#	c #FFFFB4"
-"  	c none"
-" ! "
-"!!!"
-" ! "
-;123
-[end]
-
-
-[_point]
-Type=0x115
-SubType=0x0c
-String1=0x02,Platz
-String2=0x05,Place
-ExtendedLabels=Y
-FontStyle=SmallFont
-CustomColor=No
-DayXpm="2 2 2 1"   Colormode=16
-"!	c #FFFFFF"
-"  	c none"
-"  "
-"  "
-;12
-[end]
-
-
-[_point]
-Type=0x115
-SubType=0x17
-String1=0x02,Wegweiser
-String2=0x04,Signpost
-ExtendedLabels=N
-DayXpm="7 18 3 1"   Colormode=16
-"!	c #000000"
-"#	c #C5C5C5"
-"  	c none"
-"#######"
-"#!##!!#"
-"#!!!!!#"
-"#!!!!##"
-"#!#### "
-"#!!!#  "
-"#!!!!##"
-"#!#!!!#"
-"#!##!!#"
-"#!# ###"
-"#!#    "
-"#!#    "
-"#!#    "
-"#!#    "
-"#!#    "
-"#!#### "
-"#!!!!# "
-"###### "
-;1234567
-[end]
-
-
-[_point]
-Type=0x115
-SubType=0x18
-String1=0x02,Überwachungskamera
-String2=0x04,Surveillance
-ExtendedLabels=N
-DayXpm="16 16 53 2"   Colormode=32
-"!!	c #000000"  alpha=3
-"!#	c #000000"  alpha=6
-"!%	c #000000"  alpha=9
-"!?	c #000000"  alpha=1
-"!$	c #000000"  alpha=0
-"!*	c #838383"  alpha=0
-"!=	c #000000"  alpha=0
-"!1	c #525252"  alpha=0
-"!2	c #949494"  alpha=0
-"!3	c #202020"  alpha=0
-"!4	c #101010"  alpha=0
-"!5	c #C5C5C5"  alpha=0
-"!6	c #FFFFFF"  alpha=0
-"!7	c #E6E6E6"  alpha=0
-"!8	c #949494"  alpha=0
-"!9	c #737373"  alpha=0
-"#!	c #626262"  alpha=0
-"##	c #525252"  alpha=0
-"#%	c #FFFFFF"  alpha=0
-"#?	c #E6E6E6"  alpha=0
-"#$	c #949494"  alpha=0
-"#*	c #202020"  alpha=0
-"#=	c #101010"  alpha=0
-"#1	c #C5C5C5"  alpha=0
-"#2	c #E6E6E6"  alpha=0
-"#3	c #838383"  alpha=0
-"#4	c #202020"  alpha=0
-"#5	c #202020"  alpha=0
-"#6	c #C5C5C5"  alpha=0
-"#7	c #FFFFFF"  alpha=0
-"#8	c #E6E6E6"  alpha=0
-"#9	c #838383"  alpha=0
-"%!	c #101010"  alpha=0
-"%#	c #626262"  alpha=0
-"%%	c #C5C5C5"  alpha=0
-"%?	c #FFFFFF"  alpha=0
-"%$	c #E6E6E6"  alpha=0
-"%*	c #949494"  alpha=0
-"%=	c #414141"  alpha=0
-"%1	c #C5C5C5"  alpha=0
-"%2	c #C5C5C5"  alpha=0
-"%3	c #B4B4B4"  alpha=0
-"%4	c #B4B4B4"  alpha=0
-"%5	c #626262"  alpha=0
-"%6	c #000000"  alpha=0
-"%7	c #414141"  alpha=0
-"%8	c #838383"  alpha=0
-"%9	c #B4B4B4"  alpha=0
-"?!	c #C5C5C5"  alpha=0
-"?#	c #101010"  alpha=0
-"?%	c #737373"  alpha=0
-"??	c #000000"  alpha=0
-"?$	c #000000"  alpha=0
-"!!!#!%!?!$!$!$!*!*!$!$!$!?!%!#!!"
-"!#!$!$!$!$!$!$!*!*!$!$!$!$!$!$!#"
-"!%!$!$!=!$!$!$!*!*!$!$!$!$!$!$!%"
-"!?!$!$!1!2!3!$!*!*!$!$!$!$!$!$!?"
-"!$!$!4!5!6!7!8!9#!!$!$!$!$!$!$!$"
-"!$!$###%!6!6!6#?#$#*!=!$!$!$!$!$"
-"!$#=#1!6!6!6!6!6!6#2#3#4!=!$!$!$"
-"!$#5#6#7!6!6!6!6!6!6!6#8#9#=!$!$"
-"!$!$%!%#%%%?!6!6!6!6!6%$%*%=!$!$"
-"!$!$!$!$#=!1%1%?!6!6%2%3%4%5!$!$"
-"!$!$!$!$!$!$%6%7%3#9%8%9?!?#!$!$"
-"!$!$!$!$!$!$!$!$!$!$!=?%%5!$!$!$"
-"!?!$!$!$!$!$!$!$!$!$!$???$!$!$!?"
-"!%!$!$!$!$!$!$!$!$!$!$!$!$!$!$!%"
-"!#!$!$!$!$!$!$!$!$!$!$!$!$!$!$!#"
-"!!!#!%!?!$!$!$!$!$!$!$!$!?!%!#!!"
-;1234567890123456
-[end]
-
-
-[_point]
-Type=0x20f
-SubType=0x0a
-String1=0x02,Metzgerei
-String2=0x04,Butcher
-ExtendedLabels=N
-DayXpm="16 10 5 1"   Colormode=32
-"!	c #000000"  alpha=15
-"#	c #000000"  alpha=0
-"%	c #A4A4A4"  alpha=0
-"?	c #C5C5C5"  alpha=0
-"$	c #D5D5D5"  alpha=0
-"!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!"
-"!####%%%%%%%%%%!"
-"!####%%%%%%%%%%!"
-"!!!!!%%%%%%%%%%!"
-"!!!!!%%%%%%%%%%!"
-"!!!!!??????????!"
-"!!!!!$$$$$$$$$$!"
-"!!!!!!!!!!!!!!!!"
-"!!!!!!!!!!!!!!!!"
-;1234567890123456
-[end]

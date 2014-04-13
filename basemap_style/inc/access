@@ -19,18 +19,21 @@ barrier=bollard | barrier=cycle_barrier
       add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=1; }
+      
 barrier=bus_trap
     { add mkgmap:bus=yes;
       add mkgmap:foot=yes;
       add mkgmap:bicycle=yes;
       addaccess no;
       set mkgmap:road-speed=1; }
-barrier=gate
+      
+barrier=gate | barrier=sally_port
     { add mkgmap:bicycle=yes;
       add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=0; }
-barrier=kissing_gate | barrier=stile | barrier=block
+      
+barrier~'.*(gate)' | barrier=cattle_grid | barrier~'.*(stile)' | barrier=block | barrier=jersey_barrier
     { add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=0; }

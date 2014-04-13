@@ -28,6 +28,8 @@
   set ref='${ref|def:}-';
 }
 
+barrier=no {delete barrier}
+
 include 'inc/name';
 
 #------------------------------------------------------------------------------
@@ -108,9 +110,9 @@ man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
 
 
 man_made=crane 								[0x11504 resolution 24]	# type without category
-man_made=surveillance 							[0x11518 resolution 24]	# type without category
-man_made=windmill | man_made=watermill 					[0x11519 resolution 24]	# type without category
-man_made=works | man_made=water_works 					[0x1151A resolution 24]	# type without category
+man_made=windmill                                                       [0x2c15 resolution 24]
+man_made=watermill                                                      [0x11505 resolution 24]	# type without category
+man_made=works | man_made=water_works 					[0x11506 resolution 24]	# type without category
 
 # Water Features
 amenity=fountain 							[0x6500 resolution 24]
@@ -292,12 +294,12 @@ amenity=parking
 
 amenity=parking										[0x4d00 resolution 24]
 
-
-amenity=toilets & name!=* {set name='WC'} 						[0x2f0c resolution 24]
-amenity=toilets 									[0x2f0c resolution 24]
-# 0x4ess	# restroom
-amenity=shower 										[0x4f01 resolution 24]
+# 0x4ess        # restroom
+amenity=toilets & name!=* {set name='WC'} 						[0x4e01 resolution 24]
+amenity=toilets 									[0x4e01 resolution 24]
+                 
 # 0x4fss	# shower
+amenity=shower                                                                          [0x4f01 resolution 24]
 # 0x50ss	# drinking water
 
 # 0x51ss	# telephone
@@ -495,7 +497,6 @@ cuisine=japanese 									[0x2a1f resolution 24]
 
 amenity=restaurant 									[0x2a00 resolution 24]
 
-amenity=drinking_water 									[0x4501 resolution 24]
 amenity=ice_cream | cuisine=ice_cream 							[0x4502 resolution 24]
 # 0x45ss
 
@@ -771,7 +772,6 @@ leisure=slipware									[0x4700 resolution 24]
 
 # Other
 # 0x71ss
-waterway=lock_gate 									[0x11500 resolution 24]
 
 #------------------------------------------------------------------------------
 # Other
@@ -795,41 +795,6 @@ waterway=bootyard | amenity=boat_storage						[0x2f13 resolution 24]
 
 # Communications
 
-
-#------------------------------------------------------------------------------
-# No category
-
-barrier=bollard										[0x2900 resolution 24]
-
-barrier=lift_gate									[0x2901 resolution 24]
-
-barrier=gate										[0x2902 resolution 24]
-
-barrier=cycle_barrier									[0x2903 resolution 24]
-
-barrier=kissing_gate |
-barrier=cattle_grid |
-barrier=horse_stile|
-barrier=stile |
-barrier=turnstile 									[0x2904 resolution 24]
-
-# 0x290s
-
-traffic_sign=city_limit 								[0x2910 resolution 24]
-highway=traffic_signals									[0x2911 resolution 24]
-highway=stop										[0x2912 resolution 24]
-highway=give_way 									[0x2913 resolution 24]
-noexit=yes 										[0x2914 resolution 24]
-highway=crossing 									[0x2917 resolution 24]
-highway=mini_roundabout 								[0x2915 resolution 24]
-highway=passing_place 									[0x2916 resolution 24]
-
-# 0x291s
-
-# 0x32ss - 0x3fss ?
-
-#highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; } 				[0x5601 resolution 24]
-
 # 0x55ss	# dam
 # 0x56ss - 0x58ss	# danger area
 
@@ -840,7 +805,36 @@ power=generator & (power_source=nuclear | power_source=fusion) 								[0x7204 r
 power=generator & (power_source=biofuel | power_source=oil | power_source=coal | power_source=gas | power_source=waste) [0x7205 resolution 24]
 power=generator & (power_source=photovoltaic | power_source=solar-thermal) 						[0x7206 resolution 24]
 power=generator 													[0x7200 resolution 24]
+
 # 0x72ss
+
+#------------------------------------------------------------------------------
+# barrier
+
+barrier=bollard                                                                         [0x2900 resolution 24]
+barrier=lift_gate | barrier=bus_trap                                                    [0x2901 resolution 24]
+barrier=gate | barrier=sally_port |  barrier~'.*(entrance)'                             [0x2902 resolution 24]
+barrier=cycle_barrier                                                                   [0x2903 resolution 24]
+barrier~'.*(gate)' | barrier=cattle_grid | barrier~'.*(stile)'                          [0x2904 resolution 24]
+barrier~'.*(fence)'                                                                     [0x2905 resolution 24]
+barrier~'.*(wall)'                                                                      [0x2906 resolution 24]
+barrier~'.*(chain)' | barrier~'.*(rope)'                                                [0x2907 resolution 24]
+barrier~'.*(block)' | barrier=jersey_barrier                                            [0x2908 resolution 24]
+barrier~'.*(hedge)'                                                                     [0x2909 resolution 24] 
+
+#barrier=* {echo ' ${barrier} | ${access} | ${vehicle} | ${motor_vehicle} | ${bicycle} | ${foot} '}
+
+traffic_sign=city_limit                                                                 [0x2910 resolution 24]
+highway=traffic_signals                                                                 [0x2911 resolution 24]
+highway=stop                                                                            [0x2912 resolution 24]
+highway=give_way                                                                        [0x2913 resolution 24]
+noexit=yes                                                                              [0x2914 resolution 24]
+highway=mini_roundabout                                                                 [0x2915 resolution 24]
+highway=passing_place                                                                   [0x2916 resolution 24]
+highway=crossing                                                                        [0x2917 resolution 24]
+
+highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; }                                [0x2918 resolution 24]
+man_made=surveillance                                                                   [0x2918 resolution 24]
 
 #------------------------------------------------------------------------------
 # Geographic Places
