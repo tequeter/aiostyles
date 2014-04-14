@@ -112,6 +112,7 @@ amenity=hunting_stand 							[0x6417 resolution 24]
 man_made=survey_point 							[0x6418 resolution 24]
 man_made=flagpole 							[0x6419 resolution 24]
 man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
+man_made=observatory | man_made=telescope | landuse=observatory 			[0x641b resolution 24]
 man_made=water_mill                                                     [0x641c resolution 24]
 
 # 0x64ss
