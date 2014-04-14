@@ -70,6 +70,9 @@ place=hamlet |
 place=isolated_dwelling |
 place=neighbourhood	                                & name=*	[0x0D00 resolution 24]
 
+place=locality                                                          [0x2800 resolution 24]
+# 0x2800-0x283F   Region name (no Point, small)
+
 # Man Made
 # 0x6401 	# bridge
 amenity=shelter 							[0x6402 resolution 24 continue]
@@ -108,6 +111,8 @@ man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
 
 
 # 0x64ss
+
+man_made=windmill                                                       [0x2c15 resolution 24]
 
 # Water Features
 amenity=fountain 							[0x6500 resolution 24]
@@ -346,8 +351,6 @@ public_transport=platform
 	      } 									[0x2f17 resolution 24]
 
 
-
-
 #------------------------------------------------------------------------------
 # Lodging
 
@@ -576,8 +579,6 @@ shop=motorcycle 									[0x2e1d resolution 24]
 
 #shop=* & shop!=vacant									[0x2e1b resolution 24]
 
-
-
 #
 #shop=toys
 #shop=deli
@@ -657,13 +658,8 @@ amenity=post_office {
 	      }										[0x2f05 resolution 24]
 
 # Bank or ATM
-amenity=atm 	{
-	      name '${operator}' | '${name}'
-	      } 									[0x2f06 resolution 24]
-amenity=bank 	{
-	      name '${operator}' | '${name}'
-	      } 									[0x2f06 resolution 24]
-amenity=bureau_de_change {
+amenity=atm | amenity=bank | amenity=bureau_de_change
+            {
 	      name '${operator}' | '${name}'
 	      } 									[0x2f06 resolution 24]
 
@@ -671,11 +667,6 @@ amenity=bureau_de_change {
 amenity=waste_transfer_station | amenity=recycling 	{
 	      add name='Recycling'
 	      }	 									[0x2f15 resolution 24]
-#amenity=waste_basket	{
-#	      add name='Abfall/Waste'
-#	      }										[0x2f15 resolution 24]
-
-
 # Other
 amenity=public_building 								[0x3000 resolution 24]
 
@@ -849,12 +840,6 @@ highway=crossing                                                                
 
 highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; }                                [0x2918 resolution 24]
 man_made=surveillance                                                                   [0x2918 resolution 24]
-
-
-#------------------------------------------------------------------------------
-# Geographic Places
-place=locality  							[0x2800 resolution 24]
-# 0x2800-0x283F   Region name (no Point, small)
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches

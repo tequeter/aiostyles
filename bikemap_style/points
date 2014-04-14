@@ -69,6 +69,9 @@ place=hamlet |
 place=isolated_dwelling |
 place=neighbourhood                                     & name=*	[0x0D00 resolution 24]
 
+place=locality                                                          [0x2800 resolution 24]
+# 0x2800-0x283F   Region name (no Point, small)
+
 # Man Made
 # 0x6401 	# bridge
 amenity=shelter 							[0x6402 resolution 22 continue]
@@ -108,11 +111,7 @@ man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
 
 # 0x64ss
 
-
-man_made=crane 								[0x11504 resolution 24]	# type without category
 man_made=windmill                                                       [0x2c15 resolution 24]
-man_made=watermill                                                      [0x11505 resolution 24]	# type without category
-man_made=works | man_made=water_works 					[0x11506 resolution 24]	# type without category
 
 # Water Features
 amenity=fountain 							[0x6500 resolution 24]
@@ -182,8 +181,6 @@ mountain_pass=yes 		{
 # 0x66ss
 
 natural=cave_entrance 							[0x6619 resolution 24]	# type without category
-# 0x11503	# mineshaft	# type without category
-#natural=tree 								[0x1150b resolution 24]	# type without category
 
 #------------------------------------------------------------------------------
 # Exit
@@ -645,13 +642,8 @@ amenity=post_office {
 	      }										[0x2f05 resolution 24]
 
 # Bank or ATM
-amenity=atm 	{
-	      name '${operator}' | '${name}'
-	      } 									[0x2f06 resolution 24]
-amenity=bank 	{
-	      name '${operator}' | '${name}'
-	      } 									[0x2f06 resolution 24]
-amenity=bureau_de_change {
+amenity=atm | amenity=bank | amenity=bureau_de_change
+            {
 	      name '${operator}' | '${name}'
 	      } 									[0x2f06 resolution 24]
 
@@ -659,10 +651,6 @@ amenity=bureau_de_change {
 amenity=waste_transfer_station | amenity=recycling 	{
 	      add name='Recycling'
 	      }	 									[0x2f15 resolution 24]
-#amenity=waste_basket	{
-#	      add name='Abfall/Waste'
-#	      }										[0x2f15 resolution 24]
-
 
 # Other
 amenity=public_building									[0x3000 resolution 24]
@@ -719,7 +707,6 @@ sport=swimming & mkgmap:area2poi!=true							[0x2d09 resolution 24]
 leisure=water_park  & mkgmap:area2poi!=true						[0x2d09 resolution 24]
 
 # Sports/Fitness Center
-#leisure=sports_centre 									[0x2d0a resolution 24]
 leisure=sports_centre 									[0x5400 resolution 24]
 sport=multi 										[0x5400 resolution 24]
 sport=soccer 										[0x5401 resolution 24]
@@ -835,12 +822,6 @@ highway=crossing                                                                
 
 highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; }                                [0x2918 resolution 24]
 man_made=surveillance                                                                   [0x2918 resolution 24]
-
-#------------------------------------------------------------------------------
-# Geographic Places
-place=locality  							[0x2800 resolution 20]
-# 0x2800-0x283F   Region name (no Point, small)
-
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
