@@ -1,4 +1,4 @@
-Time started: Sun Jun 02 10:04:20 CEST 2013
+Time started: Mon Apr 14 17:17:04 CEST 2014
 Note that option order is significant:  An option only applies to
 subsequent input files.  (So if you are using splitter, you probably
 want to put most of your options before '-c template.args'.)
@@ -10,7 +10,7 @@ General options:
 	list of all the help topics is printed instead.
 
 --version 
-	Output program version.
+	Output program version to stderr.
 
 filename
 --input-file=filename
@@ -163,6 +163,22 @@ Address search options:
               in the same tile are used only. So the results close to a tile 
               border have less quality.  
 
+--housenumbers
+  Enables house number search for OSM input files. 
+  All nodes and polygons having addr:housenumber and addr:street set are matched 
+  to streets. A match between a house number element and a street is created if
+  the street is located within a radius of 150m and the addr:street tag value of 
+  the house number element equals the mgkmap:street tag value of the street. 
+  The mkgmap:street tag must be added to the street in the style file.
+  Example: 
+     Node -  addr:street=Main Street addr:housenumber=2
+     Way 1 - name=Main Street
+     Way 2 - name=Main Street, mkgmap:street=Main Street
+     Way 3 - mkgmap:street=Mainstreet
+     Way 4 - name=Main Street [A504]
+    The node matches to way 2. It has mkgmap:street set with a value equal to
+    the addr:street tag value of the house number node.
+  
 Overview map options:
 --overview-mapname=name
 	If --tdbfile is enabled, this gives the name of the overview
@@ -177,7 +193,7 @@ Overview map options:
   like levels, specifies additional levels that are to be written to the
   overview map. Counting of the levels should continue. Up to 8 additional 
   levels may be specified, but the lowest usable resolution with MapSource 
-  seems to be 11.     
+  seems to be 11. The hard coded default is empty.      
 
 --remove-ovm-work-files
   If overview-levels is used, mkgmap creates one additional file 
@@ -223,7 +239,7 @@ Style options:
 --levels=levels code
 	Change the way that the levels on the map correspond to the zoom
 	levels in the device. See customisation help. The default is:
-	"0=24, 1=22, 2=20, 3=18, 4=16, 5=15", although each style can have
+	"0:24, 1:22, 2:20, 3:18, 4:16", although each style can have
 	its own default. Up to 8 levels may be specified.
 
 --name-tag-list
@@ -232,7 +248,7 @@ Style options:
 	will be used.  eg. --name-tag-list=name:en,int_name,name
 
 --map-features=file
-	This option is obsolete; use the --style-file option instead.
+	This option is ignored; use the --style-file option instead.
 
 Product description options:
 
@@ -259,14 +275,15 @@ Product description options:
 	drop-down. The default is "OSM map".
 
 --area-name
-
+  Area name is displayed on Garmin units (or at least on eTrex) as the second 
+  part of the mapname in the list of the individual maps.
+   
 --copyright-message=note
 	Specify a copyright message for files that do not contain one.
 
 --license-file=file
-	Specify a file which content will be added as license. Every
-	line is one entry. All entrys of all maps will be merged, unified
-	and shown in random order.
+	Specify a file which content will be added as license. 
+  All entrys of all maps will be merged in the overview map.
 
 Optimization options:
 
@@ -357,6 +374,7 @@ Miscellaneous options:
 	completely reliable heuristic.
 
 --ignore-maxspeeds
+	Now ignored, former usage:
 	When reading OSM files, ignore any "maxspeed" tags.
 
 --ignore-builtin-relations
@@ -379,6 +397,7 @@ Miscellaneous options:
 	the order in which the elements are processed is not defined.
 
 --remove-short-arcs[=MinLength]
+  	Now ignored, former usage:	
 	Merge nodes to remove short arcs that can cause routing
 	problems. If MinLength is specified (in metres), arcs shorter
 	than that length will be removed. If a length is not
@@ -531,6 +550,7 @@ Miscellaneous options:
 	(NSIS) to create a Windows Mapsource Installer.
 
 --make-all-cycleways
+  Deprecated, use --make-opposite-cycleways instead. Former meaning: 
 	Turn on all of the options that make cycleways.
 
 --make-opposite-cycleways
@@ -539,6 +559,7 @@ Miscellaneous options:
 	the original that allows bicycle traffic (in both directions).
 
 --make-cycleways
+  Now ignored, former meaning:
 	Some streets have a separate cycleway track/lane just for
 	bicycle traffic and this option makes a way with the same
 	points as the original that allows bicycle traffic. Also,
@@ -546,11 +567,22 @@ Miscellaneous options:
 	(unless that way's bicycle access has been defined).
 
 --link-pois-to-ways
-	If this option is enabled, POIs that are situated at a point
-	in a way will be associated with that way and may modify the
-	way's properties. Currently supported are POIs that restrict
-	access (e.g. bollards). Their access restrictions are applied
-	to a small region of the way near the POI.
+    This option may copy some specific attributes of a POI 
+    to a small part of the way the POI is located on. This can be used
+    to let barriers block a way or to lower the calculated speed
+    around traffic signals.
+    POIs with the tags highway=* (e.g. highway=traffic_signals)  
+    or barrier=* (e.g. barrier=cycle_barrier) are supported.
+    The style developer must add at least one of the access tags
+    (mkgmap:foot, mkgmap:car etc.), mkgmap:road-speed and/or 
+    mkgmap:road-class to the POI. 
+    The access tags are ignored if they have no effect for the way, 
+    else a route restriction is added at the POI so that only 
+    allowed vehicles are routed through it. 
+    The tags mkgmap:road-speed and/or mkgmap:road-class are 
+    applied to a small part of the way around the POI, typically
+    to the next junction or a length of ~25 m. The tags
+    are ignored for pedestrian-only ways.      
 
 --process-destination
 	Splits all motorway_link and trunk_link ways tagged with 
@@ -611,5 +643,5 @@ Miscellaneous options:
 
 --verbose
 	Makes some operations more verbose. Mostly used with --list-styles.
-Time finished: Sun Jun 02 10:04:20 CEST 2013
-Total time taken: 88ms
+Time finished: Mon Apr 14 17:17:04 CEST 2014
+Total time taken: 222ms

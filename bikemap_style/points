@@ -98,7 +98,12 @@ amenity=post_box {
 
 amenity=clock 								[0x6410 resolution 24]
 man_made=tower 								[0x6411 resolution 24]
-# 0x6412	# hiking sign
+
+(tourism=information
+          & information=guidepost) |
+            amenity=guidepost |
+            amenity=signpost                                            [0x6412 resolution 24]
+
 # 0x6413	# tunnel
 amenity=drinking_water |
         (amenity=water_well & water_well=drinking_water)		[0x6414 resolution 24]
@@ -265,10 +270,6 @@ highway=services | highway=rest_area 							[0x2f0c resolution 24]
 #amenity=truck_stop									[0x2f16 resolution 24]
 
 # 0x4css	# information
-(tourism=information
-	  & information=guidepost) |
-	    amenity=guidepost |
-	    amenity=signpost								[0x4c01 resolution 24]
 tourism=information 									[0x4c00 resolution 24]
 
 shop=travel_agency									[0x4c02 resolution 24]
