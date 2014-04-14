@@ -35,7 +35,7 @@ housenumbers
 remove-short-arcs=0
 check-roundabouts
 check-roundabout-flares
-make-all-cycleways
+make-opposite-cycleways
 adjust-turn-headings
 min-size-polygon=8
 reduce-point-density=4
