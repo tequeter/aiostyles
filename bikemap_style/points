@@ -442,8 +442,8 @@ cuisine=barbecue 									[0x2a03 resolution 24]
 # Chinese
 cuisine=chinese 									[0x2a04 resolution 24]
 
-# Deli/Bakery   
-shop=deli								        	[0x2a05 resolution 24]
+# Fastfood
+cuisine=fast_food								        [0x2a05 resolution 24]
 
 # International
 cuisine=international 									[0x2a06 resolution 24]
