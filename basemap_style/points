@@ -116,7 +116,7 @@ man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
 man_made=observatory | man_made=telescope | landuse=observatory         [0x641b resolution 24]
 man_made=water_mill                                                     [0x641c resolution 24]
 man_made=gasometer | man_made=storage_tank                              [0x641d resolution 24]
-man_made=works                                                          [0x641e resolution 24]
+man_made=works & mkgmap:area2poi!=true                                  [0x641e resolution 24]
 man_made=windmill                                                       [0x641f resolution 24]
 
 # 0x64ss
@@ -281,22 +281,22 @@ tourism=information 									[0x4c00 resolution 24]
 shop=travel_agency									[0x4c02 resolution 24]
 
 # 0x4dss
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	&  ( capacity:disabled=yes |
 	     capacity:disabled >=1 ) 							[0x4d01 resolution 24]
 
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	& (parking=multi-storey |
 	  parking=underground) |
 	  amenity=parking_entrance 							[0x4d02 resolution 24]
 
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	& (fee=yes)		 							[0x4d03 resolution 24]
 
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	& (access=private)		 						[0x4d03 resolution 24]
 
-amenity=parking										[0x4d00 resolution 24]
+amenity=parking	& mkgmap:area2poi!=true							[0x4d00 resolution 24]
 
 # 0x4ess        # restroom
 amenity=toilets & name!=* {set name='WC'} 						[0x4e01 resolution 24]
@@ -371,16 +371,14 @@ tourism=guest_house 									[0x2b02 resolution 24]
 tourism=hostel										[0x2b05 resolution 24]
 
 # Campground/RV Park
-tourism=camp_site & tents!=no		 						[0x2b03 resolution 24]
-tourism=caravan_site & tents=yes		 					[0x2b03 resolution 24]
+tourism=camp_site & tents!=no & mkgmap:area2poi!=true					[0x2b03 resolution 24]
+tourism=caravan_site & tents=yes & mkgmap:area2poi!=true				[0x2b03 resolution 24]
 
 # Resort
-#tourism=resort 									[0x2b04 resolution 24]
+tourism=resort 									[0x2b04 resolution 24]
 
 # Other
-tourism=alpine_hut 									[0x2b06 resolution 24]
-tourism=hut 										[0x2b06 resolution 24]
-tourism=basic_hut									[0x2b06 resolution 24]
+tourism~'.*(hut)'									[0x2b06 resolution 24]
 
 #tourism=chalet 									[0x2b09 resolution 24]
 
