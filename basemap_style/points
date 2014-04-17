@@ -87,10 +87,10 @@ landuse=cemetery & mkgmap:area2poi!=true				[0x6404 resolution 24]
 # 0x6409	# levee
 # 0x640a	# locale
 military=bunker 							[0x640b resolution 24]
-man_made=adit | man_made=mineshaft 					[0x640c resolution 24]
+man_made=mineshaft 					                [0x640c resolution 24]
 man_made=petroleum_well 						[0x640d	resolution 24]
 # 0x640e	# park
-# 0x640f	# letter (see Post Office)
+
 amenity=post_box {
 	      delete name ;
 	      delete operator ;
@@ -104,7 +104,8 @@ man_made=tower 								[0x6411 resolution 24]
           & information=guidepost) |
             amenity=guidepost |
             amenity=signpost                                            [0x6412 resolution 24]
-# 0x6413	# tunnel
+man_made=adit                                                           [0x6413 resolution 24]
+
 amenity=drinking_water |
         (amenity=water_well & water_well=drinking_water)		[0x6414 resolution 24]
 man_made=water_tower 							[0x6415 resolution 24]
@@ -112,11 +113,14 @@ amenity=hunting_stand 							[0x6417 resolution 24]
 man_made=survey_point 							[0x6418 resolution 24]
 man_made=flagpole 							[0x6419 resolution 24]
 man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
+man_made=observatory | man_made=telescope | landuse=observatory         [0x641b resolution 24]
 man_made=water_mill                                                     [0x641c resolution 24]
+man_made=gasometer | man_made=storage_tank                              [0x641d resolution 24]
+man_made=works & mkgmap:area2poi!=true                                  [0x641e resolution 24]
+man_made=windmill                                                       [0x641f resolution 24]
 
 # 0x64ss
 
-man_made=windmill                                                       [0x2c15 resolution 24]
 
 # Water Features
 amenity=fountain 							[0x6500 resolution 24]
@@ -125,7 +129,7 @@ amenity=fountain 							[0x6500 resolution 24]
 natural=bay & name=* 							[0x6503 resolution 24]
 # 0x6504	# bend
 # 0x6506	# channel
-# 0x6407	# cove
+# 0x6507	# cove
 natural=waterfall | waterway=waterfall 					[0x6508 resolution 24]
 # 0c6509	# geyser
 natural=glacier
@@ -140,7 +144,6 @@ natural=spring 								[0x6511 resolution 24]
 # 0x6512 	# stream
 natural=wetland 							[0x6513 resolution 23]
 # 0x65ss
-# 0x11511	# ford	# type without category
 
 # Land Features
 tourism=viewpoint & natural!=*						[0x6600 resolution 24]
@@ -278,22 +281,22 @@ tourism=information 									[0x4c00 resolution 24]
 shop=travel_agency									[0x4c02 resolution 24]
 
 # 0x4dss
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	&  ( capacity:disabled=yes |
 	     capacity:disabled >=1 ) 							[0x4d01 resolution 24]
 
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	& (parking=multi-storey |
 	  parking=underground) |
 	  amenity=parking_entrance 							[0x4d02 resolution 24]
 
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	& (fee=yes)		 							[0x4d03 resolution 24]
 
-amenity=parking
+amenity=parking & mkgmap:area2poi!=true
 	& (access=private)		 						[0x4d03 resolution 24]
 
-amenity=parking										[0x4d00 resolution 24]
+amenity=parking	& mkgmap:area2poi!=true							[0x4d00 resolution 24]
 
 # 0x4ess        # restroom
 amenity=toilets & name!=* {set name='WC'} 						[0x4e01 resolution 24]
@@ -368,16 +371,14 @@ tourism=guest_house 									[0x2b02 resolution 24]
 tourism=hostel										[0x2b05 resolution 24]
 
 # Campground/RV Park
-tourism=camp_site & tents!=no		 						[0x2b03 resolution 24]
-tourism=caravan_site & tents=yes		 					[0x2b03 resolution 24]
+tourism=camp_site & tents!=no & mkgmap:area2poi!=true					[0x2b03 resolution 24]
+tourism=caravan_site & tents=yes & mkgmap:area2poi!=true				[0x2b03 resolution 24]
 
 # Resort
-#tourism=resort 									[0x2b04 resolution 24]
+tourism=resort 									[0x2b04 resolution 24]
 
 # Other
-tourism=alpine_hut 									[0x2b06 resolution 24]
-tourism=hut 										[0x2b06 resolution 24]
-tourism=basic_hut									[0x2b06 resolution 24]
+tourism~'.*(hut)'									[0x2b06 resolution 24]
 
 #tourism=chalet 									[0x2b09 resolution 24]
 
@@ -413,17 +414,19 @@ tourism=aquarium 									[0x2c07 resolution 24]
 
 # Arena/Track
 # 0x2c08
-# 0x2c13
-# 0x2c16
 
 # Hall/Auditorium
-amenity=concert_hall 									[0x2c09 resolution 24]
+amenity=concert_hall                                                                    [0x2c09 resolution 24]
 
 # Winery
-tourism=wine_cellar 									[0x2c0a resolution 24]
+tourism=wine_cellar                                                                     [0x2c0a resolution 24]
 
 # Hot Spring
 # 0x2c0c
+
+# 0x2c13
+# 0x2c16
+
 
 #------------------------------------------------------------------------------
 # Food and Drink
@@ -443,9 +446,8 @@ cuisine=barbecue 									[0x2a03 resolution 24]
 # Chinese
 cuisine=chinese 							                [0x2a04 resolution 24]
 
-# Deli/Bakery
-shop=bakery | shop=deli									[0x2a05 resolution 24]
-
+# Fastfood
+cuisine=fast_food								        [0x2a05 resolution 24]
 
 # International
 cuisine=international 									[0x2a06 resolution 24]
@@ -465,11 +467,11 @@ cuisine=sea_food | cuisine=fish 							[0x2a0b resolution 24]
 # Steak/Grill
 cuisine=steak_house 									[0x2a0c resolution 24]
 
-# Bagel/Donut
-cuisine=bagel | cuisine=donut 								[0x2a0d resolution 24]
+# Gebäck
+cuisine=bagel | cuisine=donut     					                [0x2a0d resolution 24]
 
 # Cafe/Diner
-amenity=cafe | cuisine=coffee_shop 							[0x2a0e resolution 24]
+amenity=cafe | cuisine=coffee_shop			                                [0x2a0e resolution 24]
 
 # French
 cuisine=french 										[0x2a0f resolution 24]
@@ -511,8 +513,12 @@ amenity=ice_cream | cuisine=ice_cream 							[0x4502 resolution 24]
 shop=department_store & mkgmap:area2poi!=true						[0x2e01 resolution 24]
 
 # Grocery # Lebensmittel
-shop=greengrocer | shop=organic |
-shop=butcher | amenity=market_place							[0x2e02 resolution 24]
+shop=greengrocer | 
+shop=organic |
+shop=butcher | 
+shop=bakery |
+shop=beverages |
+amenity=market_place						                	[0x2e02 resolution 24]
 
 # General Merchandise # Gemischtwaren
 shop=supermarket | shop=general 							[0x2e03 resolution 24]
@@ -534,19 +540,23 @@ shop=garden_centre | shop=doityourself | shop=trade 					[0x2e08 resolution 24]
 
 
 # Home Furnishings
-shop=interior_decoration | shop=curtain |
-shop=window_blind | shop=bathroom_furnishing |
-shop=bed | shop=kitchen | shop=furniture 						[0x2e09 resolution 24]
-shop=furnace 										[0x20f09 resolution 24]
+shop=interior_decoration | 
+shop=curtain |
+shop=window_blind | 
+shop=bathroom_furnishing |
+shop=bed | shop=kitchen | 
+shop=furniture 						                                [0x2e09 resolution 24]
 
 # Speciality Retail
-shop=beverages										[0x2e0a resolution 24]
+shop=confectionery |
+shop=sea_food |
+shop=deli                                                                               [0x2e0a resolution 24]
 
 # Computer/Software
 shop=computer | shop=mobile_phone							[0x2e0b resolution 24]
 
 shop=kiosk 										[0x2e0c resolution 24]
-shop=optician |	shop=jewelry |shop=beauty						[0x2e0d resolution 24]
+shop=optician |	shop=jewelry | shop=beauty						[0x2e0d resolution 24]
 shop=toys										[0x2e0e resolution 24]
 
 # Florist
@@ -582,12 +592,8 @@ shop=motorcycle 									[0x2e1d resolution 24]
 
 #
 #shop=toys
-#shop=deli
-#shop=confectionery
 #shop=copyshop
 #shop=photo
-
-#shop=beauty
 
 
 #------------------------------------------------------------------------------

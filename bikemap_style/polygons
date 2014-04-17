@@ -65,9 +65,9 @@ landuse=forest & wood=mixed 						[0x23 resolution 24-23]
 landuse=forest 								[0x20 resolution 24-23]
 landuse=meadow 								[0x53 resolution 22]
 
-landuse=commercial 							[0x0f resolution 20]
-landuse=industrial							[0x0c resolution 20]
-landuse=retail 								[0x08 resolution 20]
+landuse=commercial 							[0x0f resolution 18]
+landuse=industrial							[0x0c resolution 18]
+landuse=retail 								[0x08 resolution 18]
 
 landuse=brownfield							[0x0e resolution 20]
 landuse=greenfield							[0x10 resolution 20]
