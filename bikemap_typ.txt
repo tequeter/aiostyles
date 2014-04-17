@@ -134,8 +134,8 @@ ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
 Xpm="0 0 2 0"
-"1 c #FFDFDF"
-"2 c #400000"
+"1 c #D5D5D5"
+"2 c #626262"
 [end]
 
 
@@ -480,11 +480,11 @@ String1=0x02,Industriegebiet
 String2=0x04,Industrial
 ExtendedLabels=N
 Xpm="32 32 4 1"
-"! c #DFDFDF"
+"! c #FF95FF"
 "  c none"
-"3 c #707070"
+"3 c #7B30FF"
 "4 c none"
-"  ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! "
+"! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! "
 " ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"
 "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! "
 " ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"
@@ -618,8 +618,8 @@ ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 Xpm="0 0 2 0"
-"1 c #F0F0F0"
-"2 c #C0C0C0"
+"1 c #FFCAFF"
+"2 c #BD00FF"
 [end]
 
 
@@ -14787,9 +14787,9 @@ String1=0x02,Wegweiser
 String2=0x04,Signpost
 ExtendedLabels=N
 DayXpm="7 18 3 1"   Colormode=16
-"!      c #000000"
-"#      c #C5C5C5"
-"       c none"
+"!	c #000000"
+"#	c #C5C5C5"
+"  	c none"
 "#######"
 "#!##!!#"
 "#!!!!!#"
