@@ -813,13 +813,13 @@ power=tower | power=pole                                                        
 
 power=generator &
       ( power_source=wind |
-        generator:source=wind )                                                          [0x7202 resolution 24]
+        generator:source=wind )                                                         [0x7202 resolution 24]
 
 power=generator &
       ( power_source=hydro |
         power_source=tidal |
         power_source=wave |
-        power_source=geothermal) |
+        power_source=geothermal |
         generator:source=hydro |
         generator:source=tidal |
         generator:source=wave |
@@ -836,7 +836,7 @@ power=generator &
         power_source=oil |
         power_source=coal |
         power_source=gas |
-        power_source=waste
+        power_source=waste |
         generator:source=biofuel |
         generator:source=oil |
         generator:source=coal |
