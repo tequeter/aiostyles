@@ -511,7 +511,7 @@ ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
-"! c #BD95B4"
+"! c #FF95FF"
 "  c none"
 "3 c #390020"
 "4 c none"

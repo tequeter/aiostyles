@@ -33,8 +33,8 @@
 #	0x1b	ways with no cat
 #-----------------------------------------------------------------------------
 # printout some infos about ways
-#highway=* & oneway=-1
-#{echo ' ${highway} | ${oneway} '}
+#highway=* & mkgmap:synthesised=yes
+#{echo ' ${highway} | ${name} '}
 #-----------------------------------------------------------------------------
 
 include 'inc/refs' ;
@@ -45,13 +45,16 @@ highway=* & name=* { set mkgmap:street='${name}' }
 # Mark highways with the toll flag
 highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
 
+# remove unneeded names on cycleways
+mkgmap:synthesised=yes & bicycle=yes { set mkgmap:highest-resolution-only = true; delete name }
+
 #-----------------------------------------------------------------------------
 # next line is needed, because 'motorcycle=no' makes
 # nonroutable highways for motorcar
 
 highway=* & motorcycle=no {delete motorcycle}
 
-
+#
 #------------------------------------------------------------------------------
 # flag unpaved roads
 

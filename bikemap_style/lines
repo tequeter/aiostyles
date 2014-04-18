@@ -45,6 +45,9 @@ highway=* & name=* { set mkgmap:street='${name}' }
 # Mark highways with the toll flag
 highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
 
+# remove unneeded names on cycleways
+mkgmap:synthesised=yes & bicycle=yes { set mkgmap:highest-resolution-only = true; delete name }
+
 #-----------------------------------------------------------------------------
 # next line is needed, because 'motorcycle=no' makes
 # nonroutable highways for motorcar

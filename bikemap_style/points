@@ -103,23 +103,21 @@ man_made=tower 								[0x6411 resolution 24]
           & information=guidepost) |
             amenity=guidepost |
             amenity=signpost                                            [0x6412 resolution 24]
-man_made=adit                                                           [0x6413 resolution 24] 
+man_made=adit                                                           [0x6413 resolution 24]
 amenity=drinking_water |
         (amenity=water_well & water_well=drinking_water)		[0x6414 resolution 24]
 man_made=water_tower 							[0x6415 resolution 24]
 amenity=hunting_stand 							[0x6417 resolution 24]
 man_made=survey_point 							[0x6418 resolution 24]
 man_made=flagpole 							[0x6419 resolution 24]
-man_made=reservoir_covered | man_made=gasometer 			[0x641a resolution 24]
+man_made=reservoir_covered & mkgmap:area2poi!=true                     	[0x641a resolution 24]
 man_made=observatory | man_made=telescope | landuse=observatory 	[0x641b resolution 24]
-man_made=water_mill                                                     [0x641c resolution 24]
-man_made=gasometer | man_made=storage_tank                              [0x641d resolution 24]
+man_made=water_mill & mkgmap:area2poi!=true                             [0x641c resolution 24]
+man_made=gasometer | man_made=storage_tank & mkgmap:area2poi!=true      [0x641d resolution 24]
 man_made=works & mkgmap:area2poi!=true                                  [0x641e resolution 24]
-man_made=windmill                                                       [0x641f resolution 24]
+man_made=windmill & mkgmap:area2poi!=true                               [0x641f resolution 24]
 
 # 0x64ss
-
-
 
 # Water Features
 amenity=fountain 							[0x6500 resolution 24]
@@ -506,9 +504,9 @@ amenity=ice_cream | cuisine=ice_cream 							[0x4502 resolution 24]
 shop=department_store & mkgmap:area2poi!=true						[0x2e01 resolution 24]
 
 # Grocery # Lebensmittel
-shop=greengrocer | 
+shop=greengrocer |
 shop=organic |
-shop=butcher | 
+shop=butcher |
 shop=bakery |
 shop=beverages |
 amenity=market_place                                                                    [0x2e02 resolution 24]
@@ -533,12 +531,12 @@ shop=garden_centre | shop=doityourself | shop=trade 					[0x2e08 resolution 24]
 
 
 # Home Furnishings
-shop=interior_decoration | 
+shop=interior_decoration |
 shop=curtain |
-shop=window_blind | 
+shop=window_blind |
 shop=bathroom_furnishing |
-shop=bed | 
-shop=kitchen | 
+shop=bed |
+shop=kitchen |
 shop=furniture 						                                [0x2e09 resolution 24]
 
 # Speciality Retail
@@ -792,13 +790,47 @@ waterway=bootyard | amenity=boat_storage						[0x2f13 resolution 24]
 # 0x55ss	# dam
 # 0x56ss - 0x58ss	# danger area
 
-power=tower | power=pole												[0x7201 resolution 24]
-power=generator & (power_source=wind | generator:source=wind)  											[0x7202 resolution 24]
-power=generator & (power_source=hydro | power_source=tidal | power_source=wave | power_source=geothermal | generator:source=hydro | generator:source=tidal | generator:source=wave | generator:source=geothermal) 		[0x7203 resolution 24]
-power=generator & (power_source=nuclear | power_source=fusion | generator:source=nuclear | generator:source=fusion) 								[0x7204 resolution 24]
-power=generator & (power_source=biofuel | power_source=oil | power_source=coal | power_source=gas | power_source=waste | generator:source=biofuel | generator:source=oil | generator:source=coal | generator:source=gas | generator:source=waste) [0x7205 resolution 24]
-power=generator & (power_source=photovoltaic | power_source=solar-thermal | generator:source=photovoltaic | generator:source~'solar.*') 						[0x7206 resolution 24]
-power=generator 													[0x7200 resolution 24]
+power=tower | power=pole								[0x7201 resolution 24]
+
+power=generator &
+      ( power_source=wind |
+        generator:source=wind )  							[0x7202 resolution 24]
+
+power=generator &
+      ( power_source=hydro |
+        power_source=tidal |
+        power_source=wave |
+        power_source=geothermal |
+        generator:source=hydro |
+        generator:source=tidal |
+        generator:source=wave |
+        generator:source=geothermal ) 		                                        [0x7203 resolution 24]
+
+power=generator &
+      ( power_source=nuclear |
+        power_source=fusion |
+        generator:source=nuclear |
+        generator:source=fusion ) 							[0x7204 resolution 24]
+
+power=generator &
+      ( power_source=biofuel |
+        power_source=oil |
+        power_source=coal |
+        power_source=gas |
+        power_source=waste |
+        generator:source=biofuel |
+        generator:source=oil |
+        generator:source=coal |
+        generator:source=gas |
+        generator:source=waste )                                                        [0x7205 resolution 24]
+
+power=generator &
+      ( power_source=photovoltaic |
+        power_source=solar-thermal |
+        generator:source=photovoltaic |
+        generator:source~'solar.*' ) 					                [0x7206 resolution 24]
+
+power=generator 									[0x7200 resolution 24]
 
 # 0x72ss
 
