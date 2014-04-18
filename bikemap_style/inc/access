@@ -7,7 +7,6 @@
 # mkgmap:taxi
 # mkgmap:bus
 # mkgmap:emergency
-# mkgmap:delivery
 # A class is not allowed to use the way if its tag is set to 'no'
 
 crossing:barrier!=no
@@ -19,20 +18,20 @@ barrier=bollard | barrier=cycle_barrier
       add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=1; }
-      
+
 barrier=bus_trap
     { add mkgmap:bus=yes;
       add mkgmap:foot=yes;
       add mkgmap:bicycle=yes;
       addaccess no;
       set mkgmap:road-speed=1; }
-      
+
 barrier=gate | barrier=sally_port
     { add mkgmap:bicycle=yes;
       add mkgmap:foot=yes;
       addaccess no;
       set mkgmap:road-speed=0; }
-      
+
 barrier~'.*(gate)' | barrier=cattle_grid | barrier~'.*(stile)' | barrier=block | barrier=jersey_barrier
     { add mkgmap:foot=yes;
       addaccess no;
@@ -53,9 +52,6 @@ highway=path
                )
                 { add bicycle=no; }
 
-
-
-
 highway=steps                           { add foot=yes; add access=no }
 highway=* & motorroad=yes               { add bicycle=no; add foot=no }
 highway=motorway|highway=motorway_link  { add bicycle=no; add foot=no }
@@ -68,7 +64,6 @@ railway=platform                        { add foot=yes; add access=no }
 
 
 motorcar=destination   { set mkgmap:throughroute=no; set motorcar=yes }
-motorcycle=destination { set mkgmap:throughroute=no; set motorcycle=yes }
 access=destination     { set mkgmap:throughroute=no; set access=yes }
 bicycle=destination    { set bicycle=yes }
 foot=destination       { set foot=yes }
@@ -76,7 +71,6 @@ hgv=destination        { delete hgv }
 psv=destination        { delete psv }
 taxi=destination       { delete taxi }
 emergency=destination  { delete emergency }
-delivery=destination   { delete delivery }
 goods=destination      { delete goods }
 
 bicycle=private       | bicycle=agricultural       { set bicycle=no }
@@ -86,9 +80,7 @@ motorcar=private      | motorcar=agricultural      { set motorcar=no }
 psv=private           | psv=agricultural           { set psv=no }
 taxi=private          | taxi=agricultural          { set taxi=no }
 emergency=private     | emergency=agricultural     { set emergency=no }
-delivery=private      | delivery=agricultural      { set delivery=no }
 goods=private         | goods=agricultural         { set goods=no }
-motorcycle=private    | motorcycle=agricultural    { set motorcycle=no }
 motor_vehicle=private | motor_vehicle=agricultural { set motor_vehicle=no }
 vehicle=private       | vehicle=agricultural       { set vehicle=no }
 access=private                                     { set access=no }
@@ -102,11 +94,9 @@ motorcar=*   { set mkgmap:car='${motorcar}' }
 psv=*        { set mkgmap:bus='${psv}' }
 taxi=*       { set mkgmap:taxi='${taxi}' }
 emergency=*  { set mkgmap:emergency='${emergency}' }
-delivery=*   { set mkgmap:delivery='${delivery}' }
 goods=*      { set mkgmap:delivery='${goods}' }
 
 # Translate motor_vehicle and vehicle access rules.
-motorcycle=*    { add mkgmap:car='${motorcycle}' }
 motor_vehicle=* { add mkgmap:car='${motor_vehicle}' }
 vehicle=*       { add mkgmap:car='${vehicle}'; add mkgmap:bicycle='${vehicle}' }
 
