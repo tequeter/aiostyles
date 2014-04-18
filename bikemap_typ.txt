@@ -509,7 +509,7 @@ String1=0x02,Industriegebiet
 String2=0x04,Industrial
 ExtendedLabels=N
 Xpm="32 32 4 1"
-"! c #BD95B4"
+"! c #FF95FF"
 "  c none"
 "3 c #390020"
 "4 c none"
