@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------
-# This is the default mkgmap style file for converting OSM nodes
+# This is the style file for converting OSM nodes
 # into Garmin POIs.
 # Any line prefaced with # is a comment and will not be applied.
 # Each line is a rule, of the generalised format:

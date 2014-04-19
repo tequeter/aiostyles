@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------
-# This is the AIO-style file for converting OSM ways
+# This is the style file for converting OSM ways
 # into Garmin lines.
 # Any line prefaced with # is a comment and will not be applied.
 # Each line is a rule, of the generalised format:
