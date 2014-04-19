@@ -194,9 +194,6 @@ natural=cave_entrance 							[0x6619 resolution 24]	# type without category
 #------------------------------------------------------------------------------
 # Exit
 
-# Exit without services
-# 0x20ss
-
 # Exit with facilities
 # 0x21ss
 (exit_to=* | highway=motorway_junction) & car_repair=yes				[0x2100 resolution 24]
@@ -213,7 +210,6 @@ natural=cave_entrance 							[0x6619 resolution 24]	# type without category
 # 0x24ss
 (exit_to=* | highway=motorway_junction) & weight_station=yes				[0x2400 resolution 24]
 
-
 # Toll Booth
 barrier=toll_booth { add toll=yes; } 							[0x2500 resolution 24]
 highway=motorway_junction & tool_booth=yes						[0x2501 resolution 24]
@@ -223,9 +219,10 @@ highway=motorway_junction & tool_booth=yes						[0x2501 resolution 24]
 highway=motorway_junction & information=yes						[0x2600 resolution 24]
 
 # Exit without services
-# 0x27ss
-highway=motorway_junction								[0x2700 resolution 22]
+# 0x20ss
+highway=motorway_junction								[0x2000 resolution 22]
 
+# 0x27ss multiple exits? see your Garmins root/text/*.gtt
 
 #------------------------------------------------------------------------------
 # Fuel

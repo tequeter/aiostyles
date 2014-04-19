@@ -2137,8 +2137,6 @@ Xpm="32 1 2  1"
 "  c none"
 "                                "
 ;12345678901234567890123456789012
-String1=0x02,Anschluss
-String2=0x04,Ramp
 ExtendedLabels=N
 [end]
 
@@ -2151,8 +2149,6 @@ Xpm="32 1 2  1"
 "  c none"
 "                                "
 ;12345678901234567890123456789012
-String1=0x02,Anschluss
-String2=0x04,Ramp
 ExtendedLabels=N
 [end]
 
@@ -3964,8 +3960,6 @@ DayXpm="1 1 1 1"   Colormode=16
 [_point]
 Type=0x020
 SubType=0x00
-String1=0x02,Ausfahrt
-String2=0x04,Exit
 ExtendedLabels=N
 DayXpm="16 13 56 2"   Colormode=32
 "!!	c #FFFFFF"  alpha=0
@@ -4153,6 +4147,84 @@ DayXpm="20 9 95 2"   Colormode=32
 "#$#$#$*!*#*#*%#$#$#$#$#$#$#$*?*$***=#$#$"
 "#$#$#$*1*2*3*4#$#$#$#$#$#$#$*5*6*7*8#$#$"
 ;12345678901234567890
+[end]
+
+
+[_point]
+Type=0x027
+SubType=0x00
+ExtendedLabels=N
+DayXpm="16 13 56 2"   Colormode=32
+"!!     c #FFFFFF"  alpha=0
+"!#     c #838383"  alpha=0
+"!%     c #000000"  alpha=0
+"!?     c #838383"  alpha=0
+"!$     c #525252"  alpha=0
+"!*     c #C5C5C5"  alpha=0
+"!=     c #101010"  alpha=0
+"!1     c #101010"  alpha=0
+"!2     c #313131"  alpha=0
+"!3     c #000000"  alpha=0
+"!4     c #949494"  alpha=0
+"!5     c #101010"  alpha=0
+"!6     c #FFFFFF"  alpha=0
+"!7     c #A4A4A4"  alpha=0
+"!8     c #737373"  alpha=0
+"!9     c #D5D5D5"  alpha=0
+"#!     c #B4B4B4"  alpha=0
+"##     c #A4A4A4"  alpha=0
+"#%     c #E6E6E6"  alpha=0
+"#?     c #000000"  alpha=0
+"#$     c #313131"  alpha=0
+"#*     c #000000"  alpha=0
+"#=     c #E6E6E6"  alpha=0
+"#1     c #838383"  alpha=0
+"#2     c #C5C5C5"  alpha=0
+"#3     c #393041"  alpha=0
+"#4     c #000000"  alpha=0
+"#5     c #A4A4A4"  alpha=0
+"#6     c #313131"  alpha=0
+"#7     c #525252"  alpha=0
+"#8     c #D5D5D5"  alpha=0
+"#9     c #000000"  alpha=0
+"%!     c #838383"  alpha=0
+"%#     c #949494"  alpha=0
+"%%     c #C5C5C5"  alpha=0
+"%?     c #D5D5D5"  alpha=0
+"%$     c #E6E6E6"  alpha=0
+"%*     c #101010"  alpha=0
+"%=     c #D5D5D5"  alpha=0
+"%1     c #838383"  alpha=0
+"%2     c #E6E6E6"  alpha=0
+"%3     c #101010"  alpha=0
+"%4     c #E6E6E6"  alpha=0
+"%5     c #FFFFFF"  alpha=0
+"%6     c #202020"  alpha=0
+"%7     c #D5D5D5"  alpha=0
+"%8     c #FFFFFF"  alpha=0
+"%9     c #A4A4A4"  alpha=0
+"?!     c #000000"  alpha=0
+"?#     c #313131"  alpha=0
+"?%     c #525252"  alpha=0
+"??     c #202020"  alpha=0
+"?$     c #101010"  alpha=0
+"?*     c #414141"  alpha=0
+"?=     c #101010"  alpha=0
+"?1     c #FFFFFF"  alpha=0
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+"!!!!!!!#!%!?!%!$!!!!!*!=!%!%!%!1"
+"!!!!!!!2!3!4!3!5!6!!!!!7!%!3!3!8"
+"!!!!!9!3!3#!!3!3###%!$#?#$!3#*#="
+"!!!!#1!3!3#2!3!3#3!1#4#5!!#6#7!!"
+"!!!!!2!3!3#8#9!3!3!3%!!!!!%#%%!!"
+"!!%?!3!3!3%$%*!3!3!3%=!!!!!!!!!!"
+"!!%1!3!3!3%2%3!3!3!3%4!!!!!!!!!!"
+"!!!2!3!3!3%5%6!3!3!3%7!!!!!!!!!!"
+"%?!3!3!3#?%8!2!3!3!3%9!!!!!!!!!!"
+"#1!3!3!3?!!!?#!3!3!3?%!!!!!!!!!!"
+"??!3!3!3?$!!?*!3!3!3?=?1!!!!!!!!"
+"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+;1234567890123456
 [end]
 
 
