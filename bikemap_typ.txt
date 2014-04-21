@@ -14488,6 +14488,41 @@ DayXpm="16 16 198 2"   Colormode=32
 
 [_point]
 Type=0x064
+SubType=0x06
+String1=0x01,
+ExtendedLabels=N
+DayXpm="9 15 10 1"   Colormode=16
+"!      c #C1121C"
+"#      c #C62C35"
+"%      c #E2AFB2"
+"?      c #E2B0B3"
+"$      c #E8CBCC"
+"*      c #CCCCCC"
+"=      c #EFEFEF"
+"1      c #F6F6F6"
+"2      c #FFFFFF"
+"       c none"
+"!!     !!"
+"!!$   #!!"
+" !!   !! "
+" !2* 22! "
+"  22 22  "
+"  22222  "
+"   222   "
+"   222   "
+"   222   "
+"  22222  "
+"  22 22  "
+" !21 12! "
+"%!!   !! "
+"!!=   ?!!"
+"!!     !!"
+;123456789
+[end]
+
+
+[_point]
+Type=0x064
 SubType=0x0b
 String1=0x02,Bunker
 String2=0x04,Bunker

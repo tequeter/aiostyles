@@ -210,8 +210,6 @@ highway=* & oneway=yes &
 
 highway=* & disused=yes									[0x10e01 resolution 24]
 
-
-
 #-----------------------------------------------------------------------------
 # Validation-like checks
 #highway=motorway_link

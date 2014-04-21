@@ -81,7 +81,12 @@ amenity=shelter 							[0x6402 resolution 24 continue]
 amenity=grave_yard & mkgmap:area2poi!=true				[0x6404 resolution 24]
 landuse=cemetery & mkgmap:area2poi!=true				[0x6404 resolution 24]
 # 0x6405	# civil
+
 # 0x6406	# crossing
+railway=level_crossing | railway=crossing
+            {
+              set mkgmap:road-speed=0
+              }                                                         [0x6406 resolution 24]
 # 0x6407	# dam
 # 0x6408	# hospital
 # 0x6409	# levee
@@ -91,7 +96,8 @@ man_made=mineshaft 					                [0x640c resolution 24]
 man_made=petroleum_well 						[0x640d	resolution 24]
 # 0x640e	# park
 
-amenity=post_box {
+amenity=post_box
+            {
 	      delete name ;
 	      delete operator ;
 	      delete ref ;
@@ -576,7 +582,6 @@ shop=electronics | shop=radiotechnics 							[0x2e18 resolution 24]
 shop=laundry | shop=dry_cleaning 							[0x2e19 resolution 24]
 shop=kiosk | shop=newsagent								[0x2e1a resolution 24]
 
-
 shop=motorcycle 									[0x2e1d resolution 24]
 #[0x2e1f resolution 24]
 
@@ -594,7 +599,6 @@ shop=motorcycle 									[0x2e1d resolution 24]
 
 #------------------------------------------------------------------------------
 # medical help
-
 
 amenity=doctors | amenity=doctors							[0x301a resolution 24]
 amenity=dentist 									[0x301b resolution 24]
@@ -853,18 +857,32 @@ power=generator                                                                 
 #------------------------------------------------------------------------------
 # barrier
 
-barrier=bollard                                                                         [0x2900 resolution 24]
-barrier=lift_gate | barrier=bus_trap                                                    [0x2901 resolution 24]
-barrier=gate | barrier=sally_port | barrier~'.*(entrance)'                              [0x2902 resolution 24]
-barrier=cycle_barrier                                                                   [0x2903 resolution 24]
-barrier~'.*(gate)' | barrier=cattle_grid | barrier~'.*(stile)'                          [0x2904 resolution 24]
+barrier=bollard
+    {
+      set mkgmap:road-speed=1;
+      }                                                                                 [0x2900 resolution 24]
+barrier=lift_gate | barrier=bus_trap
+    {
+      set mkgmap:road-speed=0;
+      }                                                                                 [0x2901 resolution 24]
+barrier=gate | barrier=sally_port | barrier~'.*(entrance)'
+    {
+      set mkgmap:road-speed=0;
+      }                                                                                 [0x2902 resolution 24]
+barrier=cycle_barrier
+    {
+      set mkgmap:road-speed=0;
+      }                                                                                 [0x2903 resolution 24]
+barrier~'.*(gate)' | barrier=cattle_grid | barrier~'.*(stile)'
+    {
+      set mkgmap:road-speed=0;
+      }                          [0x2904 resolution 24]
+
 barrier~'.*(fence)'                                                                     [0x2905 resolution 24]
 barrier~'.*(wall)'                                                                      [0x2906 resolution 24]
 barrier~'.*(chain)' | barrier~'.*(rope)'                                                [0x2907 resolution 24]
 barrier~'.*(block)' | barrier=jersey_barrier                                            [0x2908 resolution 24]
 barrier~'.*(hedge)'                                                                     [0x2909 resolution 24]
-
-#barrier=* {echo ' ${barrier} | ${access} | ${vehicle} | ${motor_vehicle} | ${bicycle} | ${foot} '}
 
 traffic_sign=city_limit                                                                 [0x2910 resolution 24]
 highway=traffic_signals                                                                 [0x2911 resolution 24]
