@@ -426,83 +426,106 @@ tourism=wine_cellar                                                             
 # Food and Drink
 
 # American
-cuisine=american                                                                        [0x2a01 resolution 24]
+amenity=restaurant &
+    cuisine=american                                                                    [0x2a01 resolution 24]
 
 # Asian
-cuisine=asian | 
-cuisine=indian |
-cuisine=korean |
-cuisine=thai |
-cuisine=vietnamese                                                                      [0x2a02 resolution 24]
+amenity=restaurant &
+  ( cuisine=asian |
+    cuisine=indian |
+    cuisine=korean |
+    cuisine=thai |
+    cuisine=vietnamese )                                                                [0x2a02 resolution 24]
 
 # Barbeque
-cuisine=barbecue                                                                        [0x2a03 resolution 24]
+amenity=restaurant &
+    cuisine=barbecue                                                                    [0x2a03 resolution 24]
 
 # Chinese
-cuisine=chinese                                                                         [0x2a04 resolution 24]
+amenity=restaurant &
+    cuisine=chinese                                                                     [0x2a04 resolution 24]
 
 # Deli/Bakery
-cuisine=cake |
-cuisine=deli | 
-cuisine=crepe | 
-amenity=ice_cream | 
-cuisine=ice_cream                                                                       [0x2a05 resolution 24]
+( amenity=restaurant &
+  ( cuisine=cake |
+    cuisine=deli |
+    cuisine=crepe )) |
+    amenity=ice_cream |
+    cuisine=ice_cream                                                                   [0x2a05 resolution 24]
 
 # International
-cuisine=international                                                                   [0x2a06 resolution 24]
+amenity=restaurant &
+    cuisine=international                                                               [0x2a06 resolution 24]
 
 # Fastfood
-amenity=fast_food  | 
-cuisine=fast_food  |
-cuisine=kebap | 
-cuisine=döner                                                                           [0x2a07 resolution 24]
+amenity=fast_food  |
+( amenity=restaurant &
+    cuisine=fast_food ) |
+    cuisine=kebap |
+    cuisine=döner                                                                       [0x2a07 resolution 24]
 
 # Italian
-cuisine=italian | cuisine=pasta                                                         [0x2a08 resolution 24]
+amenity=restaurant &
+  ( cuisine=italian |
+    cuisine=pasta )                                                                     [0x2a08 resolution 24]
 
 # Mexican
-cuisine=mexican                                                                         [0x2a09 resolution 24]
+amenity=restaurant &
+    cuisine=mexican                                                                     [0x2a09 resolution 24]
 
 # Pizza
-cuisine=pizza                                                                           [0x2a0a resolution 24]
+amenity=restaurant &
+    cuisine=pizza                                                                       [0x2a0a resolution 24]
 
 # Seafood
-cuisine=sea_food | 
-cuisine=fish | 
-cuisine=sushi                                                                           [0x2a0b resolution 24]
+amenity=restaurant &
+  ( cuisine=sea_food |
+    cuisine=fish |
+    cuisine=sushi )                                                                     [0x2a0b resolution 24]
 
 # Steak/Grill
-cuisine=steak_house |
-cuisine=chicken                                                                         [0x2a0c resolution 24]
+amenity=restaurant &
+  ( cuisine=steak_house |
+    cuisine=chicken )                                                                   [0x2a0c resolution 24]
 
 # Bagel/Donut
-cuisine=bagel | 
-cuisine=donut                                                                           [0x2a0d resolution 24]
+amenity=restaurant &
+  ( cuisine=bagel |
+    cuisine=donut  )                                                                    [0x2a0d resolution 24]
 
 # Cafe/Diner
-amenity=cafe | cuisine=coffee_shop                                                      [0x2a0e resolution 24]
+amenity=cafe |
+(amenity=restaurant &
+    cuisine=coffee_shop )                                                               [0x2a0e resolution 24]
 
 # French
-cuisine=french                                                                          [0x2a0f resolution 24]
+amenity=restaurant &
+    cuisine=french                                                                      [0x2a0f resolution 24]
 
 # German
-cuisine=german | cuisine=bavarian                                                       [0x2a10 resolution 24]
+amenity=restaurant &
+  ( cuisine=german |
+    cuisine=bavarian )                                                                  [0x2a10 resolution 24]
 
 # British
-cuisine=british | cuisine=fish_and_chips                                                [0x2a11 resolution 24]
+amenity=restaurant &
+  ( cuisine=british |
+    cuisine=fish_and_chips )                                                            [0x2a11 resolution 24]
 
 # Speciality Food Products
-cuisine=vegan | cuisine=vegetarian                                                      [0x2a12 resolution 24]
+amenity=restaurant &
+  ( cuisine=vegan |
+    cuisine=vegetarian )                                                                [0x2a12 resolution 24]
 
 # Other
-cuisine=mediterranean |
-cuisine=spanish |
-cuisine=greek |
-cuisine=turkish |
-cuisine=japanese | 
-cuisine=arabic |
-cuisine=african                                                                         [0x2a13 resolution 24]
-  
+amenity=restaurant &
+  ( cuisine=mediterranean |
+    cuisine=spanish |
+    cuisine=greek |
+    cuisine=turkish |
+    cuisine=japanese |
+    cuisine=arabic |
+    cuisine=african )                                                                   [0x2a13 resolution 24]
 
 amenity=restaurant                                                                      [0x2a00 resolution 24]
 
