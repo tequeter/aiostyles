@@ -446,11 +446,11 @@ amenity=restaurant &
     cuisine=chinese                                                                     [0x2a04 resolution 24]
 
 # Deli/Bakery
-( amenity=restaurant &
+amenity=restaurant &
   ( cuisine=cake |
     cuisine=deli |
-    cuisine=crepe )) |
-    amenity=ice_cream |
+    cuisine=crepe )                                                                     [0x2a05 resolution 24]
+amenity=ice_cream |
     cuisine=ice_cream                                                                   [0x2a05 resolution 24]
 
 # International
@@ -828,8 +828,8 @@ power=tower | power=pole								[0x7201 resolution 24]
 
 power=generator &
       ( power_source=wind |
-        generator:source=wind )  							[0x7202 resolution 24]
-
+        generator:source=wind )  							[0x6416 resolution 24]
+#0x7202
 power=generator &
       ( power_source=hydro |
         power_source=tidal |
