@@ -1,3 +1,12 @@
+# rules for base- and bikemap
+
+power=generator &
+      ( power_source=wind |
+        generator:source=wind ) { delete name; name '${ref}' | '${operator}' | 'brand'; }
+
+amenity=post_box |
+amenity=telephone               { delete name; delete operator; delete ref; }
+
 # Rules for naming objects, based on the following tags:
 # name, brand, operator, ref
 
