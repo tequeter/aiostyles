@@ -791,7 +791,7 @@ historic=wreck 										[0x1c01 resolution 24]
 # 0x70ss
 
 # Boat Ramp (?)
-leisure=slipware									[0x4700 resolution 24]
+leisure=slipway									        [0x4700 resolution 24]
 # 0x47ss
 
 # Tide Station
