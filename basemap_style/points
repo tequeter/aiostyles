@@ -94,12 +94,7 @@ man_made=mineshaft 					                [0x640c resolution 24]
 man_made=petroleum_well 						[0x640d	resolution 24]
 # 0x640e	# park
 
-amenity=post_box
-            {
-	      delete name ;
-	      delete operator ;
-	      delete ref ;
-	      }								[0x640f resolution 24]
+amenity=post_box							[0x640f resolution 24]
 
 amenity=clock 								[0x6410 resolution 24]
 man_made=tower 								[0x6411 resolution 24]
@@ -308,10 +303,10 @@ amenity=shower 										[0x4f01 resolution 24]
 # 0x50ss	# drinking water
 
 # 0x51ss	# telephone
-amenity=telephone {
-              delete name ; delete operator
-              }                                                          		[0x5100 resolution 24]
+amenity=telephone                                                                       [0x5100 resolution 24]
+
 emergency=phone | amenity=emergency_phone 						[0x5101 resolution 24]
+
 highway=emergency_access_point {
 	    add ref='';
 	    add name='';
@@ -375,7 +370,7 @@ tourism=camp_site & tents!=no & mkgmap:area2poi!=true					[0x2b03 resolution 24]
 tourism=caravan_site & tents=yes & mkgmap:area2poi!=true				[0x2b03 resolution 24]
 
 # Resort
-tourism=resort 									[0x2b04 resolution 24]
+tourism=resort 									        [0x2b04 resolution 24]
 
 # Other
 tourism~'.*(hut)'									[0x2b06 resolution 24]
