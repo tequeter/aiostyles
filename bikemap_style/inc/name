@@ -13,17 +13,69 @@ operator=${brand} { delete operator; }
 operator=${name}  { delete operator; }
 brand=${name}     { delete brand; }
 
+## name option for base- and bikemap
+railway=tram_stop |
+amenity=bus_station |
+highway=bus_stop |
+public_transport=platform |
+railway=station |
+railway=halt            { name '${name} (${route_ref})'; }
 
-(
+highway=emergency_access_point 
+            {
+            add ref='';
+            add name='';
+            add operator='';
+            add emergency_telephone_code='';
+            name '${ref} ${name} ${operator} ${emergency_telephone_code}';
+            }                   
+
 amenity=post_box |
+amenity=post_office |
 amenity=telephone
-)
-            { set label_temp='${operator}' |
-                              '${brand}' |
-                              '${name}';
+
+            { set label_temp='${operator}' | '${brand}' | '${name}';
               set mkgmap:label:3='${label_temp}' ;
               delete name ;
               delete operator;
               delete brand;
-              echo ' ${amenity} | ${mkgmap:label:3} | ${name}'
+            }
+
+amenity=hotel |
+amenity=motel |
+amenity=restaurant 
+
+            { set name='${name} (${stars} *)' | '${name}' | '${stars} *' ; 
+              set mkgmap:label:3='${name}' ;
+              delete operator;
+              delete brand;
+              delete name ;
+            }
+            
+amenity=cafe
+            { set label_temp='${name}' |'${operator}' | '${brand}';
+              set mkgmap:label:3='${label_temp}' ;
+              delete operator;
+              delete brand;
+              delete name ;
+            }
+            
+amenity=fuel            
+            { set label_temp='${brand}' | '${operator}' | '${name}';
+              set mkgmap:label:3='${label_temp}';
+              set mkgmap:label:1='${brand}';
+              delete operator;
+              delete brand;
+              delete name ;
+              }
+
+amenity=toilets & name!=* {set name='WC'}
+
+tourism=* |
+power=*
+            { set label_temp='${operator}' | '${brand}' | '${name}';
+              set mkgmap:label:3='${label_temp}' ;
+              delete operator;
+              delete brand;
+              delete name ;
             }

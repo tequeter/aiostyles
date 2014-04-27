@@ -96,11 +96,7 @@ man_made=mineshaft 					                [0x640c resolution 24]
 man_made=petroleum_well 						[0x640d	resolution 24]
 # 0x640e	# park
 
-amenity=post_box {
-	      delete name ;
-	      delete operator ;
-	      delete ref ;
-	      }								[0x640f resolution 24]
+amenity=post_box 							[0x640f resolution 24]
 
 amenity=clock 								[0x6410 resolution 24]
 man_made=tower 								[0x6411 resolution 24]
@@ -230,8 +226,7 @@ highway=motorway_junction								[0x2000 resolution 22]
 # Fuel
 
 # Auto Fuel
-#amenity=fuel & name!=* { set name ='${operator}'}
-#amenity=fuel 										[0x2f01 resolution 24]
+amenity=fuel 										[0x2f01 resolution 24]
 
 # 0x44ss
 
@@ -246,11 +241,6 @@ highway=motorway_junction								[0x2000 resolution 22]
 #shop=car_repair 									[0x2f03 resolution 24]
 
 # Dealer/Auto Parts
-
-# set name for the german car-part-dealer AutoTeileUnger to only one
-#shop=car_parts & name~'[Aa][Tt][Uu]*'
-#			{set name='A.T.U'}
-
 #shop=car | shop=car_parts 								[0x2f07 resolution 24]
 # 0x31ss
 
@@ -296,7 +286,6 @@ amenity=parking & mkgmap:area2poi!=true
 amenity=parking & mkgmap:area2poi!=true							[0x4d00 resolution 24]
 
 # 0x4ess        # restroom
-amenity=toilets & name!=* {set name='WC'} 						[0x4e01 resolution 24]
 amenity=toilets 									[0x4e01 resolution 24]
 
 # 0x4fss	# shower
@@ -304,17 +293,9 @@ amenity=shower                                                                  
 # 0x50ss	# drinking water
 
 # 0x51ss	# telephone
-amenity=telephone {
-	      delete name ; delete operator
-	      }							        		[0x5100 resolution 24]
+amenity=telephone						        		[0x5100 resolution 24]
 emergency=phone | amenity=emergency_phone 						[0x5101 resolution 24]
-highway=emergency_access_point {
-	    add ref='';
-	    add name='';
-	    add operator='';
-	    add emergency_telephone_code='';
-	    name '${ref} ${name} ${operator} ${emergency_telephone_code}';
-	    } 										[0x5102 resolution 24]
+highway=emergency_access_point  							[0x5102 resolution 24]
 
 #------------------------------------------------------------------------------
 # Transportation
@@ -335,8 +316,7 @@ aeroway=helipad				 						[0x5904 resolution 24]
 
 # Ground Transportation
 
-railway=station		{ name '${name} (${route_ref})'; } 				[0x2f08 resolution 23]
-railway=halt 		{ name '${name} (${route_ref})'; } 				[0x2f08 resolution 24]
+railway=station	| railway=halt  				                        [0x2f08 resolution 23]
 
 
 # Transit Service
@@ -345,10 +325,7 @@ railway=halt 		{ name '${name} (${route_ref})'; } 				[0x2f08 resolution 24]
 railway=tram_stop |
 amenity=bus_station |
 highway=bus_stop |
-public_transport=platform
-              {
-	      name '${name} (${route_ref})';
-	      } 									[0x2f17 resolution 24]
+public_transport=platform								[0x2f17 resolution 24]
 
 
 
@@ -360,8 +337,7 @@ public_transport=platform
 #[0x2b00]
 
 # Hotel/Motel
-tourism=hotel | tourism=motel
-      { set name='${name} (${stars} *)' | '${name}' | '${stars} *' }			[0x2b01 resolution 24]
+tourism=hotel | tourism=motel                                   			[0x2b01 resolution 24]
 
 # Bed & Breakfast Inn
 tourism=guest_house 									[0x2b02 resolution 24]
@@ -536,82 +512,88 @@ amenity=restaurant                                                              
 # Shopping
 
 # Department # Kaufhaus
-shop=department_store & mkgmap:area2poi!=true						[0x2e01 resolution 24]
+shop=department_store & mkgmap:area2poi!=true                                           [0x2e01 resolution 24]
 
 # Grocery # Lebensmittel
-shop=greengrocer |
+(shop=greengrocer |
 shop=organic |
 shop=butcher |
 shop=bakery |
 shop=beverages |
-amenity=market_place                                                                    [0x2e02 resolution 24]
+amenity=market_place) & mkgmap:area2poi!=true                                           [0x2e02 resolution 24]
 
 # General Merchandise # Gemischtwaren
-shop=supermarket | shop=general 							[0x2e03 resolution 24]
+(shop=supermarket | 
+shop=general)  & mkgmap:area2poi!=true                                                  [0x2e03 resolution 24]
 
 # Shopping Center # Einkaufszentrum
-shop=mall & mkgmap:area2poi!=true							[0x2e04 resolution 24]
+shop=mall & mkgmap:area2poi!=true                                                       [0x2e04 resolution 24]
 
 # Pharmacy/Chemist # Apotheke/Drogerie
-amenity=pharmacy | shop=chemist 							[0x2e05 resolution 24]
+(amenity=pharmacy | 
+shop=chemist) & mkgmap:area2poi!=true                                                   [0x2e05 resolution 24]
 
 # Convenience # Bedarfsartikel
-shop=convenience 									[0x2e06 resolution 24]
+shop=convenience & mkgmap:area2poi!=true                                                [0x2e06 resolution 24]
 
 # Apparel/Clothing
-shop=clothes | shop=shoes | shop=boutique						[0x2e07 resolution 24]
+(shop=clothes | 
+shop=shoes | 
+shop=boutique) & mkgmap:area2poi!=true                                                  [0x2e07 resolution 24]
 
 # House and Garden
-shop=garden_centre | shop=doityourself | shop=trade 					[0x2e08 resolution 24]
-
+(shop=garden_centre | 
+shop=doityourself | 
+shop=trade)  & mkgmap:area2poi!=true                                                    [0x2e08 resolution 24]
 
 # Home Furnishings
-shop=interior_decoration |
+(shop=interior_decoration |
 shop=curtain |
 shop=window_blind |
 shop=bathroom_furnishing |
-shop=bed |
-shop=kitchen |
-shop=furniture 						                                [0x2e09 resolution 24]
+shop=bed | shop=kitchen |
+shop=furniture)  & mkgmap:area2poi!=true                                                [0x2e09 resolution 24]
 
 # Speciality Retail
 shop=confectionery |
 shop=sea_food |
-shop=deli  										[0x2e0a resolution 24]
+shop=deli & mkgmap:area2poi!=true                                                       [0x2e0a resolution 24]
 
 # Computer/Software
-shop=computer | shop=mobile_phone							[0x2e0b resolution 24]
+(shop=computer | 
+shop=mobile_phone) & mkgmap:area2poi!=true                                              [0x2e0b resolution 24]
 
-shop=kiosk 										[0x2e0c resolution 24]
-shop=optician |	shop=jewelry |shop=beauty						[0x2e0d resolution 24]
-shop=toys										[0x2e0e resolution 24]
+shop=kiosk & mkgmap:area2poi!=true                                                      [0x2e0c resolution 24]
+(shop=optician |        
+shop=jewelry | 
+shop=beauty) & mkgmap:area2poi!=true                                                    [0x2e0d resolution 24]
+shop=toys & mkgmap:area2poi!=true                                                       [0x2e0e resolution 24]
 
 # Florist
-shop=florist 										[0x2e0f resolution 24]
+shop=florist  & mkgmap:area2poi!=true                                                   [0x2e0f resolution 24]
 
-#[0x2e11 resolution 24]
+#0x2e11 resolution 24
 
 # Sporting Goods
-shop=sports 										[0x2e12 resolution 24]
+shop=sports  & mkgmap:area2poi!=true                                                    [0x2e12 resolution 24]
 
 # Wine/Liqour
-shop=wine | shop=winery	| shop=alcohol							[0x2e13 resolution 24]
+shop=wine | shop=winery | shop=alcohol & mkgmap:area2poi!=true                          [0x2e13 resolution 24]
 
 # Book Store
-shop=books										[0x2e14 resolution 24]
+shop=books & mkgmap:area2poi!=true                                                      [0x2e14 resolution 24]
 
 # Misc without symbols
-shop=outdoor 										[0x2e15 resolution 24]
-shop=video 										[0x2e17 resolution 24]
-shop=electronics | shop=radiotechnics | shop=hifi					[0x2e18 resolution 24]
-shop=laundry | shop=dry_cleaning 							[0x2e19 resolution 24]
-shop=kiosk | shop=newsagent								[0x2e1a resolution 24]
+shop=outdoor & mkgmap:area2poi!=true                                                    [0x2e15 resolution 24]
+shop=video  & mkgmap:area2poi!=true                                                     [0x2e17 resolution 24]
+(shop=electronics | 
+shop=radiotechnics)  & mkgmap:area2poi!=true                                            [0x2e18 resolution 24]
+(shop=laundry | 
+shop=dry_cleaning)  & mkgmap:area2poi!=true                                             [0x2e19 resolution 24]
+(shop=kiosk | 
+shop=newsagent) & mkgmap:area2poi!=true                                                 [0x2e1a resolution 24]
 
-
-#
-#shop=toys
-#shop=copyshop
-#shop=photo
+shop=motorcycle                                                                         [0x2e1d resolution 24]
 
 #------------------------------------------------------------------------------
 # medical help
