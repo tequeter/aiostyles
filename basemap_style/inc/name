@@ -9,9 +9,9 @@ brand=FIXME | brand=fixme       { delete brand; }
 name=FIXME | name=fixme         { delete name; }
 
 # delete duplicate names
-operator=${brand} { delete operator; }
-operator=${name}  { delete operator; }
-brand=${name}     { delete brand; }
+#operator=${brand} { delete operator; }
+#operator=${name}  { delete operator; }
+#brand=${name}     { delete brand; }
 
 ## name option for base- and bikemap
 railway=tram_stop |
@@ -44,14 +44,13 @@ amenity=telephone
 
 amenity=hotel |
 amenity=motel |
-amenity=restaurant 
-
-            { set name='${name} (${stars} *)' | '${name}' | '${stars} *' ; 
-              set mkgmap:label:3='${name}' ;
+amenity=restaurant
+            { set label_temp='${name} (${stars} *)' | '${name}' | '${stars} *' ; 
+              set mkgmap:label:3='${label_temp}' ;
               delete operator;
               delete brand;
               delete name ;
-            }
+              }
             
 amenity=cafe
             { set label_temp='${name}' |'${operator}' | '${brand}';
@@ -62,7 +61,7 @@ amenity=cafe
             }
             
 amenity=fuel            
-            { set label_temp='${brand}' | '${operator}' | '${name}';
+            { set label_temp='${operator}' | '${name}' | '${brand}';
               set mkgmap:label:3='${label_temp}';
               set mkgmap:label:1='${brand}';
               delete operator;
