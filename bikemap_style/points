@@ -193,44 +193,13 @@ natural=cave_entrance 							[0x6619 resolution 24]	# type without category
 #------------------------------------------------------------------------------
 # Exit
 
-# Exit with facilities
-# 0x21ss
-(exit_to=* | highway=motorway_junction) & car_repair=yes				[0x2100 resolution 24]
-
-# Exit with restroom
-# 0x22ss
-(exit_to=* | highway=motorway_junction) & (restroom=yes | toilets=yes | toilet=yes)	[0x2200 resolution 24]
-
-# Exit with convenience storey
-# 0x23ss
-(exit_to=* | highway=motorway_junction) & shop=convenience				[0x2300 resolution 24]
-
-# Weight Station
-# 0x24ss
-(exit_to=* | highway=motorway_junction) & weight_station=yes				[0x2400 resolution 24]
-
-# Toll Booth
-barrier=toll_booth { add toll=yes; } 							[0x2500 resolution 24]
-highway=motorway_junction & tool_booth=yes						[0x2501 resolution 24]
-
-# Exit with information
-# 0x26ss
-highway=motorway_junction & information=yes						[0x2600 resolution 24]
-
-# Exit without services
-# 0x20ss
 highway=motorway_junction								[0x2000 resolution 22]
-
-# 0x27ss multiple exits? see your Garmins root/text/*.gtt
 
 #------------------------------------------------------------------------------
 # Fuel
 
 # Auto Fuel
 amenity=fuel 										[0x2f01 resolution 24]
-
-# 0x44ss
-
 
 #------------------------------------------------------------------------------
 # Auto Services
@@ -265,8 +234,6 @@ highway=services | highway=rest_area 							[0x2f0c resolution 24]
 
 # 0x4css	# information
 tourism=information 									[0x4c00 resolution 24]
-
-shop=travel_agency									[0x4c02 resolution 24]
 
 # 0x4dss
 amenity=parking & mkgmap:area2poi!=true

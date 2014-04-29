@@ -21,6 +21,8 @@ public_transport=platform |
 railway=station |
 railway=halt            { name '${name} (${route_ref})'; }
 
+highway=motorway_junction { name '${name} (${ref})'; }
+
 highway=emergency_access_point 
             {
             add ref='';
