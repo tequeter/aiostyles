@@ -672,7 +672,7 @@ amenity=atm | amenity=bank | amenity=bureau_de_change
 # Utility
 amenity=waste_transfer_station | amenity=recycling 	{
 	      add name='Recycling'
-	      }	 									[0x2f15 resolution 24]
+	      }	 									[0x2f19 resolution 24]
 
 # Other
 amenity=public_building									[0x3000 resolution 24]
