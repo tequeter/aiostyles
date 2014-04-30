@@ -43,8 +43,8 @@ amenity=telephone
             }
 
 
-amenity=hotel |
-amenity=motel |
+tourism=hotel |
+tourism=motel |
 amenity=restaurant
 
             { set label_temp='${name} (${stars} *)' | '${name}' | '${stars} *' ;
@@ -54,7 +54,11 @@ amenity=restaurant
               delete name ;
             }
 
-amenity=cafe
+amenity=cafe |
+amenity=bank |
+amenity=atm |
+amenity=pub |
+amenity=casino
             { set label_temp='${name}' |'${operator}' | '${brand}';
               set mkgmap:label:3='${label_temp}' ;
               delete operator;
@@ -76,11 +80,9 @@ amenity=toilets & name!=* {set name='WC'}
 # avoid POI with label "unnamed" - maybe add to FIXME Layer
 amenity=public_building & name!=* {delete amenity}
 
-tourism=* |
 power=*
             {
               delete operator;
               delete brand;
               delete name ;
             }
-

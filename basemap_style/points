@@ -283,7 +283,7 @@ aeroway=airport & mkgmap:area2poi!=true							[0x5902 resolution 23-20 continue]
 aeroway=airport & mkgmap:area2poi!=true							[0x2f04 resolution 24]
 (aeroway=airfield | military=airfield) & mkgmap:area2poi!=true				[0x5903 resolution 23-22 continue]
 (aeroway=airfield | military=airfield) & mkgmap:area2poi!=true				[0x2f04 resolution 24]
-aeroway=helipad				 						[0x5904 resolution 24]
+aeroway=helipad								 		[0x5904 resolution 24 default_name Helicopter]
 
 
 # Ground Transportation
@@ -592,26 +592,11 @@ amenity=university 									[0x2c05 resolution 24]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship & religion=muslim 
-				{
-				add name='Muslim'
-				}						[0x2c0d resolution 24]
-amenity=place_of_worship & religion=christian 
-				{
-				add name='Christ'
-				} 						[0x2c0e resolution 24]
-amenity=place_of_worship & religion=buddhist 
-				{
-				add name='Buddhist'
-				}						[0x2c0f resolution 24]
-amenity=place_of_worship & religion=jewish 
-				{
-				add name='Jewish'
-				} 						[0x2c10 resolution 24]
-amenity=place_of_worship 
-				{
-				add name='Worship'
-				} 								[0x2c0b resolution 24]
+amenity=place_of_worship & religion=muslim 						[0x2c0d resolution 24 default_name muslim]
+amenity=place_of_worship & religion=christian  						[0x2c0e resolution 24 default_name christ]
+amenity=place_of_worship & religion=buddhist 						[0x2c0f resolution 24 default_name buddhist]
+amenity=place_of_worship & religion=jewish  						[0x2c10 resolution 24 default_name jewish]
+amenity=place_of_worship  								[0x2c0b resolution 24 default_name religious]
 
 # Generic Emergency/Government
 amenity=social_centre | amenity=social_facility 					[0x3000 resolution 24]
@@ -702,7 +687,7 @@ sport=skiing 										[0x2d06 resolution 24]
 sport=9pin | sport=10pin 								[0x2d07 resolution 24]
 
 # Ice Skating
-leisure=ice_rink | sport=skating 							[0x2d08 resolution 24]
+leisure=ice_rink | sport=skating	 						[0x2d08 resolution 24 default_name skating]
 
 # Swimming Pool
 sport=swimming & mkgmap:area2poi!=true							[0x2d09 resolution 24]
@@ -878,7 +863,6 @@ man_made=surveillance                                                           
 # The finalizer section is executed for each element when a rule with an element type matches
 
 name=* { name '${name}' }
-
 include 'inc/phone';
 include 'inc/address';
 
