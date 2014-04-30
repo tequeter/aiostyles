@@ -59,17 +59,17 @@ place=town & population >    999 & cityxx!=yes  & name=*        {set cityxx=yes}
 place=town & population >      0 & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 20 continue with_actions]
 place=town                       & cityxx!=yes  & name=*        {set cityxx=yes} [0x0800 resolution 19 continue with_actions]
 
-place=village                    & cityxx!=yes                  {set cityxx=yes} [0x0900 resolution 22 continue with_actions]
-place=suburb                     & cityxx!=yes                  {set cityxx=yes} [0x0a00 resolution 22 continue with_actions]
+place=village                    & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0900 resolution 22 continue with_actions]
+place=suburb                     & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0a00 resolution 22 continue with_actions]
 
 (place=hamlet |
 place=isolated_dwelling |
-place=neighbourhood)             & cityxx!=yes                  {set cityxx=yes} [0x0b00 resolution 24 continue with_actions]
+place=neighbourhood)             & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0b00 resolution 24 continue with_actions]
 
-place=island                     & cityxx!=yes                  {set cityxx=yes} [0x650c resolution 20 continue with_actions]
-place=islet                      & cityxx!=yes                  {set cityxx=yes} [0x650c resolution 22 continue with_actions]
+place=island                     & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 20 continue with_actions]
+place=islet                      & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 22 continue with_actions]
 
-place=locality                                                          [0x2800 resolution 24 continue with_actions]
+place=locality  & name=*                                                           [0x2800 resolution 24 continue with_actions]
 
 # Man Made
 # 0x6401 	# bridge
@@ -83,6 +83,7 @@ landuse=cemetery & mkgmap:area2poi!=true				[0x6404 resolution 24]
 # 0x6406	# crossing
 railway=level_crossing | railway=crossing
             {
+              add name='X-ing' ;
               set mkgmap:road-speed=0
               }                                                         [0x6406 resolution 24]
 # 0x6407	# dam
@@ -592,11 +593,26 @@ amenity=university 									[0x2c05 resolution 24]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship & religion=muslim						[0x2c0d resolution 24]
-amenity=place_of_worship & religion=christian 						[0x2c0e resolution 24]
-amenity=place_of_worship & religion=buddhist						[0x2c0f resolution 24]
-amenity=place_of_worship & religion=jewish 						[0x2c10 resolution 24]
-amenity=place_of_worship 								[0x2c0b resolution 24]
+amenity=place_of_worship & religion=muslim 
+				{
+				add name='Muslim'
+				}						[0x2c0d resolution 24]
+amenity=place_of_worship & religion=christian 
+				{
+				add name='Christ'
+				} 						[0x2c0e resolution 24]
+amenity=place_of_worship & religion=buddhist 
+				{
+				add name='Buddhist'
+				}						[0x2c0f resolution 24]
+amenity=place_of_worship & religion=jewish 
+				{
+				add name='Jewish'
+				} 						[0x2c10 resolution 24]
+amenity=place_of_worship 
+				{
+				add name='Worship'
+				} 								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
 amenity=social_centre | amenity=social_facility 					[0x3000 resolution 24]
@@ -635,7 +651,7 @@ amenity=post_office     								[0x2f05 resolution 24]
 amenity=atm | amenity=bank | amenity=bureau_de_change   				[0x2f06 resolution 24]
 
 # Utility
-amenity=waste_transfer_station | amenity=recycling 					[0x2f15 resolution 24]
+amenity=waste_transfer_station | amenity=recycling 					[0x2f19 resolution 24]
 
 # Other
 amenity=public_building 								[0x3000 resolution 24]

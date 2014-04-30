@@ -36,8 +36,7 @@ amenity=post_box |
 amenity=post_office |
 amenity=telephone
 
-            { set label_temp='${operator}' | '${brand}' | '${name}';
-              set mkgmap:label:3='${label_temp}' ;
+            { 
               delete name ;
               delete operator;
               delete brand;
@@ -46,13 +45,14 @@ amenity=telephone
 
 amenity=hotel |
 amenity=motel |
-amenity=restaurant
+amenity=restaurant 
+
             { set label_temp='${name} (${stars} *)' | '${name}' | '${stars} *' ; 
               set mkgmap:label:3='${label_temp}' ;
               delete operator;
               delete brand;
               delete name ;
-              }
+            }
             
 amenity=cafe
             { set label_temp='${name}' |'${operator}' | '${brand}';
@@ -71,14 +71,15 @@ amenity=fuel
               delete name ;
               }
 
+# avoid POI with label "unnamed" - some icons do not provide a default name
 amenity=toilets & name!=* {set name='WC'}
+# avoid POI with label "unnamed" - maybe add to FIXME Layer
+amenity=public_building & name!=* {delete amenity}
 
 tourism=* |
 power=*
-            { set label_temp='${operator}' | '${brand}' | '${name}';
-              set mkgmap:label:3='${label_temp}' ;
+            { 
               delete operator;
               delete brand;
               delete name ;
             }
-
