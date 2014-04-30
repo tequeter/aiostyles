@@ -84,7 +84,6 @@ landuse=cemetery & mkgmap:area2poi!=true				[0x6404 resolution 24]
 # 0x6406	# crossing
 railway=level_crossing | railway=crossing
             {
-              add name='X-ing' ;
               set mkgmap:road-speed=0
               }                                                         [0x6406 resolution 24]
 

@@ -13161,7 +13161,8 @@ DayXpm="16 16 198 2"   Colormode=32
 [_point]
 Type=0x064
 SubType=0x06
-String1=0x01,
+String1=0x02,Bahnübergang
+String1=0x04,level crossing
 ExtendedLabels=N
 DayXpm="9 15 10 1"   Colormode=16
 "!      c #C1121C"
