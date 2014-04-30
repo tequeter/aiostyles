@@ -599,16 +599,19 @@ amenity=place_of_worship & religion=jewish  						[0x2c10 resolution 24 default_
 amenity=place_of_worship  								[0x2c0b resolution 24 default_name religious]
 
 # Generic Emergency/Government
-amenity=social_centre | amenity=social_facility 					[0x3000 resolution 24]
+amenity=social_centre | amenity=social_facility 
+						{
+						add name='${social_facility:for|subst:_=> }'|'${social_facility|subst:_=> }'|'${amenity|subst:_=> }'
+						} 					[0x3000 resolution 24]
 
 # Police Station
 amenity=police 										[0x3001 resolution 24]
 
 # Hospital
-amenity=hospital 									[0x3002 resolution 23]
+amenity=hospital & mkgmap:area2poi!=true 									[0x3002 resolution 23]
 
 # City Hall
-amenity=townhall 									[0x3003 resolution 24]
+amenity=townhall & mkgmap:area2poi!=true 									[0x3003 resolution 24]
 
 # Court House
 amenity=courthouse 									[0x3004 resolution 24]
@@ -632,7 +635,10 @@ amenity=prison 										[0x3009 resolution 24]
 amenity=post_office     								[0x2f05 resolution 24]
 
 # Bank or ATM
-amenity=atm | amenity=bank | amenity=bureau_de_change   				[0x2f06 resolution 24]
+amenity=atm | amenity=bank | amenity=bureau_de_change 
+						{
+						name '${operator}' | '${name}' | '${amenity|subst:_=> }'
+						}   				[0x2f06 resolution 24]
 
 # Utility
 amenity=waste_transfer_station | amenity=recycling 					[0x2f19 resolution 24]
