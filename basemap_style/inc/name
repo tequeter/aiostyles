@@ -21,22 +21,22 @@ public_transport=platform |
 railway=station |
 railway=halt            { name '${name} (${route_ref})'; }
 
-highway=motorway_junction { name '${name} (${ref})'; }
+highway=motorway_junction { name '${ref} ${name}'; }
 
-highway=emergency_access_point 
+highway=emergency_access_point
             {
             add ref='';
             add name='';
             add operator='';
             add emergency_telephone_code='';
             name '${ref} ${name} ${operator} ${emergency_telephone_code}';
-            }                   
+            }
 
 amenity=post_box |
 amenity=post_office |
 amenity=telephone
 
-            { 
+            {
               delete name ;
               delete operator;
               delete brand;
@@ -45,15 +45,15 @@ amenity=telephone
 
 amenity=hotel |
 amenity=motel |
-amenity=restaurant 
+amenity=restaurant
 
-            { set label_temp='${name} (${stars} *)' | '${name}' | '${stars} *' ; 
+            { set label_temp='${name} (${stars} *)' | '${name}' | '${stars} *' ;
               set mkgmap:label:3='${label_temp}' ;
               delete operator;
               delete brand;
               delete name ;
             }
-            
+
 amenity=cafe
             { set label_temp='${name}' |'${operator}' | '${brand}';
               set mkgmap:label:3='${label_temp}' ;
@@ -61,8 +61,8 @@ amenity=cafe
               delete brand;
               delete name ;
             }
-            
-amenity=fuel            
+
+amenity=fuel
             { set label_temp='${operator}' | '${name}' | '${brand}';
               set mkgmap:label:3='${label_temp}';
               set mkgmap:label:1='${brand}';
@@ -78,7 +78,7 @@ amenity=public_building & name!=* {delete amenity}
 
 tourism=* |
 power=*
-            { 
+            {
               delete operator;
               delete brand;
               delete name ;
