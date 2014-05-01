@@ -97,11 +97,14 @@ amenity=toilets & name!=* {set name='WC'}
 # avoid POI with label "unnamed" - maybe add to FIXME Layer
 amenity=public_building & name!=* {delete amenity}
 
+amenity=place_of_worship & denomination=unknown { delete denomination }
+amenity=place_of_worship & religion=unknown { delete religion }
+amenity=place_of_worship & building=yes { delete building }
 amenity=place_of_worship & name!=*
 						{
-						#echo '${religion}';
-						set temp_religion='${religion|subst:unknown=>}' | '${denomination|subst:unknown=>}' | '${building|subst:yes=>}';
-						add name='${temp_religion|subst:_=> }' | 'religious' ;
+						set temp_religion='${denomination} ${building}' | '${denomination}' | '${religion} ${building}' | '${religion}' | '${building}' | 'religious' ;
+						add name='${temp_religion|subst:_=> }' ;
+						#echo '${religion} | ${denomination} | ${building} | ${temp_religion} | ${name}';
 						}
 
 amenity=social_centre | amenity=social_facility
