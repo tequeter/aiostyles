@@ -1,6 +1,52 @@
-# Openstreetbugs:
-type = '0' {name '${text}'} [0x7111 resolution 20]
-type = '1' {name '${text}'} [0x7112 resolution 20]
 
-note=* | fixme = * | FIXME=* |Fixme=* {name 'Notiz: ${note}' | 'Notiz: ${fixme}' | 'Notiz: ${FIXME}' | 'Notiz: ${Fixme}' } [0x7110 resolution 23]
-amenity=public_building & name!=* {name 'FIXME: Bez. fehlt'} [0x7110 resolution 23]
+note=* |
+fixme=* |
+FIXME=* |
+Fixme=* |
+ref=FIXME |
+ref=fixme |
+operator=FIXME |
+operator=fixme |
+brand=FIXME |
+brand=fixme |
+name=FIXME |
+name=fixme |
+
+            {name 'Notiz: ${note}' |
+                  'Notiz: ${fixme}' |
+                  'Notiz: ${FIXME}' |
+                  'Notiz: ${Fixme}' |
+                  'Notiz: ${ref} = fixme' |
+                  'Notiz: ${operator} = fixme' |
+                  'Notiz: ${brand = fixme' |
+                  'Notiz: ${name} = fixme'
+                  }
+                          [0x7110 resolution 23]
+
+amenity=public_building & name!=*
+            {name 'FIXME: name or operator fehlt/missing'}
+                          [0x7110 resolution 23]
+
+place_of_worship=* & building!=*
+            {name 'FIXME: building fehlt/missing'}
+                          [0x7110 resolution 23]
+
+amenity=fuel & brand!=*
+            {name 'FIXME: name or operator fehlt/missing'}
+                          [0x7110 resolution 23]
+
+tourism=hotel & stars!=*
+            {name 'FIXME: stars missing'}
+                          [0x7110 resolution 23]
+
+shop!=vacant & name!=*
+            {name 'FIXME: name, brand or operator fehlt/missing'}
+                          [0x7110 resolution 23]
+
+amenity=restaurant & cuisine!=*
+            {name 'FIXME: cuisine fehlt/missing'}
+                          [0x7110 resolution 23]
+                          
+amenity=restaurant & name!=*
+            {name 'FIXME: name, brand or operator fehlt/missing'}
+                          [0x7110 resolution 23]
