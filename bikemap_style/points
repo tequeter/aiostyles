@@ -490,27 +490,27 @@ shop=beverages |
 amenity=market_place) & mkgmap:area2poi!=true                                           [0x2e02 resolution 24]
 
 # General Merchandise # Gemischtwaren
-(shop=supermarket | 
+(shop=supermarket |
 shop=general)  & mkgmap:area2poi!=true                                                  [0x2e03 resolution 24]
 
 # Shopping Center # Einkaufszentrum
 shop=mall & mkgmap:area2poi!=true                                                       [0x2e04 resolution 24]
 
 # Pharmacy/Chemist # Apotheke/Drogerie
-(amenity=pharmacy | 
+(amenity=pharmacy |
 shop=chemist) & mkgmap:area2poi!=true                                                   [0x2e05 resolution 24]
 
 # Convenience # Bedarfsartikel
 shop=convenience & mkgmap:area2poi!=true                                                [0x2e06 resolution 24]
 
 # Apparel/Clothing
-(shop=clothes | 
-shop=shoes | 
+(shop=clothes |
+shop=shoes |
 shop=boutique) & mkgmap:area2poi!=true                                                  [0x2e07 resolution 24]
 
 # House and Garden
-(shop=garden_centre | 
-shop=doityourself | 
+(shop=garden_centre |
+shop=doityourself |
 shop=trade)  & mkgmap:area2poi!=true                                                    [0x2e08 resolution 24]
 
 # Home Furnishings
@@ -527,12 +527,12 @@ shop=sea_food |
 shop=deli & mkgmap:area2poi!=true                                                       [0x2e0a resolution 24]
 
 # Computer/Software
-(shop=computer | 
+(shop=computer |
 shop=mobile_phone) & mkgmap:area2poi!=true                                              [0x2e0b resolution 24]
 
 shop=kiosk & mkgmap:area2poi!=true                                                      [0x2e0c resolution 24]
-(shop=optician |        
-shop=jewelry | 
+(shop=optician |
+shop=jewelry |
 shop=beauty) & mkgmap:area2poi!=true                                                    [0x2e0d resolution 24]
 shop=toys & mkgmap:area2poi!=true                                                       [0x2e0e resolution 24]
 
@@ -553,11 +553,11 @@ shop=books & mkgmap:area2poi!=true                                              
 # Misc without symbols
 shop=outdoor & mkgmap:area2poi!=true                                                    [0x2e15 resolution 24]
 shop=video  & mkgmap:area2poi!=true                                                     [0x2e17 resolution 24]
-(shop=electronics | 
+(shop=electronics |
 shop=radiotechnics)  & mkgmap:area2poi!=true                                            [0x2e18 resolution 24]
-(shop=laundry | 
+(shop=laundry |
 shop=dry_cleaning)  & mkgmap:area2poi!=true                                             [0x2e19 resolution 24]
-(shop=kiosk | 
+(shop=kiosk |
 shop=newsagent) & mkgmap:area2poi!=true                                                 [0x2e1a resolution 24]
 
 shop=motorcycle                                                                         [0x2e1d resolution 24]
@@ -595,7 +595,7 @@ amenity=place_of_worship & religion=jewish  						[0x2c10 resolution 24 default_
 amenity=place_of_worship  								[0x2c0b resolution 24 default_name religious]
 
 # Generic Emergency/Government
-amenity=social_centre | amenity=social_facility 
+amenity=social_centre | amenity=social_facility
 						{
 						add name='${amenity|subst:_=> } (${social_facility|subst:_=> } for ${social_facility:for|subst:_=> })'|'${amenity|subst:_=> } (${social_facility|subst:_=> })'|'${amenity|subst:_=> }'
 						}					[0x3000 resolution 24]
@@ -604,7 +604,7 @@ amenity=social_centre | amenity=social_facility
 amenity=police 										[0x3001 resolution 24]
 
 # Hospital
-amenity=hospital 									[0x3002 resolution 23 default_name hospital]
+amenity=hospital 									[0x3002 resolution 23]
 
 # City Hall
 amenity=townhall 									[0x3003 resolution 24 default_name townhall]
@@ -850,7 +850,7 @@ man_made=surveillance                                                           
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-shop=* & name!=*  
+shop=* & name!=*
 						{
 						#echo '${shop}';
 						add name='${shop|subst:_=> }'

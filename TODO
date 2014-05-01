@@ -1,22 +1,10 @@
 ####   Brainstorming   ####
 
-change color for trunk  ---  done
-change color for primary  --- done
-change color for motorway - yellow with red border, see openstreetmap.de --- done
-motorroad-overlay (only for pri, sec, ter) - blue border
-overlay for living_street - lightgrey with green dots, only resolution 24 --- done
+add symbol for townhalls and other
 
-change light-railway from 0x14 to custom lines ---done
+mv naming options to only one place
 
 
-
-Bikemap 
-check the access-restrictions, ---testing
-
-
-foot-routing
-bike-routing --- with the new AIO-bikemap --- testing
-hike-routing
 
 
 
