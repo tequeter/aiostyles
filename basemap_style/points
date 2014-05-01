@@ -579,10 +579,27 @@ amenity=university 									[0x2c05 resolution 24]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship & religion=muslim 						[0x2c0d resolution 24]
-amenity=place_of_worship & religion=christian  						[0x2c0e resolution 24]
-amenity=place_of_worship & religion=buddhist 						[0x2c0f resolution 24]
-amenity=place_of_worship & religion=jewish  						[0x2c10 resolution 24]
+amenity=place_of_worship &  
+			(
+				religion=muslim |
+				building=mosque
+			) 						[0x2c0d resolution 24]
+amenity=place_of_worship & 
+			(
+				religion=christian|
+				building=cathedral|
+				building=church|
+				building=chapel|
+				building=monastery
+			)  						[0x2c0e resolution 24]
+amenity=place_of_worship & 
+			(
+				religion=buddhist
+			) 						[0x2c0f resolution 24]
+amenity=place_of_worship & 
+			(
+				religion=jewish
+			)  						[0x2c10 resolution 24]
 amenity=place_of_worship  								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
