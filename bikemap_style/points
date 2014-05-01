@@ -582,7 +582,7 @@ amenity=place_of_worship & religion=jewish  						[0x2c10 resolution 24]
 amenity=place_of_worship  								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
-amenity=social_centre | amenity=social_facility					[0x3000 resolution 24]
+amenity=social_centre | amenity=social_facility					        [0x3000 resolution 24]
 
 # Police Station
 amenity=police 										[0x3001 resolution 24]
@@ -613,13 +613,13 @@ amenity=fire_station 									[0x3008 resolution 24]
 amenity=prison 										[0x3009 resolution 24]
 
 # Post Office
-amenity=post_office 										[0x2f05 resolution 24]
+amenity=post_office 									[0x2f05 resolution 24]
 
 # Bank or ATM
-amenity=atm | amenity=bank | amenity=bureau_de_change 									[0x2f06 resolution 24]
+amenity=atm | amenity=bank | amenity=bureau_de_change 					[0x2f06 resolution 24]
 
 # Utility
-amenity=waste_transfer_station | amenity=recycling	 									[0x2f19 resolution 24]
+amenity=waste_transfer_station | amenity=recycling	 				[0x2f19 resolution 24]
 
 # Other
 amenity=public_building									[0x3000 resolution 24]
