@@ -27,7 +27,12 @@ amenity=public_building & name!=*
             {name 'FIXME: name or operator fehlt/missing'}
                           [0x7110 resolution 23]
 
-place_of_worship=* & building!=*
+(amenity=place_of_worship & denomination=unknown) |
+(amenity=place_of_worship & religion=unknown)
+            {name 'FIXME: denomination/religion fehlt/missing'}
+                          [0x7110 resolution 23]
+
+amenity=place_of_worship & ( building!=* | building=yes )
             {name 'FIXME: building fehlt/missing'}
                           [0x7110 resolution 23]
 
@@ -46,7 +51,7 @@ shop!=vacant & name!=*
 amenity=restaurant & cuisine!=*
             {name 'FIXME: cuisine fehlt/missing'}
                           [0x7110 resolution 23]
-                          
+
 amenity=restaurant & name!=*
             {name 'FIXME: name, brand or operator fehlt/missing'}
                           [0x7110 resolution 23]
