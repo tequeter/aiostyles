@@ -2,7 +2,7 @@
 
 add symbol for townhalls and other
 townhall        done
-bank/atm        done
+bank/atm        done - in basemap still the old default icons
 veterinary      done
 hotel           done
 restaurant(s)   next?
@@ -21,7 +21,8 @@ amenity=theatre |
 amenity=casino |
 amenity=fuel
 
-
+highway=passing_place shows up as "Punkt" example  https://www.openstreetmap.org/node/945286967
+not sure if it's only in basemap or also in bikemap
 
 
 
