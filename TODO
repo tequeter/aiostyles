@@ -6,9 +6,19 @@ bank/atm        done
 veterinary      done
 hotel           done
 restaurant(s)   next?
-shop(s)         need info!
-some amenity    need info!
 
+shop(s)         need info!
+many - maybe we need to "echo" - seen "car repair" in Lindenberg near Jengen, "Jewelery" and a few others in Buchloe near the Rathaus
+
+some amenity    need info!
+see inc/name:
+# with default label ${amenity} - Icons are unlabeld
+amenity=cafe |
+amenity=pub |
+amenity=car_wash |
+amenity=theatre |
+amenity=casino |
+amenity=fuel
 
 
 

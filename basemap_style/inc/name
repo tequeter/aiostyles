@@ -73,7 +73,6 @@ amenity=bureau_de_change
 amenity=cafe |
 amenity=pub |
 amenity=car_wash |
-amenity=veterinary |
 amenity=theatre |
 amenity=casino
             { set label_temp='${name}' |'${operator}' | '${brand}' | '${amenity|subst:_=> }' ;
