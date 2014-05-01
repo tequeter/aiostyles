@@ -100,7 +100,7 @@ amenity=public_building & name!=* {delete amenity}
 amenity=place_of_worship & name!=*
 						{
 						#echo '${religion}';
-						set temp_religion='${religion|subst:unknown=>religious}' | '${denomination|subst:unknown=>religious}';
+						set temp_religion='${religion|subst:unknown=>}' | '${denomination|subst:unknown=>}' | '${building|subst:yes=>}';
 						add name='${temp_religion|subst:_=> }' | 'religious' ;
 						}
 
