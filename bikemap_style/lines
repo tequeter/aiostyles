@@ -649,11 +649,12 @@ railway=turntable | railway=traverser							[0x10106 resolution 24-23]
 
 
 # barrier
+# please don't the delete continue action, because it's needed to render landuse polygons with barrier tags
 barrier=wall |
 barrier=retaining_wall |
-barrier=city_wall 	                        					[0x10f02 resolution 24]
-barrier=fence                               						[0x10f03 resolution 24]
-barrier=hedge                               						[0x10f0c resolution 24]
+barrier=city_wall 	                        					[0x10f02 resolution 24 continue]
+barrier=fence                               						[0x10f03 resolution 24 continue]
+barrier=hedge                               						[0x10f0c resolution 24 continue]
 
 # man made
 (man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & area!=yes &
