@@ -12881,6 +12881,34 @@ DayXpm="16 16 24 2"   Colormode=32
 
 
 [_point]
+Type=0x059
+SubType=0x04
+String1=0x02,Hubschrauber
+String2=0x04,Helicopter
+ExtendedLabels=N
+DayXpm="16 16 2 1"
+" 	c None"
+"!	c #000000"
+"     !!!!!!     "
+"   !!!    !!!   "
+"  !!        !!  "
+" !!          !! "
+" !  !!    !!  ! "
+"!!  !!    !!  !!"
+"!   !!    !!   !"
+"!   !!!!!!!!   !"
+"!   !!!!!!!!   !"
+"!   !!    !!   !"
+"!!  !!    !!  !!"
+" !  !!    !!  ! "
+" !!          !! "
+"  !!        !!  "
+"   !!!    !!!   "
+"     !!!!!!     "
+;1234567890123456
+[end]
+
+[_point]
 Type=0x05b
 SubType=0x01
 String1=0x02,Leuchtturm
