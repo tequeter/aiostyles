@@ -10,7 +10,7 @@ operator=fixme |
 brand=FIXME |
 brand=fixme |
 name=FIXME |
-name=fixme |
+name=fixme 
 
             {name 'Notiz: ${note}' |
                   'Notiz: ${fixme}' |
