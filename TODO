@@ -15,6 +15,7 @@ see inc/name:
 # with default label ${amenity} - Icons are unlabeld
 amenity=cafe |
 amenity=pub |
+amenity=bar |
 amenity=car_wash |
 amenity=theatre |
 amenity=casino |
