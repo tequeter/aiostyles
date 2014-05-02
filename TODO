@@ -8,7 +8,12 @@ hotel           done
 restaurant(s)   next?
 
 shop(s)         need info!
-many - maybe we need to "echo" - seen "car repair" in Lindenberg near Jengen, "Jewelery" and a few others in Buchloe near the Rathaus
+
+many - maybe we need to "echo" - seen "car repair" in Lindenberg near Jengen, 
+      "Jewelery" and a few others in Buchloe near the Rathaus
+POIs 0x2e0c ff. are not correct in POI list
+temporarily disabled for testing
+
 
 some amenity    need info!
 see inc/name:
@@ -24,6 +29,7 @@ amenity=fuel
 
 highway=passing_place shows up as "Punkt" example  https://www.openstreetmap.org/node/945286967
 not sure if it's only in basemap or also in bikemap
+
 
 
 
