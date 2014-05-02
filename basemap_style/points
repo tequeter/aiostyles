@@ -533,7 +533,7 @@ shop=hairdresser                                                                
 shop=florist                                                                            [0x2e0f resolution 24]
 
 #0x2e10 ## ok
-shop=art | shop=antiques | shop~'.*(gallery)'                                           [0x2e10 resolution 24
+shop=art | shop=antiques | shop~'.*(gallery)'                                           [0x2e10 resolution 24]
 
 #0x2e11 ## ok
 shop=video | shop=music | shop=video_games                                              [0x2e11 resolution 24]
