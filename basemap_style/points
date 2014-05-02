@@ -518,32 +518,38 @@ shop=sea_food |
 shop=deli & mkgmap:area2poi!=true                                                       [0x2e0a resolution 24]
 
 # Computer/Software
-(shop=computer |
-shop=mobile_phone) & mkgmap:area2poi!=true						[0x2e0b resolution 24]
+(shop=computer | shop=mobile_phone) & mkgmap:area2poi!=true				[0x2e0b resolution 24]
 
-shop=kiosk & mkgmap:area2poi!=true							[0x2e0c resolution 24]
-(shop=optician |
-shop=jewelry |
-shop=beauty) & mkgmap:area2poi!=true			                                [0x2e0d resolution 24]
-shop=toys & mkgmap:area2poi!=true               					[0x2e0e resolution 24]
+# 0x2e0c = 0x2e0a = Speciality Retail
+#shop=kiosk & mkgmap:area2poi!=true							[0x2e0c resolution 24]
 
-# Florist
+# 0x2e0d = 0x2e01 = Department
+#(shop=optician | shop=jewelry | shop=beauty) & mkgmap:area2poi!=true		        [0x2e0d resolution 24]
+
+# No cat ## ok
+shop=hairdresser & mkgmap:area2poi!=true               					[0x2e0e resolution 24]
+
+# Florist  ## ok
 shop=florist  & mkgmap:area2poi!=true							[0x2e0f resolution 24]
 
-#0x2e11 resolution 24
+#0x2e10 ## ok
+shop=art                                                                                [0x2e10 resolution 24]
 
-# Sporting Goods
+#0x2e11 ## ok
+shop=video  & mkgmap:area2poi!=true                                                     [0x2e11 resolution 24]
+
+# Sporting Goods ## ok
 shop=sports  & mkgmap:area2poi!=true							[0x2e12 resolution 24]
 
-# Wine/Liqour
+# Wine/Liqour ## ok
 shop=wine | shop=winery	| shop=alcohol & mkgmap:area2poi!=true				[0x2e13 resolution 24]
 
-# Book Store
+# Book Store ## ok
 shop=books & mkgmap:area2poi!=true							[0x2e14 resolution 24]
 
 # Misc without symbols
 shop=outdoor & mkgmap:area2poi!=true 							[0x2e15 resolution 24]
-shop=video  & mkgmap:area2poi!=true							[0x2e17 resolution 24]
+#shop=video  & mkgmap:area2poi!=true							[0x2e17 resolution 24]
 (shop=electronics |
 shop=radiotechnics)  & mkgmap:area2poi!=true						[0x2e18 resolution 24]
 (shop=laundry |
@@ -639,6 +645,8 @@ amenity=post_office     								[0x2f05 resolution 24]
 amenity=atm | amenity=bank | amenity=bureau_de_change   				[0x2f06 resolution 24]
 
 # Utility
+# POI cat others/personal service 
+# 0x2f19 = 0x2f10
 amenity=waste_transfer_station | amenity=recycling 					[0x2f19 resolution 24]
 
 # Other
