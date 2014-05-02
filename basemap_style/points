@@ -495,7 +495,7 @@ shop=chemist) & mkgmap:area2poi!=true 				                        [0x2e05 resolu
 shop=convenience & mkgmap:area2poi!=true 						[0x2e06 resolution 24]
 
 # Apparel/Clothing
-(shop=clothes |
+(shop=clothes | 
 shop=shoes |
 shop=boutique) & mkgmap:area2poi!=true			                                [0x2e07 resolution 24]
 
@@ -547,15 +547,6 @@ shop=wine | shop=winery	| shop=alcohol & mkgmap:area2poi!=true				[0x2e13 resolu
 # Book Store ## ok
 shop=books & mkgmap:area2poi!=true							[0x2e14 resolution 24]
 
-# Misc without symbols
-shop=outdoor & mkgmap:area2poi!=true 							[0x2e15 resolution 24]
-#shop=video  & mkgmap:area2poi!=true							[0x2e17 resolution 24]
-(shop=electronics |
-shop=radiotechnics)  & mkgmap:area2poi!=true						[0x2e18 resolution 24]
-(shop=laundry |
-shop=dry_cleaning)  & mkgmap:area2poi!=true						[0x2e19 resolution 24]
-(shop=kiosk |
-shop=newsagent) & mkgmap:area2poi!=true							[0x2e1a resolution 24]
 
 shop=motorcycle 									[0x2e1d resolution 24]
 
