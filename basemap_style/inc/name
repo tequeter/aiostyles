@@ -167,3 +167,5 @@ natural=peak | natural=hill | mountain_pass=yes	{
 		      name '${name|def:} (${ele|def:} m)' |
 		      '${name}' |
 		      '(${ele} m)' }
+
+name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
