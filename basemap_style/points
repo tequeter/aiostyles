@@ -449,7 +449,7 @@ amenity=restaurant                                                              
 # Shopping
 
 # Department # Kaufhaus ## ok
-shop=department_store & mkgmap:area2poi!=true                                           [0x2e01 resolution 24]
+shop=department_store                                                                 [0x2e01 resolution 24]
 
 # Grocery # Lebensmittel ## ok
 shop=greengrocer |
@@ -506,7 +506,11 @@ shop=computer | shop=mobile_phone                                               
 # 0x2e0d = 0x2e01 = Department
 
 # No cat ## ok
-shop=hairdresser                                                                        [0x2e0e resolution 24]
+# [0x2e0e resolution 24]
+
+#Other/Personal Services
+shop=hairdresser                                                                        [0x2f10 resolution 24]
+shop=solarium | shop=tanning                                                            [0x2f19 resolution 24]
 
 # Florist  ## ok
 shop=florist                                                                            [0x2e0f resolution 24]
@@ -613,13 +617,12 @@ amenity=post_office     								[0x2f05 resolution 24]
 # Bank or ATM
 amenity=atm | amenity=bank | amenity=bureau_de_change   				[0x2f06 resolution 24]
 
-# Utility
-# POI cat others/personal service 
-# 0x2f19 = 0x2f10
-amenity=waste_transfer_station | amenity=recycling 					[0x2f19 resolution 24]
-
 # Other
 amenity=public_building 								[0x3000 resolution 24]
+
+# Other/Other
+amenity=waste_basket                                                                    [0x2f1a resolution 24]
+amenity=recycling                                                                       [0x2f1b resolution 24]
 
 #------------------------------------------------------------------------------
 # Entertainment
