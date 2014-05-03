@@ -15,28 +15,37 @@ name=FIXME | name=fixme         { delete name; }
 
 ## name option for base- and bikemap
 
+public_transport=platform & (amenity=bus_station | highway=bus_stop | railway=tram_stop | railway=halt | railway=station) {
+	# eliminate double ^ or double - ; no idea why they are entered twice otherwise
+	delete public_transport;
+}
 (amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
 & (ref=* | route_ref=*) {
   set ref='${ref|def:}(${route_ref})';
+  set ref='${ref|subst:;=> |subst:  => }';
+  delete route_ref ;
 }
 (amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
 & lit=yes & (shelter=yes | covered=yes)
 {
-  set ref='${ref|def:}*';
+  set ref='* ${ref|def:}';
 }
 (amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
 & lit!=yes & (shelter=yes | covered=yes)
 {
-  set ref='${ref|def:}+';
+  set ref='^ ${ref|def:}';
 }
 (amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
 & (shelter=no | covered=no)
 {
-  set ref='${ref|def:}-';
+  set ref='- ${ref|def:}';
 }
 (amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& ( name=* | ref=* )
 {
- name '${name} (${ref})' | '${name}' | '${ref}' ; 
+ name '${name|def:H} ${ref}' | '${name}'; 
+ delete name ;
+ delete ref ;
 }
 
 highway=motorway_junction { name '${ref} ${name}'; }

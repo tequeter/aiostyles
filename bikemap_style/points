@@ -822,7 +822,7 @@ man_made=surveillance                                                           
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-name=* { name '${name}' }
+name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
 include 'inc/phone';
 include 'inc/address';
 
