@@ -184,7 +184,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
 highway=* & railway=tram								[0x10e0d resolution 24-23 continue]
 
 # bridleway overlay
-highway=* & horse=designated								[0x10e0c resolution 24 continue]
+#highway=* & horse=designated								[0x10e0c resolution 24 continue]
 
 
 #------------------------------------------------------------------------------
@@ -526,9 +526,9 @@ highway=track
 highway=road                                                                            [0x2c resolution 24 continue]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & highway!=track & highway!=path & highway!=trail & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=track & highway!=path & highway!=trail & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=track & highway!=path & highway!=trail & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 
 # route
