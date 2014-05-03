@@ -14,12 +14,30 @@ name=FIXME | name=fixme         { delete name; }
 #brand=${name}     { delete brand; }
 
 ## name option for base- and bikemap
-railway=tram_stop |
-amenity=bus_station |
-highway=bus_stop |
-public_transport=platform |
-railway=station |
-railway=halt            { name '${name} (${route_ref})'; }
+
+(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& (ref=* | route_ref=*) {
+  set ref='${ref|def:}(${route_ref})';
+}
+(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& lit=yes & (shelter=yes | covered=yes)
+{
+  set ref='${ref|def:}*';
+}
+(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& lit!=yes & (shelter=yes | covered=yes)
+{
+  set ref='${ref|def:}+';
+}
+(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+& (shelter=no | covered=no)
+{
+  set ref='${ref|def:}-';
+}
+(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+{
+ name '${name} (${ref})' | '${name}' | '${ref}' ; 
+}
 
 highway=motorway_junction { name '${ref} ${name}'; }
 

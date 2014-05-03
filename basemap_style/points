@@ -8,27 +8,6 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
-& (ref=* | route_ref=*) {
-  set ref='${ref|def:}(${route_ref})';
-}
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
-& lit=yes & (shelter=yes | covered=yes)
-{
-  set ref='${ref|def:}*';
-}
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
-& lit!=yes & (shelter=yes | covered=yes)
-{
-  set ref='${ref|def:}+';
-}
-(highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
-& (shelter=no | covered=no)
-{
-  set ref='${ref|def:}-';
-}
-
 include 'inc/name';
 
 
