@@ -505,7 +505,7 @@ shop=computer | shop=mobile_phone                                               
 
 # 0x2e0d = 0x2e01 = Department
 
-# No cat ## ok
+#  additional Cat Convenience before Florist, use with care ## ok
 # [0x2e0e resolution 24]
 
 #Other/Personal Services
