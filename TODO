@@ -29,6 +29,12 @@ amenity=boat_storage |
 waterway=bootyard |
 amenity=fuel
 
+
+highway=services | highway=rest_area
+maybe wrong icon: shows a toilets icon and is "unnamed"
+example is here 
+https://www.openstreetmap.org/#map=19/47.74965/10.63087
+
 highway=passing_place shows up as "Punkt" example  https://www.openstreetmap.org/node/945286967
 not sure if it's only in basemap or also in bikemap
 
