@@ -103,8 +103,10 @@ amenity=bar |
 amenity=fast_food |
 amenity=car_wash |
 amenity=theatre |
+amenity=boat_storage |
+waterway=bootyard |
 amenity=casino
-            { set label_temp='${name}' |'${operator}' | '${brand}' | '${amenity|subst:_=> }' ;
+            { set label_temp='${name}' |'${operator}' | '${brand}' | '${amenity|subst:_=> }' | '${waterway|subst:_=> }' ;
               set mkgmap:label:3='${label_temp}' ;
               delete operator;
               delete brand;

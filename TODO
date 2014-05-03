@@ -25,6 +25,8 @@ amenity=fast_food  |
 amenity=car_wash |
 amenity=theatre |
 amenity=casino |
+amenity=boat_storage |
+waterway=bootyard |
 amenity=fuel
 
 highway=passing_place shows up as "Punkt" example  https://www.openstreetmap.org/node/945286967
