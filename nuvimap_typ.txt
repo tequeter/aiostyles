@@ -9498,6 +9498,27 @@ DayXpm="16 16 52 2"   Colormode=16
 
 [_point]
 Type=0x02f
+SubType=0x19
+String1=0x02,Solarium
+String2=0x04,Tanning
+ExtendedLabels=N
+DayXpm="9 9 2 1"   Colormode=16
+"!	c #FFFF20"
+"  	c none"
+"    !    "
+"  ! ! !  "
+" !!!!!!! "
+"  !!!!!  "
+"!!!!!!!!!"
+"  !!!!!  "
+" !!!!!!! "
+"  ! ! !  "
+"    !    "
+;123456789
+[end]
+
+[_point]
+Type=0x02f
 SubType=0x1a
 String1=0x02,Abfalleimer
 String2=0x04,Waste basket
