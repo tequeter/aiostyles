@@ -166,7 +166,7 @@ leisure=ice_rink | sport=skating
 
 sport=* & name!=*
 						{
-						add name='$(sport|subst:_=> }' ;
+						add name='${sport|subst:_=> }' ;
 						}
 
 waterway=* & name!=*
@@ -186,7 +186,7 @@ natural=peak | natural=hill | mountain_pass=yes	{
 
 natural=* & name!=*
 						{
-						add name='$(natural|subst:_=> }' ;
+						add name='${natural|subst:_=> }' ;
 						}
 
 name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
