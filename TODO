@@ -27,7 +27,8 @@ amenity=theatre |
 amenity=casino |
 amenity=boat_storage |
 waterway=bootyard |
-amenity=fuel
+amenity=fuel |
+sport=*
 
 
 highway=services | highway=rest_area

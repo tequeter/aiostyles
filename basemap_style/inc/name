@@ -163,6 +163,11 @@ leisure=ice_rink | sport=skating
 						add name='skating' ;
 						}
 
+sport=* & name!=*
+						{
+						add name='$(sport|subst:_=> }' ;
+						}
+
 highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; }
 
 natural=glacier
