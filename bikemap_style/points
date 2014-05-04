@@ -186,8 +186,8 @@ amenity=fuel 										[0x2f01 resolution 24]
 # Parking (see 0x4dss for more detailed symbols)
 # amenity=parking									[0x2f0b resolution 24 continue]
 
-# Rest Area/Tourist Info
-highway=services | highway=rest_area 							[0x2f0c resolution 24]
+# Rest Area/Tourist Info - move to fixme
+# highway=services | highway=rest_area 							[0x2f0c resolution 24]
 
 # Auto Club
 # 0x2f0d
@@ -460,7 +460,7 @@ amenity=market_place                                                            
 shop=supermarket | shop=general                                                         [0x2e03 resolution 24]
 
 # Shopping Center # Einkaufszentrum ## ok
-shop=mall                                                                              [0x2e04 resolution 24]
+shop=mall                                                                               [0x2e04 resolution 24]
 
 # Pharmacy/Chemist # Apotheke/Drogerie ## ok
 amenity=pharmacy | shop=chemist                                                         [0x2e05 resolution 24]
@@ -559,7 +559,7 @@ amenity=place_of_worship &
 			(
 				religion=muslim |
 				building=mosque
-			) 						[0x2c0d resolution 24]
+			) 						                [0x2c0d resolution 24]
 amenity=place_of_worship & 
 			(
 				religion=christian|
@@ -567,15 +567,15 @@ amenity=place_of_worship &
 				building=church|
 				building=chapel|
 				building=monastery
-			)  						[0x2c0e resolution 24]
+			)  						                [0x2c0e resolution 24]
 amenity=place_of_worship & 
 			(
 				religion=buddhist
-			) 						[0x2c0f resolution 24]
+			) 						                [0x2c0f resolution 24]
 amenity=place_of_worship & 
 			(
 				religion=jewish
-			)  						[0x2c10 resolution 24]
+			)  						                [0x2c10 resolution 24]
 amenity=place_of_worship  								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
@@ -821,7 +821,7 @@ highway=mini_roundabout                                                         
 highway=passing_place                                                                   [0x2916 resolution 24]
 highway=crossing                                                                        [0x2917 resolution 24]
 
-highway=speed_camera                                [0x2918 resolution 24]
+highway=speed_camera                                                                    [0x2918 resolution 24]
 man_made=surveillance                                                                   [0x2918 resolution 24]
 
 <finalize>
