@@ -168,6 +168,11 @@ sport=* & name!=*
 						add name='$(sport|subst:_=> }' ;
 						}
 
+waterway=* & name!=*
+						{
+						add name='$(waterway|subst:_=> }' ;
+						}
+
 highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; }
 
 natural=glacier
@@ -177,5 +182,10 @@ natural=peak | natural=hill | mountain_pass=yes	{
 		      name '${name|def:} (${ele|def:} m)' |
 		      '${name}' |
 		      '(${ele} m)' }
+
+natural=* & name!=*
+						{
+						add name='$(natural|subst:_=> }' ;
+						}
 
 name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
