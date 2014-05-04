@@ -165,6 +165,7 @@ leisure=ice_rink | sport=skating
 						}
 
 sport=* & name!=*
+& sport!=soccer
 						{
 						add name='${sport|subst:_=> }' ;
 						}
@@ -184,7 +185,9 @@ natural=peak | natural=hill | mountain_pass=yes	{
 		      '${name}' |
 		      '(${ele} m)' }
 
-natural=* & name!=*
+natural=* & name!=* 
+& natural!=water
+& natural!=wetland 
 						{
 						add name='${natural|subst:_=> }' ;
 						}
