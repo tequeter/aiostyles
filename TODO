@@ -31,7 +31,7 @@ amenity=fuel |
 sport=*
 
 
-highway=services | highway=rest_area
+highway=services | highway=rest_area - deactivated in basemap and bikemap - maybe move to fixme layer
 maybe wrong icon: shows a toilets icon and is "unnamed"
 example is here 
 https://www.openstreetmap.org/#map=19/47.74965/10.63087

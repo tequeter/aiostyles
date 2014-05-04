@@ -186,8 +186,8 @@ amenity=fuel 										[0x2f01 resolution 24]
 # Parking (see 0x4dss for more detailed symbols)
 # amenity=parking									[0x2f0b resolution 24 continue]
 
-# Rest Area/Tourist Info
-highway=services | highway=rest_area 							[0x2f0c resolution 24]
+# Rest Area/Tourist Info - move to fixme
+# highway=services | highway=rest_area 							[0x2f0c resolution 24]
 
 # Auto Club
 # 0x2f0d
