@@ -168,17 +168,17 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
 
 # embankment overlay
 (man_made=dyke | embankment=yes)
-          & (highway=track |
-             highway=path |
-             highway=footway |
-             highway=cycleway)			                                        [0x10f00 resolution 24 continue]
+          & (highway=track & tracktype~'grade[1-2]')			                                        [0x10f00 resolution 24 continue]
+#             highway=path |
+#             highway=footway |
+#             highway=cycleway)			                                        [0x10f00 resolution 24 continue]
 
 # cutting overlay
 (cutting=yes)
-          & (highway=track |
-             highway=path |
-             highway=footway |
-             highway=cycleway)                                                          [0x10f01 resolution 24 continue]
+          & (highway=track & tracktype~'grade[1-2]' )			                                        [0x10f01 resolution 24 continue]
+#             highway=path |
+#             highway=footway |
+#             highway=cycleway)                                                          [0x10f01 resolution 24 continue]
 
 # tram overlay
 highway=* & railway=tram								[0x10e0d resolution 24-23 continue]
@@ -451,7 +451,7 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 
 
 #highway=pedestrian									[0x1201b resolution 23-23 continue]
-#highway=pedestrian									[0x1101b resolution 24 continue]
+highway=pedestrian									[0x1101b resolution 24 continue]
 #highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 
@@ -526,9 +526,9 @@ highway=track
 highway=road                                                                            [0x2c resolution 24 continue]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 
 # route
