@@ -55,3 +55,8 @@ amenity=restaurant & cuisine!=*
 amenity=restaurant & name!=*
             {name 'FIXME: name, brand or operator fehlt/missing'}
                           [0x7110 resolution 23]
+                          
+(amenity=water_well | amenity=drinking_water) & 
+(drinking_water!=* | drinkable!=*)
+            {name 'FIXME: Trinkwasser? / drinking water?'}
+                          [0x7110 resolution 23]
