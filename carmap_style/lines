@@ -167,15 +167,15 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
 	     railway=*)									[0x10e06 resolution 24-23 continue]
 
 # embankment overlay
-###(man_made=dyke | embankment=yes)
-###          & (highway=track & tracktype~'grade[1-2]')			                                        [0x10f00 resolution 24 continue]
+(man_made=dyke | embankment=yes)
+          & (highway=track & tracktype~'grade[1-2]')			                                        [0x10f00 resolution 24 continue]
 #             highway=path |
 #             highway=footway |
 #             highway=cycleway)			                                        [0x10f00 resolution 24 continue]
 
 # cutting overlay
-###(cutting=yes)
-###          & (highway=track & tracktype~'grade[1-2]' )			                                        [0x10f01 resolution 24 continue]
+(cutting=yes)
+          & (highway=track & tracktype~'grade[1-2]' )			                                        [0x10f01 resolution 24 continue]
 #             highway=path |
 #             highway=footway |
 #             highway=cycleway)                                                          [0x10f01 resolution 24 continue]
@@ -430,11 +430,11 @@ highway=service | highway=living_street
 		  add mkgmap:dead-end-check=false
 		}
 
-###highway=service						            			[0x12007 resolution 23-23 continue]
-###highway=service						            			[0x11007 resolution 24 continue]
-###highway=service & service=parking_aisle							[0x07 resolution 24 road_class=0 road_speed=1]
-###highway=service & (service=alley | service=driveway)					[0x07 resolution 24 road_class=0 road_speed=0]
-###highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]
+highway=service						            			[0x12007 resolution 23-23 continue]
+highway=service						            			[0x11007 resolution 24 continue]
+highway=service & service=parking_aisle							[0x07 resolution 24 road_class=0 road_speed=1]
+highway=service & (service=alley | service=driveway)					[0x07 resolution 24 road_class=0 road_speed=0]
+highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]
 
 highway=living_street									[0x12008 resolution 23-23 continue]
 highway=living_street									[0x11008 resolution 24 continue]
@@ -496,11 +496,11 @@ highway=pedestrian									[0x1101b resolution 24 continue]
 #------------------------------------------------------------------------------
 # tracks
 
-###highway=track & tracktype=grade1                                                        [0x1200e resolution 23-22 continue]
-###highway=track & tracktype=grade1                                                        [0x0e resolution 24 road_class=0 road_speed=0]
+highway=track & tracktype=grade1                                                        [0x1200e resolution 23-22 continue]
+highway=track & tracktype=grade1                                                        [0x0e resolution 24 road_class=0 road_speed=0]
 
-###highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue]
-###highway=track & tracktype=grade2                                                        [0x0f resolution 24 road_class=0 road_speed=0]
+highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue]
+highway=track & tracktype=grade2                                                        [0x0f resolution 24 road_class=0 road_speed=0]
 
 #highway=track & tracktype=grade3                                                        [0x10 resolution 24 road_class=0 road_speed=0]
 
@@ -526,10 +526,9 @@ highway=track
 highway=road                                                                            [0x2c resolution 24 continue]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & highway!=service & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=service & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=service & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
-
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 
 # route
