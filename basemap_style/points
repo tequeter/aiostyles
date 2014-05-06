@@ -178,11 +178,28 @@ shop=car_repair 									[0x2f03 resolution 24]
 
 # Dealer/Auto Parts
 shop=car | shop=car_parts 								[0x2f07 resolution 24]
-# 0x31ss
 
 # Wrecker Service
-# 0x2f0a
+car_service=wrecker                                                                     [0x2f0a resolution 24]
 
+# Parking
+# 0x2f0b is only a transparent dot, to add them to POI list
+amenity=parking & mkgmap:area2poi!=true                                                 [0x2f0b resolution 24 continue]
+
+# Rest_Area/Tourist Information
+amenity=parking & (toilets=yes | tourism=information)                                   [0x2f0c resolution 24]
+
+# Auto Club
+# 0x2f0d
+
+# Car Wash
+amenity=car_wash                                                                        [0x2f0e resolution 24]
+
+# Truck Stop
+amenity=truck_stop                                                                      [0x2f16 resolution 24]
+
+# 0x4css        # information
+tourism=information                                                                     [0x4c00 resolution 24]
 
 # Parking
 # 0x4dss
@@ -197,33 +214,13 @@ amenity=parking
 amenity=parking
         & (fee=yes)                                                                     [0x4d03 resolution 24]
 
-amenity=parking & capacity > 10                                                         [0x2f0b resolution 24]
+amenity=parking & capacity > 10                                                         [0x4d00 resolution 24]
 
 amenity=parking & mkgmap:area2poi!=true
         & (access=private)                                                              [0x4d03 resolution 24]
 
-amenity=parking & mkgmap:area2poi!=true                                                 [0x2f0b resolution 24]
-
-
-# Restroom
-amenity=toilets							                        [0x2f0c resolution 24]
-
 # 0x4ess        # restroom
-#amenity=toilets                                                                        [0x4e01 resolution 24]
-
-# Auto Club
-# 0x2f0d
-
-# Car Wash
-amenity=car_wash 									[0x2f0e resolution 24]
-
-# Truck Stop
-amenity=truck_stop									[0x2f16 resolution 24]
-
-# 0x4css	# information
-
-tourism=information 									[0x4c00 resolution 24]
-
+amenity=toilets                                                                         [0x4e01 resolution 24]
 
 # 0x4fss        # shower
 amenity=shower 										[0x4f01 resolution 24]
