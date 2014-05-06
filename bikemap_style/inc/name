@@ -63,7 +63,8 @@ amenity=parking
          { name '${name} (${capacitiy} + ${capacitiy:disabled))' |
                 '${name} (${capacitiy})' |
                 '${capacitiy} + ${capacitiy:disabled))' |
-                '${capacitiy}'}
+                '${capacitiy}' |
+                '${name}'}
 
 amenity=post_office {
 	      name '${operator}' | '${name}'
