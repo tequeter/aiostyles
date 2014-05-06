@@ -183,11 +183,33 @@ shop=car | shop=car_parts 								[0x2f07 resolution 24]
 # Wrecker Service
 # 0x2f0a
 
-# Parking (see 0x4dss for more detailed symbols)
-# amenity=parking									[0x2f0b resolution 24 continue]
 
-# Rest Area/Tourist Info - move to fixme
-# highway=services | highway=rest_area 							[0x2f0c resolution 24]
+# Parking
+# 0x4dss
+amenity=parking
+        &  ( capacity:disabled=yes |
+             capacity:disabled >=1 )                                                    [0x4d01 resolution 24]
+
+amenity=parking
+        & ( parking=multi-storey |
+            parking=underground)                                                        [0x4d02 resolution 24]
+
+amenity=parking
+        & (fee=yes)                                                                     [0x4d03 resolution 24]
+
+amenity=parking & capacity > 10                                                         [0x2f0b resolution 24]
+
+amenity=parking & mkgmap:area2poi!=true
+        & (access=private)                                                              [0x4d03 resolution 24]
+
+amenity=parking & mkgmap:area2poi!=true                                                 [0x2f0b resolution 24]
+
+
+# Restroom
+amenity=toilets							                        [0x2f0c resolution 24]
+
+# 0x4ess        # restroom
+#amenity=toilets                                                                        [0x4e01 resolution 24]
 
 # Auto Club
 # 0x2f0d
@@ -202,26 +224,6 @@ amenity=truck_stop									[0x2f16 resolution 24]
 
 tourism=information 									[0x4c00 resolution 24]
 
-# 0x4dss
-amenity=parking & mkgmap:area2poi!=true
-	&  ( capacity:disabled=yes |
-	     capacity:disabled >=1 ) 							[0x4d01 resolution 24]
-
-amenity=parking & mkgmap:area2poi!=true
-	& (parking=multi-storey |
-	  parking=underground) |
-	  amenity=parking_entrance 							[0x4d02 resolution 24]
-
-amenity=parking & mkgmap:area2poi!=true
-	& (fee=yes)		 							[0x4d03 resolution 24]
-
-amenity=parking & mkgmap:area2poi!=true
-	& (access=private)		 						[0x4d03 resolution 24]
-
-amenity=parking	& mkgmap:area2poi!=true							[0x4d00 resolution 24]
-
-# 0x4ess        # restroom
-amenity=toilets 									[0x4e01 resolution 24]
 
 # 0x4fss        # shower
 amenity=shower 										[0x4f01 resolution 24]
@@ -489,7 +491,7 @@ shop=curtain |
 shop=window_blind |
 shop=bathroom_furnishing |
 shop=bed |
-shop=carpet | 
+shop=carpet |
 shop=kitchen |
 shop=furniture                                                                          [0x2e09 resolution 24]
 
@@ -558,12 +560,12 @@ amenity=university 									[0x2c05 resolution 24]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship &  
+amenity=place_of_worship &
 			(
 				religion=muslim |
 				building=mosque
 			) 						                [0x2c0d resolution 24]
-amenity=place_of_worship & 
+amenity=place_of_worship &
 			(
 				religion=christian|
 				building=cathedral|
@@ -571,11 +573,11 @@ amenity=place_of_worship &
 				building=chapel|
 				building=monastery
 			)  						                [0x2c0e resolution 24]
-amenity=place_of_worship & 
+amenity=place_of_worship &
 			(
 				religion=buddhist
 			) 						                [0x2c0f resolution 24]
-amenity=place_of_worship & 
+amenity=place_of_worship &
 			(
 				religion=jewish
 			)  						                [0x2c10 resolution 24]
