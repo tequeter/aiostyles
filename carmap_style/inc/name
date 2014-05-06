@@ -43,7 +43,7 @@ public_transport=platform & (amenity=bus_station | highway=bus_stop | railway=tr
 (amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
 & ( name=* | ref=* )
 {
- name '${name|def:H} ${ref}' | '${name}'; 
+ name '${name|def:H} ${ref}' | '${name}';
  delete name ;
  delete ref ;
 }
@@ -58,6 +58,12 @@ highway=emergency_access_point
             add emergency_telephone_code='';
             name '${ref} ${name} ${operator} ${emergency_telephone_code}';
             }
+
+amenity=parking
+         { name '${name} (${capacitiy} + ${capacitiy:disabled))' |
+                '${name} (${capacitiy})' |
+                '${capacitiy} + ${capacitiy:disabled))' |
+                '${capacitiy}'}
 
 amenity=post_office {
 	      name '${operator}' | '${name}'
@@ -88,7 +94,7 @@ amenity=restaurant
 # no default label ${amenity} - Icons are labeled
 amenity=bank |
 amenity=atm |
-amenity=bureau_de_change 
+amenity=bureau_de_change
             { set label_temp='${name}' |'${operator}' | '${brand}' ;
               set mkgmap:label:3='${label_temp}' ;
               delete operator;
@@ -185,9 +191,9 @@ natural=peak | natural=hill | mountain_pass=yes	{
 		      '${name}' |
 		      '(${ele} m)' }
 
-natural=* & name!=* 
+natural=* & name!=*
 & natural!=water
-& natural!=wetland 
+& natural!=wetland
 						{
 						add name='${natural|subst:_=> }' ;
 						}
