@@ -9149,6 +9149,19 @@ SubType=0x0b
 String1=0x02,Parkplatz
 String2=0x04,Parking
 ExtendedLabels=N
+DayXpm="1 1 1 1"   Colormode=32
+"!	c #7B95B4"  alpha=15
+"!"
+;1
+[end]
+
+
+[_point]
+Type=0x02f
+SubType=0x0c
+String1=0x02,Parkplatz m. WC/Info
+String2=0x04,Parking w. WC/Info
+ExtendedLabels=N
 DayXpm="15 15 72 2"   Colormode=0
 "!!     c #7B95B4"
 "!#     c #3965B4"
