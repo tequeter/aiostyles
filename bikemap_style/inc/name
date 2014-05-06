@@ -60,9 +60,9 @@ highway=emergency_access_point
             }
 
 amenity=parking
-         { name '${name} (${capacitiy} + ${capacitiy:disabled))' |
+         { name '${name} (${capacitiy} + ${capacitiy:disabled})' |
                 '${name} (${capacitiy})' |
-                '${capacitiy} + ${capacitiy:disabled))' |
+                '${capacitiy} + ${capacitiy:disabled})' |
                 '${capacitiy}' |
                 '${name}'}
 
