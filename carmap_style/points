@@ -184,7 +184,7 @@ car_service=wrecker                                                             
 
 # Parking
 # 0x2f0b is only a transparent dot, to add them to POI list
-amenity=parking & mkgmap:area2poi!=true                                                 [0x2f0b resolution 24 continue]
+amenity=parking                                                                         [0x2f0b resolution 24 continue]
 
 # Rest_Area/Tourist Information
 amenity=parking & (toilets=yes | tourism=information)                                   [0x2f0c resolution 24]
@@ -489,7 +489,7 @@ shop=curtain |
 shop=window_blind |
 shop=bathroom_furnishing |
 shop=bed |
-shop=carpet | 
+shop=carpet |
 shop=kitchen |
 shop=furniture                                                                          [0x2e09 resolution 24]
 
@@ -558,12 +558,12 @@ amenity=university 									[0x2c05 resolution 24]
 # 0x6410
 
 # Place of Worship
-amenity=place_of_worship &  
+amenity=place_of_worship &
 			(
 				religion=muslim |
 				building=mosque
 			) 						[0x2c0d resolution 24]
-amenity=place_of_worship & 
+amenity=place_of_worship &
 			(
 				religion=christian|
 				building=cathedral|
@@ -571,11 +571,11 @@ amenity=place_of_worship &
 				building=chapel|
 				building=monastery
 			)  						[0x2c0e resolution 24]
-amenity=place_of_worship & 
+amenity=place_of_worship &
 			(
 				religion=buddhist
 			) 						[0x2c0f resolution 24]
-amenity=place_of_worship & 
+amenity=place_of_worship &
 			(
 				religion=jewish
 			)  						[0x2c10 resolution 24]
