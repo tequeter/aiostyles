@@ -60,10 +60,10 @@ highway=emergency_access_point
             }
 
 amenity=parking
-         { name '${name} (${capacitiy} + ${capacitiy:disabled})' |
-                '${name} (${capacitiy})' |
-                '${capacitiy} + ${capacitiy:disabled})' |
-                '${capacitiy}' |
+         { name '${name} (${capacity} + ${capacity:disabled})' |
+                '${name} (${capacity})' |
+                '${capacity} + ${capacity:disabled})' |
+                '${capacity}' |
                 '${name}'}
 
 amenity=post_office {
@@ -113,7 +113,7 @@ amenity=theatre |
 amenity=boat_storage |
 waterway=bootyard |
 amenity=truck_stop |
-amenity=car_rental | 
+amenity=car_rental |
 amenity=car_sharing |
 amenity=casino
             { set label_temp='${name}' |'${operator}' | '${brand}' | '${amenity|subst:_=> }' | '${waterway|subst:_=> }' ;
