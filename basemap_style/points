@@ -184,7 +184,7 @@ car_service=wrecker                                                             
 
 # Parking
 # 0x2f0b is only a transparent dot, to add them to POI list
-amenity=parking & mkgmap:area2poi!=true                                                 [0x2f0b resolution 24 continue]
+amenity=parking                                                                         [0x2f0b resolution 24 continue]
 
 # Rest_Area/Tourist Information
 amenity=parking & (toilets=yes | tourism=information)                                   [0x2f0c resolution 24]

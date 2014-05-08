@@ -73,6 +73,12 @@ highway=steps
 		  add mkgmap:unpaved=1;
 		  }
 
+highway=corridor
+                {
+                  set highway=footway;
+                  set tunnel=yes;
+                  }
+                  
 highway=*
 	   & (
 	      surface=cobblestone |
