@@ -38,6 +38,13 @@ barrier~'.*(gate)' |
           { add foot=yes;
             addaccess no; }
 
+highway=* &  
+        (bicycle=designated |
+         bicycle=permissive | 
+         bicycle=official)
+                { set bicycle=yes }
+
+               
 highway=path
            & (
               smoothness~'.*(horrible|impassable)' |
@@ -116,6 +123,16 @@ bus=private           | bus=agricultural           { set bus=no }
 taxi=private          | taxi=agricultural          { set taxi=no }
 emergency=private     | emergency=agricultural     { set emergency=no }
 
+# Normalize all values that indicate a restriction to 'yes'
+foot=designated       | foot=permissive      | foot=official       { set foot=yes }
+bicycle=designated    | bicycle=permissive   | bicycle=official    { set bicycle=yes }
+motorcar=designated   | motorcar=permissive  | motorcar=official   { set motorcar=yes }
+goods=designated      | goods=permissive     | goods=official      { set goods=yes }
+hgv=designated        | hgv=permissive       | hgv=official        { set hgv=yes }
+bus=designated        | bus=permissive       | bus=official        { set bus=yes }
+taxi=designated       | taxi=permissive      | taxi=official       { set taxi=yes }
+emergency=designated  | emergency=permissive | emergency= official { set emergency=yes }
+
 # Copy the OSM access tags to the mkgmap internal tags
 foot=*       { set mkgmap:foot='${foot}' }
 bicycle=*    { set mkgmap:bicycle='${bicycle}' }
@@ -132,3 +149,4 @@ access=* { addaccess '${access}' }
 # Check for carpool lane (they are not really supported yet so these lines are commented)
 # hov=* { add carpool='${hov}' }
 # (carpool=yes | carpool=designated | carpool=permissive | carpool=official)     { set mkgmap:carpool=yes }
+
