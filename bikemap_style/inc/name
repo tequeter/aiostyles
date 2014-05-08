@@ -60,10 +60,8 @@ highway=emergency_access_point
             }
 
 amenity=parking
-         { name '${name} (${capacity} + ${capacity:disabled})' |
-                '${name} (${capacity})' |
-                '${capacity} + ${capacity:disabled})' |
-                '${capacity}' |
+         { name '${name|def:'P '} (${capacity} + ${capacity:disabled})' |
+                '${name|def:'P '} (${capacity})' |
                 '${name}'}
 
 amenity=post_office {
@@ -116,7 +114,7 @@ amenity=truck_stop |
 amenity=car_rental |
 amenity=car_sharing |
 amenity=casino
-            { set label_temp='${name}' |'${operator}' | '${brand}' | '${amenity|subst:_=> }' | '${waterway|subst:_=> }' ;
+            { set label_temp='${name}' | '${brand}' |'${operator}' | '${amenity|subst:_=> }' | '${waterway|subst:_=> }' ;
               set mkgmap:label:3='${label_temp}' ;
               delete operator;
               delete brand;
@@ -124,7 +122,7 @@ amenity=casino
             }
 
 amenity=fuel
-            { set label_temp='${operator}' | '${name}' | '${brand}' | '${amenity|subst:_=> }' ;
+            { set label_temp='${brand}' | '${operator}' | '${name}' | '${amenity|subst:_=> }' ;
               set mkgmap:label:3='${label_temp}';
               set mkgmap:label:1='${brand}';
               delete operator;
