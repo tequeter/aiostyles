@@ -38,13 +38,6 @@ barrier~'.*(gate)' |
           { add foot=yes;
             addaccess no; }
 
-highway=* &  
-        (bicycle=designated |
-         bicycle=permissive | 
-         bicycle=official)
-                { set bicycle=yes }
-
-               
 highway=path
            & (
               smoothness~'.*(horrible|impassable)' |
@@ -92,7 +85,7 @@ motor_vehicle=*      {
                         add psv='${motor_vehicle}';
                         add emergency='${motor_vehicle}';
                         }
-                        
+
 psv=*                 {
                         add taxi='${psv}';
                         add bus='${psv}';
