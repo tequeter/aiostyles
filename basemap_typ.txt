@@ -5057,13 +5057,41 @@ DayXpm="16 16 83 2"   Colormode=32
 
 [_point]
 Type=0x029
+SubType=0x16
+String1=0x02,Ausweichstelle
+String2=0x04,Passing place
+ExtendedLabels=N
+DayXpm="10 14 3 1"   Colormode=16
+"!      c #949494"
+"#      c #FFFFFF"
+"       c none"
+"!##!!##!  "
+"!##!!##!  "
+"!##!!##!  "
+"!##!!!##! "
+"!##!!!!##!"
+"!##!!!!##!"
+"!##!!!!##!"
+"!##!!!!##!"
+"!##!!!!##!"
+"!##!!!!##!"
+"!##!!!##! "
+"!##!!##!  "
+"!##!!##!  "
+"!##!!##!  "
+;1234567890
+[end]
+
+
+[_point]
+Type=0x029
 SubType=0x17
 String1=0x02,Zebrastreifen
 String2=0x04,Crossing
 ExtendedLabels=N
-DayXpm="14 7 2 1"   Colormode=32
-"!	c #949494"  alpha=0
-"#	c #FFFFFF"  alpha=0
+DayXpm="14 7 2 1"   Colormode=16
+"!	c #949494"
+"#	c #FFFFFF"
 "!!!!!!!!!!!!!!"
 "!!!!!####!!!!!"
 "!!!!!!!!!!!!!!"
