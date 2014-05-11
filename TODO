@@ -9,7 +9,7 @@ restaurant(s)   next?
 
 shop(s)         need info!
 
-many - maybe we need to "echo" - seen "car repair" in Lindenberg near Jengen, 
+many - maybe we need to "echo" - seen "car repair" in Lindenberg near Jengen,
       "Jewelery" and a few others in Buchloe near the Rathaus
 POIs 0x2e0c ff. are not correct in POI list
 temporarily disabled for testing
@@ -31,14 +31,18 @@ amenity=fuel |
 sport=*
 
 
-highway=services | highway=rest_area - deactivated in basemap and bikemap - maybe move to fixme layer
+highway=services | highway=rest_area - deactivated in basemap and bikemap - maybe move to fixme layer  done
 maybe wrong icon: shows a toilets icon and is "unnamed"
-example is here 
+example is here
 https://www.openstreetmap.org/#map=19/47.74965/10.63087
+
+done, symbol and test changed
+
 
 highway=passing_place shows up as "Punkt" example  https://www.openstreetmap.org/node/945286967
 not sure if it's only in basemap or also in bikemap
 
-
+work in progress
+creating symbol
 
 
