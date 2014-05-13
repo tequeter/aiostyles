@@ -154,7 +154,7 @@ amenity=social_centre | amenity=social_facility
 						add name='${amenity|subst:_=> } (${social_facility|subst:_=> } for ${social_facility:for|subst:_=> })'|'${amenity|subst:_=> } (${social_facility|subst:_=> })'|'${amenity|subst:_=> }'
 						}
 
-shop=* & name!=*
+shop=* & shop!=hairdresser & shop!=solarium & shop!=tanning & name!=*
 						{
 						#echo '${shop}';
 						add name='${shop|subst:_=> }' ;
