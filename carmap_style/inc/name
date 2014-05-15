@@ -93,6 +93,7 @@ amenity=restaurant
 # no default label ${amenity} - Icons are labeled
 amenity=bank |
 amenity=atm |
+amenity=pub |
 amenity=bureau_de_change
             { set label_temp='${name}' |'${operator}' | '${brand}' ;
               set mkgmap:label:3='${label_temp}' ;
@@ -103,7 +104,6 @@ amenity=bureau_de_change
 
 # with default label ${amenity} - Icons are unlabeld
 amenity=cafe |
-amenity=pub |
 amenity=bar |
 amenity=fast_food |
 amenity=car_wash |
@@ -154,7 +154,7 @@ amenity=social_centre | amenity=social_facility
 						add name='${amenity|subst:_=> } (${social_facility|subst:_=> } for ${social_facility:for|subst:_=> })'|'${amenity|subst:_=> } (${social_facility|subst:_=> })'|'${amenity|subst:_=> }'
 						}
 
-shop=* & shop!=hairdresser & shop!=solarium & shop!=tanning & name!=*
+shop=* & shop!=hairdresser & shop!=solarium & shop!=tanning & shop!=supermarket & shop!=general & name!=*
 						{
 						#echo '${shop}';
 						add name='${shop|subst:_=> }' ;
