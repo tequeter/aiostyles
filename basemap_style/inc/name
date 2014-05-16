@@ -59,6 +59,8 @@ highway=emergency_access_point
             name '${ref} ${name} ${operator} ${emergency_telephone_code}';
             }
 
+amenity=parking & capacity=unknown { delete capacity ; }
+amenity=parking & capacity:disabled=unknown { delete capacity:disabled ; }
 amenity=parking
          { name '${name|def:P} (${capacity} + ${capacity:disabled})' |
                 '${name|def:P} (${capacity})' |
