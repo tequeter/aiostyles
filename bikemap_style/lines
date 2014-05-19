@@ -77,7 +77,7 @@ highway=corridor
                   set highway=footway;
                   set tunnel=yes;
                   }
-                  
+
 highway=*
 	   & (
 	      surface=cobblestone |

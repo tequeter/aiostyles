@@ -78,7 +78,7 @@ highway=corridor
                   set highway=footway;
                   set tunnel=yes;
                   }
-                  
+
 highway=*
 	   & (
 	      surface=cobblestone |
@@ -467,14 +467,12 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 ## and uncomment the third and following lines
 
 (highway=cycleway | (highway=path & bicycle=designated))				[0x1200a resolution 23-23 continue]
-#(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24]
 (highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
 (highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
 (highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
 
 
 highway=footway										[0x1200d resolution 23-23 continue]
-#highway=footway									[0x1100d resolution 24]
 highway=footway									        [0x1100d resolution 24 continue]
 highway=footway &
               (bicycle=designated |
@@ -485,7 +483,6 @@ highway=footway									        [0x0d resolution 24 road_class=0 road_speed=0]
 
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
-#highway=bridleway									[0x11016 resolution 24]
 highway=bridleway									[0x11016 resolution 24 continue]
 highway=bridleway &
               (bicycle=designated |
@@ -496,7 +493,6 @@ highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 
 highway=steps										[0x12013 resolution 23-23 continue]
-#highway=steps										[0x11013 resolution 24]
 highway=steps										[0x13 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
