@@ -24,8 +24,8 @@
 #	0x0d	footway
 #	0x0e	track grade1
 #	0x0f	track grade2
-#	0x10	track grade3
-#	0x11	track grade4/6
+#	0x10	track grade3     with overlay
+#	0x11	track grade4/6 / track without grade*, with overlay
 #	0x12	path/trail
 #	0x13	steps
 #       0x16    bridleway
@@ -504,8 +504,10 @@ highway=track & tracktype=grade1                                                
 highway=track & tracktype=grade2                                                        [0x1200f resolution 23 continue]
 highway=track & tracktype=grade2                                                        [0x0f resolution 24 road_class=0 road_speed=0]
 
+highway=track & tracktype=grade3                                                        [0x11010 resolution 24 continue]
 highway=track & tracktype=grade3                                                        [0x10 resolution 24 road_class=0 road_speed=0]
 
+highway=track & tracktype~'grade[4-6]'                                                  [0x11011 resolution 24 continue]
 highway=track & tracktype~'grade[4-6]'                                                  [0x11 resolution 24 road_class=0 road_speed=0]
 
 highway=track

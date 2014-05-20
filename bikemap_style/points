@@ -39,15 +39,15 @@ place=town & population >    999 & cityxx!=yes  & name=*        {set cityxx=yes}
 place=town & population >      0 & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 18 continue with_actions]
 place=town                       & cityxx!=yes  & name=*        {set cityxx=yes} [0x0800 resolution 18 continue with_actions]
 
-place=village                    & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0900 resolution 19 continue with_actions]
-place=suburb                     & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0a00 resolution 21 continue with_actions]
+place=village                    & cityxx!=yes  & name=*        {set cityxx=yes} [0x0900 resolution 19 continue with_actions]
+place=suburb                     & cityxx!=yes  & name=*        {set cityxx=yes} [0x0a00 resolution 21 continue with_actions]
 
 (place=hamlet |
 place=isolated_dwelling |
-place=neighbourhood)             & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0b00 resolution 22 continue with_actions]
+place=neighbourhood)             & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 22 continue with_actions]
 
-place=island                     & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 21 continue with_actions]
-place=islet                      & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 22 continue with_actions]
+place=island                     & cityxx!=yes  & name=*        {set cityxx=yes} [0x650c resolution 21 continue with_actions]
+place=islet                      & cityxx!=yes  & name=*        {set cityxx=yes} [0x650c resolution 22 continue with_actions]
 
 place=locality  & name=*                                                          [0x2800 resolution 24 continue with_actions]
 
