@@ -1,0 +1,45 @@
+
+
+[_id]
+ProductCode=49
+FID=7
+CodePage=1252
+ [End]
+
+;=========== COMMENTAIRES ======
+[_comments]
+[End]
+
+
+
+
+;=========== POLYGONES : PRIORITE DANS L'AFFICHAGE ======
+[_drawOrder]
+[End]
+
+
+
+
+
+;===================== POLYGONES ========================
+
+
+;====================== LINES ===========================
+
+
+;====================== POINTS ==========================
+
+
+[_point]
+Type=0x01e
+SubType=0x04
+String1=0x02,Eingang
+String2=0x04,Entrance
+ExtendedLabels=Y
+FontStyle=SmallFont
+CustomColor=No
+DayXpm="1 1 1 1"   Colormode=16
+"  	c none"
+" "
+;1
+[end]
