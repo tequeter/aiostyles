@@ -31,8 +31,8 @@ CodePage=1252
 
 
 [_point]
-Type=0x01e
-SubType=0x04
+Type=0x115
+SubType=0x00
 String1=0x02,Eingang
 String2=0x04,Entrance
 ExtendedLabels=Y
