@@ -8,12 +8,27 @@ note=* & (note ~ 'FIXME.*' |
 	  'Notiz: ${FIXME}' |
 	  'Notiz: ${Fixme}' |
 	  oneway=-1	} 				[0x10001 resolution 24]
-note=* {name 'Notiz: ${note}'} 				[0x10006 resolution 24]
-highway=residential &
-        name!=* & 
-        addr:place!=* &
-        junction!=roundabout	                        [0x10007 resolution 24]
-highway=* & construction=minor 				[0x10003 resolution 23]
-highway=track & tracktype!=*  				[0x10002 resolution 23]
-highway=* & access=destination 				[0x10004 resolution 23]
 
+highway=track & tracktype!=*  |
+highway=track & tracktype~('.*;.*')
+       {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
+
+highway=* & construction=minor 				[0x10003 resolution 23]
+
+highway=* & access=destination 		                [0x10004 resolution 23]
+
+highway~('.*;.*')
+        {name 'FIXME: ${highway}'}                      [0x10005 resolution 23]
+
+note=* {name 'Notiz: ${note}'}                          [0x10006 resolution 24]
+
+highway=residential &
+        name!=* &
+        addr:place!=* &
+        junction!=roundabout                            [0x10007 resolution 24]
+
+highway=* &
+highway!=motorway_junction &
+highway!=bus_stop &
+name~('.*;.*')
+          {name 'FIXME: ${name}'}                       [0x10008 resolution 24]
