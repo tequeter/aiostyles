@@ -25,6 +25,8 @@ barrier=bus_trap
             addaccess no; }
 
 barrier=gate |
+    barrier=lift_gate |
+    barrier=swing_gate |
     barrier=sally_port
           { add bicycle=yes;
             add foot=yes;
