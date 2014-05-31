@@ -65,6 +65,12 @@ highway=motorway|highway=motorway_link
                         add bicycle=no;
                         add foot=no
                         }
+highway=* & ramp=yes
+                    {
+                      add foot=yes;
+                      add bicyle=yes
+                      }
+                        
 access=agricultural
                       { set access=no;
                         add foot=yes
