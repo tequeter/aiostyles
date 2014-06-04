@@ -174,7 +174,7 @@ tmp:phone=* & mkgmap:country=USA
       }
 
 # debugging
-tmp:phone=* {echo '(${mkgmap:country}) ${phone:bak} --> ${tmp:phone}' }
+#tmp:phone=* {echo '(${mkgmap:country}) ${phone:bak} --> ${tmp:phone}' }
 
 tmp:phone=*
       {
