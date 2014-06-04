@@ -10,35 +10,45 @@
 # A class is not allowed to use the way if its tag is set to 'no'
 
 crossing:barrier!=no
-          { addaccess yes }
+          { 
+            addaccess yes 
+            }
 
 barrier=bollard |
     barrier=cycle_barrier
-          { add bicycle=yes;
+          { 
+            add bicycle=yes;
             add foot=yes;
-            addaccess no }
+            addaccess no;
+            }
 
 barrier=bus_trap
-          { add bus=yes;
+          { 
+            add bus=yes;
             add foot=yes;
             add bicycle=yes;
-            addaccess no; }
+            addaccess no; 
+            }
 
 barrier=gate |
     barrier=lift_gate |
     barrier=swing_gate |
     barrier=sally_port
-          { add bicycle=yes;
+          { 
+            add bicycle=yes;
             add foot=yes;
-            addaccess no; }
+            addaccess no; 
+            }
 
 barrier~'.*(gate)' |
     barrier=cattle_grid |
     barrier~'.*(stile)' |
     barrier=block |
     barrier=jersey_barrier
-          { add foot=yes;
-            addaccess no; }
+          { 
+            add foot=yes;
+            addaccess no; 
+            }
 
 highway=* & cycle_network=yes
               { set bicycle=yes }

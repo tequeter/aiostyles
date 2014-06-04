@@ -4,7 +4,7 @@
 phone=* | contact:phone=* | addr:phone=*
       {
       set tmp:phone='${phone}'|'${contact:phone}'|'${addr:phone}';
-      add phone='${tmp:phone}';
+      set phone:bak='${tmp:phone}';
       }
 
 # remove or change some typos
@@ -169,7 +169,7 @@ tmp:phone=* & mkgmap:country=USA
       }
 
 # debugging
-#tmp:phone=* {echo '(${mkgmap:country}) Phone number ${phone} reformatted to ${tmp:phone}' }
+#tmp:phone=* {echo '(${mkgmap:country}) Phone number ${phone:bak} reformatted to ${tmp:phone}' }
 
 tmp:phone=*
       {

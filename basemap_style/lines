@@ -37,7 +37,7 @@
 #{echo ' ${highway} | ${name} '}
 #-----------------------------------------------------------------------------
 
-include 'inc/refs' ;
+include '../inc/refs' ;
 
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
@@ -636,15 +636,15 @@ waterway=stream                                                                 
 
 
 # calculate the road speed based on maxspeed tag
-include 'inc/roadspeed' ;
+include '../inc/roadspeed' ;
 
 # calculate the access rules
-include 'inc/access' ;
+include '../inc/access' ;
 
 name=* { name '${name}' }
 
-include 'inc/address' ;
-include 'inc/phone';
+include '../inc/address' ;
+include '../inc/phone';
 
 highway=* & ref=* { addlabel '${ref}' }
 highway=* & int_ref=* { addlabel '${int_ref}' }

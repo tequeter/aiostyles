@@ -10,7 +10,7 @@
 
 barrier=no {delete barrier}
 
-include 'inc/name';
+include '../inc/name';
 
 #------------------------------------------------------------------------------
 # Places
@@ -829,6 +829,6 @@ man_made=surveillance                                                           
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-include 'inc/address';
+include '../inc/address';
 
-include 'inc/phone';
+include '../inc/phone';
