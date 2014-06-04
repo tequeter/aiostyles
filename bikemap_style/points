@@ -829,6 +829,6 @@ man_made=surveillance                                                           
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-include 'inc/phone';
 include 'inc/address';
 
+include 'inc/phone';
