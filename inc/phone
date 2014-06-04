@@ -7,169 +7,174 @@ phone=* | contact:phone=* | addr:phone=*
       set phone:bak='${tmp:phone}';
       }
 
+# change ',' to more useful ';'     
+tmp:phone=*
+      {
+      set tmp:phone='${tmp:phone|subst:,=>;}';
+      set tmp:phone='${tmp:phone|part:;:1}';
+      }
+
 # remove or change some typos
 tmp:phone=*
       {
       set tmp:phone='${tmp:phone|subst:^00~>+}';
-      set tmp:phone='${tmp:phone|subst:(0)=>}';
-      set tmp:phone='${tmp:phone|subst:" "=>}';
-      set tmp:phone='${tmp:phone|subst:,=>;}';
-      set tmp:phone='${tmp:phone|subst:[^0-9+;]~>}'
+      set tmp:phone='${tmp:phone|subst:[^0-9+]~>}';
       }
-
+      
 # country-specific rules
 
 tmp:phone=* & mkgmap:country=AND
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+376|subst:^+3760~>+376}'
+      set tmp:phone='${tmp:phone|subst:^0~>+376}'
       }
 
 tmp:phone=* & mkgmap:country=AUT
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+43|subst:^+430~>+43}'
+      set tmp:phone='${tmp:phone|subst:^0~>+43}'
       }
 
 tmp:phone=* & mkgmap:country=BEL
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+32|subst:^+320~>+32}'
+      set tmp:phone='${tmp:phone|subst:^0~>+32}'
       }
 
 tmp:phone=* & mkgmap:country=BGR
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+359|subst:^+3590~>+359}'
+      set tmp:phone='${tmp:phone|subst:^0~>+359}'
       }
+      
 tmp:phone=* & mkgmap:country=CHE
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+41|subst:^+410~>+41}'
+      set tmp:phone='${tmp:phone|subst:^0~>+41}'
       }
 
 tmp:phone=* & mkgmap:country=CHN
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+86|subst:^+860~>+86}'
+      set tmp:phone='${tmp:phone|subst:^0~>+86}'
       }
 
 tmp:phone=* & mkgmap:country=CZE
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+420|subst:^+4200~>+420}'
+      set tmp:phone='${tmp:phone|subst:^0~>+420}'
       }
 
 tmp:phone=* & mkgmap:country=DEN
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+45|subst:^+450~>+45}'
+      set tmp:phone='${tmp:phone|subst:^0~>+45}'
       }
 
 tmp:phone=* & mkgmap:country=DEU
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+49|subst:^+490~>+49}'
+      set tmp:phone='${tmp:phone|subst:^0~>+49}'
       }
 
 tmp:phone=* & mkgmap:country=ESP
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+34|subst:^+340~>+34}'
+      set tmp:phone='${tmp:phone|subst:^0~>+34}'
       }
 
 tmp:phone=* & mkgmap:country=EST
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+372|subst:^+3720~>+372}'
+      set tmp:phone='${tmp:phone|subst:^0~>+372}'
       }
 
 tmp:phone=* & mkgmap:country=FIN
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+358|subst:^+3580~>+358}'
+      set tmp:phone='${tmp:phone|subst:^0~>+358}'
       }
 
 tmp:phone=* & mkgmap:country=FRA
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+33|subst:^+330~>+33}'
+      set tmp:phone='${tmp:phone|subst:^0~>+33}'
       }
 
 tmp:phone=* & (mkgmap:country=GBR | mkgmap:country=IMN)
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+44|subst:^+440~>+44}'
+      set tmp:phone='${tmp:phone|subst:^0~>+44}'
       }
 
 tmp:phone=* & mkgmap:country=HRV
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+385|subst:^+385~>+385}'
+      set tmp:phone='${tmp:phone|subst:^0~>+385}'
       }
 
 tmp:phone=* & mkgmap:country=IRL
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+353|subst:^+3530~>+353}'
+      set tmp:phone='${tmp:phone|subst:^0~>+353}'
       }
 
 tmp:phone=* & mkgmap:country=LIE
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+423|subst:^+4230~>+423}'
+      set tmp:phone='${tmp:phone|subst:^0~>+423}'
       }
 
 tmp:phone=* & mkgmap:country=LKA
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+94|subst:^+940~>+94}'
+      set tmp:phone='${tmp:phone|subst:^0~>+94}'
       }
 
 tmp:phone=* & mkgmap:country=LTU
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+370|subst:^+3700~>+370}'
+      set tmp:phone='${tmp:phone|subst:^0~>+370}'
       }
 
 tmp:phone=* & mkgmap:country=LVA
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+371|subst:^+3710~>+371}'
+      set tmp:phone='${tmp:phone|subst:^0~>+371}'
       }
 
 tmp:phone=* & mkgmap:country=LUX
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+352|subst:^+3520~>+352}'
+      set tmp:phone='${tmp:phone|subst:^0~>+352}'
       }
 
 tmp:phone=* & mkgmap:country=NLD
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+31|subst:^+310~>+31}'
+      set tmp:phone='${tmp:phone|subst:^0~>+31}'
       }
 
 tmp:phone=* & mkgmap:country=NOR
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+47|subst:^+470~>+47}'
+      set tmp:phone='${tmp:phone|subst:^0~>+47}'
       }
 
 tmp:phone=* & mkgmap:country=POL
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+48|subst:^+480~>+48}'
+      set tmp:phone='${tmp:phone|subst:^0~>+48}'
       }
 
 tmp:phone=* & mkgmap:country=SVk
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+421|subst:^+4210~>+421}'
+      set tmp:phone='${tmp:phone|subst:^0~>+421}'
       }
 
 tmp:phone=* & mkgmap:country=SVN
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+386|subst:^+3860~>+386}'
+      set tmp:phone='${tmp:phone|subst:^0~>+386}'
       }
 
 tmp:phone=* & mkgmap:country=SWE
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+46|subst:^+460~>+46}'
+      set tmp:phone='${tmp:phone|subst:^0~>+46}'
       }
 
 tmp:phone=* & mkgmap:country=TUR
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+90|subst:^+900~>+90}'
+      set tmp:phone='${tmp:phone|subst:^0~>+90}'
       }
 
 tmp:phone=* & mkgmap:country=TWN
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+88|subst:^+880~>+88}'
+      set tmp:phone='${tmp:phone|subst:^0~>+88}'
       }
 
 tmp:phone=* & mkgmap:country=USA
       {
-      set tmp:phone='${tmp:phone|subst:^0~>+1|subst:^+10~>+1}'
+      set tmp:phone='${tmp:phone|subst:^0~>+1}'
       }
 
 # debugging
-#tmp:phone=* {echo '(${mkgmap:country}) Phone number ${phone:bak} reformatted to ${tmp:phone}' }
+tmp:phone=* {echo '(${mkgmap:country}) Phone number ${phone:bak} --> ${tmp:phone}' }
 
 tmp:phone=*
       {
