@@ -212,6 +212,6 @@ natural=* & name!=*
 						add name='${natural|subst:_=> }' ;
 						}
 
-disused=yes  {name '${name} (disused)'|'(disused)'; echo '${mkgmap:label:1}' }
+disused=yes  {name '${name} (disused)'|'(disused)';}
 
 name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
