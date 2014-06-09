@@ -15,7 +15,11 @@ name=FIXME | name=fixme         { delete name; }
 
 ## name option for base- and bikemap
 
-public_transport=platform & (amenity=bus_station | highway=bus_stop | railway=tram_stop | railway=halt | railway=station) {
+
+
+public_transport=platform & (amenity=bus_station | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+
+{
 	# eliminate double ^ or double - ; no idea why they are entered twice otherwise
 	delete public_transport;
 }
@@ -167,6 +171,7 @@ shop=* & shop!=hairdresser & shop!=solarium & shop!=tanning & shop!=supermarket 
 						add name='${shop|subst:_=> }' ;
 						}
 
+
 power=*
             {
               delete operator;
@@ -206,5 +211,7 @@ natural=* & name!=*
 						{
 						add name='${natural|subst:_=> }' ;
 						}
+
+disused=yes  {name '${name} (disused)'|'(disused)'; echo '${mkgmap:label:1}' }
 
 name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
