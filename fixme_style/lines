@@ -11,8 +11,7 @@ note=* & (note ~ 'FIXME.*' |
 
 
 highway~'.*(:|,|;).*'
-       {name 'FIXME: ${highway}';
-       echo ' ${highway}' }                      [0x10002 resolution 23]
+       {name 'FIXME: ${highway}';}                      [0x10002 resolution 23]
 
 highway=track & tracktype!=*  |
 highway=track & tracktype~('.*;.*')
