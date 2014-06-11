@@ -2219,8 +2219,8 @@ BorderWidth=1
 Xpm="0 0 2 0"
 "1 c #B4B4B4"
 "2 c #BD0000"
-String1=0x02,Grade1
-String2=0x04,Grade1
+String1=0x02,bef.Feld-o.Waldweg
+String2=0x04,paved Track
 ExtendedLabels=N
 [end]
 
@@ -2234,8 +2234,8 @@ Xpm="32 2 2  1"
 "!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
 "!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
 ;12345678901234567890123456789012
-String1=0x02,Grade2
-String2=0x04,Grade2
+String1=0x02,Grade2/unbef.Seitenweg
+String2=0x04,Grade2/Byway
 ExtendedLabels=N
 [end]
 

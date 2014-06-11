@@ -338,6 +338,11 @@ tourism=wine_cellar                                                             
 #------------------------------------------------------------------------------
 # Food and Drink
 
+cuisine~'.*;.*'
+                {
+                set cuisine='${cuisine|part:}';
+                }
+
 # American
 amenity=restaurant &
     cuisine=american                                                                    [0x2a01 resolution 24]

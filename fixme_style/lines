@@ -9,11 +9,17 @@ note=* & (note ~ 'FIXME.*' |
 	  'Notiz: ${Fixme}' |
 	  oneway=-1	} 				[0x10001 resolution 24]
 
+
+highway~'.*(:|,|;).*'
+       {name 'FIXME: ${highway}';
+       echo ' ${highway}' }                      [0x10002 resolution 23]
+
 highway=track & tracktype!=*  |
 highway=track & tracktype~('.*;.*')
        {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
 
-highway=* & construction=minor 				[0x10003 resolution 23]
+highway=* & construction=minor
+       {name 'FIXME: ${construction}'}  		[0x10003 resolution 23]
 
 highway=* & access=destination 		                [0x10004 resolution 23]
 
