@@ -15,7 +15,8 @@ crossing:barrier!=no
             }
 
 barrier=bollard |
-    barrier=cycle_barrier
+    barrier=cycle_barrier |
+    barrier=block |
           {
             add bicycle=yes;
             add foot=yes;
@@ -43,7 +44,6 @@ barrier=gate |
 barrier~'.*(gate)' |
     barrier=cattle_grid |
     barrier~'.*(stile)' |
-    barrier=block |
     barrier=jersey_barrier
           {
             add foot=yes;
