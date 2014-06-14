@@ -17,6 +17,11 @@ crossing:barrier!=no
 barrier=bollard |
     barrier=cycle_barrier |
     barrier=block |
+    barrier=gate |
+    barrier=lift_gate |
+    barrier=swing_gate |
+    barrier=sally_port
+    
           {
             add bicycle=yes;
             add foot=yes;
@@ -28,16 +33,6 @@ barrier=bus_trap
             add bus=yes;
             add foot=yes;
             add bicycle=yes;
-            addaccess no;
-            }
-
-barrier=gate |
-    barrier=lift_gate |
-    barrier=swing_gate |
-    barrier=sally_port
-          {
-            add bicycle=yes;
-            add foot=yes;
             addaccess no;
             }
 
