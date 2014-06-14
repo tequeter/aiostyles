@@ -72,6 +72,7 @@ highway=corridor
                 {
                   set highway=footway;
                   add tunnel=yes;
+                  add covered=yes;
                   }
 
 highway=*
