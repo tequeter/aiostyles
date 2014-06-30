@@ -2390,6 +2390,48 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x1c
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #7B00FF"
+"  c none"
+"!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
+"!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Kreisgrenze
+String2=0x04,District Border
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1d
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #7B00FF"
+"  c none"
+"!!!!!   !!!!!   !!!!!   !!!!!   "
+"!!!!!   !!!!!   !!!!!   !!!!!   "
+;12345678901234567890123456789012
+String1=0x02,Landesgrenze
+String2=0x04,State Border
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1e
+UseOrientation=N
+LineWidth=3
+Xpm="0 0 1 0"
+"1 c #7B00FF"
+String1=0x02,Staatsgrenze
+String2=0x04,National Border
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x1f
 UseOrientation=N
 LineWidth=2
