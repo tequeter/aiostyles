@@ -14,13 +14,13 @@
 	  }
 	}
 
-	# European E-Road network
-	
-route=road & network=e-road 
-        { apply 
-          { 
-            add ref='${ref}'; 
-            add int_ref='${int_ref}; 
-            add network=e-road 
+# European E-Road network
+
+route=road & network=e-road
+        { apply
+          {
+            add ref='${ref}';
+            add int_ref='${int_ref};
+            add network=e-road
             }
           }
