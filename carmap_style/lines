@@ -539,8 +539,8 @@ route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road
 # are frequently tagged with both and we want the highway to take priority.
 
 boundary=administrative { name '${mkgmap:boundary_name}' }
-boundary=administrative & admin_level<3                                                 [0x1e resolution 16]
-boundary=administrative & admin_level<5                                                 [0x1d resolution 19]
+boundary=administrative & admin_level<=2                                                [0x1e resolution 16]
+boundary=administrative & admin_level<=4                                                [0x1d resolution 19]
 boundary=national                                                                       [0x1e resolution 17]
 
 # other boundaries moved to boundary layer
