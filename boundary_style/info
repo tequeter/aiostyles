@@ -1,0 +1,22 @@
+#
+# This file contains information about the style.
+# It is completely optional.
+#
+
+
+# A short one line description of the style
+#
+summary: Boundaries as Overlay
+
+# Version of the style itself
+#
+version=1.0
+
+# A longer description of the style.
+description {
+Boundaries als Overlay,
+The Basemaps didn't have boundaries admin_level<4 
+
+
+contact: weigelt.bernd (at) web.de
+}

@@ -1,0 +1,16 @@
+
+# The following boundary styles are separated to their own layer to 
+# prevent visibility problems
+
+boundary=administrative { name '${mkgmap:boundary_name}' }
+boundary=administrative & admin_level<3 						[0x1e resolution 16]
+boundary=administrative & admin_level<5 						[0x1d resolution 19]
+
+boundary=administrative                                                                 [0x1c resolution 24 continue]
+
+boundary=administrative & admin_level<7 						[0x10e1c resolution 20]
+boundary=administrative & admin_level<9 						[0x10e1d resolution 22]
+boundary=administrative 								[0x10e1e resolution 24]
+#boundary=political 									[0x10e1c resolution 19]
+
+boundary=national                                                                       [0x1e resolution 17]

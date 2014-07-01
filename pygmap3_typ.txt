@@ -2392,14 +2392,12 @@ ExtendedLabels=N
 [_line]
 Type=0x1c
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #7B00FF"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
 "  c none"
-"!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
-"!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
+"                                "
 ;12345678901234567890123456789012
-String1=0x02,Kreisgrenze
-String2=0x04,District Border
+String1=0x01,
 ExtendedLabels=N
 [end]
 
@@ -2414,7 +2412,7 @@ Xpm="32 2 2  1"
 "!!!!!   !!!!!   !!!!!   !!!!!   "
 ;12345678901234567890123456789012
 String1=0x02,Landesgrenze
-String2=0x04,State Border
+String2=0x04, Fed.State Boundary
 ExtendedLabels=N
 [end]
 
@@ -3447,6 +3445,51 @@ Xpm="32 4 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Eisenbahn
 String2=0x04,Rail
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e1c
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #7B00FF"
+"  c none"
+"!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
+"!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Kreisgrenze
+String2=0x04,District Boundary
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e1d
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #7B00FF"
+"  c none"
+"!!!!!!  !!  !!  !!!!!!  !!  !!  "
+"!!!!!!  !!  !!  !!!!!!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Gemeindegrenze (<9)
+String2=0x04,Municipal Boundary (<9)
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x10e1e
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #7B00FF"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x02,Gemeindegrenze 
+String2=0x04,Municipal Boundary
 ExtendedLabels=N
 [end]
 
