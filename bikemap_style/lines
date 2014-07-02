@@ -678,10 +678,7 @@ waterway=stream                                                                 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-# calculate the road speed based on maxspeed tag
 include '../inc/roadspeed' ;
-
-# calculate the access rules
 
 include '../inc/access' ;
 
