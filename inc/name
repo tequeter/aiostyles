@@ -192,11 +192,11 @@ leisure=ice_rink | sport=skating
 	add name='skating' ;
 	}
 
-sport=* & name!=*
-& sport!=soccer
-	{
-	add name='${sport|subst:_=> }' ;
-	}
+#sport=* & name!=*
+#& sport!=soccer
+#	{
+#	add name='${sport|subst:_=> }' ;
+#	}
 
 waterway=* & name!=*
 	{
@@ -217,13 +217,18 @@ natural=peak | natural=hill | mountain_pass=yes
               '(${ele} m)'
 	}
 
-natural=* & name!=*
-& natural!=water
-& natural!=wetland
-& natural!=land
-        {
-	add name='${natural|subst:_=> }' ;
-	}
+#natural=* & name!=*
+#& natural!=water
+#& natural!=wetland
+#& natural!=land
+#& natural!=wood
+#& natural!=scrub
+#& natural!=scree
+#& natural!=grass
+#& natural!=grassland
+#        {
+#	add name='${natural|subst:_=> }' ;
+#	}
 
 disused=yes  {name '${name} (disused)'|'(disused)';}
 
