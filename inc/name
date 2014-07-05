@@ -220,6 +220,7 @@ natural=peak | natural=hill | mountain_pass=yes
 natural=* & name!=*
 & natural!=water
 & natural!=wetland
+& natural!=land
         {
 	add name='${natural|subst:_=> }' ;
 	}

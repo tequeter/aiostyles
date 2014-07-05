@@ -1,6 +1,4 @@
 
-include '../inc/address';
-
 
 #------------------------------------------------------------------------------
 # housenumber
@@ -132,4 +130,8 @@ waterway=riverbank 							[0x46 resolution 18]
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
-name=* { name '${name}' }
+include '../inc/address';
+include '../inc/phone';
+include '../inc/name' ;
+
+#name=* { name '${name}' }

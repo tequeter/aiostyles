@@ -8,9 +8,6 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-include '../inc/name';
-
-
 #------------------------------------------------------------------------------
 # Places
 
@@ -857,3 +854,6 @@ man_made=surveillance                                                           
 
 include '../inc/address';
 include '../inc/phone';
+include '../inc/name';
+
+name=* { name '${name}' }
