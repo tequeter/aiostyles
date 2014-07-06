@@ -46,6 +46,11 @@ place=island                     & cityxx!=yes  & name=*                  {set c
 place=islet                      & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 22 continue with_actions]
 
 place=locality  & name=*                                                          [0x2800 resolution 24 continue with_actions]
+# 0x2800-0x283F   Region name (no Point, small)
+
+# replace or delete some Key/value pairs to prevent listing in POI list
+leisure=swimming_pool { deletealltags }
+amenity=swimming_pool { deletealltags }
 
 # Man Made
 # 0x6401 	# bridge
