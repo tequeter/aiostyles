@@ -659,10 +659,6 @@ tourism=picnic_site 									[0x4a00 resolution 24]
 amenity=bench 										[0x4a01 resolution 24]
 # 0x4ass
 
-# Arena/Track
-leisure=stadium 									[0x5400 resolution 24]
-leisure=track 										[0x5400 resolution 24]
-
 # Golf Course
 leisure=golf_course 									[0x2d05 resolution 24]
 leisure=miniature_golf 									[0x4001 resolution 24]
@@ -684,9 +680,8 @@ sport=swimming & mkgmap:area2poi!=true							[0x2d09 resolution 24]
 leisure=water_park  & mkgmap:area2poi!=true						[0x2d09 resolution 24]
 
 # Sports/Fitness Center
-leisure=sports_centre 									[0x5400 resolution 24]
-sport=multi 										[0x5400 resolution 24]
-sport=soccer 										[0x5401 resolution 24]
+sport=multi                                                                             [0x5400 resolution 24]
+sport=soccer             								[0x5401 resolution 24]
 sport=volleyball 									[0x5402 resolution 24]
 sport=basketball 									[0x5403 resolution 24]
 sport=table_tennis 									[0x5404 resolution 24]
