@@ -100,16 +100,10 @@ highway=*
 	      add mkgmap:unpaved=1;
 	    }
 
-leisure=track & area!=yes
-              {
-                add highway=footway;
-                name '${name} (${sport})' | '${name}'
-                }
 
-(man_made=pier | man_made=piste:halfpipe) & area!=yes
+man_made=pier & area!=yes
               {
                 add highway=footway;
-                name '${ref} ${name}' | '${ref}' | '${name}'
                 }
 
 #------------------------------------------------------------------------------
