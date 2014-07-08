@@ -60,7 +60,7 @@ landuse=forest & wood=coniferous 					[0x21 resolution 24-23]
 landuse=forest & wood=deciduous 					[0x22 resolution 24-23]
 landuse=forest & wood=mixed 						[0x23 resolution 24-23]
 landuse=forest 								[0x20 resolution 24-23]
-landuse=meadow 								[0x53 resolution 22]
+landuse=meadow 								[0x10f10 resolution 21]
 
 landuse=commercial 							[0x0f resolution 18]
 landuse=industrial							[0x0c resolution 18]
@@ -74,8 +74,7 @@ landuse=reservoir |
 landuse=basin 								[0x3f resolution 22]
 
 landuse=village_green |
-landuse=recreation_ground |
-landuse=grass								[0x52 resolution 22]
+landuse=grass								[0x10f11 resolution 22]
 
 landuse=allotments 							[0x4f resolution 22]
 
@@ -89,15 +88,35 @@ landuse=quarry 								[0x2d resolution 22]
 
 tourism=camp_site 							[0x2e resolution 22]
 
+#------------------------------------------------------------------------------
+# sport/leisure
+
 leisure=marina 								[0x09 resolution 20]
 
-leisure=common | leisure=park | leisure=water_park 			[0x17 resolution 22]
-leisure=garden | leisure=playground 					[0x17 resolution 23]
+leisure=common | 
+leisure=park | 
+leisure=water_park 			                                [0x17 resolution 22]
+landuse=recreation_ground                                               [0x10f12 resolution 22]
+leisure=garden                                                          [0x17 resolution 23] 
+leisure=playground                                                      [0x10f13 resolution 23] 
 leisure=golf_course 							[0x18 resolution 22]
 leisure=sports_centre | leisure=stadium					[0x19 resolution 22]
-leisure=pitch | leisure=track                                           [0x19 resolution 23]
+
+leisure=pitch & sport=soccer                                            [0x10f00 resolution 23]
+leisure=pitch & sport=tennis                                            [0x10f01 resolution 23]
+leisure=pitch & sport=multi                                             [0x10f02 resolution 23]
+leisure=pitch & sport=basketball                                        [0x10f03 resolution 23]
+leisure=pitch & sport~'.*(handball)'                                    [0x10f04 resolution 23]
+leisure=pitch & sport=boules                                            [0x10f05 resolution 23]
+
+leisure=pitch                                                           [0x19 resolution 23]
+
+leisure=track                                                           [0x10f06 resolution 23]
 
 temp_pool=yes                                                           [0x40 resolution 23]
+
+#------------------------------------------------------------------------------
+# military
 
 military=airfield | military=danger_area | military=range               [0x04 resolution 18]							
 military=barracks 							[0x04 resolution 22]
