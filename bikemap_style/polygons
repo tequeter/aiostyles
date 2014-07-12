@@ -93,12 +93,12 @@ tourism=camp_site 							[0x2e resolution 22]
 
 leisure=marina 								[0x09 resolution 20]
 
-leisure=common | 
-leisure=park | 
+leisure=common |
+leisure=park |
 leisure=water_park 			                                [0x17 resolution 22]
 landuse=recreation_ground                                               [0x10f12 resolution 22]
-leisure=garden                                                          [0x17 resolution 23] 
-leisure=playground                                                      [0x10f13 resolution 23] 
+leisure=garden                                                          [0x17 resolution 23]
+leisure=playground                                                      [0x10f13 resolution 23]
 leisure=golf_course 							[0x18 resolution 22]
 leisure=sports_centre | leisure=stadium					[0x19 resolution 22]
 
@@ -118,7 +118,7 @@ temp_pool=yes                                                           [0x40 re
 #------------------------------------------------------------------------------
 # military
 
-military=airfield | military=danger_area | military=range               [0x04 resolution 18]							
+military=airfield | military=danger_area | military=range               [0x04 resolution 18]
 military=barracks 							[0x04 resolution 22]
 
 #------------------------------------------------------------------------------
@@ -132,7 +132,7 @@ natural=scrub 								[0x4e resolution 20]
 natural=heath 								[0x14 resolution 20]
 natural=fell | natural=grassland					[0x35 resolution 20]
 natural=land 								[0x27 resolution 10]
-
+natural=sand                                                            [0x10f14 resolution 20]
 
 natural=sea 								[0x32 resolution 10]
 natural=water 								[0x3e resolution 17 continue]
