@@ -220,56 +220,9 @@ highway=* & disused=yes									[0x10e01 resolution 24]
 #		}
 
 #--------------------------------------------------------------------------------------
-# process-exits and process-destination
+# process exits and destination
 
-(highway=motorway_link | highway=trunk_link) &
-      mkgmap:exit_hint=true &
-      mkgmap:dest_hint=true
-      { delete mkgmap:display_name;
-	 name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${destination:ref|subst: =>}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${ref|subst: =>}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${destination:ref|subst: =>}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${ref|subst: =>}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${destination:ref|subst: =>}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${ref|subst: =>}' |
-	      'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/}' |
-	      'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-	      'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-	      'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
-	      'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
-	      'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-	      'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
-	      'Exit ${destination:ref|subst: =>} ${destination|part:|part:/}' |
-	      'Exit ${ref|subst: =>} ${destination|part:|part:/}' |
-	      'Exit ${mkgmap:exit_hint_ref}' |
-	      '${destination|part:|part:/}' |
-	      '${destination:ref|subst: =>}' |
-	      '${ref|subst: =>}'
-	    }
-
-(highway=motorway_link | highway=trunk_link) &
-      mkgmap:exit_hint!=* &
-      mkgmap:dest_hint=true
-      { delete mkgmap:display_name;
-        name '${destination:ref|subst: =>} ${destination|part:|part:/}' |
-             '${ref|subst: =>} ${destination|part:|part:/}' |
-             '${destination|part:|part:/}' |
-             '${destination:ref|subst: =>}' |
-             '${ref|subst: =>}'
-            }
-
-(highway=motorway_link | highway=trunk_link) &
-      mkgmap:exit_hint=true &
-      mkgmap:dest_hint!=*
-      { delete mkgmap:display_name;
-        name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_ref}'
-	    }
+include '../inc/exit_dest' ;
 
 #--------------------------------------------------------------------------------------
 # Set highway names to include the reference if there is one
