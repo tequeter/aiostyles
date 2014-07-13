@@ -617,7 +617,6 @@ waterway=river                                                                  
 waterway=rapids|waterway=waterfall                                                      [0x1f resolution 22]
 waterway=stream                                                                         [0x18 resolution 22]
 
-
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
