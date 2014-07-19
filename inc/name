@@ -95,7 +95,7 @@ amenity=telephone
 
 
 tourism=hotel |
-tourism=picnic_site |
+#tourism=picnic_site |
 tourism=motel |
 amenity=restaurant
 
@@ -151,7 +151,7 @@ amenity=fuel
         }
 
 # avoid POI with label "unnamed" - some icons do not provide a default name
-amenity=toilets & name!=*                       {set name='WC'}
+#amenity=toilets & name!=*                       {set name='WC'}
 
 # move to fixme
 #(highway=services | highway=rest_area) & name!=* {set name='Info'}
