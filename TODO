@@ -28,6 +28,7 @@ amenity=casino |
 amenity=boat_storage |
 waterway=bootyard |
 amenity=fuel |
+tourism=picnic_site |
 sport=*
 
 
