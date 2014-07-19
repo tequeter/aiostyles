@@ -2644,11 +2644,11 @@ ExtendedLabels=N
 [_line]
 Type=0x0e
 UseOrientation=N
-LineWidth=1
-BorderWidth=1
-Xpm="0 0 2 0"
-"1 c #B4B4B4"
-"2 c #BD0000"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
+"  c none"
+"                                "
+;12345678901234567890123456789012
 String1=0x02,bef.Feld-o.Waldweg
 String2=0x04,paved Track
 ExtendedLabels=N
@@ -2658,11 +2658,10 @@ ExtendedLabels=N
 [_line]
 Type=0x0f
 UseOrientation=N
-Xpm="32 2 2  1"
-"! c #BD0000"
+Xpm="32 1 2  1"
+"! c #FFFFFF"
 "  c none"
-"!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
-"!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
+"                                "
 ;12345678901234567890123456789012
 String1=0x02,Grade2/unbef.Seitenweg
 String2=0x04,Grade2/Byway
@@ -4210,6 +4209,20 @@ ExtendedLabels=N
 
 
 [_line]
+Type=0x1100b
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #BD0000"
+"# c #FFFF00"
+"!!!!!!!!########!!!!!!!!########"
+"!!!!!!!!########!!!!!!!!########"
+;12345678901234567890123456789012
+String1=0x02,Unbekannter Track
+String2=0x04,Unknown track
+ExtendedLabels=N
+[end]
+
+[_line]
 Type=0x1100d
 UseOrientation=N
 Xpm="32 2 2  1"
@@ -4227,14 +4240,26 @@ ExtendedLabels=N
 [_line]
 Type=0x1100e
 UseOrientation=N
+LineWidth=2
+Xpm="0 0 1 0"
+"1 c #BD0000"
+String1=0x02,Grade1
+String2=0x04,Grade1
+ExtendedLabels=N
+[end]
+
+
+[_line]
+Type=0x1100f
+UseOrientation=N
 Xpm="32 2 2  1"
 "! c #BD0000"
-"# c #FFFF00"
-"!!!!!!!!########!!!!!!!!########"
-"!!!!!!!!########!!!!!!!!########"
+"  c none"
+"!!!!!!!!!!!!    !!!!!!!!!!!!    "
+"!!!!!!!!!!!!    !!!!!!!!!!!!    "
 ;12345678901234567890123456789012
-String1=0x02,Unbekannter Track
-String2=0x04,Unknown track
+String1=0x02,Grade2
+String2=0x04,Grade2
 ExtendedLabels=N
 [end]
 
@@ -4528,7 +4553,7 @@ UseOrientation=N
 Xpm="32 1 2  1"
 "! c #BD0000"
 "  c none"
-"!!!!!!!!!!!!!!  !!!!!!!!!!!!!!  "
+"!!!!!!!!!!!!    !!!!!!!!!!!!    "
 ;12345678901234567890123456789012
 String1=0x02,Grade2
 String2=0x04,Grade2

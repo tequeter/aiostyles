@@ -396,22 +396,14 @@ highway=pedestrian & (area!=yes & area!=true & area!=1)
 		  add mkgmap:dead-end-check=false
 		  }
 
-
 highway=pedestrian									[0x1201b resolution 23-23 continue]
 highway=pedestrian									[0x1101b resolution 24 continue]
 highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
-
-
-#------------------------------------------------------------------------------
-## in the AIO-basemap some ways are routable for testing
-## to make them routable comment out the second line for each roadtype
-## and uncomment the third and following lines
 
 (highway=cycleway | (highway=path & bicycle=designated))				[0x1200a resolution 23-23 continue]
 (highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
 (highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
 (highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
-
 
 highway=footway										[0x1200d resolution 23-23 continue]
 highway=footway									        [0x1100d resolution 24 continue]
@@ -422,7 +414,6 @@ highway=footway &
                bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=footway									        [0x0d resolution 24 road_class=0 road_speed=0]
 
-
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
 highway=bridleway &
@@ -432,7 +423,6 @@ highway=bridleway &
                bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
-
 highway=steps										[0x12013 resolution 23-23 continue]
 highway=steps										[0x13 resolution 24 road_class=0 road_speed=0]
 
@@ -441,11 +431,15 @@ highway=steps										[0x13 resolution 24 road_class=0 road_speed=0]
 
 (highway=track & tracktype=grade2) |
       (highway=byway & mkgmap:unpaved=1)                                                [0x1200f resolution 23 continue]
+highway=track & tracktype=grade2 |
+      (highway=byway & mkgmap:unpaved=1)                                                [0x1100f resolution 24 continue]
 (highway=track & tracktype=grade2) |
       (highway=byway  & mkgmap:unpaved=1)                                               [0x0f resolution 24 road_class=0 road_speed=0]
 
 highway=track & tracktype=grade1 |
       highway=byway                                                                     [0x1200e resolution 23-22 continue]
+highway=track & tracktype=grade1 |
+      highway=byway                                                                     [0x1100e resolution 24 continue]
 highway=track & tracktype=grade1 |
       highway=byway                                                                     [0x0e resolution 24 road_class=0 road_speed=0]
 
@@ -460,7 +454,7 @@ highway=track
                   add mkgmap:unpaved=1;
                 }
 
-highway=track                                                                           [0x1100e resolution 24 continue]
+highway=track                                                                           [0x1100b resolution 24 continue]
 highway=track                                                                           [0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
