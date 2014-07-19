@@ -12372,7 +12372,7 @@ DayXpm="15 15 72 2"   Colormode=0
 Type=0x04e
 SubType=0x01
 String1=0x04,Restroom
-String2=0x01,Toilette
+String2=0x02,Toilette
 ExtendedLabels=N
 DayXpm="16 16 2 1"   Colormode=16
 "!	c #000000"
