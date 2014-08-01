@@ -11,15 +11,16 @@
 
 # Germany (DEU)
 
-highway=* & motorroad=yes & mkgmap:country=DEU
+highway=* & motorroad=yes
+        & mkgmap:country=DEU
                         {
                           add bicycle=no;
                           add foot=no
                           }
 
-(highway=motorway | 
-    highway=motorway_link | 
-    highway=trunk 
+(highway=motorway |
+    highway=motorway_link |
+    highway=trunk |
     highway=trunk_link )
         & mkgmap:country=DEU
                       {
@@ -44,7 +45,24 @@ highway=bridleway & mkgmap:country=NLD  { add foot=yes }
 highway=trunk & mkgmap:country=ESP      { add bicycle=yes; add foot=yes }
 highway=bridleway & mkgmap:country=ESP  { add bicycle=yes; add foot=yes }
 
-railway=level_crossing & 
+# other
+
+highway=* & motorroad=yes
+                        {
+                          add bicycle=no;
+                          add foot=no
+                          }
+
+(highway=motorway |
+    highway=motorway_link |
+    highway=trunk |
+    highway=trunk_link )
+                      {
+                        add bicycle=no;
+                        add foot=no
+                        }
+
+railway=level_crossing &
     crossing:barrier!=no
           {
             addaccess yes
