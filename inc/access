@@ -9,6 +9,24 @@
 # mkgmap:emergency
 # A class is not allowed to use the way if its tag is set to 'no'
 
+# Germany (DEU)
+
+highway=* & motorroad=yes & mkgmap:country=DEU
+                        {
+                          add bicycle=no;
+                          add foot=no
+                          }
+
+(highway=motorway | 
+    highway=motorway_link | 
+    highway=trunk 
+    highway=trunk_link )
+        & mkgmap:country=DEU
+                      {
+                        add bicycle=no;
+                        add foot=no
+                        }
+
 # Belgium (BEL)
 
 highway=trunk & mkgmap:country=BEL      { add bicycle=no; add foot=no }
@@ -26,7 +44,8 @@ highway=bridleway & mkgmap:country=NLD  { add foot=yes }
 highway=trunk & mkgmap:country=ESP      { add bicycle=yes; add foot=yes }
 highway=bridleway & mkgmap:country=ESP  { add bicycle=yes; add foot=yes }
 
-crossing:barrier!=no
+railway=level_crossing & 
+    crossing:barrier!=no
           {
             addaccess yes
             }
@@ -81,16 +100,7 @@ highway=path
                )
                 { add bicycle=no; }
 
-highway=* & motorroad=yes
-                        {
-                          add bicycle=no;
-                          add foot=no
-                          }
-highway=motorway | highway=motorway_link
-                      {
-                        add bicycle=no;
-                        add foot=no
-                        }
+
 highway=* & ramp=yes
                     {
                       add foot=yes;
