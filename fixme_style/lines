@@ -1,3 +1,7 @@
+
+
+boundary=postal_code & note =* { delete note; }
+
 note=* & (note ~ 'FIXME.*' |
 	  note ~ 'fixme.*' |
 	  note ~ 'Fixme.*')|

@@ -5,3 +5,5 @@
 #
 # eg. type=route route=bus { apply { set route=bus; add rn='${route_no}' ; }}
 #
+
+boundary=postal_code & note =* { delete note; }
