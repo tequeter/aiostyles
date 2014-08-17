@@ -6,7 +6,7 @@
 
 # A short one line description of the style
 #
-summary: The Bikemap-style
+summary: The Bikeroute-style
 
 # Version of the style itself
 #
@@ -14,9 +14,10 @@ version=1.0
 
 # A longer description of the style.
 description {
-The Bikemap-style.
-This is an alternative heavyweight style 
-that is designed for use when cycling. 
+The Bikeroute-style.
+This is just a layer on top of basemap or bikemap 
+It is designed for use when cycling. 
+Cycleroutes are highlighted, 
 
 
 contact: weigelt.bernd (at) web.de
