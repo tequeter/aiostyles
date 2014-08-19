@@ -366,7 +366,7 @@ highway=unclassified | highway=minor        						[0x11006 resolution 24-23 cont
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=1 road_speed=2]
 
 # residential
-highway=residential 									[0x12006 resolution 22-22 continue]
+highway=residential 									[0x12006 resolution 22-21 continue]
 highway=residential 									[0x11006 resolution 24-23 continue]
 highway=residential & junction=roundabout						[0x0c resolution 24 road_class=0 road_speed=1]
 highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
@@ -387,6 +387,9 @@ highway=living_street									[0x12008 resolution 23-23 continue]
 highway=living_street									[0x11008 resolution 24 continue]
 highway=living_street									[0x07 resolution 24 road_class=0 road_speed=0]
 
+# platforms only if they are not an area
+(railway=platform | public_transport=platform) & area!=*                                [0x10f0d resolution 24 continue]
+(railway=platform | public_transport=platform) & area!=*                                [0x11 road_class=0 road_speed=0 resolution 24]
 
 #------------------------------------------------------------------------------
 # designated ways
@@ -407,20 +410,10 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 highway=footway										[0x1200d resolution 23-23 continue]
 highway=footway									        [0x1100d resolution 24 continue]
-highway=footway &
-              (bicycle=designated |
-               bicycle=permissive |
-               bicycle=official |
-               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=footway									        [0x0d resolution 24 road_class=0 road_speed=0]
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
-highway=bridleway &
-              (bicycle=designated |
-               bicycle=permissive |
-               bicycle=official |
-               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 highway=steps										[0x12013 resolution 23-23 continue]

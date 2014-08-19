@@ -204,30 +204,25 @@ highway=*
 
 
 ## cycle networks
-#highway=* { set cycle_net='' }
-#highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
-#highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
-#highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
+highway=* { set cycle_net='' }
+highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
+highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
+highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
 
-#cycle_net=lcn                                                                              [0x10108 resolution 24-23 continue]
-#cycle_net=rcn                                                                              [0x10109 resolution 24-23 continue]
-#cycle_net=rcn                                                                              [0x1010f resolution 22-21 continue]
-#cycle_net=icn                                                                              [0x1010a resolution 24-23 continue]
-#cycle_net=icn                                                                              [0x10110 resolution 22-18 continue]
-#cycle_net=icnrcn                                                                           [0x1010b resolution 24-21 continue]
-#cycle_net=icnrcn                                                                           [0x10110 resolution 20-18 continue]
-#cycle_net=rcnlcn                                                                           [0x1010c resolution 24-23 continue]
-#cycle_net=rcnlcn                                                                           [0x1010f resolution 23-21 continue]
-#cycle_net=icnlcn                                                                           [0x1010d resolution 24-23 continue]
-#cycle_net=icnlcn                                                                           [0x10110 resolution 22-18 continue]
-#cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-23 continue]
-#cycle_net=icnrcnlcn                                                                        [0x10111 resolution 22-21 continue]
-#cycle_net=icnrcnlcn                                                                        [0x10110 resolution 20-18 continue]
-
-
-#highway=* & (icn_network=yes | rcn_network=yes | lcn_network=yes)
-#            {echo ' ${highway} | ${cycle_net} | ${icn_network} | ${rcn_network} | ${lcn_network} | ${cn_name}'}
-
+cycle_net=lcn                                                                              [0x10108 resolution 24-23 continue]
+cycle_net=rcn                                                                              [0x10109 resolution 24-23 continue]
+cycle_net=rcn                                                                              [0x1010f resolution 22-21 continue]
+cycle_net=icn                                                                              [0x1010a resolution 24-23 continue]
+cycle_net=icn                                                                              [0x10110 resolution 22-18 continue]
+cycle_net=icnrcn                                                                           [0x1010b resolution 24-21 continue]
+cycle_net=icnrcn                                                                           [0x10110 resolution 20-18 continue]
+cycle_net=rcnlcn                                                                           [0x1010c resolution 24-23 continue]
+cycle_net=rcnlcn                                                                           [0x1010f resolution 23-21 continue]
+cycle_net=icnlcn                                                                           [0x1010d resolution 24-23 continue]
+cycle_net=icnlcn                                                                           [0x10110 resolution 22-18 continue]
+cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-23 continue]
+cycle_net=icnrcnlcn                                                                        [0x10111 resolution 22-21 continue]
+cycle_net=icnrcnlcn                                                                        [0x10110 resolution 20-18 continue]
 
 #------------------------------------------------------------------------------
 # Hide proposed ways
@@ -246,6 +241,7 @@ highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
 highway=* & oneway=yes &
       (access=private|access=no)
             {add mkgmap:dead-end-check=false}
+
 #------------------------------------------------------------------------------
 # disused
 
@@ -277,7 +273,7 @@ highway=motorway
                 {
                   name '${ref|highway-symbol:hbox} ${name}' |
                        '${ref|highway-symbol:hbox}' |
-                       '${name}'
+                       '${name}';
                 }
 
 highway=trunk
@@ -395,8 +391,8 @@ highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
 #--------------------------------------------------------------------------------------
 # tertiary
 
-highway=tertiary                            						[0x12005 resolution 21-20 continue]
-highway=tertiary                            						[0x11005 resolution 24-22 continue]
+highway=tertiary                            						[0x12005 resolution 22-20 continue]
+highway=tertiary                            						[0x11005 resolution 24-23 continue]
 highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=2]
 highway=tertiary									[0x05 resolution 24 road_class=2 road_speed=3]
 
@@ -408,14 +404,14 @@ highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
 # minor roads
 
 # unclassified
-highway=unclassified | highway=minor        						[0x12006 resolution 21-20 continue]
-highway=unclassified | highway=minor        						[0x11006 resolution 24-22 continue]
+highway=unclassified | highway=minor        						[0x12006 resolution 22-20 continue]
+highway=unclassified | highway=minor        						[0x11006 resolution 24-23 continue]
 (highway=unclassified | highway=minor) & junction=roundabout				[0x0c resolution 24 road_class=1 road_speed=1]
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=1 road_speed=2]
 
 # residential
-highway=residential 									[0x12006 resolution 21-21 continue]
-highway=residential 									[0x11006 resolution 24-22 continue]
+highway=residential 									[0x12006 resolution 22-21 continue]
+highway=residential 									[0x11006 resolution 24-23 continue]
 highway=residential & junction=roundabout						[0x0c resolution 24 road_class=0 road_speed=1]
 highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
 
@@ -435,11 +431,9 @@ highway=living_street									[0x12008 resolution 23-23 continue]
 highway=living_street									[0x11008 resolution 24 continue]
 highway=living_street									[0x07 resolution 24 road_class=0 road_speed=0]
 
-
 # platforms only if they are not an area
 (railway=platform | public_transport=platform) & area!=*                                [0x10f0d resolution 24 continue]
 (railway=platform | public_transport=platform) & area!=*                                [0x11 road_class=0 road_speed=0 resolution 24]
-
 
 #------------------------------------------------------------------------------
 # designated ways
@@ -473,6 +467,11 @@ highway=footway                                                                 
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
+highway=bridleway &
+              (bicycle=designated |
+               bicycle=permissive |
+               bicycle=official |
+               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 highway=steps										[0x12013 resolution 23-23 continue]
