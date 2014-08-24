@@ -37,6 +37,16 @@
 #highway=*      {echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
 #-----------------------------------------------------------------------------
 
+# cycle networks
+highway=* { set cycle_net='' }
+highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
+highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
+highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
+
+####
+# Remove all ways that are not associated with a cycleroute
+cycle_net='' { deletealltags }
+
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
 
@@ -201,13 +211,7 @@ highway=*
 	     cycleway=opposite |
 	     cycleway=opposite_lane |
 	     bicycle=opposite)								[0x10e0a resolution 24-23 continue]
-
-
-## cycle networks
-highway=* { set cycle_net='' }
-highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
-highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
-highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
+####
 
 cycle_net=lcn                                                                              [0x10108 resolution 24-23 continue]
 cycle_net=rcn                                                                              [0x10109 resolution 24-23 continue]
@@ -223,6 +227,11 @@ cycle_net=icnlcn                                                                
 cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-23 continue]
 cycle_net=icnrcnlcn                                                                        [0x10111 resolution 22-21 continue]
 cycle_net=icnrcnlcn                                                                        [0x10110 resolution 20-18 continue]
+
+
+#highway=* & (icn_network=yes | rcn_network=yes | lcn_network=yes)
+#            {echo ' ${highway} | ${cycle_net} | ${icn_network} | ${rcn_network} | ${lcn_network} | ${cn_name}'}
+
 
 #------------------------------------------------------------------------------
 # Hide proposed ways
@@ -241,7 +250,6 @@ highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
 highway=* & oneway=yes &
       (access=private|access=no)
             {add mkgmap:dead-end-check=false}
-
 #------------------------------------------------------------------------------
 # disused
 
@@ -273,7 +281,7 @@ highway=motorway
                 {
                   name '${ref|highway-symbol:hbox} ${name}' |
                        '${ref|highway-symbol:hbox}' |
-                       '${name}';
+                       '${name}'
                 }
 
 highway=trunk
@@ -391,8 +399,8 @@ highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
 #--------------------------------------------------------------------------------------
 # tertiary
 
-highway=tertiary                            						[0x12005 resolution 22-20 continue]
-highway=tertiary                            						[0x11005 resolution 24-23 continue]
+highway=tertiary                            						[0x12005 resolution 21-20 continue]
+highway=tertiary                            						[0x11005 resolution 24-22 continue]
 highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=2]
 highway=tertiary									[0x05 resolution 24 road_class=2 road_speed=3]
 
@@ -404,14 +412,14 @@ highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
 # minor roads
 
 # unclassified
-highway=unclassified | highway=minor        						[0x12006 resolution 22-20 continue]
-highway=unclassified | highway=minor        						[0x11006 resolution 24-23 continue]
+highway=unclassified | highway=minor        						[0x12006 resolution 21-20 continue]
+highway=unclassified | highway=minor        						[0x11006 resolution 24-22 continue]
 (highway=unclassified | highway=minor) & junction=roundabout				[0x0c resolution 24 road_class=1 road_speed=1]
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=1 road_speed=2]
 
 # residential
-highway=residential 									[0x12006 resolution 22-21 continue]
-highway=residential 									[0x11006 resolution 24-23 continue]
+highway=residential 									[0x12006 resolution 21-21 continue]
+highway=residential 									[0x11006 resolution 24-22 continue]
 highway=residential & junction=roundabout						[0x0c resolution 24 road_class=0 road_speed=1]
 highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
 
@@ -431,9 +439,11 @@ highway=living_street									[0x12008 resolution 23-23 continue]
 highway=living_street									[0x11008 resolution 24 continue]
 highway=living_street									[0x07 resolution 24 road_class=0 road_speed=0]
 
+
 # platforms only if they are not an area
 (railway=platform | public_transport=platform) & area!=*                                [0x10f0d resolution 24 continue]
 (railway=platform | public_transport=platform) & area!=*                                [0x11 road_class=0 road_speed=0 resolution 24]
+
 
 #------------------------------------------------------------------------------
 # designated ways
@@ -467,11 +477,6 @@ highway=footway                                                                 
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
-highway=bridleway &
-              (bicycle=designated |
-               bicycle=permissive |
-               bicycle=official |
-               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 highway=steps										[0x12013 resolution 23-23 continue]
@@ -535,88 +540,6 @@ highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_spe
 
 # route
 route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road_speed=0]
-
-#------------------------------------------------------------------------------
-#			boundaries
-#------------------------------------------------------------------------------
-
-# The following boundary styles are after the highway rules because ways
-# are frequently tagged with both and we want the highway to take priority.
-
-boundary=administrative { name '${mkgmap:boundary_name}' }
-boundary=administrative & admin_level<=2                                                [0x1e resolution 16 continue]
-boundary=administrative & admin_level<=4                                                [0x1d resolution 19 continue]
-boundary=national                                                                       [0x1e resolution 17 continue]
-
-# other boundaries moved to boundary layer
-
-#------------------------------------------------------------------------------
-#			non routable ways
-#------------------------------------------------------------------------------
-
-# raceway
-highway=raceway                                                                         [0x11007 resolution 24-23]
-
-# aeroway
-aeroway=runway      									[0x27 resolution 20]
-aeroway=taxiway     									[0x27 resolution 20]
-
-
-# aerialway and lift
-aerialway=chair_lift  									[0x10e15 resolution 23]
-aerialway=drag_lift									[0x10e16 resolution 23]
-aerialway=goods										[0x10e17 resolution 24]
-aerialway=cable_car | aerialway=gondola							[0x10e18 resolution 22]
-
-
-# railway
-railway=rail & (service=siding |
-                service=spur |
-                service=yard )                                                          [0x10e13 resolution 23]
-
-railway=rail                            { delete name }
-railway=rail                                                                            [0x10e14 resolution 23-20 continue]
-railway=narrow_gauge | railway=light_rail                                               [0x10e14 resolution 24]
-railway=rail & tunnel=yes                                                               [0x10e14 resolution 24]
-railway=rail                                                                            [0x10e19 resolution 24]
-
-railway=tram |
-railway=subway |
-railway=funicular |
-railway=preserved |
-railway=monorail			{ delete name }					[0x10e0e resolution 23-22 continue]
-
-railway=tram |
-railway=subway |
-railway=funicular |
-railway=preserved |
-railway=monorail									[0x10e0f resolution 24]
-
-railway=turntable | railway=traverser							[0x10106 resolution 24-23]
-
-
-# barrier
-# please don't the delete continue action, because it's needed to render landuse polygons with barrier tags
-barrier=wall |
-barrier=retaining_wall |
-barrier=city_wall 	                        					[0x10f02 resolution 24 continue]
-barrier=fence                               						[0x10f03 resolution 24 continue]
-barrier=hedge                               						[0x10f0c resolution 24 continue]
-
-# man made
-(man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & area!=yes &
-tunnel!=yes & location != underground                                                   [0x28 resolution 23]
-
-# power
-power=line | power=minor_line		{ delete name }					[0x29 resolution 24]
-
-natural=coastline [0x15 resolution 12]
-
-waterway=canal                                                                          [0x1f resolution 21]
-waterway=drain                                                                          [0x1f resolution 22]
-waterway=river                                                                          [0x1f resolution 18]
-waterway=rapids|waterway=waterfall                                                      [0x1f resolution 22]
-waterway=stream                                                                         [0x18 resolution 22]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
