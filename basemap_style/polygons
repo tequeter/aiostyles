@@ -55,11 +55,16 @@ place=village | landuse=residential 					[0x03 resolution 18]
 highway=pedestrian & (area=yes | area=true | area=1) 			[0x12 resolution 22]
 
 leisure=nature_reserve 							[0x0d resolution 18 continue with_actions]
+
 landuse=forest 								[0x20 resolution 22-18 continue with_actions]
-landuse=forest & wood=coniferous 					[0x21 resolution 24-23]
-landuse=forest & wood=deciduous 					[0x22 resolution 24-23]
-landuse=forest & wood=mixed 						[0x23 resolution 24-23]
+landuse=forest & 
+          (wood=coniferous | leaf_type=needleleaved)                    [0x21 resolution 24-23]
+landuse=forest & 
+          (wood=deciduous | leaf_type=broadleaved)      		[0x22 resolution 24-23]
+landuse=forest & 
+          (wood=mixed | leaf_type=mixed) 				[0x23 resolution 24-23]
 landuse=forest 								[0x20 resolution 24-23]
+
 landuse=meadow 								[0x10f10 resolution 21]
 
 landuse=commercial 							[0x0f resolution 18]
@@ -126,7 +131,16 @@ military=barracks 							[0x04 resolution 22]
 
 natural=glacier 							[0x4d resolution 17]
 natural=marsh | natural=wetland | natural=mud 				[0x51 resolution 21]
-natural=wood 								[0x15 resolution 18]
+
+natural=wood                                                            [0x15 resolution 18 continue with_actions]
+natural=wood & 
+          (wood=coniferous | leaf_type=needleleaved)                    [0x21 resolution 24-23]
+natural=wood & 
+          (wood=deciduous | leaf_type=broadleaved)                      [0x22 resolution 24-23]
+natural=wood & 
+          (wood=mixed | leaf_type=mixed)                                [0x23 resolution 24-23]
+natural=wood 								[0x15 resolution 24-23]
+
 natural=scree                                                           [0x24 resolution 20]
 natural=scrub 								[0x4e resolution 20]
 natural=heath 								[0x14 resolution 20]
