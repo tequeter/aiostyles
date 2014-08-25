@@ -907,7 +907,7 @@ FontStyle=SmallFont
 CustomColor=No
 Xpm="32 32 4 1"
 "! c #A0FF64"
-"# c #BDFF8B"
+"# c #00C000"
 "3 c #00C000"
 "4 c #007800"
 "#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!#!"
