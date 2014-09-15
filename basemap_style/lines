@@ -505,11 +505,14 @@ aerialway=cable_car | aerialway=gondola							[0x10e18 resolution 22]
 
 
 # railway
+railway=rail                            { delete name }
+
+railway=rail & disused=yes                                                              [0x10e12 resolution 24]
 railway=rail & (service=siding |
                 service=spur |
                 service=yard )   						        [0x10e13 resolution 23]
 
-railway=rail                            { delete name }
+
 railway=rail                                                                            [0x10e14 resolution 23-20 continue]
 railway=narrow_gauge | railway=light_rail                                               [0x10e14 resolution 24]
 railway=rail & tunnel=yes                                                               [0x10e14 resolution 24]

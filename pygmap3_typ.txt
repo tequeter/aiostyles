@@ -3748,6 +3748,21 @@ CustomColor=No
 
 
 [_line]
+Type=0x10e12
+UseOrientation=N
+Xpm="32 2 2  1"
+"! c #737373"
+"  c none"
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+"!!  !!  !!  !!  !!  !!  !!  !!  "
+;12345678901234567890123456789012
+String1=0x04,Railway (disused)
+String2=0x02,Gleis (unbenutzt)
+ExtendedLabels=N
+[end]
+
+
+[_line]
 Type=0x10e13
 UseOrientation=N
 Xpm="32 2 4  1"
