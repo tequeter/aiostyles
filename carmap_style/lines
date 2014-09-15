@@ -448,7 +448,10 @@ boundary=national                                                               
 # railway
 railway=rail                            { delete name }
 
-railway=rail & disused=yes                                                              [0x10e12 resolution 24]
+railway=disused | 
+railway=abandoned |
+(railway=rail & disused=yes)                                                           [0x10e12 resolution 24]
+
 railway=rail & (service=siding |
                 service=spur |
                 service=yard )                                                          [0x10e13 resolution 23]
