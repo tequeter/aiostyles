@@ -121,7 +121,7 @@ landuse=reservoir							[0x650f resolution 24]
 # 0x6510	# sea
 natural=spring 								[0x6511 resolution 24]
 # 0x6512 	# stream
-natural=wetland 							[0x6513 resolution 23]
+natural=wetland  & mkgmap:area2poi!=true				[0x6513 resolution 23]
 # 0x65ss
 
 # Land Features
