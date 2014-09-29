@@ -57,11 +57,11 @@ highway=pedestrian & (area=yes | area=true | area=1) 			[0x12 resolution 22]
 leisure=nature_reserve 							[0x0d resolution 18 continue with_actions]
 
 landuse=forest                                                          [0x20 resolution 22-18 continue with_actions]
-landuse=forest & 
+landuse=forest &
           (wood=coniferous | leaf_type=needleleaved)                    [0x21 resolution 24-23]
-landuse=forest & 
+landuse=forest &
           (wood=deciduous | leaf_type=broadleaved)                      [0x22 resolution 24-23]
-landuse=forest & 
+landuse=forest &
           (wood=mixed | leaf_type=mixed)                                [0x23 resolution 24-23]
 landuse=forest                                                          [0x20 resolution 24-23]
 
@@ -130,14 +130,19 @@ military=barracks 							[0x04 resolution 22]
 # natural
 
 natural=glacier 							[0x4d resolution 17]
+
+natural=wetland & (wetland~'.*(bog)' | wetland=fen)                     [0x10f07 resolution 21]
+natural=wetland & wetland~'.*(swamp)'                                   [0x10f08 resolution 21]
+natural=wetland & (wetland~'.*(marsh)' | wetland=reedbed)               [0x10f09 resolution 21]
+natural=wetland & wetland=wet_meadow                                    [0x10f15 resolution 21]
 natural=marsh | natural=wetland | natural=mud 				[0x51 resolution 21]
 
 natural=wood                                                            [0x15 resolution 18 continue with_actions]
-natural=wood & 
+natural=wood &
           (wood=coniferous | leaf_type=needleleaved)                    [0x21 resolution 24-23]
-natural=wood & 
+natural=wood &
           (wood=deciduous | leaf_type=broadleaved)                      [0x22 resolution 24-23]
-natural=wood & 
+natural=wood &
           (wood=mixed | leaf_type=mixed)                                [0x23 resolution 24-23]
 natural=wood 								[0x15 resolution 24-23]
 
