@@ -1686,7 +1686,7 @@ ExtendedLabels=Y
 FontStyle=NoLabel (invisible)
 CustomColor=No
 Xpm="0 0 2 0"
-"1 c #80A0FF"
+"1 c #7BCAFF"
 "2 c #00006A"
 [end]
 
@@ -2334,10 +2334,10 @@ String1=0x02,Offener Sumpf
 String2=0x04,Marsh
 ExtendedLabels=N
 Xpm="32 32 4 1"
-"! c #BDCA20"
-"# c #3900FF"
-"3 c #7B6500"
-"4 c #000086"
+"! c #00656A"
+"# c #7BCAFF"
+"3 c #00656A"
+"4 c #00006A"
 "################################"
 "!!#######################!!!!!!!"
 "########################!##!!###"
