@@ -1871,7 +1871,7 @@ Xpm="32 32 4 1"
 
 [_polygon]
 Type=0x51
-String1=0x02,Sumpf
+String1=0x02,Feuchtgebiet
 String2=0x04,Wetland
 ExtendedLabels=N
 Xpm="32 32 4 1"
