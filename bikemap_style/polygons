@@ -75,6 +75,8 @@ landuse=brownfield							[0x0e resolution 20]
 landuse=greenfield							[0x10 resolution 20]
 landuse=construction							[0x11 resolution 20]
 
+landuse=landfill                                                        [0x10f07 resolution 18]
+
 landuse=reservoir |
 landuse=basin 								[0x3f resolution 22]
 
