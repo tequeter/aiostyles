@@ -4477,13 +4477,11 @@ ExtendedLabels=N
 [_line]
 Type=0x11008
 UseOrientation=N
-Xpm="32 3 2  1"
-"! c #00FF00"
-"  c none"
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
-"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-;12345678901234567890123456789012
+LineWidth=2
+BorderWidth=1
+Xpm="0 0 2 0"
+"1 c #00FF00"
+"2 c #000000"
 String1=0x02,Wohnstraﬂe
 String2=0x04,Livingstreet
 ExtendedLabels=N
@@ -4796,8 +4794,8 @@ Type=0x12008
 UseOrientation=N
 Xpm="32 1 2  1"
 "! c #00FF00"
-"  c none"
-"!!  !!  !!  !!  !!  !!  !!  !!  "
+"# c #000000"
+"!!##!!##!!##!!##!!##!!##!!##!!##"
 ;12345678901234567890123456789012
 String1=0x02,Wohnstraﬂe
 String2=0x04,Livingstreet
