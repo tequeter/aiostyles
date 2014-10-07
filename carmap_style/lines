@@ -82,7 +82,7 @@ highway=*
 	      surface=sand |
 	      surface=unpaved |
 	      mtb:scale=* |
-	      tracktype~'grade[2-6]' |
+	      tracktype~'grade[2-5]' |
 	      smoothness~'.*(bad|horrible|impassable)' |
 	      sac_scale~'.*(mountain|alpine)_hiking' |
 	      sport=via_ferrata
@@ -448,7 +448,7 @@ boundary=national                                                               
 # railway
 railway=rail                            { delete name }
 
-railway=disused | 
+railway=disused |
 railway=abandoned |
 (railway=rail & disused=yes)                                                           [0x10e12 resolution 24]
 
