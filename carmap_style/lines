@@ -506,8 +506,3 @@ include '../inc/address' ;
 include '../inc/phone';
 include '../inc/name' ;
 name=* { name '${name}' }
-
-highway=* & ref=* { addlabel '${ref}' }
-highway=* & int_ref=* { addlabel '${int_ref}' }
-highway=* & nat_ref=* { addlabel '${nat_ref}' }
-highway=* & ref_ref=* { addlabel '${reg_ref}' }

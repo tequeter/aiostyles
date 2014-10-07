@@ -19,22 +19,22 @@
 #	0x08	ramp motorway/trunk
 #	0x09	ramp other
 #	0x0a	service parking_aisle/alley
-#	0x0b	road				an american special roadtype
+#	0x0b	road 		an american special roadtype
 #	0x0c	roundabout
 #	0x0d	footway
-#       0x0e    track grade1
-#	0x0f    track grade2
+#	0x0e	track grade1
+#	0x0f	track grade2
 #	0x10	track grade3     with overlay
 #	0x11	track grade4/6 / track without grade*, with overlay
 #	0x12	path/trail
 #	0x13	steps
-#	0x16	bridleway
+#       0x16    bridleway
 #	0x1a	ferry
 #	0x1b	ways with no cat
-
 #-----------------------------------------------------------------------------
 # printout some infos about ways
-#highway=*      {echo ' ${highway} | ${access} | ${bicycle} | ${cn_name}'}
+#highway=* & mkgmap:synthesised=yes
+#{echo ' ${highway} | ${name} '}
 #-----------------------------------------------------------------------------
 
 # Assign the street name for house number search
@@ -52,13 +52,14 @@ mkgmap:synthesised=yes & bicycle=yes { set mkgmap:highest-resolution-only = true
 
 highway=* & motorcycle=no {delete motorcycle}
 
+#
 #------------------------------------------------------------------------------
 # flag unpaved roads
 
 highway~'.*;.*'
-                {
-                set highway='${highway|part:}';
-                }
+		{
+		set highway='${highway|part:}';
+		}
 
 highway=steps
 		{
@@ -67,10 +68,10 @@ highway=steps
 
 highway=corridor
                 {
-                set highway=footway;
-                add tunnel=yes;
-                add covered=yes;
-                }
+                  set highway=footway;
+                  add tunnel=yes;
+                  add covered=yes;
+                  }
 
 highway=*
 	   & (
@@ -93,25 +94,24 @@ highway=*
 	      sac_scale~'.*(mountain|alpine)_hiking' |
 	      sport=via_ferrata
 	      )
-		{
-		  add mkgmap:unpaved=1;
-		  }
-
-
+	    {
+	      add mkgmap:unpaved=1;
+	    }
 
 (highway=bridleway | highway=trail | highway=unsurfaced | highway=byway)
 	    & surface!=*
 	    & tracktype!=*
 	    & smoothness!=*
 	    & sac_scale!=*
-	      {
-		add mkgmap:unpaved=1;
-		}
+	    {
+	      add mkgmap:unpaved=1;
+	    }
 
 
 man_made=pier & area!=yes
               {
                 add highway=footway;
+                add bicycle=dismount
                 }
 
 #------------------------------------------------------------------------------
@@ -154,8 +154,8 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
 	    highway=motorway_link |
 	    highway=trunk |
 	    highway=trunk_link |
-            highway=primary |
-            highway=primary_link )							[0x10e05 resolution 24-23 continue]
+	    highway=primary |
+	    highway=primary_link )							[0x10e05 resolution 24-23 continue]
 
 (tunnel=yes | tunnel=building_passage | covered=yes)
 	  & (highway=* |
@@ -166,7 +166,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
           & (highway=track |
              highway=path |
              highway=footway |
-             highway=cycleway)								[0x10f00 resolution 24 continue]
+             highway=cycleway)			                                        [0x10f00 resolution 24 continue]
 
 # cutting overlay
 (cutting=yes)
@@ -250,17 +250,17 @@ highway=* & disused=yes									[0x10e01 resolution 24]
 #-----------------------------------------------------------------------------
 # Validation-like checks
 #highway=motorway_link
-#               & oneway!=yes
-#               & oneway!=no
-#               & oneway!=true
-#               & oneway!=1
-#               & oneway!=-1
-#               & junction!=roundabout
-#               & access!=no
-#               & access!=emergency
-#               {
-#                 echo "motorway_link lacks oneway"
-#               }
+#		& oneway!=yes
+#		& oneway!=no
+#		& oneway!=true
+#		& oneway!=1
+#		& oneway!=-1
+#		& junction!=roundabout
+#		& access!=no
+#		& access!=emergency
+#		{
+#		  echo "motorway_link lacks oneway"
+#		}
 
 #--------------------------------------------------------------------------------------
 # process exits and destination
@@ -294,17 +294,17 @@ highway=primary
 
 highway=secondary | highway=tertiary
 	        {
-		  name '${ref|highway-symbol:oval} ${name}' |
-		       '${ref|highway-symbol:oval}' |
-		       '${name}';
-		  add mkgmap:display_name = '${name} (${ref})'
+                  name '${ref|highway-symbol:oval} ${name}' |
+                       '${ref|highway-symbol:oval}' |
+                       '${name}';
+                  add mkgmap:display_name = '${name} (${ref})'
 	        }
 
 highway=*
 	        {
 		  name '${name}' |
 		       '${ref}';
-	        }
+                }
 
 
 #-----------------------------------------------------------------------------
@@ -317,7 +317,6 @@ highway=*
 #		2 		Arterial St / Other HW
 #		1 		Roundabout / Collector
 #		0 		Residential Street / Unpaved road / Trail
-
 
 #-----------------------------------------------------------------------------
 # construction
@@ -338,7 +337,7 @@ highway=motorway & network=e-road                                               
 highway=motorway                            						[0x12001 resolution 21-17 continue]
 highway=motorway                            						[0x11001 resolution 24-22 continue]
 highway=motorway & junction=roundabout 							[0x0c resolution 24 road_class=3 road_speed=3]
-highway=motorway			   						[0x01 resolution 24 road_class=4 road_speed=6]
+highway=motorway									[0x01 resolution 24 road_class=4 road_speed=6]
 
 highway=motorway_link                       						[0x12001 resolution 21-20 continue]
 highway=motorway_link                       						[0x11001 resolution 24-22 continue]
@@ -353,7 +352,7 @@ highway=trunk & network=e-road                                                  
 highway=trunk                               						[0x12002 resolution 21-17 continue]
 highway=trunk                               						[0x11002 resolution 24-22 continue]
 highway=trunk & junction=roundabout	 						[0x0c resolution 24 road_class=3 road_speed=3]
-highway=trunk		                               					[0x02 resolution 24 road_class=4 road_speed=6]
+highway=trunk										[0x02 resolution 24 road_class=4 road_speed=6]
 
 highway=trunk_link                          						[0x12002 resolution 21-20 continue]
 highway=trunk_link                          						[0x11002 resolution 24-22 continue]
@@ -371,7 +370,7 @@ highway=primary & junction=roundabout							[0x0c resolution 24 road_class=3 roa
 highway=primary        									[0x03 resolution 24 road_class=3 road_speed=5]
 
 highway=primary_link 									[0x12003 resolution 22-21 continue]
-highway=primary_link									[0x11003 resolution 24-23 continue ]
+highway=primary_link									[0x11003 resolution 24-23 continue]
 highway=primary_link									[0x08 resolution 24 road_class=3 road_speed=3]
 
 
@@ -394,7 +393,7 @@ highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
 highway=tertiary                            						[0x12005 resolution 22-20 continue]
 highway=tertiary                            						[0x11005 resolution 24-23 continue]
 highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=2]
-highway=tertiary									[0x05 resolution 24 road_class=2 road_speed=3]
+highway=tertiary                            						[0x05 resolution 24 road_class=2 road_speed=3]
 
 highway=tertiary_link                       						[0x12005 resolution 22-22 continue]
 highway=tertiary_link                       						[0x11005 resolution 24-23 continue]
@@ -450,20 +449,19 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 (highway=cycleway | (highway=path & bicycle=designated)) & cn_name=*
 		{ set name='${cn_name}' }
 
-(highway=cycleway | (highway=path & bicycle=designated))                                [0x1200a resolution 23-23 continue]
-(highway=cycleway | (highway=path & bicycle=designated))                                [0x1100a resolution 24 continue]
-(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout          [0x0c resolution 24 road_class=0 road_speed=1]
-(highway=cycleway | (highway=path & bicycle=designated))                                [0x0a resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x1200a resolution 23-23 continue]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x1100a resolution 24 continue]
+(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout		[0x0c resolution 24 road_class=0 road_speed=1]
+(highway=cycleway | (highway=path & bicycle=designated))				[0x0a resolution 24 road_class=0 road_speed=1]
 
-
-highway=footway                                                                         [0x1200d resolution 23-23 continue]
-highway=footway                                                                         [0x1100d resolution 24 continue]
+highway=footway										[0x1200d resolution 23-23 continue]
+highway=footway									        [0x1100d resolution 24 continue]
 highway=footway &
               (bicycle=designated |
                bicycle=permissive |
                bicycle=official |
                bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
-highway=footway                                                                         [0x0d resolution 24 road_class=0 road_speed=0]
+highway=footway									        [0x0d resolution 24 road_class=0 road_speed=0]
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
@@ -498,7 +496,7 @@ highway=track & tracktype=grade3                                                
 highway=track & tracktype=grade3                                                        [0x10 resolution 24 road_class=0 road_speed=0]
 
 highway=track & tracktype~'grade[4-6]'                                                  [0x11011 resolution 24 continue]
-highway=track & tracktype~'grade[4-6]'							[0x11 resolution 24 road_class=0 road_speed=0]
+highway=track & tracktype~'grade[4-6]'                                                  [0x11 resolution 24 road_class=0 road_speed=0]
 
 highway=track
                 {
@@ -506,7 +504,7 @@ highway=track
                 }
 
 highway=track                                                                           [0x1100b resolution 24 continue]
-highway=track   									[0x11 resolution 24 road_class=0 road_speed=0]
+highway=track                                                                           [0x11 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # path
@@ -524,13 +522,12 @@ highway=path | highway=trail | highway=byway						[0x12 resolution 24 road_class
 
 # road = way typ not defined/unknown
 # unknown roads = 0x0b(routable) and 0x2c(overlay)
-highway=road										[0x2c resolution 24 continue]
+highway=road                                                                            [0x2c resolution 24 continue]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & (mkgmap:unpaved=1)								[0x0b resolution 24 road_class=0 road_speed=0]
-highway=* & (area!=yes & area!=true & area!=1)						[0x1b resolution 24 road_class=0 road_speed=0]
+highway=* & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
+highway=* & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout								[0x0c resolution 24 road_class=0 road_speed=0]
-
 #------------------------------------------------------------------------------
 
 # route
@@ -544,30 +541,28 @@ route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road
 # are frequently tagged with both and we want the highway to take priority.
 
 boundary=administrative { name '${mkgmap:boundary_name}' }
-boundary=administrative & admin_level<=2                                                [0x1e resolution 16 continue]
-boundary=administrative & admin_level<=4                                                [0x1d resolution 19 continue]
+boundary=administrative & admin_level<=2 						[0x1e resolution 16 continue]
+boundary=administrative & admin_level<=4 						[0x1d resolution 19 continue]
 boundary=national                                                                       [0x1e resolution 17 continue]
 
 # other boundaries moved to boundary layer
 
 #------------------------------------------------------------------------------
-#			non routable ways
+#			nonroutable ways
 #------------------------------------------------------------------------------
 
-# raceway
-highway=raceway                                                                         [0x11007 resolution 24-23]
+highway=raceway                                                                         [0x12007 resolution 24-23]
+highway=platform                                                                        [0x10f0d resolution 24]
 
 # aeroway
 aeroway=runway      									[0x27 resolution 20]
 aeroway=taxiway     									[0x27 resolution 20]
-
 
 # aerialway and lift
 aerialway=chair_lift  									[0x10e15 resolution 23]
 aerialway=drag_lift									[0x10e16 resolution 23]
 aerialway=goods										[0x10e17 resolution 24]
 aerialway=cable_car | aerialway=gondola							[0x10e18 resolution 22]
-
 
 # railway
 railway=rail                            { delete name }
@@ -578,7 +573,7 @@ railway=abandoned |
 
 railway=rail & (service=siding |
                 service=spur |
-                service=yard )                                                          [0x10e13 resolution 23]
+                service=yard )   						        [0x10e13 resolution 23]
 
 railway=rail                                                                            [0x10e14 resolution 23-20 continue]
 railway=narrow_gauge | railway=light_rail                                               [0x10e14 resolution 24]
@@ -599,12 +594,11 @@ railway=monorail									[0x10e0f resolution 24]
 
 railway=turntable | railway=traverser							[0x10106 resolution 24-23]
 
-
 # barrier
-# please don't the delete continue action, because it's needed to render landuse polygons with barrier tags
+# please don't delete the continue action, because it's needed to render landuse polygons with barrier tags
 barrier=wall |
 barrier=retaining_wall |
-barrier=city_wall 	                        					[0x10f02 resolution 24 continue]
+barrier=city_wall                       						[0x10f02 resolution 24 continue]
 barrier=fence                               						[0x10f03 resolution 24 continue]
 barrier=hedge                               						[0x10f0c resolution 24 continue]
 
@@ -634,8 +628,3 @@ include '../inc/phone';
 include '../inc/name' ;
 
 name=* { name '${name}' }
-
-highway=* & ref=* { addlabel '${ref}' }
-highway=* & int_ref=* { addlabel '${int_ref}' }
-highway=* & nat_ref=* { addlabel '${nat_ref}' }
-highway=* & ref_ref=* { addlabel '${reg_ref}' }

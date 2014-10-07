@@ -89,7 +89,7 @@ highway=*
 	      surface=sand |
 	      surface=unpaved |
 	      mtb:scale=* |
-	      tracktype~'grade[2-6]' |
+	      tracktype~'grade[3-6]' |
 	      smoothness~'.*(bad|horrible|impassable)' |
 	      sac_scale~'.*(mountain|alpine)_hiking' |
 	      sport=via_ferrata
@@ -111,6 +111,7 @@ highway=*
 man_made=pier & area!=yes
               {
                 add highway=footway;
+                add bicycle=dismount
                 }
 
 #------------------------------------------------------------------------------
@@ -178,7 +179,7 @@ bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
 highway=* & railway=tram								[0x10e0d resolution 24-23 continue]
 
 # bridleway overlay
-highway=* & horse=designated								[0x10e0c resolution 24 continue]
+highway=* & horse=designated								[0x10e0b resolution 24 continue]
 
 
 #------------------------------------------------------------------------------
@@ -410,10 +411,20 @@ highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
 highway=footway										[0x1200d resolution 23-23 continue]
 highway=footway									        [0x1100d resolution 24 continue]
+highway=footway &
+              (bicycle=designated |
+               bicycle=permissive |
+               bicycle=official |
+               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=footway									        [0x0d resolution 24 road_class=0 road_speed=0]
 
 highway=bridleway									[0x12016 resolution 23-23 continue]
 highway=bridleway									[0x11016 resolution 24 continue]
+highway=bridleway &
+              (bicycle=designated |
+               bicycle=permissive |
+               bicycle=official |
+               bicycle=yes)                                                             [0x0a resolution 24 road_class=0 road_speed=1]
 highway=bridleway									[0x16 resolution 24 road_class=0 road_speed=0]
 
 highway=steps										[0x12013 resolution 23-23 continue]
@@ -453,12 +464,19 @@ highway=track                                                                   
 #------------------------------------------------------------------------------
 # path
 
-highway=path | highway=trail                                  				[0x11012 resolution 24]
+highway=path | highway=trail | highway=byway                                            [0x11012 resolution 24 continue]
+
+highway=path & (bicycle=permissive |
+                 bicycle=official |
+                 bicycle=yes)                                                           [0x0a resolution 24 road_class=0 road_speed=1]
+
+highway=path | highway=trail | highway=byway                                            [0x12 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
 
 # road = way typ not defined/unknown
+# unknown roads = 0x0b(routable) and 0x2c(overlay)
 highway=road                                                                            [0x2c resolution 24 continue]
 highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
 
@@ -488,10 +506,8 @@ boundary=national                                                               
 #			nonroutable ways
 #------------------------------------------------------------------------------
 
-
 highway=raceway                                                                         [0x12007 resolution 24-23]
 highway=platform                                                                        [0x10f0d resolution 24]
-
 
 # aeroway
 aeroway=runway      									[0x27 resolution 20]
@@ -502,7 +518,6 @@ aerialway=chair_lift  									[0x10e15 resolution 23]
 aerialway=drag_lift									[0x10e16 resolution 23]
 aerialway=goods										[0x10e17 resolution 24]
 aerialway=cable_car | aerialway=gondola							[0x10e18 resolution 22]
-
 
 # railway
 railway=rail                            { delete name }
@@ -533,10 +548,6 @@ railway=preserved |
 railway=monorail									[0x10e0f resolution 24]
 
 railway=turntable | railway=traverser							[0x10106 resolution 24-23]
-
-# platforms only if they are not an area
-(railway=platform | public_transport=platform) & area!=*				[0x10f0d resolution 23]
-
 
 # barrier
 # please don't delete the continue action, because it's needed to render landuse polygons with barrier tags
@@ -572,8 +583,3 @@ include '../inc/phone';
 include '../inc/name' ;
 
 name=* { name '${name}' }
-
-highway=* & ref=* { addlabel '${ref}' }
-highway=* & int_ref=* { addlabel '${int_ref}' }
-highway=* & nat_ref=* { addlabel '${nat_ref}' }
-highway=* & ref_ref=* { addlabel '${reg_ref}' }
