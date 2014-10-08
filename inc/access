@@ -62,7 +62,7 @@ highway=* & motorroad=yes
                         add foot=no
                         }
 
-## rule to prevent use of bad ways
+## rules to prevent use of bad ways
 #highway=track
 #            & mkgmap:unpaved=1
 #            & (tracktype~'grade[4-6]' |
@@ -71,6 +71,18 @@ highway=* & motorroad=yes
 #                  add foot=yes;
 #                  addaccess no;
 #                }
+
+highway=path
+           & (
+              smoothness~'.*(bad|horrible|impassable)' |
+              sac_scale~'.*(mountain|alpine)_hiking' |
+              mtb:scale>0 |
+              mtb:scale:imba>0
+              )
+                {
+                  add foot=yes;
+                  addaccess no;
+                  }
 
 railway=level_crossing &
     crossing:barrier!=no
@@ -111,22 +123,6 @@ barrier~'.*(gate)' |
 
 highway=* & cycle_network=yes
               { set bicycle=yes }
-
-highway=path
-           & (
-              smoothness~'.*(horrible|impassable)' |
-              smoothness=very_bad |
-              mtb:scale>0 |
-              mtb:scale:imba>0
-              )
-                { set bicycle=no }
-
-highway=path
-            & (
-               sac_scale~'.*(mountain|alpine)_hiking' |
-               smoothness=bad
-               )
-                { add bicycle=no; }
 
 
 highway=* & ramp=yes
