@@ -28,7 +28,7 @@
 #	0x11	track grade4/6 / track without grade*, with overlay
 #	0x12	path/trail
 #	0x13	steps
-#       0x16    bridleway
+#	0x16	bridleway
 #	0x1a	ferry
 #	0x1b	ways with no cat
 #-----------------------------------------------------------------------------
