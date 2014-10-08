@@ -62,6 +62,16 @@ highway=* & motorroad=yes
                         add foot=no
                         }
 
+## rule to prevent use of bad ways
+#highway=track
+#            & mkgmap:unpaved=1
+#            & (tracktype~'grade[4-6]' |
+#               tracktype!=*)
+#                {
+#                  add foot=yes;
+#                  addaccess no;
+#                }
+
 railway=level_crossing &
     crossing:barrier!=no
           {
