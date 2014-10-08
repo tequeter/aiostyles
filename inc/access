@@ -69,7 +69,7 @@ highway=* & motorroad=yes
 #               tracktype!=*)
 #                {
 #                  add foot=yes;
-#                  addaccess no;
+#                  add access=no;
 #                }
 
 highway=path
@@ -77,17 +77,43 @@ highway=path
               smoothness~'.*(bad|horrible|impassable)' |
               sac_scale~'.*(mountain|alpine)_hiking' |
               mtb:scale>0 |
-              mtb:scale:imba>0
+              mtb:scale:imba>0 |
+              width<1
               )
                 {
                   add foot=yes;
-                  addaccess no;
+                  add access=no;
                   }
+
+highway=path
+                { add foot=yes;
+                  add bicycle=yes;
+                  add access=no
+                  }
+
+
+highway=steps |
+  (highway=pedestrian & area!=yes) |
+  highway=footway |
+  railway=platform
+                {
+                  add foot=yes;
+                  add access=no
+                  }
+
+highway=bridleway
+                { add access=no
+                  }
+
+highway=cycleway
+                {
+                  add bicycle=yes;
+                  add access=no }
 
 railway=level_crossing &
     crossing:barrier!=no
           {
-            addaccess yes
+            add access=yes
             }
 
 barrier=bollard |
@@ -101,7 +127,7 @@ barrier=bollard |
           {
             add bicycle=yes;
             add foot=yes;
-            addaccess no;
+            add access=no;
             }
 
 barrier=bus_trap
@@ -109,7 +135,7 @@ barrier=bus_trap
             add bus=yes;
             add foot=yes;
             add bicycle=yes;
-            addaccess no;
+            add access=no;
             }
 
 barrier~'.*(gate)' |
@@ -118,7 +144,7 @@ barrier~'.*(gate)' |
     barrier=jersey_barrier
           {
             add foot=yes;
-            addaccess no;
+            add access=no;
             }
 
 highway=* & cycle_network=yes
@@ -130,14 +156,10 @@ highway=* & ramp=yes
                       add foot=yes;
                       add bicyle=yes
                       }
+
 access=agricultural
                       { set access=no;
                         add foot=yes
-                        }
-
-access=*             {
-                        add foot='${access}';
-                        add vehicle='${access}';
                         }
 
 vehicle=*            {
@@ -158,19 +180,18 @@ psv=*                 {
                         add bus='${psv}';
                         }
 
-# Add common access rules that are derived from the highway type
-highway=steps                              { add foot=yes; add access=no }
-highway=pedestrian & area!=yes             { add foot=yes; add access=no }
-highway=path                               { add foot=yes; add bicycle=yes; add access=no }
-highway=bridleway                          { add access=no }
-highway=cycleway                           { add bicycle=yes; add access=no }
-highway=footway                            { add foot=yes; add access=no }
-railway=platform                           { add foot=yes; add access=no }
-
 # throughroute cannot be handled differently for different vehicle types
 # Therefore we have to choose one vehicle type - and the winner is: motorcar
-motorcar=destination   { set mkgmap:throughroute=no; set motorcar=yes }
-access=destination     { set mkgmap:throughroute=no; set access=yes }
+motorcar=destination
+                      {
+                        set mkgmap:throughroute=no;
+                        set motorcar=yes
+                        }
+access=destination
+                      {
+                        set mkgmap:throughroute=no;
+                        set access=yes
+                        }
 
 # Normalize all values that indicate a restriction to 'no'
 foot=private          | foot=agricultural          { set foot=no }
@@ -202,8 +223,8 @@ bus=*        { set mkgmap:bus='${bus}' }
 taxi=*       { set mkgmap:taxi='${taxi}' }
 emergency=*  { set mkgmap:emergency='${emergency}' }
 
-# The access tag defines all restrictions that are not already set
-access=* { addaccess '${access}' }
+## a catchall to define all restrictions that are not already set
+access=*       {  addaccess '${access}' }
 
 # Check for carpool lane (they are not really supported yet so these lines are commented)
 # hov=* { add carpool='${hov}' }
