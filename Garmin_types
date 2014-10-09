@@ -12,7 +12,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 15	50 km		...		50 km
 14	80 - 120 km	...		80 - 120 km
 13	200 - 300 km	...		200 - 300km
-12	500 - 800 km	...		500 - 800 km 
+12	500 - 800 km	...		500 - 800 km
 
 
 
@@ -25,44 +25,44 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 ;*******************************************************************************
 ;
 [RGN10/20 types]
-0x0100-0x0500   City name(Point, fat, big) 
-0x0600-0x0A00   City name(Point, big) 
-0x0B00  City name (Point, small) 
-0x0C00  City name (Point, small) 
-0x0D00  City name (Point, small) 
-0x0E00-0x1100   City name(Point, big) 
+0x0100-0x0500   City name(Point, fat, big)
+0x0600-0x0A00   City name(Point, big)
+0x0B00  City name (Point, small)
+0x0C00  City name (Point, small)
+0x0D00  City name (Point, small)
+0x0E00-0x1100   City name(Point, big)
 0x1200  Marine info
 0x1400-0x151F   Region name (no Point, big)
 0x1E00-0x1E1F   Region name (no Point, middle)
 0x210F  Exit(Service)
 0x2000-0x201F   Exit
 0x2100-0x211F   Exit(with facilities)
-0x2200-0x221F   Exit(Restroom) 
+0x2200-0x221F   Exit(Restroom)
 0x2300-0x231F   Exit(Convenience Store)
 0x2400-0x241F   Exit(Weight Station)
 0x2500-0x251F   Exit(Tollbooth Booth)
-0x2600-0x261F   Exit(Information) 
+0x2600-0x261F   Exit(Information)
 0x2700-0x271F   Exit
 0x2800-0x281F   Region name (no Point, small)
-0x2A00  Dining(Other) 
-0x2A01  Dining(American) 
-0x2A02  Dining(Asian) 
-0x2A03  Dining(Barbecue) 
-0x2A04  Dining(Chinese) 
-0x2A05  Dining(Deli/Bakery) 
-0x2A06  Dining(International) 
+0x2A00  Dining(Other)
+0x2A01  Dining(American)
+0x2A02  Dining(Asian)
+0x2A03  Dining(Barbecue)
+0x2A04  Dining(Chinese)
+0x2A05  Dining(Deli/Bakery)
+0x2A06  Dining(International)
 0x2A07  Fast Food
-0x2A08  Dining(Italian) 
-0x2A09  Dining(Mexican) 
-0x2A0A  Dining(Pizza) 
+0x2A08  Dining(Italian)
+0x2A09  Dining(Mexican)
+0x2A0A  Dining(Pizza)
 0x2A0B  Dining(Sea Food)
-0x2A0C  Dining(Steak/Grill) 
-0x2A0D  Dining(Bagel/Donut) 
-0x2A0E  Dining(Cafe/Diner) 
-0x2A0F  Dining(French) 
-0x2A10  Dining(German) 
+0x2A0C  Dining(Steak/Grill)
+0x2A0D  Dining(Bagel/Donut)
+0x2A0E  Dining(Cafe/Diner)
+0x2A0F  Dining(French)
+0x2A10  Dining(German)
 0x2A11  Dining(British Isles)
-0x2B00  Hotel(Other) 
+0x2B00  Hotel(Other)
 0x2B01  Hotel/Motel
 0x2B02  Bed & Breakfast inn
 0x2B03  Camping/RV-Park
@@ -101,7 +101,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x2E09  Home Furnishing
 0x2E0a  Special Retail
 0x2E0b  Computer/Software
-0x2F00  generic service 
+0x2F00  generic service
 0x2F01  Fuel/Gas
 0x2F02  Car Rental
 0x2F03  Car Repair
@@ -186,7 +186,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x6412  Trail
 0x6413  Tunnel
 0x6414  Drink water
-0x6415  Ghost Town 
+0x6415  Ghost Town
 0x6416  Subdivision
 0x6500  Water Feature
 0x6501  Arroyo
@@ -397,7 +397,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x010202        buoy with north topmark
 0x010203        buoy with south topmark
 0x010204        buoy with east topmark
-0x010205        buoy with west topmark  
+0x010205        buoy with west topmark
 0x010206        beacon
 0x010207        spar buoy
 0x010208        isolated danger buoy
@@ -415,7 +415,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x010214        starboard hand beacon
 0x010215        special purpose beacon
 0x010216        mooring buoy
-0x010217        fix point       
+0x010217        fix point
 0x010218        pole
 0x010300        depth point
 0x010301        depth point invisible
@@ -463,7 +463,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x010800        information
 0x010901        label
 0x010902        fishing information
-0x010903        facility 
+0x010903        facility
 
 0x011500        custom point 1
 0x011501        custom point 2
@@ -538,8 +538,8 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 ;Routable types are: 0x01 - 0x13, 0x16, 0x1a, 0x1b
 ;
 [RGN40 types]
-0x01    Major HWY thick 
-0x02    Principal HWY-thick 
+0x01    Major HWY thick
+0x02    Principal HWY-thick
 0x03    Principal HWY-medium
 0x04    Arterial Road -medium
 0x05    Arterial Road-thick
@@ -574,12 +574,12 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x23    Depth Contour (thin) Depth in feet
 0x24    Depth Contour (medium) Depth in feet
 0x25    Depth Contour (thick) Depth in feet
-0x26    Intermittent River 
+0x26    Intermittent River
 0x27    Airport Runway
 0x28    Pipeline
 0x29    Powerline
-0x2a    Marine Boundary (no line) 
-0x2b    Marine Hazard (no line) 
+0x2a    Marine Boundary (no line)
+0x2b    Marine Hazard (no line)
 ;*******************************************************************************
 ;* Extended types (marine & custom) - lines                                    *
 ;*******************************************************************************
@@ -801,7 +801,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x010607        depth area
 0x010608        depth area
 0x010609        depth area
-0x010701        fishing area 
+0x010701        fishing area
 0x010704        map background area
 
 0x010f00        custom area 1

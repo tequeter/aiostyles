@@ -63,14 +63,14 @@ highway=* & motorroad=yes
                         }
 
 ## rules to prevent use of bad ways
-#highway=track
-#            & mkgmap:unpaved=1
-#            & (tracktype~'grade[4-6]' |
-#               tracktype!=*)
-#                {
-#                  add foot=yes;
-#                  add access=no;
-#                }
+highway=track
+            & mkgmap:unpaved=1
+            & (tracktype~'grade[4-6]' |
+               tracktype!=*)
+                {
+                  add foot=yes;
+                  add access=no;
+                }
 
 highway=path
            & (

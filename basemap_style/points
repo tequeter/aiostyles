@@ -78,6 +78,7 @@ man_made=petroleum_well 						[0x640d	resolution 24]
 amenity=post_box							[0x640f resolution 24]
 
 amenity=clock 								[0x6410 resolution 24]
+man_made=mast & tower:type=communication                                [0x1030b resolution 24]
 man_made=tower 								[0x6411 resolution 24]
 
 (tourism=information
