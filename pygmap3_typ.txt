@@ -14391,6 +14391,37 @@ DayXpm="16 16 2 1"   Colormode=16
 
 [_point]
 Type=0x05b
+SubType=0x00
+String1=0x04,Bell Tower
+String2=0x02,Glockenturm
+ExtendedLabels=N
+DayXpm="9 16 4 1"   Colormode=16
+"!	c #414141"
+"#	c #FFCA00"
+"%	c #C5C5C5"
+"  	c none"
+" !!!!!!! "
+" !!!!!!! "
+" !!%#%!! "
+" !!###!! "
+" !!###!! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !%!%!%! "
+" !!!!!!! "
+;123456789
+[end]
+
+
+[_point]
+Type=0x05b
 SubType=0x01
 String1=0x02,Leuchtturm
 String2=0x04,Lighthouse
