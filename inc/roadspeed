@@ -16,10 +16,21 @@
 #
 
 # increase road_speed with cycle_network ways
-(highway=cycleway | (highway=path & bicycle=designated))
+(highway=cycleway |
+  (highway=path & bicycle=designated) |
+  (highway=service & service!=parking_aisle) |
+   highway=residential |
+  (highway=track & tracktype=grade1))
                         & cycle_network=yes                     { set mkgmap:road-speed-class = 3 }
-highway=footway & cycle_network=yes                             { set mkgmap:road-speed-class = 2 }
 
+(highway=footway |
+   highway=living_street |
+  (highway=pedestrian & area!=yes) |
+  (highway=track & tracktype=grade2))
+                        & cycle_network=yes                     { set mkgmap:road-speed-class = 2 }
+
+
+# set road_speed to more exact values on ways with maxspeed
 maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() > 110   { set mkgmap:road-speed-class = 7 }
 maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  90   { set mkgmap:road-speed-class = 6 }
 maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  80   { set mkgmap:road-speed-class = 5 }
