@@ -15,16 +15,24 @@ name=FIXME | name=fixme                 { delete name; }
 
 ## name option for base- and bikemap
 
-
-
-public_transport=platform & (amenity=bus_station | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+public_transport=platform & 
+  (amenity=bus_station | 
+   highway=bus_stop | 
+   railway=tram_stop | 
+   railway=halt | 
+   railway=station)
 
         {
 	# eliminate double ^ or double - ; no idea why they are entered twice otherwise
 	delete public_transport;
         }
 
-(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(amenity=bus_station | 
+  public_transport=platform | 
+  highway=bus_stop | 
+  railway=tram_stop | 
+  railway=halt | 
+  railway=station)
     & (ref=* | route_ref=*)
         {
         set ref='${ref|def:}(${route_ref})';
@@ -32,25 +40,45 @@ public_transport=platform & (amenity=bus_station | highway=bus_stop | railway=tr
         delete route_ref ;
         }
 
-(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(amenity=bus_station | 
+  public_transport=platform | 
+  highway=bus_stop | 
+  railway=tram_stop | 
+  railway=halt | 
+  railway=station)
     & lit=yes & (shelter=yes | covered=yes)
         {
         set ref='* ${ref|def:}';
         }
 
-(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(amenity=bus_station | 
+  public_transport=platform | 
+  highway=bus_stop | 
+  railway=tram_stop | 
+  railway=halt | 
+  railway=station)
     & lit!=yes & (shelter=yes | covered=yes)
         {
         set ref='^ ${ref|def:}';
         }
 
-(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(amenity=bus_station | 
+  public_transport=platform | 
+  highway=bus_stop | 
+  railway=tram_stop | 
+  railway=halt | 
+  railway=station)
     & (shelter=no | covered=no)
         {
         set ref='- ${ref|def:}';
         }
 
-(amenity=bus_station | public_transport=platform | highway=bus_stop | railway=tram_stop | railway=halt | railway=station)
+(amenity=bus_station | 
+  public_transport=platform | 
+  highway=bus_stop | 
+  railway=tram_stop | 
+  railway=halt | 
+  railway=station)
     & ( name=* | ref=* )
         {
         name '${name|def:H} ${ref}' | '${name}';
@@ -93,14 +121,17 @@ amenity=telephone
          delete brand;
          }
 
-
 tourism=hotel |
 tourism=picnic_site |
 tourism=motel |
 amenity=restaurant
 
         {
-        set label_temp='${name} (${stars} *)' | '${name}' | '${stars} *' | '${amenity|subst:_=> }' | '${tourism|subst:_=> }' ;
+        set label_temp='${name} (${stars} *)' | 
+                                '${name}' | 
+                                '${stars} *' | 
+                                '${amenity|subst:_=> }' | 
+                                '${tourism|subst:_=> }' ;
         set mkgmap:label:3='${label_temp}' ;
         delete operator;
         delete brand;
@@ -113,14 +144,16 @@ amenity=atm |
 amenity=pub |
 amenity=bureau_de_change
         {
-        set label_temp='${name}' |'${operator}' | '${brand}' ;
+        set label_temp='${name}' |
+                        '${operator}' | 
+                        '${brand}' ;
         set mkgmap:label:3='${label_temp}' ;
         delete operator;
         delete brand;
         delete name ;
         }
 
-# with default label ${amenity} - Icons are unlabeld
+# with default label ${amenity} - Icons are unlabeled
 amenity=cafe |
 amenity=bar |
 amenity=fast_food |
@@ -133,7 +166,11 @@ amenity=car_rental |
 amenity=car_sharing |
 amenity=casino
         {
-        set label_temp='${name}' | '${brand}' |'${operator}' | '${amenity|subst:_=> }' | '${waterway|subst:_=> }' ;
+        set label_temp='${name}' | 
+                        '${brand}' |
+                        '${operator}' | 
+                        '${amenity|subst:_=> }' | 
+                        '${waterway|subst:_=> }' ;
         set mkgmap:label:3='${label_temp}' ;
         delete operator;
         delete brand;
@@ -142,7 +179,10 @@ amenity=casino
 
 amenity=fuel
         {
-        set label_temp='${brand}' | '${operator}' | '${name}' | '${amenity|subst:_=> }' ;
+        set label_temp='${brand}' | 
+                        '${operator}' | 
+                        '${name}' | 
+                        '${amenity|subst:_=> }' ;
         set mkgmap:label:3='${label_temp}';
         set mkgmap:label:1='${brand}';
         delete operator;
@@ -153,9 +193,6 @@ amenity=fuel
 # avoid POI with label "unnamed" - some icons do not provide a default name
 amenity=toilets & name!=*                       {set name='WC'}
 
-# move to fixme
-#(highway=services | highway=rest_area) & name!=* {set name='Info'}
-
 # avoid POI with label "unnamed" - maybe add to FIXME Layer
 amenity=public_building & name!=*               {delete amenity}
 
@@ -165,7 +202,12 @@ amenity=place_of_worship & building=yes         { delete building }
 
 amenity=place_of_worship & name!=*
 	{
-	set temp_religion='${denomination} ${building}' | '${denomination}' | '${religion} ${building}' | '${religion}' | '${building}' | 'religious' ;
+	set temp_religion='${denomination} ${building}' | 
+                          '${denomination}' | 
+                          '${religion} ${building}' | 
+                          '${religion}' | 
+                          '${building}' | 
+                          'religious' ;
 	add name='${temp_religion|subst:_=> }' ;
 	}
 
@@ -176,7 +218,13 @@ amenity=social_centre | amenity=social_facility
                   '${amenity|subst:_=> }'
 	}
 
-shop=* & shop!=hairdresser & shop!=solarium & shop!=tanning & shop!=supermarket & shop!=general & name!=*
+shop=* & 
+  shop!=hairdresser & 
+  shop!=solarium & 
+  shop!=tanning & 
+  shop!=supermarket & 
+  shop!=general & 
+    name!=*
 	{
 	add name='${shop|subst:_=> }' ;
 	}
@@ -192,12 +240,6 @@ leisure=ice_rink | sport=skating
 	{
 	add name='skating' ;
 	}
-
-#sport=* & name!=*
-#& sport!=soccer
-#	{
-#	add name='${sport|subst:_=> }' ;
-#	}
 
 waterway=* & name!=*
 	{
@@ -218,19 +260,10 @@ natural=peak | natural=hill | mountain_pass=yes
               '(${ele} m)'
 	}
 
-#natural=* & name!=*
-#& natural!=water
-#& natural!=wetland
-#& natural!=land
-#& natural!=wood
-#& natural!=scrub
-#& natural!=scree
-#& natural!=grass
-#& natural!=grassland
-#        {
-#	add name='${natural|subst:_=> }' ;
-#	}
-
 disused=yes  {name '${name} (disused)'|'(disused)';}
 
-name=* & mkgmap:label:1!=* & mkgmap:label:2!=* & mkgmap:label:3!=* & mkgmap:label:4!=* { name '${name}' }
+name=* & mkgmap:label:1!=* & 
+         mkgmap:label:2!=* & 
+         mkgmap:label:3!=* & 
+         mkgmap:label:4!=* 
+              { name '${name}' }
