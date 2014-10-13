@@ -83,8 +83,8 @@ landuse=basin 								[0x3f resolution 22]
 landuse=village_green |
 landuse=grass								[0x10f11 resolution 22]
 
-landuse=allotments 							[0x4f resolution 22]
-
+landuse=allotments 							[0x10f08 resolution 22]
+landuse=orchard                                                         [0x4e resolution 22]
 landuse=farm |
 landuse=farmland |
 landuse=plant_nursery							[0x2a resolution 21]
@@ -151,7 +151,7 @@ natural=wood &
 natural=wood 								[0x15 resolution 24-23]
 
 natural=scree                                                           [0x24 resolution 20]
-natural=scrub 								[0x4e resolution 20]
+natural=scrub 								[0x4f resolution 20]
 natural=heath 								[0x14 resolution 20]
 natural=fell | natural=grassland					[0x35 resolution 20]
 natural=land 								[0x27 resolution 10]
