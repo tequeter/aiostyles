@@ -77,6 +77,8 @@ landuse=construction							[0x11 resolution 20]
 
 landuse=landfill                                                        [0x10f07 resolution 18]
 
+landuse=conservation                                                    [0x10f0a resolution 18]
+
 landuse=reservoir |
 landuse=basin 								[0x3f resolution 22]
 
