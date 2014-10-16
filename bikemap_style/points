@@ -8,8 +8,6 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
-barrier=no {delete barrier}
-
 #------------------------------------------------------------------------------
 # Places
 
@@ -49,6 +47,11 @@ place=islet                      & cityxx!=yes  & name=*        {set cityxx=yes}
 
 place=locality  & name=*                                                          [0x2800 resolution 24 continue with_actions]
 # 0x2800-0x283F   Region name (no Point, small)
+
+# make key/value usable, if values are separated with ';'
+include '../inc/filter';
+
+barrier=no {delete barrier}
 
 # replace or delete some Key/value pairs to prevent listing in POI list
 leisure=swimming_pool { deletealltags }
@@ -341,11 +344,6 @@ tourism=wine_cellar                                                             
 
 #------------------------------------------------------------------------------
 # Food and Drink
-
-cuisine~'.*;.*'
-                {
-                set cuisine='${cuisine|part:}';
-                }
 
 # American
 amenity=restaurant &

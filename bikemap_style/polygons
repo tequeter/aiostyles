@@ -1,4 +1,7 @@
 
+# make key/value usable, if values are separated with ';'
+include '../inc/filter';
+
 # replace or delete some Key/value pairs to prevent listing in POI list
 leisure=swimming_pool { set temp_pool=yes; delete leisure; delete sport}
 amenity=swimming_pool { set temp_pool=yes; delete amenity; delete sport}

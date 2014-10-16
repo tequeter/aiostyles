@@ -37,6 +37,9 @@
 #{echo ' ${highway} | ${name} '}
 #-----------------------------------------------------------------------------
 
+# make key/value usable, if values are separated with ';'
+include '../inc/filter';
+
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
 

@@ -1,0 +1,52 @@
+
+## only use the first value before ';'
+
+landuse~'.*;.*'
+                {
+                set landuse='${landuse|part:}';
+                }
+
+natural~'.*;.*'
+                {
+                set natural='${natural|part:}';
+                }
+
+highway~'.*;.*'
+                {
+                set highway='${highway|part:}';
+                }
+
+amenity~'.*;.*'
+                {
+                set amenity='${amenity|part:}';
+                }
+
+man_made~'.*;.*'
+                {
+                set man_made='${man_made|part:}';
+                }
+
+cuisine~'.*;.*'
+                {
+                set cuisine='${cuisine|part:}';
+                }
+
+tourism~'.*;.*'
+                {
+                set tourism='${tourism|part:}';
+                }
+
+shop~'.*;.*'
+                {
+                set shop='${shop|part:}';
+                }
+
+leisure~'.*;.*'
+                {
+                set leisure='${leisure|part:}';
+                }
+
+historic~'.*;.*'
+                {
+                set historic='${historic|part:}';
+                }
