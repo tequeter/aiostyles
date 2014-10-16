@@ -82,6 +82,7 @@ highway=path
               )
                 {
                   add foot=yes;
+                  add bicycle=no;
                   add access=no;
                   }
 
