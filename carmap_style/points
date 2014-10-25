@@ -35,15 +35,15 @@ place=town & population >    999 & cityxx!=yes  & name=*        {set cityxx=yes}
 place=town & population >      0 & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 18 continue with_actions]
 place=town                       & cityxx!=yes  & name=*        {set cityxx=yes} [0x0800 resolution 18 continue with_actions]
 
-place=village                    & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0900 resolution 19 continue with_actions]
-place=suburb                     & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0a00 resolution 21 continue with_actions]
+place=village                    & cityxx!=yes  & name=*        {set cityxx=yes} [0x0900 resolution 19 continue with_actions]
+place=suburb                     & cityxx!=yes  & name=*        {set cityxx=yes} [0x0a00 resolution 21 continue with_actions]
 
 (place=hamlet |
 place=isolated_dwelling |
-place=neighbourhood)             & cityxx!=yes  & name=*                  {set cityxx=yes} [0x0b00 resolution 22 continue with_actions]
+place=neighbourhood)             & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 22 continue with_actions]
 
-place=island                     & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 21 continue with_actions]
-place=islet                      & cityxx!=yes  & name=*                  {set cityxx=yes} [0x650c resolution 22 continue with_actions]
+place=island                     & cityxx!=yes  & name=*        {set cityxx=yes} [0x650c resolution 21 continue with_actions]
+place=islet                      & cityxx!=yes  & name=*        {set cityxx=yes} [0x650c resolution 22 continue with_actions]
 
 place=locality  & name=*                                                          [0x2800 resolution 24 continue with_actions]
 # 0x2800-0x283F   Region name (no Point, small)
@@ -52,6 +52,7 @@ place=locality  & name=*                                                        
 include '../inc/filter';
 
 barrier=no {delete barrier}
+
 
 # replace or delete some Key/value pairs to prevent listing in POI list
 leisure=swimming_pool { deletealltags }
@@ -157,7 +158,7 @@ natural=rock 								[0x6614 resolution 24]
 # 0x6615	# slope
 natural=peak & ele>3500 	 					[0x6616 resolution 22]
 natural=peak & ele>2300 	 					[0x6616 resolution 23]
-natural=peak | natural=hill 				[0x6616 resolution 24]
+natural=peak | natural=hill 				                [0x6616 resolution 24]
 # 0x6617	# valley
 # 0x6618	# woods
 mountain_pass=yes 		 					[0x6618 resolution 23 continue]
@@ -231,7 +232,6 @@ amenity=parking & mkgmap:area2poi!=true
 
 # 0x4ess        # restroom
 amenity=toilets                                                                         [0x4e01 resolution 24]
-
 
 # 0x4fss        # shower
 amenity=shower 										[0x4f01 resolution 24]
@@ -459,7 +459,7 @@ amenity=restaurant                                                              
 # Shopping
 
 # Department # Kaufhaus ## ok
-shop=department_store                                                                 [0x2e01 resolution 24]
+shop=department_store                                                                   [0x2e01 resolution 24]
 
 # Grocery # Lebensmittel ## ok
 shop=greengrocer |
@@ -473,7 +473,7 @@ amenity=market_place                                                            
 shop=supermarket | shop=general                                                         [0x2e03 resolution 24]
 
 # Shopping Center # Einkaufszentrum ## ok
-shop=mall                                                                              [0x2e04 resolution 24]
+shop=mall                                                                               [0x2e04 resolution 24]
 
 # Pharmacy/Chemist # Apotheke/Drogerie ## ok
 amenity=pharmacy | shop=chemist                                                         [0x2e05 resolution 24]
@@ -572,7 +572,7 @@ amenity=place_of_worship &
 			(
 				religion=muslim |
 				building=mosque
-			) 						[0x2c0d resolution 24]
+			) 						                [0x2c0d resolution 24]
 amenity=place_of_worship &
 			(
 				religion=christian|
@@ -580,15 +580,15 @@ amenity=place_of_worship &
 				building=church|
 				building=chapel|
 				building=monastery
-			)  						[0x2c0e resolution 24]
+			)  						                [0x2c0e resolution 24]
 amenity=place_of_worship &
 			(
 				religion=buddhist
-			) 						[0x2c0f resolution 24]
+			) 						                [0x2c0f resolution 24]
 amenity=place_of_worship &
 			(
 				religion=jewish
-			)  						[0x2c10 resolution 24]
+			)  						                [0x2c10 resolution 24]
 amenity=place_of_worship  								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
@@ -685,7 +685,7 @@ leisure=water_park  & mkgmap:area2poi!=true						[0x2d09 resolution 24]
 
 # Sports/Fitness Center
 sport=multi                                                                             [0x5400 resolution 24]
-sport=soccer 										[0x5401 resolution 24]
+sport=soccer             								[0x5401 resolution 24]
 sport=volleyball 									[0x5402 resolution 24]
 sport=basketball 									[0x5403 resolution 24]
 sport=table_tennis 									[0x5404 resolution 24]
@@ -837,9 +837,9 @@ barrier~'.*(block)' | barrier=jersey_barrier                                    
 barrier~'.*(hedge)'                                                                     [0x2909 resolution 24]
 
 traffic_sign=city_limit                                                                 [0x2910 resolution 24]
-highway=traffic_signals                                                                 [0x2911 resolution 24]
+#highway=traffic_signals                                                                 [0x2911 resolution 24]
 highway=stop                                                                            [0x2912 resolution 24]
-highway=give_way                                                                        [0x2913 resolution 24]
+#highway=give_way                                                                        [0x2913 resolution 24]
 noexit=yes                                                                              [0x2914 resolution 24]
 highway=mini_roundabout                                                                 [0x2915 resolution 24]
 highway=passing_place                                                                   [0x2916 resolution 24]
@@ -856,4 +856,3 @@ include '../inc/phone';
 include '../inc/name';
 
 name=* { name '${name}' }
-
