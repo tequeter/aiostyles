@@ -817,9 +817,9 @@ barrier~'.*(hedge)'                                                             
 #barrier=* {echo ' ${barrier} | ${access} | ${vehicle} | ${motor_vehicle} | ${bicycle} | ${foot} '}
 
 traffic_sign=city_limit                                                                 [0x2910 resolution 24]
-highway=traffic_signals                                                                 [0x2911 resolution 24]
+#highway=traffic_signals                                                                 [0x2911 resolution 24]
 highway=stop                                                                            [0x2912 resolution 24]
-highway=give_way                                                                        [0x2913 resolution 24]
+#highway=give_way                                                                        [0x2913 resolution 24]
 noexit=yes                                                                              [0x2914 resolution 24]
 highway=mini_roundabout                                                                 [0x2915 resolution 24]
 highway=passing_place                                                                   [0x2916 resolution 24]
