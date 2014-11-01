@@ -808,11 +808,12 @@ barrier=lift_gate | barrier=bus_trap                                            
 barrier=gate | barrier=sally_port |  barrier~'.*(entrance)'                             [0x2902 resolution 24]
 barrier=cycle_barrier                                                                   [0x2903 resolution 24]
 barrier~'.*(gate)' | barrier=cattle_grid | barrier~'.*(stile)'                          [0x2904 resolution 24]
-barrier~'.*(fence)'                                                                     [0x2905 resolution 24]
-barrier~'.*(wall)'                                                                      [0x2906 resolution 24]
-barrier~'.*(chain)' | barrier~'.*(rope)'                                                [0x2907 resolution 24]
-barrier~'.*(block)' | barrier=jersey_barrier                                            [0x2908 resolution 24]
-barrier~'.*(hedge)'                                                                     [0x2909 resolution 24]
+
+barrier~'.*(fence)' & mkgmap:area2poi!=true                                             [0x2905 resolution 24]
+barrier~'.*(wall)' & mkgmap:area2poi!=true                                              [0x2906 resolution 24]
+barrier~'.*(chain)' | barrier~'.*(rope)' & mkgmap:area2poi!=true                        [0x2907 resolution 24]
+barrier~'.*(block)' | barrier=jersey_barrier & mkgmap:area2poi!=true                    [0x2908 resolution 24]
+barrier~'.*(hedge)' & mkgmap:area2poi!=true                                             [0x2909 resolution 24]
 
 #barrier=* {echo ' ${barrier} | ${access} | ${vehicle} | ${motor_vehicle} | ${bicycle} | ${foot} '}
 
