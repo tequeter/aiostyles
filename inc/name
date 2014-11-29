@@ -226,6 +226,7 @@ shop=* & shop!=hairdresser &
           shop!=solarium & 
           shop!=tanning & 
           shop!=supermarket & 
+          shop!=stationery & 
           shop!=general & name!=*
 	{
 	add name='${shop|subst:_=> }' ;
