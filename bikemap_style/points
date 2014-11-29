@@ -749,6 +749,9 @@ leisure=marina 										[0x2f09 resolution 24]
 # Repair Service
 waterway=bootyard | amenity=boat_storage						[0x2f13 resolution 24]
 
+# stationery/Schreibwaren
+shop=stationery                                                                         [0x2f15 resolution 24]
+
 # Social Service
 
 # Communications

@@ -10712,6 +10712,37 @@ DayXpm="12 16 77 2"   Colormode=32
 
 [_point]
 Type=0x02f
+SubType=0x15
+String1=0x02,Schreibwaren
+String2=0x04,Stationery
+ExtendedLabels=N
+DayXpm="16 16 4 1"   Colormode=16
+"!	c #101010"
+"#	c #009500"
+"%	c #3930D5"
+"  	c none"
+"                "
+"         !!!!   "
+"        !  !#!  "
+"       !  !###! "
+"      !  !###!  "
+"    !!  !###!   "
+"       !###!    "
+"      !###!     "
+"     !###!      "
+"    !###!       "
+"   !###!        "
+"  !%!#!         "
+" !!!%!          "
+" !%!!           "
+" !!!            "
+"!               "
+;1234567890123456
+[end]
+
+
+[_point]
+Type=0x02f
 SubType=0x17
 String1=0x02,Haltestelle
 String2=0x04,Tram / Bus stop
