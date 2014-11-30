@@ -534,7 +534,7 @@ shop=sports                                                                     
 shop=wine | shop=winery | shop=alcohol                                                  [0x2e13 resolution 24]
 
 # Book Store ## ok
-shop=books                                                                              [0x2e14 resolution 24]
+shop=books | shop=stationery                                                            [0x2e14 resolution 24]
 
 shop=motorcycle                                                                         [0x2e1d resolution 24]
 
@@ -749,8 +749,8 @@ leisure=marina 										[0x2f09 resolution 24]
 # Repair Service
 waterway=bootyard | amenity=boat_storage						[0x2f13 resolution 24]
 
-# stationery/Schreibwaren
-shop=stationery                                                                         [0x2f15 resolution 24]
+# community - supply service - utility gas, electric, water
+# 0x2f15 Icon and Icon's label are shown in map
 
 # Social Service
 
