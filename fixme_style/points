@@ -23,20 +23,22 @@ name=fixme
                   }
                           [0x7110 resolution 23]
 
-disused=yes
-            { name 'FIXME: disused set, update tags' }
-                          [0x7110 resolution 23]
+(amenity=public_building |
+     amenity=school |
+     amenity=kindergarten |
+     amenity=social_facility)
+        & (name!=* | operator!=*)
 
-amenity=public_building & name!=*
             {name 'FIXME: name or operator fehlt/missing'}
                           [0x7110 resolution 23]
 
 (amenity=place_of_worship & denomination=unknown) |
-(amenity=place_of_worship & religion=unknown)
-            {name 'FIXME: denomination/religion fehlt/missing'}
+    (amenity=place_of_worship & religion=unknown) |
+    (amenity=place_of_worship & name!=*)
+            {name 'FIXME: denomination/religion/name fehlt/missing'}
                           [0x7110 resolution 23]
 
-amenity=place_of_worship & ( building!=* | building=yes )
+amenity=place_of_worship & ( building!=* )
             {name 'FIXME: building fehlt/missing'}
                           [0x7110 resolution 23]
 
