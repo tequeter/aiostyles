@@ -822,9 +822,11 @@ String2=0x04,Building
 ExtendedLabels=Y
 FontStyle=SmallFont
 CustomColor=No
-Xpm="32 32 2 1"
+Xpm="32 32 4 1"
 "! c #000000"
 "  c none"
+"3 c #C5C5C5"
+"4 c none"
 " ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"
 "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! "
 " ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"
