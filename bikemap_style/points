@@ -169,7 +169,7 @@ natural=cave_entrance 							[0x6619 resolution 24]	# type without category
 #------------------------------------------------------------------------------
 # Exit
 
-highway=motorway_junction								[0x2000 resolution 22]
+highway=motorway_junction						[0x2000 resolution 22]
 
 #------------------------------------------------------------------------------
 # Fuel
@@ -837,7 +837,7 @@ man_made=surveillance                                                           
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
+include '../inc/access_points';
 include '../inc/address';
 include '../inc/phone';
 include '../inc/name';

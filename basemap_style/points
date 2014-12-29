@@ -87,7 +87,7 @@ amenity=clock 								[0x6410 resolution 24]
 
 (man_made=mast | man_made=tower)
               & tower:type=communication                                [0x5103 resolution 24]
- man_made=tower & tower:type=observation                                [0x6600 resolution 24]
+man_made=tower & tower:type=observation                                 [0x6600 resolution 24]
 
 man_made=tower & tower:type=bell_tower                                  [0x5b0c resolution 24]
 man_made=tower 								[0x6411 resolution 24]
@@ -856,7 +856,7 @@ man_made=surveillance                                                           
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
+include '../inc/access_points';
 include '../inc/address';
 include '../inc/phone';
 include '../inc/name';

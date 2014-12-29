@@ -111,43 +111,6 @@ highway=cycleway
                   add bicycle=yes;
                   add access=no }
 
-railway=level_crossing &
-    crossing:barrier!=no
-          {
-            add access=yes
-            }
-
-barrier=bollard |
-    barrier=cycle_barrier |
-    barrier=block |
-    barrier=gate |
-    barrier=lift_gate |
-    barrier=swing_gate |
-    barrier=sally_port
-
-          {
-            add bicycle=yes;
-            add foot=yes;
-            add access=no;
-            }
-
-barrier=bus_trap
-          {
-            add bus=yes;
-            add foot=yes;
-            add bicycle=yes;
-            add access=no;
-            }
-
-barrier~'.*(gate)' |
-    barrier=cattle_grid |
-    barrier~'.*(stile)' |
-    barrier=jersey_barrier
-          {
-            add foot=yes;
-            add access=no;
-            }
-
 highway=* & cycle_network=yes
               { set bicycle=yes }
 
