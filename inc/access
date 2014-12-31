@@ -126,6 +126,15 @@ access=agricultural
                         add foot=yes
                         }
 
+access=customers
+                      { set access=no;
+                        add foot=yes
+                        }
+
+access=private
+                      { set access=no;
+                        }
+
 vehicle=*            {
                         add bicycle='${vehicle}';
                         add motor_vehicle='${vehicle}';
@@ -151,6 +160,7 @@ motorcar=destination
                         set mkgmap:throughroute=no;
                         set motorcar=yes
                         }
+
 access=destination
                       {
                         set mkgmap:throughroute=no;
@@ -158,24 +168,14 @@ access=destination
                         }
 
 # Normalize all values that indicate a restriction to 'no'
-foot=private          | foot=agricultural          { set foot=no }
-bicycle=private       | bicycle=agricultural       { set bicycle=no }
-motorcar=private      | motorcar=agricultural      { set motorcar=no }
-goods=private         | goods=agricultural         { set goods=no }
-hgv=private           | hgv=agricultural           { set hgv=no }
-bus=private           | bus=agricultural           { set bus=no }
-taxi=private          | taxi=agricultural          { set taxi=no }
-emergency=private     | emergency=agricultural     { set emergency=no }
-
-# Normalize all values that indicate a restriction to 'yes'
-foot=designated       | foot=permissive      | foot=official       { set foot=yes }
-bicycle=designated    | bicycle=permissive   | bicycle=official    { set bicycle=yes }
-motorcar=designated   | motorcar=permissive  | motorcar=official   { set motorcar=yes }
-goods=designated      | goods=permissive     | goods=official      { set goods=yes }
-hgv=designated        | hgv=permissive       | hgv=official        { set hgv=yes }
-bus=designated        | bus=permissive       | bus=official        { set bus=yes }
-taxi=designated       | taxi=permissive      | taxi=official       { set taxi=yes }
-emergency=designated  | emergency=permissive | emergency= official { set emergency=yes }
+foot=private          | foot=agricultural         | foot=customers              { set foot=no }
+bicycle=private       | bicycle=agricultural      | bicycle=customers           { set bicycle=no }
+motorcar=private      | motorcar=agricultural     | motorcar=customers          { set motorcar=no }
+goods=private         | goods=agricultural        | goods=customers             { set goods=no }
+hgv=private           | hgv=agricultural          | hgv=customers               { set hgv=no }
+bus=private           | bus=agricultural          | bus=customers               { set bus=no }
+taxi=private          | taxi=agricultural         | taxi=customers              { set taxi=no }
+emergency=private     | emergency=agricultural    | emergency=customers         { set emergency=no }
 
 # Copy the OSM access tags to the mkgmap internal tags
 foot=*       { set mkgmap:foot='${foot}' }
@@ -193,3 +193,4 @@ access=*       {  addaccess '${access}' }
 # Check for carpool lane (they are not really supported yet so these lines are commented)
 # hov=* { add carpool='${hov}' }
 # (carpool=yes | carpool=designated | carpool=permissive | carpool=official)     { set mkgmap:carpool=yes }
+
