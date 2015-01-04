@@ -18,10 +18,8 @@ highway=* & motorroad=yes
                           add foot=no
                           }
 
-(highway=motorway |
-    highway=motorway_link |
-    highway=trunk |
-    highway=trunk_link )
+(highway~'motorway.*' |
+    highway~'trunk.*' )
         & mkgmap:country=DEU
                       {
                         add bicycle=no;
@@ -53,10 +51,8 @@ highway=* & motorroad=yes
                           add foot=no
                           }
 
-(highway=motorway |
-    highway=motorway_link |
-    highway=trunk |
-    highway=trunk_link )
+(highway~'motorway.*' |
+    highway~'trunk.*' )
                       {
                         add bicycle=no;
                         add foot=no
@@ -109,11 +105,11 @@ highway=bridleway
 highway=cycleway
                 {
                   add bicycle=yes;
-                  add access=no }
+                  add access=no
+                  }
 
 highway=* & cycle_network=yes
               { set bicycle=yes }
-
 
 highway=* & ramp=yes
                     {
