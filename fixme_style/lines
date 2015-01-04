@@ -13,6 +13,17 @@ note=* & (note ~ 'FIXME.*' |
 	  'Notiz: ${Fixme}' |
 	  oneway=-1	} 				[0x10001 resolution 24]
 
+(highway~'motorway.*' |
+    highway~'trunk.*' ) &
+    (bicycle=* &
+      bicycle!=no)
+       {name 'FIXME: ${highway} with bicycle?'}         [0x10002 resolution 23]
+
+(highway~'motorway.*' |
+    highway~'trunk.*' ) &
+    (cycleway=* &
+      cycleway!=no)
+       {name 'FIXME: ${highway} with cycleway?'}        [0x10002 resolution 23]
 
 highway~'.*(:|,|;).*'
        {name 'FIXME: ${highway}';}                      [0x10002 resolution 23]
