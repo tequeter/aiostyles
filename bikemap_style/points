@@ -544,7 +544,7 @@ shop=motorcycle                                                                 
 #------------------------------------------------------------------------------
 # medical help
 
-amenity=doctors | amenity=doctors							[0x301a resolution 24]
+amenity=doctors | amenity=doctors | amenity=clinic					[0x301a resolution 24]
 amenity=dentist 									[0x301b resolution 24]
 amenity=veterinary 									[0x301c resolution 24]
 amenity=rescue_box 									[0x301d resolution 24]
