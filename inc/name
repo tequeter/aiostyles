@@ -1,3 +1,42 @@
+# Get the last full word if a \s (whitespace) exist in name
+# if the last full word is a roman number - i.e. if a street has been named after a King or
+# a Pope - get the last two words
+# set the labels used for address search (3&4):
+# the 3rd label  is set with the last:word as 1st word followed by comma and the remaining words
+# the 4th label skipping the 1st word (that is usually Via, Rue, Avenida etc, so not really useful in search)
+
+( mkgmap:country=ITA |
+  mkgmap:country=FRA |
+  mkgmap:country=CHE |
+  mkgmap:country=ESP |
+  mkgmap:country=BEL |
+  mkgmap:country=LUX |
+  mkgmap:country=DEU |
+  mkgmap:country=AUT
+  )
+  & highway=*
+  & name ~ '.*\s.*'
+  { set last:word='${name|part: :-1}' }
+
+last:word=*
+  & (
+     last:word = Straße|
+     last:word = Weg|
+     last:word = Ring|
+     last:word = Platz|
+     last:word = Straat|
+     last:word = Laan
+     )
+        { delete last:word }
+
+last:word ~ '(I|II|III|IV|V|VI.*|IX|X|XI.*|XV.*|XX.*)'
+  {set last:word='${name|part: >-3}' }
+
+last:word=*
+  { set mkgmap:label:3='${last:word}, ${name|part: <-1}';
+    set mkgmap:label:4='${name|part: >1}'
+    }
+
 
 # Rules for naming objects, based on the following tags:
 # name, brand, operator, ref
@@ -17,11 +56,11 @@ name=FIXME | name=fixme                 { delete name; }
 
 
 
-public_transport=platform & 
-  (amenity=bus_station | 
-    highway=bus_stop | 
-    railway=tram_stop | 
-    railway=halt | 
+public_transport=platform &
+  (amenity=bus_station |
+    highway=bus_stop |
+    railway=tram_stop |
+    railway=halt |
     railway=station)
 
         {
@@ -29,11 +68,11 @@ public_transport=platform &
 	delete public_transport;
         }
 
-(amenity=bus_station | 
-  public_transport=platform | 
-    highway=bus_stop | 
-    railway=tram_stop | 
-    railway=halt | 
+(amenity=bus_station |
+  public_transport=platform |
+    highway=bus_stop |
+    railway=tram_stop |
+    railway=halt |
     railway=station)
     & (ref=* | route_ref=*)
         {
@@ -42,44 +81,44 @@ public_transport=platform &
         delete route_ref ;
         }
 
-(amenity=bus_station | 
-  public_transport=platform | 
-  highway=bus_stop | 
-  railway=tram_stop | 
-  railway=halt | 
+(amenity=bus_station |
+  public_transport=platform |
+  highway=bus_stop |
+  railway=tram_stop |
+  railway=halt |
   railway=station)
     & lit=yes & (shelter=yes | covered=yes)
         {
         set ref='* ${ref|def:}';
         }
 
-(amenity=bus_station | 
-  public_transport=platform | 
-  highway=bus_stop | 
-  railway=tram_stop | 
-  railway=halt | 
+(amenity=bus_station |
+  public_transport=platform |
+  highway=bus_stop |
+  railway=tram_stop |
+  railway=halt |
   railway=station)
     & lit!=yes & (shelter=yes | covered=yes)
         {
         set ref='^ ${ref|def:}';
         }
 
-(amenity=bus_station | 
-  public_transport=platform | 
-  highway=bus_stop | 
-  railway=tram_stop | 
-  railway=halt | 
+(amenity=bus_station |
+  public_transport=platform |
+  highway=bus_stop |
+  railway=tram_stop |
+  railway=halt |
   ailway=station)
     & (shelter=no | covered=no)
         {
         set ref='- ${ref|def:}';
         }
 
-(amenity=bus_station | 
-  public_transport=platform | 
-  highway=bus_stop | 
-  railway=tram_stop | 
-  railway=halt | 
+(amenity=bus_station |
+  public_transport=platform |
+  highway=bus_stop |
+  railway=tram_stop |
+  railway=halt |
   railway=station)
     & ( name=* | ref=* )
         {
@@ -130,10 +169,10 @@ tourism=motel |
 amenity=restaurant
 
         {
-        set label_temp='${name} (${stars} *)' | 
-                        '${name}' | 
-                        '${stars} *' | 
-                        '${amenity|subst:_=> }' | 
+        set label_temp='${name} (${stars} *)' |
+                        '${name}' |
+                        '${stars} *' |
+                        '${amenity|subst:_=> }' |
                         '${tourism|subst:_=> }' ;
         set mkgmap:label:3='${label_temp}' ;
         delete operator;
@@ -167,10 +206,10 @@ amenity=car_sharing |
 amenity=casino |
 waterway=bootyard
         {
-        set label_temp='${name}' | 
+        set label_temp='${name}' |
                         '${brand}' |
-                        '${operator}' | 
-                        '${amenity|subst:_=> }' | 
+                        '${operator}' |
+                        '${amenity|subst:_=> }' |
                         '${waterway|subst:_=> }' ;
         set mkgmap:label:3='${label_temp}' ;
         delete operator;
@@ -180,9 +219,9 @@ waterway=bootyard
 
 amenity=fuel
         {
-        set label_temp='${brand}' | 
-                        '${operator}' | 
-                        '${name}' | 
+        set label_temp='${brand}' |
+                        '${operator}' |
+                        '${name}' |
                         '${amenity|subst:_=> }' ;
         set mkgmap:label:3='${label_temp}';
         set mkgmap:label:1='${brand}';
@@ -206,11 +245,11 @@ amenity=place_of_worship & building=yes         { delete building }
 
 amenity=place_of_worship & name!=*
 	{
-	set temp_religion='${denomination} ${building}' | 
-                          '${denomination}' | 
-                          '${religion} ${building}' | 
-                          '${religion}' | 
-                          '${building}' | 
+	set temp_religion='${denomination} ${building}' |
+                          '${denomination}' |
+                          '${religion} ${building}' |
+                          '${religion}' |
+                          '${building}' |
                           'religious' ;
 	add name='${temp_religion|subst:_=> }' ;
 	}
@@ -222,12 +261,12 @@ amenity=social_centre | amenity=social_facility
                   '${amenity|subst:_=> }'
 	}
 
-shop=* & shop!=hairdresser & 
-          shop!=solarium & 
-          shop!=tanning & 
-          shop!=supermarket & 
-          shop!=stationery & 
-          shop!=books & 
+shop=* & shop!=hairdresser &
+          shop!=solarium &
+          shop!=tanning &
+          shop!=supermarket &
+          shop!=stationery &
+          shop!=books &
           shop!=general & name!=*
 	{
 	add name='${shop|subst:_=> }' ;
@@ -266,9 +305,9 @@ natural=peak | natural=hill | mountain_pass=yes
 
 disused=yes  {name '${name} (disused)'|'(disused)';}
 
-name=* & 
-    mkgmap:label:1!=* & 
-    mkgmap:label:2!=* & 
-    mkgmap:label:3!=* & 
-    mkgmap:label:4!=* 
-        { name '${name}' }
+#name=* &
+#    mkgmap:label:1!=* &
+#    mkgmap:label:2!=* &
+#    mkgmap:label:3!=* &
+#    mkgmap:label:4!=*
+#        { name '${name}' }

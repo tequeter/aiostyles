@@ -291,8 +291,8 @@ tourism=guest_house 									[0x2b02 resolution 24]
 tourism=hostel										[0x2b05 resolution 24]
 
 # Campground/RV Park
-tourism=camp_site & tents!=no & mkgmap:area2poi!=true					[0x2b03 resolution 24]
-tourism=caravan_site & tents=yes & mkgmap:area2poi!=true				[0x2b03 resolution 24]
+tourism=camp_site & tents!=no                          					[0x2b03 resolution 24]
+tourism=caravan_site & tents=yes                        				[0x2b03 resolution 24]
 
 # Resort
 tourism=resort 									        [0x2b04 resolution 24]
