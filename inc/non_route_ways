@@ -1,0 +1,64 @@
+
+#------------------------------------------------------------------------------
+#                       nonroutable ways
+#------------------------------------------------------------------------------
+
+highway=raceway                                                                         [0x12007 resolution 24-23]
+highway=platform                                                                        [0x10f0d resolution 24]
+
+# aeroway
+aeroway=runway                                                                          [0x27 resolution 20]
+aeroway=taxiway                                                                         [0x27 resolution 20]
+
+# aerialway and lift
+aerialway=chair_lift                                                                    [0x10e15 resolution 23]
+aerialway=drag_lift                                                                     [0x10e16 resolution 23]
+aerialway=goods                                                                         [0x10e17 resolution 24]
+aerialway=cable_car | aerialway=gondola                                                 [0x10e18 resolution 22]
+
+# railway
+railway=rail                            { delete name }
+
+railway=disused |
+railway=abandoned |
+(railway=rail & disused=yes)                                                            [0x10e12 resolution 24]
+
+railway=rail & (service=spur |
+                service=yard )                                                          [0x10e13 resolution 23]
+railway=narrow_gauge                                                                    [0x10e13 resolution 22]
+
+railway=rail & tunnel=yes                                                               [0x10e14 resolution 22]
+railway=rail & (service=siding |
+                usage=tourism)                                                          [0x10e14 resolution 22]
+railway=light_rail                                                                      [0x10e14 resolution 22]
+
+railway=rail                                                                            [0x10e14 resolution 23-20 continue]
+railway=rail                                                                            [0x14 resolution 24]
+
+railway=tram |
+railway=subway |
+railway=funicular |
+railway=preserved |
+railway=monorail                        { delete name }                                 [0x10e0e resolution 23-22 continue]
+
+railway=tram |
+railway=subway |
+railway=funicular |
+railway=preserved |
+railway=monorail                                                                        [0x10e0f resolution 24]
+
+railway=turntable | railway=traverser                                                   [0x10106 resolution 24-23]
+
+# barrier
+# please don't delete the continue action, because they are needed to render landuse polygons with barrier tags
+barrier~'.*(wall)'                                                                      [0x10f02 resolution 24 continue]
+barrier~'.*(fence)'                                                                     [0x10f03 resolution 24 continue]
+barrier~'.*(block)'                                                                     [0x10f05 resolution 24 continue]
+barrier~'.*(hedge)'                                                                     [0x10f0c resolution 24 continue]
+
+# man made
+(man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & area!=yes &
+tunnel!=yes & location != underground                                                   [0x28 resolution 23]
+
+# power
+power=line | power=minor_line           { delete name }                                 [0x29 resolution 24]
