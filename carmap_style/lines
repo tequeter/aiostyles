@@ -430,75 +430,10 @@ highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway &
 # route
 route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road_speed=0]
 
-#------------------------------------------------------------------------------
-#			boundaries
-#------------------------------------------------------------------------------
-
-# The following boundary styles are after the highway rules because ways
-# are frequently tagged with both and we want the highway to take priority.
-
-boundary=administrative { name '${mkgmap:boundary_name}' }
-boundary=administrative & admin_level<=2                                                [0x1e resolution 16 continue]
-boundary=administrative & admin_level<=4                                                [0x1d resolution 19 continue]
-boundary=national                                                                       [0x1e resolution 17 continue]
-
-# other boundaries moved to boundary layer
-
-#------------------------------------------------------------------------------
-#			nonroutable ways
-#------------------------------------------------------------------------------
-
-# railway
-railway=rail                            { delete name }
-
-railway=disused |
-railway=abandoned |
-(railway=rail & disused=yes)                                                           [0x10e12 resolution 24]
-
-railway=rail & (service=siding |
-                service=spur |
-                service=yard )                                                          [0x10e13 resolution 23]
-
-railway=rail                                                                            [0x10e14 resolution 23-20 continue]
-railway=narrow_gauge | railway=light_rail                                               [0x10e14 resolution 24]
-railway=rail & tunnel=yes                                                               [0x10e14 resolution 24]
-railway=rail                                                                            [0x10e19 resolution 24]
-
-railway=tram |
-railway=subway |
-railway=funicular |
-railway=preserved |
-railway=monorail			{ delete name }					[0x10e0e resolution 23-22 continue]
-
-railway=tram |
-railway=subway |
-railway=funicular |
-railway=preserved |
-railway=monorail									[0x10e0f resolution 24]
-
-railway=turntable | railway=traverser							[0x10106 resolution 24-23]
-
-# platforms only if they are not an area
-(railway=platform | public_transport=platform) & area!=*				[0x10f0d resolution 23]
-
-# barrier
-# please don't delete the continue action, because they are needed to render landuse polygons with barrier tags
-barrier~'.*(wall)'                                                                      [0x10f02 resolution 24 continue]
-barrier~'.*(fence)'                                                                     [0x10f03 resolution 24 continue]
-barrier~'.*(block)'                                                                     [0x10f05 resolution 24 continue]
-barrier~'.*(hedge)'                                                                     [0x10f0c resolution 24 continue]
-
-# man made
-(man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & area!=yes &
-tunnel!=yes & location != underground                                                   [0x28 resolution 23]
-
-natural=coastline [0x15 resolution 12]
-
-waterway=canal                                                                          [0x1f resolution 21]
-#waterway=drain                                                                          [0x1f resolution 22]
-waterway=river                                                                          [0x1f resolution 18]
-waterway=rapids|waterway=waterfall                                                      [0x1f resolution 22]
-waterway=stream                                                                         [0x18 resolution 22]
+# rendering options of nonroutable ways, located in inc/
+include '../inc/boundary' ;
+include '../inc/non_route_ways' ;
+include '../inc/waterways' ;
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
