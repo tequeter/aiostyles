@@ -39,7 +39,8 @@ type=route
     {
       add ref='${name}';
       apply {
-        set route_ref='$(route_ref),${ref}' | '${ref}';
+        #set route_ref='$(route_ref),${ref}' | '${ref}';
+        set route_ref='$(route_ref),${ref|not-contained:,:route_ref}' | '$(route_ref)' | '${ref}';
         set mkgmap:relref='${ref}';
         apply role=passengers {
         set route_ref='$(route_ref),${mkgmap:relref}' | '${mkgmap:relref}';
@@ -47,4 +48,3 @@ type=route
       delete mkgmap:relref;
             }
     }
-

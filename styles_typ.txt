@@ -54,7 +54,6 @@ Type=0x004,4
 Type=0x005,4
 Type=0x006,4
 Type=0x009,4
-Type=0x00f,4
 Type=0x014,4
 Type=0x018,4
 Type=0x019,4
@@ -67,7 +66,6 @@ Type=0x008,5
 Type=0x017,5
 Type=0x04c,5
 Type=0x051,5
-Type=0x052,5
 Type=0x10f00,6
 Type=0x10f01,6
 Type=0x10f02,6
@@ -530,7 +528,7 @@ ExtendedLabels=N
 Xpm="32 32 4 1"
 "! c #FF95FF"
 "  c none"
-"3 c #FF95FF"
+"3 c #7B00B4"
 "4 c #000000"
 "! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! "
 " ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! !"
@@ -1632,7 +1630,9 @@ String1=0x02,See
 String2=0x04,Lake
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=No
+CustomColor=DayAndNight
+DaycustomColor:#7BCAFF
+NightcustomColor:#0000BA
 Xpm="0 0 2 0"
 "1 c #7BCAFF"
 "2 c #0000B4"
@@ -1690,8 +1690,10 @@ Type=0x3e
 String1=0x02,See
 String2=0x04,Lake
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+FontStyle=SmallFont
+CustomColor=DayAndNight
+DaycustomColor:#7BCAFF
+NightcustomColor:#0000BA
 Xpm="0 0 2 0"
 "1 c #7BCAFF"
 "2 c #0000BA"
@@ -1729,8 +1731,10 @@ Type=0x46
 String1=0x02,Fluss
 String2=0x04,River
 ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+FontStyle=SmallFont
+CustomColor=DayAndNight
+DaycustomColor:#7BCAFF
+NightcustomColor:#0000BA
 Xpm="0 0 2 0"
 "1 c #7BCAFF"
 "2 c #0000BA"
@@ -1743,8 +1747,9 @@ String1=0x02,Obstgarten
 String2=0x04,Orchard
 ExtendedLabels=Y
 FontStyle=SmallFont
-CustomColor=Day
+CustomColor=DayAndNight
 DaycustomColor:#FFCA41
+NightcustomColor:#BD6520
 Xpm="32 32 4 1"
 "! c #FFCA41"
 "# c #00FF40"
