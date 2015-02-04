@@ -852,7 +852,7 @@ highway=passing_place                                                           
 highway=crossing                                                                        [0x2917 resolution 24]
 
 highway=speed_camera                                                                    [0x2918 resolution 24]
-man_made=surveillance                                                                   [0x2918 resolution 24]
+#man_made=surveillance                                                                   [0x2918 resolution 24]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches

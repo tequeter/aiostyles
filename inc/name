@@ -54,22 +54,20 @@ name=FIXME | name=fixme                 { delete name; }
 
 ## name option for base- and bikemap
 
-
-
-public_transport=platform &
-  (amenity=bus_station |
-    highway=bus_stop |
-    railway=tram_stop |
-    railway=halt |
-    railway=station)
-
-        {
-	# eliminate double ^ or double - ; no idea why they are entered twice otherwise
-	delete public_transport;
-        }
+#public_transport=platform &
+#  (amenity=bus_station |
+#    highway=bus_stop |
+#    railway=tram_stop |
+#    railway=halt |
+#    railway=station)
+#
+#        {
+#	# eliminate double ^ or double - ; no idea why they are entered twice otherwise
+#	delete public_transport;
+#        }
 
 (amenity=bus_station |
-  public_transport=platform |
+    public_transport=platform |
     highway=bus_stop |
     railway=tram_stop |
     railway=halt |
@@ -87,7 +85,8 @@ public_transport=platform &
   railway=tram_stop |
   railway=halt |
   railway=station)
-    & lit=yes & (shelter=yes | covered=yes)
+    & lit=yes
+    & (shelter=yes | covered=yes)
         {
         set ref='* ${ref|def:}';
         }
@@ -98,7 +97,8 @@ public_transport=platform &
   railway=tram_stop |
   railway=halt |
   railway=station)
-    & lit!=yes & (shelter=yes | covered=yes)
+    & lit!=yes
+    & (shelter=yes | covered=yes)
         {
         set ref='^ ${ref|def:}';
         }

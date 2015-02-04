@@ -28,14 +28,19 @@ note=* & (note ~ 'FIXME.*' |
 highway~'.*(:|,|;).*'
        {name 'FIXME: ${highway}';}                      [0x10002 resolution 23]
 
-highway=track & tracktype!=*  |
-highway=track & tracktype~('.*;.*')
+highway=track & (tracktype!=* |
+                  tracktype~('.*;.*'))
        {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
 
 highway=* & construction=minor
        {name 'FIXME: ${construction}'}  		[0x10003 resolution 23]
 
-highway=* & access=destination 		                [0x10004 resolution 23]
+highway=* & (access=destination |
+              access=designated |
+              vehicle=designated |
+              motor_vehicle=designated )
+        {name 'FIXME: access=???' }                     [0x10004 resolution 23]
+
 
 highway~('.*;.*')
         {name 'FIXME: ${highway}'}                      [0x10005 resolution 23]
