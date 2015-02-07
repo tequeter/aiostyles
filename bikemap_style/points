@@ -588,6 +588,7 @@ amenity=place_of_worship &
 			(
 				religion=jewish
 			)  						                [0x2c10 resolution 24]
+			
 amenity=place_of_worship  								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
