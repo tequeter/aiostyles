@@ -102,7 +102,7 @@ Type=0x01
 ;5B DBlk:&259D
 ;polygon type: 7
 ;draworder:2
-String0=0x2,Stadt 
+String0=0x2,Stadt
 String1=0x4,City
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -117,7 +117,7 @@ Type=0x02
 ;71 DBlk:&25A1
 ;polygon type: 7
 ;draworder:2
-String0=0x2,Siedlung 
+String0=0x2,Siedlung
 String1=0x4,Village
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -132,7 +132,7 @@ Type=0x03
 ;8D DBlk:&25A5
 ;polygon type: 9
 ;draworder:2
-String1=0x2,Wohngebiet 
+String1=0x2,Wohngebiet
 String2=0x4,Residential
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -182,7 +182,7 @@ Type=0x04
 ;135 DBlk:&25A9
 ;polygon type: 15
 ;draworder:4
-String1=0x2,Milit‰rgebiet 
+String1=0x2,Milit‰rgebiet
 String2=0x4,Military
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -233,7 +233,7 @@ Type=0x05
 ;1DA DBlk:&25AD
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Parkplatz 
+String1=0x2,Parkplatz
 String2=0x4,Parking
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -281,7 +281,7 @@ Type=0x06
 ;27C DBlk:&25B1
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Parkgarage 
+String1=0x2,Parkgarage
 String2=0x4,Parking garage
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -331,7 +331,7 @@ Type=0x07
 ;327 DBlk:&25B5
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Flugplatz 
+String1=0x2,Flugplatz
 String2=0x4,Airport
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -381,7 +381,7 @@ Type=0x08
 ;3CA DBlk:&25B9
 ;polygon type: 11
 ;draworder:5
-String1=0x2,Gewerbe 
+String1=0x2,Gewerbe
 String2=0x4,Shopping
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -429,7 +429,7 @@ Type=0x0a
 ;468 DBlk:&25BD
 ;polygon type: 11
 ;draworder:3
-String1=0x2,Universit‰t 
+String1=0x2,Universit‰t
 String2=0x4,University
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -479,7 +479,7 @@ Type=0x0b
 ;50D DBlk:&25C1
 ;polygon type: 11
 ;draworder:3
-String1=0x2,Krankenhaus 
+String1=0x2,Krankenhaus
 String2=0x4,Hospital
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -529,7 +529,7 @@ Type=0x0c
 ;5B0 DBlk:&25C5
 ;polygon type: 11
 ;draworder:3
-String1=0x2,Industriegebiet 
+String1=0x2,Industriegebiet
 String2=0x4,Industrial
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -577,7 +577,7 @@ Type=0x0d
 ;658 DBlk:&25C9
 ;polygon type: 15
 ;draworder:3
-String1=0x2,Naturschutzgebiet 
+String1=0x2,Naturschutzgebiet
 String2=0x4,Nature reserve
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -627,7 +627,7 @@ Type=0x0e
 ;704 DBlk:&25CD
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Baul¸cke 
+String1=0x2,Baul¸cke
 String2=0x4,Brownfield
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -675,7 +675,7 @@ Type=0x0f
 ;7A8 DBlk:&25D1
 ;polygon type: 11
 ;draworder:3
-String1=0x2,Commercial 
+String1=0x2,Commercial
 String2=0x4,Commercial
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -723,7 +723,7 @@ Type=0x10
 ;84B DBlk:&25D5
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Bauland 
+String1=0x2,Bauland
 String2=0x4,Greenfield
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -771,7 +771,7 @@ Type=0x11
 ;8EE DBlk:&25D9
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Baugebiet 
+String1=0x2,Baugebiet
 String2=0x4,Construction
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -819,7 +819,7 @@ Type=0x12
 ;995 DBlk:&25DD
 ;polygon type: 7
 ;draworder:3
-String0=0x2,Fuﬂg‰ngerzone 
+String0=0x2,Fuﬂg‰ngerzone
 String1=0x4,Pedestrian
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -834,7 +834,7 @@ Type=0x13
 ;9B9 DBlk:&25E1
 ;polygon type: 15
 ;draworder:7
-String1=0x2,Geb‰ude 
+String1=0x2,Geb‰ude
 String2=0x4,Building
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -884,7 +884,7 @@ Type=0x14
 ;A55 DBlk:&25E5
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Heide 
+String1=0x2,Heide
 String2=0x4,Heath
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -932,7 +932,7 @@ Type=0x15
 ;AF1 DBlk:&25E9
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Naturwald 
+String1=0x2,Naturwald
 String2=0x4,Natural woodland
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -982,7 +982,7 @@ Type=0x17
 ;B9D DBlk:&25ED
 ;polygon type: 9
 ;draworder:5
-String1=0x2,Park/Garten 
+String1=0x2,Park/Garten
 String2=0x4,Park/Garden
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1030,7 +1030,7 @@ Type=0x18
 ;C45 DBlk:&25F1
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Golfplatz 
+String1=0x2,Golfplatz
 String2=0x4,Golf course
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1078,7 +1078,7 @@ Type=0x19
 ;CEB DBlk:&25F5
 ;polygon type: 7
 ;draworder:4
-String0=0x3,Sport 
+String0=0x3,Sport
 String1=0x4,Sport
 ExtendedLabels=N
 Xpm="0 0 2 0"
@@ -1091,7 +1091,7 @@ Type=0x1a
 ;D01 DBlk:&25F9
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Friedhof 
+String1=0x2,Friedhof
 String2=0x4,Cemetery
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1139,7 +1139,7 @@ Type=0x20
 ;DA3 DBlk:&25FD
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Wald 
+String1=0x2,Wald
 String2=0x4,Forest
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1187,7 +1187,7 @@ Type=0x21
 ;E3F DBlk:&2601
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Nadelwald 
+String1=0x2,Nadelwald
 String2=0x4,coniferous
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1235,7 +1235,7 @@ Type=0x22
 ;EE4 DBlk:&2605
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Laubwald 
+String1=0x2,Laubwald
 String2=0x4,deciduous
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1283,7 +1283,7 @@ Type=0x23
 ;F87 DBlk:&2609
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Mischwald 
+String1=0x2,Mischwald
 String2=0x4,mixed
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1331,7 +1331,7 @@ Type=0x24
 ;1027 DBlk:&260D
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Gerˆll 
+String1=0x2,Gerˆll
 String2=0x4,scree
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1379,7 +1379,7 @@ Type=0x27
 ;10C4 DBlk:&2611
 ;polygon type: 7
 ;draworder:1
-String0=0x2,Land 
+String0=0x2,Land
 String1=0x4,Land
 ExtendedLabels=N
 Xpm="0 0 2 0"
@@ -1392,7 +1392,7 @@ Type=0x2a
 ;10D8 DBlk:&2615
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Acker 
+String1=0x2,Acker
 String2=0x4,Farm
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1440,7 +1440,7 @@ Type=0x2b
 ;1173 DBlk:&2619
 ;polygon type: 15
 ;draworder:2
-String1=0x2,Landwirtschaft 
+String1=0x2,Landwirtschaft
 String2=0x4,Farmyard
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1488,7 +1488,7 @@ Type=0x2c
 ;1215 DBlk:&261D
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Weinanbau 
+String1=0x2,Weinanbau
 String2=0x4,Vineyard
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -1539,7 +1539,7 @@ Type=0x2d
 ;12BC DBlk:&2621
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Steinbruch 
+String1=0x2,Steinbruch
 String2=0x4,Quarry
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1587,7 +1587,7 @@ Type=0x2e
 ;135E DBlk:&2625
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Campingplatz 
+String1=0x2,Campingplatz
 String2=0x4,Camp site
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1635,7 +1635,7 @@ Type=0x35
 ;1405 DBlk:&2629
 ;polygon type: 11
 ;draworder:2
-String1=0x2,Gebirge 
+String1=0x2,Gebirge
 String2=0x4,Fell
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1683,7 +1683,7 @@ Type=0x3c
 ;149F DBlk:&262D
 ;polygon type: 7
 ;draworder:6
-String0=0x2,See 
+String0=0x2,See
 String1=0x4,Lake
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -1700,7 +1700,7 @@ Type=0x3d
 ;14B9 DBlk:&2631
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Strand 
+String1=0x2,Strand
 String2=0x4,Beach
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1748,7 +1748,7 @@ Type=0x3e
 ;1556 DBlk:&2635
 ;polygon type: 7
 ;draworder:6
-String0=0x2,See 
+String0=0x2,See
 String1=0x4,Lake
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -1765,7 +1765,7 @@ Type=0x3f
 ;1570 DBlk:&2639
 ;polygon type: 7
 ;draworder:6
-String0=0x2,Wasserreservoir 
+String0=0x2,Wasserreservoir
 String1=0x4,Water reservoir
 ExtendedLabels=N
 Xpm="0 0 2 0"
@@ -1778,7 +1778,7 @@ Type=0x40
 ;159A DBlk:&263D
 ;polygon type: 7
 ;draworder:6
-String0=0x2,Schwimmbecken 
+String0=0x2,Schwimmbecken
 String1=0x4,Swimmingpool
 ExtendedLabels=N
 Xpm="0 0 2 0"
@@ -1791,7 +1791,7 @@ Type=0x46
 ;15BF DBlk:&2641
 ;polygon type: 7
 ;draworder:6
-String0=0x2,Fluss 
+String0=0x2,Fluss
 String1=0x4,River
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -1808,7 +1808,7 @@ Type=0x4e
 ;15DC DBlk:&2645
 ;polygon type: 9
 ;draworder:4
-String1=0x2,Obstgarten 
+String1=0x2,Obstgarten
 String2=0x4,Orchard
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -1860,7 +1860,7 @@ Type=0x4f
 ;1686 DBlk:&2649
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Geb¸sch 
+String1=0x2,Geb¸sch
 String2=0x4,Scrub
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1908,7 +1908,7 @@ Type=0x50
 ;1724 DBlk:&264D
 ;polygon type: 13
 ;draworder:2
-String1=0x2,Wald 
+String1=0x2,Wald
 String2=0x4,Forest
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -1956,7 +1956,7 @@ Type=0x51
 ;17BD DBlk:&2651
 ;polygon type: 9
 ;draworder:5
-String1=0x2,Feuchtgebiet 
+String1=0x2,Feuchtgebiet
 String2=0x4,Wetland
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2051,7 +2051,7 @@ Type=0x10F00
 ;18F5 DBlk:&2659
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Fussball 
+String1=0x2,Fussball
 String2=0x4,Soccer
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2099,7 +2099,7 @@ Type=0x10F01
 ;1995 DBlk:&265D
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Tennis 
+String1=0x2,Tennis
 String2=0x4,Tennis
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2147,7 +2147,7 @@ Type=0x10F02
 ;1A33 DBlk:&2661
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Mehrzweckplatz 
+String1=0x2,Mehrzweckplatz
 String2=0x4,multi sports
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2195,7 +2195,7 @@ Type=0x10F03
 ;1ADF DBlk:&2665
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Basketball 
+String1=0x2,Basketball
 String2=0x4,Basketball
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2243,7 +2243,7 @@ Type=0x10F04
 ;1B85 DBlk:&2669
 ;polygon type: 9
 ;draworder:6
-String1=0x4,Handball 
+String1=0x4,Handball
 String2=0x2,Handball
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2291,7 +2291,7 @@ Type=0x10F05
 ;1C27 DBlk:&266D
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Boule 
+String1=0x2,Boule
 String2=0x4,Boules
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2339,7 +2339,7 @@ Type=0x10F06
 ;1CC4 DBlk:&2671
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Laufbahn 
+String1=0x2,Laufbahn
 String2=0x4,Track
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2387,7 +2387,7 @@ Type=0x10F07
 ;1D63 DBlk:&2675
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Deponie 
+String1=0x2,Deponie
 String2=0x4,Landfill
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2435,7 +2435,7 @@ Type=0x10F08
 ;1E04 DBlk:&2679
 ;polygon type: 9
 ;draworder:3
-String1=0x2,Kleing‰rten 
+String1=0x2,Kleing‰rten
 String2=0x4,Allotments
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2483,7 +2483,7 @@ Type=0x10F0A
 ;1EAB DBlk:&267D
 ;polygon type: 15
 ;draworder:2
-String1=0x4,Conservation 
+String1=0x4,Conservation
 String2=0x2,Landschaftsschutz
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2531,7 +2531,7 @@ Type=0x10F10
 ;1F54 DBlk:&2681
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Wiese 
+String1=0x2,Wiese
 String2=0x4,Meadow
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2579,7 +2579,7 @@ Type=0x10F11
 ;1FF1 DBlk:&2685
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Gras 
+String1=0x2,Gras
 String2=0x4,Grass
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2627,7 +2627,7 @@ Type=0x10F12
 ;208C DBlk:&2689
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Erholungsgebiet 
+String1=0x2,Erholungsgebiet
 String2=0x4,Recreation ground
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2675,7 +2675,7 @@ Type=0x10F13
 ;213E DBlk:&268D
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Spielplatz 
+String1=0x2,Spielplatz
 String2=0x4,Playground
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2723,7 +2723,7 @@ Type=0x10F14
 ;21E4 DBlk:&2691
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Sand 
+String1=0x2,Sand
 String2=0x4,Sand
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2771,7 +2771,7 @@ Type=0x10F15
 ;227E DBlk:&2695
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Feuchtwiese 
+String1=0x2,Feuchtwiese
 String2=0x4,Wet meadow
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2819,7 +2819,7 @@ Type=0x10F16
 ;2325 DBlk:&2699
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Moor 
+String1=0x2,Moor
 String2=0x4,Bog
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2867,7 +2867,7 @@ Type=0x10F17
 ;23BE DBlk:&269D
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Sumpf 
+String1=0x2,Sumpf
 String2=0x4,Swamp
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2915,7 +2915,7 @@ Type=0x10F18
 ;245A DBlk:&26A1
 ;polygon type: 9
 ;draworder:6
-String1=0x2,Offener Sumpf 
+String1=0x2,Offener Sumpf
 String2=0x4,Marsh
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -2963,7 +2963,7 @@ Type=0x10F19
 ;24FE DBlk:&26A5
 ;polygon type: 9
 ;draworder:6
-String1=0x4,Reedbed 
+String1=0x4,Reedbed
 String2=0x2,Schilf
 ExtendedLabels=N
 Xpm="32 32 4 1"
@@ -3010,7 +3010,7 @@ Xpm="32 32 4 1"
 Type=0x01
 ;26A9
 ;typ=6
-String1=0x2,Autobahn 
+String1=0x2,Autobahn
 String2=0x4,Motorway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3023,7 +3023,7 @@ Xpm="32 1 2 1"
 Type=0x02
 ;26C7
 ;typ=6
-String1=0x4,Trunk 
+String1=0x4,Trunk
 String2=0x2,Schnellstraﬂe
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3036,7 +3036,7 @@ Xpm="32 1 2 1"
 Type=0x03
 ;26E7
 ;typ=6
-String1=0x2,Bundesstraﬂe 
+String1=0x2,Bundesstraﬂe
 String2=0x4,Primary
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3049,7 +3049,7 @@ Xpm="32 1 2 1"
 Type=0x04
 ;2708
 ;typ=6
-String1=0x2,Landes-/Staatsstraﬂe 
+String1=0x2,Landes-/Staatsstraﬂe
 String2=0x4,Secondary
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3062,7 +3062,7 @@ Xpm="32 1 2 1"
 Type=0x05
 ;2733
 ;typ=6
-String1=0x2,Kreisstraﬂe 
+String1=0x2,Kreisstraﬂe
 String2=0x4,Tertiary
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3075,7 +3075,7 @@ Xpm="32 1 2 1"
 Type=0x06
 ;2754
 ;typ=6
-String1=0x2,Wohn-/Gemeinde-/Nebenstraﬂe 
+String1=0x2,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x4,Residential/Unclassified
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3121,7 +3121,7 @@ Xpm="32 1 2 1"
 Type=0x0A
 ;27B0
 ;typ=6
-String1=0x2,Radweg 
+String1=0x2,Radweg
 String2=0x4,Cycleway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3134,7 +3134,7 @@ Xpm="32 1 2 1"
 Type=0x0B
 ;27CC
 ;typ=6
-String1=0x2,Unb. Straﬂe 
+String1=0x2,Unb. Straﬂe
 String2=0x4,Road
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3147,7 +3147,7 @@ Xpm="32 1 2 1"
 Type=0x0C
 ;27E9
 ;typ=6
-String1=0x2,Kreisverkehr 
+String1=0x2,Kreisverkehr
 String2=0x4,Roundabout
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3160,7 +3160,7 @@ Xpm="32 1 2 1"
 Type=0x0D
 ;280D
 ;typ=6
-String1=0x2,Fuﬂweg 
+String1=0x2,Fuﬂweg
 String2=0x4,Footway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3173,7 +3173,7 @@ Xpm="32 1 2 1"
 Type=0x0E
 ;2828
 ;typ=6
-String1=0x2,bef.Feld-o.Waldweg 
+String1=0x2,bef.Feld-o.Waldweg
 String2=0x4,paved Track
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3186,7 +3186,7 @@ Xpm="32 1 2 1"
 Type=0x0F
 ;2853
 ;typ=6
-String1=0x2,Grade2/unbef.Seitenweg 
+String1=0x2,Grade2/unbef.Seitenweg
 String2=0x4,Grade2/Byway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3199,7 +3199,7 @@ Xpm="32 1 2 1"
 Type=0x10
 ;2883
 ;typ=6
-String1=0x2,Grade3 
+String1=0x2,Grade3
 String2=0x4,Grade3
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3212,7 +3212,7 @@ Xpm="32 1 2 1"
 Type=0x11
 ;289D
 ;typ=6
-String1=0x2,Grade4-6/unb. 
+String1=0x2,Grade4-6/unb.
 String2=0x4,Grade4-6/unk.
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3225,7 +3225,7 @@ Xpm="32 1 2 1"
 Type=0x12
 ;28C5
 ;typ=6
-String1=0x2,Wanderweg/Pfad 
+String1=0x2,Wanderweg/Pfad
 String2=0x4,Trail/Path
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3238,7 +3238,7 @@ Xpm="32 1 2 1"
 Type=0x13
 ;28EB
 ;typ=6
-String1=0x2,Stufen 
+String1=0x2,Stufen
 String2=0x4,Steps
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -3252,7 +3252,7 @@ Xpm="32 2 2 1"
 Type=0x14
 ;2908
 ;typ=1
-String1=0x2,Gleis 
+String1=0x2,Gleis
 String2=0x4,Railway
 UseOrientation=N
 Xpm="32 4 4 1"
@@ -3270,7 +3270,7 @@ Xpm="32 4 4 1"
 Type=0x16
 ;2937
 ;typ=0
-String1=0x2,Reitweg 
+String1=0x2,Reitweg
 String2=0x4,Bridleway
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -3280,14 +3280,14 @@ Xpm="32 2 2 1"
 "00001111000011110000111100001111"
 [end]
 
-[_line] 
+[_line]
 Type=0x18
 ;295C
 ;typ=6
 LineWidth=2
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Bach 
+UseOrientation=N
+String1=0x2,Bach
 String2=0x4,Stream
 Xpm="0 0 1 0"
 "0 c #7BCAFF"
@@ -3296,11 +3296,11 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x19
-;2972
+;2971
 ;typ=1
 LineWidth=1
 BorderWidth=1
-String1=0x2,Zeitzone 
+String1=0x2,Zeitzone
 String2=0x4,Time zone
 UseOrientation=N
 Xpm="0 0 4 0"
@@ -3313,9 +3313,9 @@ Xpm="0 0 4 0"
 
 [_line]
 Type=0x1A
-;2998
+;2997
 ;typ=0
-String1=0x2,F‰hre 
+String1=0x2,F‰hre
 String2=0x4,Ferry
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -3327,9 +3327,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x1B
-;29B7
+;29B6
 ;typ=6
-String1=0x2,Unbekannter Typ 
+String1=0x2,Unbekannter Typ
 String2=0x4,Unknown typ
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -3341,7 +3341,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x1C
-;29E3
+;29E2
 ;typ=6
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -3352,9 +3352,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x1D
-;29EC
+;29EB
 ;typ=6
-String1=0x2,Landesgrenze 
+String1=0x2,Landesgrenze
 String2=0x4, Fed.State Boundary
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -3364,31 +3364,31 @@ Xpm="32 2 2 1"
 "00000111000001110000011100000111"
 [end]
 
-[_line] 
+[_line]
 Type=0x1E
-;2A1D
+;2A1C
 ;typ=6
 LineWidth=3
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Staatsgrenze 
+UseOrientation=N
+String1=0x2,Staatsgrenze
 String2=0x4,National Border
 ExtendedLabels=Y
-FontStyle=
+FontStyle=SmallFont
 CustomColor=No
 Xpm="0 0 1 0"
 "0 c #7B00FF"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x1F
 ;2A43
 ;typ=6
 LineWidth=2
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Wasserlauf 
+UseOrientation=N
+String1=0x2,Wasserlauf
 String2=0x4,Water way
 Xpm="0 0 1 0"
 "0 c #7BCAFF"
@@ -3397,9 +3397,9 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x23
-;2A62
+;2A61
 ;typ=1
-String1=0x2,Bach 
+String1=0x2,Bach
 String2=0x4,Stream
 UseOrientation=N
 Xpm="32 1 4 1"
@@ -3412,7 +3412,7 @@ Xpm="32 1 4 1"
 
 [_line]
 Type=0x24
-;2A83
+;2A82
 ;typ=1
 LineWidth=1
 BorderWidth=0
@@ -3428,11 +3428,11 @@ Xpm="0 0 4 0"
 
 [_line]
 Type=0x25
-;2AA0
+;2A9F
 ;typ=1
 LineWidth=3
 BorderWidth=0
-String1=0x2,Wasserweg 
+String1=0x2,Wasserweg
 String2=0x4,Water way
 UseOrientation=N
 Xpm="0 0 4 0"
@@ -3443,14 +3443,14 @@ Xpm="0 0 4 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x27
-;2AC7
+;2AC6
 ;typ=6
 LineWidth=6
 BorderWidth=0
-UseOrientation=Y
-String1=0x4,Runway 
+UseOrientation=N
+String1=0x4,Runway
 String2=0x2,Start/Landebahn
 Xpm="0 0 1 0"
 "0 c #AAAAAA"
@@ -3459,9 +3459,9 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x28
-;2AE8
+;2AE6
 ;typ=7
-String1=0x2,Rohrleitung 
+String1=0x2,Rohrleitung
 String2=0x4,Pipeline
 UseOrientation=N
 Xpm="32 1 4 1"
@@ -3474,9 +3474,9 @@ Xpm="32 1 4 1"
 
 [_line]
 Type=0x29
-;2B0C
+;2B0A
 ;typ=7
-String1=0x2,Stromleitung 
+String1=0x2,Stromleitung
 String2=0x4,Power line
 UseOrientation=N
 Xpm="32 7 4 1"
@@ -3495,10 +3495,10 @@ Xpm="32 7 4 1"
 
 [_line]
 Type=0x2C
-;2B4B
+;2B49
 ;typ=6
-String1=0x2,unbekannter Wegetyp 
-String2=0x1,unknown way
+String1=0x2,unbekannter Wegetyp
+String2=0x4,unknown way
 UseOrientation=N
 Xpm="32 3 2 1"
 "0 c #FF3020"
@@ -3510,9 +3510,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x3A
-;2B7F
+;2B7D
 ;typ=0
-String1=0x2,Wanderweg 
+String1=0x2,Wanderweg
 String2=0x4,Hiking
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -3524,7 +3524,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x3B
-;2BA3
+;2BA1
 ;typ=0
 String1=0x2,Bergwanderweg
 UseOrientation=Y
@@ -3537,7 +3537,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x3C
-;2BC3
+;2BC1
 ;typ=0
 String1=0x2,Erfahrener Bergwanderer
 UseOrientation=N
@@ -3550,7 +3550,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x3D
-;2BED
+;2BEB
 ;typ=0
 String1=0x2,Alpinwandern
 UseOrientation=N
@@ -3563,7 +3563,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x3E
-;2C0C
+;2C0A
 ;typ=0
 String1=0x2,Anspruchsvolles Alpinwandern
 UseOrientation=N
@@ -3576,7 +3576,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x3F
-;2C3B
+;2C39
 ;typ=0
 String1=0x2,Schwieriges Alpinwandern
 UseOrientation=N
@@ -3589,7 +3589,7 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10001
-;2C66
+;2C64
 ;typ=6
 String1=0x2,FIXME
 UseOrientation=N
@@ -3605,9 +3605,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10002
-;2C87
+;2C85
 ;typ=6
-String1=0x2,Tracktype fehlt 
+String1=0x2,Tracktype fehlt
 String2=0x4,Tracktype missing
 UseOrientation=N
 Xpm="32 5 2 1"
@@ -3622,9 +3622,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10003
-;2CC5
+;2CC3
 ;typ=6
-String1=0x2,construction 
+String1=0x2,construction
 String2=0x4,construction
 UseOrientation=N
 Xpm="32 5 2 1"
@@ -3639,9 +3639,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10004
-;2CFB
+;2CF9
 ;typ=6
-String1=0x2,access?? 
+String1=0x2,access??
 String2=0x4,access??
 UseOrientation=N
 Xpm="32 5 2 1"
@@ -3656,9 +3656,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10005
-;2D29
+;2D27
 ;typ=0
-String1=0x4,FIXME TYPE 
+String1=0x4,FIXME TYPE
 String2=0x2,FIXME TYPE
 UseOrientation=N
 Xpm="32 8 2 1"
@@ -3676,9 +3676,9 @@ Xpm="32 8 2 1"
 
 [_line]
 Type=0x10006
-;2D6A
+;2D68
 ;typ=6
-String1=0x2,Notiz 
+String1=0x2,Notiz
 String2=0x4,note
 UseOrientation=N
 Xpm="32 5 2 1"
@@ -3693,9 +3693,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10007
-;2D91
+;2D8F
 ;typ=6
-String1=0x2,name fehlt 
+String1=0x2,name fehlt
 String2=0x4,missing name
 UseOrientation=N
 Xpm="32 5 2 1"
@@ -3710,9 +3710,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10008
-;2DC5
+;2DC3
 ;typ=0
-String1=0x2,FIXME NAME 
+String1=0x2,FIXME NAME
 String2=0x4,FIXME NAME
 UseOrientation=N
 Xpm="32 8 2 1"
@@ -3730,9 +3730,9 @@ Xpm="32 8 2 1"
 
 [_line]
 Type=0x10101
-;2E06
+;2E04
 ;typ=6
-String1=0x2,Autobahnbr¸cke 
+String1=0x2,Autobahnbr¸cke
 String2=0x4,Motorway bridge
 UseOrientation=N
 Xpm="32 8 2 1"
@@ -3750,9 +3750,9 @@ Xpm="32 8 2 1"
 
 [_line]
 Type=0x10102
-;2E4D
+;2E4B
 ;typ=6
-String1=0x2,Br¸cke 
+String1=0x2,Br¸cke
 String2=0x4,Bridge
 UseOrientation=N
 Xpm="32 7 2 1"
@@ -3769,9 +3769,9 @@ Xpm="32 7 2 1"
 
 [_line]
 Type=0x10103
-;2E7F
+;2E7D
 ;typ=6
-String1=0x2,Br¸cke 
+String1=0x2,Br¸cke
 String2=0x4,Bridge
 UseOrientation=N
 Xpm="32 6 2 1"
@@ -3787,9 +3787,9 @@ Xpm="32 6 2 1"
 
 [_line]
 Type=0x10106
-;2EAD
+;2EAB
 ;typ=6
-String1=0x2,Drehscheibe 
+String1=0x2,Drehscheibe
 String2=0x4,Turntable
 UseOrientation=N
 Xpm="32 3 2 1"
@@ -3802,9 +3802,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x10108
-;2ED7
+;2ED5
 ;typ=0
-String1=0x2,Radroute (lcn) 
+String1=0x2,Radroute (lcn)
 String2=0x4,cycleroute (lcn)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3827,9 +3827,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x10109
-;2F36
+;2F34
 ;typ=0
-String1=0x2,Radroute (rcn) 
+String1=0x2,Radroute (rcn)
 String2=0x4,cycleroute (rcn)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3852,9 +3852,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x1010A
-;2F95
+;2F93
 ;typ=0
-String1=0x2,Radroute (ncn+) 
+String1=0x2,Radroute (ncn+)
 String2=0x4,cycleroute (ncn+)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3877,9 +3877,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x1010B
-;2FF6
+;2FF4
 ;typ=0
-String1=0x2,Radroute (ncn+ rcn) 
+String1=0x2,Radroute (ncn+ rcn)
 String2=0x4,cycleroute (ncn+ rcn)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3902,9 +3902,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x1010C
-;305F
+;305D
 ;typ=0
-String1=0x2,Radroute (rcn lcn) 
+String1=0x2,Radroute (rcn lcn)
 String2=0x4,cycleroute (rcn lcn)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3927,9 +3927,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x1010D
-;30C6
+;30C4
 ;typ=0
-String1=0x2,Radroute (ncn+ lcn) 
+String1=0x2,Radroute (ncn+ lcn)
 String2=0x4,cycleroute (ncn+ lcn)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3952,9 +3952,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x1010E
-;312F
+;312D
 ;typ=0
-String1=0x2,Radroute (ncn+ rcn lcn) 
+String1=0x2,Radroute (ncn+ rcn lcn)
 String2=0x4,cycleroute (ncn+ rcn lcn)
 UseOrientation=Y
 Xpm="32 13 2 1"
@@ -3977,9 +3977,9 @@ Xpm="32 13 2 1"
 
 [_line]
 Type=0x1010F
-;31A0
+;319E
 ;typ=0
-String1=0x2,Radroute (rcn) 
+String1=0x2,Radroute (rcn)
 String2=0x4,cycleroute (rcn)
 UseOrientation=Y
 Xpm="32 7 2 1"
@@ -3996,9 +3996,9 @@ Xpm="32 7 2 1"
 
 [_line]
 Type=0x10110
-;31E7
+;31E5
 ;typ=0
-String1=0x2,Radroute (ncn+) 
+String1=0x2,Radroute (ncn+)
 String2=0x4,cycleroute (ncn+)
 UseOrientation=Y
 Xpm="32 7 2 1"
@@ -4015,9 +4015,9 @@ Xpm="32 7 2 1"
 
 [_line]
 Type=0x10111
-;3230
+;322E
 ;typ=0
-String1=0x2,Radroute (rcn lcn) 
+String1=0x2,Radroute (rcn lcn)
 String2=0x4,cycleroute (rcn lcn)
 UseOrientation=Y
 Xpm="32 7 2 1"
@@ -4034,9 +4034,9 @@ Xpm="32 7 2 1"
 
 [_line]
 Type=0x10E00
-;327F
+;327D
 ;typ=6
-String1=0x2,Einbahn 
+String1=0x2,Einbahn
 String2=0x4,One way
 UseOrientation=Y
 Xpm="32 7 2 1"
@@ -4053,9 +4053,9 @@ Xpm="32 7 2 1"
 
 [_line]
 Type=0x10E01
-;32B3
+;32B1
 ;typ=6
-String1=0x2,Stillgelegt 
+String1=0x2,Stillgelegt
 String2=0x4,Disused
 UseOrientation=N
 Xpm="32 3 2 1"
@@ -4068,9 +4068,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x10E02
-;32DB
+;32D9
 ;typ=6
-String1=0x2,Baustelle 
+String1=0x2,Baustelle
 String2=0x4,Construction
 UseOrientation=Y
 Xpm="32 10 2 1"
@@ -4090,9 +4090,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10E03
-;3322
+;3320
 ;typ=6
-String1=0x2,Maut 
+String1=0x2,Maut
 String2=0x4,Toll
 UseOrientation=Y
 Xpm="32 8 2 1"
@@ -4110,9 +4110,9 @@ Xpm="32 8 2 1"
 
 [_line]
 Type=0x10E04
-;3354
+;3352
 ;typ=6
-String1=0x2,In Bau 
+String1=0x2,In Bau
 String2=0x4,Construction
 UseOrientation=N
 Xpm="32 3 2 1"
@@ -4125,9 +4125,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x10E05
-;337C
+;337A
 ;typ=6
-String1=0x2,Autobahntunnel 
+String1=0x2,Autobahntunnel
 String2=0x4,Motorway tunnel
 UseOrientation=N
 Xpm="32 8 2 1"
@@ -4145,9 +4145,9 @@ Xpm="32 8 2 1"
 
 [_line]
 Type=0x10E06
-;33C3
+;33C1
 ;typ=6
-String1=0x2,Tunnel 
+String1=0x2,Tunnel
 String2=0x4,Tunnel
 UseOrientation=N
 Xpm="32 7 2 1"
@@ -4164,7 +4164,7 @@ Xpm="32 7 2 1"
 
 [_line]
 Type=0x10E07
-;33F5
+;33F3
 ;typ=6
 UseOrientation=Y
 Xpm="32 10 2 1"
@@ -4184,9 +4184,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10E08
-;3422
+;3420
 ;typ=6
-String1=0x2,Radfahrstreifen 
+String1=0x2,Radfahrstreifen
 String2=0x4,Cycle lane
 UseOrientation=Y
 Xpm="32 10 2 1"
@@ -4206,9 +4206,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10E09
-;346D
+;346B
 ;typ=6
-String1=0x2,Radfahrstreifen 
+String1=0x2,Radfahrstreifen
 String2=0x4,Cycle lane
 UseOrientation=Y
 Xpm="32 10 2 1"
@@ -4228,9 +4228,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10E0A
-;34B8
+;34B6
 ;typ=6
-String1=0x2,Radfahrstreifen 
+String1=0x2,Radfahrstreifen
 String2=0x4,Cycle lane
 UseOrientation=Y
 Xpm="32 10 2 1"
@@ -4250,9 +4250,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10E0B
-;3503
+;3501
 ;typ=6
-String1=0x2,Reitweg 
+String1=0x2,Reitweg
 String2=0x4,Bridleway
 UseOrientation=Y
 Xpm="32 10 2 1"
@@ -4272,9 +4272,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10E0D
-;3545
+;3543
 ;typ=7
-String1=0x2,Straﬂenbahn 
+String1=0x2,Straﬂenbahn
 String2=0x4,Tram
 UseOrientation=N
 ExtendedLabels=Y
@@ -4292,9 +4292,9 @@ Xpm="32 3 4 1"
 
 [_line]
 Type=0x10E0E
-;356E
+;356C
 ;typ=7
-String1=0x2,Straﬂenbahn 
+String1=0x2,Straﬂenbahn
 String2=0x4,Tram
 UseOrientation=N
 ExtendedLabels=Y
@@ -4312,9 +4312,9 @@ Xpm="32 3 4 1"
 
 [_line]
 Type=0x10E0F
-;3597
+;3595
 ;typ=7
-String1=0x2,Straﬂenbahn 
+String1=0x2,Straﬂenbahn
 String2=0x4,Tram
 UseOrientation=N
 ExtendedLabels=Y
@@ -4334,9 +4334,9 @@ Xpm="32 5 4 1"
 
 [_line]
 Type=0x10E11
-;35C8
+;35C6
 ;typ=6
-String1=0x2,Standseilbahn 
+String1=0x2,Standseilbahn
 String2=0x4,Funicular
 UseOrientation=N
 ExtendedLabels=Y
@@ -4352,9 +4352,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x10E12
-;35F5
+;35F3
 ;typ=6
-String1=0x4,Railway (disused) 
+String1=0x4,Railway (disused)
 String2=0x2,Gleis (unbenutzt)
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4366,9 +4366,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10E13
-;3629
+;3627
 ;typ=1
-String1=0x2,Gleis 
+String1=0x2,Gleis
 String2=0x4,Railway
 UseOrientation=N
 Xpm="32 1 4 1"
@@ -4381,9 +4381,9 @@ Xpm="32 1 4 1"
 
 [_line]
 Type=0x10E14
-;364C
+;364A
 ;typ=1
-String1=0x2,Gleis 
+String1=0x2,Gleis
 String2=0x4,Railway
 UseOrientation=N
 Xpm="32 3 4 1"
@@ -4398,9 +4398,9 @@ Xpm="32 3 4 1"
 
 [_line]
 Type=0x10E15
-;3677
+;3675
 ;typ=6
-String1=0x2,Sessellift 
+String1=0x2,Sessellift
 String2=0x4,Chair lift
 UseOrientation=Y
 ExtendedLabels=Y
@@ -4418,9 +4418,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10E16
-;36AA
+;36A8
 ;typ=6
-String1=0x2,Schlepplift 
+String1=0x2,Schlepplift
 String2=0x4,Drag lift
 UseOrientation=Y
 ExtendedLabels=Y
@@ -4438,9 +4438,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10E17
-;36DD
+;36DB
 ;typ=6
-String1=0x2,Lift 
+String1=0x2,Lift
 String2=0x4,Lift
 UseOrientation=Y
 ExtendedLabels=Y
@@ -4458,9 +4458,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10E18
-;3704
+;3702
 ;typ=6
-String1=0x2,Seilbahn 
+String1=0x2,Seilbahn
 String2=0x4,Cable car
 UseOrientation=Y
 ExtendedLabels=Y
@@ -4478,9 +4478,9 @@ Xpm="32 5 2 1"
 
 [_line]
 Type=0x10E19
-;3734
+;3732
 ;typ=1
-String1=0x2,Eisenbahn 
+String1=0x2,Eisenbahn
 String2=0x4,Rail
 UseOrientation=N
 Xpm="32 4 4 1"
@@ -4496,9 +4496,9 @@ Xpm="32 4 4 1"
 
 [_line]
 Type=0x10E1C
-;3764
+;3762
 ;typ=6
-String1=0x2,Grenze (al< 
+String1=0x2,Grenze (al<
 String2=0x4,Boundary (al<
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4510,9 +4510,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10E1D
-;378E
+;378C
 ;typ=6
-String1=0x2,Grenze (al< 
+String1=0x2,Grenze (al<
 String2=0x4,Boundary (al<
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4524,9 +4524,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10E1E
-;37B8
+;37B6
 ;typ=6
-String1=0x2,Grenze (al> 
+String1=0x2,Grenze (al>
 String2=0x4,Boundary (al>
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4538,9 +4538,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10F00
-;37E2
+;37E0
 ;typ=6
-String1=0x2,Damm/Deich 
+String1=0x2,Damm/Deich
 String2=0x4,Embankment
 UseOrientation=N
 Xpm="32 10 2 1"
@@ -4560,9 +4560,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10F01
-;3828
+;3826
 ;typ=6
-String1=0x2,Einschnitt 
+String1=0x2,Einschnitt
 String2=0x4,Cutting
 UseOrientation=N
 Xpm="32 10 2 1"
@@ -4582,9 +4582,9 @@ Xpm="32 10 2 1"
 
 [_line]
 Type=0x10F02
-;386B
+;3869
 ;typ=0
-String1=0x2,Mauer 
+String1=0x2,Mauer
 String2=0x4,Wall
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4596,9 +4596,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10F03
-;3889
+;3887
 ;typ=0
-String1=0x2,Zaun 
+String1=0x2,Zaun
 String2=0x4,Fence
 UseOrientation=Y
 Xpm="32 3 2 1"
@@ -4611,9 +4611,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x10F04
-;38AB
+;38A9
 ;typ=0
-String1=0x2,Fels 
+String1=0x2,Fels
 String2=0x4,Cliff
 UseOrientation=N
 Xpm="32 3 2 1"
@@ -4626,9 +4626,9 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x10F05
-;38CD
+;38CB
 ;typ=6
-String1=0x2,Steinblˆcke 
+String1=0x2,Steinblˆcke
 String2=0x4,Blocks
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4638,14 +4638,14 @@ Xpm="32 2 2 1"
 "00001111000011110000111100001111"
 [end]
 
-[_line] 
+[_line]
 Type=0x10F08
-;38F0
+;38EE
 ;typ=0
 LineWidth=1
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Staumauer 
+String1=0x2,Staumauer
 String2=0x4,Dam wall
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -4656,14 +4656,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x10F09
-;3911
+;390F
 ;typ=0
 LineWidth=1
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Wehr 
+String1=0x2,Wehr
 String2=0x4,Weir
 ExtendedLabels=Y
 FontStyle=SmallFont
@@ -4676,9 +4676,9 @@ Xpm="0 0 2 0"
 
 [_line]
 Type=0x10F0C
-;3929
+;3927
 ;typ=0
-String1=0x2,Hecke 
+String1=0x2,Hecke
 String2=0x4,Hedge
 UseOrientation=Y
 Xpm="32 2 2 1"
@@ -4690,9 +4690,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x10F0D
-;3948
+;3946
 ;typ=1
-String1=0x2,Plattform/Zugang 
+String1=0x2,Plattform/Zugang
 String2=0x4,Platform
 UseOrientation=N
 Xpm="32 3 4 1"
@@ -4705,14 +4705,14 @@ Xpm="32 3 4 1"
 "01010101010101010101010101010101"
 [end]
 
-[_line] 
+[_line]
 Type=0x11001
-;397F
+;397D
 ;typ=0
 LineWidth=4
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Autobahn 
+String1=0x2,Autobahn
 String2=0x4,Motorway
 Xpm="0 0 2 0"
 "0 c #FFFF00"
@@ -4720,14 +4720,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11002
-;399E
+;399C
 ;typ=0
 LineWidth=4
 BorderWidth=1
 UseOrientation=N
-String1=0x4,Trunk 
+String1=0x4,Trunk
 String2=0x2,Schnellstraﬂe
 Xpm="0 0 2 0"
 "0 c #FF6500"
@@ -4735,14 +4735,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11003
-;39BF
+;39BD
 ;typ=0
 LineWidth=4
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Bundesstraﬂe 
+String1=0x2,Bundesstraﬂe
 String2=0x4,Primary
 Xpm="0 0 2 0"
 "0 c #FF6500"
@@ -4750,14 +4750,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11004
-;39E1
+;39DF
 ;typ=0
 LineWidth=3
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Landes-/Staatsstraﬂe 
+String1=0x2,Landes-/Staatsstraﬂe
 String2=0x4,Secondary
 Xpm="0 0 2 0"
 "0 c #FFCA00"
@@ -4765,14 +4765,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11005
-;3A0D
+;3A0B
 ;typ=0
 LineWidth=3
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Kreisstraﬂe 
+String1=0x2,Kreisstraﬂe
 String2=0x4,Tertiary
 Xpm="0 0 2 0"
 "0 c #FFFF00"
@@ -4780,14 +4780,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11006
-;3A2F
+;3A2D
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=Y
-String1=0x2,Wohn-/Gemeinde-/Nebenstraﬂe 
+String1=0x2,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x4,Residential/Unclassified
 Xpm="0 0 2 0"
 "0 c #FFFFFF"
@@ -4795,14 +4795,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11007
-;3A71
+;3A6F
 ;typ=6
 LineWidth=2
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Zufahrtsweg 
+UseOrientation=N
+String1=0x2,Zufahrtsweg
 String2=0x4,Service
 ExtendedLabels=Y
 FontStyle=Default
@@ -4812,14 +4812,14 @@ Xpm="0 0 1 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x11008
-;3A8E
+;3A8D
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Wohnstraﬂe 
+String1=0x2,Wohnstraﬂe
 String2=0x4,Livingstreet
 Xpm="0 0 2 0"
 "0 c #00FF00"
@@ -4829,9 +4829,9 @@ Xpm="0 0 2 0"
 
 [_line]
 Type=0x1100A
-;3AB3
+;3AB2
 ;typ=0
-String1=0x2,Radweg 
+String1=0x2,Radweg
 String2=0x4,Cycleway
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4843,9 +4843,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x1100B
-;3AD6
+;3AD5
 ;typ=0
-String1=0x2,Unbekannter Track 
+String1=0x2,Unbekannter Track
 String2=0x4,Unknown track
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4857,9 +4857,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x1100D
-;3B09
+;3B08
 ;typ=0
-String1=0x2,Fuﬂweg 
+String1=0x2,Fuﬂweg
 String2=0x4,Footway
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4869,18 +4869,18 @@ Xpm="32 2 2 1"
 "00110011001100110011001100110011"
 [end]
 
-[_line] 
+[_line]
 Type=0x1100E
-;3B2B
+;3B2A
 ;typ=6
 LineWidth=2
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Grade1 
+UseOrientation=N
+String1=0x2,Grade1
 String2=0x4,Grade1
 ExtendedLabels=Y
-FontStyle=
-CustomColor=Night
+FontStyle=Default
+CustomColor=Day
 DaycustomColor:#000003
 Xpm="0 0 1 0"
 "0 c #BD0000"
@@ -4889,9 +4889,9 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x1100F
-;3B42
+;3B45
 ;typ=6
-String1=0x2,Grade2 
+String1=0x2,Grade2
 String2=0x4,Grade2
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4903,9 +4903,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x11010
-;3B60
+;3B63
 ;typ=6
-String1=0x2,Grade3 
+String1=0x2,Grade3
 String2=0x4,Grade3
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4917,9 +4917,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x11011
-;3B7E
+;3B81
 ;typ=6
-String1=0x2,Grade4-6 
+String1=0x2,Grade4-6
 String2=0x4,Grade4-6
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4931,9 +4931,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x11012
-;3BA0
+;3BA3
 ;typ=6
-String1=0x2,Wanderweg/Pfad 
+String1=0x2,Wanderweg/Pfad
 String2=0x4,Trail/Path
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4945,9 +4945,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x11013
-;3BCA
+;3BCD
 ;typ=0
-String1=0x2,Stufen 
+String1=0x2,Stufen
 String2=0x4,Steps
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4959,9 +4959,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x11016
-;3BEA
+;3BED
 ;typ=0
-String1=0x2,Reitweg 
+String1=0x2,Reitweg
 String2=0x4,Bridleway
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -4971,29 +4971,30 @@ Xpm="32 2 2 1"
 "00001111000011110000111100001111"
 [end]
 
-[_line] 
+[_line]
 Type=0x11018
-;3C0F
+;3C12
 ;typ=6
 LineWidth=1
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Bach 
+UseOrientation=N
+String1=0x2,Bach
 String2=0x4,Stream
 ExtendedLabels=Y
 FontStyle=Default
-CustomColor=Night
-DaycustomColor:#00D503
+CustomColor=DayAndNight
+DaycustomColor:#39CAB4
+NightcustomColor:#808080
 Xpm="0 0 1 0"
-"0 c #2EBBB4"
+"0 c #39CAB4"
 
 [end]
 
 [_line]
 Type=0x1101A
-;3C24
+;3C2E
 ;typ=0
-String1=0x2,F‰hre 
+String1=0x2,F‰hre
 String2=0x4,Ferry
 UseOrientation=N
 Xpm="32 2 2 1"
@@ -5005,9 +5006,9 @@ Xpm="32 2 2 1"
 
 [_line]
 Type=0x1101B
-;3C43
+;3C4D
 ;typ=0
-String1=0x2,Fussg‰ngerzone 
+String1=0x2,Fussg‰ngerzone
 String2=0x4,Pedestrian
 UseOrientation=N
 Xpm="32 3 2 1"
@@ -5020,11 +5021,11 @@ Xpm="32 3 2 1"
 
 [_line]
 Type=0x1101F
-;3C74
+;3C7E
 ;typ=7
 LineWidth=1
 BorderWidth=0
-String1=0x2,Wasserlauf 
+String1=0x2,Wasserlauf
 String2=0x4,Water way
 UseOrientation=N
 Xpm="0 0 2 0"
@@ -5033,14 +5034,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12001
-;3C95
+;3C9F
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Autobahn 
+String1=0x2,Autobahn
 String2=0x4,Motorway
 Xpm="0 0 2 0"
 "0 c #FFFF00"
@@ -5048,14 +5049,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12002
-;3CB4
+;3CBE
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x4,Trunk 
+String1=0x4,Trunk
 String2=0x2,Schnellstraﬂe
 Xpm="0 0 2 0"
 "0 c #FF6500"
@@ -5063,14 +5064,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12003
-;3CD5
+;3CDF
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Bundesstraﬂe 
+String1=0x2,Bundesstraﬂe
 String2=0x4,Primary
 Xpm="0 0 2 0"
 "0 c #FF6500"
@@ -5078,14 +5079,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12004
-;3CF7
+;3D01
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Landes-/Staatsstraﬂe 
+String1=0x2,Landes-/Staatsstraﬂe
 String2=0x4,Secondary
 Xpm="0 0 2 0"
 "0 c #FFCA00"
@@ -5093,14 +5094,14 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12005
-;3D23
+;3D2D
 ;typ=0
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x2,Kreisstraﬂe 
+String1=0x2,Kreisstraﬂe
 String2=0x4,Tertiary
 Xpm="0 0 2 0"
 "0 c #FFFF00"
@@ -5108,36 +5109,35 @@ Xpm="0 0 2 0"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12006
-;3D45
+;3D4F
 ;typ=6
 LineWidth=1
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Wohn-/Gemeinde-/Nebenstraﬂe 
+UseOrientation=N
+String1=0x2,Wohn-/Gemeinde-/Nebenstraﬂe
 String2=0x4,Residential/Unclassified
 ExtendedLabels=Y
-FontStyle=
+FontStyle=Default
 CustomColor=No
 Xpm="0 0 1 0"
 "0 c #414141"
 
 [end]
 
-[_line] 
+[_line]
 Type=0x12007
-;3D83
+;3D8E
 ;typ=6
 LineWidth=1
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Zufahrtsweg 
+UseOrientation=N
+String1=0x2,Zufahrtsweg
 String2=0x4,Service
 ExtendedLabels=Y
 FontStyle=Default
-CustomColor=Day
-DaycustomColor:#FF0003
+CustomColor=No
 Xpm="0 0 1 0"
 "0 c #838383"
 
@@ -5145,9 +5145,9 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x12008
-;3DA0
+;3DAC
 ;typ=0
-String1=0x2,Wohnstraﬂe 
+String1=0x2,Wohnstraﬂe
 String2=0x4,Livingstreet
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5158,9 +5158,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x1200A
-;3DC7
+;3DD3
 ;typ=0
-String1=0x2,Radweg 
+String1=0x2,Radweg
 String2=0x4,Cycleway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5171,9 +5171,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x1200D
-;3DE6
+;3DF2
 ;typ=0
-String1=0x2,Fuﬂweg 
+String1=0x2,Fuﬂweg
 String2=0x4,Footway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5182,17 +5182,17 @@ Xpm="32 1 2 1"
 "00110011001100110011001100110011"
 [end]
 
-[_line] 
+[_line]
 Type=0x1200E
-;3E04
+;3E10
 ;typ=6
 LineWidth=1
 BorderWidth=0
-UseOrientation=Y
-String1=0x2,Grade1 
+UseOrientation=N
+String1=0x2,Grade1
 String2=0x4,Grade1
 ExtendedLabels=Y
-FontStyle=
+FontStyle=SmallFont
 CustomColor=Day
 DaycustomColor:#000003
 Xpm="0 0 1 0"
@@ -5202,9 +5202,9 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x1200F
-;3E1B
+;3E2B
 ;typ=6
-String1=0x2,Grade2 
+String1=0x2,Grade2
 String2=0x4,Grade2
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5215,9 +5215,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x12012
-;3E35
+;3E45
 ;typ=6
-String1=0x2,Wanderweg/Pfad 
+String1=0x2,Wanderweg/Pfad
 String2=0x4,Trail/Path
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5228,9 +5228,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x12013
-;3E5B
+;3E6B
 ;typ=0
-String1=0x2,Stufen 
+String1=0x2,Stufen
 String2=0x4,Steps
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5241,9 +5241,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x12016
-;3E77
+;3E87
 ;typ=0
-String1=0x2,Reitweg 
+String1=0x2,Reitweg
 String2=0x4,Bridleway
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5254,9 +5254,9 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x1201B
-;3E98
+;3EA8
 ;typ=0
-String1=0x2,Fussg‰ngerzone 
+String1=0x2,Fussg‰ngerzone
 String2=0x4,Pedestrian
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -5268,10 +5268,10 @@ Xpm="32 1 2 1"
 
 [_point]
 Type=0x01c02
-;&40ED pointers:&119EA
+;&40FD pointers:&B3E6
 ;size: 128
-;bmp:&40FB
-;night_bmp:&4186
+;bmp:&410B
+;night_bmp:&4196
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
 "$ c #838383"
@@ -5321,9 +5321,9 @@ NightXpm="16 16 4 1" Colormode=16
 
 [_point]
 Type=0x01e00
-;&4206 pointers:&119EF
+;&4216 pointers:&B3EB
 ;size: 1
-;bmp:&420E
+;bmp:&421E
 ExtendedLabels=N
 dayxpm="1 1 2 1" colormode=16
 "$ c #FFFFFF"
@@ -5334,9 +5334,9 @@ dayxpm="1 1 2 1" colormode=16
 
 [_point]
 Type=0x02000
-;&420F pointers:&119F4
+;&421F pointers:&B3F0
 ;size: 208
-;bmp:&42BC
+;bmp:&4254
 ExtendedLabels=N
 dayxpm="16 13 16 1" colormode=0
 "$ c #FFFFFF"
@@ -5373,11 +5373,11 @@ dayxpm="16 13 16 1" colormode=0
 
 [_point]
 Type=0x02500
-;&438C pointers:&119F9
-String1=0x02,Mautstelle 
-String2=0x04,Toll booth
+;&4324 pointers:&B3F5
 ;size: 180
-;bmp:&44AE
+;bmp:&437A
+String1=0x2,Mautstelle
+String2=0x4,Toll booth
 ExtendedLabels=N
 dayxpm="20 9 27 1" colormode=0
 "$ c #737373"
@@ -5421,9 +5421,9 @@ dayxpm="20 9 27 1" colormode=0
 
 [_point]
 Type=0x02700
-;&457B pointers:&119FE
+;&4447 pointers:&B3FA
 ;size: 208
-;bmp:&4628
+;bmp:&447C
 ExtendedLabels=N
 dayxpm="16 13 16 1" colormode=0
 "$ c #FFFFFF"
@@ -5460,10 +5460,10 @@ dayxpm="16 13 16 1" colormode=0
 
 [_point]
 Type=0x02900
-;&46F8 pointers:&11A03
+;&454C pointers:&B3FF
 ;size: 128
-;bmp:&4706
-String1=0x2,Poller 
+;bmp:&455A
+String1=0x2,Poller
 String2=0x4,Bollard
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
@@ -5492,10 +5492,10 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x02901
-;&4798 pointers:&11A08
+;&45EC pointers:&B404
 ;size: 128
-;bmp:&47A6
-String1=0x2,Schranke 
+;bmp:&45FA
+String1=0x2,Schranke
 String2=0x4,Lift gate
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
@@ -5524,10 +5524,10 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x02902
-;&483C pointers:&11A0D
+;&4690 pointers:&B409
 ;size: 44
-;bmp:&4847
-String1=0x2,Tor/Gatter 
+;bmp:&469B
+String1=0x2,Tor/Gatter
 String2=0x4,Gate
 ExtendedLabels=N
 dayxpm="16 11 3 1" colormode=16
@@ -5550,10 +5550,10 @@ dayxpm="16 11 3 1" colormode=16
 
 [_point]
 Type=0x02903
-;&4886 pointers:&11A12
+;&46DA pointers:&B40E
 ;size: 64
-;bmp:&4891
-String1=0x2,Umlaufsperre 
+;bmp:&46E5
+String1=0x2,Umlaufsperre
 String2=0x4,Cycle barrier
 ExtendedLabels=N
 dayxpm="16 16 3 1" colormode=16
@@ -5581,11 +5581,9 @@ dayxpm="16 16 3 1" colormode=16
 
 [_point]
 Type=0x02904
-;&48EF pointers:&11A17
-String1=0x02,Bovi-Stop 
-String2=0x04,Cattle grid
-;size: 96
-;bmp:&497E
+;&4743 pointers:&B413;bmp:&4763
+String1=0x2,Bovi-Stop
+String2=0x4,Cattle grid
 ExtendedLabels=N
 dayxpm="16 6 9 1" colormode=0
 "$ c #00CA20"
@@ -5608,13 +5606,16 @@ dayxpm="16 6 9 1" colormode=0
 
 [_point]
 Type=0x02905
-;&49F7 pointers:&11A1C
+;&47AC pointers:&B418
 ;size: 44
-;bmp:&4A02
-String1=0x2,Zaun 
+;bmp:&47B7
+String1=0x2,Zaun
 String2=0x4,Fence
 ExtendedLabels=N
-DayXpm="16 11 3 1" Colormode=16
+dayxpm="16 11 3 1" colormode=16
+"$ c #000000"
+"% c #C5C5C5"
+"& c none"
 "&&&&&&&&&&&&&&&&"
 "&&&&&&&&&&&&&&&&"
 "%%%%%%%%%%%%%%%%"
@@ -5631,33 +5632,36 @@ DayXpm="16 11 3 1" Colormode=16
 
 [_point]
 Type=0x02906
-;&4A3C pointers:&11A21
+;&47F1 pointers:&B41D
 ;size: 44
-;bmp:&4A47
-String1=0x2,Mauer 
+;bmp:&47FC
+String1=0x2,Mauer
 String2=0x4,Wall
 ExtendedLabels=N
-DayXpm="16 11 3 1" Colormode=16
+dayxpm="16 11 3 1" colormode=16
+"$ c #C5C5C5"
+"% c #000000"
+"& c none"
 "&&&&&&&&&&&&&&&&"
 "&&&&&&&&&&&&&&&&"
-"$$$$$$$$$$$$$$$$"
-"$%%$%%$%%$%%$%%$"
-"$$$$$$$$$$$$$$$$"
-"$%$%%$%%$%%$%%$$"
-"$$$$$$$$$$$$$$$$"
-"$%%$%%$%%$%%$%%$"
-"$$$$$$$$$$$$$$$$"
-"$%$%%$%%$%%$%%$$"
-"$$$$$$$$$$$$$$$$"
+"%%%%%%%%%%%%%%%%"
+"%$$%$$%$$%$$%$$%"
+"%%%%%%%%%%%%%%%%"
+"%$%$$%$$%$$%$$%%"
+"%%%%%%%%%%%%%%%%"
+"%$$%$$%$$%$$%$$%"
+"%%%%%%%%%%%%%%%%"
+"%$%$$%$$%$$%$$%%"
+"%%%%%%%%%%%%%%%%"
 [end]
 
 
 [_point]
 Type=0x02907
-;&4A81 pointers:&11A26
+;&4836 pointers:&B422
 ;size: 44
-;bmp:&4A8C
-String1=0x2,Kette/Seil 
+;bmp:&4841
+String1=0x2,Kette/Seil
 String2=0x4,Chain/Rope
 ExtendedLabels=N
 dayxpm="16 11 3 1" colormode=16
@@ -5680,10 +5684,10 @@ dayxpm="16 11 3 1" colormode=16
 
 [_point]
 Type=0x02908
-;&4AD1 pointers:&11A2B
+;&4886 pointers:&B427
 ;size: 44
-;bmp:&4ADC
-String1=0x2,Steinblock 
+;bmp:&4891
+String1=0x2,Steinblock
 String2=0x4,Block
 ExtendedLabels=N
 dayxpm="16 11 3 1" colormode=16
@@ -5706,10 +5710,10 @@ dayxpm="16 11 3 1" colormode=16
 
 [_point]
 Type=0x02909
-;&4B1C pointers:&11A30
+;&48D1 pointers:&B42C
 ;size: 44
-;bmp:&4B27
-String1=0x2,Hecke 
+;bmp:&48DC
+String1=0x2,Hecke
 String2=0x4,Hedge
 ExtendedLabels=N
 dayxpm="16 11 3 1" colormode=16
@@ -5732,11 +5736,11 @@ dayxpm="16 11 3 1" colormode=16
 
 [_point]
 Type=0x02910
-;&4B62 pointers:&11A35
-String1=0x02,Ortsschild 
-String2=0x04,City limit
-;size: 256
-;bmp:&4CA6
+;&4917 pointers:&B431
+;size: 128
+;bmp:&4931
+String1=0x2,Ortsschild
+String2=0x4,City limit
 ExtendedLabels=N
 dayxpm="16 16 6 1" colormode=32
 "$ c #000000" alpha=0
@@ -5766,11 +5770,11 @@ dayxpm="16 16 6 1" colormode=32
 
 [_point]
 Type=0x02911
-;&4DBF pointers:&11A3A
-String1=0x02,Ampel 
-String2=0x04,Traffic signals
+;&49CA pointers:&B436
 ;size: 96
-;bmp:&4EE0
+;bmp:&4A0B
+String1=0x2,Ampel
+String2=0x4,Traffic signals
 ExtendedLabels=N
 dayxpm="6 16 17 1" colormode=32
 "$ c #000000" alpha=0
@@ -5811,11 +5815,11 @@ dayxpm="6 16 17 1" colormode=32
 
 [_point]
 Type=0x02912
-;&4F59 pointers:&11A3F
-String1=0x02,Stopschild 
-String2=0x04,Stop sign
-;size: 256
-;bmp:&5050
+;&4A84 pointers:&B43B
+;size: 128
+;bmp:&4AB3
+String1=0x2,Stopschild
+String2=0x4,Stop sign
 ExtendedLabels=N
 dayxpm="16 16 12 1" colormode=32
 "$ c #000000" alpha=0
@@ -5851,11 +5855,11 @@ dayxpm="16 16 12 1" colormode=32
 
 [_point]
 Type=0x02913
-;&5168 pointers:&11A44
-String1=0x02,Vorfahrt gew‰hren 
-String2=0x04,Give way
+;&4B4B pointers:&B440
 ;size: 64
-;bmp:&5173
+;bmp:&4B56
+String1=0x2,Vorfahrt gew‰hren
+String2=0x4,Give way
 ExtendedLabels=N
 dayxpm="16 16 3 1" colormode=16
 "$ c #FF0000"
@@ -5882,11 +5886,9 @@ dayxpm="16 16 3 1" colormode=16
 
 [_point]
 Type=0x02914
-;&51D1 pointers:&11A49
-String1=0x02,Sackgasse 
-String2=0x04,No exit
-;size: 196
-;bmp:&523F
+;&4BB4 pointers:&B445;bmp:&4BD7
+String1=0x2,Sackgasse
+String2=0x4,No exit
 ExtendedLabels=N
 dayxpm="14 14 10 1" colormode=0
 "$ c #A4A4A4"
@@ -5918,11 +5920,11 @@ dayxpm="14 14 10 1" colormode=0
 
 [_point]
 Type=0x02915
-;&5318 pointers:&11A4E
-String1=0x02,Mini-Kreisverkehr 
-String2=0x04,Mini roundabout
-;size: 256
-;bmp:&5440
+;&4C4E pointers:&B44A
+;size: 128
+;bmp:&4C88
+String1=0x2,Mini-Kreisverkehr
+String2=0x4,Mini roundabout
 ExtendedLabels=N
 dayxpm="16 16 15 1" colormode=32
 "$ c #000000" alpha=0
@@ -5961,11 +5963,11 @@ dayxpm="16 16 15 1" colormode=32
 
 [_point]
 Type=0x02916
-;&5565 pointers:&11A53
-String1=0x02,Ausweichstelle 
-String2=0x04,Passing place
+;&4D2D pointers:&B44F
 ;size: 42
-;bmp:&5570
+;bmp:&4D38
+String1=0x2,Ausweichstelle
+String2=0x4,Passing place
 ExtendedLabels=N
 dayxpm="10 14 3 1" colormode=16
 "$ c #949494"
@@ -5990,10 +5992,10 @@ dayxpm="10 14 3 1" colormode=16
 
 [_point]
 Type=0x02917
-;&55BA pointers:&11A58
+;&4D82 pointers:&B454
 ;size: 28
-;bmp:&55C5
-String1=0x2,Zebrastreifen 
+;bmp:&4D8D
+String1=0x2,Zebrastreifen
 String2=0x4,Crossing
 ExtendedLabels=N
 dayxpm="14 7 3 1" colormode=16
@@ -6012,11 +6014,11 @@ dayxpm="14 7 3 1" colormode=16
 
 [_point]
 Type=0x02918
-;&55FB pointers:&11A5D
-String1=0x02,‹berwachungskamera 
-String2=0x04,Surveillance
-;size: 256
-;bmp:&56BA
+;&4DC3 pointers:&B459
+;size: 128
+;bmp:&4DF6
+String1=0x2,‹berwachungskamera
+String2=0x4,Surveillance
 ExtendedLabels=N
 dayxpm="16 16 13 1" colormode=32
 "$ c #000000" alpha=0
@@ -6053,11 +6055,11 @@ dayxpm="16 16 13 1" colormode=32
 
 [_point]
 Type=0x02b01
-;&57DD pointers:&11A62
-String1=0x02,Hotel 
-String2=0x04,Hotel
+;&4E99 pointers:&B45E
 ;size: 128
-;bmp:&57EE
+;bmp:&4EAA
+String1=0x2,Hotel
+String2=0x4,Hotel
 ExtendedLabels=N
 dayxpm="16 16 5 1" colormode=16
 "$ c #006500"
@@ -6086,11 +6088,11 @@ dayxpm="16 16 5 1" colormode=16
 
 [_point]
 Type=0x02b02
-;&587D pointers:&11A67
-String1=0x02,Gasthaus (B&B) 
-String2=0x04,Guest house (B&B)
+;&4F39 pointers:&B463
 ;size: 256
-;bmp:&59A2
+;bmp:&4F71
+String1=0x2,Gasthaus (B&B)
+String2=0x4,Guest house (B&B)
 ExtendedLabels=N
 dayxpm="16 16 17 1" colormode=0
 "$ c #FFFFFF"
@@ -6131,11 +6133,9 @@ dayxpm="16 16 17 1" colormode=0
 
 [_point]
 Type=0x02b05
-;&5AC6 pointers:&11A6C
-String1=0x02,Hostel 
-String2=0x04,Hostel
-;size: 256
-;bmp:&5B82
+;&5095 pointers:&B468;bmp:&50C7
+String1=0x2,Hostel
+String2=0x4,Hostel
 ExtendedLabels=N
 dayxpm="16 16 15 1" colormode=0
 "$ c #FFFFFF"
@@ -6174,12 +6174,12 @@ dayxpm="16 16 15 1" colormode=0
 
 [_point]
 Type=0x02b06
-;&5C93 pointers:&11A71
-String1=0x00,alpine_hut 
-String2=0x02,Bergh¸tte 
-String3=0x04,alpine hut
-;size: 256
-;bmp:&5CF8
+;&5158 pointers:&B46D
+;size: 128
+;bmp:&5187
+String1=0x0,alpine_hut
+String2=0x2,Bergh¸tte
+String3=0x4,alpine hut
 ExtendedLabels=N
 dayxpm="16 16 15 1" colormode=16
 "$ c #0099DA"
@@ -6218,11 +6218,11 @@ dayxpm="16 16 15 1" colormode=16
 
 [_point]
 Type=0x02b07
-;&5E1C pointers:&11A76
-String1=0x02,Wohnmobilstellplatz 
-String2=0x04,Caravan site
-;size: 160
-;bmp:&5EF0
+;&522B pointers:&B472
+;size: 80
+;bmp:&525E
+String1=0x2,Wohnmobilstellplatz
+String2=0x4,Caravan site
 ExtendedLabels=N
 dayxpm="16 10 13 1" colormode=32
 "$ c #000000" alpha=0
@@ -6253,11 +6253,11 @@ dayxpm="16 10 13 1" colormode=32
 
 [_point]
 Type=0x02b09
-;&5FB4 pointers:&11A7B
-String1=0x02,Chalet, Sennh¸tte 
-String2=0x04,Chalet
+;&52D2 pointers:&B477
 ;size: 256
-;bmp:&6079
+;bmp:&530A
+String1=0x2,Chalet, Sennh¸tte
+String2=0x4,Chalet
 ExtendedLabels=N
 dayxpm="16 16 17 1" colormode=0
 "$ c #FFFFFF"
@@ -6298,11 +6298,11 @@ dayxpm="16 16 17 1" colormode=0
 
 [_point]
 Type=0x02c02
-;&6195 pointers:&11A80
-String1=0x02,Museum 
-String2=0x04,Museum
-;size: 256
-;bmp:&62C7
+;&5426 pointers:&B47C
+;size: 128
+;bmp:&5443
+String1=0x2,Museum
+String2=0x4,Museum
 ExtendedLabels=N
 dayxpm="16 16 9 1" colormode=16
 "$ c #838383"
@@ -6335,11 +6335,11 @@ dayxpm="16 16 9 1" colormode=16
 
 [_point]
 Type=0x02c05
-;&63D8 pointers:&11A85
-String1=0x02,Ausbildung 
-String2=0x04,Education
-;size: 120
-;bmp:&63EF
+;&54D4 pointers:&B481
+;size: 60
+;bmp:&54DC
+String1=0x2,Ausbildung
+String2=0x4,Education
 ExtendedLabels=N
 dayxpm="16 15 2 1" colormode=16
 "$ c #101010"
@@ -6364,15 +6364,15 @@ dayxpm="16 15 2 1" colormode=16
 
 [_point]
 Type=0x02c06
-;&647F pointers:&11A8A
-String1=0x02,Park/Garten 
-String2=0x04,Park/Garden
+;&5530 pointers:&B486
 ;size: 2
-;bmp:&6487
-;Extended at &64A4
+;bmp:&5538
+String1=0x2,Park/Garten
+String2=0x4,Park/Garden
+;Extended at &5555
 ExtendedLabels=Y
 FontStyle=SmallFont
-dayxpm="2 2 1 1" colormode=16
+dayxpm="2 2 2 1" colormode=16
 "$ c #FFFFFF"
 "% c none"
 "%%"
@@ -6382,11 +6382,11 @@ dayxpm="2 2 1 1" colormode=16
 
 [_point]
 Type=0x02c07
-;&64A5 pointers:&11A8F
-String1=0x02,Zoo 
-String2=0x04,Zoo
+;&5556 pointers:&B48B
 ;size: 224
-;bmp:&661D
+;bmp:&5588
+String1=0x2,Zoo
+String2=0x4,Zoo
 ExtendedLabels=N
 dayxpm="16 14 16 1" colormode=16
 "$ c #000000"
@@ -6424,10 +6424,10 @@ dayxpm="16 14 16 1" colormode=16
 
 [_point]
 Type=0x02c0d
-;&6708 pointers:&11A94
+;&5673 pointers:&B490
 ;size: 64
-;bmp:&6710
-String1=0x2,Moschee 
+;bmp:&567B
+String1=0x2,Moschee
 String2=0x4,Mosque
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
@@ -6454,10 +6454,10 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x02c0e
-;&6762 pointers:&11A99
+;&56CD pointers:&B495
 ;size: 64
-;bmp:&676D
-String1=0x2,Kirche 
+;bmp:&56D8
+String1=0x2,Kirche
 String2=0x4,Church
 ExtendedLabels=N
 dayxpm="16 16 3 1" colormode=16
@@ -6485,9 +6485,9 @@ dayxpm="16 16 3 1" colormode=16
 
 [_point]
 Type=0x02c0f
-;&67BE pointers:&11A9E
+;&5729 pointers:&B49A
 ;size: 64
-;bmp:&67C6
+;bmp:&5731
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
 "$ c #101010"
@@ -6513,11 +6513,11 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x02c10
-;&6806 pointers:&11AA3
-String1=0x02,Synagoge 
-String2=0x04,jewish
-;size: 256
-;bmp:&68EB
+;&5771 pointers:&B49F
+;size: 128
+;bmp:&579A
+String1=0x2,Synagoge
+String2=0x4,jewish
 ExtendedLabels=N
 dayxpm="16 16 13 1" colormode=16
 "$ c #949494"
@@ -6554,11 +6554,11 @@ dayxpm="16 16 13 1" colormode=16
 
 [_point]
 Type=0x02c11
-;&69FE pointers:&11AA8
-String1=0x02,Gedenkst‰tte 
-String2=0x04,Memorial
-;size: 112
-;bmp:&6A85
+;&582D pointers:&B4A4
+;size: 64
+;bmp:&584D
+String1=0x2,Gedenkst‰tte
+String2=0x4,Memorial
 ExtendedLabels=N
 dayxpm="7 16 10 1" colormode=16
 "$ c #BDCA23"
@@ -6592,11 +6592,11 @@ dayxpm="7 16 10 1" colormode=16
 
 [_point]
 Type=0x02c1a
-;&6B0E pointers:&11AAD
-String1=0x02,Vermessungspunkt 
-String2=0x04,Survey point
-;size: 144
-;bmp:&6BA0
+;&58A6 pointers:&B4A9
+;size: 80
+;bmp:&58D2
+String1=0x2,Vermessungspunkt
+String2=0x4,Survey point
 ExtendedLabels=N
 dayxpm="9 16 14 1" colormode=16
 "$ c #A7A7A7"
@@ -6634,11 +6634,11 @@ dayxpm="9 16 14 1" colormode=16
 
 [_point]
 Type=0x02d02
-;&6C51 pointers:&11AB2
-String1=0x02,Nachtclub 
-String2=0x04,Night club
+;&5943 pointers:&B4AE
 ;size: 256
-;bmp:&6DD0
+;bmp:&598A
+String1=0x2,Nachtclub
+String2=0x4,Night club
 ExtendedLabels=N
 dayxpm="16 16 23 1" colormode=16
 "$ c #7B3020"
@@ -6685,11 +6685,11 @@ dayxpm="16 16 23 1" colormode=16
 
 [_point]
 Type=0x02e02
-;&6EE8 pointers:&11AB7
-String1=0x02,Lebensmittel 
-String2=0x04,Grocery
+;&5AA2 pointers:&B4B3
 ;size: 256
-;bmp:&7183
+;bmp:&5AE0
+String1=0x2,Lebensmittel
+String2=0x4,Grocery
 ExtendedLabels=N
 dayxpm="16 16 20 1" colormode=16
 "$ c #414141"
@@ -6733,121 +6733,54 @@ dayxpm="16 16 20 1" colormode=16
 
 [_point]
 Type=0x02e03
-;&729B pointers:&11ABC
-String1=0x02,Supermarkt 
-String2=0x04,Supermarket
+;&5BF8 pointers:&B4B8
 ;size: 256
-;bmp:&747A
+;bmp:&5C30
+String1=0x2,Supermarkt
+String2=0x4,Supermarket
 ExtendedLabels=N
-dayxpm="16 16 85 2" colormode=16
-"$$ c #BBA37D"
-"$% c #ECEEEC"
-"$& c #D3D4D3"
-"$' c #514E4B"
-"$( c #585343"
-"$) c #999B97"
-"$* c #E7EAE7"
-"$+ c #B6B6AF"
-"$, c #261E0A"
-"$- c #635A4B"
-"$. c #382D1F"
-"$/ c #2D1B06"
-"$0 c #7B7874"
-"$1 c #E8EAE8"
-"$2 c #CFD2CF"
-"$3 c #211B12"
-"%$ c #C7C8C4"
-"%% c #646355"
-"%& c #1E1200"
-"%' c #BBBEBA"
-"%( c #B6A99F"
-"%) c #B3A39B"
-"%* c #4C4236"
-"%+ c #382418"
-"%, c #998B82"
-"%- c #1E1406"
-"%. c #766358"
-"%/ c #764906"
-"%0 c #AA7812"
-"%1 c #312106"
-"%2 c #865F14"
-"%3 c #B6861F"
-"&$ c #B3821F"
-"&% c #2B1B06"
-"&& c #8F6B18"
-"&' c #8F5F0F"
-"&( c #714200"
-"&) c #956506"
-"&* c #ECB11F"
-"&+ c #C2941F"
-"&, c #F0BE2C"
-"&- c #F8C836"
-"&. c #F8C830"
-"&/ c #C29B26"
-"&0 c #F8C630"
-"&1 c #BE8D18"
-"&2 c #7B4E00"
-"&3 c #996506"
-"'$ c #ECB620"
-"'% c #F0BE26"
-"'& c #F8C83B"
-"'' c #C78D1F"
-"'( c #7F4E00"
-"') c #F4BE26"
-"'* c #C28D18"
-"'+ c #865700"
-"', c #E8AE18"
-"'- c #F0B820"
-"'. c #F8C32B"
-"'/ c #F8C330"
-"'0 c #BE8B18"
-"'1 c #815300"
-"'2 c #926306"
-"'3 c #E2AE14"
-"($ c #E8B11F"
-"(% c #F0B826"
-"(& c #F8C32C"
-"(' c #F4C32C"
-"(( c #BB8612"
-"() c #8B5A00"
-"(* c #DEA40F"
-"(+ c #E2A914"
-"(, c #E7B11F"
-"(- c #ECB61F"
-"(. c #F4B826"
-"(/ c #E8B61F"
-"(0 c #B3820F"
-"(1 c #815706"
-"(2 c #A7750A"
-"(3 c #A7780A"
-")$ c #AA7F0F"
-")% c #AF7F0F"
-")& c #AA780F"
-")' c #8F6306"
-")( c none"
-")()()()()()()()()()()()()()()()("
-")()()()()()()()()()()()()()()()("
-")($%)()()()($&$'$($)$*)()()()()("
-")()()()()($+$,$-$.$/$0$*)()()()("
-")()()($1$2$3%$)()(%%%&%')()()()("
-")()(%(%)%*%+%)%)%)%,%-%.%)%))()("
-")()(%/%0%1%2%3%3%3&$&%&&&'&()()("
-")()(&)&*&+&,&-&.&-&-&/&0&1&2)()("
-")()(&3'$'%&0'&'&&.'&&.&-'''()()("
-")()(&)&*')&0&-&-&-&.&-&-'*'+)()("
-")()(&)','-'.&0&-&-&-&.'/'0'1)()("
-")()('2'3($(%')'.'/(&('')((())()("
-")()('2(*(+(,(-'-(%(.'-(/(0'()()("
-")()((1(2(2(2(3)$)%)$)&)&)'$$)()("
-")()()()()()()()()()()()()()()()("
-")()()()()()()()()()()()()()()()("
+dayxpm="16 16 18 1" colormode=16
+"$ c #F8C330"
+"% c #ECEEEC"
+"& c #CFD2CF"
+"' c #514E4B"
+"( c #E7EAE7"
+") c #635A4B"
+"* c #382D1F"
+"+ c #7B7874"
+", c #E8EAE8"
+"- c #1E1406"
+". c #766358"
+"/ c #7F4E00"
+"0 c #312106"
+"1 c #2B1B06"
+"2 c #C2941F"
+"3 c #F8C32C"
+"4 c #F8C630"
+"5 c none"
+"5555555555555555"
+"5555555555555555"
+"5%5555&''&(55555"
+"55555&')*'+(5555"
+"555,&'&55&'&5555"
+"55&&''&&&&-.&&55"
+"55//0/////1///55"
+"55/2222222222/55"
+"55/2333333332/55"
+"55/2343333332/55"
+"55/23333333$2/55"
+"55/2333333332/55"
+"55/2222222222/55"
+"55////////////55"
+"5555555555555555"
+"5555555555555555"
 [end]
 
 
 [_point]
 Type=0x02e05
-;&7594 pointers:&11AC1;bmp:&759F
-String1=0x2,Apotheke 
+;&5D4A pointers:&B4BD;bmp:&5D55
+String1=0x2,Apotheke
 String2=0x4,Pharmacy
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=0
@@ -6874,11 +6807,11 @@ dayxpm="16 16 2 1" colormode=0
 
 [_point]
 Type=0x02e06
-;&75F4 pointers:&11AC6
-String1=0x02,Nachbarschaftsladen 
-String2=0x04,Convenience
-;size: 192
-;bmp:&7781
+;&5DAA pointers:&B4C2
+;size: 96
+;bmp:&5DC7
+String1=0x2,Nachbarschaftsladen
+String2=0x4,Convenience
 ExtendedLabels=N
 dayxpm="12 16 9 1" colormode=16
 "$ c #FFCA00"
@@ -6911,11 +6844,11 @@ dayxpm="12 16 9 1" colormode=16
 
 [_point]
 Type=0x02e07
-;&7864 pointers:&11ACB
-String1=0x02,Bekleidungsgesch‰ft 
-String2=0x04,Clothes
-;size: 256
-;bmp:&796C
+;&5E4A pointers:&B4C7
+;size: 128
+;bmp:&5E6D
+String1=0x2,Bekleidungsgesch‰ft
+String2=0x4,Clothes
 ExtendedLabels=N
 dayxpm="16 16 11 1" colormode=16
 "$ c #7B658B"
@@ -6950,87 +6883,67 @@ dayxpm="16 16 11 1" colormode=16
 
 [_point]
 Type=0x02e08
-;&7A8B pointers:&11AD0
-String1=0x02,Baumarkt 
-String2=0x04,Do-it-yourself store
+;&5F0C pointers:&B4CC
 ;size: 256
-;bmp:&7CA1
+;bmp:&5F62
+String1=0x2,Baumarkt
+String2=0x4,Do-it-yourself store
 ExtendedLabels=N
-dayxpm="16 16 48 2" colormode=16
-"$$ c #FF6541"
-"$% c #BDCAD5"
-"$& c #949594"
-"$' c #39658B"
-"$( c #7B958B"
-"$) c #101010"
-"$* c #626262"
-"$+ c #A4A4A4"
-"$, c #525252"
-"$- c #7B95B4"
-"$. c #7BCAD5"
-"$/ c #7B95D5"
-"$0 c #E6E6E6"
-"$1 c #202020"
-"$2 c #D5D5D5"
-"$3 c #313731"
-"%$ c #3965B4"
-"%% c #737373"
-"%& c #C5C5C5"
-"%' c #7B656A"
-"%( c #390020"
-"%) c #B4B4B4"
-"%* c #BD656A"
-"%+ c #7B3041"
-"%, c #393020"
-"%- c #00308B"
-"%. c #393041"
-"%/ c #BD6541"
-"%0 c #7B3020"
-"%1 c #838383"
-"%2 c #7B6541"
-"%3 c #7B658B"
-"&$ c #39656A"
-"&% c #FFFFFF"
-"&& c #BD3020"
-"&' c #FFCA41"
-"&( c #FFCA6A"
-"&) c #BD956A"
-"&* c #BD9541"
-"&+ c #BD0000"
-"&, c #FF3020"
-"&- c #7B0000"
-"&. c #FF0000"
-"&/ c #FF3041"
-"&0 c #BD3041"
-"&1 c #7B0020"
-"&2 c #BD0020"
-"&3 c none"
-"&3&3&3&3&3&3&3&3&3&3&3&3$%$%$&&3"
-"&3&3&3&3&3&3&3&3&3&3&3$'$%$%$(&3"
-"&3&3$)$*$*$+$,&3&3&3&3$-$.$/&3&3"
-"&3&3$,$+$0$+&3&3&3&3&3$-$/$-&3&3"
-"&3$1$&$2$2$3&3&3&3&3&3%$$-$'&3&3"
-"&3%%%&$0%'%(&3&3&3&3&3%$$'$'&3&3"
-"$,$+$0%)%*%+%,$)&3&3%-%-%-&3&3&3"
-"%%$2$2%.%+%*%/%0%,%-%-%-%-$'&3&3"
-"$)%1%1&3&3%,%2%*%+$,%%%%%3&$&3&3"
-"&3&3&3&3&3&3$)%+%*%*%+$*$&$*&3&3"
-"&3&3&3&3&3&3&%$&$*%2%*%+%+$1&3&3"
-"&3&3&3&3&3&3&%$&%1%%$,%*%*%+%,&3"
-"&3&3&3&3&3&3&&&'&(&(&)&*%2%*%0&3"
-"&3&3&3&3&3&+&+&+&&&,&&&,&-%,$)&3"
-"&3&3&3&-&-&-&+&+&.&.&.&/&-&3&3&3"
-"&3&0&0%0&1&1&2&&&,&/$$&&&3&3&3&3"
+dayxpm="16 16 28 1" colormode=16
+"$ c #7B0020"
+"% c #3965B4"
+"& c #202020"
+"' c #525252"
+"( c #E6E6E6"
+") c #BD6541"
+"* c #313731"
+"+ c #390020"
+", c #39658B"
+"- c #B4B4B4"
+". c #BD3041"
+"/ c #393020"
+"0 c #101010"
+"1 c #00308B"
+"2 c #D5D5D5"
+"3 c #393041"
+"4 c #7B3041"
+"5 c #838383"
+"6 c #7B6541"
+"7 c #737373"
+"8 c #39656A"
+"9 c #626262"
+": c #FFCA41"
+"; c #7B3020"
+"< c #FF0000"
+"= c #BD3020"
+"> c #7B0000"
+"? c none"
+"????????????%%%?"
+"???????????%%%%?"
+"??&&&&'????%%%??"
+"??'&((?????%%%??"
+"?&&))*?????%%%??"
+"?&&))+?????%,%??"
+"&&&-.)/0??111???"
+"&&234..)/111%,??"
+"0&5??/6.)'77%8??"
+"??????04..)9%9??"
+"????????96.44&??"
+"?????????7'..4/?"
+"??????.:::::6.;?"
+"?????....<=<>/0?"
+"???>>>..<<<<>???"
+"?..;$$..<<<=????"
 [end]
 
 
 [_point]
 Type=0x02e09
-;&7DC2 pointers:&11AD5
-String1=0x02,Mˆbelgesch‰ft 
-String2=0x04,Furniture
+;&6083 pointers:&B4D1
 ;size: 224
-;bmp:&7F87
+;bmp:&60CD
+String1=0x2,Mˆbelgesch‰ft
+String2=0x4,Furniture
 ExtendedLabels=N
 dayxpm="14 16 24 1" colormode=16
 "$ c #232323"
@@ -7078,73 +6991,56 @@ dayxpm="14 16 24 1" colormode=16
 
 [_point]
 Type=0x02e0a
-;&8082 pointers:&11ADA
-String1=0x02,Spezialit‰ten 
-String2=0x04,Speciality Retail
+;&61C8 pointers:&B4D6
 ;size: 256
-;bmp:&814A
+;bmp:&61FD
+String1=0x2,Spezialit‰ten
+String2=0x4,Speciality Retail
 ExtendedLabels=N
-dayxpm="16 16 34 2" colormode=0
-"$$ c #AC39AC"
-"$% c #B74AB7"
-"$& c #B145B1"
-"$' c #B13EB1"
-"$( c #FFFFFF"
-"$) c #D396D3"
-"$* c #F5E7F5"
-"$+ c #F8EFF8"
-"$, c #CA81CA"
-"$- c #EACAEA"
-"$. c #F1DDF1"
-"$/ c #EED7EE"
-"$0 c #F1E3F1"
-"$1 c #EACEEA"
-"$2 c #AC3EAC"
-"$3 c #D8A3D8"
-"%$ c #E0B5E0"
-"%% c #E7C1E7"
-"%& c #D7A3D7"
-"%' c #DEA8DE"
-"%( c #CA7ECA"
-"%) c #B857B8"
-"%* c #E7C7E7"
-"%+ c #C066C0"
-"%, c #E7BAE7"
-"%- c #EAC7EA"
-"%. c #F5E3F5"
-"%/ c #BD61BD"
-"%0 c #C069C0"
-"%1 c #DEAFDE"
-"%2 c #B143B1"
-"%3 c #DEA3DE"
-"&$ c #DEB5DE"
-"&% c #DEB0DE"
-"$$$%$$$$$$$$$$$$$$$$$$$$$&$$$$$$"
-"$$$$$$$$$$$$$$$$$$$'$$$$$$$$$$$$"
-"$$$$$$$$$$$$$$$$$&$($'$$$$$$$$$$"
-"$$$$$$$$$$$$$$$$$)$*$$$$$$$$$$$$"
-"$$$$$$$$$$$$$$$$$+$,$$$$$$$$$$$$"
-"$$$$$$$$$$$$$$$$$($'$$$$$$$$$$$$"
-"$$$$$($-$.$-$.$/$*$0$-$.$1$($1$$"
-"$$$2$/$$$)$$$)$&$$$3$$$)$&%$$$$$"
-"$$$$%%%&$1$3$1%'$3$/$3$1%'$.$3$$"
-"$$$$$/%($)$$$)$&$$$3$$$)%)%*$$$$"
-"$$$$%+%,$/$)%-$/$/$1$/%-%$$)$$$$"
-"$$$$$'%.%'%/%'%0%/%$%/%1%*%+$$$$"
-"%2$$$$%3&$&%&$&%&%%1$3%1%'$'$$$$"
-"%2$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
-"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
-"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
+dayxpm="16 16 17 1" colormode=16
+"$ c #B13EB1"
+"% c #B74AB7"
+"& c #FFFFFF"
+"' c #F5E7F5"
+"( c #F8EFF8"
+") c #D396D3"
+"* c #D8A3D8"
+"+ c #E0B5E0"
+", c #D7A3D7"
+"- c #EACEEA"
+". c #EED7EE"
+"/ c #F5DDF5"
+"0 c #CA7ECA"
+"1 c #E7C7E7"
+"2 c #E7BAE7"
+"3 c #EAC7EA"
+"4 c none"
+"4444444444444444"
+"444444444%444444"
+"44444444%&%44444"
+"44444444%'%44444"
+"44444444(%444444"
+"44444444&%444444"
+"4%%%%%%%%%%%%%%%"
+"4%%4%4)%4*4)%+%%"
+"4%%,%*-%*.*-%/%%"
+"4%%0%4)%4*4)%1%%"
+"4%%2%)3%.-.3%)%%"
+"4%$%%%%%%%%%%%%%"
+"444%%%%%%%%%%$44"
+"4444444444444444"
+"4444444444444444"
+"4444444444444444"
 [end]
 
 
 [_point]
 Type=0x02e0b
-;&826D pointers:&11ADF
-String1=0x02,Computerhandel 
-String2=0x04,Computer store
-;size: 208
-;bmp:&840C
+;&6320 pointers:&B4DB
+;size: 104
+;bmp:&6349
+String1=0x2,Computerhandel
+String2=0x4,Computer store
 ExtendedLabels=N
 dayxpm="16 13 13 1" colormode=16
 "$ c #838383"
@@ -7178,11 +7074,11 @@ dayxpm="16 13 13 1" colormode=16
 
 [_point]
 Type=0x02e0e
-;&84FD pointers:&11AE4
-String1=0x02,Friseur 
-String2=0x04,Hairdresser
+;&63D2 pointers:&B4E0
 ;size: 192
-;bmp:&85E9
+;bmp:&6407
+String1=0x2,Friseur
+String2=0x4,Hairdresser
 ExtendedLabels=N
 dayxpm="12 16 17 1" colormode=16
 "$ c #3B3141"
@@ -7223,11 +7119,11 @@ dayxpm="12 16 17 1" colormode=16
 
 [_point]
 Type=0x02e0f
-;&86C0 pointers:&11AE9
-String1=0x02,Blumenladen 
-String2=0x04,Florist
-;size: 192
-;bmp:&883F
+;&64DE pointers:&B4E5
+;size: 96
+;bmp:&6501
+String1=0x2,Blumenladen
+String2=0x4,Florist
 ExtendedLabels=N
 dayxpm="12 16 11 1" colormode=16
 "$ c #009520"
@@ -7262,11 +7158,11 @@ dayxpm="12 16 11 1" colormode=16
 
 [_point]
 Type=0x02e12
-;&8916 pointers:&11AEE
-String1=0x02,Sportartikel 
-String2=0x04,Sporting goods
+;&6578 pointers:&B4EA
 ;size: 240
-;bmp:&8A56
+;bmp:&65AA
+String1=0x2,Sportartikel
+String2=0x4,Sporting goods
 ExtendedLabels=N
 dayxpm="16 15 16 1" colormode=16
 "$ c #C5C5C5"
@@ -7305,11 +7201,11 @@ dayxpm="16 15 16 1" colormode=16
 
 [_point]
 Type=0x02e13
-;&8B65 pointers:&11AF3
-String1=0x02,Wein und Alkoholika 
-String2=0x04,wine and alcohol
-;size: 240
-;bmp:&8D7D
+;&66B9 pointers:&B4EF
+;size: 128
+;bmp:&66D0
+String1=0x2,Wein und Alkoholika
+String2=0x4,wine and alcohol
 ExtendedLabels=N
 dayxpm="15 16 7 1" colormode=16
 "$ c #7B6520"
@@ -7340,81 +7236,57 @@ dayxpm="15 16 7 1" colormode=16
 
 [_point]
 Type=0x02e14
-;&8E95 pointers:&11AF8
-String1=0x02,B¸cher/Schreibwaren 
-String2=0x04,Books/Stationery
+;&6778 pointers:&B4F4
 ;size: 192
-;bmp:&8F87
+;bmp:&67B0
+String1=0x2,B¸cher/Schreibwaren
+String2=0x4,Books/Stationery
 ExtendedLabels=N
-dayxpm="12 16 42 2" colormode=16
-"$$ c #676767"
-"$% c #E3E3E3"
-"$& c #9E9E9E"
-"$' c #838383"
-"$( c #4B4B4B"
-"$) c #7B7B7B"
-"$* c #D6D6D6"
-"$+ c #EFEFEF"
-"$, c #B7B7B7"
-"$- c #8D8D8D"
-"$. c #5B5B5B"
-"$/ c #575757"
-"$0 c #636363"
-"$1 c #3B3B3B"
-"$2 c #2B2B2B"
-"$3 c #878787"
-"%$ c #ADADAD"
-"%% c #747474"
-"%& c #5F5F5F"
-"%' c #888888"
-"%( c #919191"
-"%) c #D0D0D0"
-"%* c #DBDBDB"
-"%+ c #A8A8A8"
-"%, c #E7E7E7"
-"%- c #CBCBCB"
-"%. c #BEBEBE"
-"%/ c #BBBBBB"
-"%0 c #C3C3C3"
-"%1 c #B2B2B2"
-"%2 c #7C7C7C"
-"%3 c #515151"
-"&$ c #C6C6C6"
-"&% c #A7A7A7"
-"&& c #979797"
-"&' c #DFDFDF"
-"&( c #E8E8E8"
-"&) c #717171"
-"&* c #464646"
-"&+ c #989898"
-"&, c #CFCFCF"
-"&- c none"
-"&-&-&-&-&-$%$&$'$($)$*$+"
-"&-&-$+$,$-$.$)$/$0$1$2$3"
-"$+%$$-%%$0$)%&%'%(%)$+$-"
-"%*$.$($($0%+%,$+$+$+$+%'"
-"%-%.$+$*$&$+$+$+$+$+$+%'"
-"%/%0$+%-%$$+$+$+$+$+$%%("
-"%$%+$+%1%/$+$+$+$+$+$*$&"
-"$&$3%2%3%-$+$+$+$+$+&$&%"
-"&&&'$+&%$*$+$+$+$+$+$,%1"
-"$-&($+&&%,$+$+$+$+$+&%%."
-"$3&($+%'$+$+$+$+$+$+&&$*"
-"$)$%$+%2$+$+$+$+$+$+$3&("
-"%%&)$0&*$+$+$+$+%,&+$'&-"
-"%%$+$+&&$+$+&$$)$'&,&-&-"
-"$)$+$+&&%'$$$&&(&-&-&-&-"
-"&,$)&)$)&$&-&-&-&-&-&-&-"
+dayxpm="12 16 18 1" colormode=16
+"$ c #CFCFCF"
+"% c #E3E3E3"
+"& c #676767"
+"' c #4B4B4B"
+"( c #7B7B7B"
+") c #D7D7D7"
+"* c #EFEFEF"
+"+ c #3B3B3B"
+", c #919191"
+"- c #D0D0D0"
+". c #A8A8A8"
+"/ c #E7E7E7"
+"0 c #BFBFBF"
+"1 c #C3C3C3"
+"2 c #C7C7C7"
+"3 c #DFDFDF"
+"4 c #EBEBEB"
+"5 c none"
+"55555%&&&&&*"
+"55*&&&&&&+&&"
+"*&&&&&&&&&&&"
+"&&'&&&/***&&"
+"&&*&&*****&&"
+"&&*&&*****&&"
+"&&*&&*****&&"
+"&&&&&*****&&"
+"&&*&&*****&&"
+"&&*&&*****&&"
+"&&*&&*****&&"
+"&&*&&*****&&"
+"&&&&&***&&&5"
+"&&*&&&&&&$55"
+"&&*&&&&&5555"
+"5&&&&5555555"
 [end]
 
 
 [_point]
 Type=0x02e15
-;&906F pointers:&11AFD
-String1=0x02,Outdoorladen 
-String2=0x04,Outdoor store
+;&6898 pointers:&B4F9
 ;size: 256
-;bmp:&92CB
+;bmp:&68CD
+String1=0x2,Outdoorladen
+String2=0x4,Outdoor store
 ExtendedLabels=N
 dayxpm="16 16 17 1" colormode=16
 "$ c #39656A"
@@ -7455,11 +7327,11 @@ dayxpm="16 16 17 1" colormode=16
 
 [_point]
 Type=0x02e16
-;&93E9 pointers:&11B02
-String1=0x02,Getr‰nkehandel 
-String2=0x04,Beverages
-;size: 256
-;bmp:&9661
+;&69EB pointers:&B4FE
+;size: 128
+;bmp:&6A17
+String1=0x2,Getr‰nkehandel
+String2=0x4,Beverages
 ExtendedLabels=N
 dayxpm="16 16 14 1" colormode=16
 "$ c #396500"
@@ -7497,11 +7369,11 @@ dayxpm="16 16 14 1" colormode=16
 
 [_point]
 Type=0x02e18
-;&977D pointers:&11B07
-String1=0x02,Elektrohandel 
-String2=0x04,Electronics
-;size: 208
-;bmp:&998C
+;&6AB3 pointers:&B503
+;size: 104
+;bmp:&6AD6
+String1=0x2,Elektrohandel
+String2=0x4,Electronics
 ExtendedLabels=N
 dayxpm="16 13 11 1" colormode=16
 "$ c #949494"
@@ -7533,11 +7405,9 @@ dayxpm="16 13 11 1" colormode=16
 
 [_point]
 Type=0x02e19
-;&9A79 pointers:&11B0C
-String1=0x02,W‰scherei 
-String2=0x04,Laundry
-;size: 176
-;bmp:&9B46
+;&6B5B pointers:&B508;bmp:&6B7B
+String1=0x2,W‰scherei
+String2=0x4,Laundry
 ExtendedLabels=N
 dayxpm="11 16 9 1" colormode=0
 "$ c #737373"
@@ -7570,67 +7440,73 @@ dayxpm="11 16 9 1" colormode=0
 
 [_point]
 Type=0x02f01
-;&9C0B pointers:&11B11
-;size: 112
-;bmp:&9C1F
-String1=0x4,Fuel 
-String2=0x2,Tankstelle
+;&6BF0 pointers:&B50D
+;size: 128
+;bmp:&6C04
+String1=0x2,Tankstelle
+String2=0x4,Fuel
 ExtendedLabels=N
-DayXpm="14 16 6 1" Colormode=16
-")$$$$$$$))))))"
-"'$&&&&&$')))))"
-"'$&''&&$')$$))"
-"'$&&'&&$'$$$$$"
-"'$&&&&&$'))))$"
-"'$$$$$$$'))))$"
-"'$$$$$$$'$$))$"
-"'$%%%%%$')$))$"
-"'$%$%$%$')$))$"
-"'$%$%$%$')$))$"
-"'$%$%$%$')$))$"
-"'$%$%$%$')$))$"
-"'$%$%$%$')$))$"
-"'$%$%$%$')$$$$"
-"'$%$%$%$')))))"
-"'$%%%%%$')))))"
+dayxpm="16 16 6 1" colormode=16
+"$ c #7BCA41"
+"% c #313131"
+"& c #FFCA6A"
+"' c #FF0000"
+"( c #FFCAB4"
+") c none"
+"))))))))))))))))"
+"))))))))))))))))"
+"))))%%%%))))))))"
+")))%%&&&%)))))))"
+"))%%&))&%%%%))))"
+"))%%&((&%%))%)))"
+"))%%&)&&%%)))%))"
+"))%%&&&&%%%%)%))"
+"))%%''''%%)%)%))"
+"))%%'(('%%)%)%))"
+"))%%''''%%)%)%))"
+"))%%''''%%)%)%))"
+"))%%$$$$%%))%)))"
+"))%%$$$$%%))))))"
+"))%%$$$$%%))))))"
+"))%%%%%%%%))))))"
 [end]
 
 
 [_point]
 Type=0x02f03
-;&9CA2 pointers:&11B16
-;size: 80
-;bmp:&9CB0
-String1=0x4,Car/motorcycle repair 
-String2=0x2,Auto-/Motorradwerkstatt
+;&6C97 pointers:&B512
+;size: 48
+;bmp:&6C9F
+String1=0x2,Auto-/Motorradwerkstatt
+String2=0x4,Car/motorcycle repair
 ExtendedLabels=N
-DayXpm="9 16 4 1" Colormode=16
-"''$$$$$''"
+dayxpm="9 16 2 1" colormode=16
+"$ c #202020"
+"% c none"
+"%%$$$$$%%"
 "$$$$$$$$$"
+"%%%$$$%%%"
 "$$$$$$$$$"
-"'''$$$'''"
-"'''$$$'''"
-"'$$$$$$$'"
-"'$$$$$$$'"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
-"'''$$$'''"
+"%$$$$$$$%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
+"%%%$$$%%%"
 [end]
 
 
 [_point]
 Type=0x02f05
-;&9D31 pointers:&11B1B
-String1=0x02,Post 
-String2=0x04,Post
-;size: 256
-;bmp:&9F1C
+;&6D00 pointers:&B517;bmp:&6D11
+String1=0x2,Post
+String2=0x4,Post
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=0
 "$ c #7B6520"
@@ -7658,11 +7534,11 @@ dayxpm="16 16 4 1" colormode=0
 
 [_point]
 Type=0x02f06
-;&A029 pointers:&11B20
-String1=0x01,Bank/ATM
-String2=0x02,Bank/Geldautomat 
-;size: 252
-;bmp:&A05B
+;&6D9E pointers:&B51C
+;size: 126
+;bmp:&6DCD
+String1=0x1,Bank/ATM
+String2=0x2,Bank/Geldautomat
 ExtendedLabels=N
 dayxpm="18 14 15 1" colormode=16
 "$ c #393141"
@@ -7699,13 +7575,13 @@ dayxpm="18 14 15 1" colormode=16
 
 [_point]
 Type=0x02f0b
-;&A174 pointers:&11B25
-String1=0x02,Parkplatz 
-String2=0x04,Parking
+;&6E68 pointers:&B521
 ;size: 1
-;bmp:&A17D
+;bmp:&6E70
+String1=0x2,Parkplatz
+String2=0x4,Parking
 ExtendedLabels=N
-dayxpm="1 1 1 1" colormode=16
+dayxpm="1 1 2 1" colormode=16
 "$ c #FFFFFF"
 "% c none"
 "%"
@@ -7714,11 +7590,9 @@ dayxpm="1 1 1 1" colormode=16
 
 [_point]
 Type=0x02f0c
-;&A193 pointers:&11B2A
-String1=0x02,Parkplatz m. WC/Info 
-String2=0x04,Parking w. WC/Info
-;size: 225
-;bmp:&A270
+;&6E86 pointers:&B526;bmp:&6E9A
+String1=0x2,Parkplatz m. WC/Info
+String2=0x4,Parking w. WC/Info
 ExtendedLabels=N
 dayxpm="15 15 5 1" colormode=0
 "$ c #7B95B4"
@@ -7746,137 +7620,52 @@ dayxpm="15 15 5 1" colormode=0
 
 [_point]
 Type=0x02f0f
-;&A37C pointers:&11B2F
-String1=0x02,Blumenh‰ndler 
-String2=0x04,Florist
-;size: 224
-;bmp:&A4D8
+;&6F3D pointers:&B52B
+;size: 112
+;bmp:&6F66
+String1=0x2,Blumenh‰ndler
+String2=0x4,Florist
 ExtendedLabels=N
-dayxpm="14 16 98 2" colormode=16
-"$$ c #FF9500"
-"$% c #FF30D5"
-"$& c #FF30D5"
-"$' c #FF30D5"
-"$( c #FF30D5"
-"$) c #FF30D5"
-"$* c #FF30D5"
-"$+ c #FF30D5"
-"$, c #FF30D5"
-"$- c #FF30D5"
-"$. c #FF00D5"
-"$/ c #FF30D5"
-"$0 c #FF30D5"
-"$1 c #FF30D5"
-"$2 c #FF30D5"
-"$3 c #FF30D5"
-"%$ c #FF30D5"
-"%% c #FFCA41"
-"%& c #FFFF20"
-"%' c #FF30B4"
-"%( c #FF30D5"
-"%) c #FF30B4"
-"%* c #FFFF20"
-"%+ c #FF956A"
-"%, c #FF30D5"
-"%- c #FF30D5"
-"%. c #FF30D5"
-"%/ c #FF30D5"
-"%0 c #FF30D5"
-"%1 c #FF956A"
-"%2 c #FF956A"
-"%3 c #FF30B4"
-"&$ c #FF30D5"
-"&% c #FF00D5"
-"&& c #396500"
-"&' c #399500"
-"&( c #396500"
-"&) c #003000"
-"&* c #FF30D5"
-"&+ c #FF30D5"
-"&, c #FF30D5"
-"&- c #FF30D5"
-"&. c #BD30B4"
-"&/ c #000000"
-"&0 c #399500"
-"&1 c #399500"
-"&2 c #399500"
-"&3 c #399500"
-"'$ c #396500"
-"'% c #FF30D5"
-"'& c #FF30D5"
-"'' c #FF30D5"
-"'( c #396500"
-"') c #396500"
-"'* c #399500"
-"'+ c #399500"
-"', c #399500"
-"'- c #396500"
-"'. c #FF30D5"
-"'/ c #FF30D5"
-"'0 c #FF00D5"
-"'1 c #FF00D5"
-"'2 c #000000"
-"'3 c #396500"
-"($ c #399500"
-"(% c #399500"
-"(& c #396500"
-"(' c #FF9500"
-"(( c #FF9500"
-"() c #BD6500"
-"(* c #399500"
-"(+ c #FF9500"
-"(, c #FF9500"
-"(- c #FF9500"
-"(. c #BD6500"
-"(/ c #7B6500"
-"(0 c #7B6500"
-"(1 c #FF9500"
-"(2 c #FF9500"
-"(3 c #FF9500"
-")$ c #FF9500"
-")% c #FF9500"
-")& c #BD9500"
-")' c #FF9500"
-")( c #FF9500"
-")) c #FF9500"
-")* c #FF9500"
-")+ c #FF9500"
-"), c #FF9500"
-")- c #FF9500"
-"). c #FF9500"
-")/ c #FF9500"
-")0 c #FF9500"
-")1 c #FF9500"
-")2 c #FF9500"
-")3 c #FF9500"
-"*$ c #FF9500"
-"*% c none"
-"*%$%$%$%$%$%$%*%*%*%*%*%*%*%"
-"*%$%$%$%$%$%$%$.*%*%*%*%*%*%"
-"$%$%$%$%$%$%$%$%$%*%*%*%*%*%"
-"$%$%$%%%%&%'$%$%$%*%*%*%*%*%"
-"$%$%%'%&%&%+$%$%$%*%*%*%*%*%"
-"$%$%$%%+%+%'$%$%$.*%&&&'&&&)"
-"$%$%$%$%$%$%$%&.*%&'&'&'&'&&"
-"*%$%$%$%$%$%$%&&&&&'&'&'&&*%"
-"*%*%$%$%$.$.*%*%&&&'&'&&*%*%"
-"*%*%*%*%*%('('()&'('*%*%*%*%"
-"*%*%*%*%('('()(/(/('('*%*%*%"
-"*%*%*%*%('('(')&('('('*%*%*%"
-"*%*%*%*%('('('('('('('*%*%*%"
-"*%*%*%*%('('('('('('('*%*%*%"
-"*%*%*%*%*%('('('('('('*%*%*%"
-"*%*%*%*%*%('('('('('*%*%*%*%"
+dayxpm="14 16 13 1" colormode=16
+"$ c #BD9500"
+"% c #FF30D5"
+"& c #FF00D5"
+"' c #FFCA41"
+"( c #FFFF20"
+") c #396500"
+"* c #399500"
+"+ c #003000"
+", c #BD30B4"
+"- c #FF9500"
+". c #BD6500"
+"/ c #7B6500"
+"0 c none"
+"0%%%%%%0000000"
+"0%%%%%%&000000"
+"%%%%%%%%%00000"
+"%%%'('%%%00000"
+"%%%(('%%%00000"
+"%%%'''%%&0)*)+"
+"%%%%%%%,0****)"
+"0%%%%%%))***)0"
+"00%%&&00)**)00"
+"00000--.*--000"
+"0000--.//--000"
+"0000---$---000"
+"0000-------000"
+"0000-------000"
+"00000------000"
+"00000-----0000"
 [end]
 
 
 [_point]
 Type=0x02f10
-;&A5D1 pointers:&11B34
-String1=0x02,Friseur 
-String2=0x04,Hairdresser
+;&6FEF pointers:&B530
 ;size: 192
-;bmp:&A6BD
+;bmp:&7024
+String1=0x2,Friseur
+String2=0x4,Hairdresser
 ExtendedLabels=N
 dayxpm="12 16 17 1" colormode=16
 "$ c #3B3141"
@@ -7917,12 +7706,12 @@ dayxpm="12 16 17 1" colormode=16
 
 [_point]
 Type=0x02f17
-;&A794 pointers:&11B39
-String1=0x02,Haltestelle 
-String2=0x04,Tram / Bus stop
-;size: 144
-;bmp:&A7E3
-;Extended at &A892
+;&70FB pointers:&B535
+;size: 72
+;bmp:&7112
+String1=0x2,Haltestelle
+String2=0x4,Tram / Bus stop
+;Extended at &7179
 ExtendedLabels=Y
 FontStyle=SmallFont
 dayxpm="12 12 7 1" colormode=16
@@ -7950,10 +7739,10 @@ dayxpm="12 12 7 1" colormode=16
 
 [_point]
 Type=0x02f18
-;&A893 pointers:&11B3E
-String1=0x02,F‰hre
+;&717A pointers:&B53A
 ;size: 256
-;bmp:&A931
+;bmp:&71D3
+String1=0x2,F‰hre
 ExtendedLabels=N
 dayxpm="16 16 29 1" colormode=16
 "$ c #747474"
@@ -8006,11 +7795,11 @@ dayxpm="16 16 29 1" colormode=16
 
 [_point]
 Type=0x02f19
-;&AA39 pointers:&11B43
-String1=0x02,Solarium 
-String2=0x04,Tanning
+;&72DB pointers:&B53F
 ;size: 27
-;bmp:&AA41
+;bmp:&72E3
+String1=0x2,Solarium
+String2=0x4,Tanning
 ExtendedLabels=N
 dayxpm="9 9 2 1" colormode=16
 "$ c #FFFF20"
@@ -8029,11 +7818,11 @@ dayxpm="9 9 2 1" colormode=16
 
 [_point]
 Type=0x02f1a
-;&AA70 pointers:&11B48
-String1=0x02,Abfalleimer 
-String2=0x04,Waste basket
-;size: 240
-;bmp:&AB78
+;&7312 pointers:&B544
+;size: 64
+;bmp:&731A
+String1=0x2,Abfalleimer
+String2=0x4,Waste basket
 ExtendedLabels=N
 dayxpm="15 16 2 1" colormode=16
 "$ c #000000"
@@ -8059,11 +7848,11 @@ dayxpm="15 16 2 1" colormode=16
 
 [_point]
 Type=0x02f1b
-;&AC84 pointers:&11B4D
-String1=0x02,Abfall 
-String2=0x04,Recycling
-;size: 240
-;bmp:&ADCB
+;&7376 pointers:&B549
+;size: 120
+;bmp:&7384
+String1=0x2,Abfall
+String2=0x4,Recycling
 ExtendedLabels=N
 dayxpm="16 15 4 1" colormode=16
 "$ c #39CA6A"
@@ -8090,8 +7879,8 @@ dayxpm="16 15 4 1" colormode=16
 
 [_point]
 Type=0x03002
-;&AECF pointers:&11B52;bmp:&AEDA
-String1=0x2,Krankenhaus 
+;&7410 pointers:&B54E;bmp:&741B
+String1=0x2,Krankenhaus
 String2=0x4,Hospital
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=0
@@ -8118,11 +7907,11 @@ dayxpm="16 16 2 1" colormode=0
 
 [_point]
 Type=0x03003
-;&AF32 pointers:&11B57
-String1=0x02,Rathaus
-String2=0x04,City Hall 
+;&7473 pointers:&B553
 ;size: 256
-;bmp:&B000
+;bmp:&74ED
+String1=0x2,Rathaus
+String2=0x4,City Hall
 ExtendedLabels=N
 dayxpm="16 16 40 2" colormode=16
 "$$ c #5F5F5F"
@@ -8186,11 +7975,11 @@ dayxpm="16 16 40 2" colormode=16
 
 [_point]
 Type=0x03004
-;&B115 pointers:&11B5C
-String1=0x02,Gericht 
-String2=0x04,Courthouse
+;&7602 pointers:&B558
 ;size: 176
-;bmp:&B210
+;bmp:&7634
+String1=0x2,Gericht
+String2=0x4,Courthouse
 ExtendedLabels=N
 dayxpm="16 11 16 1" colormode=16
 "$ c #000000"
@@ -8225,11 +8014,11 @@ dayxpm="16 11 16 1" colormode=16
 
 [_point]
 Type=0x03008
-;&B2D6 pointers:&11B61
-String1=0x02,Feuerwehr 
-String2=0x04,Firebrigade
+;&76FA pointers:&B55D
 ;size: 128
-;bmp:&B3DE
+;bmp:&7744
+String1=0x2,Feuerwehr
+String2=0x4,Firebrigade
 ExtendedLabels=N
 dayxpm="16 8 24 1" colormode=16
 "$ c #C5C5C5"
@@ -8269,9 +8058,9 @@ dayxpm="16 8 24 1" colormode=16
 
 [_point]
 Type=0x03009
-;&B477 pointers:&11B66;bmp:&B482
-String1=0x02,Haftanstalt 
-String2=0x04,Prison
+;&77DD pointers:&B562;bmp:&77E8
+String1=0x2,Haftanstalt
+String2=0x4,Prison
 ExtendedLabels=N
 dayxpm="12 14 2 1" colormode=0
 "$ c #FFFFFF"
@@ -8295,11 +8084,11 @@ dayxpm="12 14 2 1" colormode=0
 
 [_point]
 Type=0x0301a
-;&B4C2 pointers:&11B6B
-String1=0x02,Arzt 
-String2=0x04,Doctors
-;size: 256
-;bmp:&B5AB
+;&7828 pointers:&B567
+;size: 128
+;bmp:&7842
+String1=0x2,Arzt
+String2=0x4,Doctors
 ExtendedLabels=N
 dayxpm="16 16 8 1" colormode=16
 "$ c #FF0000"
@@ -8331,11 +8120,11 @@ dayxpm="16 16 8 1" colormode=16
 
 [_point]
 Type=0x0301b
-;&B6BB pointers:&11B70
-String1=0x02,Zahnarzt 
-String2=0x04,Dentist
+;&78D2 pointers:&B56C
 ;size: 256
-;bmp:&B7C7
+;bmp:&79B5
+String1=0x2,Zahnarzt
+String2=0x4,Dentist
 ExtendedLabels=N
 dayxpm="16 16 75 2" colormode=16
 "$$ c #525252"
@@ -8434,68 +8223,11 @@ dayxpm="16 16 75 2" colormode=16
 
 [_point]
 Type=0x0301c
-;&B8DB pointers:&11B75
-String1=0x02,Tierarzt 
-String2=0x04,Veterinary
+;&7AC9 pointers:&B571
 ;size: 256
-;bmp:&BAD8
-ExtendedLabels=N
-dayxpm="16 16 29 1" colormode=16
-"$ c #838383"
-"% c #BD3020"
-"& c #BD958B"
-"' c #7B0020"
-"( c #B4B4B4"
-") c #7B3041"
-"* c #BD3041"
-"+ c #BD656A"
-", c #FF95B4"
-"- c #FFFFFF"
-". c #390000"
-"/ c #101010"
-"0 c #525252"
-"1 c #7B6541"
-"2 c #7B656A"
-"3 c #393020"
-"4 c #C5C5C5"
-"5 c #FF3041"
-"6 c #FF656A"
-"7 c #BD0020"
-"8 c #7B3020"
-"9 c #202020"
-": c #E6E6E6"
-"; c #BD658B"
-"< c #D5D5D5"
-"= c #390020"
-"> c #BD95B4"
-"? c #BD6541"
-"@ c none"
-"@@@@%%%&%%%%@@@@"
-"@@%%%%'()*)+,--@"
-"@%%%%./01232&&4@"
-"@%%%'.%-*%%5556@"
-"%%%%7/%-*%%%%%%%"
-"%%%%%./-8%%%%%%%"
-"%%%%%%8-9.%%%%%%"
-"*+*%%%%:8/%%%++*"
-"*::*%%.9.7%%*-:*"
-"%;-(%7@-*%%%<-+%"
-"%%4-+%=-8%%&->%%"
-"%%*::*%-3.?-<%%%"
-"@%%+-4%-3=<-?%%@"
-"@%%%(-$2.&-&%%%@"
-"@@%%*:-++-4%%%@@"
-"@@@@%+&&&>*%@@@@"
-[end]
-
-
-[_point]
-Type=0x0301c
-;&BBEF pointers:&11B7A
-String1=0x02,Tierarzt 
-String2=0x04,Veterinary
-;size: 256
-;bmp:&BDEC
+;bmp:&7B22
+String1=0x2,Tierarzt
+String2=0x4,Veterinary
 ExtendedLabels=N
 dayxpm="16 16 29 1" colormode=16
 "$ c #838383"
@@ -8548,11 +8280,11 @@ dayxpm="16 16 29 1" colormode=16
 
 [_point]
 Type=0x04601
-;&BF04 pointers:&11B7F
-String1=0x02,Kneipe 
-String2=0x04,Pub
+;&7DA9 pointers:&B57B
 ;size: 256
-;bmp:&BF4B
+;bmp:&7DED
+String1=0x2,Kneipe
+String2=0x4,Pub
 ExtendedLabels=N
 dayxpm="16 16 22 1" colormode=16
 "$ c #525252"
@@ -8598,89 +8330,73 @@ dayxpm="16 16 22 1" colormode=16
 
 [_point]
 Type=0x04700
-;&C059 pointers:&11B84
-String1=0x02,Bootsrampe
-String2=0x04,Boat Ramp 
+;&7EFB pointers:&B580
 ;size: 504
-;bmp:&C0E2
+;bmp:&7F54
+String1=0x2,Bootsrampe
+String2=0x4,Boat Ramp
 ExtendedLabels=N
-dayxpm="24 21 45 2" colormode=16
-"$$ c #BDFFB4"
-"$% c #E6E6E6"
-"$& c #000000"
-"$' c #7B3000"
-"$( c #7B3020"
-"$) c #838383"
-"$* c #B4B4B4"
-"$+ c #101010"
-"$, c #BD6541"
-"$- c #7B6520"
-"$. c #390000"
-"$/ c #525252"
-"$0 c #BD3000"
-"$1 c #FF3041"
-"$2 c #FF656A"
-"$3 c #7B6541"
-"%$ c #393020"
-"%% c #393000"
-"%& c #949594"
-"%' c #BD958B"
-"%( c #7B656A"
-"%) c #FFFFFF"
-"%* c #BD3020"
-"%+ c #FF3020"
-"%, c #FF6541"
-"%- c #313731"
-"%. c #A4A4A4"
-"%/ c #FFFFD5"
-"%0 c #D5D5D5"
-"%1 c #414141"
-"%2 c #737373"
-"%3 c #BDCAB4"
-"&$ c #626262"
-"&% c #C5C5C5"
-"&& c #202020"
-"&' c #00306A"
-"&( c #39306A"
-"&) c #393041"
-"&* c #003041"
-"&+ c #7B95B4"
-"&, c #BDCAFF"
-"&- c #00658B"
-"&. c #0065B4"
-"&/ c #00656A"
-"&0 c none"
-"&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0&0"
-"&0&0&0&0&0$%&0&0&0&0&0$&&0&0&0&0&0&0&0&0&0&0&0&0"
-"&0&0&0&0$'$($)$*&0$*$+$+&0&0&0&0&0&0&0&0&0&0&0&0"
-"&0&0&0&0$'$,$-$'$.$&$&$/&0$%&0&0&0&0&0&0&0&0&0&0"
-"&0&0&0$%$($0$1$2$3%$$'%%$.$/%&&0$%&0&0&0&0&0&0&0"
-"&0%'%($%%)$'%*%+$1%,%,$,%*$'%%$.%-%&&0$%&0&0&0&0"
-"&0$($($($)$3$'$0%+%+%+$1$1$1%*$($'%%$.%$%&&0&0&0"
-"$%$)$3$($($($($'$'$0%*%+%+%+%+%+%+%*%*$'$'$.%.&0"
-"%/&0&0&0%'$3$($($'$'$'$'$0%*%*%+%+%+%+%+$0$'$'&0"
-"&0&0&0&0%/&0%0%'$3$($($'%%$'$'$0%*%*%+%+%+$0$,&0"
-"%)%1%1%2%.&0&0&0&0&0%'$+$+%$$.$'$'$'$0$0%+$'%3&0"
-"%)%1%&%2$/%1&$%.&0&0&%$+%&&%$+&&$($'$'$'$'$(&0&0"
-"%)%1%&%.%.%&%2$/%1$/&$$+%&%.$&%&$*$)%$$($'$($)&0"
-"%)%1$)$)$)$)$)$)$)&$$/$+$&$&&&&0&0%/&0&%$)$(%(&0"
-"%)%1&$%2%2%2%2%(%2%2%2&$$/%1%1%1$)$*&0%/&0&0&0&0"
-"%)%1$/$/$/$/$/$/$/$/$/&$$/$/$/$/%1%1%1%2$*&0&0&0"
-"%)%1&'&'&'%1&(&'&'&(%1&'&'&'%1%1&'&'&'&)%1&*&+&,"
-"%)&'&-&.&-&'&-&.&.&/&'&-&.&-&'&/&-&.&-&/&'&/&'%)"
-"%)&'&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&.&-&'%)"
-"%)&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'&'%)"
-"$$%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)%)$%"
+dayxpm="24 21 29 1" colormode=16
+"$ c #00656A"
+"% c #E6E6E6"
+"& c #000000"
+"' c #7B3000"
+"( c #7B3020"
+") c #838383"
+"* c #B4B4B4"
+"+ c #101010"
+", c #BD6541"
+"- c #7B6520"
+". c #525252"
+"/ c #FF3041"
+"0 c #393020"
+"1 c #949594"
+"2 c #BD3020"
+"3 c #390000"
+"4 c #313731"
+"5 c #7B6541"
+"6 c #A4A4A4"
+"7 c #FF3020"
+"8 c #BD3000"
+"9 c #626262"
+": c #202020"
+"; c #0065B4"
+"< c #00306A"
+"= c #414141"
+"> c #39306A"
+"? c #7B95B4"
+"@ c none"
+"@@@@@@@@@@@@@@@@@@@@@@@@"
+"@@@@@%@@@@@&@@@@@@@@@@@@"
+"@@@@'()*@*+&@@@@@@@@@@@@"
+"@@@@',-&&&&.@%@@@@@@@@@@"
+"&&@%',,//0&&&&1@%@@@@@@@"
+"@&&%''',///,2&&341@%@@@@"
+"''&&'5'',/////&&&&301@@@"
+"%)5&&&&'',,,/////&&&&&6@"
+"@@@@@5&&&'',,,,7///78&'@"
+"@@@@@@@@&&&&'',,,,,//8'@"
+"@1111@@@@@@&&&'''',,,,'@"
+"@1111111@@@+1&&&&''''''@"
+"@1111111119&&6&1&&&&&''@"
+"@11111111111&&:@@@@@&&&@"
+"@111111111111111)*@@@@@@"
+"@1111111111111111)))*@@@"
+"@1;<<=><<>=<<<=)))<)))?@"
+"@1;;;<;;;;<;;;<$;;;$<$1@"
+"@1;;;;;;;;;;;;;;;;;;;;1@"
+"@1111111111111111111111@"
+"@@@@@@@@@@@@@@@@@@@@@@@@"
 [end]
 
 
 [_point]
 Type=0x04a00
-;&C2F2 pointers:&11B89
-String1=0x02,Picknick
-String2=0x04,picnic_site 
+;&8164 pointers:&B585
 ;size: 128
-;bmp:&C31B
+;bmp:&818D
+String1=0x2,Picknick
+String2=0x4,picnic_site
 ExtendedLabels=N
 dayxpm="16 16 13 1" colormode=16
 "$ c #838383"
@@ -8717,11 +8433,11 @@ dayxpm="16 16 13 1" colormode=16
 
 [_point]
 Type=0x04b00
-;&C3B3 pointers:&11B8E
-String1=0x02,Krankenhaus 
-String2=0x04,Hospital
-;size: 256
-;bmp:&C483
+;&8225 pointers:&B58A
+;size: 64
+;bmp:&822D
+String1=0x2,Krankenhaus
+String2=0x4,Hospital
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
 "$ c #FF0000"
@@ -8747,8 +8463,8 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x04b01
-;&C59B pointers:&11B93;bmp:&C5A6
-String1=0x2,Rettungsbox 
+;&8285 pointers:&B58F;bmp:&8290
+String1=0x2,Rettungsbox
 String2=0x4,rescue box
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=0
@@ -8775,10 +8491,10 @@ dayxpm="16 16 2 1" colormode=0
 
 [_point]
 Type=0x04c00
-;&C600 pointers:&11B98
+;&82EA pointers:&B594
 ;size: 72
-;bmp:&C614
-String1=0x2,Infotafel 
+;bmp:&82FE
+String1=0x2,Infotafel
 String2=0x4,Infotable
 ExtendedLabels=N
 dayxpm="12 12 6 1" colormode=16
@@ -8805,11 +8521,9 @@ dayxpm="12 12 6 1" colormode=16
 
 [_point]
 Type=0x04d00
-;&C673 pointers:&11B9D
-String1=0x02,Parkplatz 
-String2=0x04,Parking
-;size: 225
-;bmp:&C750
+;&835D pointers:&B599;bmp:&8371
+String1=0x2,Parkplatz
+String2=0x4,Parking
 ExtendedLabels=N
 dayxpm="15 15 5 1" colormode=0
 "$ c #7B95B4"
@@ -8837,11 +8551,9 @@ dayxpm="15 15 5 1" colormode=0
 
 [_point]
 Type=0x04d01
-;&C846 pointers:&11BA2
-String1=0x02,Behindertenparkplatz 
-String2=0x04,Disabled Parking
-;size: 256
-;bmp:&C953
+;&83FE pointers:&B59E;bmp:&8421
+String1=0x2,Behindertenparkplatz
+String2=0x4,Disabled Parking
 ExtendedLabels=N
 dayxpm="16 16 10 1" colormode=0
 "$ c #3930FF"
@@ -8875,11 +8587,9 @@ dayxpm="16 16 10 1" colormode=0
 
 [_point]
 Type=0x04d02
-;&CA7C pointers:&11BA7
-String1=0x02,Parkhaus 
-String2=0x04,Parking
-;size: 255
-;bmp:&CB59
+;&84CA pointers:&B5A3;bmp:&84E4
+String1=0x2,Parkhaus
+String2=0x4,Parking
 ExtendedLabels=N
 dayxpm="15 17 7 1" colormode=0
 "$ c #7B95B4"
@@ -8911,11 +8621,9 @@ dayxpm="15 17 7 1" colormode=0
 
 [_point]
 Type=0x04d03
-;&CC6C pointers:&11BAC
-String1=0x02,Parkplatz (nicht kostenlos) 
-String2=0x04,Parking with fee
-;size: 225
-;bmp:&CD4F
+;&8580 pointers:&B5A8;bmp:&859A
+String1=0x2,Parkplatz (nicht kostenlos)
+String2=0x4,Parking with fee
 ExtendedLabels=N
 dayxpm="15 15 7 1" colormode=0
 "$ c #7B95B4"
@@ -8945,11 +8653,9 @@ dayxpm="15 15 7 1" colormode=0
 
 [_point]
 Type=0x04d04
-;&CE60 pointers:&11BB1
-String1=0x02,Privatparkplatz 
-String2=0x04,Private parking
-;size: 225
-;bmp:&CF3D
+;&8642 pointers:&B5AD;bmp:&8659
+String1=0x2,Privatparkplatz
+String2=0x4,Private parking
 ExtendedLabels=N
 dayxpm="15 15 6 1" colormode=0
 "$ c #7B95B4"
@@ -8978,106 +8684,52 @@ dayxpm="15 15 6 1" colormode=0
 
 [_point]
 Type=0x04e01
-;&D041 pointers:&11BB6
-String1=0x02,Toilette
-String2=0x04,Restroom 
-;size: 576
-;bmp:&D214
+;&86F4 pointers:&B5B2
+;size: 288
+;bmp:&8705
+String1=0x2,Toilette
+String2=0x4,Restroom
 ExtendedLabels=N
-dayxpm="24 24 58 2" colormode=16
-"$$ c #AEAEAE"
-"$% c #DFDFDF"
-"$& c #929292"
-"$' c #5D5D5D"
-"$( c #AAAAAA"
-"$) c #E8E8E8"
-"$* c #BABABA"
-"$+ c #7C7C7C"
-"$, c #A3A3A3"
-"$- c #EFEFEF"
-"$. c #666666"
-"$/ c #838383"
-"$0 c #D9D9D9"
-"$1 c #0C0C0C"
-"$2 c #000000"
-"$3 c #383838"
-"%$ c #4F4F4F"
-"%% c #CECECE"
-"%& c #535353"
-"%' c #121212"
-"%( c #848484"
-"%) c #E5E5E5"
-"%* c #9B9B9B"
-"%+ c #313131"
-"%, c #B4B4B4"
-"%- c #050505"
-"%. c #C3C3C3"
-"%/ c #474747"
-"%0 c #747474"
-"%1 c #E1E1E1"
-"%2 c #C5C5C5"
-"%3 c #202020"
-"&$ c #6F6F6F"
-"&% c #D3D3D3"
-"&& c #3E3E3E"
-"&' c #C9C9C9"
-"&( c #B2B2B2"
-"&) c #898989"
-"&* c #8F8F8F"
-"&+ c #7B7B7B"
-"&, c #D7D7D7"
-"&- c #5A5A5A"
-"&. c #080808"
-"&/ c #373737"
-"&0 c #282828"
-"&1 c #1E1E1E"
-"&2 c #161616"
-"&3 c #484848"
-"'$ c #959595"
-"'% c #A4A4A4"
-"'& c #242424"
-"'' c #BFBFBF"
-"'( c #2C2C2C"
-"') c #6B6B6B"
-"'* c #565656"
-"'+ c #626262"
-"', c #9D9D9D"
-"'- c none"
-"'-'-'-$%$&$'$($)'-'-'-$*$+$,$-'-'-$-$*$.$/$0'-'-"
-"'-'-$-$,$1$2$3$*'-'-'-$/$2%$$)'-$-%%%&$2%'%(%)'-"
-"'-'-$-%*$2$2%+%,'-'-'-$/%-%$$)'-$-%.%/$2$1%0%1'-"
-"'-'-$-%2%$%3&$&%'-'-'-$/%-%$$)'-'-%)$/%3&&$*$-'-"
-"'-$-%)$*%*$/$,&'$)'-'-$/%-%$$)$-$0&($,&)&*$(%.$)"
-"'-$)&+%-$2$2$2%+$($)'-$/%-%$$)&,$'%-$2$2$2$2'-%*"
-"'-%%$1$2$2$2$2$2&-&,'-$/%-%$$)%,&.$2$2$2$2$2$2&/"
-"$-$,&.&0$2$2%'&1&&$*$-$/%-%$%)$($1&2%-$2$2$1&2&1"
-"$-&-%'&3$2$2&1&/&0'$$)$/%-%$$)'%'-%+&.$2$2'-&/&1"
-"$-'-'&&/$2$2%'%+&1%0%1%(%-%$%)'%'-%+&.$2$2'-&/&1"
-"''&.%/&.$2$2$2'&'(%&&,&)%-%$%)'%'-%+&.$2$2'-&/&1"
-"')&.'*$2$2$2$2'&&/&0$*&)%-%$%)'%'-%+&.$2$2'-&/&1"
-"$+&/%/$2$2$2$2'-&&%$''%(%-%$%)$,'-%+&.$2$2'-%+'-"
-"$)%.$1$2$2$2$2$2'*%%$-%(%-%$$)%.&-'*&.%'&.'&$.'+"
-"'-$($2$2$2$2$2$2&&%.$-$/%-%$$)$-$)&)&.&/&1'(%.$-"
-"$-'+$2$2$2$2$2$2&1%*$)$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-&%$*$.%'%+%+$/%.$%$-$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-'-%)$+&2$3$3$,$-'-'-$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-'-%1&+&2$3&/',$-'-'-$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-'-%1&+&2$3&/',$-'-'-$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-'-%1&+&2$3&/',$-'-'-$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-'-%1&+&2&/&/',$-'-'-$/%-%$$)'-$-&)&.&/&1'(%2$-"
-"'-'-%)$/&2&/&/$,$-'-'-$/$2&3$)'-$-&*&.&&%3'(&'$-"
-"'-'-$-$$')&)$+%.$-'-'-$$'+&*$-'-$-''&$'$&+$/$%'-"
+dayxpm="24 24 5 1" colormode=16
+"$ c #EFEFEF"
+"% c #E1E1E1"
+"& c #000000"
+"' c #202020"
+"( c none"
+"((((((((((%&&%(((((((((("
+"((((&&&(((%&&%(((&&&(((("
+"((((&&&(((%&&%(((&&&(((("
+"((((&&&(((%&&%(((&&&(((("
+"((((&&&(((%&&%(((&&&(((("
+"(((((&((((%&&%((((&((((("
+"((((&&&(((%&&%(((&&&(((("
+"((('''''((%&&%((&&&&&((("
+"(('''''''(%&&%(&&&&&&&(("
+"(('''''''(%&&%('''''''(("
+"(('''''''(%&&%('''''''(("
+"(('''''''(%&&%('''''''(("
+"(('''''''(%&&%('''''''(("
+"(('''''''(%&&%('''''''(("
+"((('''''((%&&%('''''''(("
+"((&'''''&(%&&%((''(''((("
+"(&&'''''&&%&&%((''(''((("
+"(&'''''''&$&&%((''(''((("
+"(&&''&''&&%&&%((''(&'((("
+"(((''(''((%&&%((''(&'(($"
+"(((''(''((%&&%((''(&'((("
+"(((''(''((%&&%((''(&'((("
+"(((''(''((%&&%((''(&'(($"
+"(((''(''((%&&%((''(&'((("
 [end]
 
 
 [_point]
 Type=0x05100
-;&D469 pointers:&11BBB
-String1=0x02,Telefon 
-String2=0x04,Phone
-;size: 192
-;bmp:&D540
-;night_bmp:&D6D4
+;&883A pointers:&B5B7
+;size: 48
+;bmp:&8842
+String1=0x2,Telefon
+String2=0x4,Phone
 ExtendedLabels=N
 dayxpm="12 16 2 1" colormode=16
 "$ c #313131"
@@ -9103,11 +8755,11 @@ dayxpm="12 16 2 1" colormode=16
 
 [_point]
 Type=0x05101
-;&D7A5 pointers:&11BC0
-String1=0x02,Notruftelefon 
-String2=0x04,Emergency phone
-;size: 256
-;bmp:&D8E9
+;&8883 pointers:&B5BC
+;size: 128
+;bmp:&88AF
+String1=0x2,Notruftelefon
+String2=0x4,Emergency phone
 ExtendedLabels=N
 dayxpm="16 16 11 1" colormode=32
 "$ c #FF0041" alpha=0
@@ -9142,11 +8794,11 @@ dayxpm="16 16 11 1" colormode=32
 
 [_point]
 Type=0x05102
-;&DA0A pointers:&11BC5
-String1=0x02,Rettungspunkt 
-String2=0x04,Emergency access point
+;&8950 pointers:&B5C1
 ;size: 256
-;bmp:&DAD8
+;bmp:&8985
+String1=0x2,Rettungspunkt
+String2=0x4,Emergency access point
 ExtendedLabels=N
 dayxpm="16 16 16 1" colormode=0
 "$ c #399541"
@@ -9186,11 +8838,11 @@ dayxpm="16 16 16 1" colormode=0
 
 [_point]
 Type=0x05103
-;&DC00 pointers:&11BCA
-String1=0x02,Funkmast 
-String2=0x04,Comm Mast
+;&8AAD pointers:&B5C6
 ;size: 144
-;bmp:&DC0E
+;bmp:&8ABB
+String1=0x2,Funkmast
+String2=0x4,Comm Mast
 ExtendedLabels=N
 dayxpm="12 24 4 1" colormode=16
 "$ c #A4A4A4"
@@ -9226,9 +8878,11 @@ dayxpm="12 24 4 1" colormode=16
 
 [_point]
 Type=0x05201
-;&DCB4 pointers:&11BCF;bmp:&DCC8
-String1=0x02,Schloss 
-String2=0x04,Castle
+;&8B61 pointers:&B5CB
+;size: 66
+;bmp:&8B72
+String1=0x2,Schloss
+String2=0x4,Castle
 ExtendedLabels=N
 dayxpm="12 11 5 1" colormode=16
 "$ c #414141"
@@ -9252,11 +8906,11 @@ dayxpm="12 11 5 1" colormode=16
 
 [_point]
 Type=0x05202
-;&DD1C pointers:&11BD4
-String1=0x02,Ruine 
-String2=0x04,Ruins
-;size: 256
-;bmp:&DDC2
+;&8BC6 pointers:&B5D0
+;size: 128
+;bmp:&8BE3
+String1=0x2,Ruine
+String2=0x4,Ruins
 ExtendedLabels=N
 dayxpm="16 16 9 1" colormode=16
 "$ c #009500"
@@ -9289,11 +8943,11 @@ dayxpm="16 16 9 1" colormode=16
 
 [_point]
 Type=0x05203
-;&DED1 pointers:&11BD9
-String1=0x01,Fort
-String2=0x02,Fort 
+;&8C72 pointers:&B5D5
 ;size: 48
-;bmp:&DED9
+;bmp:&8C7A
+String1=0x1,Fort
+String2=0x2,Fort
 ExtendedLabels=N
 dayxpm="16 12 2 1" colormode=16
 "$ c #101010"
@@ -9315,10 +8969,10 @@ dayxpm="16 12 2 1" colormode=16
 
 [_point]
 Type=0x05204
-;&DF16 pointers:&11BDE
+;&8CB7 pointers:&B5DA
 ;size: 48
-;bmp:&DF1E
-String1=0x2,Stadttor 
+;bmp:&8CBF
+String1=0x2,Stadttor
 String2=0x4,City gate
 ExtendedLabels=N
 dayxpm="16 12 2 1" colormode=16
@@ -9341,12 +8995,12 @@ dayxpm="16 12 2 1" colormode=16
 
 [_point]
 Type=0x05205
-;&DF64 pointers:&11BE3
+;&8D05 pointers:&B5DF
 ;size: 80
-;bmp:&DF72
-String1=0x2,Monument 
+;bmp:&8D13
+String1=0x2,Monument
 String2=0x4,Monument
-;Extended at &DFD7
+;Extended at &8D78
 ExtendedLabels=Y
 FontStyle=SmallFont
 dayxpm="10 16 4 1" colormode=16
@@ -9375,10 +9029,10 @@ dayxpm="10 16 4 1" colormode=16
 
 [_point]
 Type=0x05206
-;&DFD8 pointers:&11BE8
+;&8D79 pointers:&B5E4
 ;size: 42
-;bmp:&DFE3
-String1=0x2,Wegkreuz 
+;bmp:&8D84
+String1=0x2,Wegkreuz
 String2=0x4,Wayside Cross
 ExtendedLabels=N
 dayxpm="10 14 3 1" colormode=16
@@ -9404,10 +9058,10 @@ dayxpm="10 14 3 1" colormode=16
 
 [_point]
 Type=0x05207
-;&E027 pointers:&11BED
+;&8DC8 pointers:&B5E9
 ;size: 70
-;bmp:&E035
-String1=0x2,Bildstock 
+;bmp:&8DD6
+String1=0x2,Bildstock
 String2=0x4,Wayside shrine
 ExtendedLabels=N
 dayxpm="10 14 4 1" colormode=16
@@ -9434,10 +9088,10 @@ dayxpm="10 14 4 1" colormode=16
 
 [_point]
 Type=0x05400
-;&E097 pointers:&11BF2
+;&8E38 pointers:&B5EE
 ;size: 128
-;bmp:&E0AB
-String1=0x2,Spielfeld 
+;bmp:&8E4C
+String1=0x2,Spielfeld
 String2=0x4,Pitch
 ExtendedLabels=N
 dayxpm="16 16 6 1" colormode=16
@@ -9468,11 +9122,11 @@ dayxpm="16 16 6 1" colormode=16
 
 [_point]
 Type=0x05401
-;&E13E pointers:&11BF7
-String1=0x02,Fuﬂball 
-String2=0x04,Soccer
+;&8EDF pointers:&B5F3
 ;size: 256
-;bmp:&E176
+;bmp:&8F17
+String1=0x2,Fuﬂball
+String2=0x4,Soccer
 ExtendedLabels=N
 dayxpm="16 16 18 1" colormode=16
 "$ c #949494"
@@ -9514,11 +9168,11 @@ dayxpm="16 16 18 1" colormode=16
 
 [_point]
 Type=0x05402
-;&E288 pointers:&11BFC
-String1=0x02,Volleyball 
-String2=0x04,Volleyball
+;&9029 pointers:&B5F8
 ;size: 400
-;bmp:&E2BA
+;bmp:&905B
+String1=0x2,Volleyball
+String2=0x4,Volleyball
 ExtendedLabels=N
 dayxpm="20 20 16 1" colormode=16
 "$ c #838383"
@@ -9562,11 +9216,11 @@ dayxpm="20 20 16 1" colormode=16
 
 [_point]
 Type=0x05403
-;&E463 pointers:&11C01
-String1=0x02,Basketball 
-String2=0x04,Basketball
+;&9204 pointers:&B5FD
 ;size: 144
-;bmp:&E498
+;bmp:&9239
+String1=0x2,Basketball
+String2=0x4,Basketball
 ExtendedLabels=N
 dayxpm="12 12 17 1" colormode=16
 "$ c #FF6520"
@@ -9603,122 +9257,47 @@ dayxpm="12 12 17 1" colormode=16
 
 [_point]
 Type=0x05404
-;&E541 pointers:&11C06
-;size: 240
-;bmp:&E642
-String1=0x2,Tischtennis 
+;&92E2 pointers:&B602
+;size: 120
+;bmp:&9302
+String1=0x2,Tischtennis
 String2=0x4,Table tennis
 ExtendedLabels=N
-dayxpm="16 15 85 2" colormode=16
-"$$ c #E6E6E6"
-"$% c #BD656A"
-"$& c #BD3041"
-"$' c #BD3020"
-"$( c #BD3020"
-"$) c #BD958B"
-"$* c #BD95B4"
-"$+ c #BD0020"
-"$, c #FF0000"
-"$- c #BD3020"
-"$. c #FFFFFF"
-"$/ c #BD958B"
-"$0 c #BD0000"
-"$1 c #BD3020"
-"$2 c #D5D5D5"
-"$3 c #E6E6E6"
-"%$ c #7B0000"
-"%% c #FF0000"
-"%& c #7B656A"
-"%' c #0065D5"
-"%( c #7B95B4"
-"%) c #BD658B"
-"%* c #FF0000"
-"%+ c #BD3041"
-"%, c #3965D5"
-"%- c #0065D5"
-"%. c #0065FF"
-"%/ c #7B95B4"
-"%0 c #D5D5D5"
-"%1 c #FF95B4"
-"%2 c #FF6541"
-"%3 c #FF0000"
-"&$ c #FF3041"
-"&% c #3995FF"
-"&& c #FFFFFF"
-"&' c #A4A4A4"
-"&( c #0065FF"
-"&) c #0065D5"
-"&* c #D5D5D5"
-"&+ c #D5D5D5"
-"&, c #BD958B"
-"&- c #7B95B4"
-"&. c #0065D5"
-"&/ c #0095FF"
-"&0 c #A4A4A4"
-"&1 c #7BCAD5"
-"&2 c #0095FF"
-"&3 c #0095FF"
-"'$ c #7BCAD5"
-"'% c #E6E6E6"
-"'& c #E6E6E6"
-"'' c #A4A4A4"
-"'( c #39658B"
-"') c #0065FF"
-"'* c #0095FF"
-"'+ c #3965B4"
-"', c #E6E6E6"
-"'- c #BDCAD5"
-"'. c #0065B4"
-"'/ c #0095FF"
-"'0 c #7B95FF"
-"'1 c #BDCAD5"
-"'2 c #E6E6E6"
-"'3 c #BDCAD5"
-"($ c #3965B4"
-"(% c #7B95D5"
-"(& c #E6E6E6"
-"(' c #C5C5C5"
-"(( c #FFFFFF"
-"() c #D5D5D5"
-"(* c #E6E6E6"
-"(+ c #C5C5C5"
-"(, c #A4A4A4"
-"(- c #D5D5D5"
-"(. c #C5C5C5"
-"(/ c #E6E6E6"
-"(0 c #A4A4A4"
-"(1 c #FFFFFF"
-"(2 c #E6E6E6"
-"(3 c #B4B4B4"
-")$ c #FFFFFF"
-")% c #E6E6E6"
-")& c #B4B4B4"
-")' c #C5C5C5"
-")( c none"
-")()()()()($$$%$&$'$($))()()()()("
-")()()()($*$+$,$,$,$,$-)()()()()("
-")()()($/$0$,$,$,$,$,$1$2)()()()("
-")()($3%$$,$,$,$,$,%%%&%'%()()()("
-")()(%)%*$,$,$,$,$,%+%,%-%.%/)()("
-")()(%0%1%2%3$,$,&$&%&&&'&(&)&*)("
-")()()()()(&+&,&-&.&/&0&1&2&3'$)("
-")()('%)('&'''(&3&3&3')&3'*'+',)("
-")()()()()()('-'.&3&3'/'0'1'2)()("
-")()()()()()()('3($(%(&('((())()("
-")()()()()()()()()()((+(,(-(*)()("
-")((.)()()()()()()()()((/(0(1(2)("
-")()()()()()()()()()()()((3(/)$)%"
-")()()()()()()()()()()()()((0$.(1"
-")()()()()()()()()()()()()()&)')%"
+dayxpm="16 15 10 1" colormode=16
+"$ c #D5D5D5"
+"% c #FF0000"
+"& c #0095FF"
+"' c #FF95B4"
+"( c #BDCAD5"
+") c #E6E6E6"
+"* c #B4B4B4"
+"+ c #C5C5C5"
+", c #FFFFFF"
+"- c none"
+"-----%%%%%------"
+"----%%%%%%%-----"
+"---%%%%%%%%-----"
+"---%%%%%%%&&&---"
+"---%%%%%&&&&&&--"
+"---'%%%%&&&&&&&-"
+"------&&&&&&&&&-"
+"-------&&&&&&&&-"
+"-------&&&&&()--"
+"----------*+,*--"
+"----------**$**-"
+"-----------**,**"
+"------------*),*"
+"------------**,,"
+"-------------**)"
 [end]
 
 
 [_point]
 Type=0x05405
-;&E74E pointers:&11C0B
+;&9396 pointers:&B607
 ;size: 128
-;bmp:&E77A
-String1=0x2,Tennis 
+;bmp:&93C2
+String1=0x2,Tennis
 String2=0x4,Tennis
 ExtendedLabels=N
 dayxpm="16 16 14 1" colormode=16
@@ -9757,462 +9336,189 @@ dayxpm="16 16 14 1" colormode=16
 
 [_point]
 Type=0x05406
-;&E80B pointers:&11C10
-;size: 256
-;bmp:&E8B5
-String1=0x2,Handball 
+;&9453 pointers:&B60C
+;size: 128
+;bmp:&9482
+String1=0x2,Handball
 String2=0x4,Team handball
 ExtendedLabels=N
-dayxpm="16 16 56 2" colormode=16
-"$$ c #949494"
-"$% c #202020"
-"$& c #202020"
-"$' c #FFFFFF"
-"$( c #FFFFFF"
-"$) c #D5D5D5"
-"$* c #A4A4A4"
-"$+ c #414141"
-"$, c #FFFFFF"
-"$- c #C5C5C5"
-"$. c #525252"
-"$/ c #E6E6E6"
-"$0 c #525252"
-"$1 c #B4B4B4"
-"$2 c #E6E6E6"
-"$3 c #FFFFFF"
-"%$ c #838383"
-"%% c #000000"
-"%& c #C5C5C5"
-"%' c #D5D5D5"
-"%( c #000000"
-"%) c #414141"
-"%* c #B4B4B4"
-"%+ c #414141"
-"%, c #000000"
-"%- c #949494"
-"%. c #949494"
-"%/ c #202020"
-"%0 c #A4A4A4"
-"%1 c #313131"
-"%2 c #838383"
-"%3 c #525252"
-"&$ c #C5C5C5"
-"&% c #E6E6E6"
-"&& c #525252"
-"&' c #414141"
-"&( c #A4A4A4"
-"&) c #202020"
-"&* c #B4B4B4"
-"&+ c #626262"
-"&, c #949494"
-"&- c #D5D5D5"
-"&. c #313131"
-"&/ c #E6E6E6"
-"&0 c #E6E6E6"
-"&1 c #525252"
-"&2 c #A4A4A4"
-"&3 c #838383"
-"'$ c #737373"
-"'% c #A4A4A4"
-"'& c #FFFFFF"
-"'' c #D5D5D5"
-"'( c #E6E6E6"
-"') c #D5D5D5"
-"'* c #E6E6E6"
-"'+ c none"
-"'+'+'+'+'+'+'+'+'+'+'+'+'+'+'+'+"
-"'+'+'+'+'+'+'+$)'+'+'+'+'+'+'+'+"
-"'+'+'+'+'+'+$*$+'+'+$-$.$/'+'+'+"
-"'+'+'+'+'+'+$0$1$2'+%$%%%&'+'+'+"
-"'+'+'+'+'+'+%'$+%%%(%)%*'+'+'+'+"
-"'+'+'+'+'+'+'+'+%+%%%%%,%-'+'+'+"
-"'+'+'+'+'+'+'+%.%%%%%/%0%1%2'+'+"
-"'+'+'+'+'+'+$)%3%%%(&$&%&&&''+'+"
-"'+'+'+'+'+&(&)&*&+&,&-&.&,&/'+'+"
-"'+'+'+'+%'$.&0&1&2'+'+'+'+'+'+'+"
-"'+'+'+'+'+'+&3'$'+'+'+'+'+'+'+'+"
-"'+'+'+'+'+'%&''+'+'+'+'+'+'+'+'+"
-"'+'+'+'+''&.'('+'+'+'+'+'+'+'+'+"
-"'+'+'+'+%1')'+'+'+'+'+'+'+'+'+'+"
-"'+'+'+'+'*'+'+'+'+'+'+'+'+'+'+'+"
-"'+'+'+'+'+'+'+'+'+'+'+'+'+'+'+'+"
+dayxpm="16 16 15 1" colormode=16
+"$ c #737373"
+"% c #D5D5D5"
+"& c #A4A4A4"
+"' c #414141"
+"( c #C5C5C5"
+") c #525252"
+"* c #E6E6E6"
+"+ c #B4B4B4"
+", c #838383"
+"- c #000000"
+". c #949494"
+"/ c #202020"
+"0 c #313131"
+"1 c #626262"
+"2 c none"
+"2222222222222222"
+"2222222%22222222"
+"222222&'22()*222"
+"222222)+*2,-(222"
+"222222%'--'+2222"
+"22222222'---.222"
+"2222222.--/&0,22"
+"222222%)--(*)'22"
+"22222&/+1.%0.*22"
+"2222%)*)&2222222"
+"222222,$22222222"
+"22222&'222222222"
+"2222%0*222222222"
+"22220%2222222222"
+"2222*22222222222"
+"2222222222222222"
 [end]
 
 
 [_point]
 Type=0x05407
-;&E9CF pointers:&11C15
-;size: 256
-;bmp:&EA55
-String1=0x2,Boules (Botcha) 
+;&951C pointers:&B611
+;size: 128
+;bmp:&9545
+String1=0x2,Boules (Botcha)
 String2=0x4,Boules
 ExtendedLabels=N
-dayxpm="16 16 44 2" colormode=16
-"$$ c #FFFFFF"
-"$% c #FFFFFF"
-"$& c #E6E6E6"
-"$' c #E6E6E6"
-"$( c #949494"
-"$) c #949494"
-"$* c #C5C5C5"
-"$+ c #FFFFFF"
-"$, c #D5D5D5"
-"$- c #A4A4A4"
-"$. c #D5D5D5"
-"$/ c #A4A4A4"
-"$0 c #B4B4B4"
-"$1 c #E6E6E6"
-"$2 c #C5C5C5"
-"$3 c #A4A4A4"
-"%$ c #D5D5D5"
-"%% c #FFFFFF"
-"%& c #FFFFFF"
-"%' c #FFFFFF"
-"%( c #B4B4B4"
-"%) c #E6E6E6"
-"%* c #525252"
-"%+ c #101010"
-"%, c #B4B4B4"
-"%- c #FFFFFF"
-"%. c #D5D5D5"
-"%/ c #E6E6E6"
-"%0 c #E6E6E6"
-"%1 c #000000"
-"%2 c #000000"
-"%3 c #626262"
-"&$ c #838383"
-"&% c #414141"
-"&& c #D5D5D5"
-"&' c #FFFFFF"
-"&( c #C5C5C5"
-"&) c #A4A4A4"
-"&* c #D5D5D5"
-"&+ c #B4B4B4"
-"&, c #A4A4A4"
-"&- c #FFFFFF"
-"&. c #E6E6E6"
-"&/ c none"
-"&/&/&/&/&/&/&/&/&/&/&/&/&/$&&/&/"
-"&/&/&/&/&/&/&/&/&/&/&/$'$($)$*&/"
-"&/&/&/&/&/&/&/&/&/&/&/$,$)$)$-&/"
-"&/$.$/$0&/&/&/&/&/&/&/$1$/$)$2&/"
-"&/$3$)$)%$&/&/&/&/&/&/&/&/&/&/&/"
-"&/%($)$)%)&/&/&/&/%*%+%,&/&/&/&/"
-"&/&/%.%/&/&/&/&/%0%1%2%3&/&/&/&/"
-"&/&/&/&/&/&/&/&/&/&$&%&&&/&/&/&/"
-"&/&/&/&/&/&/&/&/&/&/&/&/&/&/&/&/"
-"&/&/&/&/&/&/&/&/&/&/&/&/&/&/&/&/"
-"&/&/&/&/&/&/&/&/&/&/&/&/&/&/&/&/"
-"&/&/&/&/&/&/&/&/$1&/&/&/&/&/&/&/"
-"&/&/&/&/&/&/&/&($)&)&/&/&/&/&/&/"
-"&/&/&/&/&/&/&/$)$)$)&*&/&/&/&/&/"
-"&/&/&/&/&/&/&/&+$)&,&/&/&/&/&/&/"
-"&/&/&/&/&/&/&/&/&.&/&/&/&/&/&/&/"
+dayxpm="16 16 13 1" colormode=16
+"$ c #414141"
+"% c #E6E6E6"
+"& c #949494"
+"' c #C5C5C5"
+"( c #D5D5D5"
+") c #A4A4A4"
+"* c #B4B4B4"
+"+ c #525252"
+", c #101010"
+"- c #000000"
+". c #626262"
+"/ c #838383"
+"0 c none"
+"0000000000000%00"
+"00000000000%&&'0"
+"00000000000(&&)0"
+"0()*0000000%)&'0"
+"0)&&(00000000000"
+"0*&&%0000+,*0000"
+"00(%0000%--.0000"
+"000000000/$(0000"
+"0000000000000000"
+"0000000000000000"
+"0000000000000000"
+"00000000%0000000"
+"0000000'&)000000"
+"0000000&&&(00000"
+"0000000*&)000000"
+"00000000%0000000"
 [end]
 
 
 [_point]
 Type=0x05408
-;&EB6F pointers:&11C1A
-;size: 256
-;bmp:&ED3B
-String1=0x2,Dart 
+;&95DF pointers:&B616
+;size: 128
+;bmp:&960E
+String1=0x2,Dart
 String2=0x4,Dart
 ExtendedLabels=N
-dayxpm="16 16 130 2" colormode=32
-"$$ c #000000" alpha=15
-"$% c #000000" alpha=12
-"$& c #000000" alpha=10
-"$' c #000000" alpha=10
-"$( c #000000" alpha=13
-"$) c #101010" alpha=8
-"$* c #000000" alpha=1
-"$+ c #101010" alpha=0
-"$, c #101010" alpha=0
-"$- c #000000" alpha=1
-"$. c #101010" alpha=8
-"$/ c #000000" alpha=14
-"$0 c #000000" alpha=8
-"$1 c #101010" alpha=9
-"$2 c #101010" alpha=0
-"$3 c #000000" alpha=0
-"%$ c #101010" alpha=0
-"%% c #390000" alpha=0
-"%& c #390000" alpha=0
-"%' c #101010" alpha=10
-"%( c #000000" alpha=9
-"%) c #101010" alpha=9
-"%* c #000000" alpha=0
-"%+ c #390000" alpha=0
-"%, c #414141" alpha=0
-"%- c #E6E6E6" alpha=0
-"%. c #525252" alpha=0
-"%/ c #525252" alpha=0
-"%0 c #E6E6E6" alpha=0
-"%1 c #414141" alpha=0
-"%2 c #390000" alpha=0
-"%3 c #000000" alpha=11
-"&$ c #000000" alpha=0
-"&% c #101010" alpha=0
-"&& c #7B656A" alpha=0
-"&' c #B4B4B4" alpha=0
-"&( c #7B656A" alpha=0
-"&) c #7B656A" alpha=0
-"&* c #B4B4B4" alpha=0
-"&+ c #7B656A" alpha=0
-"&, c #101010" alpha=0
-"&- c #101010" alpha=0
-"&. c #000000" alpha=15
-"&/ c #101010" alpha=8
-"&0 c #737373" alpha=0
-"&1 c #FFFFFF" alpha=0
-"&2 c #737373" alpha=0
-"&3 c #525252" alpha=0
-"'$ c #949494" alpha=0
-"'% c #A4A4A4" alpha=0
-"'& c #7B3041" alpha=0
-"'' c #737373" alpha=0
-"'( c #7B656A" alpha=0
-"') c #101010" alpha=9
-"'* c #101010" alpha=1
-"'+ c #390000" alpha=0
-"', c #101010" alpha=0
-"'- c #414141" alpha=0
-"'. c #A4A4A4" alpha=0
-"'/ c #838383" alpha=0
-"'0 c #838383" alpha=0
-"'1 c #838383" alpha=0
-"'2 c #A4A4A4" alpha=0
-"'3 c #414141" alpha=0
-"($ c #101010" alpha=0
-"(% c #390000" alpha=0
-"(& c #101010" alpha=1
-"(' c #000000" alpha=13
-"(( c #101010" alpha=0
-"() c #393020" alpha=0
-"(* c #B4B4B4" alpha=0
-"(+ c #838383" alpha=0
-"(, c #626262" alpha=0
-"(- c #838383" alpha=0
-"(. c #7B956A" alpha=0
-"(/ c #7B956A" alpha=0
-"(0 c #838383" alpha=0
-"(1 c #626262" alpha=0
-"(2 c #393020" alpha=0
-"(3 c #000000" alpha=12
-")$ c #B4B4B4" alpha=0
-")% c #838383" alpha=0
-")& c #626262" alpha=0
-")' c #737373" alpha=0
-")( c #737373" alpha=0
-")) c #626262" alpha=0
-")* c #838383" alpha=0
-")+ c #393020" alpha=0
-"), c #000000" alpha=0
-")- c #000000" alpha=12
-"). c #000000" alpha=1
-")/ c #390000" alpha=0
-")0 c #414141" alpha=0
-")1 c #A4A4A4" alpha=0
-")2 c #838383" alpha=0
-")3 c #838383" alpha=0
-"*$ c #A4A4A4" alpha=0
-"*% c #414141" alpha=0
-"*& c #101010" alpha=2
-"*' c #000000" alpha=14
-"*( c #101010" alpha=8
-"*) c #737373" alpha=0
-"** c #737373" alpha=0
-"*+ c #525252" alpha=0
-"*, c #949494" alpha=0
-"*- c #949494" alpha=0
-"*. c #525252" alpha=0
-"*/ c #737373" alpha=0
-"*0 c #737373" alpha=0
-"*1 c #101010" alpha=10
-"*2 c #7B656A" alpha=0
-"*3 c #BDCAB4" alpha=0
-"+$ c #B4B4B4" alpha=0
-"+% c #7B656A" alpha=0
-"+& c #000000" alpha=0
-"+' c #E6E6E6" alpha=0
-"+( c #525252" alpha=0
-"+) c #E6E6E6" alpha=0
-"+* c #390000" alpha=0
-"++ c #101010" alpha=12
-"+, c #000000" alpha=11
-"+- c #000000" alpha=0
-"+. c #101010" alpha=0
-"+/ c #390000" alpha=0
-"+0 c #000000" alpha=12
-"+1 c #101010" alpha=9
-"+2 c #101010" alpha=1
-"+3 c #000000" alpha=0
-",$ c #101010" alpha=2
-",% c #101010" alpha=10
-"$$$$$$$$$$$$$%$&$'$%$$$$$$$$$$$$"
-"$$$$$$$$$($)$*$+$,$-$.$/$$$$$$$$"
-"$$$$$0$1$2$3%$%%%&%$$3$+%'%($$$$"
-"$$$$%)%*%+%,%-%.%/%0%1%2%*%3$$$$"
-"$$$(&$&%&&$3&'&(&)&*$3&+&,&-&.$$"
-"$$&/$3&0&1&2&3'$'%'&''&1'($3')$$"
-"$%'*'+','-'.'/'0'0'1'2'3($(%(&('"
-"$'((()(*(+(,(-(.(/(0(1(+(*(2&$(3"
-"$'((())$)%)&(0)')((0)))*)$)+),)-"
-"$%).)/',)0)1)2)3)3'/*$*%($(%*&*'"
-"$$*($3*)&1***+*,*-*.*/&1*0$3*1$$"
-"$$$/((&%*2$3*3&(&)+$$3+%&,$++&$$"
-"$$$$%'%*%2%,+'+(%/+)%1+*%*++$$$$"
-"$$$$%(+,+-$3+.+/+/+.$3&$+0%($$$$"
-"$$$$$$$$&.+1+2+3&$,$,%+&$$$$$$$$"
-"$$$$$$$$$$$$(')-(3*'$$$$$$$$$$$$"
+dayxpm="16 16 15 1" colormode=16
+"$ c #949594"
+"% c #000000"
+"& c #E6E6E6"
+"' c #101010"
+"( c #B4B4B4"
+") c #7B656A"
+"* c #737373"
+"+ c #414141"
+", c #838383"
+"- c #A4A4A4"
+". c #390000"
+"/ c #7B956A"
+"0 c #393020"
+"1 c #626262"
+"2 c none"
+"2222222222222222"
+"2222%%%%%%%%2222"
+"22%%&&&&&&2%%%22"
+"22%&&''''''&2%22"
+"2%%&''())('''%%2"
+"2'&&'&&&&&*'&2%2"
+"2'&'+&&,,&-'&.%2"
+"%%&&'&,//&&'&0%2"
+"2%0&'&&**&1'&0%2"
+"2%.&''&&&&''&.%2"
+"2%2&&'''$''&&2%2"
+"2%%'&&&'''&&''%2"
+"22%%%+&&&&+.2%%2"
+"2222%%%%%%%%%%22"
+"22222''22''22222"
+"2222222222222222"
 [end]
 
 
 [_point]
 Type=0x05409
-;&EE48 pointers:&11C1F
+;&969B pointers:&B61B
 ;size: 256
-;bmp:&EF94
-String1=0x2,Bogenschieﬂen 
+;bmp:&96E5
+String1=0x2,Bogenschieﬂen
 String2=0x4,Archery
 ExtendedLabels=N
-dayxpm="16 16 110 2" colormode=16
-"$$ c #FFFFFF"
-"$% c #949494"
-"$& c #E6E6E6"
-"$' c #B4B4B4"
-"$( c #A4A4A4"
-"$) c #737373"
-"$* c #949494"
-"$+ c #FFFFFF"
-"$, c #626262"
-"$- c #B4B4B4"
-"$. c #FFFFFF"
-"$/ c #949494"
-"$0 c #525252"
-"$1 c #414141"
-"$2 c #737373"
-"$3 c #C5C5C5"
-"%$ c #949494"
-"%% c #B4B4B4"
-"%& c #313131"
-"%' c #000000"
-"%( c #003041"
-"%) c #003041"
-"%* c #000020"
-"%+ c #000000"
-"%, c #737373"
-"%- c #FFFFFF"
-"%. c #626262"
-"%/ c #E6E6E6"
-"%0 c #FFFFFF"
-"%1 c #414141"
-"%2 c #000020"
-"%3 c #3965D5"
-"&$ c #3995FF"
-"&% c #3965FF"
-"&& c #3995FF"
-"&' c #00306A"
-"&( c #000000"
-"&) c #B4B4B4"
-"&* c #949494"
-"&+ c #C5C5C5"
-"&, c #C5C5C5"
-"&- c #3965B4"
-"&. c #3965D5"
-"&/ c #BD3041"
-"&0 c #FF0000"
-"&1 c #BD306A"
-"&2 c #003041"
-"&3 c #313131"
-"'$ c #626262"
-"'% c #838383"
-"'& c #000000"
-"'' c #3965FF"
-"'( c #BD306A"
-"') c #FF6500"
-"'* c #FFFF00"
-"'+ c #FF3000"
-"', c #3965D5"
-"'- c #00658B"
-"'. c #000000"
-"'/ c #FFFFFF"
-"'0 c #838383"
-"'1 c #000000"
-"'2 c #3965FF"
-"'3 c #BD306A"
-"($ c #FF9500"
-"(% c #FFFF00"
-"(& c #FF3000"
-"(' c #3965D5"
-"(( c #00658B"
-"() c #000000"
-"(* c #949494"
-"(+ c #D5D5D5"
-"(, c #B4B4B4"
-"(- c #3965B4"
-"(. c #BD0020"
-"(/ c #FF0000"
-"(0 c #BD306A"
-"(1 c #003041"
-"(2 c #313131"
-"(3 c #E6E6E6"
-")$ c #626262"
-")% c #FFFFFF"
-")& c #414141"
-")' c #000020"
-")( c #3965D5"
-")) c #3965FF"
-")* c #3995FF"
-")+ c #00308B"
-"), c #A4A4A4"
-")- c #C5C5C5"
-"). c #E6E6E6"
-")/ c #313131"
-")0 c #000000"
-")1 c #003041"
-")2 c #00306A"
-")3 c #000020"
-"*$ c #000000"
-"*% c #737373"
-"*& c #E6E6E6"
-"*' c #737373"
-"*( c #FFFFFF"
-"*) c #838383"
-"** c #414141"
-"*+ c #626262"
-"*, c #626262"
-"*- c #A4A4A4"
-"*. c #B4B4B4"
-"*/ c #949494"
-"*0 c #949494"
-"*1 c none"
-"*1*1*1$%$&*1*1*1*1*1*1*1*1*1*1*1"
-"*1*1*1$'$(*1*1*1*1*1*1*1*1*1*1*1"
-"*1*1*1$)$**1*1*1*1*1*1*1*1*1*1*1"
-"*1*1*1$,$-*1*1*1$/$0$1$2$3*1*1*1"
-"*1*1%$%%$-*1$&%&%'%(%)%*%+%,*1*1"
-"*1*1%.%/$-*1%1%2%3&$&%&&&'&(&)*1"
-"*1&*&+%/$-&,&(&-&.&/&0&1&$&2&3*1"
-"*1'$%0%/$-'%'&'''(')'*'+','-'.*1"
-"*1'$$$%/$-'0'1'2'3($(%(&('((()*1"
-"*1(*(+%/$-(,&((-',(.(/(0&$(1(2*1"
-"*1(3)$%/$-*1)&)')(&$)))*)+&(),*1"
-"*1*1%,)-$-*1).)/)0)1)2)3*$*%*1*1"
-"*1*1*&*'$-*1*1*1*)**&3*+%%*1*1*1"
-"*1*1*1*,*-*1*1*1*1*1*1*1*1*1*1*1"
-"*1*1*1*.*/*1*1*1*1*1*1*1*1*1*1*1"
-"*1*1*1*0$3*1*1*1*1*1*1*1*1*1*1*1"
+dayxpm="16 16 24 1" colormode=16
+"$ c #626262"
+"% c #949494"
+"& c #E6E6E6"
+"' c #525252"
+"( c #414141"
+") c #737373"
+"* c #C5C5C5"
+"+ c #000000"
+", c #3965D5"
+"- c #B4B4B4"
+". c #BD3041"
+"/ c #FF0000"
+"0 c #FFFFFF"
+"1 c #838383"
+"2 c #BD306A"
+"3 c #FF6500"
+"4 c #FFFF00"
+"5 c #FF3000"
+"6 c #FF9B00"
+"7 c #BD0020"
+"8 c #00308B"
+"9 c #A4A4A4"
+": c #313731"
+"; c none"
+";;;%&;;;;;;;;;;;"
+";;;%&;;;;;;;;;;;"
+";;;%&;;;;;;;;;;;"
+";;;%&;;;%'()*;;;"
+";;%%&;&++++++);;"
+";;%&&;+,,,,,++-;"
+";%%&&*+,,./,,++;"
+";%0&&1+,2345,,+;"
+";%0&&1+,2645,,+;"
+";%%&&-+,,7/,,++;"
+";&%&&;++,,,,8+9;"
+";;%%&;&+++++++;;"
+";;&%&;;;1(:$-;;;"
+";;;%&;;;;;;;;;;;"
+";;;%&;;;;;;;;;;;"
+";;;%&;;;;;;;;;;;"
 [end]
 
 
 [_point]
 Type=0x0540a
-;&F0AD pointers:&11C24
+;&97FE pointers:&B620
 ;size: 196
-;bmp:&F0E8
-String1=0x2,Tauchplatz 
+;bmp:&9839
+String1=0x2,Tauchplatz
 String2=0x4,Diving
 ExtendedLabels=N
 dayxpm="14 14 18 1" colormode=0
@@ -10253,10 +9559,10 @@ dayxpm="14 14 18 1" colormode=0
 
 [_point]
 Type=0x0540b
-;&F1C1 pointers:&11C29
+;&9912 pointers:&B625
 ;size: 64
-;bmp:&F1C9
-String1=0x4,parachute 
+;bmp:&991A
+String1=0x4,parachute
 String2=0x2,Falschirmsprung
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
@@ -10283,10 +9589,10 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x05601
-;&F226 pointers:&11C2E
+;&9977 pointers:&B62A
 ;size: 256
-;bmp:&F273
-String1=0x2,Blitzer 
+;bmp:&99C4
+String1=0x2,Blitzer
 String2=0x4,Speed camera
 ExtendedLabels=N
 dayxpm="16 16 24 1" colormode=0
@@ -10335,10 +9641,10 @@ dayxpm="16 16 24 1" colormode=0
 
 [_point]
 Type=0x05904
-;&F38B pointers:&11C33
+;&9ADC pointers:&B62F
 ;size: 64
-;bmp:&F393
-String1=0x2,Hubschrauber 
+;bmp:&9AE4
+String1=0x2,Hubschrauber
 String2=0x4,Helicopter
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
@@ -10365,10 +9671,10 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x05b00
-;&F3EE pointers:&11C38
+;&9B3F pointers:&B634
 ;size: 80
-;bmp:&F3FC
-String1=0x4,Bell Tower 
+;bmp:&9B4D
+String1=0x4,Bell Tower
 String2=0x2,Glockenturm
 ExtendedLabels=N
 dayxpm="9 16 4 1" colormode=16
@@ -10397,10 +9703,10 @@ dayxpm="9 16 4 1" colormode=16
 
 [_point]
 Type=0x05b01
-;&F466 pointers:&11C3D
+;&9BB7 pointers:&B639
 ;size: 128
-;bmp:&F474
-String1=0x2,Leuchtturm 
+;bmp:&9BC5
+String1=0x2,Leuchtturm
 String2=0x4,Lighthouse
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
@@ -10429,9 +9735,9 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x06401
-;&F50D pointers:&11C42
+;&9C5E pointers:&B63E
 ;size: 40
-;bmp:&F518
+;bmp:&9C69
 ExtendedLabels=N
 dayxpm="16 10 3 1" colormode=16
 "$ c #FFCA20"
@@ -10452,11 +9758,11 @@ dayxpm="16 10 3 1" colormode=16
 
 [_point]
 Type=0x06402
-;&F540 pointers:&11C47
-String1=0x02,Schutzh¸tte 
-String2=0x04,Shelter
+;&9C91 pointers:&B643
 ;size: 256
-;bmp:&F7FA
+;bmp:&9CE4
+String1=0x2,Schutzh¸tte
+String2=0x4,Shelter
 ExtendedLabels=N
 dayxpm="16 16 27 1" colormode=16
 "$ c #FF3000"
@@ -10507,11 +9813,11 @@ dayxpm="16 16 27 1" colormode=16
 
 [_point]
 Type=0x06406
-;&F911 pointers:&11C4C
-String1=0x02,Bahn¸bergang 
-String2=0x04,level crossing
+;&9DFB pointers:&B648
 ;size: 75
-;bmp:&F931
+;bmp:&9E1B
+String1=0x2,Bahn¸bergang
+String2=0x4,level crossing
 ExtendedLabels=N
 dayxpm="9 15 10 1" colormode=16
 "$ c #BD0020"
@@ -10544,11 +9850,11 @@ dayxpm="9 15 10 1" colormode=16
 
 [_point]
 Type=0x0640b
-;&F99B pointers:&11C51
-String1=0x02,Bunker 
-String2=0x04,Bunker
+;&9E85 pointers:&B64D
 ;size: 176
-;bmp:&FA30
+;bmp:&9EC9
+String1=0x2,Bunker
+String2=0x4,Bunker
 ExtendedLabels=N
 dayxpm="16 11 18 1" colormode=32
 "$ c #BDCAFF" alpha=0
@@ -10585,11 +9891,11 @@ dayxpm="16 11 18 1" colormode=32
 
 [_point]
 Type=0x0640f
-;&FAF1 pointers:&11C56
-String1=0x02,Briefkasten 
-String2=0x04,Post box
+;&9F8A pointers:&B652
 ;size: 128
-;bmp:&FB24
+;bmp:&9FB3
+String1=0x2,Briefkasten
+String2=0x4,Post box
 ExtendedLabels=N
 dayxpm="16 16 13 1" colormode=16
 "$ c #FF3020"
@@ -10626,11 +9932,11 @@ dayxpm="16 16 13 1" colormode=16
 
 [_point]
 Type=0x06410
-;&FBBC pointers:&11C5B
-String1=0x02,Uhr 
-String2=0x04,Clock
-;size: 256
-;bmp:&FBFA
+;&A04B pointers:&B657
+;size: 128
+;bmp:&A077
+String1=0x2,Uhr
+String2=0x4,Clock
 ExtendedLabels=N
 dayxpm="16 16 14 1" colormode=16
 "$ c #737373"
@@ -10668,11 +9974,11 @@ dayxpm="16 16 14 1" colormode=16
 
 [_point]
 Type=0x06411
-;&FD07 pointers:&11C60
-String1=0x02,Turm 
-String2=0x04,Tower
+;&A104 pointers:&B65C
 ;size: 128
-;bmp:&FD15
+;bmp:&A112
+String1=0x2,Turm
+String2=0x4,Tower
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
 "$ c #FFFFFF"
@@ -10700,10 +10006,10 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x06412
-;&FDA3 pointers:&11C65
+;&A1A0 pointers:&B661
 ;size: 36
-;bmp:&FDAE
-String1=0x2,Wegweiser 
+;bmp:&A1AB
+String1=0x2,Wegweiser
 String2=0x4,Signpost
 ExtendedLabels=N
 dayxpm="7 18 3 1" colormode=16
@@ -10733,11 +10039,9 @@ dayxpm="7 18 3 1" colormode=16
 
 [_point]
 Type=0x06414
-;&FDE8 pointers:&11C6A
-String1=0x02,Trinkwasser 
-String2=0x04,Drinking water
-;size: 196
-;bmp:&FF0A
+;&A1E5 pointers:&B666;bmp:&A202
+String1=0x2,Trinkwasser
+String2=0x4,Drinking water
 ExtendedLabels=N
 dayxpm="14 14 8 1" colormode=0
 "$ c #3995D5"
@@ -10767,11 +10071,11 @@ dayxpm="14 14 8 1" colormode=0
 
 [_point]
 Type=0x06415
-;&FFEC pointers:&11C6F
-String1=0x02,Wasserturm 
-String2=0x04,Water tower
+;&A282 pointers:&B66B
 ;size: 256
-;bmp:&10054
+;bmp:&A2BA
+String1=0x2,Wasserturm
+String2=0x4,Water tower
 ExtendedLabels=N
 dayxpm="16 16 18 1" colormode=16
 "$ c #393041"
@@ -10813,11 +10117,11 @@ dayxpm="16 16 18 1" colormode=16
 
 [_point]
 Type=0x06416
-;&1016E pointers:&11C74
-String1=0x02,Windkraftanlage 
-String2=0x04,Wind power
+;&A3D4 pointers:&B670
 ;size: 416
-;bmp:&10273
+;bmp:&A40F
+String1=0x2,Windkraftanlage
+String2=0x4,Wind power
 ExtendedLabels=N
 dayxpm="16 26 19 1" colormode=16
 "$ c #006500"
@@ -10870,10 +10174,10 @@ dayxpm="16 26 19 1" colormode=16
 
 [_point]
 Type=0x06417
-;&10431 pointers:&11C79
+;&A5CD pointers:&B675
 ;size: 128
-;bmp:&1043F
-String1=0x2,Jagdhochsitz 
+;bmp:&A5DB
+String1=0x2,Jagdhochsitz
 String2=0x4,Hunting stand
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
@@ -10902,9 +10206,11 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x0641b
-;&104DD pointers:&11C7E;bmp:&1050F
-String1=0x02,Sternwarte 
-String2=0x04,Observatory
+;&A679 pointers:&B67A
+;size: 128
+;bmp:&A6A8
+String1=0x2,Sternwarte
+String2=0x4,Observatory
 ExtendedLabels=N
 dayxpm="16 16 15 1" colormode=16
 "$ c #E6E6E6"
@@ -10943,11 +10249,11 @@ dayxpm="16 16 15 1" colormode=16
 
 [_point]
 Type=0x0641c
-;&105A9 pointers:&11C83
-String1=0x02,Wasserm¸hle 
-String2=0x04,Watermill
+;&A742 pointers:&B67F
 ;size: 160
-;bmp:&105BD
+;bmp:&A756
+String1=0x2,Wasserm¸hle
+String2=0x4,Watermill
 ExtendedLabels=N
 dayxpm="20 16 6 1" colormode=16
 "$ c #101010"
@@ -10977,11 +10283,11 @@ dayxpm="20 16 6 1" colormode=16
 
 [_point]
 Type=0x0641d
-;&10676 pointers:&11C88
-String1=0x02,Gasometer 
-String2=0x04,Gasometer
-;size: 256
-;bmp:&10785
+;&A80F pointers:&B684
+;size: 128
+;bmp:&A82F
+String1=0x2,Gasometer
+String2=0x4,Gasometer
 ExtendedLabels=N
 dayxpm="16 16 10 1" colormode=16
 "$ c #838383"
@@ -11015,11 +10321,11 @@ dayxpm="16 16 10 1" colormode=16
 
 [_point]
 Type=0x0641e
-;&1089C pointers:&11C8D
-String1=0x02,Werk 
-String2=0x04,Works
-;size: 256
-;bmp:&10977
+;&A8C6 pointers:&B689
+;size: 128
+;bmp:&A8DD
+String1=0x2,Werk
+String2=0x4,Works
 ExtendedLabels=N
 dayxpm="16 16 7 1" colormode=16
 "$ c #414141"
@@ -11050,11 +10356,11 @@ dayxpm="16 16 7 1" colormode=16
 
 [_point]
 Type=0x0641f
-;&10A85 pointers:&11C92
-String1=0x02,Windm¸hle 
-String2=0x04,Windmill
+;&A96B pointers:&B68E
 ;size: 128
-;bmp:&10A93
+;bmp:&A979
+String1=0x2,Windm¸hle
+String2=0x4,Windmill
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
 "$ c #000000"
@@ -11082,10 +10388,10 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x06500
-;&10B29 pointers:&11C97
+;&AA0F pointers:&B693
 ;size: 64
-;bmp:&10B31
-String1=0x2,Brunnen 
+;bmp:&AA17
+String1=0x2,Brunnen
 String2=0x4,Fountain
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
@@ -11112,9 +10418,9 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x06513
-;&10B85 pointers:&11C9C
+;&AA6B pointers:&B698
 ;size: 64
-;bmp:&10B8D
+;bmp:&AA73
 ExtendedLabels=N
 dayxpm="16 16 2 1" colormode=16
 "$ c #0000FF"
@@ -11140,12 +10446,12 @@ dayxpm="16 16 2 1" colormode=16
 
 [_point]
 Type=0x06600
-;&10BCD pointers:&11CA1
+;&AAB3 pointers:&B69D
 ;size: 56
-;bmp:&10BD5
-String1=0x2,Aussicht 
+;bmp:&AABB
+String1=0x2,Aussicht
 String2=0x4,Viewpoint
-;Extended at &10C23
+;Extended at &AB09
 ExtendedLabels=Y
 FontStyle=SmallFont
 dayxpm="14 14 2 1" colormode=16
@@ -11170,10 +10476,10 @@ dayxpm="14 14 2 1" colormode=16
 
 [_point]
 Type=0x06605
-;&10C24 pointers:&11CA6
+;&AB0A pointers:&B6A2
 ;size: 32
-;bmp:&10C2F
-String1=0x2,Sitzbank 
+;bmp:&AB15
+String1=0x2,Sitzbank
 String2=0x4,Bench
 ExtendedLabels=N
 dayxpm="16 8 3 1" colormode=16
@@ -11193,12 +10499,12 @@ dayxpm="16 8 3 1" colormode=16
 
 [_point]
 Type=0x06609
-;&10C61 pointers:&11CAB
+;&AB47 pointers:&B6A7
 ;size: 2
-;bmp:&10C69
-String1=0x2,Wiese 
+;bmp:&AB4F
+String1=0x2,Wiese
 String2=0x4,Meadow
-;Extended at &10C7B
+;Extended at &AB61
 ExtendedLabels=Y
 FontStyle=SmallFont
 dayxpm="2 2 2 1" colormode=16
@@ -11211,12 +10517,12 @@ dayxpm="2 2 2 1" colormode=16
 
 [_point]
 Type=0x06616
-;&10C7C pointers:&11CB0
+;&AB62 pointers:&B6AC
 ;size: 18
-;bmp:&10C87
-String1=0x4,Peak 
+;bmp:&AB6D
+String1=0x4,Peak
 String2=0x2,Gipfel
-;Extended at &10CA8
+;Extended at &AB8E
 ExtendedLabels=Y
 FontStyle=SmallFont
 dayxpm="11 6 3 1" colormode=16
@@ -11234,12 +10540,12 @@ dayxpm="11 6 3 1" colormode=16
 
 [_point]
 Type=0x06618
-;&10CA9 pointers:&11CB5
+;&AB8F pointers:&B6B1
 ;size: 28
-;bmp:&10CB4
-String1=0x2,Berg¸bergang 
+;bmp:&AB9A
+String1=0x2,Berg¸bergang
 String2=0x4,Mountain pass
-;Extended at &10CEE
+;Extended at &ABD4
 ExtendedLabels=Y
 FontStyle=SmallFont
 dayxpm="16 7 3 1" colormode=16
@@ -11258,10 +10564,10 @@ dayxpm="16 7 3 1" colormode=16
 
 [_point]
 Type=0x06619
-;&10CEF pointers:&11CBA
+;&ABD5 pointers:&B6B6
 ;size: 64
-;bmp:&10CFA
-String1=0x2,Hˆhle 
+;bmp:&ABE0
+String1=0x2,Hˆhle
 String2=0x4,Cave
 ExtendedLabels=N
 dayxpm="16 16 3 1" colormode=16
@@ -11289,9 +10595,7 @@ dayxpm="16 16 3 1" colormode=16
 
 [_point]
 Type=0x07100
-;&10D48 pointers:&11CBF
-;size: 100
-;bmp:&10E28
+;&AC2E pointers:&B6BB;bmp:&AC4E
 ExtendedLabels=N
 dayxpm="10 10 9 1" colormode=0
 "$ c #7B65B4"
@@ -11318,11 +10622,9 @@ dayxpm="10 10 9 1" colormode=0
 
 [_point]
 Type=0x07110
-;&10E8C pointers:&11CC4
-String1=0x02,Notiz 
-String2=0x04,note
-;size: 128
-;bmp:&10EA3
+;&AC80 pointers:&B6C0;bmp:&AC91
+String1=0x2,Notiz
+String2=0x4,note
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=0
 "$ c #000000"
@@ -11350,11 +10652,11 @@ dayxpm="16 16 4 1" colormode=0
 
 [_point]
 Type=0x07200
-;&10F31 pointers:&11CC9
-String1=0x02,Generator 
-String2=0x04,Generator
+;&AD1F pointers:&B6C5
 ;size: 256
-;bmp:&10FA5
+;bmp:&AD90
+String1=0x2,Generator
+String2=0x4,Generator
 ExtendedLabels=N
 dayxpm="16 16 37 2" colormode=16
 "$$ c #FFFFFF"
@@ -11415,8 +10717,8 @@ dayxpm="16 16 37 2" colormode=16
 
 [_point]
 Type=0x07201
-;&110BC pointers:&11CCE;bmp:&110C7
-String1=0x2,Strommast 
+;&AEA7 pointers:&B6CA;bmp:&AEB2
+String1=0x2,Strommast
 String2=0x4,Power tower
 ExtendedLabels=N
 dayxpm="7 7 2 1" colormode=0
@@ -11434,11 +10736,11 @@ dayxpm="7 7 2 1" colormode=0
 
 [_point]
 Type=0x07202
-;&110EE pointers:&11CD3
-String1=0x02,Windkraftanlage 
-String2=0x04,Wind power
+;&AED9 pointers:&B6CF
 ;size: 416
-;bmp:&111F3
+;bmp:&AF14
+String1=0x2,Windkraftanlage
+String2=0x4,Wind power
 ExtendedLabels=N
 dayxpm="16 26 19 1" colormode=16
 "$ c #006500"
@@ -11491,11 +10793,11 @@ dayxpm="16 26 19 1" colormode=16
 
 [_point]
 Type=0x07203
-;&113B1 pointers:&11CD8
-String1=0x02,Wasserkraftwerk 
-String2=0x04,Water power
-;size: 256
-;bmp:&1146A
+;&B0D2 pointers:&B6D4
+;size: 128
+;bmp:&B0FE
+String1=0x2,Wasserkraftwerk
+String2=0x4,Water power
 ExtendedLabels=N
 dayxpm="16 16 14 1" colormode=16
 "$ c #BD95FF"
@@ -11533,11 +10835,11 @@ dayxpm="16 16 14 1" colormode=16
 
 [_point]
 Type=0x07204
-;&11589 pointers:&11CDD
-String1=0x02,Kernkraftwerk 
-String2=0x04,Nuclear power plant
+;&B19D pointers:&B6D9
 ;size: 128
-;bmp:&115BF
+;bmp:&B1AB
+String1=0x2,Kernkraftwerk
+String2=0x4,Nuclear power plant
 ExtendedLabels=N
 dayxpm="16 16 4 1" colormode=16
 "$ c #525252"
@@ -11565,11 +10867,11 @@ dayxpm="16 16 4 1" colormode=16
 
 [_point]
 Type=0x07205
-;&11664 pointers:&11CE2
-String1=0x02,Heizkraftwerk 
-String2=0x04,Cogeneration plant
-;size: 256
-;bmp:&1171A
+;&B250 pointers:&B6DE
+;size: 128
+;bmp:&B27C
+String1=0x2,Heizkraftwerk
+String2=0x4,Cogeneration plant
 ExtendedLabels=N
 dayxpm="16 16 14 1" colormode=16
 "$ c #101010"
@@ -11607,11 +10909,11 @@ dayxpm="16 16 14 1" colormode=16
 
 [_point]
 Type=0x07206
-;&1183E pointers:&11CE7
-String1=0x02,Solarkraftanlage 
-String2=0x04,Solar
-;size: 256
-;bmp:&118D0
+;&B320 pointers:&B6E3
+;size: 128
+;bmp:&B34C
+String1=0x2,Solarkraftanlage
+String2=0x4,Solar
 ExtendedLabels=N
 dayxpm="16 16 14 1" colormode=16
 "$ c #D5D5D5"
