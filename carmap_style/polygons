@@ -10,7 +10,7 @@ leisure=water_park { add sport=swimming }
 #------------------------------------------------------------------------------
 # buildings
 
-building=* &
+building!=no &
 (
 	amenity=restaurant |
 	amenity=place_of_worship |
@@ -18,7 +18,8 @@ building=* &
 	amenity=police |
 	amenity=community_center |
 	amenity=theatre
-) 								[0x13 resolution 24 continue with_actions]
+	)
+ 								[0x13 resolution 24 continue with_actions]
 
 
 # platforms, if they are an area or closed polygons
