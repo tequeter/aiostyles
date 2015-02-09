@@ -3474,9 +3474,8 @@ Xpm="32 5 2  1"
 "!!!!!!!!        !!!!!!!!        "
 ;12345678901234567890123456789012
 String1=0x02,FIXME
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+String2=0x04,FIXME
+ExtendedLabels=N
 [end]
 
 
@@ -3494,9 +3493,7 @@ Xpm="32 5 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Tracktype fehlt
 String2=0x04,Tracktype missing
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3514,9 +3511,7 @@ Xpm="32 5 2  1"
 ;12345678901234567890123456789012
 String1=0x02,construction
 String2=0x04,construction
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3533,10 +3528,8 @@ Xpm="32 5 2  1"
 "    !!!!!!!!        !!!!!!!!    "
 ;12345678901234567890123456789012
 String1=0x02,Anlieger frei?
-String2=0x04,access
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+String2=0x04,access rules?
+ExtendedLabels=N
 [end]
 
 
@@ -3575,9 +3568,7 @@ Xpm="32 5 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Notiz
 String2=0x04,note
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3595,9 +3586,7 @@ Xpm="32 5 2  1"
 ;12345678901234567890123456789012
 String1=0x02,name fehlt
 String2=0x04,missing name
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3639,9 +3628,7 @@ Xpm="32 8 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Autobahnbrücke
 String2=0x04,Motorway bridge
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3661,9 +3648,7 @@ Xpm="32 7 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Brücke
 String2=0x04,Bridge
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3682,9 +3667,7 @@ Xpm="32 6 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Brücke
 String2=0x04,Bridge
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3962,9 +3945,7 @@ Xpm="32 7 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Einbahn
 String2=0x04,One way
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -3980,9 +3961,7 @@ Xpm="32 3 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Stillgelegt
 String2=0x04,Disused
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4026,9 +4005,7 @@ Xpm="32 8 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Maut
 String2=0x04,Toll
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4044,9 +4021,7 @@ Xpm="32 3 2  1"
 ;12345678901234567890123456789012
 String1=0x02,In Bau
 String2=0x04,Construction
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4067,9 +4042,7 @@ Xpm="32 8 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Autobahntunnel
 String2=0x04,Motorway tunnel
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4089,9 +4062,7 @@ Xpm="32 7 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Tunnel
 String2=0x04,Tunnel
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4112,7 +4083,8 @@ Xpm="32 10 2  1"
 "!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
 "!!!!!!  !!!!!!  !!!!!!  !!!!!!  "
 ;12345678901234567890123456789012
-String1=0x01,
+String1=0x02,Absteigen
+String2=0x04,Dismount
 ExtendedLabels=N
 [end]
 
@@ -4136,9 +4108,7 @@ Xpm="32 10 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Radfahrstreifen
 String2=0x04,Cycle lane
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4161,9 +4131,7 @@ Xpm="32 10 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Radfahrstreifen
 String2=0x04,Cycle lane
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4186,9 +4154,7 @@ Xpm="32 10 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Radfahrstreifen
 String2=0x04,Cycle lane
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4211,9 +4177,7 @@ Xpm="32 10 2  1"
 ;12345678901234567890123456789012
 String1=0x02,Reitweg
 String2=0x04,Bridleway
-ExtendedLabels=Y
-FontStyle=NoLabel (invisible)
-CustomColor=No
+ExtendedLabels=N
 [end]
 
 
@@ -4454,8 +4418,8 @@ Xpm="32 2 2  1"
 "!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
 "!!!!!!!!!!  !!  !!!!!!!!!!  !!  "
 ;12345678901234567890123456789012
-String1=0x02,Grenze (al<
-String2=0x04,Boundary (al<
+String1=0x02,Grenze (al6+)
+String2=0x04,Boundary (al46+)
 ExtendedLabels=N
 [end]
 
@@ -4469,8 +4433,8 @@ Xpm="32 2 2  1"
 "!!!!!!  !!  !!  !!!!!!  !!  !!  "
 "!!!!!!  !!  !!  !!!!!!  !!  !!  "
 ;12345678901234567890123456789012
-String1=0x02,Grenze (al<
-String2=0x04,Boundary (al<
+String1=0x02,Grenze (al8+)
+String2=0x04,Boundary (al8+)
 ExtendedLabels=N
 [end]
 
@@ -4484,8 +4448,8 @@ Xpm="32 2 2  1"
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 "!!  !!  !!  !!  !!  !!  !!  !!  "
 ;12345678901234567890123456789012
-String1=0x02,Grenze (al>
-String2=0x04,Boundary (al>
+String1=0x02,Grenze (al9+)
+String2=0x04,Boundary (al9+)
 ExtendedLabels=N
 [end]
 
