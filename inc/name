@@ -54,18 +54,6 @@ name=FIXME | name=fixme                 { delete name; }
 
 ## name option for base- and bikemap
 
-#public_transport=platform &
-#  (amenity=bus_station |
-#    highway=bus_stop |
-#    railway=tram_stop |
-#    railway=halt |
-#    railway=station)
-#
-#        {
-#	# eliminate double ^ or double - ; no idea why they are entered twice otherwise
-#	delete public_transport;
-#        }
-
 (amenity=bus_station |
     public_transport=platform |
     highway=bus_stop |
