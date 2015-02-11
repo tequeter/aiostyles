@@ -266,15 +266,18 @@ aeroway=helipad								 		[0x5904 resolution 24]
 
 
 # Ground Transportation
+railway=station |
+railway=halt |
+railway=tram_stop |
+amenity=bus_station |
+highway=bus_stop                                                                        [0x2f08 resolution 24 continue with_actions]
 
-railway=station | railway=halt				                                [0x2f08 resolution 23]
-
-# Transit Service
+railway=station                                                                         [0x2f18 resolution 22]
+railway=halt                                                                            [0x2f18 resolution 23]
 
 railway=tram_stop |
 amenity=bus_station |
-highway=bus_stop |
-public_transport=platform								[0x2f17 resolution 24]
+highway=bus_stop                                                                        [0x2f17 resolution 24]
 
 
 #------------------------------------------------------------------------------
@@ -592,7 +595,7 @@ amenity=place_of_worship &
 			(
 				religion=jewish
 			)  						                [0x2c10 resolution 24]
-			
+
 amenity=place_of_worship  								[0x2c0b resolution 24]
 
 # Generic Emergency/Government
@@ -632,7 +635,7 @@ amenity=post_office     								[0x2f05 resolution 24]
 amenity=atm | amenity=bank | amenity=bureau_de_change   				[0x2f06 resolution 24]
 
 # Other
-amenity=public_building 								[0x3000 resolution 24]
+building=public								[0x3000 resolution 24]
 
 # Other/Other
 amenity=waste_basket                                                                    [0x2f1a resolution 24]
