@@ -264,6 +264,7 @@ aeroway=helipad								 		[0x5904 resolution 24]
 railway=station |
 railway=halt |
 railway=tram_stop |
+public_transport=platform |
 amenity=bus_station |
 highway=bus_stop                                                                        [0x2f08 resolution 24 continue with_actions]
 
@@ -271,6 +272,7 @@ railway=station                                                                 
 railway=halt                                                                            [0x2f18 resolution 23]
 
 railway=tram_stop |
+public_transport=platform |
 amenity=bus_station |
 highway=bus_stop                                                                        [0x2f17 resolution 24]
 
