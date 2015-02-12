@@ -108,9 +108,8 @@ name=FIXME | name=fixme                 { delete name; }
   railway=tram_stop |
   railway=halt |
   railway=station)
-    & ( name=* | ref=* )
         {
-        name '${name|def:H} ${ref}' | '${name}';
+        name '${name|def:H} ${ref}' | '${name|def:H}';
         delete name ;
         delete ref ;
         }
