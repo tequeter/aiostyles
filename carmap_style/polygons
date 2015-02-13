@@ -7,6 +7,8 @@ leisure=swimming_pool { set temp_pool=yes; delete leisure; delete sport}
 amenity=swimming_pool { set temp_pool=yes; delete amenity; delete sport}
 leisure=water_park { add sport=swimming }
 
+include '../inc/name';
+
 #------------------------------------------------------------------------------
 # buildings
 
@@ -153,9 +155,5 @@ waterway=riverbank 							[0x46 resolution 18]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-
-include '../inc/address';
-include '../inc/phone';
-include '../inc/name';
 
 name=* { name '${name}' }
