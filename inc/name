@@ -54,77 +54,6 @@ name=FIXME | name=fixme                 { delete name; }
 
 ## name option for base- and bikemap
 
-(amenity=bus_station |
-    public_transport=platform |
-    highway=bus_stop |
-    railway=tram_stop |
-    railway=halt |
-    railway=station)
-    & (ref=* | route_ref=*)
-        {
-        set ref='${ref|def:}(${route_ref})';
-        set ref='${ref|subst:;=> |subst:  => }';
-        delete route_ref ;
-        }
-
-(amenity=bus_station |
-  public_transport=platform |
-  highway=bus_stop |
-  railway=tram_stop |
-  railway=halt |
-  railway=station)
-    & lit=yes
-    & (shelter=yes | covered=yes)
-        {
-        set ref='* ${ref|def:}';
-        }
-
-(amenity=bus_station |
-  public_transport=platform |
-  highway=bus_stop |
-  railway=tram_stop |
-  railway=halt |
-  railway=station)
-    & lit!=yes
-    & (shelter=yes | covered=yes)
-        {
-        set ref='^ ${ref|def:}';
-        }
-
-(amenity=bus_station |
-  public_transport=platform |
-  highway=bus_stop |
-  railway=tram_stop |
-  railway=halt |
-  ailway=station)
-    & (shelter=no | covered=no)
-        {
-        set ref='- ${ref|def:}';
-        }
-
-(amenity=bus_station |
-  public_transport=platform |
-  highway=bus_stop |
-  railway=tram_stop |
-  railway=halt |
-  railway=station)
-        {
-        name '${name|def:H} ${ref}' | '${name|def:H}';
-        delete name ;
-        delete ref ;
-        }
-
-highway=motorway_junction { name '${ref} ${name}'; }
-
-highway=emergency_access_point
-        {
-        add ref='';
-        add name='';
-        add operator='';
-        add emergency_telephone_code='';
-        name '${ref} ${name} ${operator} ${emergency_telephone_code}';
-        }
-
 
 amenity=parking & capacity=unknown { delete capacity ; }
 amenity=parking & capacity:disabled=unknown { delete capacity:disabled ; }
@@ -266,10 +195,8 @@ power=*
         delete name ;
         }
 
-leisure=ice_rink | sport=skating
-	{
-	add name='skating' ;
-	}
+leisure=* & sport=* & name=* { set name='${name} (${sport})' }
+leisure=* & sport=* & name!=* { add name='${sport}' }
 
 waterway=* & name!=*
 	{
