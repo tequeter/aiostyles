@@ -1,0 +1,8 @@
+#
+# Append all refs divided with ";"
+#
+
+highway=* & ref=*     { set mkgmap:ref='${ref}' }
+highway=* & int_ref=* { set mkgmap:ref='${mkgmap:ref};${int_ref}' | '${int_ref}' }
+highway=* & nat_ref=* { set mkgmap:ref='${mkgmap:ref};${nat_ref}' | '${nat_ref}' }
+highway=* & reg_ref=* { set mkgmap:ref='${mkgmap:ref};${reg_ref}' | '${reg_ref}' }
