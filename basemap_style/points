@@ -8,6 +8,11 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
+include '../inc/ref_points';
+include '../inc/access_points';
+include '../inc/name';
+
+
 #------------------------------------------------------------------------------
 # Places
 
@@ -864,9 +869,7 @@ highway=speed_camera                                                            
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
-include '../inc/access_points';
 include '../inc/address';
 include '../inc/phone';
-include '../inc/name';
 
 name=* { name '${name}' }
