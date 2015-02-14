@@ -1,4 +1,5 @@
 boundary!=* &
+place!=region
   (note=*  |
    fixme = * |
    FIXME=* |
