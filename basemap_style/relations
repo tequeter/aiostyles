@@ -1,4 +1,4 @@
 # common rules located in /inc/
 
 include '../inc/relations';
-include '../inc/boundaries';
+include '../inc/boundary_rels';

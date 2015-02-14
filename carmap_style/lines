@@ -428,7 +428,7 @@ highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway &
 route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road_speed=0]
 
 # rendering options of nonroutable ways, located in inc/
-include '../inc/boundary' ;
+include '../inc/boundary_lines' ;
 include '../inc/non_route_ways' ;
 include '../inc/waterways' ;
 
