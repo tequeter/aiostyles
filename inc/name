@@ -146,15 +146,6 @@ amenity=fuel
         delete name ;
         }
 
-# avoid POI with label "unnamed" - some icons do not provide a default name
-#amenity=toilets & name!=*                       {set name='WC'}
-
-# move to fixme
-#(highway=services | highway=rest_area) & name!=* {set name='Info'}
-
-# avoid POI with label "unnamed" - maybe add to FIXME Layer
-amenity=public_building & name!=*               {delete amenity}
-
 amenity=place_of_worship & denomination=unknown { delete denomination }
 amenity=place_of_worship & religion=unknown     { delete religion }
 amenity=place_of_worship & building=yes         { delete building }
