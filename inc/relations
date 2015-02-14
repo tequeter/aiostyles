@@ -1,19 +1,5 @@
 # common rules for all layers
 
-
-# Names of administrative boundaries.
-# We could want to sort the relations in ascending order of admin_level
-# and alphabetically by name first.
-# Currently, the matching relations will be processed and the names
-# appended to the boundary lines in an arbitrary order.
-
-(type=boundary | type=multipolygon) & boundary=administrative & name=*
-        { apply
-          {
-            set mkgmap:boundary_name='$(mkgmap:boundary_name)/${name}' | '${name}';
-          }
-        }
-
 route=foot | route=hiking   { apply { add foot=yes; } }
 
 
