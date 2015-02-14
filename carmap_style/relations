@@ -1,2 +1,3 @@
 # common rules located in /inc/relations
 include '../inc/relations';
+include '../inc/boundaries';

@@ -1,6 +1,7 @@
-# common rules located in /inc/relations
+# common rules located in /inc/
 
 include '../inc/relations';
+include '../inc/boundaries';
 
 (route=bicycle | route=mtb) &
 	    (
