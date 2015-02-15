@@ -3,55 +3,6 @@
 include '../inc/relations';
 include '../inc/boundary_rels';
 
-(route=bicycle | route=mtb) &
-	    (
-	    network=icn |
-	    icn=yes |
-	    network=ncn |
-	    ncn=yes
-	      )
-		{
-		apply
-		    {
-		    set icn_network=yes ;
-		    set cycle_network=yes ;
-		    set cn_name='$(cn_name),${ref}' |
-		    '$(cn_name),${name}' |
-		    '${ref}' | '${name}'
-		    }
-		 }
+# special rules located in /inc/
 
-(route=bicycle | route=mtb) &
-	    (
-	    network=rcn |
-	    rcn=yes |
-	    network=tcn |
-	    tcn=yes
-	      )
-		{
-		apply
-		    {
-		    set rcn_network=yes ;
-		    set cycle_network=yes ;
-		    set cn_name='$(cn_name),${ref}' |
-		    '$(cn_name),${name}' |
-		    '${ref}' | '${name}'
-		    }
-		 }
-
-(route=bicycle | route=mtb) &
-	    (
-	    network=lcn |
-	    lcn=yes
-	      )
-		{
-		apply
-		    {
-		    set lcn_network=yes ;
-		    set cycle_network=yes ;
-		    set cn_name='$(cn_name),${ref}' |
-		    '$(cn_name),${name}' |
-		    '${ref}' | '${name}'
-		    }
-		 }
-
+include '../inc/cycle_rels';
