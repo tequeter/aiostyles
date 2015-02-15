@@ -6633,6 +6633,17 @@ dayxpm="1 1 2 1" colormode=16
 
 
 [_point]
+Type=0x02f10
+;haidresser, beauty and other
+ExtendedLabels=N
+dayxpm="1 1 2 1" colormode=16
+"$ c #FFFFFF"
+"% c none"
+"%"
+[end]
+
+
+[_point]
 Type=0x02f0b
 String1=0x02,Parkplatz
 String2=0x04,Parking
@@ -6749,55 +6760,6 @@ dayxpm="1 1 2 1" colormode=16
 "$ c #FFFFFF"
 "% c none"
 "%"
-[end]
-
-
-[_point]
-Type=0x02f18
-ExtendedLabels=N
-String1=0x02,Bahnhof
-String2=0x04,Railway Station
-FontStyle=SmallFont
-dayxpm="8 8 2 1" colormode=0
-"$ c #0000B4"
-"% c #0000FF"
-"%%%%%%%%"
-"%$$$$$$%"
-"%$$$$$$%"
-"%$$$$$$%"
-"%$$$$$$%"
-"%$$$$$$%"
-"%$$$$$$%"
-"%%%%%%%%"
-[end]
-
-
-[_point]
-Type=0x02f19
-String1=0x02,Haltestelle
-String2=0x04,Tram / Bus stop
-ExtendedLabels=N
-FontStyle=SmallFont
-dayxpm="12 12 7 1" colormode=32
-"$ c #000000" alpha=15
-"% c #BDCA00" alpha=14
-"& c #BDFF00" alpha=5
-"' c #7BCA00" alpha=4
-"( c #FFFF00" alpha=11
-") c #399500" alpha=5
-"* c #009500" alpha=12
-"$$********$$"
-"$**)%&&%)**$"
-"**'(((((('**"
-"*)())(())()*"
-"*%())(())(%*"
-"*&()*))*)(&*"
-"*&()*))*)(&*"
-"*%())(())(%*"
-"*)())(())()*"
-"**'(((((('**"
-"$**)%&&%)**$"
-"$$********$$"
 [end]
 
 
@@ -9356,3 +9318,51 @@ dayxpm="16 16 5 1" colormode=16
 "(((((((((((((((("
 [end]
 
+
+[_point]
+Type=0x07207
+ExtendedLabels=N
+String1=0x02,Bahnhof
+String2=0x04,Railway Station
+FontStyle=SmallFont
+dayxpm="8 8 2 1" colormode=0
+"$ c #0000B4"
+"% c #0000FF"
+"%%%%%%%%"
+"%$$$$$$%"
+"%$$$$$$%"
+"%$$$$$$%"
+"%$$$$$$%"
+"%$$$$$$%"
+"%$$$$$$%"
+"%%%%%%%%"
+[end]
+
+
+[_point]
+Type=0x07208
+String1=0x02,Haltestelle
+String2=0x04,Tram / Bus stop
+ExtendedLabels=N
+FontStyle=SmallFont
+dayxpm="12 12 7 1" colormode=32
+"$ c #000000" alpha=15
+"% c #BDCA00" alpha=14
+"& c #BDFF00" alpha=5
+"' c #7BCA00" alpha=4
+"( c #FFFF00" alpha=11
+") c #399500" alpha=5
+"* c #009500" alpha=12
+"$$********$$"
+"$**)%&&%)**$"
+"**'(((((('**"
+"*)())(())()*"
+"*%())(())(%*"
+"*&()*))*)(&*"
+"*&()*))*)(&*"
+"*%())(())(%*"
+"*)())(())()*"
+"**'(((((('**"
+"$**)%&&%)**$"
+"$$********$$"
+[end]
