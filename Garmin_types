@@ -102,6 +102,9 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x2E09  Home Furnishing
 0x2E0a  Special Retail
 0x2E0b  Computer/Software
+0x2E0c  Speciality Retail
+0x2E0d  Department Store
+0x2E0e  additional 'Convenience' before Florist
 0x2F00  generic service
 0x2F01  Fuel/Gas
 0x2F02  Car Rental
