@@ -6743,30 +6743,12 @@ dayxpm="12 16 9 1" colormode=32
 
 [_point]
 Type=0x02f17
-String1=0x02,Haltestelle
-String2=0x04,Tram / Bus stop
+;Transit Service
 ExtendedLabels=N
-FontStyle=SmallFont
-dayxpm="12 12 7 1" colormode=32
-"$ c #000000" alpha=15
-"% c #BDCA00" alpha=14
-"& c #BDFF00" alpha=5
-"' c #7BCA00" alpha=4
-"( c #FFFF00" alpha=11
-") c #399500" alpha=5
-"* c #009500" alpha=12
-"$$********$$"
-"$**)%&&%)**$"
-"**'(((((('**"
-"*)())(())()*"
-"*%())(())(%*"
-"*&()*))*)(&*"
-"*&()*))*)(&*"
-"*%())(())(%*"
-"*)())(())()*"
-"**'(((((('**"
-"$**)%&&%)**$"
-"$$********$$"
+dayxpm="1 1 2 1" colormode=16
+"$ c #FFFFFF"
+"% c none"
+"%"
 [end]
 
 
@@ -6792,21 +6774,30 @@ dayxpm="8 8 2 1" colormode=0
 
 [_point]
 Type=0x02f19
-String1=0x02,Solarium
-String2=0x04,Tanning
+String1=0x02,Haltestelle
+String2=0x04,Tram / Bus stop
 ExtendedLabels=N
-dayxpm="9 9 2 1" colormode=16
-"$ c #FFFF20"
-"% c none"
-"%%%%$%%%%"
-"%%$%$%$%%"
-"%$$$$$$$%"
-"%%$$$$$%%"
-"$$$$$$$$$"
-"%%$$$$$%%"
-"%$$$$$$$%"
-"%%$%$%$%%"
-"%%%%$%%%%"
+FontStyle=SmallFont
+dayxpm="12 12 7 1" colormode=32
+"$ c #000000" alpha=15
+"% c #BDCA00" alpha=14
+"& c #BDFF00" alpha=5
+"' c #7BCA00" alpha=4
+"( c #FFFF00" alpha=11
+") c #399500" alpha=5
+"* c #009500" alpha=12
+"$$********$$"
+"$**)%&&%)**$"
+"**'(((((('**"
+"*)())(())()*"
+"*%())(())(%*"
+"*&()*))*)(&*"
+"*&()*))*)(&*"
+"*%())(())(%*"
+"*)())(())()*"
+"**'(((((('**"
+"$**)%&&%)**$"
+"$$********$$"
 [end]
 
 
@@ -6975,6 +6966,18 @@ dayxpm="16 11 7 1" colormode=32
 "&&%%()$$$$)(%%&&"
 ")(''&$$$$$$%''()"
 "$)&*$$$$$$$$*&)$"
+[end]
+
+
+[_point]
+Type=0x03005
+String1=0x02,Gemeindezentrum
+String2=0x04,Community centre
+ExtendedLabels=N
+dayxpm="1 1 2 1" colormode=16
+"$ c #FFFFFF"
+"% c none"
+"%"
 [end]
 
 
