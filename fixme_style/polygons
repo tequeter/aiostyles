@@ -1,5 +1,5 @@
-boundary!=* &
-place!=region
+(boundary!=* |
+place!=region)
   (note=*  |
    fixme = * |
    FIXME=* |
