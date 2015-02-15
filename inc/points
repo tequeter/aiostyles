@@ -532,7 +532,10 @@ shop=computer | shop=mobile_phone                                               
 
 #Other/Personal Services
 shop=hairdresser |
-shop=beauty                                                                            [0x2f10 resolution 24]
+(shop=beauty & beauty!=tanning)                                                         [0x2f10 resolution 24]
+shop=solarium | 
+leisure=tanning_salon |
+(shop=beauty & beauty=tanning)                                                          [0x2f19 resolution 24]
 
 # Florist  ## ok
 shop=florist                                                                            [0x2e0f resolution 24]

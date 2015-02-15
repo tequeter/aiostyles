@@ -211,6 +211,10 @@ natural=peak | natural=hill | mountain_pass=yes
 
 disused=yes  {name '${name} (disused)'|'(disused)';}
 
+# fix unnamed standard icons
+leisure=marina & name!=* { add name='${leisure}' }
+barrier=border_control & name!=* { add name='${barrier}' }
+
 #name=* &
 #    mkgmap:label:1!=* &
 #    mkgmap:label:2!=* &

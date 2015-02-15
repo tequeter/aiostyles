@@ -3,6 +3,8 @@
 
 include '../inc/cycle_lines';
 
+include '../inc/cycle_highlights';
+
 # -------------------------------------------------------------------
 #  common rules under inc/
 

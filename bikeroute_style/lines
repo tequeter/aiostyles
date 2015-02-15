@@ -1,46 +1,11 @@
 # -------------------------------------------------------------------
-# This is the style file for converting OSM ways
-# into Garmin lines.
-# Any line prefaced with # is a comment and will not be applied.
-# Each line is a rule, of the generalised format:
-#  OSM_tag(s)_to_match  [Garmin_type_code resolution]
-# See http://wiki.openstreetmap.org/wiki/Mkgmap/help/style_rules
-# and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
-# for more information.
+# special rules under inc/
 
-## routable types used in this file
-#	0x01	motorway
-#	0x02	trunk
-#	0x03	primary
-#	0x04	secondary
-#	0x05	tertiary
-#	0x06	residential/unclassified
-#	0x07	service/living_street/cycleway
-#	0x08	ramp motorway/trunk
-#	0x09	ramp other
-#	0x0a	service parking_aisle/alley
-#	0x0b	road 		an american special roadtype
-#	0x0c	roundabout
-#	0x0d	footway
-#	0x0e	track grade1
-#	0x0f	track grade2
-#	0x10	track grade3     with overlay
-#	0x11	track grade4/6 / track without grade*, with overlay
-#	0x12	path/trail
-#	0x13	steps
-#	0x16	bridleway
-#	0x1a	ferry
-#	0x1b	ways with no cat
-#-----------------------------------------------------------------------------
-# printout some infos about ways
-#highway=* & mkgmap:synthesised=yes
-#{echo ' ${highway} | ${name} '}
-#-----------------------------------------------------------------------------
+#include '../inc/cycle_highlights';
+# somehow it does not work with the include the deletealltags rule below did not remove unwanted ways 
+# so here is inc/cycle_highlights with the deletealltags rule before the first rule that adds a line to the map
 
-# make key/value usable, if values are separated with ';'
-include '../inc/filter';
-
-# cycle networks
+## cycle networks
 highway=* { set cycle_net='' }
 highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
 highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
@@ -49,6 +14,37 @@ highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
 ####
 # Remove all ways that are not associated with a cycleroute
 cycle_net='' { deletealltags }
+
+cycle_net=lcn                                                                              [0x10108 resolution 24-23 continue]
+cycle_net=rcn                                                                              [0x10109 resolution 24-23 continue]
+cycle_net=rcn                                                                              [0x1010f resolution 22-21 continue]
+cycle_net=icn                                                                              [0x1010a resolution 24-23 continue]
+cycle_net=icn                                                                              [0x10110 resolution 22-18 continue]
+cycle_net=icnrcn                                                                           [0x1010b resolution 24-21 continue]
+cycle_net=icnrcn                                                                           [0x10110 resolution 20-18 continue]
+cycle_net=rcnlcn                                                                           [0x1010c resolution 24-23 continue]
+cycle_net=rcnlcn                                                                           [0x1010f resolution 23-21 continue]
+cycle_net=icnlcn                                                                           [0x1010d resolution 24-23 continue]
+cycle_net=icnlcn                                                                           [0x10110 resolution 22-18 continue]
+cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-23 continue]
+cycle_net=icnrcnlcn                                                                        [0x10111 resolution 22-21 continue]
+cycle_net=icnrcnlcn                                                                        [0x10110 resolution 20-18 continue]
+
+(highway=cycleway | (highway=path & bicycle=designated)) & cn_name=*
+                { set name='${cn_name}' }
+
+
+include '../inc/cycle_lines';
+
+# -------------------------------------------------------------------
+#  common rules under inc/
+#  can not use them - makes bikeroute 10% bigger as it adds routable line types to the map
+#  as this map is not routable and those lines are not visible it's just not useful here
+include '../inc/lines';
+# so now follows a modified version of inc/lines that adds no routable lines
+
+# make key/value usable, if values are separated with ';'
+include '../inc/filter';
 
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
@@ -190,45 +186,6 @@ highway=* & railway=tram								[0x10e0d resolution 24-23 continue]
 
 # bridleway overlay
 highway=* & horse=designated								[0x10e0b resolution 24 continue]
-
-# cycleway overlay
-
-highway=* & (oneway:bicycle=no |
-             bicycle=dismount)                                                          [0x10e07 resolution 24-23 continue]
-
-highway=*
-          & (cycleway=both |
-             cycleway=lane |
-             cycleway=track )                                                           [0x10e08 resolution 24-23 continue]
-
-highway=*
-          & (cycleway:right=yes |
-             cycleway:right=lane)                                                       [0x10e09 resolution 24-23 continue]
-
-highway=*
-          & (cycleway:left=yes |
-	     cycleway:left=lane |
-	     cycleway=opposite |
-	     cycleway=opposite_lane |
-	     bicycle=opposite)								[0x10e0a resolution 24-23 continue]
-####
-
-cycle_net=lcn                                                                              [0x10108 resolution 24-23 continue]
-cycle_net=rcn                                                                              [0x10109 resolution 24-23 continue]
-cycle_net=rcn                                                                              [0x1010f resolution 22-21 continue]
-cycle_net=icn                                                                              [0x1010a resolution 24-23 continue]
-cycle_net=icn                                                                              [0x10110 resolution 22-18 continue]
-cycle_net=icnrcn                                                                           [0x1010b resolution 24-21 continue]
-cycle_net=icnrcn                                                                           [0x10110 resolution 20-18 continue]
-cycle_net=rcnlcn                                                                           [0x1010c resolution 24-23 continue]
-cycle_net=rcnlcn                                                                           [0x1010f resolution 23-21 continue]
-cycle_net=icnlcn                                                                           [0x1010d resolution 24-23 continue]
-cycle_net=icnlcn                                                                           [0x10110 resolution 22-18 continue]
-cycle_net=icnrcnlcn                                                                        [0x1010e resolution 24-23 continue]
-cycle_net=icnrcnlcn                                                                        [0x10111 resolution 22-21 continue]
-cycle_net=icnrcnlcn                                                                        [0x10110 resolution 20-18 continue]
-
-
 
 #------------------------------------------------------------------------------
 # Hide proposed ways
@@ -448,9 +405,6 @@ highway=pedestrian									[0x1201b resolution 23-23 continue]
 highway=pedestrian									[0x1101b resolution 24] # continue]
 #highway=pedestrian									[0x07 resolution 24 road_class=0 road_speed=0]
 
-(highway=cycleway | (highway=path & bicycle=designated)) & cn_name=*
-		{ set name='${cn_name}' }
-
 (highway=cycleway | (highway=path & bicycle=designated))                                [0x1200a resolution 23-23 continue]
 (highway=cycleway | (highway=path & bicycle=designated))                                [0x1100a resolution 24] # continue]
 #(highway=cycleway | (highway=path & bicycle=designated)) & junction=roundabout          [0x0c resolution 24 road_class=0 road_speed=1]
@@ -536,9 +490,9 @@ highway=road										[0x2c resolution 24] # continue]
 route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road_speed=0]
 
 # rendering options of nonroutable ways, located in inc/
-include '../inc/boundary_lines' ;
-include '../inc/non_route_ways' ;
-include '../inc/waterways' ;
+#include '../inc/boundary_lines' ;
+#include '../inc/non_route_ways' ;
+#include '../inc/waterways' ;
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches

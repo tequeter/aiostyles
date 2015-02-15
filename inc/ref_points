@@ -53,6 +53,8 @@
   railway=tram_stop |
   railway=halt |
   railway=station)
+    & (name=* | ref=*)
+		# unnamed bus_stop tram_stops etc. remain unnamed - this triggers the icon's name from the styles_typ.txt for the POI-list and also leaves no label on the map
         {
         name '${name|def:H} ${ref}' | '${name|def:H}';
         delete name ;
