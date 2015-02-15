@@ -40,7 +40,7 @@ include '../inc/cycle_lines';
 #  common rules under inc/
 #  can not use them - makes bikeroute 10% bigger as it adds routable line types to the map
 #  as this map is not routable and those lines are not visible it's just not useful here
-include '../inc/lines';
+#include '../inc/lines';
 # so now follows a modified version of inc/lines that adds no routable lines
 
 # make key/value usable, if values are separated with ';'
