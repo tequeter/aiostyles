@@ -169,6 +169,7 @@ amenity=social_centre | amenity=social_facility
 	}
 
 shop=* & shop!=hairdresser &
+          shop!=beauty &
           shop!=solarium &
           shop!=tanning &
           shop!=supermarket &

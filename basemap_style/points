@@ -284,7 +284,7 @@ railway=halt	                			                                [0x2f18 resoluti
 railway=tram_stop |
 public_transport=platform |
 amenity=bus_station |
-highway=bus_stop        								[0x2f17 resolution 24]
+highway=bus_stop        								[0x2f19 resolution 24]
 
 
 #------------------------------------------------------------------------------
@@ -531,8 +531,8 @@ shop=computer | shop=mobile_phone                                               
 # [0x2e0e resolution 24]
 
 #Other/Personal Services
-shop=hairdresser                                                                        [0x2f10 resolution 24]
-shop=solarium | shop=tanning | leisure=tanning_salon                                    [0x2f19 resolution 24]
+shop=hairdresser |
+shop=beauty                                                                            [0x2f10 resolution 24]
 
 # Florist  ## ok
 shop=florist                                                                            [0x2e0f resolution 24]

@@ -124,12 +124,13 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x2F14  Social Service
 0x2F15  Utility
 0x2F16  Truck Stop
+0x2f17  Transit Service
 0x3000  generic emergency/government
 0x3001  Police Station
 0x3002  Hospital
 0x3003  Public Office
 0x3004  Justice
-0x3005  Concert hall(point)
+0x3005  Community centre
 0x3006  Border Station(point)
 0x4000-0x401F   Golf
 0x4100-0x411F   Fish
