@@ -44,6 +44,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x2600-0x261F   Exit(Information)
 0x2700-0x271F   Exit
 0x2800-0x281F   Region name (no Point, small)
+0x2900-?        visible in 'all POIs'
 0x2A00  Dining(Other)
 0x2A01  Dining(American)
 0x2A02  Dining(Asian)
@@ -117,7 +118,7 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x2F0D  Automobile Club
 0x2F0E  Car Wash
 0x2F0F  Garmin Dealer
-0x2F10  Personal Service
+0x2F10  Personal Service (hairdresser, beauty...)
 0x2F11  Business Service
 0x2F12  Communication
 0x2F13  Repair Service
@@ -132,6 +133,8 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x3004  Justice
 0x3005  Community centre
 0x3006  Border Station(point)
+0x3007  Government Office
+0x3008  Fire Department
 0x4000-0x401F   Golf
 0x4100-0x411F   Fish
 0x4200-0x421F   Wreck
@@ -234,6 +237,8 @@ Zoom	cGPSmapper	etrex Vista	Oregon
 0x6616  Summit
 0x6617  Valley
 0x6618  Woods
+0x7110-?        visible in Map
+0x7200-?        visible in Map
 0x1C00  unclassified Obstruction
 0x1C01  Wreck
 0x1C02  submerged Wreck, dangerous

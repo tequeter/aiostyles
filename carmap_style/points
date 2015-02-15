@@ -278,13 +278,13 @@ public_transport=platform |
 amenity=bus_station |
 highway=bus_stop                                                                        [0x2f08 resolution 24 continue with_actions]
 
-railway=station                                                                         [0x2f18 resolution 22]
-railway=halt                                                                            [0x2f18 resolution 23]
+railway=station                                                                         [0x7207 resolution 22]
+railway=halt                                                                            [0x7206 resolution 23]
 
 railway=tram_stop |
 public_transport=platform |
 amenity=bus_station |
-highway=bus_stop                                                                        [0x2f19 resolution 24]
+highway=bus_stop                                                                        [0x7206 resolution 24]
 
 
 #------------------------------------------------------------------------------
