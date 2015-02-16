@@ -1,13 +1,13 @@
 (boundary!=* |
-place!=region)
-  (note=*  |
-   fixme = * |
-   FIXME=* |
-   Fixme=*)
-    {name '${note}' |
-    '${fixme}' |
-    '${FIXME}' |
-    '${Fixme}' }                                [0x53 resolution 22]
+  place!=region) &
+    (note=*  |
+      fixme = * |
+      FIXME=* |
+      Fixme=*)
+        {name '${note}' |
+          '${fixme}' |
+          '${FIXME}' |
+          '${Fixme}' }                                [0x53 resolution 22]
 
 building=* &
   building!=public &
