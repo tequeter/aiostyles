@@ -459,13 +459,16 @@ highway=track                                                                   
 #------------------------------------------------------------------------------
 # path
 
-highway=path | highway=trail | highway=byway                                            [0x11012 resolution 24 continue]
+highway=path | highway=trail                                                            [0x11012 resolution 24 continue]
 
 highway=path & (bicycle=permissive |
                  bicycle=official |
                  bicycle=yes)                                                           [0x0a resolution 24 road_class=0 road_speed=1]
 
-highway=path | highway=trail | highway=byway                                            [0x12 resolution 24 road_class=0 road_speed=0]
+highway=path | highway=trail
+                {
+                  add mkgmap:unpaved=1;
+                }                                                                       [0x12 resolution 24 road_class=0 road_speed=0]
 
 #------------------------------------------------------------------------------
 # mop up any unrecognised highway types but keep areas like pedestrian for polygons!
@@ -478,6 +481,7 @@ highway=road                                                                    
 highway=* & (mkgmap:unpaved=1)                                                          [0x0b resolution 24 road_class=0 road_speed=0]
 highway=* & (area!=yes & area!=true & area!=1)                                          [0x1b resolution 24 road_class=0 road_speed=0]
 highway=* & junction=roundabout                                                         [0x0c resolution 24 road_class=0 road_speed=0]
+
 #------------------------------------------------------------------------------
 
 # route
