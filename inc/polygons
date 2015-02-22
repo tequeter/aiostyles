@@ -114,9 +114,6 @@ landuse=brownfield							[0x0e resolution 20]
 landuse=greenfield							[0x10 resolution 20]
 landuse=construction							[0x11 resolution 20]
 
-landuse=reservoir |
-landuse=basin 								[0x3f resolution 22]
-
 landuse=village_green |
 landuse=grass								[0x10f11 resolution 22]
 
@@ -168,16 +165,6 @@ military=barracks 							[0x04 resolution 22]
 #------------------------------------------------------------------------------
 # natural
 
-natural=glacier 							[0x4d resolution 17]
-
-natural=wetland & wetland=wet_meadow                                    [0x10f15 resolution 21]
-natural=wetland & (wetland~'.*(bog)' | wetland=fen)                     [0x10f16 resolution 21]
-natural=wetland & wetland~'.*(swamp)'                                   [0x10f17 resolution 21]
-natural=wetland & wetland~'.*(marsh)'                                   [0x10f18 resolution 21]
-natural=wetland & wetland=reedbed                                       [0x10f19 resolution 21]
-
-natural=marsh | natural=wetland | natural=mud 				[0x51 resolution 21]
-
 natural=wood                                                            [0x15 resolution 18 continue with_actions]
 natural=wood &
           (wood=coniferous | leaf_type=needleleaved)                    [0x21 resolution 24-23]
@@ -194,14 +181,8 @@ natural=fell | natural=grassland					[0x35 resolution 20]
 natural=land 								[0x27 resolution 10]
 natural=sand                                                            [0x10f14 resolution 20]
 
-natural=sea 								[0x32 resolution 10]
-natural=water 								[0x3e resolution 17 continue]
-natural=water 								[0x3c resolution 23]
-natural=beach 								[0x3d resolution 17]
+include '../inc/water_polygons';
 
-#------------------------------------------------------------------------------
-
-waterway=riverbank 							[0x46 resolution 18]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
