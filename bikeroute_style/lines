@@ -2,7 +2,7 @@
 # special rules under inc/
 
 #include '../inc/cycle_highlights';
-# somehow it does not work with the include the deletealltags rule below did not remove unwanted ways 
+# somehow it does not work with the include the deletealltags rule below did not remove unwanted ways
 # so here is inc/cycle_highlights with the deletealltags rule before the first rule that adds a line to the map
 
 ## cycle networks
@@ -492,7 +492,7 @@ route=ferry 		{add mkgmap:ferry=1}    					[0x1a resolution 22 road_class=0 road
 # rendering options of nonroutable ways, located in inc/
 #include '../inc/boundary_lines' ;
 #include '../inc/non_route_ways' ;
-#include '../inc/waterways' ;
+#include '../inc/water_lines' ;
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches

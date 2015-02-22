@@ -490,7 +490,7 @@ route=ferry             {add mkgmap:ferry=1}                                    
 # rendering options of nonroutable ways, located in inc/
 include '../inc/boundary_lines' ;
 include '../inc/non_route_ways' ;
-include '../inc/waterways' ;
+include '../inc/water_lines' ;
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
