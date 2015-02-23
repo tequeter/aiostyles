@@ -152,6 +152,7 @@ leisure=pitch & sport=boules                                            [0x10f05
 
 leisure=pitch                                                           [0x19 resolution 23]
 
+leisure=track & surface=grass                                           [0x10f11 resolution 23]
 leisure=track                                                           [0x10f06 resolution 23]
 
 temp_pool=yes                                                           [0x40 resolution 23]
