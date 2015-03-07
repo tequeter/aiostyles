@@ -20,10 +20,5 @@ min-size-polygon=8
 reduce-point-density=4
 reduce-point-density-polygon=8
 merge-lines
-
-gmapsupp
 transparent
 latin1
-
-keep-going
-max-jobs

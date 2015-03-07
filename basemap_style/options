@@ -34,10 +34,5 @@ reduce-point-density=4
 reduce-point-density-polygon=8
 merge-lines
 index
-gmapsupp
 route
 latin1
-
-
-keep-going
-max-jobs

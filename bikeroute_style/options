@@ -22,21 +22,18 @@ copyright-message=OpenStreetMap contributors, ODbL. See: http://www.openstreetma
 #process-exits
 #process-destination
 #housenumbers
-remove-short-arcs=0
-check-roundabouts
-check-roundabout-flares
-make-opposite-cycleways
-adjust-turn-headings
+#remove-short-arcs=0
+#check-roundabouts
+#check-roundabout-flares
+#make-opposite-cycleways
+#adjust-turn-headings
 min-size-polygon=8
 reduce-point-density=4
 reduce-point-density-polygon=8
 merge-lines
 #index
-gmapsupp
 transparent
 #route
 latin1
-#nsis
 
-keep-going
-max-jobs
+
