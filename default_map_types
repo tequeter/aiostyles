@@ -34,3 +34,47 @@
         highway=pedestrian
         highway=byway
         railway=platform
+
+
+road_class=0
+junction=roundabout
+highway=construction
+highway=pedestrian
+highway=living_street
+highway=residential
+highway=bridleway
+highway=byway
+highway=service
+highway=cycleway
+highway=footway
+highway=track
+highway=unsurfaced
+
+road_class=1
+junction=roundabout & (highway=tertiary | highway=tertiary_link) [0x0c road_class=1
+junction=roundabout & highway=unclassified
+highway=tertiary
+highway=tertiary_link
+highway=minor
+highway=road
+railway=abandoned
+railway=platform
+
+road_class=2
+junction=roundabout & (highway=secondary | highway=secondary_link)
+highway=secondary
+highway=secondary_link
+
+road_class=3
+junction=roundabout & (highway=trunk | highway=trunk_link)
+junction=roundabout & (highway=primary | highway=primary_link)
+highway=motorway_link
+highway=trunk_link
+highway=primary
+highway=primary_link
+
+road_class=4
+highway=motorway
+highway=trunk
+highway=* & highway!=proposed & motorroad=yes
+

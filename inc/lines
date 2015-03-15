@@ -283,6 +283,8 @@ highway=construction    { add mkgmap:dead-end-check = false; }                  
 
 # Lower the road speed of ways under some construction.
 highway=* & construction=* & maxspeed!=* { add mkgmap:road-speed = '-1' }
+# Lower the road speed of disused ways.
+highway=* & disused=yes & maxspeed!=* { add mkgmap:road-speed = '-2' }
 
 # construction
 highway=* & construction=*                                                              [0x10e02 resolution 24-23 continue]
@@ -294,7 +296,7 @@ highway=motorway & network=e-road                                               
 highway=motorway                                                                        [0x12001 resolution 21-17 continue]
 highway=motorway                                                                        [0x11001 resolution 24-22 continue]
 highway=motorway & junction=roundabout                                                  [0x0c resolution 24 road_class=3 road_speed=3]
-highway=motorway                                                                        [0x01 resolution 24 road_class=4 road_speed=6]
+highway=motorway                                                                        [0x01 resolution 24 road_class=4 road_speed=7]
 
 highway=motorway_link                                                                   [0x12001 resolution 21-20 continue]
 highway=motorway_link                                                                   [0x11001 resolution 24-22 continue]
@@ -495,9 +497,9 @@ include '../inc/water_lines' ;
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
 
+include '../inc/address' ;
 include '../inc/roadspeed' ;
 include '../inc/access' ;
-include '../inc/address' ;
 include '../inc/phone';
 
 # remove unneeded names on cycleways

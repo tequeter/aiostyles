@@ -1,44 +1,36 @@
 #
 # Sets the road speed based on the maxspeed tag.
-# In case mkgmap:road-speed-class is set the element
-# road_speed is overriden.
-#
-# road_speed classification:
-# road_speed | highest speed
-#  7         | No speed limit
-#  6         | 70 mph / 110 km/h
-#  5         | 60 mph /  90 km/h
-#  4         | 50 mph /  80 km/h
-#  3         | 35 mph /  60 km/h
-#  2         | 25 mph /  40 km/h
-#  1         | 15 mph /  20 km/h
-#  0         |  3 mph /   5 km/h
 #
 
-# increase road_speed with cycle_network ways
-(highway=cycleway |
-  (highway=path & bicycle=designated) |
-  (highway=service & service!=parking_aisle) |
-   highway=residential |
-  (highway=track & tracktype=grade1))
-                        & cycle_network=yes                     { set mkgmap:road-speed-class = 3 }
+maxspeed=walk                   { set maxspeed=10 }
+maxspeed~'.*:living_street'     { set maxspeed=10 }
 
-(highway=footway |
-   highway=living_street |
-  (highway=pedestrian & area!=yes) |
-  (highway=track & tracktype=grade2))
-                        & cycle_network=yes                     { set mkgmap:road-speed-class = 2 }
+maxspeed=RU:urban               { set maxspeed=60 }
+maxspeed=UA:urban               { set maxspeed=60 }
 
+maxspeed~'.*:urban'             { set maxspeed=50 }
 
-# set road_speed to more exact values on ways with maxspeed
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() > 110   { set mkgmap:road-speed-class = 7 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  90   { set mkgmap:road-speed-class = 6 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  80   { set mkgmap:road-speed-class = 5 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  60   { set mkgmap:road-speed-class = 4 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  40   { set mkgmap:road-speed-class = 3 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  20   { set mkgmap:road-speed-class = 2 }
-# change class 1 to 10 km/h which is not correct but better handles living_streets with maxspeed=7
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh() >  10   { set mkgmap:road-speed-class = 1 }
-maxspeed=* & mkgmap:road-speed-class!=* & maxspeedkmh()=*       { set mkgmap:road-speed-class = 0 }
+maxspeed=AT:rural               { set maxspeed=100 }
+maxspeed=DE:rural               { set maxspeed=100 }
 
+maxspeed~'.*:rural'             { set maxspeed=90 }
 
+maxspeed~'.*:trunk'             { set maxspeed=100 }
+maxspeed~'.*:motorway'          { set maxspeed=130 }
+
+maxspeed=* & maxspeedkmh()!=*   { delete maxspeed }
+
+maxspeed=* & mkgmap:cache_maxspeedkmh=* {set maxspeedkmh_temp='${mkgmap:cache_maxspeedkmh|part:.:1}'}
+
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  10 { set mkgmap:road-speed-max = 0 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  20 { set mkgmap:road-speed-max = 1 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  40 { set mkgmap:road-speed-max = 2 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  60 { set mkgmap:road-speed-max = 3 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  80 { set mkgmap:road-speed-max = 4 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <= 100 { set mkgmap:road-speed-max = 5 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <= 120 { set mkgmap:road-speed-max = 6 }
+
+# please remove this line after tests
+highway= * & maxspeed=* { echo ' ${maxspeedkmh_temp} | ${mkgmap:road-speed-max}'}
+
+highway= * & maxspeedkmh_temp = * { delete maxspeedkmh_temp}
