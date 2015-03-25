@@ -121,6 +121,8 @@ addr:streetnumber=* & addr:housenumber=* & addr:conscriptionnumber=* { set mkgma
 
 mkgmap:housenumber!=* & addr:housenumber=* { set mkgmap:housenumber='${addr:housenumber}' }
 
+#addr:housenumber > 5000 { echo ' ${addr:housenumber}'}
+
 mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
 mkgmap:phone!=* & contact:phone=* { add mkgmap:phone='${contact:phone}' }
 

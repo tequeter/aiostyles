@@ -7,30 +7,26 @@ maxspeed~'.*:living_street'     { set maxspeed=10 }
 
 maxspeed=RU:urban               { set maxspeed=60 }
 maxspeed=UA:urban               { set maxspeed=60 }
-
 maxspeed~'.*:urban'             { set maxspeed=50 }
 
 maxspeed=AT:rural               { set maxspeed=100 }
 maxspeed=DE:rural               { set maxspeed=100 }
-
 maxspeed~'.*:rural'             { set maxspeed=90 }
 
 maxspeed~'.*:trunk'             { set maxspeed=100 }
 maxspeed~'.*:motorway'          { set maxspeed=130 }
 
+
+
+# delete maxspeed if we still cannot convert it to km/h
 maxspeed=* & maxspeedkmh()!=*   { delete maxspeed }
 
-maxspeed=* & mkgmap:cache_maxspeedkmh=* {set maxspeedkmh_temp='${mkgmap:cache_maxspeedkmh|part:.:1}'}
-
 highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  10 { set mkgmap:road-speed-max = 0 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  20 { set mkgmap:road-speed-max = 1 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  40 { set mkgmap:road-speed-max = 2 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  25 { set mkgmap:road-speed-max = 1 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  45 { set mkgmap:road-speed-max = 2 }
 highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  60 { set mkgmap:road-speed-max = 3 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  80 { set mkgmap:road-speed-max = 4 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  85 { set mkgmap:road-speed-max = 4 }
 highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <= 100 { set mkgmap:road-speed-max = 5 }
 highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <= 120 { set mkgmap:road-speed-max = 6 }
-
-# please remove this line after tests
-highway= * & maxspeed=* { echo ' ${maxspeedkmh_temp} | ${mkgmap:road-speed-max}'}
-
-highway= * & maxspeedkmh_temp = * { delete maxspeedkmh_temp}
+# mkgmap:road-speed-max = 7 has no effect
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp  > 120 { set mkgmap:road-speed-class = 7 }

@@ -533,7 +533,7 @@ shop=computer | shop=mobile_phone                                               
 #Other/Personal Services
 shop=hairdresser |
 (shop=beauty & beauty!=tanning)                                                         [0x2f10 resolution 24]
-shop=solarium | 
+shop=solarium |
 leisure=tanning_salon |
 (shop=beauty & beauty=tanning)                                                          [0x2f19 resolution 24]
 
