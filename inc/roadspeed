@@ -19,12 +19,12 @@ maxspeed~'.*:motorway'          { set maxspeed=130 }
 # delete maxspeed if we still cannot convert it to km/h
 maxspeed=* & maxspeedkmh()!=*   { delete maxspeed }
 
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <=  10 { set mkgmap:road-speed-max = 0 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <=  25 { set mkgmap:road-speed-max = 1 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <=  45 { set mkgmap:road-speed-max = 2 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <=  60 { set mkgmap:road-speed-max = 3 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <=  85 { set mkgmap:road-speed-max = 4 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <= 100 { set mkgmap:road-speed-max = 5 }
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh <= 120 { set mkgmap:road-speed-max = 6 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  10 { set mkgmap:road-speed-max = 0 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  25 { set mkgmap:road-speed-max = 1 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  45 { set mkgmap:road-speed-max = 2 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  60 { set mkgmap:road-speed-max = 3 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  85 { set mkgmap:road-speed-max = 4 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <= 100 { set mkgmap:road-speed-max = 5 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh() <= 120 { set mkgmap:road-speed-max = 6 }
 # mkgmap:road-speed-max = 7 has no effect
-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh  > 120 { set mkgmap:road-speed-class = 7 }
+highway=* & mkgmap:road-speed-max!=* & maxspeedkmh()  > 120 { set mkgmap:road-speed-class = 7 }
