@@ -1,0 +1,69 @@
+diff --git a/inc/address b/inc/address
+index 2c300ff..7f7bae6 100644
+--- a/inc/address
++++ b/inc/address
+@@ -121,6 +121,8 @@ addr:streetnumber=* & addr:housenumber=* & addr:conscriptionnumber=* { set mkgma
+ 
+ mkgmap:housenumber!=* & addr:housenumber=* { set mkgmap:housenumber='${addr:housenumber}' }
+ 
++#addr:housenumber > 5000 { echo ' ${addr:housenumber}'}
++
+ mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
+ mkgmap:phone!=* & contact:phone=* { add mkgmap:phone='${contact:phone}' }
+ 
+diff --git a/inc/points b/inc/points
+index 12ff373..8e33119 100644
+--- a/inc/points
++++ b/inc/points
+@@ -533,7 +533,7 @@ shop=computer | shop=mobile_phone
+ #Other/Personal Services
+ shop=hairdresser |
+ (shop=beauty & beauty!=tanning)                                                         [0x2f10 resolution 24]
+-shop=solarium | 
++shop=solarium |
+ leisure=tanning_salon |
+ (shop=beauty & beauty=tanning)                                                          [0x2f19 resolution 24]
+ 
+diff --git a/inc/roadspeed b/inc/roadspeed
+index 2d0831e..db059ca 100644
+--- a/inc/roadspeed
++++ b/inc/roadspeed
+@@ -7,30 +7,26 @@ maxspeed~'.*:living_street'     { set maxspeed=10 }
+ 
+ maxspeed=RU:urban               { set maxspeed=60 }
+ maxspeed=UA:urban               { set maxspeed=60 }
+-
+ maxspeed~'.*:urban'             { set maxspeed=50 }
+ 
+ maxspeed=AT:rural               { set maxspeed=100 }
+ maxspeed=DE:rural               { set maxspeed=100 }
+-
+ maxspeed~'.*:rural'             { set maxspeed=90 }
+ 
+ maxspeed~'.*:trunk'             { set maxspeed=100 }
+ maxspeed~'.*:motorway'          { set maxspeed=130 }
+ 
+-maxspeed=* & maxspeedkmh()!=*   { delete maxspeed }
+ 
+-maxspeed=* & mkgmap:cache_maxspeedkmh=* {set maxspeedkmh_temp='${mkgmap:cache_maxspeedkmh|part:.:1}'}
++
++# delete maxspeed if we still cannot convert it to km/h
++maxspeed=* & maxspeedkmh()!=*   { delete maxspeed }
+ 
+ highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  10 { set mkgmap:road-speed-max = 0 }
+-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  20 { set mkgmap:road-speed-max = 1 }
+-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  40 { set mkgmap:road-speed-max = 2 }
++highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  25 { set mkgmap:road-speed-max = 1 }
++highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  45 { set mkgmap:road-speed-max = 2 }
+ highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  60 { set mkgmap:road-speed-max = 3 }
+-highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  80 { set mkgmap:road-speed-max = 4 }
++highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <=  85 { set mkgmap:road-speed-max = 4 }
+ highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <= 100 { set mkgmap:road-speed-max = 5 }
+ highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp <= 120 { set mkgmap:road-speed-max = 6 }
+-
+-# please remove this line after tests
+-highway= * & maxspeed=* { echo ' ${maxspeedkmh_temp} | ${mkgmap:road-speed-max}'}
+-
+-highway= * & maxspeedkmh_temp = * { delete maxspeedkmh_temp}
++# mkgmap:road-speed-max = 7 has no effect
++highway=* & mkgmap:road-speed-max!=* & maxspeedkmh_temp  > 120 { set mkgmap:road-speed-class = 7 }

@@ -2863,7 +2863,7 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x02
-String1=0x04,Trunk
+String1=0x04,Trunk Road
 String2=0x02,Schnellstraﬂe
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -2875,7 +2875,7 @@ Xpm="32 1 2 1"
 [_line]
 Type=0x03
 String1=0x02,Bundesstraﬂe
-String2=0x04,Primary
+String2=0x04,Primary Road
 UseOrientation=N
 Xpm="32 1 2 1"
 "0 c #FFFFFF"
@@ -2885,8 +2885,8 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x04
-String1=0x02,Landes-/Staatsstraﬂe
-String2=0x04,Secondary
+String1=0x02,Landesstraﬂe
+String2=0x04,Secondary Road
 UseOrientation=N
 Xpm="32 1 2 1"
 "0 c #FFFFFF"
@@ -2897,7 +2897,7 @@ Xpm="32 1 2 1"
 [_line]
 Type=0x05
 String1=0x02,Kreisstraﬂe
-String2=0x04,Tertiary
+String2=0x04,Tertiary Road
 UseOrientation=N
 Xpm="32 1 2 1"
 "0 c #FFFFFF"
@@ -2907,7 +2907,7 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x06
-String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String1=0x02,Wohnstraﬂe/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 UseOrientation=N
 Xpm="32 1 2 1"
@@ -4376,7 +4376,7 @@ Type=0x11002
 LineWidth=4
 BorderWidth=1
 UseOrientation=N
-String1=0x04,Trunk
+String1=0x04,Trunk Road
 String2=0x02,Schnellstraﬂe
 Xpm="0 0 2 0"
 "0 c #FF6500"
@@ -4390,7 +4390,7 @@ LineWidth=4
 BorderWidth=1
 UseOrientation=N
 String1=0x02,Bundesstraﬂe
-String2=0x04,Primary
+String2=0x04,Primary Road
 Xpm="0 0 2 0"
 "0 c #FF6500"
 "1 c #BD3000"
@@ -4402,8 +4402,8 @@ Type=0x11004
 LineWidth=3
 BorderWidth=1
 UseOrientation=N
-String1=0x02,Landes-/Staatsstraﬂe
-String2=0x04,Secondary
+String1=0x02,Landesstraﬂe
+String2=0x04,Secondary Road
 Xpm="0 0 2 0"
 "0 c #FFCA00"
 "1 c #BD3000"
@@ -4416,7 +4416,7 @@ LineWidth=3
 BorderWidth=1
 UseOrientation=N
 String1=0x02,Kreisstraﬂe
-String2=0x04,Tertiary
+String2=0x04,Tertiary Road
 Xpm="0 0 2 0"
 "0 c #FFFF00"
 "1 c #000000"
@@ -4428,7 +4428,7 @@ Type=0x11006
 LineWidth=2
 BorderWidth=1
 UseOrientation=Y
-String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String1=0x02,Wohnstraﬂe/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 Xpm="0 0 2 0"
 "0 c #FFFFFF"
@@ -4663,7 +4663,7 @@ Type=0x12002
 LineWidth=2
 BorderWidth=1
 UseOrientation=N
-String1=0x04,Trunk
+String1=0x04,Trunk Road
 String2=0x02,Schnellstraﬂe
 Xpm="0 0 2 0"
 "0 c #FF6500"
@@ -4677,7 +4677,7 @@ LineWidth=2
 BorderWidth=1
 UseOrientation=N
 String1=0x02,Bundesstraﬂe
-String2=0x04,Primary
+String2=0x04,Primary Road
 Xpm="0 0 2 0"
 "0 c #FF6500"
 "1 c #BD3000"
@@ -4690,7 +4690,7 @@ LineWidth=2
 BorderWidth=1
 UseOrientation=N
 String1=0x02,Landes-/Staatsstraﬂe
-String2=0x04,Secondary
+String2=0x04,Secondary Road
 Xpm="0 0 2 0"
 "0 c #FFCA00"
 "1 c #BD3000"
@@ -4703,7 +4703,7 @@ LineWidth=2
 BorderWidth=1
 UseOrientation=N
 String1=0x02,Kreisstraﬂe
-String2=0x04,Tertiary
+String2=0x04,Tertiary Road
 Xpm="0 0 2 0"
 "0 c #FFFF00"
 "1 c #000000"
@@ -4715,7 +4715,7 @@ Type=0x12006
 LineWidth=1
 BorderWidth=0
 UseOrientation=Y
-String1=0x02,Wohn-/Gemeinde-/Nebenstraﬂe
+String1=0x02,Wohnstraﬂe/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 Useorientation=N
 Xpm="0 0 1 0"
