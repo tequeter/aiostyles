@@ -4708,26 +4708,23 @@ Xpm="0 0 2 0"
 [_line]
 Type=0x12006
 LineWidth=1
-BorderWidth=0
-UseOrientation=Y
+BorderWidth=1
+Useorientation=N
 String1=0x02,Wohnstraﬂe/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
-Useorientation=N
-Xpm="0 0 1 0"
-"0 c #414141"
+Xpm="0 0 2 0"
+"0 c #FFFFFF"
+"1 c #414141"
 
 [end]
 
 [_line]
 Type=0x12007
 LineWidth=1
-String1=0x02,Zufahrtsweg
-String2=0x04,Service
 BorderWidth=0
 UseOrientation=N
-ExtendedLabels=Y
-FontStyle=Default
-UseOrientation=N
+String1=0x02,Zufahrtsweg
+String2=0x04,Service
 Xpm="0 0 1 0"
 "0 c #838383"
 
@@ -4735,14 +4732,17 @@ Xpm="0 0 1 0"
 
 [_line]
 Type=0x12008
+LineWidth=1
+BorderWidth=1
+UseOrientation=N
 String1=0x02,Wohnstraﬂe
 String2=0x04,Livingstreet
-UseOrientation=N
-Xpm="32 1 2 1"
+Xpm="0 0 2 0"
 "0 c #00FF00"
 "1 c #000000"
-"00110011001100110011001100110011"
+
 [end]
+
 
 [_line]
 Type=0x1200A
