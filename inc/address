@@ -116,12 +116,7 @@ mkgmap:postal_code!=* & addr:postcode=* { set mkgmap:postal_code='${addr:postcod
 mkgmap:street!=* & addr:street=* { set mkgmap:street='${addr:street}' }
 mkgmap:street!=* & addr:housename=* { set mkgmap:street='${addr:housename}' }
 
-## see http://wiki.openstreetmap.org/wiki/Key:addr:streetnumber
-addr:streetnumber=* & addr:housenumber=* & addr:conscriptionnumber=* { set mkgmap:housenumber='${addr:streetnumber}' }
-
 mkgmap:housenumber!=* & addr:housenumber=* { set mkgmap:housenumber='${addr:housenumber}' }
-
-#addr:housenumber > 5000 { echo ' ${addr:housenumber}'}
 
 mkgmap:phone!=* & phone=* { set mkgmap:phone='${phone}' }
 mkgmap:phone!=* & contact:phone=* { add mkgmap:phone='${contact:phone}' }

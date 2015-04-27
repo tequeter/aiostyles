@@ -117,6 +117,12 @@ highway=* & ramp=yes
                       add bicyle=yes
                       }
 
+#-----------------------------------------------------------------------------
+# Next line is needed, because 'motorcycle=no' makes
+# nonroutable highways for motorcar
+
+highway=* & motorcycle=no {delete motorcycle}
+
 access=agricultural
                       { set access=no;
                         add foot=yes

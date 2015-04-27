@@ -46,11 +46,38 @@ highway=* & name=* { set mkgmap:street='${name}' }
 # Mark highways with the toll flag
 highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
 
-#-----------------------------------------------------------------------------
-# next line is needed, because 'motorcycle=no' makes
-# nonroutable highways for motorcar
+# Hide proposed ways
+highway=proposed {delete highway;delete junction}
 
-highway=* & motorcycle=no {delete motorcycle}
+
+#------------------------------------------------------------------------------
+# Hide unaccessible tunnels
+highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
+        (access=private|access=no) &
+        foot!=* &
+        bicycle!=*
+           {delete highway;delete junction}
+
+#------------------------------------------------------------------------------
+# Disable dead-end-checks for unaccessible oneways
+highway=* & oneway=yes &
+      (access=private|access=no)
+            {add mkgmap:dead-end-check=false}
+
+#-----------------------------------------------------------------------------
+# Validation-like checks
+#highway=motorway_link
+#               & oneway!=yes
+#               & oneway!=no
+#               & oneway!=true
+#               & oneway!=1
+#               & oneway!=-1
+#               & junction!=roundabout
+#               & access!=no
+#               & access!=emergency
+#               {
+#                 echo "motorway_link lacks oneway"
+#               }
 
 #
 #------------------------------------------------------------------------------
@@ -128,6 +155,10 @@ highway=*  & (oneway=1 | oneway=true)
 #                               overlays
 #------------------------------------------------------------------------------
 
+# disused
+
+highway=* & disused=yes      { deletealltags }                                          [0x10e01 resolution 24]
+
 
 # toll overlay
 toll=yes & highway!=motorway                                                            [0x10e03 resolution 24-22 continue]
@@ -180,44 +211,6 @@ highway=* & railway=tram                                                        
 
 # bridleway overlay
 highway=* & horse=designated                                                            [0x10e0b resolution 24 continue]
-
-#------------------------------------------------------------------------------
-# Hide proposed ways
-highway=proposed {delete highway;delete junction}
-
-#------------------------------------------------------------------------------
-# Hide unaccessible tunnels
-highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
-        (access=private|access=no) &
-        foot!=* &
-        bicycle!=*
-           {delete highway;delete junction}
-
-#------------------------------------------------------------------------------
-# Disable dead-end-checks for unaccessible oneways
-highway=* & oneway=yes &
-      (access=private|access=no)
-            {add mkgmap:dead-end-check=false}
-
-#------------------------------------------------------------------------------
-# disused
-
-highway=* & disused=yes                                                                 [0x10e01 resolution 24]
-
-#-----------------------------------------------------------------------------
-# Validation-like checks
-#highway=motorway_link
-#               & oneway!=yes
-#               & oneway!=no
-#               & oneway!=true
-#               & oneway!=1
-#               & oneway!=-1
-#               & junction!=roundabout
-#               & access!=no
-#               & access!=emergency
-#               {
-#                 echo "motorway_link lacks oneway"
-#               }
 
 #--------------------------------------------------------------------------------------
 # process exits and destination

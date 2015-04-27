@@ -4427,7 +4427,7 @@ Xpm="0 0 2 0"
 Type=0x11006
 LineWidth=2
 BorderWidth=1
-UseOrientation=Y
+UseOrientation=N
 String1=0x02,Wohnstraﬂe/Nebenstraﬂe
 String2=0x04,Residential/Unclassified
 Xpm="0 0 2 0"
@@ -4443,7 +4443,6 @@ BorderWidth=0
 UseOrientation=N
 String1=0x02,Zufahrtsweg
 String2=0x04,Service
-Useorientation=N
 Xpm="0 0 1 0"
 "0 c #838383"
 
@@ -4631,9 +4630,9 @@ Xpm="32 3 2 1"
 Type=0x1101F
 LineWidth=1
 BorderWidth=0
+UseOrientation=N
 String1=0x02,Wasserlauf
 String2=0x04,Water way
-UseOrientation=N
 Xpm="0 0 2 0"
 "0 c #2EBBB4"
 "1 c #4488FF"
