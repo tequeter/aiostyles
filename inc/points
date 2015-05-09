@@ -8,10 +8,12 @@
 # and http://wiki.openstreetmap.org/wiki/Mkgmap/help/Custom_styles
 # for more information.
 
+#To set the city, region and country values for all elements with housenumbers
+addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
+
 include '../inc/ref_points';
 include '../inc/access_points';
 include '../inc/name';
-
 
 #------------------------------------------------------------------------------
 # Places

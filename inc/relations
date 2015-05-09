@@ -2,6 +2,7 @@
 
 route=foot | route=hiking   { apply { add foot=yes; } }
 
+type=multipolygon & highway=* { apply { set area=yes; } }
 
 # European E-Road network
 
