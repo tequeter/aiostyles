@@ -192,3 +192,6 @@ include '../inc/water_polygons';
 # The finalizer section is executed for each element when a rule with an element type matches
 
 name=* { name '${name}' }
+include '../inc/address' ;
+include '../inc/phone';
+include '../inc/access' ;
