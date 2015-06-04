@@ -16,8 +16,8 @@
 #       0x05    tertiary
 #       0x06    residential/unclassified
 #       0x07    service/living_street/cycleway
-#       0x08    ramp motorway/trunk
-#       0x09    ramp other
+#       0x08    ramp all except motorway/trunk
+#       0x09    ramp motorway/trunk
 #       0x0a    service parking_aisle/alley
 #       0x0b    road            an american special roadtype
 #       0x0c    roundabout
