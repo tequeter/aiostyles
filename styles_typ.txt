@@ -6888,7 +6888,7 @@ dayxpm="16 15 4 1" colormode=32
 
 [_point]
 Type=0x03000
-String1=0x02,öffentll.Gebäude
+String1=0x02,öffentl.Gebäude
 String2=0x04,public Building
 ExtendedLabels=N
 dayxpm="1 1 2 1" colormode=16
