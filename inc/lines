@@ -31,11 +31,6 @@
 #       0x16    bridleway
 #       0x1a    ferry
 #       0x1b    ways with no cat
-#-----------------------------------------------------------------------------
-# printout some infos about ways
-#highway=* & mkgmap:synthesised=yes
-#{echo ' ${highway} | ${name} '}
-#-----------------------------------------------------------------------------
 
 #To set the city, region and country values for all elements with housenumbers
 addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
@@ -234,7 +229,7 @@ highway=trunk
                   name '${ref|highway-symbol:hbox} ${name}' |
                        '${ref|highway-symbol:hbox}' |
                        '${name}';
-                  add mkgmap:display_name = '${name} (${ref})'
+                  addlabel '${name} (${ref})'
                 }
 
 highway=primary
@@ -242,7 +237,7 @@ highway=primary
                   name '${ref|highway-symbol:box} ${name}' |
                        '${ref|highway-symbol:box}' |
                        '${name}';
-                  add mkgmap:display_name = '${name} (${ref})'
+                 addlabel '${name} (${ref})'
                 }
 
 highway=secondary | highway=tertiary
@@ -250,7 +245,7 @@ highway=secondary | highway=tertiary
                   name '${ref|highway-symbol:oval} ${name}' |
                        '${ref|highway-symbol:oval}' |
                        '${name}';
-                  add mkgmap:display_name = '${name} (${ref})'
+                  addlabel '${name} (${ref})'
                 }
 
 highway=*
@@ -498,8 +493,11 @@ include '../inc/roadspeed' ;
 include '../inc/access' ;
 include '../inc/phone';
 
-# remove unneeded names on cycleways
-mkgmap:synthesised=yes & bicycle=yes { set mkgmap:highest-resolution-only = true; delete name }
+#limit artificial cycleways to to resolution 24
+mkgmap:synthesised=yes & mkgmap:bicycle=yes { set mkgmap:highest-resolution-only = true }
+
+# don't add house numbers to unnamed or artifical bicycle ways
+mkgmap:bicycle=yes & (mkgmap:foot=no & mkgmap:car=no & mkgmap:street!=* | mkgmap:synthesised=yes) {set mkgmap:numbers=false}
 
 name=* { name '${name}' }
 include '../inc/ref_lines' ;

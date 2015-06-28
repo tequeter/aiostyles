@@ -101,8 +101,8 @@ man_made=tower                                                          [0x6411 
 
 (tourism=information
           & information=guidepost) |
-            amenity=guidepost |
-            amenity=signpost                                            [0x6412 resolution 24]
+            (amenity=guidepost |
+             amenity=signpost )                                         [0x6412 resolution 24]
 man_made=adit                                                           [0x6413 resolution 24]
 
 (amenity=drinking_water & (drinking_water=yes|drinkable=yes)) |
@@ -253,7 +253,7 @@ amenity=telephone                                                               
 
 emergency=phone | amenity=emergency_phone                                               [0x5101 resolution 24]
 
-highway=emergency_access_point                                                          [0x5102 resolution 24]
+highway=emergency_access_point | emergency=access_point                                 [0x5102 resolution 24]
 
 #------------------------------------------------------------------------------
 # Transportation
