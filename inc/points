@@ -45,9 +45,10 @@ place=town                       & cityxx!=yes  & name=*        {set cityxx=yes}
 place=village                    & cityxx!=yes  & name=*        {set cityxx=yes} [0x0900 resolution 19 continue with_actions]
 place=suburb                     & cityxx!=yes  & name=*        {set cityxx=yes} [0x0a00 resolution 21 continue with_actions]
 
-(place=hamlet |
-place=isolated_dwelling |
-place=neighbourhood)             & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 22 continue with_actions]
+(place=isolated_dwelling |
+place=hamlet |
+place=neighbourhood |
+place=farm)                      & cityxx!=yes  & name=*        {set cityxx=yes} [0x0b00 resolution 22 continue with_actions]
 
 place=island                     & cityxx!=yes  & name=*        {set cityxx=yes} [0x650c resolution 21 continue with_actions]
 place=islet                      & cityxx!=yes  & name=*        {set cityxx=yes} [0x650c resolution 22 continue with_actions]
