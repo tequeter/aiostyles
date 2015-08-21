@@ -26,5 +26,7 @@ highway=* & maxspeed=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  60 { set m
 highway=* & maxspeed=* & mkgmap:road-speed-max!=* & maxspeedkmh() <=  85 { set mkgmap:road-speed-max = 4 }
 highway=* & maxspeed=* & mkgmap:road-speed-max!=* & maxspeedkmh() <= 100 { set mkgmap:road-speed-max = 5 }
 highway=* & maxspeed=* & mkgmap:road-speed-max!=* & maxspeedkmh() <= 120 { set mkgmap:road-speed-max = 6 }
-# mkgmap:road-speed-max = 7 has no effect
-highway=* & maxspeed=* & mkgmap:road-speed-max!=* & maxspeedkmh()  > 120 { set mkgmap:road-speed-class = 7 }
+
+
+# make sure that mkgmap:road-speed is also set when mkgmap:road-speed-max is set  
+highway=* & mkgmap:road-speed-max=* & mkgmap:road-speed!=* { add mkgmap:road-speed = '${mkgmap:road-speed-max}' }

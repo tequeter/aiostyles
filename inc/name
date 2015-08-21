@@ -52,16 +52,32 @@ name=FIXME | name=fixme                 { delete name; }
 #operator=${name}                       { delete operator; }
 #brand=${name}                          { delete brand; }
 
-## name option for base- and bikemap
 
-
+# remove unneeded tags 
+amenity=parking & access=private {delete amenity}
 amenity=parking & capacity=unknown { delete capacity ; }
 amenity=parking & capacity:disabled=unknown { delete capacity:disabled ; }
 
+
 amenity=parking
-         { name '${name|def:P} (${capacity} + ${capacity:disabled})' |
+        & ( parking=multi-storey |
+            parking=underground)       
+         { name '^ ${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
+		'^ ${name|def:P} (${capacity}/${capacity:disabled})' |
+                '^ ${name|def:P} (${capacity})[${fee}]' |
+                '^ ${name|def:P} (${capacity})' |
+                '^ ${name|def:P} [${fee}]' |
+                '^ ${name|def:P}'
+                }
+                
+amenity=parking
+         { name '${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
+		'${name|def:P} (${capacity}/${capacity:disabled})' |
+                '${name|def:P} (${capacity})[${fee}]' |
                 '${name|def:P} (${capacity})' |
-                '${name}'}
+                '${name|def:P} [${fee}]'|
+                '${name|def:P}'                
+                }
 
 amenity=post_office
         {
