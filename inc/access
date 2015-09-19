@@ -59,6 +59,12 @@ highway=* & motorroad=yes
                         }
 
 ## rules to prevent use of bad ways
+
+highway=* & disused=yes
+                {
+                  add access=no;
+                }
+	    
 highway=track
             & mkgmap:unpaved=1
             & (tracktype~'grade[4-6]' |
@@ -99,7 +105,8 @@ highway=steps |
                   }
 
 highway=bridleway
-                { add access=no
+                { 
+		  add access=no
                   }
 
 highway=cycleway
@@ -108,66 +115,17 @@ highway=cycleway
                   add access=no
                   }
 
-highway=* & cycle_network=yes
-              { set bicycle=yes }
-
 highway=* & ramp=yes
-                    {
-                      add foot=yes;
-                      add bicyle=yes
-                      }
+		{
+                  add foot=yes;
+		  add bicyle=yes
+		  }
 
 #-----------------------------------------------------------------------------
 # Next line is needed, because 'motorcycle=no' makes
 # nonroutable highways for motorcar
 
 highway=* & motorcycle=no {delete motorcycle}
-
-access=agricultural
-                      { set access=no;
-                        add foot=yes
-                        }
-
-access=customers
-                      { set access=no;
-                        add foot=yes
-                        }
-
-access=private
-                      { set access=no;
-                        }
-
-vehicle=*            {
-                        add bicycle='${vehicle}';
-                        add motor_vehicle='${vehicle}';
-                        }
-
-motor_vehicle=*      {
-                        add motorcar='${motor_vehicle}';
-                        add goods='${motor_vehicle}';
-                        add hgv='${motor_vehicle}';
-                        add psv='${motor_vehicle}';
-                        add emergency='${motor_vehicle}';
-                        }
-
-psv=*                 {
-                        add taxi='${psv}';
-                        add bus='${psv}';
-                        }
-
-# throughroute cannot be handled differently for different vehicle types
-# Therefore we have to choose one vehicle type - and the winner is: motorcar
-motorcar=destination
-                      {
-                        set mkgmap:throughroute=no;
-                        set motorcar=yes
-                        }
-
-access=destination
-                      {
-                        set mkgmap:throughroute=no;
-                        set access=yes
-                        }
 
 # Normalize all values that indicate a restriction to 'no'
 foot=private          | foot=agricultural         | foot=customers              { set foot=no }
@@ -188,6 +146,57 @@ hgv=designated        | hgv=permissive            | hgv=official                
 bus=designated        | bus=permissive            | bus=official                { set bus=yes }
 taxi=designated       | taxi=permissive           | taxi=official               { set taxi=yes }
 emergency=designated  | emergency=permissive      | emergency= official         { set emergency=yes }
+
+# some access rules 
+access=customers      | access=agricultural
+                      { 
+			add foot=yes;
+			add access=no;
+			} 
+
+access=private
+                      { 
+			set access=no;
+                        }
+
+vehicle=*             {
+                        set bicycle='${vehicle}';
+                        set motor_vehicle='${vehicle}';
+                        }
+
+motor_vehicle=*       {
+                        set motorcar='${motor_vehicle}';
+                        set goods='${motor_vehicle}';
+                        set hgv='${motor_vehicle}';
+                        set psv='${motor_vehicle}';
+                        set emergency='${motor_vehicle}';
+                        }
+
+psv=*                 {
+                        set taxi='${psv}';
+                        set bus='${psv}';
+                        }
+
+# throughroute cannot be handled differently for different vehicle types
+# Therefore we have to choose one vehicle type - and the winner is: motorcar
+motorcar=destination
+                      {
+                        set mkgmap:throughroute=no;
+                        set motorcar=yes
+                        }
+
+access=destination
+                      {
+                        set mkgmap:throughroute=no;
+                        set access=yes
+                        }
+
+# some ways are locally signed with vehicle=no, but are included in a cycle network, 
+# therefore we set them to bicycle=yes
+highway=* & cycle_network=yes
+		{ 
+		  set bicycle=yes 
+		  }
 
 # Copy the OSM access tags to the mkgmap internal tags
 foot=*       { set mkgmap:foot='${foot}' }

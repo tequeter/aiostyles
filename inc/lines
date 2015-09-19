@@ -38,17 +38,13 @@ addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';
 
-# Assign the street name for house number search
-highway=* & name=* { set mkgmap:street='${name}' }
-
-# Mark highways with the toll flag
-highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
 
 # Hide proposed ways
 highway=proposed {delete highway;delete junction}
 
+# Hide removed ways
+highway=razed {deletealltags}
 
-#------------------------------------------------------------------------------
 # Hide unaccessible tunnels
 highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
         (access=private|access=no) &
@@ -56,7 +52,13 @@ highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
         bicycle!=*
            {delete highway;delete junction}
 
-#------------------------------------------------------------------------------
+# Assign the street name for house number search
+highway=* & name=* { set mkgmap:street='${name}' }
+
+# Mark highways with the toll flag
+highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
+
+
 # Disable dead-end-checks for unaccessible oneways
 highway=* & oneway=yes &
       (access=private|access=no)
@@ -80,11 +82,6 @@ highway=* & oneway=yes &
 #
 #------------------------------------------------------------------------------
 # flag unpaved roads
-
-highway~'.*;.*'
-                {
-                set highway='${highway|part:}';
-                }
 
 highway=steps
                 {
@@ -152,10 +149,6 @@ highway=*  & (oneway=1 | oneway=true)
 #------------------------------------------------------------------------------
 #                               overlays
 #------------------------------------------------------------------------------
-
-# disused
-
-highway=* & disused=yes      { deletealltags }                                          [0x10e01 resolution 24]
 
 
 # toll overlay
@@ -278,6 +271,7 @@ highway=construction    { add mkgmap:dead-end-check = false; }                  
 
 # Lower the road speed of ways under some construction.
 highway=* & construction=* & maxspeed!=* { add mkgmap:road-speed = '-1' }
+
 # Lower the road speed of disused ways.
 highway=* & disused=yes & maxspeed!=* { add mkgmap:road-speed = '-2' }
 

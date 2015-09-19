@@ -50,3 +50,9 @@ historic~'.*;.*'
                 {
                 set historic='${historic|part:}';
                 }
+
+highway~'.*;.*'
+                {
+                set highway='${highway|part:}';
+                }
+                
