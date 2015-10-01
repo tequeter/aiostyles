@@ -35,4 +35,5 @@ reduce-point-density-polygon=8
 merge-lines
 index
 route
-latin1
+#latin1
+unicode
