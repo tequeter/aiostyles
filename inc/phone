@@ -58,7 +58,7 @@ tmp:phone=* & mkgmap:country=CZE
       set tmp:phone='${tmp:phone|subst:"^0~>+420"|subst:"+420=>+42"}'
       }
 
-tmp:phone=* & mkgmap:country=DNk
+tmp:phone=* & mkgmap:country=DNK
       {
       set tmp:phone='${tmp:phone|subst:"^0~>+45"|subst:"+450=>+45"}'
       }
@@ -93,7 +93,7 @@ tmp:phone=* & mkgmap:country=FIN
       set tmp:phone='${tmp:phone|subst:"^0~>+358"|subst:"+3580=>+358"}'
       }
 
-tmp:phone=* & mkgmap:country=FO
+tmp:phone=* & mkgmap:country=FRO
       {
       set tmp:phone='${tmp:phone|subst:"^0~>+298"|subst:"+2980=>+298"}'
       }
@@ -213,7 +213,7 @@ tmp:phone=* & mkgmap:country=SRB
       set tmp:phone='${tmp:phone|subst:"^0~>+381"|subst:"+3810=>+381"}'
       }
 
-tmp:phone=* & mkgmap:country=SVk
+tmp:phone=* & mkgmap:country=SVK
       {
       set tmp:phone='${tmp:phone|subst:"^0~>+421"|subst:"+4210=>+421"}'
       }
