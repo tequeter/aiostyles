@@ -215,3 +215,5 @@ access=*       {  addaccess '${access}' }
 # hov=* { add carpool='${hov}' }
 # (carpool=yes | carpool=designated | carpool=permissive | carpool=official)     { set mkgmap:carpool=yes }
 
+# Don't route through highway=construction, they are considered unusable
+highway=construction {setaccess no}

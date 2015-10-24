@@ -209,13 +209,13 @@ shop=car | shop=car_parts                                                 [0x2f0
 # Wrecker Service
 car_service=wrecker                                                       [0x2f0a resolution 24]
 
-# Rest_Area/Tourist Information
-amenity=parking & (toilets=yes | tourism=information)                     [0x2f0c resolution 24]
-
 # Parking
 # 
 amenity=parking & access=private {delete amenity}
 amenity=parking                                                           [0x2f0b resolution 24]
+
+# Rest_Area/Tourist Information
+amenity=parking & (toilets=yes | tourism=information)                     [0x2f0c resolution 24]
 
 # Auto Club
 # 0x2f0d
@@ -228,24 +228,6 @@ amenity=truck_stop                                                        [0x2f1
 
 # 0x4css        # information
 tourism=information                                                       [0x4c00 resolution 24]
-
-# Parking
-# 0x4dss
-#amenity=parking
-#        &  ( capacity:disabled=yes |
-#             capacity:disabled >=1 )                                      [0x4d01 resolution 24]
-#
-#amenity=parking
-#        & ( parking=multi-storey |
-#            parking=underground)                                          [0x4d02 resolution 24]
-#
-#amenity=parking
-#        & (fee=yes)                                                       [0x4d03 resolution 24]
-#
-#amenity=parking & capacity > 10                                           [0x4d00 resolution 24]
-#
-#amenity=parking & mkgmap:area2poi!=true
-#        & (access=private)                                                [0x4d03 resolution 24]
 
 # 0x4ess        # restroom
 amenity=toilets                                                           [0x4e01 resolution 24]

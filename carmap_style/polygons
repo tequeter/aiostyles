@@ -1,3 +1,5 @@
+#To set the city, region and country values for all elements with housenumbers
+addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';

@@ -38,26 +38,33 @@ addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';
 
-
-# Hide proposed ways
-highway=proposed {delete highway;delete junction}
+# Hide proposed ways 
+(highway=proposed | 
+  highway=proposal | 
+  highway=planned | 
+  highway ~ '.*proposed.*')       {delete highway;delete junction}
 
 # Hide removed ways
-highway=razed {deletealltags}
+(highway=razed | 
+  highway=dismantled)             {deletealltags}
+
+# Hide other non-existent ways
+(highway=unbuilt | 
+  highway=neverbuilt | 
+  highway=rejected | 
+  highway ~ 'x-.*')               {delete highway;delete junction}
 
 # Hide unaccessible tunnels
 highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
-        (access=private|access=no) &
-        foot!=* &
-        bicycle!=*
-           {delete highway;delete junction}
+            (access=private |access=no) &
+              foot!=* &
+              bicycle!=*          {delete highway;delete junction}
 
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
 
 # Mark highways with the toll flag
 highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
-
 
 # Disable dead-end-checks for unaccessible oneways
 highway=* & oneway=yes &
@@ -79,7 +86,7 @@ highway=* & oneway=yes &
 #                 echo "motorway_link lacks oneway"
 #               }
 
-#
+
 #------------------------------------------------------------------------------
 # flag unpaved roads
 
@@ -120,7 +127,10 @@ highway=*
               add mkgmap:unpaved=1;
             }
 
-(highway=bridleway | highway=trail | highway=unsurfaced | highway=byway)
+(highway=bridleway | 
+      highway=trail | 
+      highway=unsurfaced | 
+      highway=byway)
             & surface!=*
             & tracktype!=*
             & smoothness!=*
@@ -143,12 +153,10 @@ highway=*  & (oneway=1 | oneway=true)
                             { set oneway=yes }
 
 (highway=motorway | highway=motorway_link)
-                            { add oneway=yes }
-
+                            { add oneway=yes; add mkgmap:numbers=false }
 
 #------------------------------------------------------------------------------
-#                               overlays
-#------------------------------------------------------------------------------
+# overlays
 
 
 # toll overlay
@@ -264,20 +272,21 @@ highway=*
 #               0               Residential Street / Unpaved road / Trail
 
 #-----------------------------------------------------------------------------
-# construction
+# disused ways
+# Lower the road speed of disused ways and thread them as bad track for routing
+highway=* & disused=yes & maxspeed!=*     { add mkgmap:road-speed = '-2' }              
+highway=* & disused=yes                                                                 [0x10e01 resolution 24 continue]
+highway=* & disused=yes                                                                 [0x11 road_class=0 road_speed=0 resolution 24]
 
+# construction and thread them as bad track for routing
 highway=construction                                                                    [0x10e04 resolution 24 continue]
-highway=construction    { add mkgmap:dead-end-check = false; }                          [0x11 road_class=0 road_speed=0 resolution 24]
+highway=construction                      { add mkgmap:dead-end-check = false; }        [0x11 road_class=0 road_speed=0 resolution 24]
 
-# Lower the road speed of ways under some construction.
-highway=* & construction=* & maxspeed!=* { add mkgmap:road-speed = '-1' }
+# Lower the road speed of ways under construction.
+highway=* & construction=* & maxspeed!=*  { add mkgmap:road-speed = '-1' }
 
-# Lower the road speed of disused ways.
-highway=* & disused=yes & maxspeed!=* { add mkgmap:road-speed = '-2' }
-
-# construction
+# Overlay on highways under construction 
 highway=* & construction=*                                                              [0x10e02 resolution 24-23 continue]
-
 
 #--------------------------------------------------------------------------------------
 # motorway

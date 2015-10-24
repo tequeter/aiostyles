@@ -28,17 +28,37 @@
 #	0x11	track grade4/6
 #	0x12	path/trail
 #	0x13	steps
-#       0x16    bridleway
+#   0x16    bridleway
 #	0x1a	ferry
 #	0x1b	ways with no cat
-#-----------------------------------------------------------------------------
-# printout some infos about ways
-#highway=* & mkgmap:synthesised=yes
-#{echo ' ${highway} | ${name} '}
-#-----------------------------------------------------------------------------
+
+#To set the city, region and country values for all elements with housenumbers
+addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';
+
+# Hide proposed ways 
+(highway=proposed | 
+  highway=proposal | 
+  highway=planned | 
+  highway ~ '.*proposed.*')       {delete highway;delete junction}
+
+# Hide removed ways
+(highway=razed | 
+  highway=dismantled)             {deletealltags}
+
+# Hide other non-existent ways
+(highway=unbuilt | 
+  highway=neverbuilt | 
+  highway=rejected | 
+  highway ~ 'x-.*')               {delete highway;delete junction}
+
+# Hide unaccessible tunnels
+highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
+            (access=private |access=no) &
+              foot!=* &
+              bicycle!=*          {delete highway;delete junction}
 
 # Assign the street name for house number search
 highway=* & name=* { set mkgmap:street='${name}' }
@@ -46,25 +66,40 @@ highway=* & name=* { set mkgmap:street='${name}' }
 # Mark highways with the toll flag
 highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
 
+# Disable dead-end-checks for unaccessible oneways
+highway=* & oneway=yes &
+      (access=private|access=no)
+            {add mkgmap:dead-end-check=false}
+            
 #-----------------------------------------------------------------------------
-# next line is needed, because 'motorcycle=no' makes
-# nonroutable highways for motorcar
+# Validation-like checks
+#highway=motorway_link
+#               & oneway!=yes
+#               & oneway!=no
+#               & oneway!=true
+#               & oneway!=1
+#               & oneway!=-1
+#               & junction!=roundabout
+#               & access!=no
+#               & access!=emergency
+#               {
+#                 echo "motorway_link lacks oneway"
+#               }
 
-highway=* & motorcycle=no {delete motorcycle}
-
-#
 #------------------------------------------------------------------------------
 # flag unpaved roads
-
-highway~'.*;.*'
-                {
-                set highway='${highway|part:}';
-                }
 
 highway=steps
 		{
 		add mkgmap:unpaved=1;
 		}
+
+highway=corridor
+                {
+                  set highway=footway;
+                  add tunnel=yes;
+                  add covered=yes;
+                  }
 
 highway=*
 	   & (
@@ -91,16 +126,18 @@ highway=*
 	      add mkgmap:unpaved=1;
 	    }
 
-(highway=bridleway | highway=trail | highway=unsurfaced | highway=byway)
-	    & surface!=*
-	    & tracktype!=*
-	    & smoothness!=*
-	    & sac_scale!=*
-	    {
-	      add mkgmap:unpaved=1;
-	    }
-
-
+(highway=bridleway | 
+      highway=trail | 
+      highway=unsurfaced | 
+      highway=byway)
+            & surface!=*
+            & tracktype!=*
+            & smoothness!=*
+            & sac_scale!=*
+            {
+              add mkgmap:unpaved=1;
+            }
+            
 man_made=pier & area!=yes
               {
                 add highway=footway;
@@ -113,13 +150,10 @@ highway=*  & (oneway=1 | oneway=true)
                             { set oneway=yes }
 
 (highway=motorway | highway=motorway_link)
-                            { add oneway=yes }
-
+                            { add oneway=yes; add mkgmap:numbers=false }
 
 #------------------------------------------------------------------------------
-# 				overlays
-#------------------------------------------------------------------------------
-
+# overlays
 
 # toll overlay
 toll=yes & highway!=motorway								[0x10e03 resolution 24-22 continue]
@@ -130,7 +164,7 @@ toll=yes & highway!=motorway								[0x10e03 resolution 24-22 continue]
 
 bridge=yes & highway=motorway								[0x10101 resolution 24-23 continue]
 bridge=yes & highway=motorway_link							[0x10101 resolution 24-23 continue]
-bridge=yes & highway=trunk								[0x10101 resolution 24-23 continue]
+bridge=yes & highway=trunk								    [0x10101 resolution 24-23 continue]
 bridge=yes & highway=trunk_link								[0x10101 resolution 24-23 continue]
 bridge=yes & highway=primary								[0x10101 resolution 24-23 continue]
 bridge=yes & highway=primary_link							[0x10101 resolution 24-23 continue]
@@ -138,7 +172,7 @@ bridge=yes & highway=secondary								[0x10102 resolution 24-23 continue]
 bridge=yes & highway=secondary_link							[0x10102 resolution 24-23 continue]
 bridge=yes & highway=tertiary								[0x10102 resolution 24-23 continue]
 bridge=yes & highway=tertiary_link							[0x10102 resolution 24-23 continue]
-bridge=yes & ( highway=* | railway=* )							[0x10103 resolution 24-23 continue]
+bridge=yes & ( highway=* | railway=* )						[0x10103 resolution 24-23 continue]
 
 # tunnel overlay
 (tunnel=yes | tunnel=building_passage | covered=yes)
@@ -167,45 +201,6 @@ highway=* & railway=tram								[0x10e0d resolution 24-23 continue]
 
 # bridleway overlay
 #highway=* & horse=designated								[0x10e0c resolution 24 continue]
-
-
-#------------------------------------------------------------------------------
-# Hide proposed ways
-highway=proposed {delete highway;delete junction}
-
-#------------------------------------------------------------------------------
-# Hide unaccessible tunnels
-highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
-        (access=private|access=no) &
-        foot!=* &
-        bicycle!=*
-           {delete highway;delete junction}
-
-#------------------------------------------------------------------------------
-# Disable dead-end-checks for unaccessible oneways
-highway=* & oneway=yes &
-      (access=private|access=no)
-            {add mkgmap:dead-end-check=false}
-
-#------------------------------------------------------------------------------
-# disused
-
-highway=* & disused=yes									[0x10e01 resolution 24]
-
-#-----------------------------------------------------------------------------
-# Validation-like checks
-#highway=motorway_link
-#		& oneway!=yes
-#		& oneway!=no
-#		& oneway!=true
-#		& oneway!=1
-#		& oneway!=-1
-#		& junction!=roundabout
-#		& access!=no
-#		& access!=emergency
-#		{
-#		  echo "motorway_link lacks oneway"
-#		}
 
 #--------------------------------------------------------------------------------------
 # process exits and destination
@@ -264,31 +259,35 @@ highway=*
 #		0 		Residential Street / Unpaved road / Trail
 
 #-----------------------------------------------------------------------------
-# construction
+# disused ways
+# Lower the road speed of disused ways and thread them as bad track for routing
+highway=* & disused=yes & maxspeed!=*     { add mkgmap:road-speed = '-2' }              
+highway=* & disused=yes                                                                 [0x10e01 resolution 24 continue]
+highway=* & disused=yes                                                                 [0x11 road_class=0 road_speed=0 resolution 24]
 
+# construction and thread them as bad track for routing
 highway=construction                                                                    [0x10e04 resolution 24 continue]
-highway=construction    { add mkgmap:dead-end-check = false; }                          [0x11 road_class=0 road_speed=0 resolution 24]
+highway=construction                      { add mkgmap:dead-end-check = false; }        [0x11 road_class=0 road_speed=0 resolution 24]
 
-# Lower the road speed of ways under some construction.
-highway=* & construction=* & maxspeed!=* { add mkgmap:road-speed = '-1' }
+# Lower the road speed of ways under construction.
+highway=* & construction=* & maxspeed!=*  { add mkgmap:road-speed = '-1' }
 
-# construction
+# Overlay on highways under construction 
 highway=* & construction=*                                                              [0x10e02 resolution 24-23 continue]
-
 
 #--------------------------------------------------------------------------------------
 # motorway
 highway=motorway & network=e-road                                                       [0x12001 resolution 16-16 continue]
 highway=motorway                            						[0x12001 resolution 21-17 continue]
 highway=motorway                            						[0x11001 resolution 24-22 continue]
-highway=motorway & junction=roundabout 							[0x0c resolution 24 road_class=3 road_speed=3]
-highway=motorway									[0x01 resolution 24 road_class=4 road_speed=6]
+highway=motorway & junction=roundabout 							    [0x0c resolution 24 road_class=3 road_speed=3]
+highway=motorway									                 [0x01 resolution 24 road_class=4 road_speed=6]
 
 highway=motorway_link                       						[0x12001 resolution 21-20 continue]
 highway=motorway_link                       						[0x11001 resolution 24-22 continue]
 highway=motorway_link &
 	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true)				[0x07 resolution 24 road_class=4 road_speed=3]
-highway=motorway_link 			     						[0x09 resolution 24 road_class=4 road_speed=3]
+highway=motorway_link 			     						        [0x09 resolution 24 road_class=4 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -296,27 +295,27 @@ highway=motorway_link 			     						[0x09 resolution 24 road_class=4 road_speed=
 highway=trunk & network=e-road                                                          [0x12002 resolution 16-16 continue]
 highway=trunk                               						[0x12002 resolution 21-17 continue]
 highway=trunk                               						[0x11002 resolution 24-22 continue]
-highway=trunk & junction=roundabout	 						[0x0c resolution 24 road_class=3 road_speed=3]
-highway=trunk										[0x02 resolution 24 road_class=4 road_speed=6]
+highway=trunk & junction=roundabout	 						        [0x0c resolution 24 road_class=3 road_speed=3]
+highway=trunk										                [0x02 resolution 24 road_class=4 road_speed=6]
 
 highway=trunk_link                          						[0x12002 resolution 21-20 continue]
 highway=trunk_link                          						[0x11002 resolution 24-22 continue]
 highway=trunk_link &
 	  (mkgmap:exit_hint=true | mkgmap:dest_hint=true) 				[0x07 resolution 24 road_class=3 road_speed=2]
-highway=trunk_link          								[0x09 resolution 24 road_class=3 road_speed=3]
+highway=trunk_link          								        [0x09 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
 # primary
 
-highway=primary										[0x12003 resolution 21-18 continue]
-highway=primary										[0x11003 resolution 24-22 continue]
-highway=primary & junction=roundabout							[0x0c resolution 24 road_class=3 road_speed=2]
-highway=primary        									[0x03 resolution 24 road_class=3 road_speed=5]
+highway=primary										                [0x12003 resolution 21-18 continue]
+highway=primary										                [0x11003 resolution 24-22 continue]
+highway=primary & junction=roundabout							    [0x0c resolution 24 road_class=3 road_speed=2]
+highway=primary        									            [0x03 resolution 24 road_class=3 road_speed=5]
 
-highway=primary_link 									[0x12003 resolution 22-21 continue]
-highway=primary_link									[0x11003 resolution 24-23 continue]
-highway=primary_link									[0x08 resolution 24 road_class=3 road_speed=3]
+highway=primary_link 									            [0x12003 resolution 22-21 continue]
+highway=primary_link									            [0x11003 resolution 24-23 continue]
+highway=primary_link									            [0x08 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -324,12 +323,12 @@ highway=primary_link									[0x08 resolution 24 road_class=3 road_speed=3]
 
 highway=secondary                           						[0x12004 resolution 21-20 continue]
 highway=secondary                           						[0x11004 resolution 24-22 continue]
-highway=secondary & junction=roundabout 						[0x0c resolution 24 road_class=2 road_speed=2]
+highway=secondary & junction=roundabout 						    [0x0c resolution 24 road_class=2 road_speed=2]
 highway=secondary                           						[0x04 resolution 24 road_class=3 road_speed=4]
 
 highway=secondary_link                      						[0x12004 resolution 22-22 continue]
 highway=secondary_link                      						[0x11004 resolution 24-23 continue]
-highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
+highway=secondary_link									            [0x08 resolution 24 road_class=3 road_speed=3]
 
 
 #--------------------------------------------------------------------------------------
@@ -337,12 +336,12 @@ highway=secondary_link									[0x08 resolution 24 road_class=3 road_speed=3]
 
 highway=tertiary                            						[0x12005 resolution 22-20 continue]
 highway=tertiary                            						[0x11005 resolution 24-23 continue]
-highway=tertiary & junction=roundabout	 						[0x0c resolution 24 road_class=1 road_speed=2]
+highway=tertiary & junction=roundabout	 						    [0x0c resolution 24 road_class=1 road_speed=2]
 highway=tertiary                            						[0x05 resolution 24 road_class=2 road_speed=3]
 
 highway=tertiary_link                       						[0x12005 resolution 22-22 continue]
 highway=tertiary_link                       						[0x11005 resolution 24-23 continue]
-highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
+highway=tertiary_link									            [0x08 resolution 24 road_class=2 road_speed=2]
 
 #------------------------------------------------------------------------------
 # minor roads
@@ -350,14 +349,14 @@ highway=tertiary_link									[0x08 resolution 24 road_class=2 road_speed=2]
 # unclassified
 highway=unclassified | highway=minor        						[0x12006 resolution 22-20 continue]
 highway=unclassified | highway=minor        						[0x11006 resolution 24-23 continue]
-(highway=unclassified | highway=minor) & junction=roundabout				[0x0c resolution 24 road_class=1 road_speed=1]
+(highway=unclassified | highway=minor) & junction=roundabout		[0x0c resolution 24 road_class=1 road_speed=1]
 highway=unclassified | highway=minor        						[0x06 resolution 24 road_class=1 road_speed=2]
 
 # residential
-highway=residential 									[0x12006 resolution 22-22 continue]
-highway=residential 									[0x11006 resolution 24-23 continue]
-highway=residential & junction=roundabout						[0x0c resolution 24 road_class=0 road_speed=1]
-highway=residential 									[0x06 resolution 24 road_class=0 road_speed=2]
+highway=residential 									            [0x12006 resolution 22-22 continue]
+highway=residential 									            [0x11006 resolution 24-23 continue]
+highway=residential & junction=roundabout						    [0x0c resolution 24 road_class=0 road_speed=1]
+highway=residential 									            [0x06 resolution 24 road_class=0 road_speed=2]
 
 # service
 highway=service | highway=living_street
@@ -365,15 +364,15 @@ highway=service | highway=living_street
 		  add mkgmap:dead-end-check=false
 		}
 
-highway=service						            			[0x12007 resolution 23-23 continue]
-highway=service						            			[0x11007 resolution 24 continue]
-highway=service & service=parking_aisle							[0x07 resolution 24 road_class=0 road_speed=1]
-highway=service & (service=alley | service=driveway)					[0x07 resolution 24 road_class=0 road_speed=0]
-highway=service			 							[0x07 resolution 24 road_class=0 road_speed=2]
+highway=service						            			        [0x12007 resolution 23-23 continue]
+highway=service						            			        [0x11007 resolution 24 continue]
+highway=service & service=parking_aisle							    [0x07 resolution 24 road_class=0 road_speed=1]
+highway=service & (service=alley | service=driveway)				[0x07 resolution 24 road_class=0 road_speed=0]
+highway=service			 							                [0x07 resolution 24 road_class=0 road_speed=2]
 
-highway=living_street									[0x12008 resolution 23-23 continue]
-highway=living_street									[0x11008 resolution 24 continue]
-highway=living_street									[0x07 resolution 24 road_class=0 road_speed=0]
+highway=living_street									            [0x12008 resolution 23-23 continue]
+highway=living_street									            [0x11008 resolution 24 continue]
+highway=living_street									            [0x07 resolution 24 road_class=0 road_speed=0]
 
 
 #------------------------------------------------------------------------------
@@ -417,11 +416,11 @@ highway=track & tracktype=grade1 |
 
 # road = way typ not defined/unknown
 highway=road                                                                            [0x2c resolution 24 continue]
-highway=road										[0x0b resolution 24 road_class=0 road_speed=0]
+highway=road										                                    [0x0b resolution 24 road_class=0 road_speed=0]
 
-highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (mkgmap:unpaved=1)                          				[0x0b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (area!=yes & area!=true & area!=1)          				[0x1b resolution 24 road_class=0 road_speed=0]
-highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & junction=roundabout							[0x0c resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (mkgmap:unpaved=1)                 [0x0b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & (area!=yes & area!=true & area!=1) [0x1b resolution 24 road_class=0 road_speed=0]
+highway=* & highway!=track & highway!=path & highway!=trail & highway!=footway & highway!=cycleway & junction=roundabout				[0x0c resolution 24 road_class=0 road_speed=0]
 #------------------------------------------------------------------------------
 
 # route
@@ -442,6 +441,9 @@ include '../inc/phone';
 
 # remove unneeded names on cycleways
 mkgmap:synthesised=yes & bicycle=yes { set mkgmap:highest-resolution-only = true; delete name }
+
+# don't add house numbers to unnamed or artifical bicycle ways
+mkgmap:bicycle=yes & (mkgmap:foot=no & mkgmap:car=no & mkgmap:street!=* | mkgmap:synthesised=yes) {set mkgmap:numbers=false}
 
 name=* { name '${name}' }
 include '../inc/ref_lines' ;
