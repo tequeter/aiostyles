@@ -38,6 +38,9 @@ addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';
 
+# try to identify some special part of street names
+include '../inc/name_lines';
+
 # Hide proposed ways 
 (highway=proposed | 
   highway=proposal | 
