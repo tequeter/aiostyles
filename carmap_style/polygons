@@ -36,7 +36,7 @@ building!=no &
 
 #amenity=place_of_worship 						[0x13 resolution 24]
 
-amenity=grave_yard|landuse=cemetery 			[0x1a resolution 22]
+#amenity=grave_yard|landuse=cemetery 			[0x1a resolution 22]
 
 amenity=hospital 							[0x0b resolution 20]
 
@@ -71,7 +71,7 @@ place=village | landuse=residential 		[0x03 resolution 18]
 highway=pedestrian & (area=yes | area=true | area=1) 			[0x12 resolution 22]
 
 landuse=forest 								[0x20 resolution 18]
-landuse=meadow 								[0x10f10 resolution 22]
+#landuse=meadow 								[0x10f10 resolution 22]
 
 landuse=commercial 							[0x0f resolution 18]
 landuse=industrial							[0x0c resolution 18]
@@ -84,19 +84,19 @@ landuse=construction						[0x11 resolution 20]
 landuse=reservoir |
 landuse=basin 								[0x3f resolution 22]
 
-landuse=village_green |
-landuse=grass								[0x10f11 resolution 22]
-landuse=recreation_ground                   [0x10f12 resolution 22]
+#landuse=village_green |
+#landuse=grass								[0x10f11 resolution 22]
+#landuse=recreation_ground                   [0x10f12 resolution 22]
 
-landuse=allotments 							[0x10f08 resolution 22]
-landuse=orchard                             [0x4e resolution 22]
+#landuse=allotments 							[0x10f08 resolution 22]
+#landuse=orchard                             [0x4e resolution 22]
 #landuse=farm |
 #landuse=farmland |
-landuse=plant_nursery						[0x2a resolution 21]
+#landuse=plant_nursery						[0x2a resolution 21]
 
 #landuse=farmyard 							[0x2b resolution 22]
-landuse=vineyard 							[0x2c resolution 22]
-landuse=quarry 								[0x2d resolution 22]
+#landuse=vineyard 							[0x2c resolution 22]
+#landuse=quarry 								[0x2d resolution 22]
 
 tourism=camp_site 							[0x2e resolution 22]
 
@@ -105,26 +105,26 @@ tourism=camp_site 							[0x2e resolution 22]
 
 leisure=marina                              [0x09 resolution 20]
 
-leisure=common |
-leisure=park |
-leisure=water_park                          [0x17 resolution 22]
-leisure=garden                              [0x17 resolution 23]
-leisure=playground                          [0x10f13 resolution 23]
-leisure=golf_course                         [0x18 resolution 22]
-leisure=sports_centre | leisure=stadium     [0x19 resolution 22]
+#leisure=common |
+#leisure=park |
+#leisure=water_park                          [0x17 resolution 22]
+#leisure=garden                              [0x17 resolution 23]
+#leisure=playground                          [0x10f13 resolution 23]
+#leisure=golf_course                         [0x18 resolution 22]
+#leisure=sports_centre | leisure=stadium     [0x19 resolution 22]
 
-leisure=pitch & sport=soccer                [0x10f00 resolution 23]
-leisure=pitch & sport=tennis                [0x10f01 resolution 23]
-leisure=pitch & sport=multi                 [0x10f02 resolution 23]
-leisure=pitch & sport=basketball            [0x10f03 resolution 23]
-leisure=pitch & sport~'.*(handball)'        [0x10f04 resolution 23]
-leisure=pitch & sport=boules                [0x10f05 resolution 23]
+#leisure=pitch & sport=soccer                [0x10f00 resolution 23]
+#leisure=pitch & sport=tennis                [0x10f01 resolution 23]
+#leisure=pitch & sport=multi                 [0x10f02 resolution 23]
+#leisure=pitch & sport=basketball            [0x10f03 resolution 23]
+#leisure=pitch & sport~'.*(handball)'        [0x10f04 resolution 23]
+#leisure=pitch & sport=boules                [0x10f05 resolution 23]
 
-leisure=pitch                               [0x19 resolution 23]
+#leisure=pitch                               [0x19 resolution 23]
 
-leisure=track                               [0x10f06 resolution 23]
+#leisure=track                               [0x10f06 resolution 23]
 
-temp_pool=yes                               [0x40 resolution 23]
+#temp_pool=yes                               [0x40 resolution 23]
 
 #------------------------------------------------------------------------------
 # military
@@ -152,7 +152,7 @@ natural=beach 								[0x3d resolution 17]
 
 #------------------------------------------------------------------------------
 
-waterway=riverbank 							[0x46 resolution 18]
+#waterway=riverbank 							[0x46 resolution 18]
 
 <finalize>
 # The finalizer section is executed for each element when a rule with an element type matches
