@@ -220,7 +220,6 @@ include '../inc/exit_dest' ;
 # Set highway names to include the reference if there is one
 highway=motorway
                 {
-                  #name '${ref|highway-symbol:hbox} ${name}' |
                   name '${name} (${ref})'|
                        '${ref|highway-symbol:hbox}' |
                        '${name}';
@@ -228,7 +227,6 @@ highway=motorway
 
 highway=trunk
                 {
-                  #name '${ref|highway-symbol:hbox} ${name}' |
                   name '${name} (${ref})'|
                        '${ref|highway-symbol:hbox}' |
                        '${name}';
@@ -237,7 +235,6 @@ highway=trunk
 
 highway=primary
                 {
-                  #name '${ref|highway-symbol:box} ${name}' |
                   name '${name} (${ref})'|
                        '${ref|highway-symbol:box}' |
                        '${name}';
@@ -246,7 +243,6 @@ highway=primary
 
 highway=secondary | highway=tertiary
                 {
-                  #name '${ref|highway-symbol:oval} ${name}' |
                   name '${name} (${ref})'|
                        '${ref|highway-symbol:oval}' |
                        '${name}';
