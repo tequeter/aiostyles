@@ -1,16 +1,16 @@
 
-#To set the city, region and country values for all elements with housenumbers
-addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
-
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';
+
+include '../inc/name' ;
+
+#To set the city, region and country values for all elements with housenumbers
+addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 
 # replace or delete some Key/value pairs to prevent listing in POI list
 leisure=swimming_pool { set temp_pool=yes; delete leisure; delete sport}
 amenity=swimming_pool { set temp_pool=yes; delete amenity; delete sport}
 leisure=water_park { add sport=swimming }
-
-include '../inc/name' ;
 
 #------------------------------------------------------------------------------
 # buildings
@@ -185,13 +185,4 @@ natural=fell | natural=grassland			            [0x35 resolution 20]
 natural=sand                                            [0x10f14 resolution 20]
 natural=land 								            [0x27 resolution 10]
 
-include '../inc/water_polygons';
 
-
-<finalize>
-# The finalizer section is executed for each element when a rule with an element type matches
-
-name=* { name '${name}' }
-include '../inc/address' ;
-include '../inc/phone' ;
-include '../inc/access' ;

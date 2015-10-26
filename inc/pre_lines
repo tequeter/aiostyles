@@ -1,0 +1,177 @@
+
+#To set the city, region and country values for all elements with housenumbers
+addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
+
+
+# Hide proposed ways 
+(highway=proposed | 
+  highway=proposal | 
+  highway=planned | 
+  highway ~ '.*proposed.*')       {delete highway;delete junction}
+
+# Hide removed ways
+(highway=razed | 
+  highway=dismantled)             {deletealltags}
+
+# Hide other non-existent ways
+(highway=unbuilt | 
+  highway=neverbuilt | 
+  highway=rejected | 
+  highway ~ 'x-.*')               {delete highway;delete junction}
+
+# Hide unaccessible tunnels
+highway=* & (tunnel=yes | tunnel=building_passage | covered=yes) &
+            (access=private |access=no) &
+              foot!=* &
+              bicycle!=*          {delete highway;delete junction}
+
+# Assign the street name for house number search
+highway=* & name=* { set mkgmap:street='${name}' }
+
+# Mark highways with the toll flag
+highway=* & (toll=yes|toll=true) { set mkgmap:toll=yes }
+
+# Disable dead-end-checks for unaccessible oneways
+highway=* & oneway=yes &
+      (access=private|access=no)
+            {add mkgmap:dead-end-check=false}
+
+#-----------------------------------------------------------------------------
+# Validation-like checks
+#highway=motorway_link
+#               & oneway!=yes
+#               & oneway!=no
+#               & oneway!=true
+#               & oneway!=1
+#               & oneway!=-1
+#               & junction!=roundabout
+#               & access!=no
+#               & access!=emergency
+#               {
+#                 echo "motorway_link lacks oneway"
+#               }
+
+
+#------------------------------------------------------------------------------
+# flag unpaved roads
+
+highway=steps
+                {
+                add mkgmap:unpaved=1;
+                }
+
+highway=corridor
+                {
+                  set highway=footway;
+                  add tunnel=yes;
+                  add covered=yes;
+                  }
+
+highway=*
+           & (
+              surface=cobblestone |
+              surface=compacted |
+              surface=dirt |
+              surface=earth |
+              surface=grass |
+              surface=grass_paver |
+              surface=gravel |
+              surface=grit |
+              surface=ground |
+              surface=mud |
+              surface=pebblestone |
+              surface=sand |
+              surface=unpaved |
+              mtb:scale=* |
+              tracktype~'grade[3-6]' |
+              smoothness~'.*(bad|horrible|impassable)' |
+              sac_scale~'.*(mountain|alpine)_hiking' |
+              sport=via_ferrata
+              )
+            {
+              add mkgmap:unpaved=1;
+            }
+
+(highway=bridleway | 
+      highway=trail | 
+      highway=unsurfaced | 
+      highway=byway)
+            & surface!=*
+            & tracktype!=*
+            & smoothness!=*
+            & sac_scale!=*
+            {
+              add mkgmap:unpaved=1;
+            }
+
+
+man_made=pier & area!=yes
+              {
+                add highway=footway;
+                add bicycle=dismount
+                }
+
+#------------------------------------------------------------------------------
+# Convert some rules
+
+highway=*  & (oneway=1 | oneway=true)
+                            { set oneway=yes }
+
+(highway=motorway | highway=motorway_link)
+                            { add oneway=yes; add mkgmap:numbers=false }
+
+#------------------------------------------------------------------------------
+# overlays
+
+
+# toll overlay
+toll=yes & highway!=motorway                                                            [0x10e03 resolution 24-22 continue]
+
+# bridge overlay
+(bridge=* & bridge!=no & bridge!=proposed & bridge!=abandoned)
+    { set bridge=yes; }
+
+bridge=yes & highway=motorway                                                           [0x10101 resolution 24-23 continue]
+bridge=yes & highway=motorway_link                                                      [0x10101 resolution 24-23 continue]
+bridge=yes & highway=trunk                                                              [0x10101 resolution 24-23 continue]
+bridge=yes & highway=trunk_link                                                         [0x10101 resolution 24-23 continue]
+bridge=yes & highway=primary                                                            [0x10101 resolution 24-23 continue]
+bridge=yes & highway=primary_link                                                       [0x10101 resolution 24-23 continue]
+bridge=yes & highway=secondary                                                          [0x10102 resolution 24-23 continue]
+bridge=yes & highway=secondary_link                                                     [0x10102 resolution 24-23 continue]
+bridge=yes & highway=tertiary                                                           [0x10102 resolution 24-23 continue]
+bridge=yes & highway=tertiary_link                                                      [0x10102 resolution 24-23 continue]
+bridge=yes & ( highway=* | railway=* )                                                  [0x10103 resolution 24-23 continue]
+
+# tunnel overlay
+(tunnel=yes | tunnel=building_passage | covered=yes)
+         & (highway=motorway |
+            highway=motorway_link |
+            highway=trunk |
+            highway=trunk_link |
+            highway=primary |
+            highway=primary_link )                                                      [0x10e05 resolution 24-23 continue]
+
+(tunnel=yes | tunnel=building_passage | covered=yes)
+          & (highway=* |
+             railway=*)                                                                 [0x10e06 resolution 24-23 continue]
+
+# embankment overlay
+(man_made=dyke | embankment=yes)
+          & (highway=track |
+             highway=path |
+             highway=footway |
+             highway=cycleway)                                                          [0x10f00 resolution 24 continue]
+
+# cutting overlay
+(cutting=yes)
+          & (highway=track |
+             highway=path |
+             highway=footway |
+             highway=cycleway)                                                          [0x10f01 resolution 24 continue]
+
+# tram overlay
+highway=* & railway=tram                                                                [0x10e0d resolution 24-23 continue]
+
+# bridleway overlay
+highway=* & horse=designated                                                            [0x10e0b resolution 24 continue]

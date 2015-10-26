@@ -2,7 +2,4 @@
 
 include '../inc/relations';
 include '../inc/boundary_rels';
-
-# special rules located in /inc/
-
 include '../inc/cycle_rels';

@@ -1,0 +1,31 @@
+
+#------------------------------------------------------------------------------
+# tracktype 3-6
+
+highway=track & tracktype=grade3                                                        [0x11010 resolution 24 continue]
+highway=track & tracktype=grade3                                                        [0x10 resolution 24 road_class=0 road_speed=0]
+
+highway=track & tracktype~'grade[4-6]'                                                  [0x11011 resolution 24 continue]
+highway=track & tracktype~'grade[4-6]'                                                  [0x11 resolution 24 road_class=0 road_speed=0]
+
+highway=track
+                {
+                  add mkgmap:unpaved=1;
+                }
+
+highway=track                                                                           [0x1100b resolution 24 continue]
+highway=track                                                                           [0x11 resolution 24 road_class=0 road_speed=0]
+
+#------------------------------------------------------------------------------
+# path
+
+highway=path | highway=trail                                                            [0x11012 resolution 24 continue]
+
+highway=path & (bicycle=permissive |
+                 bicycle=official |
+                 bicycle=yes)                                                           [0x0a resolution 24 road_class=0 road_speed=1]
+
+highway=path | highway=trail
+                {
+                  add mkgmap:unpaved=1;
+                }                                                                       [0x12 resolution 24 road_class=0 road_speed=0]

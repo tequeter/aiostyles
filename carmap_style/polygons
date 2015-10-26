@@ -4,12 +4,13 @@ addr:housenumber=* {set mkgmap:execute_finalize_rules=true}
 # make key/value usable, if values are separated with ';'
 include '../inc/filter';
 
+include '../inc/name';
+
 # replace or delete some Key/value pairs to prevent listing in POI list
 leisure=swimming_pool { set temp_pool=yes; delete leisure; delete sport}
 amenity=swimming_pool { set temp_pool=yes; delete amenity; delete sport}
 leisure=water_park { add sport=swimming }
 
-include '../inc/name';
 
 #------------------------------------------------------------------------------
 # buildings
@@ -152,12 +153,7 @@ natural=beach 								[0x3d resolution 17]
 
 #------------------------------------------------------------------------------
 
-#waterway=riverbank 							[0x46 resolution 18]
+waterway=riverbank 							[0x46 resolution 18]
 
-<finalize>
-# The finalizer section is executed for each element when a rule with an element type matches
-
-name=* { name '${name}' }
-include '../inc/address' ;
-include '../inc/phone' ;
-include '../inc/access' ;
+# last line is the finalize section!
+include '../inc/finalize_polygons';

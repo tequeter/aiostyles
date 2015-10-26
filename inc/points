@@ -15,6 +15,9 @@ include '../inc/ref_points';
 include '../inc/access_points';
 include '../inc/name';
 
+# make key/value usable, if values are separated with ';'
+include '../inc/filter';
+
 #------------------------------------------------------------------------------
 # Places
 
@@ -55,9 +58,6 @@ place=islet                      & cityxx!=yes  & name=*        {set cityxx=yes}
 
 place=locality  & name=*                                                          [0x2800 resolution 24 continue with_actions]
 # 0x2800-0x283F   Region name (no Point, small)
-
-# make key/value usable, if values are separated with ';'
-include '../inc/filter';
 
 barrier=no {delete barrier}
 
@@ -772,49 +772,6 @@ waterway=bootyard | amenity=boat_storage                                  [0x2f1
 # 0x55ss        # dam
 # 0x56ss - 0x58ss       # danger area
 
-power=tower | power=pole                                                  [0x7201 resolution 24]
-
-power=generator &
-      ( power_source=wind |
-        generator:source=wind )                                           [0x6416 resolution 24]
-#0x7202
-power=generator &
-      ( power_source=hydro |
-        power_source=tidal |
-        power_source=wave |
-        power_source=geothermal |
-        generator:source=hydro |
-        generator:source=tidal |
-        generator:source=wave |
-        generator:source=geothermal )                                     [0x7203 resolution 24]
-
-power=generator &
-      ( power_source=nuclear |
-        power_source=fusion |
-        generator:source=nuclear |
-        generator:source=fusion )                                         [0x7204 resolution 24]
-
-power=generator &
-      ( power_source=biofuel |
-        power_source=oil |
-        power_source=coal |
-        power_source=gas |
-        power_source=waste |
-        generator:source=biofuel |
-        generator:source=oil |
-        generator:source=coal |
-        generator:source=gas |
-        generator:source=waste )                                          [0x7205 resolution 24]
-
-power=generator &
-      ( power_source=photovoltaic |
-        power_source=solar-thermal |
-        generator:source=photovoltaic |
-        generator:source~'solar.*' )                                      [0x7206 resolution 24]
-
-power=generator                                                           [0x7200 resolution 24]
-
-# 0x72ss
 
 #-------------------------------------------------------------------------
 # barrier
@@ -857,10 +814,3 @@ highway=crossing                                                          [0x291
 
 highway=speed_camera                                                      [0x2918 resolution 24]
 #man_made=surveillance                                                    [0x2918 resolution 24]
-
-<finalize>
-# The finalizer section is executed for each element when a rule with an element type matches
-include '../inc/address';
-include '../inc/phone';
-
-name=* { name '${name}' }
