@@ -1,4 +1,9 @@
 
+
+# make key/value usable, if values are separated with ';'
+include '../inc/filter';
+
+
 #--------------------------------------------------------------------------------------
 # Set highway names to include the reference if there is one
 highway=motorway

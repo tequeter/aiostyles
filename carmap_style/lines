@@ -2,9 +2,6 @@
 # -------------------------------------------------------------------
 #  common rules under inc/
 
-# make key/value usable, if values are separated with ';'
-include '../inc/filter';
-
 # overlays
 #include '../inc/cycle_lines';
 #include '../inc/cycle_highlights';
