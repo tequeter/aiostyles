@@ -1,9 +1,6 @@
 # -------------------------------------------------------------------
 #  common rules under inc/
 
-# make key/value usable, if values are separated with ';'
-include '../inc/filter';
-
 # overlays
 #include '../inc/cycle_highlights';
 # somehow it does not work with the include the deletealltags rule below did not remove unwanted ways
