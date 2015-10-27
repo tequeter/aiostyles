@@ -58,20 +58,21 @@ building=church |
 
 amenity=place_of_worship 						[0x10f1b resolution 22]
 
-amenity=grave_yard | landuse=cemetery 					[0x1a resolution 22]
+amenity=grave_yard | landuse=cemetery 			[0x1a resolution 22]
 
-amenity=hospital | building=hospital    				[0x0b resolution 20]
+amenity=hospital | building=hospital    		[0x0b resolution 20]
 
-amenity=school 								[0x0a resolution 23]
-amenity=college 							[0x0a resolution 23]
-amenity=university 							[0x0a resolution 22]
+amenity=school 								    [0x0a resolution 23]
+amenity=college 							    [0x0a resolution 23]
+amenity=university 							    [0x0a resolution 22]
 
 
 #------------------------------------------------------------------------------
 # parking
 
-amenity=parking & (parking=multi-storey | parking=underground) 		[0x06 resolution 24]
-amenity=parking 							[0x05 resolution 24]
+amenity=parking & 
+  (parking=multi-storey | parking=underground) 	[0x06 resolution 24]
+amenity=parking 							    [0x05 resolution 24]
 amenity=car_sharing 							[0x05 resolution 24]
 
 
@@ -82,25 +83,26 @@ aeroway=aerodrome |
 aeroway=airport |
 aeroway=airfield |
 aeroway=apron |
-aeroway=helipad								[0x07 resolution 18]
-aeroway=runway                      					[0x0e resolution 20]
+aeroway=helipad								    [0x07 resolution 18]
+aeroway=runway                      			[0x0e resolution 20]
 
 #------------------------------------------------------------------------------
 # landuse
 
-place=village | landuse=residential 					[0x03 resolution 18]
+place=village | landuse=residential 		[0x03 resolution 18]
 
-highway=pedestrian & (area=yes | area=true | area=1) 			[0x12 resolution 22]
+highway=pedestrian & 
+  (area=yes | area=true | area=1) 			[0x12 resolution 22]
 
-leisure=nature_reserve 							[0x0d resolution 18 continue with_actions]
+leisure=nature_reserve 						[0x0d resolution 18 continue with_actions]
 
 landuse=forest 								[0x20 resolution 22-18 continue with_actions]
 landuse=forest &
-          (wood=coniferous | leaf_type=needleleaved)                    [0x21 resolution 24-23]
+  (wood=coniferous | leaf_type=needleleaved)  [0x21 resolution 24-23]
 landuse=forest &
-          (wood=deciduous | leaf_type=broadleaved)      		[0x22 resolution 24-23]
+  (wood=deciduous | leaf_type=broadleaved)    [0x22 resolution 24-23]
 landuse=forest &
-          (wood=mixed | leaf_type=mixed) 				[0x23 resolution 24-23]
+   (wood=mixed | leaf_type=mixed) 			[0x23 resolution 24-23]
 landuse=forest 								[0x20 resolution 24-23]
 
 landuse=meadow 								[0x10f10 resolution 21]

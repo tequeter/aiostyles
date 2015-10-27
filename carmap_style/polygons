@@ -39,19 +39,20 @@ building!=no &
 
 #amenity=grave_yard|landuse=cemetery 			[0x1a resolution 22]
 
-amenity=hospital 							[0x0b resolution 20]
+amenity=hospital 							    [0x0b resolution 20]
 
-amenity=school 								[0x0a resolution 23]
-amenity=college 							[0x0a resolution 23]
-amenity=university 							[0x0a resolution 22]
+amenity=school 								    [0x0a resolution 23]
+amenity=college 							    [0x0a resolution 23]
+amenity=university 							    [0x0a resolution 22]
 
 
 #------------------------------------------------------------------------------
 # parking
 
-amenity=parking & (parking=multi-storey | parking=underground) 		[0x06 resolution 24]
-amenity=parking 							[0x05 resolution 24]
-amenity=car_sharing 						[0x05 resolution 24]
+amenity=parking & 
+(parking=multi-storey | parking=underground) 	[0x06 resolution 24]
+amenity=parking 							    [0x05 resolution 24]
+amenity=car_sharing 						    [0x05 resolution 24]
 
 
 #------------------------------------------------------------------------------
@@ -69,10 +70,11 @@ aeroway=runway                      		[0x0e resolution 20]
 
 place=village | landuse=residential 		[0x03 resolution 18]
 
-highway=pedestrian & (area=yes | area=true | area=1) 			[0x12 resolution 22]
+highway=pedestrian & 
+(area=yes | area=true | area=1) 			[0x12 resolution 22]
 
 landuse=forest 								[0x20 resolution 18]
-#landuse=meadow 								[0x10f10 resolution 22]
+#landuse=meadow 							[0x10f10 resolution 22]
 
 landuse=commercial 							[0x0f resolution 18]
 landuse=industrial							[0x0c resolution 18]
