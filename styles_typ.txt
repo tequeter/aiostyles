@@ -4451,7 +4451,7 @@ ExtendedLabels=N
 LineWidth=2
 BorderWidth=0
 Xpm="0 0 1 0"
-"0 c #FFFFFF"
+"0 c #B4B4B4"
 [end]
 
 [_line]
@@ -4741,7 +4741,7 @@ LineWidth=1
 BorderWidth=0
 ExtendedLabels=N
 Xpm="0 0 1 0"
-"0 c #FFFFFF"
+"0 c #B4B4B4"
 
 [end]
 
