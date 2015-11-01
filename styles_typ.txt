@@ -4410,7 +4410,7 @@ LineWidth=3
 BorderWidth=1
 Xpm="0 0 2 0"
 "0 c #FFFF00"
-"1 c #626262"
+"1 c #525252"
 
 [end]
 
@@ -4453,7 +4453,7 @@ UseOrientation=Y
 LineWidth=2
 BorderWidth=0
 Xpm="0 0 1 0"
-"0 c #A4A4A4"
+"0 c #B4B4B4"
 
 [end]
 
@@ -4467,7 +4467,7 @@ BorderWidth=1
 ExtendedLabels=N
 Xpm="0 0 2 0"
 "0 c #00CA00"
-"1 c #949494"
+"1 c #A4A4A4"
 
 [end]
 
@@ -4702,7 +4702,7 @@ LineWidth=2
 BorderWidth=1
 Xpm="0 0 2 0"
 "0 c #FFFF00"
-"1 c #626262"
+"1 c #525252"
 
 [end]
 
@@ -4716,7 +4716,7 @@ BorderWidth=1
 ExtendedLabels=N
 Xpm="0 0 2 0"
 "0 c #FFFFFF"
-"1 c #626262"
+"1 c #525252"
 
 [end]
 
@@ -4730,7 +4730,7 @@ BorderWidth=1
 ExtendedLabels=N
 Xpm="0 0 2 0"
 "0 c #FFFFFF"
-"1 c #949494"
+"1 c #A4A4A4"
 
 [end]
 
@@ -4745,7 +4745,7 @@ BorderWidth=0
 ExtendedLabels=N
 Useorientation=N
 Xpm="0 0 1 0"
-"0 c #949494"
+"0 c #B4B4B4"
 
 [end]
 
@@ -4759,7 +4759,7 @@ BorderWidth=1
 ExtendedLabels=N
 Xpm="0 0 2 0"
 "0 c #00FF00"
-"1 c #949494"
+"1 c #A4A4A4"
 
 [end]
 
