@@ -127,25 +127,29 @@ highway=* & ramp=yes
 
 highway=* & motorcycle=no {delete motorcycle}
 
-# Normalize all values that indicate a restriction to 'no'
-foot=private          | foot=agricultural         | foot=customers              { set foot=no }
-bicycle=private       | bicycle=agricultural      | bicycle=customers           { set bicycle=no }
-motorcar=private      | motorcar=agricultural     | motorcar=customers          { set motorcar=no }
-goods=private         | goods=agricultural        | goods=customers             { set goods=no }
-hgv=private           | hgv=agricultural          | hgv=customers               { set hgv=no }
-bus=private           | bus=agricultural          | bus=customers               { set bus=no }
-taxi=private          | taxi=agricultural         | taxi=customers              { set taxi=no }
-emergency=private     | emergency=agricultural    | emergency=customers         { set emergency=no }
+# Normalize values that indicate a restriction to 'no'
+motorcar ~ '.*(private|agricultural|forestry|customers).*'          { set motorcar=no }
+motor_vehicle ~ '.*(private|agricultural|forestry|customers).*'     { set motor_vehicle=no }
+vehicle ~ '.*(private|agricultural|forestry|customers).*'           { set vehicle=no }
+foot ~ '.*(private|agricultural|forestry|customers).*'              { set foot=no }
+bicycle ~ '.*(private|agricultural|forestry|customers).*'           { set bicycle=no }
+goods ~ '.*(private|agricultural|forestry|customers).*'             { set goods=no }
+hgv ~ '.*(private|agricultural|forestry|customers).*'               { set hgv=no }
+bus ~ '.*(private|agricultural|forestry|customers).*'               { set bus=no }
+taxi ~ '.*(private|agricultural|forestry|customers).*'              { set taxi=no }
+emergency ~ '.*(private|agricultural|forestry|customers).*'         { set emergency=no }
 
-# Normalize all values that indicate a restriction to 'yes'
-foot=designated       | foot=permissive           | foot=official               { set foot=yes }
-bicycle=designated    | bicycle=permissive        | bicycle=official            { set bicycle=yes }
-motorcar=designated   | motorcar=permissive       | motorcar=official           { set motorcar=yes }
-goods=designated      | goods=permissive          | goods=official              { set goods=yes }
-hgv=designated        | hgv=permissive            | hgv=official                { set hgv=yes }
-bus=designated        | bus=permissive            | bus=official                { set bus=yes }
-taxi=designated       | taxi=permissive           | taxi=official               { set taxi=yes }
-emergency=designated  | emergency=permissive      | emergency= official         { set emergency=yes }
+# Normalize values that indicate a restriction to 'yes'
+motorcar ~ '.*(designated|permissive|official).*'                   { set motorcar=yes }
+motor_vehicle ~ '.*(designated|permissive|official).*'              { set motor_vehicle=yes }
+vehicle ~ '.*(designated|permissive|official).*'                    { set vehicle=yes }
+foot ~ '.*(designated|permissive|official).*'                       { set foot=yes }
+bicycle ~ '.*(designated|permissive|official).*'                    { set bicycle=yes }
+goods ~ '.*(designated|permissive|official).*'                      { set goods=yes }
+hgv ~ '.*(designated|permissive|official).*'                        { set hgv=yes }
+bus ~ '.*(designated|permissive|official).*'                        { set bus=yes }
+taxi ~ '.*(designated|permissive|official).*'                       { set taxi=yes }
+emergency ~ '.*(designated|permissive|official).*'                  { set emergency=yes }
 
 # some access rules 
 access=customers      | access=agricultural
