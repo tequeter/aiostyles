@@ -197,7 +197,7 @@ access=destination
 
 # some ways are locally signed with vehicle=no, but are included in a cycle network, 
 # therefore we set them to bicycle=yes
-highway=* & cycle_network=yes
+highway=* & cn_temp=*
 		{ 
 		  set bicycle=yes 
 		  }
