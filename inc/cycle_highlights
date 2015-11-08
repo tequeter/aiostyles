@@ -1,9 +1,9 @@
 
 ## cycle networks
 highway=* { set cycle_net='' }
-highway=* & icn_network=yes { set cycle_net='${cycle_net}icn'}
-highway=* & rcn_network=yes { set cycle_net='${cycle_net}rcn'}
-highway=* & lcn_network=yes { set cycle_net='${cycle_net}lcn'}
+highway=* & (icn_network=yes|icn=yes|ncn=yes) { set cycle_net='${cycle_net}icn'}
+highway=* & (rcn_network=yes|rcn=yes|tcn=yes) { set cycle_net='${cycle_net}rcn'}
+highway=* & (lcn_network=yes|lcn=yes) { set cycle_net='${cycle_net}lcn'}
 
 cycle_net=lcn                          [0x10108 resolution 24-23 continue]
 cycle_net=rcn                          [0x10109 resolution 24-23 continue]
