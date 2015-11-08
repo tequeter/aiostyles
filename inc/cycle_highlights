@@ -1,9 +1,9 @@
 
 ## cycle highlights
-
-highway=* & (icn_network=yes|icn=yes|ncn=yes) { set cn_temp='${cn_temp}icn'}
-highway=* & (rcn_network=yes|rcn=yes|tcn=yes) { set cn_temp='${cn_temp}rcn'}
-highway=* & (lcn_network=yes|lcn=yes) { set cn_temp='${cn_temp}lcn'}
+highway=*   { set cn_temp='' }
+highway=* & (icn_network=yes|icn=yes|ncn=yes) { set cn_temp='${cn_temp}icn' }
+highway=* & (rcn_network=yes|rcn=yes|tcn=yes) { set cn_temp='${cn_temp}rcn' }
+highway=* & (lcn_network=yes|lcn=yes)         { set cn_temp='${cn_temp}lcn' }
 
 cn_temp=lcn                          [0x10108 resolution 24-23 continue]
 cn_temp=rcn                          [0x10109 resolution 24-23 continue]
@@ -22,4 +22,4 @@ cn_temp=icnrcnlcn                    [0x10110 resolution 20-18 continue]
 
 (highway=cycleway | (highway=path & bicycle=designated)) & cn_name=*
                 { set name='${cn_name}' }
-
+ 

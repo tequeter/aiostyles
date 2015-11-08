@@ -152,15 +152,15 @@ taxi ~ '.*(designated|permissive|official).*'                       { set taxi=y
 emergency ~ '.*(designated|permissive|official).*'                  { set emergency=yes }
 
 # some access rules 
-access=customers      | access=agricultural
+access=customers | access=agricultural
                       { 
-			add foot=yes;
-			add access=no;
-			} 
+                        add foot=yes;
+                        add access=no;
+                        } 
 
 access=private
                       { 
-			set access=no;
+                        set access=no;
                         }
 
 vehicle=*             {
@@ -194,26 +194,23 @@ access=destination
                         set mkgmap:throughroute=no;
                         set access=yes
                         }
-
+                        
 # some ways are locally signed with vehicle=no, but are included in a cycle network, 
 # therefore we set them to bicycle=yes
-highway=* & cn_temp=*
-		{ 
-		  set bicycle=yes 
-		  }
+cn_temp ~ '.*cn' { set bicycle=yes }                        
 
 # Copy the OSM access tags to the mkgmap internal tags
-foot=*       { set mkgmap:foot='${foot}' }
-bicycle=*    { set mkgmap:bicycle='${bicycle}' }
-motorcar=*   { set mkgmap:car='${motorcar}' }
-goods=*      { set mkgmap:delivery='${goods}' }
-hgv=*        { set mkgmap:truck='${hgv}' }
-bus=*        { set mkgmap:bus='${bus}' }
-taxi=*       { set mkgmap:taxi='${taxi}' }
-emergency=*  { set mkgmap:emergency='${emergency}' }
+foot=*                { set mkgmap:foot='${foot}' }
+bicycle=*             { set mkgmap:bicycle='${bicycle}' }
+motorcar=*            { set mkgmap:car='${motorcar}' }
+goods=*               { set mkgmap:delivery='${goods}' }
+hgv=*                 { set mkgmap:truck='${hgv}' }
+bus=*                 { set mkgmap:bus='${bus}' }
+taxi=*                { set mkgmap:taxi='${taxi}' }
+emergency=*           { set mkgmap:emergency='${emergency}' }
 
 ## a catchall to define all restrictions that are not already set
-access=*       {  addaccess '${access}' }
+access=*              { addaccess '${access}' }
 
 # Check for carpool lane (they are not really supported yet so these lines are commented)
 # hov=* { add carpool='${hov}' }
