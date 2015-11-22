@@ -24,7 +24,6 @@ copyright-message=OpenStreetMap contributors, ODbL. See: http://www.openstreetma
 process-exits
 process-destination
 housenumbers
-remove-short-arcs=0
 check-roundabouts
 check-roundabout-flares
 make-opposite-cycleways
