@@ -94,9 +94,7 @@ highway=path
                   add access=no
                   }
 
-
-highway=steps |
-  (highway=pedestrian & area!=yes) |
+highway=steps|
   highway=footway |
   railway=platform
                 {
@@ -104,9 +102,15 @@ highway=steps |
                   add access=no
                   }
 
+highway=pedestrian & area!=*
+                 {
+                  add motor_vehicle=no;
+                  add bicycle=no
+                  }
+
 highway=bridleway
                 { 
-		  add access=no
+                  add access=no
                   }
 
 highway=cycleway
@@ -116,10 +120,10 @@ highway=cycleway
                   }
 
 highway=* & ramp=yes
-		{
+                {
                   add foot=yes;
-		  add bicyle=yes
-		  }
+                  add bicyle=yes
+                  }
 
 #-----------------------------------------------------------------------------
 # Next line is needed, because 'motorcycle=no' makes
@@ -218,3 +222,4 @@ access=*              { addaccess '${access}' }
 
 # Don't route through highway=construction, they are considered unusable
 highway=construction {setaccess no}
+
