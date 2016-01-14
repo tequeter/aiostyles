@@ -486,6 +486,7 @@ shop=clothes |
 shop=shoes |
 shop=boutique |
 shop=jewelry |
+shop=jewellery |
 shop=fabric                                                               [0x2e07 resolution 24]
 
 # House and Garden ## ok
