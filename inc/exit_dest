@@ -53,7 +53,7 @@
   highway=tertiary_link) &
       mkgmap:exit_hint=true &
       mkgmap:dest_hint!=*
-      { name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
+      { name  'Exit ${mkgmap:exit_hint_ref} $,{mkgmap:exit_hint_exit_to|part:|part:/}' |
               'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
               'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
               'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
