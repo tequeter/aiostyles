@@ -33,7 +33,7 @@ highway=track & (tracktype!=* |
        {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
 
 highway=* & construction=minor
-       {name 'FIXME: ${construction}'}  		[0x10003 resolution 23]
+       {name 'FIXME: ${construction}'}  		        [0x10003 resolution 23]
 
 highway=* & (access=destination |
               access=designated |
@@ -57,3 +57,12 @@ highway!=motorway_junction &
 highway!=bus_stop &
 name~('.*;.*')
           {name 'FIXME: ${name}'}                       [0x10008 resolution 24]
+          
+
+highway=* & width ~'.*cm'   
+                {name 'FIXME: width contains *cm'}      [0x10009 resolution 23]
+                
+
+highway=* & maxwidth ~'.*cm'   
+                 {name 'FIXME: maxwidth contains *cm'}  [0x10009 resolution 23]
+                

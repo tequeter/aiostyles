@@ -58,13 +58,32 @@ highway=* & motorroad=yes
                         add foot=no
                         }
 
-## rules to prevent use of bad ways
+## rules to prevent use small or bad ways
 
 highway=* & disused=yes
                 {
                   add access=no;
                 }
-	    
+
+highway=* 
+    & highway!=track 
+    & highway!=path 
+    & highway!=cycleway 
+    & highway!=footway 
+    & highway!=pedestrian 
+    & highway!=service 
+    & (maxwidth<2.0 | width<2.0)
+                {
+                  add motor_vehicle=no;
+                }
+
+highway=* 
+    & (maxwidth<1.0 | width<1.0)
+                {
+                  add foot=yes;
+                  add access=no;
+                }
+ 
 highway=track
             & mkgmap:unpaved=1
             & (tracktype~'grade[4-6]' |
@@ -75,13 +94,10 @@ highway=track
                 }
 
 highway=path
-           & (
-              smoothness~'.*(bad|horrible|impassable)' |
+           & (smoothness~'.*(bad|horrible|impassable)' |
               sac_scale~'.*(mountain|alpine)_hiking' |
               mtb:scale>0 |
-              mtb:scale:imba>0 |
-              width<1
-              )
+              mtb:scale:imba>0)
                 {
                   add foot=yes;
                   add bicycle=no;
@@ -132,16 +148,16 @@ highway=* & ramp=yes
 highway=* & motorcycle=no {delete motorcycle}
 
 # Normalize values that indicate a restriction to 'no'
-motorcar ~ '.*(private|agricultural|forestry|customers).*'          { set motorcar=no }
-motor_vehicle ~ '.*(private|agricultural|forestry|customers).*'     { set motor_vehicle=no }
-vehicle ~ '.*(private|agricultural|forestry|customers).*'           { set vehicle=no }
-foot ~ '.*(private|agricultural|forestry|customers).*'              { set foot=no }
-bicycle ~ '.*(private|agricultural|forestry|customers).*'           { set bicycle=no }
-goods ~ '.*(private|agricultural|forestry|customers).*'             { set goods=no }
-hgv ~ '.*(private|agricultural|forestry|customers).*'               { set hgv=no }
-bus ~ '.*(private|agricultural|forestry|customers).*'               { set bus=no }
-taxi ~ '.*(private|agricultural|forestry|customers).*'              { set taxi=no }
-emergency ~ '.*(private|agricultural|forestry|customers).*'         { set emergency=no }
+motorcar ~ '.*(private|agricultural|forestry|customers|delivery).*'          { set motorcar=no }
+motor_vehicle ~ '.*(private|agricultural|forestry|customers|delivery).*'     { set motor_vehicle=no }
+vehicle ~ '.*(private|agricultural|forestry|customers|delivery).*'           { set vehicle=no }
+foot ~ '.*(private|agricultural|forestry|customers|delivery).*'              { set foot=no }
+bicycle ~ '.*(private|agricultural|forestry|customers|delivery).*'           { set bicycle=no }
+goods ~ '.*(private|agricultural|forestry|customers|delivery).*'             { set goods=no }
+hgv ~ '.*(private|agricultural|forestry|customers|delivery).*'               { set hgv=no }
+bus ~ '.*(private|agricultural|forestry|customers|delivery).*'               { set bus=no }
+taxi ~ '.*(private|agricultural|forestry|customers|delivery).*'              { set taxi=no }
+emergency ~ '.*(private|agricultural|forestry|customers|delivery).*'         { set emergency=no }
 
 # Normalize values that indicate a restriction to 'yes'
 motorcar ~ '.*(designated|permissive|official).*'                   { set motorcar=yes }
@@ -174,15 +190,18 @@ vehicle=*             {
 
 motor_vehicle=*       {
                         set motorcar='${motor_vehicle}';
-                        set goods='${motor_vehicle}';
-                        set hgv='${motor_vehicle}';
-                        set psv='${motor_vehicle}';
-                        set emergency='${motor_vehicle}';
+                        }
+
+motorcar=*            {
+                        add goods='${motor_vehicle}';
+                        add hgv='${motor_vehicle}';
+                        add psv='${motor_vehicle}';
+                        add emergency='${motor_vehicle}';
                         }
 
 psv=*                 {
-                        set taxi='${psv}';
-                        set bus='${psv}';
+                        add taxi='${psv}';
+                        add bus='${psv}';
                         }
 
 # throughroute cannot be handled differently for different vehicle types
@@ -222,4 +241,3 @@ access=*              { addaccess '${access}' }
 
 # Don't route through highway=construction, they are considered unusable
 highway=construction {setaccess no}
-
