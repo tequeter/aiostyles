@@ -74,7 +74,7 @@ highway=*
     & highway!=service 
     & (maxwidth<2.0 | width<2.0)
                 {
-                  add motor_vehicle=no;
+                  set mkgmap:throughroute=no;
                 }
 
 highway=* 
