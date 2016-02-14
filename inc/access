@@ -172,12 +172,21 @@ taxi ~ '.*(designated|permissive|official).*'                       { set taxi=y
 emergency ~ '.*(designated|permissive|official).*'                  { set emergency=yes }
 
 # some access rules 
-access=customers | access=agricultural
+access=customers 
+        | access=delivery
+        
                       { 
                         add foot=yes;
                         add access=no;
-                        } 
-
+                        add goods=yes;
+                        }
+                        
+access=agricultural 
+        | access=forestry
+                      {
+                        add access=no
+                        }
+        
 access=private
                       { 
                         set access=no;
