@@ -33,14 +33,10 @@ highway=track & (tracktype!=* |
        {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
 
 highway=* & construction=minor
-       {name 'FIXME: ${construction}'}  		        [0x10003 resolution 23]
+       {name 'FIXME: ${construction}'}  		[0x10003 resolution 23]
 
-highway=* & (access=destination |
-              access=designated |
-              vehicle=designated |
-              motor_vehicle=designated )
+highway=* & access ~ '.*(agricultural|forestry|customers|delivery|destination).*'
         {name 'FIXME: access=???' }                     [0x10004 resolution 23]
-
 
 highway~('.*;.*')
         {name 'FIXME: ${highway}'}                      [0x10005 resolution 23]

@@ -66,12 +66,12 @@ highway=* & disused=yes
                 }
 
 highway=* 
+    & highway!=service 
     & highway!=track 
     & highway!=path 
     & highway!=cycleway 
     & highway!=footway 
     & highway!=pedestrian 
-    & highway!=service 
     & (maxwidth<2.0 | width<2.0)
                 {
                   set mkgmap:throughroute=no;
@@ -134,84 +134,12 @@ highway=cycleway
                   add bicycle=yes;
                   add access=no
                   }
-
-highway=* & ramp=yes
-                {
-                  add foot=yes;
-                  add bicyle=yes
-                  }
-
-#-----------------------------------------------------------------------------
-# Next line is needed, because 'motorcycle=no' makes
-# nonroutable highways for motorcar
-
-highway=* & motorcycle=no {delete motorcycle}
-
-# Normalize values that indicate a restriction to 'no'
-motorcar ~ '.*(private|agricultural|forestry|customers|delivery).*'          { set motorcar=no }
-motor_vehicle ~ '.*(private|agricultural|forestry|customers|delivery).*'     { set motor_vehicle=no }
-vehicle ~ '.*(private|agricultural|forestry|customers|delivery).*'           { set vehicle=no }
-foot ~ '.*(private|agricultural|forestry|customers|delivery).*'              { set foot=no }
-bicycle ~ '.*(private|agricultural|forestry|customers|delivery).*'           { set bicycle=no }
-goods ~ '.*(private|agricultural|forestry|customers|delivery).*'             { set goods=no }
-hgv ~ '.*(private|agricultural|forestry|customers|delivery).*'               { set hgv=no }
-bus ~ '.*(private|agricultural|forestry|customers|delivery).*'               { set bus=no }
-taxi ~ '.*(private|agricultural|forestry|customers|delivery).*'              { set taxi=no }
-emergency ~ '.*(private|agricultural|forestry|customers|delivery).*'         { set emergency=no }
-
-# Normalize values that indicate a restriction to 'yes'
-motorcar ~ '.*(designated|permissive|official).*'                   { set motorcar=yes }
-motor_vehicle ~ '.*(designated|permissive|official).*'              { set motor_vehicle=yes }
-vehicle ~ '.*(designated|permissive|official).*'                    { set vehicle=yes }
-foot ~ '.*(designated|permissive|official).*'                       { set foot=yes }
-bicycle ~ '.*(designated|permissive|official).*'                    { set bicycle=yes }
-goods ~ '.*(designated|permissive|official).*'                      { set goods=yes }
-hgv ~ '.*(designated|permissive|official).*'                        { set hgv=yes }
-bus ~ '.*(designated|permissive|official).*'                        { set bus=yes }
-taxi ~ '.*(designated|permissive|official).*'                       { set taxi=yes }
-emergency ~ '.*(designated|permissive|official).*'                  { set emergency=yes }
-
-# some access rules 
-access=customers 
-        | access=delivery
-        
-                      { 
-                        add foot=yes;
-                        add access=no;
-                        add goods=yes;
-                        }
-                        
-access=agricultural 
-        | access=forestry
-                      {
-                        add access=no
-                        }
-        
-access=private
-                      { 
-                        set access=no;
-                        }
-
-vehicle=*             {
-                        set bicycle='${vehicle}';
-                        set motor_vehicle='${vehicle}';
-                        }
-
-motor_vehicle=*       {
-                        set motorcar='${motor_vehicle}';
-                        }
-
-motorcar=*            {
-                        add goods='${motor_vehicle}';
-                        add hgv='${motor_vehicle}';
-                        add psv='${motor_vehicle}';
-                        add emergency='${motor_vehicle}';
-                        }
-
-psv=*                 {
-                        add taxi='${psv}';
-                        add bus='${psv}';
-                        }
+                  
+# some access rules with exceptions
+access ~ '.*(agricultural|forestry|customers|delivery|destination).*' 
+                        {
+                            set mkgmap:throughroute=no;
+                            } 
 
 # throughroute cannot be handled differently for different vehicle types
 # Therefore we have to choose one vehicle type - and the winner is: motorcar
@@ -220,33 +148,81 @@ motorcar=destination
                         set mkgmap:throughroute=no;
                         set motorcar=yes
                         }
+                        
+                        
+#-----------------------------------------------------------------------------
+# Next line is needed, because 'motorcycle=no' makes
+# nonroutable highways for motorcar
 
-access=destination
-                      {
-                        set mkgmap:throughroute=no;
-                        set access=yes
-                        }
+highway=* & motorcycle=no {delete motorcycle}
+
+# Normalize values that indicate a restriction to 'no'
+motorcar ~ '.*(private|agricultural|forestry|customers|delivery).*'         { set motorcar=no }
+motor_vehicle ~ '.*(private|agricultural|forestry|customers|delivery).*'    { set motor_vehicle=no }
+vehicle ~ '.*(private|agricultural|forestry|customers|delivery).*'          { set vehicle=no }
+foot ~ '.*(private|agricultural|forestry|customers|delivery).*'             { set foot=no }
+bicycle ~ '.*(private|agricultural|forestry|customers|delivery).*'          { set bicycle=no }
+goods ~ '.*(private|agricultural|forestry|customers|delivery).*'            { set goods=no }
+hgv ~ '.*(private|agricultural|forestry|customers|delivery).*'              { set hgv=no }
+bus ~ '.*(private|agricultural|forestry|customers|delivery).*'              { set bus=no }
+taxi ~ '.*(private|agricultural|forestry|customers|delivery).*'             { set taxi=no }
+emergency ~ '.*(private|agricultural|forestry|customers|delivery).*'        { set emergency=no }
+
+# Normalize values that indicate a restriction to 'yes'
+motorcar ~ '.*(designated|permissive|official|allowed).*'                   { set motorcar=yes }
+motor_vehicle ~ '.*(designated|permissive|official|allowed).*'              { set motor_vehicle=yes }
+vehicle ~ '.*(designated|permissive|official|allowed).*'                    { set vehicle=yes }
+foot ~ '.*(designated|permissive|official|allowed).*'                       { set foot=yes }
+bicycle ~ '.*(designated|permissive|official|allowed).*'                    { set bicycle=yes }
+goods ~ '.*(designated|permissive|official|allowed).*'                      { set goods=yes }
+hgv ~ '.*(designated|permissive|official|allowed).*'                        { set hgv=yes }
+bus ~ '.*(designated|permissive|official|allowed).*'                        { set bus=yes }
+taxi ~ '.*(designated|permissive|official|allowed).*'                       { set taxi=yes }
+emergency ~ '.*(designated|permissive|official|allowed).*'                  { set emergency=yes }
+
+
+# copy the access rules to usable key/value pairs 
+vehicle=*               {
+                            set bicycle='${vehicle}';
+                            set motor_vehicle='${vehicle}';
+                            }
+
+motor_vehicle=*         {
+                            set motorcar='${motor_vehicle}';
+                            }
+
+motorcar=*              {
+                            add goods='${motor_vehicle}';
+                            add hgv='${motor_vehicle}';
+                            add psv='${motor_vehicle}';
+                            add emergency='${motor_vehicle}';
+                            }
+
+psv=*                   {
+                            add taxi='${psv}';
+                            add bus='${psv}';
+                            }
+
                         
 # some ways are locally signed with vehicle=no, but are included in a cycle network, 
-# therefore we set them to bicycle=yes
-cn_temp ~ '.*cn' { set bicycle=yes }                        
+# we set them to bicycle=yes to allow routing over this ways
+cn_temp ~ '.*cn'        { set bicycle=yes }                        
 
 # Copy the OSM access tags to the mkgmap internal tags
-foot=*                { set mkgmap:foot='${foot}' }
-bicycle=*             { set mkgmap:bicycle='${bicycle}' }
-motorcar=*            { set mkgmap:car='${motorcar}' }
-goods=*               { set mkgmap:delivery='${goods}' }
-hgv=*                 { set mkgmap:truck='${hgv}' }
-bus=*                 { set mkgmap:bus='${bus}' }
-taxi=*                { set mkgmap:taxi='${taxi}' }
-emergency=*           { set mkgmap:emergency='${emergency}' }
+foot=*                  { set mkgmap:foot='${foot}' }
+bicycle=*               { set mkgmap:bicycle='${bicycle}' }
+motorcar=*              { set mkgmap:car='${motorcar}' }
+goods=*                 { set mkgmap:delivery='${goods}' }
+hgv=*                   { set mkgmap:truck='${hgv}' }
+bus=*                   { set mkgmap:bus='${bus}' }
+taxi=*                  { set mkgmap:taxi='${taxi}' }
+emergency=*             { set mkgmap:emergency='${emergency}' }
 
 ## a catchall to define all restrictions that are not already set
-access=*              { addaccess '${access}' }
+access=*                { addaccess '${access}' }
 
-# Check for carpool lane (they are not really supported yet so these lines are commented)
-# hov=* { add carpool='${hov}' }
-# (carpool=yes | carpool=designated | carpool=permissive | carpool=official)     { set mkgmap:carpool=yes }
+# Don't route into private property!                        
+access=private          { setaccess 'no' }
 
 # Don't route through highway=construction, they are considered unusable
-highway=construction {setaccess no}
+highway=construction    { setaccess 'no' }
