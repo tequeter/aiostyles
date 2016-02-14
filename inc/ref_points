@@ -1,4 +1,4 @@
-
+# add ref to some POIs
 (amenity=bus_station |
     public_transport=platform |
     highway=bus_stop |
