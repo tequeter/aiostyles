@@ -27,6 +27,7 @@ barrier=bollard |
             add mkgmap:bicycle=yes;
             add mkgmap:foot=yes;
             addaccess no;
+            set mkgmap:road-speed=1;
             }
 
 barrier=bus_trap
@@ -35,6 +36,7 @@ barrier=bus_trap
             add mkgmap:foot=yes;
             add mkgmap:bicycle=yes;
             addaccess no;
+            set mkgmap:road-speed=1;
             }
 
 barrier~'.*(gate)' |
@@ -45,4 +47,5 @@ barrier~'.*(gate)' |
             add mkgmap:bicycle=yes;
             add mkgmap:foot=yes;
             addaccess no;
+            set mkgmap:road-speed=0;
             }
