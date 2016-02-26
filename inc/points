@@ -81,10 +81,7 @@ landuse=cemetery & mkgmap:area2poi!=true                                [0x6404 
 # 0x6405        # civil
 
 # 0x6406        # crossing
-railway=level_crossing | railway=crossing
-            {
-              set mkgmap:road-speed=0
-              }                                                         [0x6406 resolution 24]
+railway=level_crossing | railway=crossing                               [0x6406 resolution 24]
 # 0x6407        # dam
 # 0x6408        # hospital
 # 0x6409        # levee
