@@ -9,8 +9,10 @@ barrier~'.*(block)'                                                             
 barrier~'.*(hedge)'                                                                     [0x10f0c resolution 24 continue]
 
 # man made
-(man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & area!=yes &
-tunnel!=yes & location != underground                                                   [0x28 resolution 23]
+(man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & 
+        area!=yes &
+        tunnel!=yes & 
+        location != underground                                                         [0x28 resolution 23]
 
 # power
 power=line | power=minor_line           { delete name }                                 [0x29 resolution 24]
