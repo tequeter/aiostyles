@@ -29,7 +29,7 @@ highway~'.*(:|,|;).*'
        {name 'FIXME: ${highway}';}                      [0x10002 resolution 23]
 
 highway=track & (tracktype!=* |
-                  tracktype~('.*;.*'))
+                  tracktype~'.*;.*')
        {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
 
 highway=* & construction=minor
@@ -52,13 +52,14 @@ highway=* &
 highway!=motorway_junction &
 highway!=bus_stop &
 name~('.*;.*')
-          {name 'FIXME: ${name}'}                       [0x10008 resolution 24]
+         {name 'FIXME: ${name}'}                        [0x10008 resolution 24]
+          
+highway=* & (width ~'.*cm' | 
+              maxwidth ~'.*cm' | 
+              width ~'.*(;|-|:|bis|to).*' | 
+              maxwidth ~'.*(;|-|:|bis|to).*')
+        {name 'FIXME: (max)width contains unusable values'}  [0x10009 resolution 23]
+
           
 
-highway=* & width ~'.*cm'   
-                {name 'FIXME: width contains *cm'}      [0x10009 resolution 23]
-                
 
-highway=* & maxwidth ~'.*cm'   
-                 {name 'FIXME: maxwidth contains *cm'}  [0x10009 resolution 23]
-                

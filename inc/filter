@@ -56,19 +56,41 @@ historic~'.*;.*'
 highway=* & width ~'.*cm'   
                 {
                   delete width
-                }  
-
+                }
+                
+highway=* & width ~'.*;.*'
+                {
+                  set width='${width|part:}';
+                }
+             
 highway=* & width ~'.*m'
                 {
-                  set width='${width|part:" m"}';
+                  set width='${width|part:"m"}';
+                }
+                
+highway=* & width ~'.*,.*'
+                {
+                  set width='${width|subst:",=>."}'
                 }
 
+highway=* & width ~'.*-.*'
+                {
+                 set width='${width|part:"-"}'
+                }
+                
 highway=* & maxwidth ~'.*cm'   
                 {
                   delete maxwidth
                 } 
-
+                
 highway=* & maxwidth ~'.*m'
                 {
-                  set maxwidth='${maxwidth|part:" m"}';
+                  set maxwidth='${maxwidth|part:"m"}'
                 }
+                
+highway=* & maxwidth ~'.*,.*'
+                {
+                  set maxwidth='${maxwidth|subst:",=>."}'
+                }
+                
+                  
