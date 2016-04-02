@@ -1,61 +1,26 @@
 
-#--------------------------------------------------------------------------------------
-# process-exits and process-destination
-
-(highway=motorway_link | 
-  highway=trunk_link | 
-  highway=primary_link | 
-  highway=secondary_link | 
-  highway=tertiary_link) &
-      mkgmap:exit_hint=true &
-      mkgmap:dest_hint=true
-      { name 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${destination:ref|subst: =>}' |
-             'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/} ${ref|subst: =>}' |
-             'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${destination:ref|subst: =>}' |
-             'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/} ${ref|subst: =>}' |
-             'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-             'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
-             'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${destination:ref|subst: =>}' |
-             'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/} ${ref|subst: =>}' |
-             'Exit ${mkgmap:exit_hint_ref} ${destination|part:|part:/}' |
-             'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-             'Exit ${ref|subst: =>} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-             'Exit ${destination:ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
-             'Exit ${ref|subst: =>} ${mkgmap:exit_hint_name|part:|part:/}' |
-             'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-             'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
-             'Exit ${destination:ref|subst: =>} ${destination|part:|part:/}' |
-             'Exit ${ref|subst: =>} ${destination|part:|part:/}' |
-             'Exit ${mkgmap:exit_hint_ref}' |
-             '${destination|part:|part:/}' |
-             '${destination:ref|subst: =>}' |
-             '${ref|subst: =>}'
-        }
-
-(highway=motorway_link | 
-  highway=trunk_link | 
-  highway=primary_link | 
-  highway=secondary_link | 
-  highway=tertiary_link) &
-      mkgmap:exit_hint!=* &
-      mkgmap:dest_hint=true
-      { name '${destination:ref|subst: =>} ${destination|part:|part:/}' |
-             '${ref|subst: =>} ${destination|part:|part:/}' |
-             '${destination|part:|part:/}' |
-             '${destination:ref|subst: =>}' |
-             '${ref|subst: =>}'
-        }
-
-(highway=motorway_link | 
-  highway=trunk_link | 
-  highway=primary_link | 
-  highway=secondary_link | 
-  highway=tertiary_link) &
-      mkgmap:exit_hint=true &
-      mkgmap:dest_hint!=*
-      { name  'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_exit_to|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_name|part:|part:/}' |
-              'Exit ${mkgmap:exit_hint_ref}'
-        }
+# start of rules for process-exits and process-destination options
+# which may add info to a part of these highway=*_link roads:
+# motorway_link, trunk_link, primary_link, secondary_link, tertiary_link
+# build destination hint 
+dest_hint=* { delete dest_hint }
+mkgmap:dest_hint=*
+  { set dest_hint = '${destination:ref|subst: =>} ${mkgmap:dest_hint|subst:;=> |subst:/=> }' |
+                    '${ref|subst: =>} ${mkgmap:dest_hint|subst:;=> |subst:/=> }' | 
+                    '${mkgmap:dest_hint|subst:;=> |subst:/=> }'
+       }
+# build exit hint 
+exit_hint=* { delete exit_hint }
+mkgmap:exit_hint=true 
+  { set exit_hint = 'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_name}' | 
+                    'Exit ${mkgmap:exit_hint_ref} ${mkgmap:exit_hint_exit_to}' | 
+                    'Exit ${mkgmap:exit_hint_exit_to}' |
+                    'Exit ${mkgmap:exit_hint_name}' |
+                    'Exit ${mkgmap:exit_hint_ref}';
+       }
+  
+# use destination hint and/or exit hint to build name              
+(mkgmap:exit_hint=true | mkgmap:dest_hint=*)
+  {	name '${exit_hint} ${dest_hint}' | '${dest_hint}' | '${exit_hint}'; }
+  
+# end of rules for process-exits and process-destination options	
