@@ -4359,6 +4359,30 @@ Xpm="32 3 4 1"
 [end]
 
 [_line]
+Type=0x10506
+ExtendedLabels=N
+String1=0x04,Strict Nature Reserve
+UseOrientation=Y
+Xpm="32 2 2 1"
+"0 c #7B006A"
+"1 c none"
+"01110111011101110111011101110111"
+"00000000000000000000000000000000"
+[end]
+
+[_line]
+Type=0x10F0E
+ExtendedLabels=N
+String1=0x04,Natural Park
+UseOrientation=Y
+Xpm="32 2 2 1"
+"0 c #009500"
+"1 c none"
+"01110111011101110111011101110111"
+"00000000000000000000000000000000"
+[end]
+
+[_line]
 Type=0x11001
 UseOrientation=N
 String1=0x02,Autobahn
@@ -4857,7 +4881,6 @@ Xpm="32 1 2 1"
 "1 c #FF0000"
 "00001111000011110000111100001111"
 [end]
-
 
 [_point]
 Type=0x01c02

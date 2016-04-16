@@ -10,4 +10,9 @@ boundary=administrative & admin_level<=2                                        
 boundary=administrative & admin_level<=4                                                [0x1d resolution 19 continue]
 boundary=national                                                                       [0x1e resolution 17 continue]
 
+# Strict nature reserve
+boundary=protected_area & protect_class=1                                               [0x10506 resolution 20 continue]
+# National Park
+boundary=protected_area & protect_class=2                                               [0x10f0e resolution 20 continue]
+
 # other boundaries moved to boundary layer

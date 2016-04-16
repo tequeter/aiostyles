@@ -12,3 +12,15 @@
             set mkgmap:boundary_name='$(mkgmap:boundary_name)/${name}' | '${name}';
           }
         }
+
+# Nature protected areas
+(type=boundary | type=multipolygon)
+  & ( boundary=protected_area | boundary=national_park ) & protect_class ~ '[12]'
+        { apply
+          {
+            add boundary=protected_area;
+            add protect_class='${protect_class}';
+            add name='${name}';
+            add name='${protect_title}';
+          }
+        }
