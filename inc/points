@@ -107,7 +107,7 @@ man_made=tower                                                          [0x6411 
              amenity=signpost )                                         [0x6412 resolution 24]
 man_made=adit                                                           [0x6413 resolution 24]
 
-(amenity=drinking_water & (drinking_water=yes|drinkable=yes)) |
+(amenity=drinking_water & !(drinking_water=no|drinkable=no)) |
         (amenity=water_well & water_well=drinking_water)                [0x6414 resolution 24]
 man_made=water_tower                                                    [0x6415 resolution 24]
 amenity=hunting_stand                                                   [0x6417 resolution 24]
