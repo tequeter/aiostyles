@@ -8,6 +8,8 @@ barrier~'.*(fence)'                                                             
 barrier~'.*(block)'                                                                     [0x10f05 resolution 24 continue]
 barrier~'.*(hedge)'                                                                     [0x10f0c resolution 24 continue]
 
+natural=cliff                                                                           [0x10f04 resolution 24 continue]
+
 # man made
 (man_made=cable|(man_made=* & man_made ~ '.*pipe.*')) & 
         area!=yes &
