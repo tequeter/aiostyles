@@ -28,7 +28,7 @@ amenity=parking
         & ( parking=multi-storey |
             parking=underground)       
          { name '^ ${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
-		'^ ${name|def:P} (${capacity}/${capacity:disabled})' |
+                '^ ${name|def:P} (${capacity}/${capacity:disabled})' |
                 '^ ${name|def:P} (${capacity})[${fee}]' |
                 '^ ${name|def:P} (${capacity})' |
                 '^ ${name|def:P} [${fee}]' |
@@ -37,7 +37,7 @@ amenity=parking
                 
 amenity=parking
          { name '${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
-		'${name|def:P} (${capacity}/${capacity:disabled})' |
+                '${name|def:P} (${capacity}/${capacity:disabled})' |
                 '${name|def:P} (${capacity})[${fee}]' |
                 '${name|def:P} (${capacity})' |
                 '${name|def:P} [${fee}]'|
