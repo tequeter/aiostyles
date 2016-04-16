@@ -11,12 +11,12 @@ natural~'.*;.*'
                 set natural='${natural|part:}';
                 }
 
-highway~'.*;.*'
+highway ~ '.*;.*'
                 {
                 set highway='${highway|part:}';
                 }
 
-amenity~'.*;.*'
+amenity ~ '.*;.*'
                 {
                 set amenity='${amenity|part:}';
                 }

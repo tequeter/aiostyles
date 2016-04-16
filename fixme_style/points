@@ -1,68 +1,42 @@
 
-note=* |
-fixme=* |
-FIXME=* |
-Fixme=* |
-ref=FIXME |
-ref=fixme |
-operator=FIXME |
-operator=fixme |
-brand=FIXME |
-brand=fixme |
-name=FIXME |
-name=fixme
-
-            {name 'Notiz: ${note}' |
-                  'Notiz: ${fixme}' |
-                  'Notiz: ${FIXME}' |
-                  'Notiz: ${Fixme}' |
-                  'Notiz: ${ref} = fixme' |
-                  'Notiz: ${operator} = fixme' |
-                  'Notiz: ${brand = fixme' |
-                  'Notiz: ${name} = fixme'
-                  }
-                          [0x7110 resolution 23]
+fixme=* { set name = 'FIXME: ${fixme}' }                                      [0x7110 resolution 23]
+FIXME=* { set name = 'FIXME: ${FIXME}' }                                      [0x7110 resolution 23]
+          
+ref ~ '(?i)fixme?'      { set name = 'FIXME_REF: ${name}' | 'FIXME_REF:'}     [0x7110 resolution 23]  
+operator ~ '(?i)fixme?' { set name = 'FIXME_OP: ${name}' | 'FIXME_OP:'}       [0x7110 resolution 23] 
+brand ~ '(?i)fixme?'    { set name = 'FIXME_BRAND: ${name}' | 'FIXME_BRAND:'} [0x7110 resolution 23] 
+name ~ '(?i)fixme?'     { set name = 'FIXME_NAME: ${name}' | 'FIXME_NAME:'}   [0x7110 resolution 23] 
 
 (amenity=public_building |
      amenity=school |
      amenity=kindergarten |
      amenity=social_facility)
         & (name!=* | operator!=*)
-
-            {name 'FIXME: name or operator fehlt/missing'}
-                          [0x7110 resolution 23]
+            {set name = 'FIXME: name or operator fehlt/missing'}              [0x7110 resolution 23]
 
 (amenity=place_of_worship & denomination=unknown) |
     (amenity=place_of_worship & religion=unknown) |
     (amenity=place_of_worship & name!=*)
-            {name 'FIXME: denomination/religion/name fehlt/missing'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: denomination/religion/name fehlt/missing'}   [0x7110 resolution 23]
 
 amenity=place_of_worship & ( building!=* )
-            {name 'FIXME: building fehlt/missing'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: building fehlt/missing'}                     [0x7110 resolution 23]
 
 amenity=fuel & brand!=*
-            {name 'FIXME: name or operator fehlt/missing'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: name or operator fehlt/missing'}             [0x7110 resolution 23]
 
 tourism=hotel & stars!=*
-            {name 'FIXME: stars missing'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: stars missing'}                              [0x7110 resolution 23]
 
-shop!=vacant & name!=*
-            {name 'FIXME: name, brand or operator fehlt/missing'}
-                          [0x7110 resolution 23]
+shop=* & shop!=vacant & name!=*
+            { set name = 'FIXME: name, brand or operator fehlt/missing'}      [0x7110 resolution 23]
 
 amenity=restaurant & cuisine!=*
-            {name 'FIXME: cuisine fehlt/missing'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: cuisine fehlt/missing'}                      [0x7110 resolution 23]
 
 amenity=restaurant & name!=*
-            {name 'FIXME: name, brand or operator fehlt/missing'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: name, brand or operator fehlt/missing'}      [0x7110 resolution 23]
 
 (amenity=water_well | amenity=drinking_water) &
 (drinking_water!=* | drinkable!=*)
-            {name 'FIXME: Trinkwasser? / drinking water?'}
-                          [0x7110 resolution 23]
+            { set name = 'FIXME: Trinkwasser? / drinking water?'}             [0x7110 resolution 23]

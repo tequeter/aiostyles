@@ -3,14 +3,10 @@
 # name, brand, operator, ref
 
 # delete FIXME values (they should be better used in maintenance maps)
-#ref=FIXME | ref=fixme                   { delete ref; }
-#operator=FIXME | operator=fixme         { delete operator; }
-#brand=FIXME | brand=fixme               { delete brand; }
-#name=FIXME | name=fixme                 { delete name; }
-ref ~ '(?i)fix[ _]?+me'                 { delete ref; } 
-operator ~ '(?i)fix[ _]?+me'            { delete operator; }
-brand ~ '(?i)fix[ _]?+me'               { delete brand; }
-name ~ '(?i)fix[ _]?+me'                { delete name; }
+ref ~ '(?i)fixme'                 { delete ref; } 
+operator ~ '(?i)fixme'            { delete operator; }
+brand ~ '(?i)fixme'               { delete brand; }
+name ~ '(?i)fixme'                { delete name; }
 
 # delete duplicate names
 #operator=${brand}                      { delete operator; }
@@ -29,21 +25,21 @@ amenity=parking & fee=no { delete fee ; }
 amenity=parking
         & ( parking=multi-storey |
             parking=underground)       
-         { name '^ ${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
-                '^ ${name|def:P} (${capacity}/${capacity:disabled})' |
-                '^ ${name|def:P} (${capacity})[${fee}]' |
-                '^ ${name|def:P} (${capacity})' |
-                '^ ${name|def:P} [${fee}]' |
-                '^ ${name|def:P}'
+         { set name = '^ ${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
+                      '^ ${name|def:P} (${capacity}/${capacity:disabled})' |
+                      '^ ${name|def:P} (${capacity})[${fee}]' |
+                      '^ ${name|def:P} (${capacity})' |
+                      '^ ${name|def:P} [${fee}]' |
+                      '^ ${name|def:P}'
                 }
                 
 amenity=parking
-         { name '${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
-                '${name|def:P} (${capacity}/${capacity:disabled})' |
-                '${name|def:P} (${capacity})[${fee}]' |
-                '${name|def:P} (${capacity})' |
-                '${name|def:P} [${fee}]'|
-                '${name|def:P}'                
+         { set name = '${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
+                      '${name|def:P} (${capacity}/${capacity:disabled})' |
+                      '${name|def:P} (${capacity})[${fee}]' |
+                      '${name|def:P} (${capacity})' |
+                      '${name|def:P} [${fee}]'|
+                      '${name|def:P}'                
                 }
 
 amenity=post_office
@@ -141,12 +137,12 @@ amenity=place_of_worship & name!=*
                           '${religion}' |
                           '${building}' |
                           'religious' ;
-	add name='${temp_religion|subst:_=> }' ;
+	add name = '${temp_religion|subst:_=> }' ;
 	}
 
 amenity=social_centre | amenity=social_facility
 	{
-	add name='${amenity|subst:_=> } (${social_facility|subst:_=> } for ${social_facility:for|subst:_=> })'|
+	add name = '${amenity|subst:_=> } (${social_facility|subst:_=> } for ${social_facility:for|subst:_=> })'|
                   '${amenity|subst:_=> } (${social_facility|subst:_=> })'|
                   '${amenity|subst:_=> }'
 	}
@@ -160,7 +156,7 @@ shop=* & shop!=hairdresser &
           shop!=books &
           shop!=general & name!=*
 	{
-	add name='${shop|subst:_=> }' ;
+	add name = '${shop|subst:_=> }' ;
 	}
 
 power=*
@@ -170,37 +166,26 @@ power=*
         delete name ;
         }
 
-leisure=* & sport=* & name=* { set name='${name} (${sport})' }
-leisure=* & sport=* & name!=* { add name='${sport}' }
+leisure=* & sport=* & name=*  { set name = '${name} (${sport})' }
+leisure=* & sport=* & name!=* { add name = '${sport}' }
 
-waterway=* & name!=*
-	{
-	add name='$(waterway|subst:_=> }' ;
-	}
+waterway=* & name!=* { add name = '$(waterway|subst:_=> }' }
 
-highway=speed_camera { name 'Blitzt ${maxspeed} km/h'; }
+highway=speed_camera & maxspeed = *
+      { set name = '${maxspeed}km/h' }
 
-natural=glacier
-        { name '${name} (${ele} m)' |
-                '${name}' |
-                '(${ele} m)' }
+natural=glacier & ele = *      
+      { set name = '${name} (${ele}m)' | 
+                   '${name}' |
+                   '(${ele}m)' }
 
-natural=peak | natural=hill | mountain_pass=yes
-        {
-	name '${name|def:} (${ele|def:} m)' |
-              '${name}' |
-              '(${ele} m)'
-	}
+(natural=peak | natural=hill | mountain_pass=yes) & ele=* 
+        { set name = '${name|def:} (${ele|def:}m)' |
+                     '${name}' |
+                     '(${ele}m)' }
 
-disused=yes  {name '${name} (disused)'|'(disused)';}
+disused=yes  { set name = '${name} (disused)'|'(disused)';}
 
 # fix unnamed standard icons
-leisure=marina & name!=* { add name='${leisure}' }
-barrier=border_control & name!=* { add name='${barrier}' }
-
-#name=* &
-#    mkgmap:label:1!=* &
-#    mkgmap:label:2!=* &
-#    mkgmap:label:3!=* &
-#    mkgmap:label:4!=*
-#        { name '${name}' }
+leisure=marina & name!=*            { add name = '${leisure}' }
+barrier=border_control & name!=*    { add name = '${barrier}' }

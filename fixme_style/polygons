@@ -1,13 +1,11 @@
 (boundary!=* |
   place!=region) &
     ( fixme = * |
-      FIXME=* |
-      Fixme=*)
-        {name '${fixme}' |
-              '${FIXME}' |
-              '${Fixme}' }                     [0x53 resolution 22]
+      FIXME=* )
+        {set name = '${fixme}' |
+                    '${FIXME}' }                     [0x53 resolution 22]
 
 building=* &
   building!=public &
   amenity=public_building
-    {name 'FIXME: building function unclear'}   [0x53 resolution 23]
+    {set name = 'FIXME: building function unclear'}   [0x53 resolution 23]

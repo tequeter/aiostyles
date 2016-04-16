@@ -18,8 +18,8 @@ highway=* & motorroad=yes
                           add foot=no
                           }
 
-(highway~'motorway.*' |
-    highway~'trunk.*' )
+(highway ~ 'motorway.*' |
+    highway ~ 'trunk.*' )
         & mkgmap:country=DEU
                       {
                         add bicycle=no;
@@ -51,8 +51,8 @@ highway=* & motorroad=yes
                           add foot=no
                           }
 
-(highway~'motorway.*' |
-    highway~'trunk.*' )
+(highway ~ 'motorway.*' |
+    highway ~ 'trunk.*' )
                       {
                         add bicycle=no;
                         add foot=no
@@ -72,17 +72,18 @@ highway=* & disused=yes
                 }
 
 highway=* 
-    & highway!=service 
     & highway!=track 
     & highway!=path 
     & highway!=cycleway 
     & highway!=footway 
     & highway!=pedestrian 
+    & highway!=steps
+    & highway!=bridleway
     & (maxwidth<2.0 | width<2.0)
                 {
-                  set mkgmap:throughroute=no;
+                  set mkgmap:throughroute=no
                 }
-
+                
 highway=* 
     & (maxwidth<1.0 | width<1.0)
                 {

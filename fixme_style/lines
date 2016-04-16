@@ -2,63 +2,58 @@
 
 boundary=postal_code & note =* { delete note; }
 
-note=* & (note ~ 'FIXME.*' |
-	  note ~ 'fixme.*' |
-	  note ~ 'Fixme.*')|
-	  fixme=* |
-	  FIXME=* |
-	  Fixme=* {name 'Notiz: ${note}' |
-	  'Notiz: ${fixme}' |
-	  'Notiz: ${FIXME}' |
-	  'Notiz: ${Fixme}' |
-	  oneway=-1	} 				[0x10001 resolution 24]
-
+highway = * & (FIXME = * )
+        { set name = 'FIXME: ${FIXME}'}                         [0x10001 resolution 23]
+        
+highway = * & (fixme = * )
+        { set name = 'FIXME: ${fixme}'}                         [0x10001 resolution 23]
+        
 (highway~'motorway.*' |
     highway~'trunk.*' ) &
     (bicycle=* &
       bicycle!=no)
-       {name 'FIXME: ${highway} with bicycle?'}         [0x10002 resolution 23]
+       { set name = 'FIXME: ${highway} with bicycle?'}          [0x10002 resolution 23]
 
 (highway~'motorway.*' |
     highway~'trunk.*' ) &
     (cycleway=* &
       cycleway!=no)
-       {name 'FIXME: ${highway} with cycleway?'}        [0x10002 resolution 23]
+       { set name = 'FIXME: ${highway} with cycleway?'}         [0x10002 resolution 23]
 
 highway~'.*(:|,|;).*'
-       {name 'FIXME: ${highway}';}                      [0x10002 resolution 23]
+       { set name = 'FIXME: ${highway}';}                       [0x10002 resolution 23]
 
 highway=track & (tracktype!=* |
                   tracktype~'.*;.*')
-       {name 'FIXME: ${tracktype}'}                     [0x10002 resolution 23]
+       { set name = 'FIXME: ${tracktype}'}                      [0x10002 resolution 23]
 
 highway=* & construction=minor
-       {name 'FIXME: ${construction}'}  		[0x10003 resolution 23]
+       { set name = 'FIXME: ${construction}'}                   [0x10003 resolution 23]
 
 highway=* & access ~ '.*(agricultural|forestry|destination).*'
-        {name 'FIXME: access=???' }                     [0x10004 resolution 23]
+        { set name = 'FIXME: access=???' }                      [0x10004 resolution 23]
 
 highway~('.*;.*')
-        {name 'FIXME: ${highway}'}                      [0x10005 resolution 23]
+        { set name = 'FIXME: ${highway}'}                       [0x10005 resolution 23]
 
-note=* {name 'Notiz: ${note}'}                          [0x10006 resolution 24]
+note=* { set name = 'Notiz: ${note}'}                           [0x10006 resolution 24]
 
 highway=residential &
         name!=* &
         addr:place!=* &
-        junction!=roundabout                            [0x10007 resolution 24]
+        junction!=roundabout                                    [0x10007 resolution 24]
 
 highway=* &
 highway!=motorway_junction &
 highway!=bus_stop &
 name~('.*;.*')
-         {name 'FIXME: ${name}'}                        [0x10008 resolution 24]
+         { set name = 'FIXME: ${name}'}                        [0x10008 resolution 24]
           
 highway=* & (width ~'.*cm' | 
               maxwidth ~'.*cm' | 
               width ~'.*(;|-|:|bis|to).*' | 
               maxwidth ~'.*(;|-|:|bis|to).*')
-        {name 'FIXME: (max)width contains unusable values'}  [0x10009 resolution 23]
+        { set name = 'FIXME: (max)width contains unusable values'}  [0x10009 resolution 23]
 
           
 
