@@ -40,3 +40,8 @@ amenity=restaurant & name!=*
 (amenity=water_well | amenity=drinking_water) &
 (drinking_water!=* | drinkable!=*)
             { set name = 'FIXME: Trinkwasser? / drinking water?'}             [0x7110 resolution 23]
+
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+name=* { name '${name}' }

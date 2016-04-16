@@ -9,3 +9,7 @@ building=* &
   building!=public &
   amenity=public_building
     {set name = 'FIXME: building function unclear'}   [0x53 resolution 23]
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+name=* { name '${name}' }

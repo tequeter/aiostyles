@@ -1,5 +1,3 @@
-
-
 boundary=postal_code & note =* { delete note; }
 
 highway = * & (FIXME = * )
@@ -55,6 +53,9 @@ highway=* & (width ~'.*cm' |
               maxwidth ~'.*(;|-|:|bis|to).*')
         { set name = 'FIXME: (max)width contains unusable values'}  [0x10009 resolution 23]
 
-          
+
+<finalize>
+# The finalizer section is executed for each element when a rule with an element type matches
+name=* { name '${name}' }          
 
 
