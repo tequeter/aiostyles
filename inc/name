@@ -22,6 +22,8 @@ name ~ '(?i)fix[ _]?+me'                { delete name; }
 amenity=parking & access=private {delete amenity}
 amenity=parking & capacity=unknown { delete capacity ; }
 amenity=parking & capacity:disabled=unknown { delete capacity:disabled ; }
+amenity=parking & capacity:disabled=no { set capacity:disabled = 0 ; }
+amenity=parking & fee=no { delete fee ; }
 
 
 amenity=parking
