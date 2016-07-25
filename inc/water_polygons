@@ -2,8 +2,9 @@
 # water
 
 
-landuse=reservoir | landuse=basin                                       [0x3f resolution 22]
+waterway=riverbank                                                      [0x46 resolution 20]
 
+landuse=reservoir | landuse=basin                                       [0x3f resolution 22]
 
 natural=glacier                                                         [0x4d resolution 18]
 
@@ -13,13 +14,11 @@ natural=wetland & wetland~'.*(swamp)'                                   [0x10f17
 natural=wetland & wetland~'.*(marsh)'                                   [0x10f18 resolution 20]
 natural=wetland & wetland=reedbed                                       [0x10f19 resolution 20]
 natural=marsh | natural=wetland | natural=mud                           [0x51 resolution 20]
-
 natural=bay                                                             [0x3d resolution 18]
-natural=water                                                           [0x3c resolution 18]
 natural=beach                                                           [0x3d resolution 18]
 natural=water & water=reservoir                                         [0x3f resolution 22]
-
+natural=water                                                           [0x3c resolution 18]
 natural=waterfall | waterway=waterfall                                  [0x47 resolution 21]
 natural=sea { add mkgmap:skipSizeFilter=true }                          [0x32 resolution 10]
 
-waterway=riverbank                                                      [0x46 resolution 20]
+
