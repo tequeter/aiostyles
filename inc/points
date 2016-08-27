@@ -464,6 +464,8 @@ shop=organic |
 shop=butcher |
 shop=bakery |
 shop=beverages |
+shop=dairy |
+shop=cheese |
 amenity=market_place                                                      [0x2e02 resolution 24]
 
 # General Merchandise # Gemischtwaren
