@@ -19,6 +19,6 @@ natural=beach                                                           [0x3d re
 natural=water & water=reservoir                                         [0x3f resolution 22]
 natural=water                                                           [0x3c resolution 18]
 natural=waterfall | waterway=waterfall                                  [0x47 resolution 21]
-natural=sea { add mkgmap:skipSizeFilter=true }                          [0x32 resolution 10]
+natural=sea { add mkgmap:skipSizeFilter=true; set mkgmap:drawLevel=2 }  [0x32 resolution 10]
 
 
