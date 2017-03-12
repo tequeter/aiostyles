@@ -12,41 +12,6 @@ leisure=swimming_pool { set temp_pool=yes; delete leisure; delete sport}
 amenity=swimming_pool { set temp_pool=yes; delete amenity; delete sport}
 leisure=water_park { add sport=swimming }
 
-#------------------------------------------------------------------------------
-# buildings
-
-building=yes &
-  amenity=place_of_worship &
-  religion=christian
-                  { set building=church }
-
-building=yes &
-  (amenity=social_centre |
-    amenity=social_facility |
-    amenity=police |
-    amenity=courthouse |
-    amenity=community_centre |
-    office=government |
-    amenity=fire_station |
-    amenity=prison |
-    amenity=post_office |
-    amenity=bank |
-    amenity=bureau_de_change)
-                  { set building=public }
-
-building!=no &
-  building!=public &
-  building!=school &
-  building!=church &
-  building!=cathredral &
-  building!=chapel                                [0x13 resolution 24 continue with_actions]
-
-building=church |
-  building=cathredral |
-  building=chapel |
-  building=public |
-  building=school                                 [0x10f1b resolution 23 continue with_actions]
-
 
 # platforms, if they are an area or closed polygons
 (railway=platform | public_transport=platform) & area=yes	[0x13 resolution 23]
@@ -193,4 +158,40 @@ natural=fell | natural=grassland    [0x35 resolution 20]
 natural=sand                        [0x10f14 resolution 20]
 natural=land 						[0x27 resolution 10]
 
+#------------------------------------------------------------------------------
+# buildings
+
+building=yes &
+  amenity=place_of_worship &
+  religion=christian
+                  { set building=church }
+
+building=yes &
+  (amenity=social_centre |
+    amenity=social_facility |
+    amenity=police |
+    amenity=courthouse |
+    amenity=community_centre |
+    office=government |
+    amenity=fire_station |
+    amenity=prison |
+    amenity=post_office |
+    amenity=bank |
+    amenity=bureau_de_change)
+                  { set building=public }
+
+building=church |
+  building=cathredral |
+  building=chapel |
+  building=public |
+  building=school                                 [0x10f1b resolution 23]
+
+building!=no &
+  building!=public &
+  building!=school &
+  building!=church &
+  building!=cathredral &
+  building!=chapel &
+  building!=proposed &
+  mkgmap:residential!=*                          [0x13 resolution 24]
 
