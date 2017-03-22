@@ -2,10 +2,10 @@
 fixme=* { set name = 'FIXME: ${fixme}' }                                      [0x7110 resolution 23]
 FIXME=* { set name = 'FIXME: ${FIXME}' }                                      [0x7110 resolution 23]
           
-ref ~ '(?i)fixme?'      { set name = 'FIXME_REF: ${name}' | 'FIXME_REF:'}     [0x7110 resolution 23]  
-operator ~ '(?i)fixme?' { set name = 'FIXME_OP: ${name}' | 'FIXME_OP:'}       [0x7110 resolution 23] 
-brand ~ '(?i)fixme?'    { set name = 'FIXME_BRAND: ${name}' | 'FIXME_BRAND:'} [0x7110 resolution 23] 
-name ~ '(?i)fixme?'     { set name = 'FIXME_NAME: ${name}' | 'FIXME_NAME:'}   [0x7110 resolution 23] 
+ref ~ '(?i)fix[ _]?+me?'      { set name = 'FIXME_REF: ${name}' | 'FIXME_REF:'; }     [0x7110 resolution 23]  
+operator ~ '(?i)fix[ _]?+me?' { set name = 'FIXME_OP: ${name}' | 'FIXME_OP:'; }       [0x7110 resolution 23] 
+brand ~ '(?i)fix[ _]?+me?'    { set name = 'FIXME_BRAND: ${name}' | 'FIXME_BRAND:'; } [0x7110 resolution 23] 
+name ~ '(?i)fix[ _]?+me?'     { set name = 'FIXME_NAME: ${name}' | 'FIXME_NAME:'; }   [0x7110 resolution 23] 
 
 (amenity=public_building |
      amenity=school |

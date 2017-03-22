@@ -30,6 +30,7 @@ make-opposite-cycleways
 min-size-polygon=8
 reduce-point-density=4
 reduce-point-density-polygon=8
+ignore-fixme-values
 merge-lines
 index
 route
