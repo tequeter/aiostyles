@@ -19,12 +19,14 @@ ref=* & (operator!=* & brand!=*) & (highway=bus_stop | railway=tram_stop | railw
 # Line ist disabled, has side effects on everyobject with ref and name, it should be better defined
 # ref=* & (operator!=* & brand!=*) { name '${ref} ${name}' | '${ref}' }
 
+(highway=emergency_access_point | emergency=access_point) { name '${ref} (${emergency_telephone_code}') | '${ref}' }
+
 # Both operator and brand given
 operator=* & brand=* {
  name '${brand}: ${ref} ${name} (${operator})' |
-      '${brand} ${ref} (${operator})' |
+      '${brand}: ${ref} (${operator})' |
       '${brand}: ${name} (${operator})' |
-      '${brand} (${operator})'
+      '${brand}: (${operator})'
 }
 
 # One of operator or brand given
