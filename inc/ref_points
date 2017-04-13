@@ -61,14 +61,14 @@
         delete ref ;
         }
 
-highway=motorway_junction { name '${ref} ${name}'; }
+highway=motorway_junction { name '${ref} ${name}' | '${ref}' | '${name}'; }
 
 highway=emergency_access_point
         {
         add ref='';
+        add emergency_telephone_code='';
         add name='';
         add operator='';
-        add emergency_telephone_code='';
-        name '${ref} ${name} ${operator} ${emergency_telephone_code}';
+        name '${ref} (${emergency_telephone_code}) ${name} ${operator}';
         }
 

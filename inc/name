@@ -3,53 +3,45 @@
 # name, brand, operator, ref
 
 # delete FIXME values (they should be better used in maintenance maps)
-#ref ~ '(?i)fix[ _]?+me'       { delete ref; } 
-#operator ~ '(?i)fix[ _]?+me'  { delete operator; }
-#brand ~ '(?i)fix[ _]?+me'     { delete brand; }
-#name ~ '(?i)fix[ _]?+me'      { delete name; }
+ref ~ '(?i)fix[ _]?+me'       { delete ref; } 
+operator ~ '(?i)fix[ _]?+me'  { delete operator; }
+brand ~ '(?i)fix[ _]?+me'     { delete brand; }
+name ~ '(?i)fix[ _]?+me'      { delete name; }
 
 # delete duplicate names
 operator=${brand} { delete operator; }
 operator=${name}  { delete operator; }
 brand=${name}     { delete brand; }
 
-# None of operator, brand given
-ref=* & (operator!=* & brand!=*) & (highway=bus_stop | railway=tram_stop | railway=halt | railway=station) { name '${name} ${ref}' | '${ref}' }
-
-# Line ist disabled, has side effects on everyobject with ref and name, it should be better defined
-# ref=* & (operator!=* & brand!=*) { name '${ref} ${name}' | '${ref}' }
-
-(highway=emergency_access_point | emergency=access_point) { name '${ref} (${emergency_telephone_code})' | '${ref}' }
-
 # Both operator and brand given
 operator=* & brand=* {
  name '${brand}: ${ref} ${name} (${operator})' |
-      '${brand}: ${ref} (${operator})' |
-      '${brand}: ${name} (${operator})' |
-      '${brand}: (${operator})'
+            '${brand}: ${ref} (${operator})' |
+            '${brand}: ${name} (${operator})' |
+            '${brand}: (${operator})' 
 }
 
 # One of operator or brand given
 operator=* & brand!=* & (highway=bus_stop | railway=tram_stop | railway=halt | railway=station) {
  name '${name} ${ref} ${operator}' |
-      '${name} ${operator}' |
-      '${ref} ${operator}' |
-      '${operator}'
+            '${name} ${operator}' |
+            '${ref} ${operator}' |
+            '${operator}' 
 }
 
 operator=* & brand!=* {
  name '${operator}: ${ref} ${name}' |
-      '${operator}: ${name}' |
-      '${operator}: ${ref}' |
-      '${operator}' |
-      '${ref}'
+            '${operator}: ${name}' |
+            '${operator}: ${ref}' |
+            '${operator}' |
+            '${ref}' 
 }
 brand=* & operator!=* {
  name '${brand}: ${ref} ${name}' |
-      '${brand}: ${name}' | 
-      '${brand}: ${ref}' |
-      '${brand}' |
-      '${ref}'
+            '${brand}: ${name}' | 
+            '${brand}: ${ref}' |
+            '${brand}' |
+            '${ref}' 
 }
 
 # remove unneeded tags 
@@ -63,7 +55,7 @@ amenity=parking & fee=no { delete fee ; }
 amenity=parking
         & ( parking=multi-storey |
             parking=underground)       
-         { set name = '^ ${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
+         { name '^ ${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
                       '^ ${name|def:P} (${capacity}/${capacity:disabled})' |
                       '^ ${name|def:P} (${capacity})[${fee}]' |
                       '^ ${name|def:P} (${capacity})' |
@@ -72,7 +64,7 @@ amenity=parking
                 }
                 
 amenity=parking
-         { set name = '${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
+         { name '${name|def:P} (${capacity}/${capacity:disabled})[${fee}]' |
                       '${name|def:P} (${capacity}/${capacity:disabled})' |
                       '${name|def:P} (${capacity})[${fee}]' |
                       '${name|def:P} (${capacity})' |
@@ -83,7 +75,7 @@ amenity=parking
 amenity=post_office
         {
 	name '${operator}' | '${name}'
-	}
+}
 
 amenity=post_box |
 amenity=post_office |
@@ -204,25 +196,25 @@ power=*
         delete name ;
         }
 
-leisure=* & sport=* & name=*  { set name = '${name} (${sport})' }
+leisure=* & sport=* & name=*  { name '${name} (${sport})' }
 leisure=* & sport=* & name!=* { add name = '${sport}' }
 
 waterway=* & name!=* { add name = '$(waterway|subst:_=> }' }
 
 highway=speed_camera & maxspeed = *
-      { set name = '${maxspeed}km/h' }
+      { name '${maxspeed}km/h' }
 
 natural=glacier & ele = *      
-      { set name = '${name} (${ele}m)' | 
+      { name '${name} (${ele}m)' | 
                    '${name}' |
                    '(${ele}m)' }
 
 (natural=peak | natural=hill | mountain_pass=yes) & ele=* 
-        { set name = '${name|def:} (${ele|def:}m)' |
+        { name '${name|def:} (${ele|def:}m)' |
                      '${name}' |
                      '(${ele}m)' }
 
-disused=yes  { set name = '${name} (disused)'|'(disused)';}
+disused=yes  { name '${name} (disused)'|'(disused)';}
 
 # fix unnamed standard icons
 leisure=marina & name!=*            { add name = '${leisure}' }
