@@ -145,8 +145,9 @@ highway=cycleway
 # some access rules with exceptions
 access ~ '.*(agricultural|forestry).*' 
                 { 
-                  set access=no;
-                  add foot=yes
+                  add foot=yes;
+                  add access=no;
+                  
                   }
 
                             

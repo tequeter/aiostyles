@@ -161,11 +161,11 @@ bridge=yes & ( highway=* | railway=* )                                          
             highway=trunk |
             highway=trunk_link |
             highway=primary |
-            highway=primary_link )                                                      [0x10e05 resolution 24-23 continue]
+            highway=primary_link )                                                      [0x10e05 resolution 24 continue]
 
 (tunnel=yes | tunnel=building_passage | covered=yes)
           & (highway=* |
-             railway=*)                                                                 [0x10e06 resolution 24-23 continue]
+             railway=*)                                                                 [0x10e06 resolution 24 continue]
 
 # embankment overlay
 (man_made=dyke | embankment=yes)
@@ -186,3 +186,8 @@ highway=* & railway=tram                                                        
 
 # bridleway overlay
 highway=* & horse=designated                                                            [0x10e0b resolution 24 continue]
+
+# path with bad conditions
+highway=path
+           & smoothness~'.*(bad|horrible|impassable)'                                   [0x10e0c resolution 24 continue]
+              
