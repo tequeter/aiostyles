@@ -78,7 +78,12 @@ brand=${name}     { delete brand; }
         delete ref ;
         }
 
-highway=motorway_junction { name '${ref} ${name}' | '${ref}' | '${name}'; }
+highway=motorway_junction 
+        { 
+          name '${ref} ${name}' | 
+               '${ref}' | 
+               '${name}'; 
+        }
 
 highway=emergency_access_point
        {
@@ -92,7 +97,6 @@ highway=emergency_access_point
              '${ref} ${name}' |
              '${ref}';
         }
-
 
 # Both operator and brand given
 operator=* & brand=* 

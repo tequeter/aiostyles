@@ -2967,7 +2967,7 @@ Xpm="32 1 2 1"
 
 [_line]
 Type=0x0F
-String1=0x02,Grade2/unbef.Seitenweg
+String1=0x02,Grade2/Seitenweg
 String2=0x04,Grade2/Byway
 UseOrientation=N
 Xpm="32 1 2 1"
