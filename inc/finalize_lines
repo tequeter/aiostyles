@@ -7,7 +7,7 @@ include '../inc/roadspeed' ;
 include '../inc/address' ;
 include '../inc/phone';
 
-#limit artificial cycleways to to resolution 24
+#limit artificial cycleways to resolution 24
 mkgmap:synthesised=yes & mkgmap:bicycle=yes { set mkgmap:highest-resolution-only = true }
 
 # don't add house numbers to unnamed or artifical bicycle ways
